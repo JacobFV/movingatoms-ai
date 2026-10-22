@@ -254,3 +254,20 @@ tests successfully; its manifest binds screenshots, JSON reports and tested
 source hashes. Corpus/Rust results in the pages are recorded evidence, not
 fresh runs. The next work is a strict BasicFileInfo framing codec and a candidate
 that also synchronizes binary duplicates.
+
+## 2026-10-22 — Isolated IFC namespace cause and episode-reference scan
+
+The public IFC exporter seeds generated identifiers from BasicFileInfo's document
+GUID. An explicit persistent-namespace adapter eliminates all 860 identifier-only
+changes while preserving native element/type/storey IDs. Source export is byte
+identical; candidate export retains exactly the two intended property/provenance
+changes. See [IFC identity audit](../research/rvt/results/ifc-identity-audit.md).
+The adapter compiles against the clean pinned public reader; it does not rewrite
+IFC text or alter the reader checkout. A persistent model namespace remains an
+explicit caller input, with copy/fork semantics outside this experiment.
+
+A separate raw-encoding scan of all six originals covers 109 streams and 3,784
+valid gzip members. The newest History episode GUID appears only in its History
+record and four BasicFileInfo UTF-16 locations under the tested encodings. This
+independently confirms the two previously missed binary-header GUID copies.
+[Scan evidence and limits](../research/rvt/results/save-reference-scan.md).

@@ -1,0 +1,188 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "newest_episode_guid": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+    "streams_scanned": 20,
+    "gzip_members_scanned": 1652,
+    "hits": [
+      {
+        "stream": "BasicFileInfo",
+        "domain": "logical",
+        "gzip_logical_offset": null,
+        "encoding": "utf16le",
+        "offsets": [
+          280,
+          356,
+          1569,
+          1689
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "domain": "gzip",
+        "gzip_logical_offset": 8,
+        "encoding": "uuid_le",
+        "offsets": [
+          110
+        ]
+      }
+    ],
+    "limits": "Exact common UUID encodings in logical streams and valid gzip members only. No semantic reference claim; alternate encodings and other compression are not covered."
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "newest_episode_guid": "4010f260-d136-40e2-9c97-739906627cf3",
+    "streams_scanned": 19,
+    "gzip_members_scanned": 66,
+    "hits": [
+      {
+        "stream": "BasicFileInfo",
+        "domain": "logical",
+        "gzip_logical_offset": null,
+        "encoding": "utf16le",
+        "offsets": [
+          282,
+          358,
+          1569,
+          1689
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "domain": "gzip",
+        "gzip_logical_offset": 8,
+        "encoding": "uuid_le",
+        "offsets": [
+          110
+        ]
+      }
+    ],
+    "limits": "Exact common UUID encodings in logical streams and valid gzip members only. No semantic reference claim; alternate encodings and other compression are not covered."
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "newest_episode_guid": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+    "streams_scanned": 15,
+    "gzip_members_scanned": 424,
+    "hits": [
+      {
+        "stream": "BasicFileInfo",
+        "domain": "logical",
+        "gzip_logical_offset": null,
+        "encoding": "utf16le",
+        "offsets": [
+          334,
+          410,
+          1677,
+          1797
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "domain": "gzip",
+        "gzip_logical_offset": 8,
+        "encoding": "uuid_le",
+        "offsets": [
+          870
+        ]
+      }
+    ],
+    "limits": "Exact common UUID encodings in logical streams and valid gzip members only. No semantic reference claim; alternate encodings and other compression are not covered."
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "newest_episode_guid": "56faf749-e7fc-4f96-984c-1abc785b50c1",
+    "streams_scanned": 17,
+    "gzip_members_scanned": 1153,
+    "hits": [
+      {
+        "stream": "BasicFileInfo",
+        "domain": "logical",
+        "gzip_logical_offset": null,
+        "encoding": "utf16le",
+        "offsets": [
+          356,
+          432,
+          1725,
+          1845
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "domain": "gzip",
+        "gzip_logical_offset": 8,
+        "encoding": "uuid_le",
+        "offsets": [
+          110
+        ]
+      }
+    ],
+    "limits": "Exact common UUID encodings in logical streams and valid gzip members only. No semantic reference claim; alternate encodings and other compression are not covered."
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "newest_episode_guid": "d4228fd8-e867-4082-b2ab-1f70c6e3b406",
+    "streams_scanned": 14,
+    "gzip_members_scanned": 251,
+    "hits": [
+      {
+        "stream": "BasicFileInfo",
+        "domain": "logical",
+        "gzip_logical_offset": null,
+        "encoding": "utf16le",
+        "offsets": [
+          304,
+          380,
+          1617,
+          1737
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "domain": "gzip",
+        "gzip_logical_offset": 8,
+        "encoding": "uuid_le",
+        "offsets": [
+          110
+        ]
+      }
+    ],
+    "limits": "Exact common UUID encodings in logical streams and valid gzip members only. No semantic reference claim; alternate encodings and other compression are not covered."
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "newest_episode_guid": "b2560b43-3969-4a48-91a1-2d5587d50afd",
+    "streams_scanned": 14,
+    "gzip_members_scanned": 238,
+    "hits": [
+      {
+        "stream": "BasicFileInfo",
+        "domain": "logical",
+        "gzip_logical_offset": null,
+        "encoding": "utf16le",
+        "offsets": [
+          300,
+          376,
+          1609,
+          1729
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "domain": "gzip",
+        "gzip_logical_offset": 8,
+        "encoding": "uuid_le",
+        "offsets": [
+          110
+        ]
+      }
+    ],
+    "limits": "Exact common UUID encodings in logical streams and valid gzip members only. No semantic reference claim; alternate encodings and other compression are not covered."
+  }
+]
