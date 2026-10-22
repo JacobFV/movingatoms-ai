@@ -129,3 +129,12 @@ reproduction commands. Existing signatures are preserved, not regenerated.
 checks modification-episode routes without a highest-stream fallback.
 [Bookkeeping evidence](results/bookkeeping.md) records 17 unresolved storage
 routes and explains why History-only changes are not complete saves.
+
+`save_increments.py` strictly encodes the observed save-table profiles; its
+[independent corpus audit](results/save-increments.md) verifies all fields and
+exact bytes. Nonempty permutation arrays are rejected until understood.
+`signature_analysis.py` records [explicit signature hypothesis tests](results/signature-analysis.md)
+without interpreting negative results as proof of keying.
+
+The [research work log](../../docs/rvt-research-log.md) and
+[screenshot archive](../../docs/rvt-evidence/README.md) preserve reporting evidence.

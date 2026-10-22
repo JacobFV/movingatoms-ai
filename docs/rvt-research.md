@@ -286,3 +286,16 @@ those exceptions, including both cases with conflicting bodies. Five have a
 sole physical holder but an unexplained historical route. It rejects ambiguous
 candidates rather than choosing the greatest stream ordinal; see
 [record selection](../research/rvt/results/record-selection.json).
+
+## Save-table codec and additional signature tests
+
+The [save-table codec](../research/rvt/results/save-increments.md) reproduces
+844 increment records and 125,144 inflated bytes exactly against independent
+schema evidence. Nonempty permutation arrays are explicitly unsupported;
+correct revision advancement during a full save is still unproven.
+
+The [signature analysis](../research/rvt/results/signature-analysis.md) rejects
+standard canonical raw Ed25519 as a universal explanation in that exact byte
+layout and finds no match in 56,268 enumerated digest/coverage comparisons.
+Neither finding identifies the actual algorithm or establishes keying.
+Both unsigned source groups are empty; unsigned nonempty acceptance is unknown.

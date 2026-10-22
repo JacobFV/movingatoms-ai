@@ -14,7 +14,8 @@ import subprocess
 import tempfile
 
 ROOT=Path(__file__).resolve().parents[2]
-SOURCES=('object-repacking','resized-graph','resized-reader','record-selection')
+SOURCES=('object-repacking','resized-graph','resized-reader','record-selection',
+         'save-increments','signature-analysis')
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -43,9 +44,14 @@ def capture(dest,chrome):
     rows=''.join(f'<tr><td>{esc(r["file"])}</td><td>{r["object_records"]:,}</td><td>{r["content_groups"]}</td><td>Exact record bodies</td></tr>' for r in corpus)
     summary=common+'<h1>Object reconstruction across six licensed files</h1>'+f'<div class="cards"><div class="card"><div class="number">{sum(x["object_records"] for x in corpus):,}</div>records repacked</div><div class="card"><div class="number">{sum(x["content_groups"] for x in corpus):,}</div>content groups</div><div class="card"><div class="number">{sum(x["exact_episode_routes"] for x in routing):,}</div>exact revision routes</div></div>'+'<table><tr><th>Fixture</th><th>Records</th><th>Groups</th><th>Recorded result</th></tr>'+rows+'</table>'+f'<p>Additional selection evidence: {sum(x["unique_compaction_history_holders"] for x in routing)} unique compaction-history holders; {sum(x["sole_holders_with_unresolved_history"] for x in routing)} sole holders with unexplained history.</p>'+warning
     changed=common+f'<h1>Real room edit: {esc(edit["old"])} → {esc(edit["new"])}</h1><p>RE1 Architecture · room {edit["changed_element"]} · {esc(edit["changed_field"])}</p>'+f'<div class="cards"><div class="card"><div class="number">+{graph["body_growth_bytes"]}</div>serialized bytes</div><div class="card"><div class="number">{graph["complete_objects"]}</div>complete graph objects</div><div class="card"><div class="number">{graph["resolved_pointer_edges"]}</div>resolved pointer edges</div></div>'+f'<p>Independent reader: one changed property among {edit["element_count"]} exported elements. All other graph values and pointer targets preserved.</p><h2>Independent IFC before / after</h2><pre>{esc(edit["ifc_before_line"])}\n{esc(edit["ifc_after_line"])}</pre><h2>Fresh Python regression run · exit {test.returncode}</h2><pre>{esc(log[-1400:])}</pre>'+warning
+    save=values['save-increments'];signature=values['signature-analysis']
+    rejected=signature['nonempty_private_signature_groups']-signature['structure_true_counts']['ed25519_canonical_s']
+    investigations=common+'<h1>Parallel investigations: save tables and signatures</h1>'+f'<div class="cards"><div class="card"><div class="number">{sum(r["increments"]+r["local_increments"] for r in save):,}</div>save records reproduced</div><div class="card"><div class="number">{sum(r["inflated_bytes"] for r in save):,}</div>bytes reproduced exactly</div><div class="card"><div class="number">{signature["nonempty_private_signature_groups"]}</div>nonempty signature fields</div></div>'
+    investigations+='<h2>Save-table codec</h2><p>Six licensed files: byte-for-byte reconstruction and field-for-field comparison against the independent schema decoder. Revision advancement and save semantics remain unproven.</p>'
+    investigations+=f'<h2>Signature hypotheses tested</h2><p>{rejected} fields fail the necessary scalar bound for standard canonical raw Ed25519 in R || S layout. This excludes that exact interpretation, not transformed encodings.</p><p>{signature["digest_comparisons"]:,} enumerated SHA-512, SHA3-512 and BLAKE2b comparisons; {len(signature["digest_matches"])} matches. Negative tests do not establish keying or identify an algorithm.</p><p>Both observed unsigned groups contain zero elements. No unsigned nonempty source group establishes that removing the signature is accepted.</p>'+warning
     browser_version=subprocess.check_output([chrome,'--version'],text=True).strip()
     with tempfile.TemporaryDirectory(prefix='rvt-evidence-browser-') as profile:
-        for name,body in [('corpus',summary),('room-edit',changed)]:
+        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations)]:
             page=dest/f'{name}.html';page.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>RVT research evidence</title><style>'+style+'</style><main>'+body+f'<footer>Source JSON copies and SHA-256 provenance are stored beside this capture. Browser: {esc(browser_version)}.</footer></main></html>')
             args=[chrome,'--headless','--no-sandbox','--disable-gpu','--disable-background-networking','--no-first-run',f'--user-data-dir={profile}','--hide-scrollbars','--window-size=1280,1100',f'--screenshot={dest/name}.png',page.as_uri()]
             subprocess.run(args,check=True,capture_output=True,text=True,timeout=45)

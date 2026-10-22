@@ -56,3 +56,31 @@ recorded in the manifest.
 **Parallel work started:** independent save-table serialization and signature
 analysis. Results will be recorded as they finish; starting a task is not
 recorded as a successful outcome.
+
+## 2026-10-22 — Parallel save-table and signature investigations
+
+**Save table:** implemented `save_increments.py` and an independent corpus
+audit. All 844 records (422 persistent and 422 local increment records) and
+125,144 inflated bytes across six files reconstruct exactly. All decoded
+fields match the pinned public reader's schema traversal. Review found that
+nonempty permutation arrays were not supported by the corpus evidence; the
+codec now rejects them instead of assuming flat integers. Five codec tests
+cover truncation, flags, Unicode, integer bounds, changed revisions and this
+unsupported case. [Results and commands](../research/rvt/results/save-increments.md).
+
+**Signature analysis:** examined 521 nonempty 64-byte fields. Of these, 480
+fail the scalar bound required by standard canonical raw Ed25519 in `R || S`
+layout. No match occurred in 56,268 explicitly enumerated digest/coverage
+comparisons. This does not prove a secret key or identify the algorithm. Both
+unsigned source groups contain zero elements, so they are not evidence that
+unsigned nonempty output is accepted. Three boundary tests check the shape
+probe. [Results and commands](../research/rvt/results/signature-analysis.md).
+
+**Verification:** reviewed both changes; reran the save audit and compared its
+JSON byte-for-byte with the recorded result. All 45 Python regression tests
+passed after integration. Raw source fixtures remain outside Git.
+
+**Limitations:** save revision advancement and full transaction semantics are
+not established. Signature generation, native element creation and Autodesk
+acceptance remain open. Screenshots are presentation evidence for these
+measured results, not substitutes for those missing checks.
