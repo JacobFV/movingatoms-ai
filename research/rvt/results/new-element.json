@@ -1,0 +1,566 @@
+{
+  "source_file": "core2024.rvt",
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+  "source_element": 80437,
+  "source_channel_reconstruction": {
+    "101": {
+      "bytes": 119,
+      "sha256": "285ed8a17684148f143a93928f5159c6f495e4bb990759b5aed310eff5579614",
+      "byte_identical": true
+    },
+    "102": {
+      "bytes": 217,
+      "sha256": "f027e7b414dcebc337dbdc23c26ddc34cdafb466017cc5c4aea46bcfde212479",
+      "byte_identical": true
+    },
+    "103": {
+      "bytes": 2,
+      "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+      "byte_identical": true
+    }
+  },
+  "current_datastorage_guid_count": 1,
+  "generated_storage_guid_absent_from_current_datastorage": true,
+  "generated_name": "Clean-room DataStorage \u0394",
+  "generated_id": 133210,
+  "generated_storage_guid": "7cd7ab1f-7535-5cd6-a873-a3af417c6e4d",
+  "generated_episode": 39,
+  "generated_episode_guid": "562a3df0-6022-5912-aeb1-33b6a875b44e",
+  "source_identity_count": 26425,
+  "new_identity_count": 26426,
+  "existing_identities_unchanged": true,
+  "new_identity": {
+    "element_id": 133210,
+    "original_id_suffix": 133210,
+    "creation_episode": 39,
+    "stored_revision": 39,
+    "other_revision": 39,
+    "row_offset": 1057006,
+    "raw_fields": [
+      133210,
+      0,
+      39,
+      39,
+      39,
+      133210,
+      0,
+      4294967295,
+      4294967295,
+      0
+    ],
+    "owning_element_id": -1,
+    "partition_id": 0,
+    "unique_id": "562a3df0-6022-5912-aeb1-33b6a875b44e-0002085a"
+  },
+  "channels": {
+    "101": {
+      "bytes": 119,
+      "sha256": "223594ea9db227805b5d1b8a9bed8762417b4448da508d566a8ddd8650b2c930",
+      "objects": 2,
+      "edges": 1,
+      "element_references": [
+        {
+          "path": "[0].m_categroryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_designOptionId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_familyId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_miscId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_ownerViewId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_unplacedOwnerId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[1].m_deletion[0].m_id.m_id64",
+          "id": 133210
+        }
+      ]
+    },
+    "102": {
+      "bytes": 265,
+      "sha256": "fdf41eaf28ad8252498744e84394365815496596c738d24c4c49fc8067b810e9",
+      "objects": 5,
+      "edges": 4,
+      "element_references": [
+        {
+          "path": "[0].m_assocLevelId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_createdPhaseId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_demolishedPhaseId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_designOptionId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_famId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_id.m_id.m_id64",
+          "id": 133210
+        },
+        {
+          "path": "[0].m_ownerDBViewId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_unplacedOwnerId.m_id.m_id64",
+          "id": -1
+        }
+      ]
+    },
+    "103": {
+      "bytes": 2,
+      "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+      "objects": 1,
+      "edges": 0,
+      "element_references": []
+    }
+  },
+  "decoded_graphs": {
+    "101": {
+      "consumed_bytes": 119,
+      "edges": [
+        {
+          "pointer_offset": 68,
+          "pointer_token": 4294967295,
+          "source_object_index": 0,
+          "target_class_tag": 1451,
+          "target_object_index": 1
+        }
+      ],
+      "objects": [
+        {
+          "class_name": "ElementHeader",
+          "class_tag": 1439,
+          "fields": {
+            "m_abFlags4Bytes": 8206,
+            "m_categroryId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_classDef": {
+              "m_ref": {
+                "class_name": "DataStorage",
+                "class_tag": 1133
+              }
+            },
+            "m_designOptionId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_familyId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_miscId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_ownerViewId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_pBBox": {
+              "class_tag": null,
+              "offset": 64,
+              "pointer_token": 0
+            },
+            "m_parents": {
+              "class_tag": 1451,
+              "offset": 68,
+              "pointer_token": 4294967295
+            },
+            "m_regenHistory": {
+              "m_historyMap": []
+            },
+            "m_unplacedOwnerId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_viewRules": {
+              "m_nVisibleViewFlags": -4225
+            }
+          },
+          "fields_end": 74,
+          "start": 2,
+          "token": 0
+        },
+        {
+          "class_name": "ElementParents",
+          "class_tag": 1451,
+          "fields": {
+            "m_appearanceParents": [],
+            "m_computedParametersParents": [],
+            "m_deferredParents": [],
+            "m_deferredPropagationParents": [],
+            "m_deletion": [
+              {
+                "m_id": {
+                  "m_id64": 133210
+                }
+              }
+            ],
+            "m_dependencyParents": [],
+            "m_hasNonDetermRegenChildren": false,
+            "m_nonDetermRegenChildren": [],
+            "m_regenOnly": [],
+            "m_regenWildcards": []
+          },
+          "fields_end": 119,
+          "start": 74,
+          "token": 4294967295
+        }
+      ]
+    },
+    "102": {
+      "consumed_bytes": 265,
+      "edges": [
+        {
+          "pointer_offset": 30,
+          "pointer_token": 4294967295,
+          "source_object_index": 0,
+          "target_class_tag": 723,
+          "target_object_index": 1
+        },
+        {
+          "pointer_offset": 163,
+          "pointer_token": 4294967295,
+          "source_object_index": 1,
+          "target_class_tag": 1331,
+          "target_object_index": 2
+        },
+        {
+          "pointer_offset": 189,
+          "pointer_token": 4294967295,
+          "source_object_index": 2,
+          "target_class_tag": 0,
+          "target_object_index": 3
+        },
+        {
+          "pointer_offset": 225,
+          "pointer_token": 4294967295,
+          "source_object_index": 2,
+          "target_class_tag": 0,
+          "target_object_index": 4
+        }
+      ],
+      "objects": [
+        {
+          "class_name": "DataStorage",
+          "class_tag": 1133,
+          "fields": {
+            "m_assocLevelId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_cellList": {
+              "class_tag": 723,
+              "offset": 30,
+              "pointer_token": 4294967295
+            },
+            "m_constrInfo": [],
+            "m_createdPhaseId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_demolishedPhaseId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_designOptionId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_docAccess": {
+              "m_pDoc": {
+                "class_tag": null,
+                "offset": 36,
+                "pointer_token": 1
+              }
+            },
+            "m_dummy": false,
+            "m_famId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_geomSteps": {
+              "class_tag": null,
+              "offset": 18,
+              "pointer_token": 0
+            },
+            "m_id": {
+              "m_id": {
+                "m_id64": 133210
+              }
+            },
+            "m_locked": false,
+            "m_moribund": false,
+            "m_name": "Clean-room DataStorage \u0394",
+            "m_ownerDBViewId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            },
+            "m_pGeomTable": {
+              "class_tag": null,
+              "offset": 22,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetAString": {
+              "class_tag": null,
+              "offset": 10,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetDouble": {
+              "class_tag": null,
+              "offset": 2,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetElementId": {
+              "class_tag": null,
+              "offset": 14,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetInt": {
+              "class_tag": null,
+              "offset": 6,
+              "pointer_token": 0
+            },
+            "m_unplacedOwnerId": {
+              "m_id": {
+                "m_id64": -1
+              }
+            }
+          },
+          "fields_end": 159,
+          "start": 2,
+          "token": 0
+        },
+        {
+          "class_name": "CellList",
+          "class_tag": 723,
+          "fields": {
+            "m_cells": [
+              {
+                "class_tag": 1331,
+                "offset": 163,
+                "pointer_token": 4294967295
+              }
+            ]
+          },
+          "fields_end": 169,
+          "start": 159,
+          "token": 4294967295
+        },
+        {
+          "class_name": "ESEntityCell",
+          "class_tag": 1331,
+          "fields": {
+            "m_entityMap": [
+              {
+                "first": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      66,
+                      16,
+                      228,
+                      141,
+                      166,
+                      125,
+                      69,
+                      77,
+                      175,
+                      180,
+                      248,
+                      229,
+                      186,
+                      119,
+                      152,
+                      22
+                    ]
+                  }
+                },
+                "second": {
+                  "m_blob": {
+                    "discriminator": -1,
+                    "offset": 189,
+                    "schema_guid": "8de41042-7da6-4d45-afb4-f8e5ba779816",
+                    "state": "serialized_present"
+                  }
+                }
+              },
+              {
+                "first": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      103,
+                      200,
+                      71,
+                      65,
+                      254,
+                      205,
+                      253,
+                      66,
+                      128,
+                      143,
+                      59,
+                      186,
+                      253,
+                      167,
+                      61,
+                      165
+                    ]
+                  }
+                },
+                "second": {
+                  "m_blob": {
+                    "discriminator": -1,
+                    "offset": 225,
+                    "schema_guid": "4147c867-cdfe-42fd-808f-3bbafda73da5",
+                    "state": "serialized_present"
+                  }
+                }
+              }
+            ]
+          },
+          "fields_end": 245,
+          "start": 169,
+          "token": 4294967295
+        },
+        {
+          "class_name": "ExtensibleStorageEntity",
+          "class_tag": 0,
+          "fields": {
+            "fields": [
+              {
+                "container_type": 0,
+                "end": 249,
+                "index": 0,
+                "name": "ModifiedExchangeList",
+                "raw_value": "",
+                "serialized_unit_type_id": null,
+                "spec_type_id": null,
+                "start": 245,
+                "subschema_guid": null,
+                "type_name": "TCHAR",
+                "unit_status": "no_saved_spec",
+                "value_semantics": "serialized_value"
+              }
+            ],
+            "schema_guid": "8de41042-7da6-4d45-afb4-f8e5ba779816",
+            "schema_name": "FDXModifiedExchangeList"
+          },
+          "fields_end": 249,
+          "start": 245,
+          "token": 4294967295
+        },
+        {
+          "class_name": "ExtensibleStorageEntity",
+          "class_tag": 0,
+          "fields": {
+            "fields": [
+              {
+                "container_type": 0,
+                "end": 265,
+                "index": 0,
+                "name": "Id",
+                "raw_value": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      31,
+                      171,
+                      215,
+                      124,
+                      53,
+                      117,
+                      214,
+                      92,
+                      168,
+                      115,
+                      163,
+                      175,
+                      65,
+                      124,
+                      110,
+                      77
+                    ]
+                  }
+                },
+                "serialized_unit_type_id": null,
+                "spec_type_id": null,
+                "start": 249,
+                "subschema_guid": null,
+                "type_name": "GUIDvalue",
+                "unit_status": "no_saved_spec",
+                "value_semantics": "serialized_value"
+              }
+            ],
+            "schema_guid": "4147c867-cdfe-42fd-808f-3bbafda73da5",
+            "schema_name": "DataStorageUniqueId"
+          },
+          "fields_end": 265,
+          "start": 249,
+          "token": 4294967295
+        }
+      ]
+    },
+    "103": {
+      "consumed_bytes": 2,
+      "edges": [],
+      "objects": [
+        {
+          "class_name": "SerializedDummy",
+          "class_tag": 3712,
+          "fields": {},
+          "fields_end": 2,
+          "start": 2,
+          "token": 0
+        }
+      ]
+    }
+  },
+  "partition_payload_bytes": 428,
+  "partition_sha256": "598989609125f1048cbb34b20c1b81ac44e82c68405183ddb9875aabd10ecf34",
+  "limits": [
+    "Only pinned core2024 profile and its two existing ES schemas are supported.",
+    "Header flag values and document pointer token follow observed DataStorage; creation semantics remain unproven.",
+    "No whole RVT is emitted; incoming indexes, registration, save bookkeeping and signature acceptance are not established.",
+    "Fresh IDs/GUIDs are unique in this experiment; callers must check allocator state and GUID collisions before integration."
+  ],
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false
+}

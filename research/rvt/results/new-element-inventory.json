@@ -1,0 +1,694 @@
+{
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "method": "Independent current-record extraction all three channels, retaining smallest body per class/channel; not complete class histograms.",
+  "fixtures": [
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "current_records": 79275,
+      "current_records_outside_route": 30,
+      "smallest_records": [
+        {
+          "class_name": "SerializedDummy",
+          "channel": 103,
+          "id": 2026,
+          "bytes": 2,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "AnalyticalToPhysicalRelationManager",
+          "channel": 102,
+          "id": 80351,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "Dwg2dExportUserSettingsData",
+          "channel": 102,
+          "id": 13,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ExternalParamLock",
+          "channel": 102,
+          "id": 1281,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "GraphicsCache",
+          "channel": 102,
+          "id": 80293,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ListConceptualSurfaceTypes",
+          "channel": 102,
+          "id": 65,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "RvtLinkInstanceAppearanceParentElem",
+          "channel": 102,
+          "id": 1489,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SFCostUserDataElem",
+          "channel": 102,
+          "id": 1792,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SketchGridAppearanceParentElem",
+          "channel": 102,
+          "id": 1488,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SunAnnotationElem",
+          "channel": 102,
+          "id": 80503,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ZoneScheme",
+          "channel": 102,
+          "id": 1811,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ReactionsUpToDateElem",
+          "channel": 102,
+          "id": 1839,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "StructuralConnectionSettings",
+          "channel": 102,
+          "id": 2097,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "FabricationServiceSettings",
+          "channel": 102,
+          "id": 80394,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ForgeConnectionTracker",
+          "channel": 102,
+          "id": 16149,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        }
+      ],
+      "data_storage_sample": {
+        "id": 80437,
+        "bytes": 217,
+        "status": "complete_bounded_graph"
+      }
+    },
+    {
+      "file": "einhoven.rvt",
+      "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+      "current_records": 7845,
+      "current_records_outside_route": 18,
+      "smallest_records": [
+        {
+          "class_name": "SerializedDummy",
+          "channel": 103,
+          "id": 0,
+          "bytes": 2,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "AnalyticalToPhysicalRelationManager",
+          "channel": 102,
+          "id": 2283,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "Dwg2dExportUserSettingsData",
+          "channel": 102,
+          "id": 15,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ExternalParamLock",
+          "channel": 102,
+          "id": 1499,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "GraphicsCache",
+          "channel": 102,
+          "id": 2081,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ListConceptualSurfaceTypes",
+          "channel": 102,
+          "id": 69,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "RvtLinkInstanceAppearanceParentElem",
+          "channel": 102,
+          "id": 1715,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SFCostUserDataElem",
+          "channel": 102,
+          "id": 2018,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SketchGridAppearanceParentElem",
+          "channel": 102,
+          "id": 1714,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SunAnnotationElem",
+          "channel": 102,
+          "id": 1910,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ZoneScheme",
+          "channel": 102,
+          "id": 2039,
+          "bytes": 73,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ReactionsUpToDateElem",
+          "channel": 102,
+          "id": 2067,
+          "bytes": 74,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "StructuralConnectionSettings",
+          "channel": 102,
+          "id": 2328,
+          "bytes": 74,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "CircuitNamingTypeSetting",
+          "channel": 102,
+          "id": 2334,
+          "bytes": 77,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ForgeConnectionTracker",
+          "channel": 102,
+          "id": 2335,
+          "bytes": 77,
+          "status": "complete_bounded_graph"
+        }
+      ],
+      "data_storage_sample": null
+    },
+    {
+      "file": "RE1-Architecture.rvt",
+      "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "current_records": 14004,
+      "current_records_outside_route": 0,
+      "smallest_records": [
+        {
+          "class_name": "SerializedDummy",
+          "channel": 103,
+          "id": 462692,
+          "bytes": 2,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "AnalyticalToPhysicalRelationManager",
+          "channel": 102,
+          "id": 462782,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "Dwg2dExportUserSettingsData",
+          "channel": 102,
+          "id": 102444,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "GraphicsCache",
+          "channel": 102,
+          "id": 462724,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ListConceptualSurfaceTypes",
+          "channel": 102,
+          "id": 121762,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "RvtLinkInstanceAppearanceParentElem",
+          "channel": 102,
+          "id": 132481,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "STEPExportSettings",
+          "channel": 102,
+          "id": 463040,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SketchGridAppearanceParentElem",
+          "channel": 102,
+          "id": 132484,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SunAnnotationElem",
+          "channel": 102,
+          "id": 414972,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ReactionsUpToDateElem",
+          "channel": 102,
+          "id": 85104,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "StructuralConnectionSettings",
+          "channel": 102,
+          "id": 316153,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "FabricationServiceSettings",
+          "channel": 102,
+          "id": 462911,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "MEPNetworkDataElem",
+          "channel": 102,
+          "id": 463361,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SheetsInSheetCollectionTracker",
+          "channel": 102,
+          "id": 463389,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "WorksetVisibilitySettingsElem",
+          "channel": 102,
+          "id": 113134,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        }
+      ],
+      "data_storage_sample": null
+    },
+    {
+      "file": "RE1-Electrical.rvt",
+      "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+      "current_records": 30798,
+      "current_records_outside_route": 3,
+      "smallest_records": [
+        {
+          "class_name": "SerializedDummy",
+          "channel": 103,
+          "id": 2167,
+          "bytes": 2,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "AnalyticalToPhysicalRelationManager",
+          "channel": 102,
+          "id": 510199,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "Dwg2dExportUserSettingsData",
+          "channel": 102,
+          "id": 13,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ExternalParamLock",
+          "channel": 102,
+          "id": 1413,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "GraphicsCache",
+          "channel": 102,
+          "id": 510141,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ListConceptualSurfaceTypes",
+          "channel": 102,
+          "id": 67,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "RvtLinkInstanceAppearanceParentElem",
+          "channel": 102,
+          "id": 1629,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SFCostUserDataElem",
+          "channel": 102,
+          "id": 1932,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "STEPExportSettings",
+          "channel": 102,
+          "id": 511029,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SketchGridAppearanceParentElem",
+          "channel": 102,
+          "id": 1628,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SunAnnotationElem",
+          "channel": 102,
+          "id": 791752,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ZoneScheme",
+          "channel": 102,
+          "id": 1953,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ReactionsUpToDateElem",
+          "channel": 102,
+          "id": 1981,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "StructuralConnectionSettings",
+          "channel": 102,
+          "id": 2238,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "FabricationServiceSettings",
+          "channel": 102,
+          "id": 510328,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        }
+      ],
+      "data_storage_sample": null
+    },
+    {
+      "file": "RE1-Mechanical.rvt",
+      "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+      "current_records": 14229,
+      "current_records_outside_route": 0,
+      "smallest_records": [
+        {
+          "class_name": "SerializedDummy",
+          "channel": 103,
+          "id": 2167,
+          "bytes": 2,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "AnalyticalToPhysicalRelationManager",
+          "channel": 102,
+          "id": 442452,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "Dwg2dExportUserSettingsData",
+          "channel": 102,
+          "id": 13,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ExternalParamLock",
+          "channel": 102,
+          "id": 1413,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "GraphicsCache",
+          "channel": 102,
+          "id": 442394,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ListConceptualSurfaceTypes",
+          "channel": 102,
+          "id": 67,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "RvtLinkInstanceAppearanceParentElem",
+          "channel": 102,
+          "id": 1629,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SFCostUserDataElem",
+          "channel": 102,
+          "id": 1932,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "STEPExportSettings",
+          "channel": 102,
+          "id": 443197,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SketchGridAppearanceParentElem",
+          "channel": 102,
+          "id": 1628,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SunAnnotationElem",
+          "channel": 102,
+          "id": 150873,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ZoneScheme",
+          "channel": 102,
+          "id": 1953,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ReactionsUpToDateElem",
+          "channel": 102,
+          "id": 1981,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "StructuralConnectionSettings",
+          "channel": 102,
+          "id": 2238,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "FabricationServiceSettings",
+          "channel": 102,
+          "id": 442550,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        }
+      ],
+      "data_storage_sample": null
+    },
+    {
+      "file": "RE1-Plumbing.rvt",
+      "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+      "current_records": 14481,
+      "current_records_outside_route": 0,
+      "smallest_records": [
+        {
+          "class_name": "SerializedDummy",
+          "channel": 103,
+          "id": 2167,
+          "bytes": 2,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "AnalyticalToPhysicalRelationManager",
+          "channel": 102,
+          "id": 449453,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "Dwg2dExportUserSettingsData",
+          "channel": 102,
+          "id": 13,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ExternalParamLock",
+          "channel": 102,
+          "id": 1413,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "GraphicsCache",
+          "channel": 102,
+          "id": 449395,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ListConceptualSurfaceTypes",
+          "channel": 102,
+          "id": 67,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "RvtLinkInstanceAppearanceParentElem",
+          "channel": 102,
+          "id": 1629,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SFCostUserDataElem",
+          "channel": 102,
+          "id": 1932,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "STEPExportSettings",
+          "channel": 102,
+          "id": 450204,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SketchGridAppearanceParentElem",
+          "channel": 102,
+          "id": 1628,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "SunAnnotationElem",
+          "channel": 102,
+          "id": 106144,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ZoneScheme",
+          "channel": 102,
+          "id": 1953,
+          "bytes": 105,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "ReactionsUpToDateElem",
+          "channel": 102,
+          "id": 1981,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "StructuralConnectionSettings",
+          "channel": 102,
+          "id": 2238,
+          "bytes": 106,
+          "status": "complete_bounded_graph"
+        },
+        {
+          "class_name": "FabricationServiceSettings",
+          "channel": 102,
+          "id": 449557,
+          "bytes": 109,
+          "status": "complete_bounded_graph"
+        }
+      ],
+      "data_storage_sample": null
+    }
+  ]
+}

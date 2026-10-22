@@ -4,8 +4,9 @@ Current save experiment: [candidate v5](../research/rvt/results/save-candidate.m
 passes independent room routing/full-graph checks, seven Contents/text metadata
 relationships, and all observed binary BasicFileInfo identity copies. An explicit
 persistent-namespace IFC adapter removes generated-ID churn. This remains an
-unsigned experimental edit of an existing element; full save semantics and native
-acceptance are unresolved. [Screenshots and evidence](rvt-evidence/README.md).
+unsigned experimental edit. A separate [registered DataStorage creation candidate](../research/rvt/results/create-candidate.md)
+adds one bounded non-geometric element and preserves all existing identities.
+Full save semantics, arbitrary geometry creation and native acceptance remain unresolved. [Screenshots and evidence](rvt-evidence/README.md).
 
 Goal: the processing worker delivers a native `.rvt` alongside IFC, written by our own code (no Revit install, no
 Autodesk cloud). Status as of 2026-10-22: **complete page framing solved and implemented**. All 917 full pages

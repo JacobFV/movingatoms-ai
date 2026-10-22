@@ -1,0 +1,14 @@
+{
+  "file": "create-candidate-registered.rvt",
+  "sha256": "99dcd64c7d5a881e4cdbc8bf202b05f9abaf85e06917967c0cb5ddab19de5936",
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "relationships": {
+    "contents_revisions_equal_latest_increment": true,
+    "wrapper_formats_revision_equals_latest_increment": true,
+    "document_increments_equal_increment_entries": true,
+    "document_increments_equal_latest_major_version": true,
+    "reload_latest_version_equals_document_increments": true,
+    "reload_latest_guid_equals_document_guid": true,
+    "document_guid_equals_newest_history_episode": true
+  }
+}

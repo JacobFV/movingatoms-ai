@@ -1,0 +1,29 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "new_element_id": 133210,
+  "new_episode": 39,
+  "new_partition": "Partitions/66",
+  "new_episode_guid": "562a3df0-6022-5912-aeb1-33b6a875b44e",
+  "new_storage_guid": "7cd7ab1f-7535-5cd6-a873-a3af417c6e4d",
+  "new_name": "Clean-room DataStorage \u0394",
+  "source_rows": 26425,
+  "new_rows": 26426,
+  "prior_table_rows_byte_identical": true,
+  "channel_body_bytes": {
+    "101": 119,
+    "102": 265,
+    "103": 2
+  },
+  "signature": "empty unsigned fields",
+  "root_registration": "unresolved; Global/Latest unchanged",
+  "hypotheses": [
+    "Existing ES schemas suffice for these bounded object fields.",
+    "IdentifierSource.m_last+1 and new creation episode allocate the identity.",
+    "One new ordinal partition stores one object; old partitions are retained.",
+    "Changed stream revisions increment while unchanged ancillary revisions remain.",
+    "Root registration is NOT established; this is an unregistered append control."
+  ],
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false,
+  "production_native_export": false
+}

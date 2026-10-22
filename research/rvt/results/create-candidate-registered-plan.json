@@ -1,0 +1,95 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "new_element_id": 133210,
+  "new_episode": 39,
+  "new_partition": "Partitions/66",
+  "new_episode_guid": "562a3df0-6022-5912-aeb1-33b6a875b44e",
+  "new_storage_guid": "7cd7ab1f-7535-5cd6-a873-a3af417c6e4d",
+  "new_name": "Clean-room DataStorage \u0394",
+  "source_rows": 26425,
+  "new_rows": 26426,
+  "prior_table_rows_byte_identical": true,
+  "channel_body_bytes": {
+    "101": 119,
+    "102": 265,
+    "103": 2
+  },
+  "signature": "empty unsigned fields",
+  "root_registration": "three measured lists updated",
+  "registration_changes": [
+    {
+      "class_name": "ElemsSetWithCellsTracking",
+      "field": "m_elemIdSetMap",
+      "item_index": 0,
+      "ids_before": [
+        1434,
+        80437,
+        133180,
+        133181,
+        133182
+      ],
+      "ids_after": [
+        1434,
+        80437,
+        133180,
+        133181,
+        133182,
+        133210
+      ],
+      "span_before": {
+        "class_tag": 1466,
+        "end": 99607,
+        "name": "m_idSet",
+        "start": 99563
+      }
+    },
+    {
+      "class_name": "EStorageTracking",
+      "field": "m_trackingItems",
+      "item_index": 1,
+      "schema_guid": "8de41042-7da6-4d45-afb4-f8e5ba779816",
+      "ids_before": [
+        80437
+      ],
+      "ids_after": [
+        80437,
+        133210
+      ],
+      "span_before": {
+        "class_tag": 1338,
+        "end": 999891,
+        "name": "m_elemIdSet",
+        "start": 999879
+      }
+    },
+    {
+      "class_name": "EStorageTracking",
+      "field": "m_trackingItems",
+      "item_index": 4,
+      "schema_guid": "4147c867-cdfe-42fd-808f-3bbafda73da5",
+      "ids_before": [
+        80437
+      ],
+      "ids_after": [
+        80437,
+        133210
+      ],
+      "span_before": {
+        "class_tag": 1338,
+        "end": 999975,
+        "name": "m_elemIdSet",
+        "start": 999963
+      }
+    }
+  ],
+  "hypotheses": [
+    "Existing ES schemas suffice for these bounded object fields.",
+    "IdentifierSource.m_last+1 and new creation episode allocate the identity.",
+    "One new ordinal partition stores one object; old partitions are retained.",
+    "Changed stream revisions increment while unchanged ancillary revisions remain.",
+    "Only the three measured registration lists are updated when requested; complete incoming registration requirements remain unproven."
+  ],
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false,
+  "production_native_export": false
+}

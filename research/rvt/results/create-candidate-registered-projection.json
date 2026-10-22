@@ -1,0 +1,53 @@
+{
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "exports": [
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "all_native_ids_preserved": true,
+      "default_namespace": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+      "explicit_namespace": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+      "native_element_ids": 970,
+      "native_storey_ids": 15,
+      "native_type_ids": 14
+    },
+    {
+      "file": "create-candidate-registered.rvt",
+      "sha256": "99dcd64c7d5a881e4cdbc8bf202b05f9abaf85e06917967c0cb5ddab19de5936",
+      "all_native_ids_preserved": true,
+      "default_namespace": "562a3df0-6022-5912-aeb1-33b6a875b44e",
+      "explicit_namespace": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+      "native_element_ids": 970,
+      "native_storey_ids": 15,
+      "native_type_ids": 14
+    }
+  ],
+  "default_projection": {
+    "line_count": 59359,
+    "identifier_changes": {
+      "IFCPROJECT": 1,
+      "IFCSITE": 1,
+      "IFCBUILDING": 1,
+      "IFCRELAGGREGATES": 13,
+      "IFCPROPERTYSET": 6466,
+      "IFCRELDEFINESBYPROPERTIES": 6068,
+      "IFCRELASSOCIATESMATERIAL": 412,
+      "IFCOPENINGELEMENT": 201,
+      "IFCRELVOIDSELEMENT": 201,
+      "IFCRELFILLSELEMENT": 138,
+      "IFCRELDEFINESBYTYPE": 315,
+      "IFCRELCONTAINEDINSPATIALSTRUCTURE": 13
+    },
+    "identifier_change_count": 13830,
+    "other_changes": []
+  },
+  "stable_namespace_projection": {
+    "line_count": 59359,
+    "identifier_changes": {},
+    "identifier_change_count": 0,
+    "other_changes": []
+  },
+  "stable_namespace_ifc_byte_identical": true,
+  "limitation": "DataStorage has no IFC geometry projection; unchanged IFC alone does not validate new RVT element registration.",
+  "autodesk_acceptance": "not_tested"
+}

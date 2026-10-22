@@ -381,3 +381,38 @@ A synthetic noncanonical Contents transaction confirms whole-file byte identity
 and an empty changed-stream list. Seventeen Rust tests pass and Clippy is clean.
 Changed logical payloads still use the documented encoder policy; untouched
 streams and no-op payload patches retain their original bytes.
+
+## 2026-10-22 — Fresh DataStorage bodies and registered creation candidate
+
+Implemented a bounded embedded-schema encoder for a new non-geometric
+DataStorage element. It reconstructs the observed source bodies exactly from
+named fields, then encodes a fresh name, numeric ID and storage GUID. Unknown
+schema descriptors, duplicate tags/names, inherited field ambiguity, unresolved
+references and inheritance cycles are rejected. File-local ES dependencies are
+validated and remain explicit; this is not an arbitrary-family/geometry writer.
+
+Fresh element 133210 has complete independently decoded channels 101/102/103,
+with 119/265/2 bytes, 2/5/1 objects and 1/4/0 edges. Its outgoing element references
+are self or unset. History episode 39 and a new ElemTable row preserve all
+26,425 existing native identities. [Encoder evidence](../research/rvt/results/new-element.md).
+
+A whole-file control initially omitted incoming registrations. The independent
+Global/Latest audit found three required observed lists: one cell-tracking set
+and two ES-schema sets. The registered candidate updates these lists. Its full
+252-object/251-edge Global/Latest graph differs only by those three ID insertions
+(+24 bytes); source/candidate graph evidence is bound by inflated stream hash.
+
+Registered candidate SHA-256:
+`99dcd64c7d5a881e4cdbc8bf202b05f9abaf85e06917967c0cb5ddab19de5936`.
+It preserves every original partition, passes all seven metadata relationships
+and all known BasicFileInfo binary/text copies, and independently routes the new
+ID through all three channels. The unregistered control is retained separately.
+The default exporter changes 13,830 generated IDs; a persistent namespace yields
+byte-identical IFC, expected for a non-geometric DataStorage addition.
+[Reproduction and limits](../research/rvt/results/create-candidate.md).
+
+Nine focused encoder/registration tests and two creation-generator guard tests
+pass. Native acceptance, all possible incoming registrations, unsigned partitions
+and complete save-policy semantics remain unresolved. The next revision-policy
+audit has already found unchanged stream bytes with advanced revision counters;
+these candidates preserve the earlier policy as an explicit research control.
