@@ -1,0 +1,8 @@
+{
+  "all_properties_equal_expected": true,
+  "document_guid": "5f197eb7-5987-5937-94d9-99f5208ac16c",
+  "document_increments": 86,
+  "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "candidate_sha256": "8d93244c54b86eba31482cfb4930c827f1f0716d9b516234a0c3aa3e36c1f47f",
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056"
+}

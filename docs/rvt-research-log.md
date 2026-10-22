@@ -290,3 +290,23 @@ only decodes the text block. See [codec evidence](../research/rvt/results/basic-
 
 The following model identity GUID is zero in all six originals; it supplies no
 useful persistent export namespace. Unknown BasicFileInfo bytes remain preserved.
+
+## 2026-10-22 — Fifth save candidate synchronizes binary metadata
+
+Candidate v5 uses the structural BasicFileInfo codec. All four counter copies
+and four GUID copies agree with the appended increment and newest episode;
+reversing the identity edit restores the original BasicFileInfo bytes exactly.
+The independent BasicFileInfo reader confirms no other text-property changes.
+The new identity verifier binds every preserved control to its actual file hash
+and pinned reader revision, retaining failures for earlier controls.
+
+The current-record route, complete room graph, native identity and all 154
+legacy projected elements pass the same comparisons as before. Default IFC
+export still shows 860 generated-ID changes; the explicit stable-namespace
+adapter removes them all, leaving the intended finish and provenance changes.
+Candidate SHA-256:
+`8d93244c54b86eba31482cfb4930c827f1f0716d9b516234a0c3aa3e36c1f47f`.
+
+[Reproduction and remaining hypotheses](../research/rvt/results/save-candidate.md).
+No evidence here settles unsigned nonempty partitions, ancillary revision policy,
+user-modification dates or Revit acceptance.

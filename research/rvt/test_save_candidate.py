@@ -41,6 +41,8 @@ class SaveCandidateTests(unittest.TestCase):
         with self.assertRaises(ValueError): append_increment(fields,703,101)
         with self.assertRaisesRegex(ValueError, 'acknowledgment'):
             make(Path('/absent'),Path('/absent-output'))
+        with self.assertRaisesRegex(ValueError, 'both BasicFileInfo'):
+            make(Path('/absent'),Path('/absent-output'), acknowledge_hypotheses=True, synchronize_binary_identity=True)
 
     def test_global_prefix_suffix_survive_resizing(self):
         old = bytes(range(8))+gzip.compress(b'old',mtime=0)+b'\0\x99'

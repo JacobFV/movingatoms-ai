@@ -72,8 +72,10 @@ def append_increment(fields, episode, timestamp):
     return result
 
 
-def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, contents_evidence=None, update_basic_file_info=False, update_document_guid=False):
+def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, contents_evidence=None, update_basic_file_info=False, update_document_guid=False, synchronize_binary_identity=False):
     if not acknowledge_hypotheses: raise ValueError('explicit hypothesis acknowledgment required')
+    if synchronize_binary_identity and not (update_basic_file_info and update_document_guid):
+        raise ValueError('binary identity synchronization requires both BasicFileInfo synchronization flags')
     if update_document_guid and not update_basic_file_info:
         raise ValueError('document GUID update requires BasicFileInfo synchronization')
     if update_basic_file_info and contents_evidence is None:
@@ -136,8 +138,13 @@ def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, co
                         'new_payload_file':'Contents.bin'})
     if update_basic_file_info:
         from save_identity import patch_basic_file_info
-        basic = patch_basic_file_info(original_basic, contents_evidence, len(revised['m_increments']),
-                                      document_guid=str(GUID) if update_document_guid else None)
+        if synchronize_binary_identity:
+            import basic_file_info_codec
+            basic = basic_file_info_codec.encode(basic_file_info_codec.decode(original_basic),
+                increments=len(revised['m_increments']), document_guid=str(GUID))
+        else:
+            basic = patch_basic_file_info(original_basic, contents_evidence, len(revised['m_increments']),
+                                          document_guid=str(GUID) if update_document_guid else None)
         (dest/'BasicFileInfo.bin').write_bytes(basic)
         patches.append({'stream':'BasicFileInfo', 'expected_stored_sha256':hashlib.sha256(original_basic).hexdigest(),
                         'new_payload_file':'BasicFileInfo.bin'})
@@ -152,7 +159,8 @@ def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, co
             'contents_revisions_synchronized': contents_evidence is not None,
             'basic_file_info_counts_synchronized': update_basic_file_info,
             'basic_file_info_guid_synchronized': update_document_guid,
-            'hypotheses': HYPOTHESES + (['BasicFileInfo fixed-width text counters update to86 and its revision increments; binary fields remain opaque.'] if update_basic_file_info else []), 'complete_save_transaction': False,
+            'basic_file_info_binary_duplicates_synchronized': synchronize_binary_identity,
+            'hypotheses': HYPOTHESES + (['BasicFileInfo counters update to86 and its revision increments; structural binary duplicates synchronize only with explicit flag; other binary fields remain opaque.'] if update_basic_file_info else []), 'complete_save_transaction': False,
             'autodesk_acceptance': 'not_tested', 'production_native_export': False}
 
 if __name__ == '__main__':
@@ -162,8 +170,9 @@ if __name__ == '__main__':
     p.add_argument('--timestamp', type=int, default=1792627200)
     p.add_argument('--update-basic-file-info', action='store_true')
     p.add_argument('--update-document-guid', action='store_true')
+    p.add_argument('--synchronize-binary-identity', action='store_true')
     p.add_argument('--contents-evidence', type=Path, help='independent schema evidence for synchronized Contents variant')
     a = p.parse_args(); print(json.dumps(make(a.source, a.dest,
         acknowledge_hypotheses=a.acknowledge_hypotheses, timestamp=a.timestamp,
         contents_evidence=json.loads(a.contents_evidence.read_bytes()) if a.contents_evidence else None,
-        update_basic_file_info=a.update_basic_file_info, update_document_guid=a.update_document_guid), indent=2))
+        update_basic_file_info=a.update_basic_file_info, update_document_guid=a.update_document_guid, synchronize_binary_identity=a.synchronize_binary_identity), indent=2))

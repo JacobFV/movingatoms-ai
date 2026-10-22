@@ -1,0 +1,74 @@
+{
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "exports": [
+    {
+      "file": "RE1-Architecture.rvt",
+      "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "all_native_ids_preserved": true,
+      "default_namespace": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+      "explicit_namespace": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+      "native_element_ids": 85,
+      "native_storey_ids": 2,
+      "native_type_ids": 43
+    },
+    {
+      "file": "save-candidate-v5.rvt",
+      "sha256": "8d93244c54b86eba31482cfb4930c827f1f0716d9b516234a0c3aa3e36c1f47f",
+      "all_native_ids_preserved": true,
+      "default_namespace": "5f197eb7-5987-5937-94d9-99f5208ac16c",
+      "explicit_namespace": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+      "native_element_ids": 85,
+      "native_storey_ids": 2,
+      "native_type_ids": 43
+    }
+  ],
+  "default_projection": {
+    "line_count": 4431,
+    "identifier_changes": {
+      "IFCPROJECT": 1,
+      "IFCSITE": 1,
+      "IFCBUILDING": 1,
+      "IFCRELAGGREGATES": 5,
+      "IFCPROPERTYSET": 426,
+      "IFCRELDEFINESBYPROPERTIES": 316,
+      "IFCRELASSOCIATESMATERIAL": 23,
+      "IFCOPENINGELEMENT": 4,
+      "IFCRELVOIDSELEMENT": 5,
+      "IFCRELFILLSELEMENT": 4,
+      "IFCRELDEFINESBYTYPE": 66,
+      "IFCRELCONTAINEDINSPATIALSTRUCTURE": 8
+    },
+    "identifier_change_count": 860,
+    "other_changes": [
+      {
+        "before": "#1676=IFCPROPERTYSINGLEVALUE('SourceStream',$,IFCTEXT('Partitions/80'),$);",
+        "after": "#1676=IFCPROPERTYSINGLEVALUE('SourceStream',$,IFCTEXT('Partitions/85'),$);"
+      },
+      {
+        "before": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Wood'),$);",
+        "after": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Polished concrete'),$);"
+      }
+    ]
+  },
+  "explicit_stable_namespace_projection": {
+    "line_count": 4431,
+    "identifier_changes": {},
+    "identifier_change_count": 0,
+    "other_changes": [
+      {
+        "before": "#1676=IFCPROPERTYSINGLEVALUE('SourceStream',$,IFCTEXT('Partitions/80'),$);",
+        "after": "#1676=IFCPROPERTYSINGLEVALUE('SourceStream',$,IFCTEXT('Partitions/85'),$);"
+      },
+      {
+        "before": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Wood'),$);",
+        "after": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Polished concrete'),$);"
+      }
+    ]
+  },
+  "source_export_byte_identical": true,
+  "native_ids_preserved": true,
+  "rust_adapter_sha256": "821546156f6d8bbcd5f017b9dbb9bc27a57dc13f37908ac63a2050ec4e920d75",
+  "policy": "Caller supplies and persistently owns the original export namespace; no automatic document identity inference.",
+  "autodesk_acceptance": "not_tested",
+  "complete_native_export": false
+}

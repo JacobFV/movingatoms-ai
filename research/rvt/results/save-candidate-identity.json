@@ -11,7 +11,10 @@
       "reload_latest_version_equals_document_increments": true,
       "reload_latest_guid_equals_document_guid": true,
       "document_guid_equals_newest_history_episode": false
-    }
+    },
+    "binary_and_text_copies_consistent": true,
+    "binary_and_text_match_new_increment_and_episode": false,
+    "all_opaque_basic_file_info_bytes_preserved": true
   },
   {
     "file": "save-candidate-v2.rvt",
@@ -25,7 +28,10 @@
       "reload_latest_version_equals_document_increments": true,
       "reload_latest_guid_equals_document_guid": true,
       "document_guid_equals_newest_history_episode": false
-    }
+    },
+    "binary_and_text_copies_consistent": true,
+    "binary_and_text_match_new_increment_and_episode": false,
+    "all_opaque_basic_file_info_bytes_preserved": true
   },
   {
     "file": "save-candidate-v3.rvt",
@@ -39,7 +45,10 @@
       "reload_latest_version_equals_document_increments": true,
       "reload_latest_guid_equals_document_guid": true,
       "document_guid_equals_newest_history_episode": false
-    }
+    },
+    "binary_and_text_copies_consistent": false,
+    "binary_and_text_match_new_increment_and_episode": false,
+    "binary_identity_failure": "binary counter disagrees"
   },
   {
     "file": "save-candidate-v4.rvt",
@@ -53,6 +62,26 @@
       "reload_latest_version_equals_document_increments": true,
       "reload_latest_guid_equals_document_guid": true,
       "document_guid_equals_newest_history_episode": true
-    }
+    },
+    "binary_and_text_copies_consistent": false,
+    "binary_and_text_match_new_increment_and_episode": false,
+    "binary_identity_failure": "unsupported binary GUID pair framing"
+  },
+  {
+    "file": "save-candidate-v5.rvt",
+    "sha256": "8d93244c54b86eba31482cfb4930c827f1f0716d9b516234a0c3aa3e36c1f47f",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "binary_and_text_copies_consistent": true,
+    "binary_and_text_match_new_increment_and_episode": true,
+    "all_opaque_basic_file_info_bytes_preserved": true
   }
 ]
