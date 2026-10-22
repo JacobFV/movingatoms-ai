@@ -1,6 +1,6 @@
 # Fresh DataStorage append and registration experiment
 
-`create-candidate-registered.rvt` contains a newly encoded DataStorage with ID
+`create-candidate-ancillary.rvt` contains a newly encoded DataStorage with ID
 133210, episode 39 and new physical partition 66. Its name is
 `Clean-room DataStorage Δ`; its fresh Extensible Storage identity GUID is
 `7cd7ab1f-7535-5cd6-a873-a3af417c6e4d`. It uses two existing file-local ES schemas.
@@ -31,12 +31,17 @@ the new save GUID. Our explicit persistent namespace adapter yields a byte-ident
 IFC export. DataStorage has no IFC geometry projection; unchanged IFC is therefore
 an expected projection result, not proof of complete native save validity.
 
+The ancillary follow-up additionally advances contentDocuments, transmissionData
+and projectXMLInfo revision counters and updates two ProjectInformation timestamps.
+Exactly three streams differ from the preserved registered control: ProjectInformation,
+Contents and DocumentIncrementTable. See `ancillary-candidates.md`.
+
 ## Limits
 
 Signatures are explicitly empty in the new partition. Their acceptance is unknown.
 The three measured registrations are consistent, but all possible incoming
 registration requirements and complete Revit save behavior are not proven.
-Unchanged ancillary revision fields and old-record retention remain save-policy
+Retained preview revision/content and old-record retention remain save-policy
 hypotheses. No Autodesk acceptance result exists. This experiment does not create
 walls, families, geometry, or a production-ready native project from scratch.
 

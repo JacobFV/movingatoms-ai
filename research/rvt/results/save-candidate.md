@@ -1,6 +1,6 @@
 # Append-save research candidate and omission controls
 
-The latest candidate, `save-candidate-v5.rvt`, appends a changed existing room in
+The latest candidate, `save-candidate-v6.rvt`, appends a changed existing room in
 `Partitions/85`, adds History episode 703, updates the room's last modification
 episode, and appends an increment to both increment arrays. Contents revisions
 match the latest increment; BasicFileInfo counters report 86 and its two document
@@ -21,7 +21,13 @@ Our explicit persistent-namespace adapter eliminates all 860 generated-ID change
 without touching native IDs or RVT bytes; see `ifc-identity-audit-v5.json`.
 Room native identity and its derived IFC GUID remain unchanged.
 
-## Why five candidates are retained
+The v6 follow-up also advances the three measured regular ancillary counters
+and updates only the two ProjectInformation XML timestamps. Relative to v5, only
+ProjectInformation, Contents and DocumentIncrementTable change; all other streams
+are byte-identical. Timestamp offsets follow the source file as an explicit policy.
+See `ancillary-candidates.md` for evidence and reproduction.
+
+## Why earlier candidates are retained
 
 Parallel schema audits caught omissions the element reader did not catch. Every
 candidate is preserved with its own hash; none was overwritten. The identity
@@ -55,10 +61,9 @@ This is **not a complete or Autodesk-validated save algorithm**. Generation
 requires `--acknowledge-hypotheses`. Old record retention, unchanged user-modification
 episode, unsigned partition acceptance, and complete save semantics are not
 established. The new partition has empty signature fields, explicitly experimental.
-Ancillary contentDocuments/transmissionData/projectXMLInfo revisions remain
-unchanged although historical saves in this corpus advanced them. Advancing
-numbers without understanding associated stream changes would not establish
-correctness. Other BasicFileInfo binary fields remain opaque and byte-preserved.
+The ancillary counters now advance following measured historical transitions,
+including cases where payload bytes remained identical. Preview bytes and its
+revision remain unchanged; complete preview/save policy is still unresolved. Other BasicFileInfo binary fields remain opaque and byte-preserved.
 No new element class or geometry has been created.
 
 ## Reproduction

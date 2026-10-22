@@ -1,0 +1,42 @@
+{
+  "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "new_stream": "Partitions/85",
+  "element": 348738,
+  "new_episode": 703,
+  "episode_guid": "5f197eb7-5987-5937-94d9-99f5208ac16c",
+  "timestamp": 1792627200,
+  "table_changed_offsets": [
+    12
+  ],
+  "new_partition_records_per_sequence": 1,
+  "signature_fields": "empty",
+  "contents_revisions_synchronized": true,
+  "basic_file_info_counts_synchronized": true,
+  "basic_file_info_guid_synchronized": true,
+  "basic_file_info_binary_duplicates_synchronized": true,
+  "regular_ancillary_revision_policy_applied": true,
+  "project_information_timestamp": {
+    "source_sha256": "50581d9343973537e57b66fa7c21874fcab926e3fe65e58b3070fbf1c065a28c",
+    "source_timestamp_offset_seconds": 36000,
+    "source_increment_timestamp": 1767925169,
+    "new_increment_timestamp": 1792627200,
+    "timestamp_offset_policy": "preserve_observed_source_offset_hypothesis",
+    "changed_xml_text_fields": 2,
+    "all_other_xml_bytes_preserved": true,
+    "output_sha256": "e09916e04a7db245e46511b52faf57c9388f22e67c48b719cf9705181e8e9506",
+    "zip_metadata_preserved_except_crc_sizes_directory_offset": true
+  },
+  "hypotheses": [
+    "New append increment ordinal 85 maps to Partitions/85.",
+    "A modification sets only ElemTable m_history.m_lastModificationDate to new episode 703; creation fields and m_lastUserModificationDate remain unchanged (unverified assumption).",
+    "Old physical records and increment counts remain as historical storage; no compaction is performed.",
+    "New increment stores one project element and no content groups; both identical increment arrays append the same row.",
+    "Changed global/history/elemTable/partitionTable/incrementTable revisions advance prior values by one.",
+    "Ancillary revisions follow the explicitly selected variant; preview/formats/partAtom remain unchanged; complete save state is not reconstructed.",
+    "Empty signature fields are an experimental unsigned encoding, with unknown Revit acceptance.",
+    "BasicFileInfo counters update to86 and its revision increments; structural binary duplicates synchronize only with explicit flag; other binary fields remain opaque."
+  ],
+  "complete_save_transaction": false,
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false
+}

@@ -1,0 +1,289 @@
+{
+  "snapshots": [
+    {
+      "file": "core-history-bd8c0792.rvt",
+      "sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+      "zip_entries": 1,
+      "zip_entry_name_sha256": "feaf6675feca65caaf28bd63e25181dcc9fa1d1e8d9618945bcbc2bf20c917cf",
+      "xml_bytes": 912,
+      "xml_sha256": "18ed4851feb59b2ccdc218711ea15cf4d01c9fd25f0038040baafa6882abc1dc",
+      "root_tag": "{http://www.w3.org/2005/Atom}entry",
+      "updated_element_tags": [
+        "{http://www.w3.org/2005/Atom}updated",
+        "{urn:schemas-autodesk-com:partatom}updated"
+      ],
+      "updated_fields_equal": true,
+      "increment_timestamp_msb": 0,
+      "increment_timestamp_minus_xml_updated_seconds": [
+        14400,
+        14400
+      ],
+      "xml_with_updated_values_normalized_sha256": "4279a005ecfe32285700bfb8e1da4b07d3ec2eb2451f7f5c15b5d3dd1925b80f",
+      "leaf_count": 18,
+      "identity_value_matches": []
+    },
+    {
+      "file": "core-history-21b61e69.rvt",
+      "sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+      "zip_entries": 1,
+      "zip_entry_name_sha256": "60f0579073fad31a940c5471bf3885e553092c276c607dfc50f230b2393be8ef",
+      "xml_bytes": 912,
+      "xml_sha256": "3a86bd2c7b37148a03ada20b6ec56d087bdbb73303bc8ab7552457f3791ec606",
+      "root_tag": "{http://www.w3.org/2005/Atom}entry",
+      "updated_element_tags": [
+        "{http://www.w3.org/2005/Atom}updated",
+        "{urn:schemas-autodesk-com:partatom}updated"
+      ],
+      "updated_fields_equal": true,
+      "increment_timestamp_msb": 0,
+      "increment_timestamp_minus_xml_updated_seconds": [
+        14400,
+        14400
+      ],
+      "xml_with_updated_values_normalized_sha256": "4279a005ecfe32285700bfb8e1da4b07d3ec2eb2451f7f5c15b5d3dd1925b80f",
+      "leaf_count": 18,
+      "identity_value_matches": []
+    },
+    {
+      "file": "core-history-5859762b.rvt",
+      "sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+      "zip_entries": 1,
+      "zip_entry_name_sha256": "bd1b30f9582a1819dd306966b68ec7ffa5c871c0bdad6b260a437004c0613ef6",
+      "xml_bytes": 912,
+      "xml_sha256": "97afcf1484343c01151f09aa57b50a5c3e44b397b442424da238d9c8f3b6a753",
+      "root_tag": "{http://www.w3.org/2005/Atom}entry",
+      "updated_element_tags": [
+        "{http://www.w3.org/2005/Atom}updated",
+        "{urn:schemas-autodesk-com:partatom}updated"
+      ],
+      "updated_fields_equal": true,
+      "increment_timestamp_msb": 0,
+      "increment_timestamp_minus_xml_updated_seconds": [
+        14400,
+        14400
+      ],
+      "xml_with_updated_values_normalized_sha256": "4279a005ecfe32285700bfb8e1da4b07d3ec2eb2451f7f5c15b5d3dd1925b80f",
+      "leaf_count": 18,
+      "identity_value_matches": []
+    },
+    {
+      "file": "core-history-ede6e635.rvt",
+      "sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+      "zip_entries": 1,
+      "zip_entry_name_sha256": "b730aa04c15499b13d1db572f93c55355b93d5df1cdc6db38922a095c4a5eae0",
+      "xml_bytes": 912,
+      "xml_sha256": "918768184795851c786d6761ec04d25c69c6959d8542c68b1f4231448c05003a",
+      "root_tag": "{http://www.w3.org/2005/Atom}entry",
+      "updated_element_tags": [
+        "{http://www.w3.org/2005/Atom}updated",
+        "{urn:schemas-autodesk-com:partatom}updated"
+      ],
+      "updated_fields_equal": true,
+      "increment_timestamp_msb": 0,
+      "increment_timestamp_minus_xml_updated_seconds": [
+        14400,
+        14400
+      ],
+      "xml_with_updated_values_normalized_sha256": "4279a005ecfe32285700bfb8e1da4b07d3ec2eb2451f7f5c15b5d3dd1925b80f",
+      "leaf_count": 18,
+      "identity_value_matches": []
+    },
+    {
+      "file": "core-history-8946a8ca.rvt",
+      "sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+      "zip_entries": 1,
+      "zip_entry_name_sha256": "4b3e390d596e12af306fd6234e650a1c9638646758fd5315c6736f88f8470bc7",
+      "xml_bytes": 912,
+      "xml_sha256": "96b4b67c07a9dea9b2943a96b841ccd7a3839f79d34bedf2bea4f4fe60a96d18",
+      "root_tag": "{http://www.w3.org/2005/Atom}entry",
+      "updated_element_tags": [
+        "{http://www.w3.org/2005/Atom}updated",
+        "{urn:schemas-autodesk-com:partatom}updated"
+      ],
+      "updated_fields_equal": true,
+      "increment_timestamp_msb": 0,
+      "increment_timestamp_minus_xml_updated_seconds": [
+        14400,
+        14400
+      ],
+      "xml_with_updated_values_normalized_sha256": "4279a005ecfe32285700bfb8e1da4b07d3ec2eb2451f7f5c15b5d3dd1925b80f",
+      "leaf_count": 18,
+      "identity_value_matches": []
+    },
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "zip_entries": 1,
+      "zip_entry_name_sha256": "2fea9daa2fa5df104914e27c02fede033f6ef20149d75163d183e4405e5a63db",
+      "xml_bytes": 912,
+      "xml_sha256": "fa2cfe98de758bb06ba8543a831adebb7d74794f5b2190ab05f59c40ddbd6475",
+      "root_tag": "{http://www.w3.org/2005/Atom}entry",
+      "updated_element_tags": [
+        "{http://www.w3.org/2005/Atom}updated",
+        "{urn:schemas-autodesk-com:partatom}updated"
+      ],
+      "updated_fields_equal": true,
+      "increment_timestamp_msb": 0,
+      "increment_timestamp_minus_xml_updated_seconds": [
+        14400,
+        14400
+      ],
+      "xml_with_updated_values_normalized_sha256": "4279a005ecfe32285700bfb8e1da4b07d3ec2eb2451f7f5c15b5d3dd1925b80f",
+      "leaf_count": 18,
+      "identity_value_matches": []
+    }
+  ],
+  "pairs": [
+    {
+      "older": "core-history-bd8c0792.rvt",
+      "newer": "core-history-21b61e69.rvt",
+      "changed_values": [
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}link[0]/{urn:schemas-autodesk-com:partatom}design-file[0]/{urn:schemas-autodesk-com:partatom}updated[0]/#text",
+          "old": {
+            "sha256": "1b22fb7d8a5765bb591aea0d0bd99f15dc1bf6a8f16f5d2bd7fc32a77dd0b50c",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "03e06ab3280713cc7e88367dad4edf4fbb7edd3bb97c4cbdb8d7afd45d3cc65c",
+            "characters": 20
+          }
+        },
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}updated[0]/#text",
+          "old": {
+            "sha256": "1b22fb7d8a5765bb591aea0d0bd99f15dc1bf6a8f16f5d2bd7fc32a77dd0b50c",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "03e06ab3280713cc7e88367dad4edf4fbb7edd3bb97c4cbdb8d7afd45d3cc65c",
+            "characters": 20
+          }
+        }
+      ],
+      "xml_equal_after_updated_value_normalization": true
+    },
+    {
+      "older": "core-history-21b61e69.rvt",
+      "newer": "core-history-5859762b.rvt",
+      "changed_values": [
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}link[0]/{urn:schemas-autodesk-com:partatom}design-file[0]/{urn:schemas-autodesk-com:partatom}updated[0]/#text",
+          "old": {
+            "sha256": "03e06ab3280713cc7e88367dad4edf4fbb7edd3bb97c4cbdb8d7afd45d3cc65c",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "131ccaa2f42e35b5aae77657f71c0f5b4c31c0df62e783191037109003da17ba",
+            "characters": 20
+          }
+        },
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}updated[0]/#text",
+          "old": {
+            "sha256": "03e06ab3280713cc7e88367dad4edf4fbb7edd3bb97c4cbdb8d7afd45d3cc65c",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "131ccaa2f42e35b5aae77657f71c0f5b4c31c0df62e783191037109003da17ba",
+            "characters": 20
+          }
+        }
+      ],
+      "xml_equal_after_updated_value_normalization": true
+    },
+    {
+      "older": "core-history-5859762b.rvt",
+      "newer": "core-history-ede6e635.rvt",
+      "changed_values": [
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}link[0]/{urn:schemas-autodesk-com:partatom}design-file[0]/{urn:schemas-autodesk-com:partatom}updated[0]/#text",
+          "old": {
+            "sha256": "131ccaa2f42e35b5aae77657f71c0f5b4c31c0df62e783191037109003da17ba",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "3b3f7cc2130f588b59ea227c2d907d54db4174cea9996ad9e5d0b62cb22eb416",
+            "characters": 20
+          }
+        },
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}updated[0]/#text",
+          "old": {
+            "sha256": "131ccaa2f42e35b5aae77657f71c0f5b4c31c0df62e783191037109003da17ba",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "3b3f7cc2130f588b59ea227c2d907d54db4174cea9996ad9e5d0b62cb22eb416",
+            "characters": 20
+          }
+        }
+      ],
+      "xml_equal_after_updated_value_normalization": true
+    },
+    {
+      "older": "core-history-ede6e635.rvt",
+      "newer": "core-history-8946a8ca.rvt",
+      "changed_values": [
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}link[0]/{urn:schemas-autodesk-com:partatom}design-file[0]/{urn:schemas-autodesk-com:partatom}updated[0]/#text",
+          "old": {
+            "sha256": "3b3f7cc2130f588b59ea227c2d907d54db4174cea9996ad9e5d0b62cb22eb416",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "6e8538d8fb3da6dd189c2f16295ac19b6284412f8d950bc7fa543e164f431d03",
+            "characters": 20
+          }
+        },
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}updated[0]/#text",
+          "old": {
+            "sha256": "3b3f7cc2130f588b59ea227c2d907d54db4174cea9996ad9e5d0b62cb22eb416",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "6e8538d8fb3da6dd189c2f16295ac19b6284412f8d950bc7fa543e164f431d03",
+            "characters": 20
+          }
+        }
+      ],
+      "xml_equal_after_updated_value_normalization": true
+    },
+    {
+      "older": "core-history-8946a8ca.rvt",
+      "newer": "core2024.rvt",
+      "changed_values": [
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}link[0]/{urn:schemas-autodesk-com:partatom}design-file[0]/{urn:schemas-autodesk-com:partatom}updated[0]/#text",
+          "old": {
+            "sha256": "6e8538d8fb3da6dd189c2f16295ac19b6284412f8d950bc7fa543e164f431d03",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "70c5e7cae8d265e19d731215b70299306173987320c5a831059780cc895cfd26",
+            "characters": 20
+          }
+        },
+        {
+          "path": "{http://www.w3.org/2005/Atom}entry[0]/{http://www.w3.org/2005/Atom}updated[0]/#text",
+          "old": {
+            "sha256": "6e8538d8fb3da6dd189c2f16295ac19b6284412f8d950bc7fa543e164f431d03",
+            "characters": 20
+          },
+          "new": {
+            "sha256": "70c5e7cae8d265e19d731215b70299306173987320c5a831059780cc895cfd26",
+            "characters": 20
+          }
+        }
+      ],
+      "xml_equal_after_updated_value_normalization": true
+    }
+  ],
+  "limitations": [
+    "The 14400-second offset is observed in this lineage; timezone and clock semantics are unproven.",
+    "No general rule for generating timestamps follows from this single document lineage.",
+    "ZIP entry names and private XML values are represented by hashes only.",
+    "ProjectXMLInfo revision-to-ProjectInformation stream binding remains an inference."
+  ]
+}

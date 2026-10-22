@@ -1,7 +1,7 @@
 import unittest
 from copy import deepcopy
 from pathlib import Path
-from save_candidate import append_increment, make, repack_global, unpack_global
+from save_candidate import append_increment, make, repack_global, unpack_global, advance_regular_ancillary_revisions
 from save_increments import REVISIONS
 import gzip
 
@@ -28,6 +28,19 @@ class SaveCandidateTests(unittest.TestCase):
         self.assertEqual(row['m_contentDocumentsStreamRevision'], 200)
         self.assertEqual(row['m_totalElements'], 1)
         self.assertEqual(row['m_greatest'], {'m_id': 703})
+
+    def test_regular_ancillary_policy_preserves_revision_baselines(self):
+        before = self.fields()
+        revised = append_increment(before, 703, 101)
+        changed = advance_regular_ancillary_revisions(before, revised)
+        self.assertEqual(changed['m_increments'][-1]['m_contentDocumentsStreamRevision'], 201)
+        self.assertEqual(changed['m_increments'][-1]['m_transmissionDataStreamRevision'], 201)
+        self.assertEqual(changed['m_increments'][-1]['m_projectXMLInfoStreamRevision'], 201)
+        self.assertEqual(changed['m_increments'][-1]['m_previewStreamRevision'], 200)
+        self.assertEqual(changed['m_increments'][-1]['m_formatsStreamRevision'], 200)
+        self.assertEqual(revised['m_increments'][-1]['m_contentDocumentsStreamRevision'], 200)
+        self.assertEqual(changed['m_increments'], changed['m_localIncrements'])
+        with self.assertRaises(ValueError): advance_regular_ancillary_revisions(before, before)
 
     def test_rejects_unestablished_input_states(self):
         for episode, timestamp in [(702,101), (704,101), (703,100), (703,2**32)]:

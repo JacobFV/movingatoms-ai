@@ -1,0 +1,52 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "control_sha256": "99dcd64c7d5a881e4cdbc8bf202b05f9abaf85e06917967c0cb5ddab19de5936",
+  "candidate_sha256": "0319c0cb12ab71f91527b787b2d0530fd4e5e56909804a8cda227fd3530e9c20",
+  "changed_streams_from_control": [
+    "Contents",
+    "Global/DocumentIncrementTable",
+    "ProjectInformation"
+  ],
+  "all_other_control_streams_byte_identical": true,
+  "latest_revisions": {
+    "preview": 65,
+    "global": 66,
+    "history": 66,
+    "elemTable": 66,
+    "contentDocuments": 66,
+    "partitionTable": 66,
+    "incrementTable": 66,
+    "formats": 10,
+    "basicFileInfo": 66,
+    "transmissionData": 66,
+    "partAtom": -1,
+    "projectXMLInfo": 66
+  },
+  "independent_identity_relationships": {
+    "contents_revisions_equal_latest_increment": true,
+    "wrapper_formats_revision_equals_latest_increment": true,
+    "document_increments_equal_increment_entries": true,
+    "document_increments_equal_latest_major_version": true,
+    "reload_latest_version_equals_document_increments": true,
+    "reload_latest_guid_equals_document_guid": true,
+    "document_guid_equals_newest_history_episode": true
+  },
+  "project_information": {
+    "source_sha256": "7f891909bab76bf8237dd49b3cd59bbc5701bbf15652c61e806d0ebc8e349c68",
+    "source_timestamp_offset_seconds": 14400,
+    "source_increment_timestamp": 1694105435,
+    "new_increment_timestamp": 1792627200,
+    "timestamp_offset_policy": "preserve_observed_source_offset_hypothesis",
+    "changed_xml_text_fields": 2,
+    "all_other_xml_bytes_preserved": true,
+    "output_sha256": "84bcd91caa3df29763a588a960c64137139ea21e78a4b2dfcd77dae028b5b435",
+    "zip_metadata_preserved_except_crc_sizes_directory_offset": true
+  },
+  "preview_revision_and_bytes_retained": true,
+  "limitations": [
+    "Preview retained without regeneration; no equal-payload historical preview pair establishes this choice.",
+    "Historical regular-counter convention is evidence, not a complete native save specification.",
+    "Signatures and Autodesk acceptance remain unresolved."
+  ],
+  "complete_save_transaction": false
+}

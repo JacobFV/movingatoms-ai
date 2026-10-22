@@ -444,3 +444,34 @@ The capture generator now reads each JSON source once and uses those same bytes
 for its hash, rendering inputs and archived copy, preventing a concurrent source
 update from mixing versions inside one capture. All existing archived source
 copies were checked against their recorded source hashes; every check passes.
+
+## 2026-10-22 — Ancillary revision and ProjectInformation corrections
+
+Real historical pairs disprove the old unchanged-bytes/unchanged-revision
+assumption: ContentDocuments and PartitionTable remain byte-identical across
+all five transitions while revisions advance; TransmissionData does so in one
+pair. An explicit follow-up policy now advances contentDocuments,
+transmissionData and projectXMLInfo while preserving established revision
+offsets. The prior room/creation candidates remain immutable controls.
+
+ProjectInformation's only XML changes across the five historical pairs are two
+`updated` texts. Their relation to the latest increment timestamp has a measured
+source offset: 14,400 seconds for Core/Einhoven, 36,000 for the four RE1 files.
+The guarded ZIP patcher updates only those two texts, CRC/sizes/directory offset,
+preserving all other XML bytes and ZIP metadata. It preserves the observed
+source offset as a hypothesis, not a universal timezone/daylight-saving rule.
+Eleven-file audit and three codec tests pass.
+[Audit](../research/rvt/results/project-information.md).
+
+Room v6 and `create-candidate-ancillary.rvt` independently pass their prior
+native identity/graph/registration checks plus the new metadata checks. Relative
+to their respective preceding controls, exactly three streams change:
+ProjectInformation, Contents and DocumentIncrementTable. All other streams are
+byte-identical, including native records and BasicFileInfo. Preview regeneration
+and signature acceptance remain open. [Candidate evidence](../research/rvt/results/ancillary-candidates.md).
+
+A separate 11-file actor audit finds no equality rule tying increment m_userName
+to BasicFileInfo Username or Author: Username is empty throughout and Author is
+a distinct constant. No XML author leaf was observed. Reports redact identities
+and paths; two tests cover relationships and redaction.
+[Actor evidence](../research/rvt/results/save-actors.md).

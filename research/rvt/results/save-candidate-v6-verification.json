@@ -1,0 +1,42 @@
+{
+  "candidate_sha256": "3f0c1702c230c46d572a585e7e2b2ff1fc4c69c35384c71d1c06340b72490140",
+  "native_evidence_sha256": "75a345487d924b555615a39a40c49aaaeb59f559932b9f2d22d5245b32494d57",
+  "current_record_before": "Partitions/80",
+  "current_record_after": "Partitions/85",
+  "unique_id_unchanged": true,
+  "derived_ifc_guid_unchanged": true,
+  "full_graph": {
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "complete_objects": 11,
+    "resolved_pointer_edges": 10,
+    "body_growth_bytes": 26,
+    "shifted_pointer_locations": 20,
+    "one_parameter_value_changed": true,
+    "all_other_graph_values_and_pointer_targets_identical": true,
+    "original_bytes_consumed": 2531,
+    "edited_bytes_consumed": 2557,
+    "graph_evidence_sha256": "3b82f94bf8678fef5c1e69580dffdde8ef1171c434dccd4bf8e993e14b442296",
+    "autodesk_acceptance": "not_tested"
+  },
+  "reader_element_count": 154,
+  "reader_only_expected_property_and_source_location_changes": true,
+  "ifc_non_identifier_changes_are_expected_property_and_source_stream": true,
+  "ifc_total_changed_lines": 862,
+  "ifc_identifier_only_changes": {
+    "IFCPROJECT": 1,
+    "IFCSITE": 1,
+    "IFCBUILDING": 1,
+    "IFCRELAGGREGATES": 5,
+    "IFCPROPERTYSET": 426,
+    "IFCRELDEFINESBYPROPERTIES": 316,
+    "IFCRELASSOCIATESMATERIAL": 23,
+    "IFCOPENINGELEMENT": 4,
+    "IFCRELVOIDSELEMENT": 5,
+    "IFCRELFILLSELEMENT": 4,
+    "IFCRELDEFINESBYTYPE": 66,
+    "IFCRELCONTAINEDINSPATIALSTRUCTURE": 8
+  },
+  "ifc_identifiers_stable": false,
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false
+}

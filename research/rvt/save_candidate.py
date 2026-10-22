@@ -30,7 +30,7 @@ HYPOTHESES = [
     'Old physical records and increment counts remain as historical storage; no compaction is performed.',
     'New increment stores one project element and no content groups; both identical increment arrays append the same row.',
     'Changed global/history/elemTable/partitionTable/incrementTable revisions advance prior values by one.',
-    'Other stream revisions and bytes remain unchanged, except the explicit BasicFileInfo synchronization variant; complete save state is not reconstructed.',
+    'Ancillary revisions follow the explicitly selected variant; preview/formats/partAtom remain unchanged; complete save state is not reconstructed.',
     'Empty signature fields are an experimental unsigned encoding, with unknown Revit acceptance.',
 ]
 
@@ -72,8 +72,27 @@ def append_increment(fields, episode, timestamp):
     return result
 
 
-def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, contents_evidence=None, update_basic_file_info=False, update_document_guid=False, synchronize_binary_identity=False):
+
+def advance_regular_ancillary_revisions(previous, revised):
+    """Explicit paired-history policy: advance revision counters despite equal bytes.
+
+    Does not infer preview regeneration or mutate transmission/content payloads.
+    """
+    result = deepcopy(revised)
+    for array in ('m_increments', 'm_localIncrements'):
+        if len(result[array]) != len(previous[array])+1:
+            raise ValueError('requires exactly one appended increment')
+        for name in ('contentDocuments', 'transmissionData', 'projectXMLInfo'):
+            key = f'm_{name}StreamRevision'
+            old = previous[array][-1][key]
+            if old < 0: raise ValueError('unsupported absent ancillary revision')
+            result[array][-1][key] = old+1
+    return result
+
+def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, contents_evidence=None, update_basic_file_info=False, update_document_guid=False, synchronize_binary_identity=False, synchronize_ancillary=False):
     if not acknowledge_hypotheses: raise ValueError('explicit hypothesis acknowledgment required')
+    if synchronize_ancillary and not synchronize_binary_identity:
+        raise ValueError('ancillary synchronization requires complete binary identity synchronization')
     if synchronize_binary_identity and not (update_basic_file_info and update_document_guid):
         raise ValueError('binary identity synchronization requires both BasicFileInfo synchronization flags')
     if update_document_guid and not update_basic_file_info:
@@ -87,6 +106,7 @@ def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, co
         stored = {name: f.openstream(name).read() for name in names}
         original_contents = f.openstream('Contents').read()
         original_basic = f.openstream('BasicFileInfo').read()
+        original_project = f.openstream('ProjectInformation').read() if synchronize_ancillary else None
         partition = partition_decode(unpage(f.openstream(STREAM).read()))
         if f.exists('Partitions/85'): raise ValueError('new partition already exists')
     logical = {n: unpage(b) for n, b in stored.items()}
@@ -111,6 +131,8 @@ def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, co
     if update_basic_file_info:
         for name in ('m_increments', 'm_localIncrements'):
             revised[name][-1]['m_basicFileInfoStreamRevision'] += 1
+    if synchronize_ancillary:
+        revised = advance_regular_ancillary_revisions(fields, revised)
     replacements = {
         names[0]: save_history.encode(save_history.prepend_episode(history, GUID.bytes_le)),
         names[1]: element_table.encode(replace(table, rows=tuple(rows))),
@@ -148,6 +170,14 @@ def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, co
         (dest/'BasicFileInfo.bin').write_bytes(basic)
         patches.append({'stream':'BasicFileInfo', 'expected_stored_sha256':hashlib.sha256(original_basic).hexdigest(),
                         'new_payload_file':'BasicFileInfo.bin'})
+    ancillary_report = None
+    if synchronize_ancillary:
+        from project_information_codec import patch_timestamp
+        project, ancillary_report = patch_timestamp(original_project, hashlib.sha256(original_project).hexdigest(),
+            fields['m_increments'][-1]['m_atimeStamp']['m_lsb'], timestamp)
+        (dest/'ProjectInformation.bin').write_bytes(project)
+        patches.append({'stream':'ProjectInformation','expected_stored_sha256':hashlib.sha256(original_project).hexdigest(),
+                        'new_payload_file':'ProjectInformation.bin'})
     (dest/'partition.bin').write_bytes(partition_encode(new_partition))
     manifest = {'input_sha256': SOURCE_SHA, 'patches': patches, 'creates': [
         {'stream': 'Partitions/85', 'expected_absent': True, 'new_payload_file': 'partition.bin'}]}
@@ -160,6 +190,8 @@ def make(source, dest, *, acknowledge_hypotheses=False, timestamp=1792627200, co
             'basic_file_info_counts_synchronized': update_basic_file_info,
             'basic_file_info_guid_synchronized': update_document_guid,
             'basic_file_info_binary_duplicates_synchronized': synchronize_binary_identity,
+            'regular_ancillary_revision_policy_applied': synchronize_ancillary,
+            'project_information_timestamp': ancillary_report,
             'hypotheses': HYPOTHESES + (['BasicFileInfo counters update to86 and its revision increments; structural binary duplicates synchronize only with explicit flag; other binary fields remain opaque.'] if update_basic_file_info else []), 'complete_save_transaction': False,
             'autodesk_acceptance': 'not_tested', 'production_native_export': False}
 
@@ -171,8 +203,9 @@ if __name__ == '__main__':
     p.add_argument('--update-basic-file-info', action='store_true')
     p.add_argument('--update-document-guid', action='store_true')
     p.add_argument('--synchronize-binary-identity', action='store_true')
+    p.add_argument('--synchronize-ancillary', action='store_true')
     p.add_argument('--contents-evidence', type=Path, help='independent schema evidence for synchronized Contents variant')
     a = p.parse_args(); print(json.dumps(make(a.source, a.dest,
         acknowledge_hypotheses=a.acknowledge_hypotheses, timestamp=a.timestamp,
         contents_evidence=json.loads(a.contents_evidence.read_bytes()) if a.contents_evidence else None,
-        update_basic_file_info=a.update_basic_file_info, update_document_guid=a.update_document_guid, synchronize_binary_identity=a.synchronize_binary_identity), indent=2))
+        update_basic_file_info=a.update_basic_file_info, update_document_guid=a.update_document_guid, synchronize_binary_identity=a.synchronize_binary_identity, synchronize_ancillary=a.synchronize_ancillary), indent=2))
