@@ -98,3 +98,17 @@ The corpus/graph results are recorded experiments copied into this capture.
 
 These are local research evidence pages. They do not depict Revit UI or establish
 native application acceptance.
+
+## Original source preview audit — 2026-10-22
+
+[Manifest](2026-10-22-source-previews/manifest.json) binds eleven exact extracted
+PNG files to their source RVT, stream and image hashes. The contact sheet is an
+actual Chrome screenshot, visually inspected. Its pixels are original source
+thumbnails, not edited-candidate renders or Autodesk acceptance evidence.
+
+![Eleven original embedded source previews](2026-10-22-source-previews/source-previews.png)
+
+Source attribution: [Magnetar dataset MIT license](../../research/rvt/licenses/magnetar-datasets-MIT.txt)
+for Core/Einhoven, [IFC-ECS MIT license](../../research/rvt/licenses/IFC-ECS-MIT.txt)
+for RE1. The preview audit records structure and pixel changes separately from
+save-counter hypotheses.

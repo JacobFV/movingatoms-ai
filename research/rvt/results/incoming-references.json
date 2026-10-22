@@ -1,0 +1,548 @@
+{
+  "file": "core2024.rvt",
+  "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+  "catalog_sha256": "174791e0868d88a03dc903203084af948bb68b0283e3cf4cbc10bb4ba9893269",
+  "graph_limits": {
+    "max_values": 10000000,
+    "max_objects": 500000
+  },
+  "targets": [
+    80437,
+    20826
+  ],
+  "project_elements": 26425,
+  "physical_project_records": 85680,
+  "current_records_selected": 79275,
+  "selection_counts": {
+    "exact_episode_route": 79245,
+    "unique_compaction_history_holder": 30
+  },
+  "embedded_groups_excluded": 46,
+  "unresolved_routes": [],
+  "candidate_records": [
+    {
+      "element": 20826,
+      "channel": 101,
+      "stream": "Partitions/59",
+      "selection": "exact_episode_route",
+      "body_sha256": "163aa678aaefa32c0ead36b984e0a880045ccfc263386763ddf2ee9250815c46",
+      "body_bytes": 233,
+      "raw_target_offsets": {
+        "20826": [
+          160
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "ElementHeader",
+      "objects": 3,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[2](ElementParents).fields.m_deletion[4]",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[2](ElementParents).fields.m_deletion[4].m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 20826,
+      "channel": 102,
+      "stream": "Partitions/59",
+      "selection": "exact_episode_route",
+      "body_sha256": "816072c39ffe4de748103185e6d5bce5b7291f37d9a2551844525414a99128d7",
+      "body_bytes": 2946,
+      "raw_target_offsets": {
+        "20826": [
+          46
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "SWall",
+      "objects": 29,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[0](SWall).fields.m_id",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[0](SWall).fields.m_id.m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 20826,
+      "channel": 103,
+      "stream": "Partitions/59",
+      "selection": "exact_episode_route",
+      "body_sha256": "d78539ad6fa0926c2569e6e65a06d928033d78935c21c46254d9da740234ffc4",
+      "body_bytes": 6884,
+      "raw_target_offsets": {
+        "20826": [
+          10,
+          152
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "GElement",
+      "objects": 74,
+      "typed_element_id_hits": [],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[0](GElement).fields.m_GInfo.m_tag"
+        },
+        {
+          "value": 20826,
+          "path": "objects[0](GElement).fields.m_elementId"
+        }
+      ]
+    },
+    {
+      "element": 20838,
+      "channel": 101,
+      "stream": "Partitions/59",
+      "selection": "exact_episode_route",
+      "body_sha256": "904d8d4e2b481fefb13e70b566c5c309f9612cbde22d49452d7f0f41b95aa3ff",
+      "body_bytes": 225,
+      "raw_target_offsets": {
+        "20826": [
+          152
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "ElementHeader",
+      "objects": 3,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[2](ElementParents).fields.m_deletion[3]",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[2](ElementParents).fields.m_deletion[3].m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 20838,
+      "channel": 102,
+      "stream": "Partitions/59",
+      "selection": "exact_episode_route",
+      "body_sha256": "7e7c882725a400d44c78a434111b210435ba0d930eb6d0c112c1f5e252af16d9",
+      "body_bytes": 2145,
+      "raw_target_offsets": {
+        "20826": [
+          831
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "RoomElem",
+      "objects": 11,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[4](RoomTagPlacement).fields.m_ref1",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[4](RoomTagPlacement).fields.m_ref1.m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 21258,
+      "channel": 101,
+      "stream": "Partitions/65",
+      "selection": "exact_episode_route",
+      "body_sha256": "e4f71d66c539cfbee3fea120b9d94b068e56c2a55e59ee8210daf72e9660a547",
+      "body_bytes": 719,
+      "raw_target_offsets": {
+        "20826": [
+          454
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "ElementHeader",
+      "objects": 2,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[1](ElementParents).fields.m_deletion[47]",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[1](ElementParents).fields.m_deletion[47].m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 21258,
+      "channel": 102,
+      "stream": "Partitions/65",
+      "selection": "exact_episode_route",
+      "body_sha256": "ff06052e97e7dc6f1d4eb3380165ffc11b014b82e6c95e0fb363e37eebff73a5",
+      "body_bytes": 39976,
+      "raw_target_offsets": {
+        "20826": [
+          19020,
+          25124,
+          25268
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "LevelRoomPlan",
+      "objects": 94,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[1](PlanTopology).fields.m_segments[152].m_key.m_item.m_linkInstOrHostId",
+          "type": "ElementId",
+          "class_tag": 20
+        },
+        {
+          "target": 20826,
+          "path": "objects[1](PlanTopology).fields.m_circuits[13].m_sides[2].m_item.m_linkInstOrHostId",
+          "type": "ElementId",
+          "class_tag": 20
+        },
+        {
+          "target": 20826,
+          "path": "objects[1](PlanTopology).fields.m_circuits[14].m_sides[2].m_item.m_linkInstOrHostId",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[1](PlanTopology).fields.m_circuits[13].m_sides[2].m_item.m_linkInstOrHostId.m_id.m_id64"
+        },
+        {
+          "value": 20826,
+          "path": "objects[1](PlanTopology).fields.m_circuits[14].m_sides[2].m_item.m_linkInstOrHostId.m_id.m_id64"
+        },
+        {
+          "value": 20826,
+          "path": "objects[1](PlanTopology).fields.m_segments[152].m_key.m_item.m_linkInstOrHostId.m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 80437,
+      "channel": 101,
+      "stream": "Partitions/46",
+      "selection": "exact_episode_route",
+      "body_sha256": "285ed8a17684148f143a93928f5159c6f495e4bb990759b5aed310eff5579614",
+      "body_bytes": 119,
+      "raw_target_offsets": {
+        "80437": [
+          78
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "ElementHeader",
+      "objects": 2,
+      "typed_element_id_hits": [
+        {
+          "target": 80437,
+          "path": "objects[1](ElementParents).fields.m_deletion[0]",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 80437,
+          "path": "objects[1](ElementParents).fields.m_deletion[0].m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 80437,
+      "channel": 102,
+      "stream": "Partitions/46",
+      "selection": "exact_episode_route",
+      "body_sha256": "f027e7b414dcebc337dbdc23c26ddc34cdafb466017cc5c4aea46bcfde212479",
+      "body_bytes": 217,
+      "raw_target_offsets": {
+        "80437": [
+          40
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "DataStorage",
+      "objects": 5,
+      "typed_element_id_hits": [
+        {
+          "target": 80437,
+          "path": "objects[0](DataStorage).fields.m_id",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 80437,
+          "path": "objects[0](DataStorage).fields.m_id.m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 130286,
+      "channel": 102,
+      "stream": "Partitions/53",
+      "selection": "exact_episode_route",
+      "body_sha256": "bc41b5138ca1cf081fddb5e0aac1651106076c169a85b45e53f558042b1bb5bc",
+      "body_bytes": 15639178,
+      "raw_target_offsets": {
+        "80437": [
+          10008902,
+          10050506
+        ],
+        "20826": [
+          4326075,
+          4326753,
+          4665186
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "DirectShapeType",
+      "objects": 144380,
+      "typed_element_id_hits": [],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 80437,
+          "path": "objects[6](DirectShapeCopyAndTagGStep).fields.m_edgeHistTable[50800].m_edgeHist.m_keys[1]"
+        },
+        {
+          "value": 80437,
+          "path": "objects[6](DirectShapeCopyAndTagGStep).fields.m_edgeHistTable[50800].m_id"
+        },
+        {
+          "value": 20826,
+          "path": "objects[6](DirectShapeCopyAndTagGStep).fields.m_faceHistTable[6575].m_faceHist.m_keys[1]"
+        },
+        {
+          "value": 20826,
+          "path": "objects[6](DirectShapeCopyAndTagGStep).fields.m_faceHistTable[6575].m_id"
+        },
+        {
+          "value": 20826,
+          "path": "objects[909](Geometry).fields.m_pEdges[9].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[4221](Geometry).fields.m_pEdges[4].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20827](Edge).fields.m_prev[1].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20828](Edge).fields.m_next[1].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20830](Edge).fields.m_next[0].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20833](Edge).fields.m_prev[1].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[24385](Face).fields.m_GInfo.m_tag"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80438](Edge).fields.m_prev[1].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80443](Edge).fields.m_prev[0].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80445](Edge).fields.m_next[1].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80874](Edge).fields.m_GInfo.m_tag"
+        },
+        {
+          "value": 80437,
+          "path": "objects[139006](EdgeLoop).fields.m_next.pointer_token"
+        }
+      ]
+    },
+    {
+      "element": 130286,
+      "channel": 103,
+      "stream": "Partitions/53",
+      "selection": "exact_episode_route",
+      "body_sha256": "649f73253ee4c66df16a0820a943d8a146b5d38d39079d18eff83beb5845c16e",
+      "body_bytes": 16514325,
+      "raw_target_offsets": {
+        "80437": [
+          8029279,
+          8070493
+        ],
+        "20826": [
+          2305917,
+          2647515
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "GElement",
+      "objects": 172317,
+      "typed_element_id_hits": [],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[1](GFilter).fields.m_subNodes[3441].offset"
+        },
+        {
+          "value": 20826,
+          "path": "objects[901](Geometry).fields.m_pEdges[7].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[4213](Geometry).fields.m_pEdges[2].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20821](Edge).fields.m_prev[1].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20825](Edge).fields.m_prev[0].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[20827](Edge).fields.m_next[1].pointer_token"
+        },
+        {
+          "value": 20826,
+          "path": "objects[24380](Face).fields.m_GInfo.m_tag"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80434](Edge).fields.m_next[0].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80436](Edge).fields.m_prev[0].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80439](Edge).fields.m_prev[1].pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[80869](Edge).fields.m_GInfo.m_tag"
+        },
+        {
+          "value": 20826,
+          "path": "objects[104643](EdgeLoop).fields.m_next.pointer_token"
+        },
+        {
+          "value": 80437,
+          "path": "objects[164265](EdgeLoop).fields.m_next.pointer_token"
+        }
+      ]
+    },
+    {
+      "element": 132605,
+      "channel": 101,
+      "stream": "Partitions/65",
+      "selection": "exact_episode_route",
+      "body_sha256": "bfb94180038edd426f16a98fc81df4e201920d656694c5528269e643de7b8889",
+      "body_bytes": 7247,
+      "raw_target_offsets": {
+        "20826": [
+          686
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "ElementHeader",
+      "objects": 2,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[1](ElementParents).fields.m_deletion[76]",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[1](ElementParents).fields.m_deletion[76].m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 132605,
+      "channel": 102,
+      "stream": "Partitions/65",
+      "selection": "exact_episode_route",
+      "body_sha256": "bbbc9e265f7f31a92084842a805470b5f93da0f956706c1b077710b1e26ba9fe",
+      "body_bytes": 13055,
+      "raw_target_offsets": {
+        "20826": [
+          1138
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "DBView3d",
+      "objects": 62,
+      "typed_element_id_hits": [
+        {
+          "target": 20826,
+          "path": "objects[3](AdHocOverrides).fields.m_elementMap[46].first",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 20826,
+          "path": "objects[3](AdHocOverrides).fields.m_elementMap[46].first.m_id.m_id64"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only raw signed little-endian 64-bit target IDs are prefiltered; alternate encodings are not covered.",
+    "Only project base groups are included; Global/Latest is audited separately.",
+    "Typed matches are ElementId declarations reached through inline schema fields and graph objects; opaque values and unsupported graphs remain unresolved.",
+    "A saved incoming reference does not by itself prove a new independent element must be added to that relationship."
+  ],
+  "highest_holder_fallback_used": false
+}

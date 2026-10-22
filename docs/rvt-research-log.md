@@ -475,3 +475,27 @@ to BasicFileInfo Username or Author: Username is empty throughout and Author is
 a distinct constant. No XML author leaf was observed. Reports redact identities
 and paths; two tests cover relationships and redaction.
 [Actor evidence](../research/rvt/results/save-actors.md).
+
+## 2026-10-22 — Incoming references and source preview audit
+
+Audited all 79,275 current Core project record channels using exact or explicit
+compaction routes. Thirteen signed64 byte-prefilter matches were fully decoded,
+including two 16 MB geometry bodies requiring a larger bounded value budget.
+No candidate graph remained unresolved. Eight external typed references to the
+source wall occur in room, plan-topology and view-override records; none to the
+source DataStorage occur in this audited record domain. Numeric coincidences
+inside geometry are recorded separately. Existing wall references belong to the
+retained wall, so they must not be blindly copied to a new translated wall.
+[Reference evidence](../research/rvt/results/incoming-references.md).
+
+The eleven-file preview audit verifies embedded PNG CRCs, framing and dimensions.
+Every historical pair changes actual RGBA pixels; it is not only header metadata.
+No tested save GUID or timestamp wrapper relationship was established. The
+40-byte suffix contains raster dimensions/DPI, and raw source PNGs were extracted
+without modification. Two preview tests and two reference traversal tests pass.
+
+Captured and visually inspected `2026-10-22-source-previews/source-previews.png`,
+a local browser contact sheet. The manifest binds exact source thumbnails and
+hashes. These are original licensed source previews, explicitly not renders of
+our edited candidates. Source MIT notices accompany the extracted images through
+the linked license files. Every capture artifact hash was verified.

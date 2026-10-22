@@ -1,0 +1,95 @@
+{
+  "captured_at_utc": "2026-10-22T23:44:45.327130+00:00",
+  "source_commit": "2417bdc3736caa845b594ce550b543a5997f66c4",
+  "working_tree_status": "?? docs/rvt-evidence/2026-10-22-source-previews/\n?? research/rvt/capture_preview_evidence.py\n?? research/rvt/incoming_references.py\n?? research/rvt/incoming_references.rs\n?? research/rvt/preview_audit.py\n?? research/rvt/results/incoming-references.json\n?? research/rvt/results/incoming-references.md\n?? research/rvt/results/preview-audit.json\n?? research/rvt/results/preview-audit.md\n?? research/rvt/results/wall-candidate-plan.json\n?? research/rvt/results/wall-candidate-verification.json\n?? research/rvt/results/wall-candidate-writer.json\n?? research/rvt/results/wall-element-profile.json\n?? research/rvt/results/wall-element-registration.json\n?? research/rvt/results/wall-element.json\n?? research/rvt/test_incoming_references.py\n?? research/rvt/test_preview_audit.py\n?? research/rvt/test_wall_candidate.py\n?? research/rvt/wall_candidate.py\n?? research/rvt/wall_candidate_ifc.py\n?? research/rvt/wall_candidate_probe.rs\n?? research/rvt/wall_candidate_verify.py\n?? research/rvt/wall_element.py\n?? research/rvt/wall_element_experiment.py\n?? research/rvt/wall_element_probe.rs\n?? research/rvt/wall_element_registration.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "source_report_sha256": "599302d44ca864c29929002d29a8131db1e84c93011520aca9d7d818c238b36c",
+  "generator_sha256": "e7cf91f443a4fcbb058e8d2721d0e5f24b58a06e9bd6581fd7f40276392c2e31",
+  "images": [
+    {
+      "file": "core2024.rvt",
+      "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "image": "core2024.png",
+      "image_sha256": "08c7da7de2b2f82aa42a6cb3639eeadf754c0a1508201febdfa7896298faafa0"
+    },
+    {
+      "file": "einhoven.rvt",
+      "source_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+      "image": "einhoven.png",
+      "image_sha256": "7a8263625ab08e73b160c3f2f08f98eb4c04f7f24f46c992a6e17a05734abfb1"
+    },
+    {
+      "file": "RE1-Architecture.rvt",
+      "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "image": "RE1-Architecture.png",
+      "image_sha256": "e22e54799aa8876336d26c8164289a03399568d9020a6cf1995abc10b0a92cf3"
+    },
+    {
+      "file": "RE1-Mechanical.rvt",
+      "source_sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+      "image": "RE1-Mechanical.png",
+      "image_sha256": "c8be32ee0062d058c7decd148c238f9d9b8e293c292d14f725f3084882323e2c"
+    },
+    {
+      "file": "RE1-Plumbing.rvt",
+      "source_sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+      "image": "RE1-Plumbing.png",
+      "image_sha256": "abed6a5133e4266e3179a3ae52626a593002a905cac1ecbd4f95f0dd10d8cba2"
+    },
+    {
+      "file": "RE1-Electrical.rvt",
+      "source_sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+      "image": "RE1-Electrical.png",
+      "image_sha256": "a44c95f724d2d6d8bc73871f36b2a079892dc6c7f60384b5dab8d56c90aa5ff1"
+    },
+    {
+      "file": "core-history-bd8c0792.rvt",
+      "source_sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+      "image": "core-history-bd8c0792.png",
+      "image_sha256": "221fce9d6fa2901f713d2d05d06f05936a67021279eedd71155d91e81f3bf85e"
+    },
+    {
+      "file": "core-history-21b61e69.rvt",
+      "source_sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+      "image": "core-history-21b61e69.png",
+      "image_sha256": "ef293dc7fa75df6826e9cd4706a6525b8686f2d968f910827be03b38df1ccf87"
+    },
+    {
+      "file": "core-history-5859762b.rvt",
+      "source_sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+      "image": "core-history-5859762b.png",
+      "image_sha256": "526154b88b1185ea5b43baa35145d57d1881f27f635b9fdcd8b9a79aff07164b"
+    },
+    {
+      "file": "core-history-ede6e635.rvt",
+      "source_sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+      "image": "core-history-ede6e635.png",
+      "image_sha256": "dee4e5de13798a7d37d9ab2d7e2816a5eafe6fa50cce4f93d8da23a189ab33a8"
+    },
+    {
+      "file": "core-history-8946a8ca.rvt",
+      "source_sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+      "image": "core-history-8946a8ca.png",
+      "image_sha256": "17471611291833d72cbab3015d9db679d45727a744aaaee1473bd170c9ec3a30"
+    }
+  ],
+  "source_thumbnails_only": true,
+  "edited_output_validation": false,
+  "not_autodesk_ui": true,
+  "artifacts": {
+    "RE1-Architecture.png": "e22e54799aa8876336d26c8164289a03399568d9020a6cf1995abc10b0a92cf3",
+    "RE1-Electrical.png": "a44c95f724d2d6d8bc73871f36b2a079892dc6c7f60384b5dab8d56c90aa5ff1",
+    "RE1-Mechanical.png": "c8be32ee0062d058c7decd148c238f9d9b8e293c292d14f725f3084882323e2c",
+    "RE1-Plumbing.png": "abed6a5133e4266e3179a3ae52626a593002a905cac1ecbd4f95f0dd10d8cba2",
+    "core-history-21b61e69.png": "ef293dc7fa75df6826e9cd4706a6525b8686f2d968f910827be03b38df1ccf87",
+    "core-history-5859762b.png": "526154b88b1185ea5b43baa35145d57d1881f27f635b9fdcd8b9a79aff07164b",
+    "core-history-8946a8ca.png": "17471611291833d72cbab3015d9db679d45727a744aaaee1473bd170c9ec3a30",
+    "core-history-bd8c0792.png": "221fce9d6fa2901f713d2d05d06f05936a67021279eedd71155d91e81f3bf85e",
+    "core-history-ede6e635.png": "dee4e5de13798a7d37d9ab2d7e2816a5eafe6fa50cce4f93d8da23a189ab33a8",
+    "core2024.png": "08c7da7de2b2f82aa42a6cb3639eeadf754c0a1508201febdfa7896298faafa0",
+    "einhoven.png": "7a8263625ab08e73b160c3f2f08f98eb4c04f7f24f46c992a6e17a05734abfb1",
+    "preview-audit.json": "599302d44ca864c29929002d29a8131db1e84c93011520aca9d7d818c238b36c",
+    "source-previews.html": "ac6ac96a047f02abf7ba9c0bbc3c62d6d935a25d4f21df781c08383f6f2b7eee",
+    "source-previews.png": "f468b8732736739466f76ccac7e7a420fde9cd401c7c14968da49632d31ddb8f"
+  }
+}

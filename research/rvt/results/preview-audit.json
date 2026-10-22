@@ -1,0 +1,1162 @@
+{
+  "fixtures": [
+    {
+      "stored_bytes": 9886,
+      "stream_sha256": "f98e19f1f0fc9a91d96d15e4b4a569b2dc6fc37366e9c47fac3967ebf72d5530",
+      "image_offset": 302,
+      "image_length_word_offset": 298,
+      "image_bytes": 9544,
+      "image_sha256": "08c7da7de2b2f82aa42a6cb3639eeadf754c0a1508201febdfa7896298faafa0",
+      "prefix_bytes": 298,
+      "prefix_sha256": "b82acf96c005b4cf67f5341f14173629817386ac3461c6d14f02f0d321205ca2",
+      "suffix_offset": 9846,
+      "suffix_bytes": 40,
+      "suffix_sha256": "0fd6120a8eb4d247f6b462589313484b0e8bd8b9b93df9168bcd19dbc296ea0d",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 171,
+        "m_dpiX": 196,
+        "m_dpiY": 210,
+        "m_widthInFeet": 224,
+        "m_heightInFeet": 245,
+        "m_width": 267,
+        "m_height": 282
+      },
+      "tail_fields": {
+        "m_dpiX": 72.0,
+        "m_dpiY": 72.0,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "sRGB",
+          "bytes": 1,
+          "data_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        },
+        {
+          "type": "gAMA",
+          "bytes": 4,
+          "data_sha256": "96256bc24f55fcd0b110db9a423c70063b27ea9e62c16789674d212fffa56f27"
+        },
+        {
+          "type": "cHRM",
+          "bytes": 32,
+          "data_sha256": "b287d3e5cf693bc123ec26ad76af3029f572d4b39b4e32979a81f10786a7d047"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 9414,
+          "data_sha256": "e8d82daba3140526004ad1a826d78ff74a8021289b4492703c68eb2b57ca57f6"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "srgb": 0,
+        "gamma": 0.45455
+      },
+      "rgba_pixel_sha256": "4113db134744e1c6c86ede98098140416b952f0d62ac0920df161e8eeb4e704f",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "core2024.rvt",
+      "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "preview_stream_revision": 65,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 57,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "core2024.png"
+    },
+    {
+      "stored_bytes": 1274,
+      "stream_sha256": "2f1239345c60ece6b062ec2604b0f883b3f4fc7de4ca52ed08f18d8f6ffddf13",
+      "image_offset": 302,
+      "image_length_word_offset": 298,
+      "image_bytes": 932,
+      "image_sha256": "7a8263625ab08e73b160c3f2f08f98eb4c04f7f24f46c992a6e17a05734abfb1",
+      "prefix_bytes": 298,
+      "prefix_sha256": "6a206decde9a78e59c725dfa38f151e64ea9c2414df5dcdc7477e6f816320bdd",
+      "suffix_offset": 1234,
+      "suffix_bytes": 40,
+      "suffix_sha256": "522a9de225b3ea418a72da134d922a98c8e721f90259eb1c7c4986ab99854754",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 171,
+        "m_dpiX": 196,
+        "m_dpiY": 210,
+        "m_widthInFeet": 224,
+        "m_heightInFeet": 245,
+        "m_width": 267,
+        "m_height": 282
+      },
+      "tail_fields": {
+        "m_dpiX": 143.9926,
+        "m_dpiY": 143.9926,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "0e72e404033c941f94f3d669c46503780c21ccf4eb0404bfaccc2f26a2c0e7eb"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 854,
+          "data_sha256": "0fb2fd3dee7b5b85f2a2a0cd11888bf231c7c2cd11b9bee9fb8819cf66c37f7a"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "dpi": [
+          143.9672,
+          143.9672
+        ]
+      },
+      "rgba_pixel_sha256": "3f0750860165a9895192ca9cdee057ad36d478eb66e5d5b59f283fe5a3078ba7",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "einhoven.rvt",
+      "source_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+      "preview_stream_revision": 6,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "history_episode_count.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "history_episode_count.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 106,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 163,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 202,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 216,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 237,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 259,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "increment_count.u32le",
+          "offset": 263,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_previewStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_previewStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_globalStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_globalStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_historyStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_historyStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_elemTableStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_elemTableStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_contentDocumentsStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_contentDocumentsStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_partitionTableStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_partitionTableStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_incrementTableStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_incrementTableStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_basicFileInfoStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_basicFileInfoStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_transmissionDataStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_transmissionDataStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_projectXMLInfoStreamRevision.u32le",
+          "offset": 192,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_projectXMLInfoStreamRevision.u32le",
+          "offset": 206,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "einhoven.png"
+    },
+    {
+      "stored_bytes": 1178,
+      "stream_sha256": "099f4af3af35f5c803f13b8075c3aa6d01f149c20210fd015ac6a41d1d4d1c94",
+      "image_offset": 235,
+      "image_length_word_offset": 231,
+      "image_bytes": 903,
+      "image_sha256": "e22e54799aa8876336d26c8164289a03399568d9020a6cf1995abc10b0a92cf3",
+      "prefix_bytes": 231,
+      "prefix_sha256": "863531b81107be7bbf9c3aea3a2e310bf69a75bd04b2ec7a80bf6a1f17e148a6",
+      "suffix_offset": 1138,
+      "suffix_bytes": 40,
+      "suffix_sha256": "d584c02ee7f832f775f5bba44fc8440ecbedfaf76d829b0a748f4d035df67492",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 104,
+        "m_dpiX": 129,
+        "m_dpiY": 143,
+        "m_widthInFeet": 157,
+        "m_heightInFeet": 178,
+        "m_width": 200,
+        "m_height": 215
+      },
+      "tail_fields": {
+        "m_dpiX": 95.9866,
+        "m_dpiY": 95.9866,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "sRGB",
+          "bytes": 1,
+          "data_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        },
+        {
+          "type": "gAMA",
+          "bytes": 4,
+          "data_sha256": "96256bc24f55fcd0b110db9a423c70063b27ea9e62c16789674d212fffa56f27"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "753316627f07a9a024ff1ac8da9bc414140ce3c4a9b38b1bf2314366721c7362"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 796,
+          "data_sha256": "46e0c9bae2aa4e8be31ad6e33cabe3be024c7885dc0c8329378188159271ba07"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "srgb": 0,
+        "gamma": 0.45455,
+        "dpi": [
+          95.9866,
+          95.9866
+        ]
+      },
+      "rgba_pixel_sha256": "3cb9555b5f37aa22403ec6207a762b188f3ebb83cb788d312ee28bf28517229e",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "RE1-Architecture.rvt",
+      "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "preview_stream_revision": 284,
+      "known_value_byte_matches": [],
+      "extracted_filename": "RE1-Architecture.png"
+    },
+    {
+      "stored_bytes": 1196,
+      "stream_sha256": "c307a305c9860040498f62a7526ce3fe6b02d548579c9944794213a8fcb39cf3",
+      "image_offset": 235,
+      "image_length_word_offset": 231,
+      "image_bytes": 921,
+      "image_sha256": "c8be32ee0062d058c7decd148c238f9d9b8e293c292d14f725f3084882323e2c",
+      "prefix_bytes": 231,
+      "prefix_sha256": "863531b81107be7bbf9c3aea3a2e310bf69a75bd04b2ec7a80bf6a1f17e148a6",
+      "suffix_offset": 1156,
+      "suffix_bytes": 40,
+      "suffix_sha256": "d584c02ee7f832f775f5bba44fc8440ecbedfaf76d829b0a748f4d035df67492",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 104,
+        "m_dpiX": 129,
+        "m_dpiY": 143,
+        "m_widthInFeet": 157,
+        "m_heightInFeet": 178,
+        "m_width": 200,
+        "m_height": 215
+      },
+      "tail_fields": {
+        "m_dpiX": 95.9866,
+        "m_dpiY": 95.9866,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "sRGB",
+          "bytes": 1,
+          "data_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        },
+        {
+          "type": "gAMA",
+          "bytes": 4,
+          "data_sha256": "96256bc24f55fcd0b110db9a423c70063b27ea9e62c16789674d212fffa56f27"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "753316627f07a9a024ff1ac8da9bc414140ce3c4a9b38b1bf2314366721c7362"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 814,
+          "data_sha256": "2fe93601e8ecdd6e5bd9b14e8d7fcaef4997936c125150401f8769d7a6aa0e7a"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "srgb": 0,
+        "gamma": 0.45455,
+        "dpi": [
+          95.9866,
+          95.9866
+        ]
+      },
+      "rgba_pixel_sha256": "4312fc1e2d7918b3c867aefdcf916e5c9c49897492404e3f5a4c37e115220657",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "RE1-Mechanical.rvt",
+      "source_sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+      "preview_stream_revision": 156,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 207,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 223,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "RE1-Mechanical.png"
+    },
+    {
+      "stored_bytes": 1316,
+      "stream_sha256": "06d9cbc935df3ee66ae2ceed77b7607e0eab2ff6c1b333685e64b0a39d828fba",
+      "image_offset": 235,
+      "image_length_word_offset": 231,
+      "image_bytes": 1041,
+      "image_sha256": "abed6a5133e4266e3179a3ae52626a593002a905cac1ecbd4f95f0dd10d8cba2",
+      "prefix_bytes": 231,
+      "prefix_sha256": "863531b81107be7bbf9c3aea3a2e310bf69a75bd04b2ec7a80bf6a1f17e148a6",
+      "suffix_offset": 1276,
+      "suffix_bytes": 40,
+      "suffix_sha256": "d584c02ee7f832f775f5bba44fc8440ecbedfaf76d829b0a748f4d035df67492",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 104,
+        "m_dpiX": 129,
+        "m_dpiY": 143,
+        "m_widthInFeet": 157,
+        "m_heightInFeet": 178,
+        "m_width": 200,
+        "m_height": 215
+      },
+      "tail_fields": {
+        "m_dpiX": 95.9866,
+        "m_dpiY": 95.9866,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "sRGB",
+          "bytes": 1,
+          "data_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        },
+        {
+          "type": "gAMA",
+          "bytes": 4,
+          "data_sha256": "96256bc24f55fcd0b110db9a423c70063b27ea9e62c16789674d212fffa56f27"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "753316627f07a9a024ff1ac8da9bc414140ce3c4a9b38b1bf2314366721c7362"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 934,
+          "data_sha256": "2bd2fad923ee08df80921ade9ff4eda81da572b00978a46370d2249be7374d69"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "srgb": 0,
+        "gamma": 0.45455,
+        "dpi": [
+          95.9866,
+          95.9866
+        ]
+      },
+      "rgba_pixel_sha256": "417c5edcc5d96f34f8fdacca9cf5dd4f61cb562db29eaa5358a5496cbfebb0ee",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "RE1-Plumbing.rvt",
+      "source_sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+      "preview_stream_revision": 137,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 207,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 223,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "RE1-Plumbing.png"
+    },
+    {
+      "stored_bytes": 1320,
+      "stream_sha256": "25b1f1d7514ee0e8d8c993dbae79ffaf23df7ed1da92b56105279f6ab31bdb92",
+      "image_offset": 235,
+      "image_length_word_offset": 231,
+      "image_bytes": 1045,
+      "image_sha256": "a44c95f724d2d6d8bc73871f36b2a079892dc6c7f60384b5dab8d56c90aa5ff1",
+      "prefix_bytes": 231,
+      "prefix_sha256": "863531b81107be7bbf9c3aea3a2e310bf69a75bd04b2ec7a80bf6a1f17e148a6",
+      "suffix_offset": 1280,
+      "suffix_bytes": 40,
+      "suffix_sha256": "d584c02ee7f832f775f5bba44fc8440ecbedfaf76d829b0a748f4d035df67492",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 104,
+        "m_dpiX": 129,
+        "m_dpiY": 143,
+        "m_widthInFeet": 157,
+        "m_heightInFeet": 178,
+        "m_width": 200,
+        "m_height": 215
+      },
+      "tail_fields": {
+        "m_dpiX": 95.9866,
+        "m_dpiY": 95.9866,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "sRGB",
+          "bytes": 1,
+          "data_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        },
+        {
+          "type": "gAMA",
+          "bytes": 4,
+          "data_sha256": "96256bc24f55fcd0b110db9a423c70063b27ea9e62c16789674d212fffa56f27"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "753316627f07a9a024ff1ac8da9bc414140ce3c4a9b38b1bf2314366721c7362"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 938,
+          "data_sha256": "11066de02f61280918c725e7028afb961f0656b4011a2633d63e104a7550fe38"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "srgb": 0,
+        "gamma": 0.45455,
+        "dpi": [
+          95.9866,
+          95.9866
+        ]
+      },
+      "rgba_pixel_sha256": "d5262d7c5751cb4a6c70c3adb9e60af210268d6dc49d39b308fcbc27eef0b1a0",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "RE1-Electrical.rvt",
+      "source_sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+      "preview_stream_revision": 194,
+      "known_value_byte_matches": [],
+      "extracted_filename": "RE1-Electrical.png"
+    },
+    {
+      "stored_bytes": 3358,
+      "stream_sha256": "f22ef32517657f1fdad68c90ef652c7c8264d0cdb6259c993a969fe0d167d650",
+      "image_offset": 386,
+      "image_length_word_offset": 382,
+      "image_bytes": 2932,
+      "image_sha256": "221fce9d6fa2901f713d2d05d06f05936a67021279eedd71155d91e81f3bf85e",
+      "prefix_bytes": 382,
+      "prefix_sha256": "f5a2307f08da579e19877bb391f439081f4d6679398edbc5af0bd8d9ea0893e4",
+      "suffix_offset": 3318,
+      "suffix_bytes": 40,
+      "suffix_sha256": "0fd6120a8eb4d247f6b462589313484b0e8bd8b9b93df9168bcd19dbc296ea0d",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 255,
+        "m_dpiX": 280,
+        "m_dpiY": 294,
+        "m_widthInFeet": 308,
+        "m_heightInFeet": 329,
+        "m_width": 351,
+        "m_height": 366
+      },
+      "tail_fields": {
+        "m_dpiX": 72.0,
+        "m_dpiY": 72.0,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "e12fceb19829f8cacf3548e2048a0b467cdb41965b24105f0210295931a4cfc5"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 2854,
+          "data_sha256": "c0ea40d4aa64a17e78fb6a291677644e633c3d7fac72464fdc32ca8beb71368e"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "dpi": [
+          71.9836,
+          71.9836
+        ]
+      },
+      "rgba_pixel_sha256": "134058c5d291b08a9b4e0d9c2548393f5b509113df7f6f077d3f257e964d74a1",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "core-history-bd8c0792.rvt",
+      "source_sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+      "preview_stream_revision": 47,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 141,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "core-history-bd8c0792.png"
+    },
+    {
+      "stored_bytes": 1395,
+      "stream_sha256": "a553ec247be528dafe8e2c754bf061d92aa6f041f1b634a6690e021250418f58",
+      "image_offset": 386,
+      "image_length_word_offset": 382,
+      "image_bytes": 969,
+      "image_sha256": "ef293dc7fa75df6826e9cd4706a6525b8686f2d968f910827be03b38df1ccf87",
+      "prefix_bytes": 382,
+      "prefix_sha256": "f5a2307f08da579e19877bb391f439081f4d6679398edbc5af0bd8d9ea0893e4",
+      "suffix_offset": 1355,
+      "suffix_bytes": 40,
+      "suffix_sha256": "0fd6120a8eb4d247f6b462589313484b0e8bd8b9b93df9168bcd19dbc296ea0d",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 255,
+        "m_dpiX": 280,
+        "m_dpiY": 294,
+        "m_widthInFeet": 308,
+        "m_heightInFeet": 329,
+        "m_width": 351,
+        "m_height": 366
+      },
+      "tail_fields": {
+        "m_dpiX": 72.0,
+        "m_dpiY": 72.0,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "e12fceb19829f8cacf3548e2048a0b467cdb41965b24105f0210295931a4cfc5"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 891,
+          "data_sha256": "4f5863987ecbb84c2e8afc1b9fcfe411950ca73464f448893c677388c6e2aa43"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "dpi": [
+          71.9836,
+          71.9836
+        ]
+      },
+      "rgba_pixel_sha256": "be8b6bc09a1ac88002ce2d13fdd9a32fe97b681f4cba478c9d32fc00f5d450b9",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "core-history-21b61e69.rvt",
+      "source_sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+      "preview_stream_revision": 50,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "history_episode_count.u32le",
+          "offset": 156,
+          "bytes": 4
+        },
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 141,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "core-history-21b61e69.png"
+    },
+    {
+      "stored_bytes": 3351,
+      "stream_sha256": "babe81504046383195f0dad2a45197c481ad9846c8d1eb873fa6a6ba752db7f0",
+      "image_offset": 386,
+      "image_length_word_offset": 382,
+      "image_bytes": 2925,
+      "image_sha256": "526154b88b1185ea5b43baa35145d57d1881f27f635b9fdcd8b9a79aff07164b",
+      "prefix_bytes": 382,
+      "prefix_sha256": "f5a2307f08da579e19877bb391f439081f4d6679398edbc5af0bd8d9ea0893e4",
+      "suffix_offset": 3311,
+      "suffix_bytes": 40,
+      "suffix_sha256": "0fd6120a8eb4d247f6b462589313484b0e8bd8b9b93df9168bcd19dbc296ea0d",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 255,
+        "m_dpiX": 280,
+        "m_dpiY": 294,
+        "m_widthInFeet": 308,
+        "m_heightInFeet": 329,
+        "m_width": 351,
+        "m_height": 366
+      },
+      "tail_fields": {
+        "m_dpiX": 72.0,
+        "m_dpiY": 72.0,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "e12fceb19829f8cacf3548e2048a0b467cdb41965b24105f0210295931a4cfc5"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 2847,
+          "data_sha256": "a5750bc1a8e7c7d8604c8b7e83fa7977f1ec0e1faf5cbeea6d0755a7715de539"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "dpi": [
+          71.9836,
+          71.9836
+        ]
+      },
+      "rgba_pixel_sha256": "068e420f919bd9b4136862578cb3f0d0e085addba85b8cac2f4abc462f9850aa",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "core-history-5859762b.rvt",
+      "source_sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+      "preview_stream_revision": 52,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 141,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "core-history-5859762b.png"
+    },
+    {
+      "stored_bytes": 1158,
+      "stream_sha256": "8c4127bc20dce79018c6e6057fcb00ef03e66171146adbc74ab3db8720e632bd",
+      "image_offset": 386,
+      "image_length_word_offset": 382,
+      "image_bytes": 732,
+      "image_sha256": "dee4e5de13798a7d37d9ab2d7e2816a5eafe6fa50cce4f93d8da23a189ab33a8",
+      "prefix_bytes": 382,
+      "prefix_sha256": "f5a2307f08da579e19877bb391f439081f4d6679398edbc5af0bd8d9ea0893e4",
+      "suffix_offset": 1118,
+      "suffix_bytes": 40,
+      "suffix_sha256": "0fd6120a8eb4d247f6b462589313484b0e8bd8b9b93df9168bcd19dbc296ea0d",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 255,
+        "m_dpiX": 280,
+        "m_dpiY": 294,
+        "m_widthInFeet": 308,
+        "m_heightInFeet": 329,
+        "m_width": 351,
+        "m_height": 366
+      },
+      "tail_fields": {
+        "m_dpiX": 72.0,
+        "m_dpiY": 72.0,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "pHYs",
+          "bytes": 9,
+          "data_sha256": "e12fceb19829f8cacf3548e2048a0b467cdb41965b24105f0210295931a4cfc5"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 654,
+          "data_sha256": "2517d7040552564b37fd6e69016fa6178c8a12f3d0fd12d9dff0d20fa0f65717"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "dpi": [
+          71.9836,
+          71.9836
+        ]
+      },
+      "rgba_pixel_sha256": "37fcb964a35184d337abf6cb6d7ab38a9e401b7224961a1409bbaf61a835b2ac",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "core-history-ede6e635.rvt",
+      "source_sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+      "preview_stream_revision": 58,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 141,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "core-history-ede6e635.png"
+    },
+    {
+      "stored_bytes": 9827,
+      "stream_sha256": "71ab8648218c4989a9a6fa7132e1d0c76658ecb87c47c0fa314d146bcb7ccb62",
+      "image_offset": 386,
+      "image_length_word_offset": 382,
+      "image_bytes": 9401,
+      "image_sha256": "17471611291833d72cbab3015d9db679d45727a744aaaee1473bd170c9ec3a30",
+      "prefix_bytes": 382,
+      "prefix_sha256": "f5a2307f08da579e19877bb391f439081f4d6679398edbc5af0bd8d9ea0893e4",
+      "suffix_offset": 9787,
+      "suffix_bytes": 40,
+      "suffix_sha256": "0fd6120a8eb4d247f6b462589313484b0e8bd8b9b93df9168bcd19dbc296ea0d",
+      "embedded_field_name_offsets": {
+        "m_compressedImage": 255,
+        "m_dpiX": 280,
+        "m_dpiY": 294,
+        "m_widthInFeet": 308,
+        "m_heightInFeet": 329,
+        "m_width": 351,
+        "m_height": 366
+      },
+      "tail_fields": {
+        "m_dpiX": 72.0,
+        "m_dpiY": 72.0,
+        "m_widthInFeet": 0.0,
+        "m_heightInFeet": 0.0,
+        "m_width": 128,
+        "m_height": 128
+      },
+      "png_chunks": [
+        {
+          "type": "IHDR",
+          "bytes": 13,
+          "data_sha256": "4569fb1792c9da04dc6cb5a73015531ee3ca01038cd0ab95322fc6491fb4b960"
+        },
+        {
+          "type": "sRGB",
+          "bytes": 1,
+          "data_sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+        },
+        {
+          "type": "gAMA",
+          "bytes": 4,
+          "data_sha256": "96256bc24f55fcd0b110db9a423c70063b27ea9e62c16789674d212fffa56f27"
+        },
+        {
+          "type": "cHRM",
+          "bytes": 32,
+          "data_sha256": "b287d3e5cf693bc123ec26ad76af3029f572d4b39b4e32979a81f10786a7d047"
+        },
+        {
+          "type": "IDAT",
+          "bytes": 9271,
+          "data_sha256": "05945d45b35688b839a78ad80efb822c7211ac7f57dcecc0ad751f75a56f2222"
+        },
+        {
+          "type": "IEND",
+          "bytes": 0,
+          "data_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "png_crc_verified": true,
+      "decoded_mode": "RGBA",
+      "png_metadata": {
+        "srgb": 0,
+        "gamma": 0.45455
+      },
+      "rgba_pixel_sha256": "2377ef3ddf59a55b4a6e13739b11e71c483fa5481d8d978ca444402b6e97323c",
+      "pixel_dimensions": [
+        128,
+        128
+      ],
+      "file": "core-history-8946a8ca.rvt",
+      "source_sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+      "preview_stream_revision": 60,
+      "known_value_byte_matches": [
+        {
+          "wrapper_part": "prefix",
+          "field": "m_formatsStreamRevision.u32le",
+          "offset": 141,
+          "bytes": 4
+        }
+      ],
+      "extracted_filename": "core-history-8946a8ca.png"
+    }
+  ],
+  "pairs": [
+    {
+      "before": "core-history-bd8c0792.rvt",
+      "after": "core-history-21b61e69.rvt",
+      "preview_revisions": [
+        47,
+        50
+      ],
+      "stream_sha256_equal": false,
+      "prefix_sha256_equal": true,
+      "suffix_sha256_equal": true,
+      "image_sha256_equal": false,
+      "rgba_pixel_sha256_equal": false,
+      "pixel_dimensions_equal": true
+    },
+    {
+      "before": "core-history-21b61e69.rvt",
+      "after": "core-history-5859762b.rvt",
+      "preview_revisions": [
+        50,
+        52
+      ],
+      "stream_sha256_equal": false,
+      "prefix_sha256_equal": true,
+      "suffix_sha256_equal": true,
+      "image_sha256_equal": false,
+      "rgba_pixel_sha256_equal": false,
+      "pixel_dimensions_equal": true
+    },
+    {
+      "before": "core-history-5859762b.rvt",
+      "after": "core-history-ede6e635.rvt",
+      "preview_revisions": [
+        52,
+        58
+      ],
+      "stream_sha256_equal": false,
+      "prefix_sha256_equal": true,
+      "suffix_sha256_equal": true,
+      "image_sha256_equal": false,
+      "rgba_pixel_sha256_equal": false,
+      "pixel_dimensions_equal": true
+    },
+    {
+      "before": "core-history-ede6e635.rvt",
+      "after": "core-history-8946a8ca.rvt",
+      "preview_revisions": [
+        58,
+        60
+      ],
+      "stream_sha256_equal": false,
+      "prefix_sha256_equal": true,
+      "suffix_sha256_equal": true,
+      "image_sha256_equal": false,
+      "rgba_pixel_sha256_equal": false,
+      "pixel_dimensions_equal": true
+    },
+    {
+      "before": "core-history-8946a8ca.rvt",
+      "after": "core2024.rvt",
+      "preview_revisions": [
+        60,
+        65
+      ],
+      "stream_sha256_equal": false,
+      "prefix_sha256_equal": false,
+      "suffix_sha256_equal": true,
+      "image_sha256_equal": false,
+      "rgba_pixel_sha256_equal": false,
+      "pixel_dimensions_equal": true
+    }
+  ],
+  "source_preview_pixels_only": true,
+  "known_value_matches_establish_semantics": false,
+  "autodesk_acceptance": false
+}
