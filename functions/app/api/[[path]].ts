@@ -10,10 +10,9 @@ import {
   publicUser,
   sessionCookie,
   sessionFromCookie,
+  passwordSignIn,
   signOut,
-  startCode,
   upsertUser,
-  verifyCode,
   type User,
 } from '../../../src/auth'
 import { addMessage, getMessage, listMessages, setBody } from '../../../src/messages'
@@ -84,17 +83,17 @@ app.get('/auth/session', async (c) => {
   return c.json({ signed_in: true, ...(await accessToken(c.env, s.user, s.sid)), user: publicUser(s.user) })
 })
 
-app.post('/auth/code/start', async (c) => {
+// email + password (no reset or recovery). `mode`: login | register | auto (sign in, or create the account)
+app.post('/auth/password', async (c) => {
   const b = await body(c)
-  return c.json(await startCode(c.env, c.req.raw, b.email))
-})
-
-app.post('/auth/code/verify', async (c) => {
-  const b = await body(c)
-  const r = await verifyCode(c.env, c.req.raw, b.email, b.code, { name: b.name })
+  const r = await passwordSignIn(c.env, c.req.raw, b)
   c.header('Set-Cookie', r.cookie)
   return c.json({ ...(await accessToken(c.env, r.user, r.sid)), user: publicUser(r.user), new_account: r.isNew })
 })
+
+// the emailed-code sign-in is off: there's no email provider (see src/auth.ts startCode/verifyCode to restore it)
+app.post('/auth/code/start', (c) => c.json({ error: 'use_password', message: 'Sign in with your email and password at /app/sign-in.' }, 410))
+app.post('/auth/code/verify', (c) => c.json({ error: 'use_password', message: 'Sign in with your email and password at /app/sign-in.' }, 410))
 
 // Supabase sessions from the old platform can't be carried over: the person signs in again.
 app.post('/auth/session/adopt', (c) => c.json({ error: 'not_supported', message: 'Sign in again.' }, 400))

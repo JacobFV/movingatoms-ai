@@ -418,7 +418,10 @@
   var me = null, authEmail = "";
   async function whoami() {
     if (HANDOFF) {
-      try { me = await (await onboard()).me(); } catch (e) { me = null; }
+      try {
+        var s = await fetch("/app/api/auth/session?probe=1", { credentials: "same-origin", cache: "no-store" });
+        me = s.ok ? (await s.json()).user : null;
+      } catch (e) { me = null; }
       setAccount();
       return me;
     }
@@ -451,7 +454,7 @@
   // the code panel takes the who row's place until the code is in (or they go back to fix the email)
   function showCode(email) {
     who.hidden = true; auth.hidden = false; form.classList.add("coding");
-    $("#authS").textContent = "We sent a 6-digit code to " + email + ". It expires in 10 minutes.";
+    $("#authS").textContent = "Sign in as " + email + ", or choose a password (8+ characters) to create your account. There's no password reset.";
     form.elements.code.value = "";
     setTimeout(function () { form.elements.code.focus(); }, 30);
   }
@@ -474,25 +477,19 @@
       bad[0][0].focus();
       return note(bad[0][1]);
     }
-    note(""); running = true; sendLabel.textContent = "Sending your code…"; send.disabled = true;
-    try {
-      var j = HANDOFF ? (await (await onboard()).startCode(w.email), {}) : await post("/portal/api/auth/start", { email: w.email });
-      authEmail = w.email;
-      showCode(w.email);
-      var dev = $("#authDev");
-      dev.hidden = !j.devCode;
-      if (j.devCode) dev.innerHTML = "Local preview, no email sent. Your code is <b>" + j.devCode + "</b>";
-    } catch (e) { note(e.message); }
-    running = false; refresh();
+    note("");
+    authEmail = w.email;
+    showCode(w.email);
   }
   async function verify() {
-    var input = form.elements.code, code = input.value.replace(/\D/g, "");
-    if (code.length !== 6) { input.classList.add("bad"); input.focus(); return; }
+    var input = form.elements.code, code = input.value;
+    if (!code) { input.classList.add("bad"); input.focus(); return; }
     var b = $("#authVerify"), w = whoValues(); b.disabled = true; note("");
     try {
-      var j = HANDOFF
-        ? { user: await (await onboard()).verifyCode(authEmail, code, w.name, { company: w.company, role: w.role }) }
-        : await post("/portal/api/auth/verify", { email: authEmail, code: code, name: w.name, company: w.company });
+      var r = await fetch("/app/api/auth/password", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: authEmail, password: code, name: w.name, company: w.company, role: w.role, mode: "auto" }) });
+      var j = await r.json().catch(function () { return {}; });
+      if (!r.ok) throw new Error(j.message || "Something went wrong. Try again.");
       me = j.user; setAccount();
       hideCode();
       b.disabled = false;
@@ -510,8 +507,7 @@
   form.elements.code.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); verify(); } });
   form.elements.code.addEventListener("input", function () {
     this.classList.remove("bad");
-    this.value = this.value.replace(/\D/g, "").slice(0, 6);
-    if (this.value.length === 6) verify();
+
   });
   who.addEventListener("input", function (e) { e.target.classList && e.target.classList.remove("bad"); if (!$(".bad", who)) note(""); });
   who.addEventListener("change", function (e) { e.target.classList && e.target.classList.remove("bad"); });

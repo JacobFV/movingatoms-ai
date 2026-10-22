@@ -51,6 +51,9 @@
   // ── sign in ────────────────────────────────────────────────────────────────
   var gate = $("#gate"), board = $("#board"), msg = $("#gateMsg");
   function showGate() {
+    // sign-in is email + password on the app's sign-in page now; it comes back here afterwards
+    location.replace("/app/sign-in?next=" + encodeURIComponent(location.pathname + location.search));
+    return;
     gate.hidden = false; board.hidden = true; $("#acct").hidden = true;
     setTimeout(function () { $("#gateEmail").elements.email.focus(); }, 50);
   }

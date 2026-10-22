@@ -9,8 +9,6 @@ compatibility_flags = ["nodejs_compat"]
 SITE_URL = "https://movingatoms-ai.pages.dev"
 AGENT_MODEL = "claude-opus-5-5"
 EMAIL_FROM = "Moving Atoms <hello@movingatoms.ai>"
-# No email provider yet: sign-in codes are shown on screen. Remove once RESEND_API_KEY (or an EMAIL binding) is set.
-DEV_CODES = "1"
 ADMIN_EMAILS = "jacobfv123@gmail.com,jacob@humanrobots.ai"
 R2_ACCOUNT_ID = "20d4becc35c40a0bbfb8803a525aaae1"
 R2_UPLOADS_BUCKET = "movingatoms-uploads"

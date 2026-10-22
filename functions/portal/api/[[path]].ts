@@ -5,7 +5,7 @@
 import { Hono } from 'hono'
 import { handle } from 'hono/cloudflare-pages'
 import type { Env } from '../../../src/env'
-import { currentUser, signOut, startCode, verifyCode } from '../../../src/auth'
+import { currentUser, signOut } from '../../../src/auth'
 import { sendEmail } from '../../../src/email'
 import { EMAIL_RE, HttpError, now, randomToken } from '../../../src/util'
 import { submissionView, submissionsFor } from '../../../src/site/submissions'
@@ -39,17 +39,9 @@ app.get('/me', async (c) => {
   return u ? ok({ user: userOut(u) }) : fail(401, 'Not signed in.', { user: null })
 })
 
-app.post('/auth/start', async (c) => {
-  const b = await body(c.req.raw)
-  const r = await startCode(c.env, c.req.raw, b.email)
-  return ok(r.dev_code ? { devCode: r.dev_code, expires_in: r.expires_in } : { expires_in: r.expires_in })
-})
-
-app.post('/auth/verify', async (c) => {
-  const b = await body(c.req.raw)
-  const r = await verifyCode(c.env, c.req.raw, b.email, b.code, { name: b.name, company: b.company, role: b.role })
-  return ok({ user: userOut(r.user), new_account: r.isNew }, 200, { 'Set-Cookie': r.cookie })
-})
+// sign-in is email + password now (POST /app/api/auth/password, the page at /app/sign-in); the emailed code is off
+app.post('/auth/start', () => fail(410, 'Sign in with your email and password at /app/sign-in.'))
+app.post('/auth/verify', () => fail(410, 'Sign in with your email and password at /app/sign-in.'))
 
 app.post('/auth/logout', async (c) => ok({}, 200, { 'Set-Cookie': await signOut(c.env, c.req.raw) }))
 

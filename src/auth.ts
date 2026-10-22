@@ -1,8 +1,9 @@
-// Sign-in (the app's CONTRACTS §4 "Sign-in"): a 6-digit code by email, then a refresh session in an HttpOnly cookie
-// and short-lived bearer access tokens. The homepage's portal API and the app share the same people and sessions.
+// Sign-in: email + password (no reset or recovery, by the owner's choice), then a refresh session in an HttpOnly
+// cookie and short-lived bearer access tokens. The emailed-code functions below stay for when email is set up.
+// The homepage's portal API and the app share the same people and sessions.
 import type { Env } from './env'
 import { canEmail, codeEmail, sendEmail } from './email'
-import { clientIp, cookie, EMAIL_RE, HttpError, now, randomToken, sha256, signToken, uuid, verifyToken } from './util'
+import { b64url, b64urlDecode, clientIp, cookie, EMAIL_RE, HttpError, now, randomToken, sha256, signToken, uuid, verifyToken } from './util'
 
 export const COOKIE = 'ma_session'
 const CODE_TTL = 10 * 60_000
@@ -20,6 +21,9 @@ export interface User {
   is_admin: number
   prefs: string
   created_at: string
+  password_hash?: string | null
+  failed_logins?: number
+  locked_until?: number | null
 }
 
 export interface Claims {
@@ -130,6 +134,80 @@ export async function ensureAccount(env: Env, userId: string, name: string) {
     )
   await env.DB.batch(stmts)
   return id
+}
+
+// ---------- passwords ----------
+
+const PBKDF2_ITERATIONS = 100_000 // the Workers runtime's maximum
+const MAX_FAILS = 10
+const LOCK_MS = 15 * 60_000
+
+async function pbkdf2(password: string, salt: Uint8Array, iterations: number) {
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveBits'])
+  return new Uint8Array(await crypto.subtle.deriveBits({ name: 'PBKDF2', hash: 'SHA-256', salt, iterations }, key, 256))
+}
+
+export async function hashPassword(password: string) {
+  const salt = crypto.getRandomValues(new Uint8Array(16))
+  return `pbkdf2$${PBKDF2_ITERATIONS}$${b64url(salt)}$${b64url(await pbkdf2(password, salt, PBKDF2_ITERATIONS))}`
+}
+
+async function checkPassword(password: string, stored: string) {
+  const [alg, iter, salt, hash] = stored.split('$')
+  if (alg !== 'pbkdf2' || !salt || !hash) return false
+  const got = await pbkdf2(password, b64urlDecode(salt), Number(iter))
+  const want = b64urlDecode(hash)
+  if (got.length !== want.length) return false
+  let diff = 0
+  for (let i = 0; i < got.length; i++) diff |= got[i] ^ want[i]
+  return diff === 0
+}
+
+function checkNewPassword(password: string) {
+  if (password.length < 8) throw new HttpError(400, 'weak_password', 'Use at least 8 characters for your password.')
+  if (password.length > 200) throw new HttpError(400, 'weak_password', 'That password is too long.')
+}
+
+/**
+ * Sign in with a password. `mode`: 'login' needs an account, 'register' needs none, 'auto' (the homepage uploader)
+ * signs in when the account has a password and creates it otherwise. An account made by an invitation has no
+ * password yet: the first password set on it claims it.
+ */
+export async function passwordSignIn(
+  env: Env,
+  req: Request,
+  raw: { email?: string; password?: string; name?: string; company?: string; role?: string; mode?: string },
+) {
+  const email = String(raw.email ?? '').trim().toLowerCase()
+  const password = String(raw.password ?? '')
+  const mode = raw.mode === 'login' || raw.mode === 'register' ? raw.mode : 'auto'
+  if (!EMAIL_RE.test(email) || email.length > 254) throw new HttpError(400, 'invalid_email', 'Enter a valid email address.')
+  if (!password) throw new HttpError(400, 'missing_password', 'Enter your password.')
+  const existing = await env.DB.prepare('SELECT * FROM users WHERE email = ?').bind(email).first<User>()
+
+  if (existing?.password_hash) {
+    if (mode === 'register') throw new HttpError(409, 'account_exists', 'There’s already an account for this email. Sign in instead.')
+    if (existing.locked_until && existing.locked_until > Date.now()) {
+      const m = Math.ceil((existing.locked_until - Date.now()) / 60_000)
+      throw new HttpError(429, 'too_many_tries', `Too many wrong passwords. Try again in ${m} minute${m === 1 ? '' : 's'}.`, { retry_after: m * 60 })
+    }
+    if (!(await checkPassword(password, existing.password_hash))) {
+      const fails = (existing.failed_logins ?? 0) + 1
+      await env.DB.prepare('UPDATE users SET failed_logins = ?, locked_until = ? WHERE id = ?')
+        .bind(fails >= MAX_FAILS ? 0 : fails, fails >= MAX_FAILS ? Date.now() + LOCK_MS : null, existing.id)
+        .run()
+      throw new HttpError(401, 'wrong_password', 'That email and password don’t match.')
+    }
+    await env.DB.prepare('UPDATE users SET failed_logins = 0, locked_until = NULL WHERE id = ?').bind(existing.id).run()
+    const { user } = await upsertUser(env, email, raw)
+    return { user, isNew: false, ...(await createSession(env, req, user.id)) }
+  }
+
+  if (mode === 'login') throw new HttpError(404, 'no_account', 'There’s no account for this email yet. Create one.')
+  checkNewPassword(password)
+  const { user, isNew } = await upsertUser(env, email, raw)
+  await env.DB.prepare('UPDATE users SET password_hash = ?, failed_logins = 0, locked_until = NULL WHERE id = ?').bind(await hashPassword(password), user.id).run()
+  return { user, isNew: isNew || !existing?.password_hash, ...(await createSession(env, req, user.id)) }
 }
 
 async function createSession(env: Env, req: Request, userId: string) {

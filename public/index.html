@@ -108,12 +108,12 @@
 
       <div class="auth" id="auth" hidden>
         <div class="auth-head">
-          <p class="auth-t" id="authT">Check your email</p>
-          <p class="auth-s" id="authS">We sent you a 6-digit code. It expires in 10 minutes.</p>
+          <p class="auth-t" id="authT">Your password</p>
+          <p class="auth-s" id="authS">Sign in, or choose a password to create your account.</p>
         </div>
         <div class="auth-step" data-step="code">
-          <input name="code" class="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••" aria-label="6-digit code" />
-          <button type="button" class="btn btn-white auth-go" id="authVerify">Verify and upload</button>
+          <input name="code" class="code" type="password" autocomplete="current-password" maxlength="200" placeholder="Password" aria-label="Password" />
+          <button type="button" class="btn btn-white auth-go" id="authVerify">Continue and upload</button>
           <button type="button" class="auth-link" id="authBack">Use a different email</button>
         </div>
         <p class="auth-dev" id="authDev" hidden></p>

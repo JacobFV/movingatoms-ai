@@ -11,6 +11,17 @@
     <link rel="icon" href="/app/favicon-dark.png" type="image/png" sizes="512x512" media="(prefers-color-scheme: dark)" />
     <link rel="apple-touch-icon" href="/app/apple-touch-icon.png" />
     <title>Moving Atoms</title>
+    <script>
+      // sign-in is its own page (/app/sign-in, email + password): when the app routes there, load that page
+      ;(function () {
+        var go = function () { if (/^\/app\/sign-in\/?$/.test(location.pathname)) location.replace(location.href) }
+        ;['pushState', 'replaceState'].forEach(function (k) {
+          var o = history[k]
+          history[k] = function () { var r = o.apply(this, arguments); go(); return r }
+        })
+        addEventListener('popstate', go)
+      })()
+    </script>
     <script type="module" crossorigin src="/app/assets/main-j82xQhsK.js"></script>
     <link rel="modulepreload" crossorigin href="/app/assets/preload-helper-B0YE56wZ.js">
     <link rel="modulepreload" crossorigin href="/app/assets/api-DLTjfX4W.js">
