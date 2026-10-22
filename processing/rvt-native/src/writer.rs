@@ -179,7 +179,15 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
         let logical = fs::read(base.join(path))?;
         let stored = if paged::is_paged(&name) {
             if complete {
-                codec::encode(&logical)?
+                let mut source = cfb::open(temp.path())?;
+                let original = stream_bytes(&mut source, &name)?;
+                if codec::decode(&original)? == logical {
+                    // A valid historical layout need not match our encoder
+                    // policy. A no-op logical patch must retain source bytes.
+                    original
+                } else {
+                    codec::encode(&logical)?
+                }
             } else {
                 paged::encode(&logical)?
             }

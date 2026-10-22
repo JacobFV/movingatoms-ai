@@ -370,3 +370,14 @@ shared selections and no reused native UniqueIds. Changed bodies sometimes
 retain user dates; three header changes retain both modification dates. The
 reports preserve exact bytes, conservative routing and the limits of inferring
 user actions from Git snapshots. [Paired changes](../research/rvt/results/paired-modification.md).
+
+### Preserve no-op logical edits across historical layouts
+
+The historical-layout discovery exposed another transport edge case: supplying
+unchanged logical bytes through `new_payload_file` could previously re-encode a
+valid historical stream into a different layout. The writer now verifies and
+reuses the original stored bytes when the logical replacement is unchanged.
+A synthetic noncanonical Contents transaction confirms whole-file byte identity
+and an empty changed-stream list. Seventeen Rust tests pass and Clippy is clean.
+Changed logical payloads still use the documented encoder policy; untouched
+streams and no-op payload patches retain their original bytes.

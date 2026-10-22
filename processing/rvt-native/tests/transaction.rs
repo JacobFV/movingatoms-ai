@@ -341,3 +341,47 @@ fn contents_payload_uses_page_framing_and_corruption_is_rejected() {
     }
     assert!(writer::verify(&output).is_err());
 }
+
+#[test]
+fn logical_identity_preserves_historical_layout() {
+    use ma_rvt_native::{codec, final_page::Layout};
+    let dir = tempfile::tempdir().unwrap();
+    let input = dir.path().join("input.rvt");
+    let output = dir.path().join("output.rvt");
+    fixture(&input);
+    let mut payload: Vec<_> = (0..739).map(|i| (i * 37 + i / 251) as u8).collect();
+    payload[738] = 0;
+    let stored = codec::encode_final_with_layout(
+        &payload,
+        Layout {
+            lanes: 65,
+            codeword_bits: 98,
+            generator: 0x83,
+        },
+    )
+    .unwrap();
+    assert_ne!(codec::encode(&payload).unwrap(), stored);
+    {
+        let mut file = cfb::open_rw(&input).unwrap();
+        file.create_stream("Contents")
+            .unwrap()
+            .write_all(&stored)
+            .unwrap();
+        file.flush().unwrap();
+    }
+    fs::write(dir.path().join("contents.bin"), &payload).unwrap();
+    let original = fs::read(&input).unwrap();
+    let manifest = Manifest {
+        input_sha256: writer::hash(&original),
+        creates: vec![],
+        patches: vec![Patch {
+            stream: "Contents".into(),
+            expected_stored_sha256: writer::hash(&stored),
+            new_payload_file: Some("contents.bin".into()),
+            new_unpaged_file: None,
+        }],
+    };
+    let report = writer::patch(&input, &output, &manifest, dir.path()).unwrap();
+    assert!(report.changed_streams.is_empty());
+    assert_eq!(fs::read(output).unwrap(), original);
+}
