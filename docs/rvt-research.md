@@ -8,6 +8,9 @@ claim that everything else was understood was too strong.
 
 Scripts referenced here are in [`research/rvt/`](../research/rvt/).
 
+Ongoing work is recorded in the [research log](rvt-research-log.md), with
+[screenshots and provenance](rvt-evidence/README.md) for reporting.
+
 ## Follow-up: trailer solved (2026-10-22)
 
 The trailer is **255 interleaved binary Hamming(2047,2036) codewords** using

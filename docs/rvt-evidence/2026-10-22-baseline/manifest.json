@@ -1,0 +1,37 @@
+{
+  "captured_at_utc": "2026-10-22T22:37:22.272571+00:00",
+  "source_commit": "d92645d69d6e145dad0d75000d57f59628c5d53d",
+  "working_tree_status": "?? research/rvt/capture_evidence.py\n?? research/rvt/results/signature-analysis.json\n?? research/rvt/save_increments.py\n?? research/rvt/signature_analysis.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "capture_type": "actual headless-browser screenshot of local generated research report",
+  "not_autodesk_ui": true,
+  "sources": {
+    "research/rvt/results/object-repacking.json": "d15fe4739f34fd84eb583a22cf932e75f8eb1aab144b01e35bb3ba38dd04b595",
+    "research/rvt/results/resized-graph.json": "719447d1de58d0b562ce6cb080d2a153ac238e03da21a8aebc4545e9d3cd7940",
+    "research/rvt/results/resized-reader.json": "38f4d054c997340accc077967e37a849357e0a629366cbfa43d09dbd8d101e12",
+    "research/rvt/results/record-selection.json": "d0c3ed0ef6ae0d88af354938c9db29595ef8c7fedd2e6b26b031a743c403d002"
+  },
+  "test_command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/rvt",
+    "-p",
+    "test_*.py"
+  ],
+  "test_exit_code": 0,
+  "generator_sha256": "3dd92aaf1d06fe2a3a9c022f290f6912dfa99ca9d5ff031705417494a9af5619",
+  "artifacts": {
+    "corpus.html": "7f26c4d530ac5df937521d507a2d3341083bb0bc6b2be37d0a9769937e9fe4f4",
+    "corpus.png": "2399d8ef2decdf30c82c6dd5f280f0eadc449d3f16ad50a20fe365d55aa3c943",
+    "object-repacking.json": "d15fe4739f34fd84eb583a22cf932e75f8eb1aab144b01e35bb3ba38dd04b595",
+    "record-selection.json": "d0c3ed0ef6ae0d88af354938c9db29595ef8c7fedd2e6b26b031a743c403d002",
+    "resized-graph.json": "719447d1de58d0b562ce6cb080d2a153ac238e03da21a8aebc4545e9d3cd7940",
+    "resized-reader.json": "38f4d054c997340accc077967e37a849357e0a629366cbfa43d09dbd8d101e12",
+    "room-edit.html": "f74b87a5469c8de2f16394e53b435ef9d0570d2df000f2ae9030bf0ecddb9a6d",
+    "room-edit.png": "e418b0db297b3f29cccd17faabc9c73466be143ee4b3f8512118d2d704a43451",
+    "tests.txt": "880191f5fe8ef6d4416f8ec78e811032d9eef929f77018e8b9279fb2902a0863"
+  }
+}
