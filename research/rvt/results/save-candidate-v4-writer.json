@@ -1,0 +1,19 @@
+{
+  "input_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "output_sha256": "daf2424e219292b0c5661e4ad5c029717de11741e5e50f5c9c910c2801e23cae",
+  "changed_streams": [
+    "/BasicFileInfo",
+    "/Contents",
+    "/Global/DocumentIncrementTable",
+    "/Global/ElemTable",
+    "/Global/History"
+  ],
+  "created_streams": [
+    "/Partitions/85"
+  ],
+  "streams_verified": 16,
+  "parity_pages_verified": 98,
+  "final_pages_verified": 12,
+  "validation": "CFB streams, exact page framing, and unchanged-stream SHA-256",
+  "revit_openability": "not_tested"
+}

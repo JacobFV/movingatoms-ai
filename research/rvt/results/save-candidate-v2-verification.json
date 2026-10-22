@@ -1,0 +1,26 @@
+{
+  "candidate_sha256": "647b64d1c01bd3beec1d388a68f1d5b7835e2e144734dddc0ecc5f73c366b2d0",
+  "native_evidence_sha256": "345232761e4235a9b66c453bc14a0b0210ea554a1bb687bb9a5f96e8148ef579",
+  "current_record_before": "Partitions/80",
+  "current_record_after": "Partitions/85",
+  "unique_id_unchanged": true,
+  "derived_ifc_guid_unchanged": true,
+  "full_graph": {
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "complete_objects": 11,
+    "resolved_pointer_edges": 10,
+    "body_growth_bytes": 26,
+    "shifted_pointer_locations": 20,
+    "one_parameter_value_changed": true,
+    "all_other_graph_values_and_pointer_targets_identical": true,
+    "original_bytes_consumed": 2531,
+    "edited_bytes_consumed": 2557,
+    "graph_evidence_sha256": "3b82f94bf8678fef5c1e69580dffdde8ef1171c434dccd4bf8e993e14b442296",
+    "autodesk_acceptance": "not_tested"
+  },
+  "reader_element_count": 154,
+  "reader_only_expected_property_and_source_location_changes": true,
+  "ifc_only_expected_property_and_source_stream_changes": true,
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false
+}

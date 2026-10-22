@@ -2,7 +2,8 @@
 
 Goal: the processing worker delivers a native `.rvt` alongside IFC, written by our own code (no Revit install, no
 Autodesk cloud). Status as of 2026-10-22: **complete page framing solved and implemented**. All 917 full pages
-and 69 final pages in six licensed fixtures reconstruct byte-for-byte. Native
+and 75 final pages in six licensed fixtures reconstruct byte-for-byte (including
+the subsequently identified Contents pages). Native
 element creation and Revit-openability remain unimplemented/unverified; the original
 claim that everything else was understood was too strong.
 

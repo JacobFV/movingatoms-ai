@@ -197,3 +197,41 @@ revision index was stale. A corrected second candidate fixes this index;
 BasicFileInfo's increment count/version remains another independently observed
 mismatch to address. Earlier candidates are preserved as controls, not erased
 or described as complete saves.
+
+## 2026-10-22 — Coordinated append candidate and independent identity checks
+
+Preserved four append-save candidates as controls. The latest v4 moves the
+edited room into Partitions/85, prepends History episode 703, updates its
+last-modification row, and appends both increment arrays. Contents revisions,
+BasicFileInfo counters, and both newest-episode GUID strings are synchronized.
+The independent reader confirms all seven audited metadata relationships.
+Earlier candidates demonstrate that successful element extraction alone misses
+inconsistent save metadata. See [candidate report](../research/rvt/results/save-candidate.md)
+and [identity audit](../research/rvt/results/save-identity.md).
+
+The room's complete graph has 11 objects and 10 resolved pointer edges. Only
+its requested floor finish changes; its creation-based UniqueId is preserved.
+All 154 exported elements remain. IFC comparison exposes 860 generated-ID-only
+changes following the document GUID update, plus the two expected finish and
+source-stream lines. This is recorded as an unresolved projection stability
+issue, not hidden by normalization. Candidate SHA-256:
+`daf2424e219292b0c5661e4ad5c029717de11741e5e50f5c9c910c2801e23cae`.
+
+Historical revision audit covers 422 increments across six files. It establishes
+observed relationships, including Architecture's increment-table offset, but
+does not prove a complete save policy. Global/Latest schema traversal consumes
+1,663 objects across six files and four closing zero bytes per file. The selected
+history/increment fields are null, zero or empty; this does not rule out deeper
+references. No Revit executable or proprietary SDK was inspected.
+
+The framing audit also checks all 24 remaining unclassified streams against the
+recovered page codec. None reproduces with that framing. They remain unclassified;
+this says nothing about other possible integrity checks.
+
+```sh
+python3 -m unittest discover -s research/rvt -p 'test_*.py'
+```
+
+65 tests pass. Native acceptance, nonempty unsigned partitions, ancillary revision
+semantics and new element creation remain unresolved. These scripts deliberately
+require acknowledgment of the experimental save hypotheses.

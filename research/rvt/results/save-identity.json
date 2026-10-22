@@ -1,0 +1,5468 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "contents_stored_bytes": 276,
+    "contents_logical_bytes": 225,
+    "contents_inflated_sha256": "f15be2eb5bae4da0123ee8723058e40570e752f40e4569f0b1b541c0b901abb9",
+    "contents_logical_sha256": "2220adfe49a033309ac8c8a97896add95e4b9d0e363074b861da2e0fd1340323",
+    "contents_header_hex": "621922051b000000010000000100000043020000000800000001000100010001000200020004000400040004000400040008000800080008000a00000000000000020000000900d82100000010000000000000621922050a000000",
+    "contents_gzip_suffix_hex": "",
+    "contents_inflated_bytes": 240,
+    "contents_inflated_hex": "05050000000000000000000000000600000047004c004f00420041004c0000000000000000000000000000000000000000000000000000000000000000000000000001000000c668235521d21448abfb423e900d87f8feff000000000012000000320030003200330030003500300039005f00300033003100350028007800360034002900070000000000000003000000ffffffff03000000010000410000004100000041000000410000004100000041000000410000004100000041000000ffffffff41000000ffffffff5305ffffffff590500000000000000000000000000000000000000000000000000000000",
+    "classes": [
+      {
+        "base": null,
+        "field_count": 0,
+        "name": "DocumentStorageIndex",
+        "tag": 1284,
+        "version": 0
+      },
+      {
+        "base": 1284,
+        "field_count": 16,
+        "name": "DocumentStorageIndexImpl",
+        "tag": 1285,
+        "version": 29
+      }
+    ],
+    "contents_root": {
+      "class_name": "DocumentStorageIndexImpl",
+      "class_tag": 1285,
+      "end": 212,
+      "field_spans": [
+        {
+          "class_tag": 1286,
+          "end": 6,
+          "name": "m_IDtoName",
+          "start": 2
+        },
+        {
+          "class_tag": 1285,
+          "end": 6,
+          "name": "m_userTable",
+          "start": 2
+        },
+        {
+          "class_tag": 754,
+          "end": 10,
+          "name": "m_centralServerPath",
+          "start": 6
+        },
+        {
+          "class_tag": 754,
+          "end": 14,
+          "name": "m_path",
+          "start": 10
+        },
+        {
+          "class_tag": 754,
+          "end": 30,
+          "name": "m_region",
+          "start": 14
+        },
+        {
+          "class_tag": 754,
+          "end": 34,
+          "name": "m_type",
+          "start": 30
+        },
+        {
+          "class_tag": 1288,
+          "end": 34,
+          "name": "m_lastKnownModelPath",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1289,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1288,
+          "end": 50,
+          "name": "m_projectIdentity",
+          "start": 34
+        },
+        {
+          "class_tag": 30,
+          "end": 66,
+          "name": "m_guid",
+          "start": 50
+        },
+        {
+          "class_tag": 1290,
+          "end": 66,
+          "name": "m_identityGUID",
+          "start": 50
+        },
+        {
+          "class_tag": 1288,
+          "end": 66,
+          "name": "m_modelIdentity",
+          "start": 50
+        },
+        {
+          "class_tag": 1285,
+          "end": 66,
+          "name": "m_centralLocation",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1047,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1291,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 607,
+          "end": 88,
+          "name": "m_id",
+          "start": 86
+        },
+        {
+          "class_tag": 1291,
+          "end": 88,
+          "name": "m_userID",
+          "start": 86
+        },
+        {
+          "class_tag": 1291,
+          "end": 89,
+          "name": "m_atRisk",
+          "start": 88
+        },
+        {
+          "class_tag": 1285,
+          "end": 89,
+          "name": "m_checkoutRecords",
+          "start": 66
+        },
+        {
+          "class_tag": 1285,
+          "end": 93,
+          "name": "m_ownerName",
+          "start": 89
+        },
+        {
+          "class_tag": 1285,
+          "end": 133,
+          "name": "m_softwareVersion",
+          "start": 93
+        },
+        {
+          "class_tag": 1285,
+          "end": 137,
+          "name": "m_version",
+          "start": 133
+        },
+        {
+          "class_tag": 1285,
+          "end": 141,
+          "name": "m_incrementWhenWorksharingEnabled",
+          "start": 137
+        },
+        {
+          "class_tag": 1285,
+          "end": 145,
+          "name": "m_maxBackups",
+          "start": 141
+        },
+        {
+          "class_tag": 1285,
+          "end": 149,
+          "name": "m_mastersMaxBackups",
+          "start": 145
+        },
+        {
+          "class_tag": 1285,
+          "end": 153,
+          "name": "m_openWorksetDefault",
+          "start": 149
+        },
+        {
+          "class_tag": 1285,
+          "end": 154,
+          "name": "m_bSingleUser",
+          "start": 153
+        },
+        {
+          "class_tag": 1285,
+          "end": 155,
+          "name": "m_alwaysRelativizeMasterPath",
+          "start": 154
+        },
+        {
+          "class_tag": 1285,
+          "end": 156,
+          "name": "m_dataInSeparateFiles",
+          "start": 155
+        },
+        {
+          "class_tag": 1292,
+          "end": 160,
+          "name": "m_previewStreamRevision",
+          "start": 156
+        },
+        {
+          "class_tag": 1292,
+          "end": 164,
+          "name": "m_globalStreamRevision",
+          "start": 160
+        },
+        {
+          "class_tag": 1292,
+          "end": 168,
+          "name": "m_historyStreamRevision",
+          "start": 164
+        },
+        {
+          "class_tag": 1292,
+          "end": 172,
+          "name": "m_elemTableStreamRevision",
+          "start": 168
+        },
+        {
+          "class_tag": 1292,
+          "end": 176,
+          "name": "m_contentDocumentsStreamRevision",
+          "start": 172
+        },
+        {
+          "class_tag": 1292,
+          "end": 180,
+          "name": "m_partitionTableStreamRevision",
+          "start": 176
+        },
+        {
+          "class_tag": 1292,
+          "end": 184,
+          "name": "m_incrementTableStreamRevision",
+          "start": 180
+        },
+        {
+          "class_tag": 1292,
+          "end": 188,
+          "name": "m_basicFileInfoStreamRevision",
+          "start": 184
+        },
+        {
+          "class_tag": 1292,
+          "end": 192,
+          "name": "m_transmissionDataStreamRevision",
+          "start": 188
+        },
+        {
+          "class_tag": 1292,
+          "end": 196,
+          "name": "m_partAtomStreamRevision",
+          "start": 192
+        },
+        {
+          "class_tag": 1292,
+          "end": 200,
+          "name": "m_projectXMLInfoStreamRevision",
+          "start": 196
+        },
+        {
+          "class_tag": 1285,
+          "end": 200,
+          "name": "m_streamRevisions",
+          "start": 156
+        },
+        {
+          "class_tag": 1285,
+          "end": 206,
+          "name": "m_oPermissions",
+          "start": 200
+        },
+        {
+          "class_tag": 1285,
+          "end": 212,
+          "name": "m_oRequests",
+          "start": 206
+        }
+      ],
+      "fields": {
+        "m_alwaysRelativizeMasterPath": false,
+        "m_bSingleUser": true,
+        "m_centralLocation": {
+          "m_lastKnownModelPath": {
+            "m_centralServerPath": "",
+            "m_path": "",
+            "m_region": "GLOBAL",
+            "m_type": 0
+          },
+          "m_modelIdentity": {
+            "m_identityGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "m_projectIdentity": {
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "m_checkoutRecords": [
+          {
+            "m_atRisk": false,
+            "m_guid": {
+              "m_guid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    198,
+                    104,
+                    35,
+                    85,
+                    33,
+                    210,
+                    20,
+                    72,
+                    171,
+                    251,
+                    66,
+                    62,
+                    144,
+                    13,
+                    135,
+                    248
+                  ]
+                }
+              }
+            },
+            "m_userID": {
+              "m_id": -2
+            }
+          }
+        ],
+        "m_dataInSeparateFiles": false,
+        "m_incrementWhenWorksharingEnabled": 0,
+        "m_mastersMaxBackups": -1,
+        "m_maxBackups": 3,
+        "m_oPermissions": {
+          "class_tag": 1363,
+          "offset": 200,
+          "pointer_token": 4294967295
+        },
+        "m_oRequests": {
+          "class_tag": 1369,
+          "offset": 206,
+          "pointer_token": 4294967295
+        },
+        "m_openWorksetDefault": 3,
+        "m_ownerName": "",
+        "m_softwareVersion": "20230509_0315(x64)",
+        "m_streamRevisions": {
+          "m_basicFileInfoStreamRevision": 65,
+          "m_contentDocumentsStreamRevision": 65,
+          "m_elemTableStreamRevision": 65,
+          "m_globalStreamRevision": 65,
+          "m_historyStreamRevision": 65,
+          "m_incrementTableStreamRevision": 65,
+          "m_partAtomStreamRevision": -1,
+          "m_partitionTableStreamRevision": 65,
+          "m_previewStreamRevision": 65,
+          "m_projectXMLInfoStreamRevision": 65,
+          "m_transmissionDataStreamRevision": 65
+        },
+        "m_userTable": {
+          "m_IDtoName": []
+        },
+        "m_version": 7
+      },
+      "start": 2
+    },
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [],
+        "name": "DocumentStorageIndex",
+        "offset": 149274,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 34054,
+                "sub": 0
+              }
+            },
+            "name": "m_userTable"
+          }
+        ],
+        "name": "DocumentStorageIndexImpl",
+        "offset": 149312,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "document_guid": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+    "document_increments": 66,
+    "latest_audit": {
+      "class_name": "ADocument",
+      "class_tag": 28,
+      "end": 583,
+      "field_names": [
+        "m_appInfoArr",
+        "m_bIsCoreDocument",
+        "m_corruptDocument",
+        "m_devBranchInfo",
+        "m_elemTable",
+        "m_executedUpgrades",
+        "m_groupFile",
+        "m_oContentTable",
+        "m_oExServicesUsed",
+        "m_oNobleSecondaryData",
+        "m_ownerFamilyContainingGroupId",
+        "m_ownerFamilyId",
+        "m_pAppInfoManager",
+        "m_pHistory",
+        "m_pHostDocument",
+        "m_pPartitionTable",
+        "m_pSteelModelInfo",
+        "m_pStyleSettings",
+        "m_storedByRevitBuild"
+      ],
+      "field_spans": [
+        {
+          "class_tag": 28,
+          "end": 6,
+          "name": "m_elemTable",
+          "start": 2
+        },
+        {
+          "class_tag": 28,
+          "end": 10,
+          "name": "m_appInfoArr",
+          "start": 6
+        },
+        {
+          "class_tag": 28,
+          "end": 16,
+          "name": "m_oContentTable",
+          "start": 10
+        },
+        {
+          "class_tag": 28,
+          "end": 20,
+          "name": "m_pHostDocument",
+          "start": 16
+        },
+        {
+          "class_tag": 28,
+          "end": 26,
+          "name": "m_pAppInfoManager",
+          "start": 20
+        },
+        {
+          "class_tag": 28,
+          "end": 32,
+          "name": "m_pStyleSettings",
+          "start": 26
+        },
+        {
+          "class_tag": 28,
+          "end": 36,
+          "name": "m_pHistory",
+          "start": 32
+        },
+        {
+          "class_tag": 28,
+          "end": 42,
+          "name": "m_pSteelModelInfo",
+          "start": 36
+        },
+        {
+          "class_tag": 28,
+          "end": 46,
+          "name": "m_pPartitionTable",
+          "start": 42
+        },
+        {
+          "class_tag": 28,
+          "end": 52,
+          "name": "m_oNobleSecondaryData",
+          "start": 46
+        },
+        {
+          "class_tag": 21,
+          "end": 60,
+          "name": "m_id64",
+          "start": 52
+        },
+        {
+          "class_tag": 20,
+          "end": 60,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 28,
+          "end": 60,
+          "name": "m_ownerFamilyId",
+          "start": 52
+        },
+        {
+          "class_tag": 21,
+          "end": 68,
+          "name": "m_id64",
+          "start": 60
+        },
+        {
+          "class_tag": 20,
+          "end": 68,
+          "name": "m_id",
+          "start": 60
+        },
+        {
+          "class_tag": 28,
+          "end": 68,
+          "name": "m_ownerFamilyContainingGroupId",
+          "start": 60
+        },
+        {
+          "class_tag": 29,
+          "end": 72,
+          "name": "m_devBranchId",
+          "start": 68
+        },
+        {
+          "class_tag": 29,
+          "end": 76,
+          "name": "m_syncVersion",
+          "start": 72
+        },
+        {
+          "class_tag": 28,
+          "end": 76,
+          "name": "m_devBranchInfo",
+          "start": 68
+        },
+        {
+          "class_tag": 28,
+          "end": 77,
+          "name": "m_groupFile",
+          "start": 76
+        },
+        {
+          "class_tag": 28,
+          "end": 78,
+          "name": "m_corruptDocument",
+          "start": 77
+        },
+        {
+          "class_tag": 28,
+          "end": 79,
+          "name": "m_bIsCoreDocument",
+          "start": 78
+        },
+        {
+          "class_tag": 28,
+          "end": 83,
+          "name": "m_executedUpgrades",
+          "start": 79
+        },
+        {
+          "class_tag": 31,
+          "end": 185,
+          "name": "m_str",
+          "start": 87
+        },
+        {
+          "class_tag": 31,
+          "end": 283,
+          "name": "m_str",
+          "start": 185
+        },
+        {
+          "class_tag": 31,
+          "end": 381,
+          "name": "m_str",
+          "start": 283
+        },
+        {
+          "class_tag": 31,
+          "end": 479,
+          "name": "m_str",
+          "start": 381
+        },
+        {
+          "class_tag": 31,
+          "end": 577,
+          "name": "m_str",
+          "start": 479
+        },
+        {
+          "class_tag": 28,
+          "end": 577,
+          "name": "m_storedByRevitBuild",
+          "start": 83
+        },
+        {
+          "class_tag": 28,
+          "end": 583,
+          "name": "m_oExServicesUsed",
+          "start": 577
+        }
+      ],
+      "inflated_bytes": 1008506,
+      "selected_fields": {
+        "m_pHistory": {
+          "class_tag": null,
+          "offset": 32,
+          "pointer_token": 0
+        }
+      },
+      "status": "root_fields_decoded"
+    },
+    "latest_graph": {
+      "consumed_bytes": 1008502,
+      "edges": 251,
+      "identity_named_objects": [
+        {
+          "class_name": "ADocument",
+          "class_tag": 28,
+          "field_names": [
+            "m_appInfoArr",
+            "m_bIsCoreDocument",
+            "m_corruptDocument",
+            "m_devBranchInfo",
+            "m_elemTable",
+            "m_executedUpgrades",
+            "m_groupFile",
+            "m_oContentTable",
+            "m_oExServicesUsed",
+            "m_oNobleSecondaryData",
+            "m_ownerFamilyContainingGroupId",
+            "m_ownerFamilyId",
+            "m_pAppInfoManager",
+            "m_pHistory",
+            "m_pHostDocument",
+            "m_pPartitionTable",
+            "m_pSteelModelInfo",
+            "m_pStyleSettings",
+            "m_storedByRevitBuild"
+          ],
+          "fields_end": 583,
+          "selected_fields": {
+            "m_pHistory": {
+              "class_tag": null,
+              "offset": 32,
+              "pointer_token": 0
+            }
+          },
+          "start": 2
+        },
+        {
+          "class_name": "SteelModelInfo",
+          "class_tag": 3909,
+          "field_names": [
+            "m_extModelId",
+            "m_localIncrement",
+            "m_numCentralIncrements",
+            "m_steelModelLastSTC",
+            "m_steelModelLastSTC_hash",
+            "m_steelModelLatest",
+            "m_steelModelLatest_hash"
+          ],
+          "fields_end": 6037,
+          "selected_fields": {
+            "m_localIncrement": {
+              "m_binaryData": [],
+              "m_uid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "m_numCentralIncrements": 0
+          },
+          "start": 5969
+        },
+        {
+          "class_name": "GlobalParamTracking",
+          "class_tag": 2214,
+          "field_names": [
+            "m_OrderedParams",
+            "m_elemIdSet",
+            "m_episodesHistory",
+            "m_idMRU",
+            "m_orderingEpisode",
+            "m_pADoc"
+          ],
+          "fields_end": 1000155,
+          "selected_fields": {
+            "m_episodesHistory": {
+              "m_arr": [
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "m_max_size": 100,
+              "m_shift": 0
+            },
+            "m_orderingEpisode": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "start": 1000075
+        }
+      ],
+      "inflated_bytes": 1008506,
+      "object_count": 252,
+      "status": "graph_decoded",
+      "trailing_zero_bytes": 4
+    },
+    "basic_file_info_property_spans": {
+      "Unique Document GUID": {
+        "value": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+        "start": 1689,
+        "end": 1761
+      },
+      "Unique Document Increments": {
+        "value": "66",
+        "start": 1821,
+        "end": 1825
+      },
+      "Central model's version number corresponding to the last reload latest": {
+        "value": "66",
+        "start": 1421,
+        "end": 1425
+      },
+      "Central model's episode GUID corresponding to the last reload latest": {
+        "value": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+        "start": 1569,
+        "end": 1641
+      }
+    },
+    "basic_file_info_sha256": "bab8c34b28e7c4197886fdd4d53797f38b412982b26894576b2dc79920e3e88d",
+    "document_guid_matching_history_fields": [],
+    "contents_formats_revision": 10,
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "limitations": [
+      "No paired saves establish GUID changes or counter allocation rules.",
+      "BasicFileInfo property spans identify text only, not all binary duplicates.",
+      "Global/Latest complete wire graph decoding does not establish every field semantic.",
+      "Identity-name filtering covers top-level object fields, not every possible semantic reference.",
+      "Contents root decoder stops before opaque trailing bytes; patcher preserves them."
+    ],
+    "identity_patch_byte_exact": true,
+    "all_revision_spans_trial_independently_verified": true,
+    "fixed_width_counter_trial_independently_verified": true
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "contents_stored_bytes": 276,
+    "contents_logical_bytes": 224,
+    "contents_inflated_sha256": "4aad483c9a446203a88ac18a722bf84873788e9b04498f3deb60a8c81fc432b4",
+    "contents_logical_sha256": "75f8d8bf05c342faa959458ed7ebd71f7ca6b0b311540ea7373a9f09f70ad0dc",
+    "contents_header_hex": "621922051a000000010000000100000043020000000800000001000100010001000200020004000400040004000400040008000800080008000a00000000000000020000000900d821000000100000000000006219220500000000",
+    "contents_gzip_suffix_hex": "",
+    "contents_inflated_bytes": 240,
+    "contents_inflated_hex": "e2040000000000000000000000000600000047004c004f00420041004c0000000000000000000000000000000000000000000000000000000000000000000000000001000000fd61626ab000a34b87c6a29f5a378756feff000000000012000000320030003200330030003800320038005f00310035003100350028007800360034002900070000000000000003000000ffffffff03000000010000060000000600000006000000060000000600000006000000060000000600000006000000ffffffff06000000ffffffff2c05ffffffff320500000000000000000000000000000000000000000000000000000000",
+    "classes": [
+      {
+        "base": null,
+        "field_count": 0,
+        "name": "DocumentStorageIndex",
+        "tag": 1249,
+        "version": 0
+      },
+      {
+        "base": 1249,
+        "field_count": 16,
+        "name": "DocumentStorageIndexImpl",
+        "tag": 1250,
+        "version": 29
+      }
+    ],
+    "contents_root": {
+      "class_name": "DocumentStorageIndexImpl",
+      "class_tag": 1250,
+      "end": 212,
+      "field_spans": [
+        {
+          "class_tag": 1251,
+          "end": 6,
+          "name": "m_IDtoName",
+          "start": 2
+        },
+        {
+          "class_tag": 1250,
+          "end": 6,
+          "name": "m_userTable",
+          "start": 2
+        },
+        {
+          "class_tag": 735,
+          "end": 10,
+          "name": "m_centralServerPath",
+          "start": 6
+        },
+        {
+          "class_tag": 735,
+          "end": 14,
+          "name": "m_path",
+          "start": 10
+        },
+        {
+          "class_tag": 735,
+          "end": 30,
+          "name": "m_region",
+          "start": 14
+        },
+        {
+          "class_tag": 735,
+          "end": 34,
+          "name": "m_type",
+          "start": 30
+        },
+        {
+          "class_tag": 1253,
+          "end": 34,
+          "name": "m_lastKnownModelPath",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1254,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1253,
+          "end": 50,
+          "name": "m_projectIdentity",
+          "start": 34
+        },
+        {
+          "class_tag": 30,
+          "end": 66,
+          "name": "m_guid",
+          "start": 50
+        },
+        {
+          "class_tag": 1255,
+          "end": 66,
+          "name": "m_identityGUID",
+          "start": 50
+        },
+        {
+          "class_tag": 1253,
+          "end": 66,
+          "name": "m_modelIdentity",
+          "start": 50
+        },
+        {
+          "class_tag": 1250,
+          "end": 66,
+          "name": "m_centralLocation",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1018,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1256,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 588,
+          "end": 88,
+          "name": "m_id",
+          "start": 86
+        },
+        {
+          "class_tag": 1256,
+          "end": 88,
+          "name": "m_userID",
+          "start": 86
+        },
+        {
+          "class_tag": 1256,
+          "end": 89,
+          "name": "m_atRisk",
+          "start": 88
+        },
+        {
+          "class_tag": 1250,
+          "end": 89,
+          "name": "m_checkoutRecords",
+          "start": 66
+        },
+        {
+          "class_tag": 1250,
+          "end": 93,
+          "name": "m_ownerName",
+          "start": 89
+        },
+        {
+          "class_tag": 1250,
+          "end": 133,
+          "name": "m_softwareVersion",
+          "start": 93
+        },
+        {
+          "class_tag": 1250,
+          "end": 137,
+          "name": "m_version",
+          "start": 133
+        },
+        {
+          "class_tag": 1250,
+          "end": 141,
+          "name": "m_incrementWhenWorksharingEnabled",
+          "start": 137
+        },
+        {
+          "class_tag": 1250,
+          "end": 145,
+          "name": "m_maxBackups",
+          "start": 141
+        },
+        {
+          "class_tag": 1250,
+          "end": 149,
+          "name": "m_mastersMaxBackups",
+          "start": 145
+        },
+        {
+          "class_tag": 1250,
+          "end": 153,
+          "name": "m_openWorksetDefault",
+          "start": 149
+        },
+        {
+          "class_tag": 1250,
+          "end": 154,
+          "name": "m_bSingleUser",
+          "start": 153
+        },
+        {
+          "class_tag": 1250,
+          "end": 155,
+          "name": "m_alwaysRelativizeMasterPath",
+          "start": 154
+        },
+        {
+          "class_tag": 1250,
+          "end": 156,
+          "name": "m_dataInSeparateFiles",
+          "start": 155
+        },
+        {
+          "class_tag": 1257,
+          "end": 160,
+          "name": "m_previewStreamRevision",
+          "start": 156
+        },
+        {
+          "class_tag": 1257,
+          "end": 164,
+          "name": "m_globalStreamRevision",
+          "start": 160
+        },
+        {
+          "class_tag": 1257,
+          "end": 168,
+          "name": "m_historyStreamRevision",
+          "start": 164
+        },
+        {
+          "class_tag": 1257,
+          "end": 172,
+          "name": "m_elemTableStreamRevision",
+          "start": 168
+        },
+        {
+          "class_tag": 1257,
+          "end": 176,
+          "name": "m_contentDocumentsStreamRevision",
+          "start": 172
+        },
+        {
+          "class_tag": 1257,
+          "end": 180,
+          "name": "m_partitionTableStreamRevision",
+          "start": 176
+        },
+        {
+          "class_tag": 1257,
+          "end": 184,
+          "name": "m_incrementTableStreamRevision",
+          "start": 180
+        },
+        {
+          "class_tag": 1257,
+          "end": 188,
+          "name": "m_basicFileInfoStreamRevision",
+          "start": 184
+        },
+        {
+          "class_tag": 1257,
+          "end": 192,
+          "name": "m_transmissionDataStreamRevision",
+          "start": 188
+        },
+        {
+          "class_tag": 1257,
+          "end": 196,
+          "name": "m_partAtomStreamRevision",
+          "start": 192
+        },
+        {
+          "class_tag": 1257,
+          "end": 200,
+          "name": "m_projectXMLInfoStreamRevision",
+          "start": 196
+        },
+        {
+          "class_tag": 1250,
+          "end": 200,
+          "name": "m_streamRevisions",
+          "start": 156
+        },
+        {
+          "class_tag": 1250,
+          "end": 206,
+          "name": "m_oPermissions",
+          "start": 200
+        },
+        {
+          "class_tag": 1250,
+          "end": 212,
+          "name": "m_oRequests",
+          "start": 206
+        }
+      ],
+      "fields": {
+        "m_alwaysRelativizeMasterPath": false,
+        "m_bSingleUser": true,
+        "m_centralLocation": {
+          "m_lastKnownModelPath": {
+            "m_centralServerPath": "",
+            "m_path": "",
+            "m_region": "GLOBAL",
+            "m_type": 0
+          },
+          "m_modelIdentity": {
+            "m_identityGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "m_projectIdentity": {
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "m_checkoutRecords": [
+          {
+            "m_atRisk": false,
+            "m_guid": {
+              "m_guid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    253,
+                    97,
+                    98,
+                    106,
+                    176,
+                    0,
+                    163,
+                    75,
+                    135,
+                    198,
+                    162,
+                    159,
+                    90,
+                    55,
+                    135,
+                    86
+                  ]
+                }
+              }
+            },
+            "m_userID": {
+              "m_id": -2
+            }
+          }
+        ],
+        "m_dataInSeparateFiles": false,
+        "m_incrementWhenWorksharingEnabled": 0,
+        "m_mastersMaxBackups": -1,
+        "m_maxBackups": 3,
+        "m_oPermissions": {
+          "class_tag": 1324,
+          "offset": 200,
+          "pointer_token": 4294967295
+        },
+        "m_oRequests": {
+          "class_tag": 1330,
+          "offset": 206,
+          "pointer_token": 4294967295
+        },
+        "m_openWorksetDefault": 3,
+        "m_ownerName": "",
+        "m_softwareVersion": "20230828_1515(x64)",
+        "m_streamRevisions": {
+          "m_basicFileInfoStreamRevision": 6,
+          "m_contentDocumentsStreamRevision": 6,
+          "m_elemTableStreamRevision": 6,
+          "m_globalStreamRevision": 6,
+          "m_historyStreamRevision": 6,
+          "m_incrementTableStreamRevision": 6,
+          "m_partAtomStreamRevision": -1,
+          "m_partitionTableStreamRevision": 6,
+          "m_previewStreamRevision": 6,
+          "m_projectXMLInfoStreamRevision": 6,
+          "m_transmissionDataStreamRevision": 6
+        },
+        "m_userTable": {
+          "m_IDtoName": []
+        },
+        "m_version": 7
+      },
+      "start": 2
+    },
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [],
+        "name": "DocumentStorageIndex",
+        "offset": 144836,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 34019,
+                "sub": 0
+              }
+            },
+            "name": "m_userTable"
+          }
+        ],
+        "name": "DocumentStorageIndexImpl",
+        "offset": 144874,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "document_guid": "4010f260-d136-40e2-9c97-739906627cf3",
+    "document_increments": 7,
+    "latest_audit": {
+      "class_name": "ADocument",
+      "class_tag": 28,
+      "end": 183,
+      "field_names": [
+        "m_appInfoArr",
+        "m_bIsCoreDocument",
+        "m_corruptDocument",
+        "m_devBranchInfo",
+        "m_elemTable",
+        "m_executedUpgrades",
+        "m_groupFile",
+        "m_oContentTable",
+        "m_oExServicesUsed",
+        "m_oNobleSecondaryData",
+        "m_ownerFamilyContainingGroupId",
+        "m_ownerFamilyId",
+        "m_pAppInfoManager",
+        "m_pHistory",
+        "m_pHostDocument",
+        "m_pPartitionTable",
+        "m_pSteelModelInfo",
+        "m_pStyleSettings",
+        "m_storedByRevitBuild"
+      ],
+      "field_spans": [
+        {
+          "class_tag": 28,
+          "end": 6,
+          "name": "m_elemTable",
+          "start": 2
+        },
+        {
+          "class_tag": 28,
+          "end": 10,
+          "name": "m_appInfoArr",
+          "start": 6
+        },
+        {
+          "class_tag": 28,
+          "end": 16,
+          "name": "m_oContentTable",
+          "start": 10
+        },
+        {
+          "class_tag": 28,
+          "end": 20,
+          "name": "m_pHostDocument",
+          "start": 16
+        },
+        {
+          "class_tag": 28,
+          "end": 26,
+          "name": "m_pAppInfoManager",
+          "start": 20
+        },
+        {
+          "class_tag": 28,
+          "end": 32,
+          "name": "m_pStyleSettings",
+          "start": 26
+        },
+        {
+          "class_tag": 28,
+          "end": 36,
+          "name": "m_pHistory",
+          "start": 32
+        },
+        {
+          "class_tag": 28,
+          "end": 42,
+          "name": "m_pSteelModelInfo",
+          "start": 36
+        },
+        {
+          "class_tag": 28,
+          "end": 46,
+          "name": "m_pPartitionTable",
+          "start": 42
+        },
+        {
+          "class_tag": 28,
+          "end": 52,
+          "name": "m_oNobleSecondaryData",
+          "start": 46
+        },
+        {
+          "class_tag": 21,
+          "end": 56,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 20,
+          "end": 56,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 28,
+          "end": 56,
+          "name": "m_ownerFamilyId",
+          "start": 52
+        },
+        {
+          "class_tag": 21,
+          "end": 60,
+          "name": "m_id",
+          "start": 56
+        },
+        {
+          "class_tag": 20,
+          "end": 60,
+          "name": "m_id",
+          "start": 56
+        },
+        {
+          "class_tag": 28,
+          "end": 60,
+          "name": "m_ownerFamilyContainingGroupId",
+          "start": 56
+        },
+        {
+          "class_tag": 29,
+          "end": 64,
+          "name": "m_devBranchId",
+          "start": 60
+        },
+        {
+          "class_tag": 29,
+          "end": 68,
+          "name": "m_syncVersion",
+          "start": 64
+        },
+        {
+          "class_tag": 28,
+          "end": 68,
+          "name": "m_devBranchInfo",
+          "start": 60
+        },
+        {
+          "class_tag": 28,
+          "end": 69,
+          "name": "m_groupFile",
+          "start": 68
+        },
+        {
+          "class_tag": 28,
+          "end": 70,
+          "name": "m_corruptDocument",
+          "start": 69
+        },
+        {
+          "class_tag": 28,
+          "end": 71,
+          "name": "m_bIsCoreDocument",
+          "start": 70
+        },
+        {
+          "class_tag": 28,
+          "end": 75,
+          "name": "m_executedUpgrades",
+          "start": 71
+        },
+        {
+          "class_tag": 31,
+          "end": 177,
+          "name": "m_str",
+          "start": 79
+        },
+        {
+          "class_tag": 28,
+          "end": 177,
+          "name": "m_storedByRevitBuild",
+          "start": 75
+        },
+        {
+          "class_tag": 28,
+          "end": 183,
+          "name": "m_oExServicesUsed",
+          "start": 177
+        }
+      ],
+      "inflated_bytes": 884529,
+      "selected_fields": {
+        "m_pHistory": {
+          "class_tag": null,
+          "offset": 32,
+          "pointer_token": 0
+        }
+      },
+      "status": "root_fields_decoded"
+    },
+    "latest_graph": {
+      "consumed_bytes": 884525,
+      "edges": 211,
+      "identity_named_objects": [
+        {
+          "class_name": "ADocument",
+          "class_tag": 28,
+          "field_names": [
+            "m_appInfoArr",
+            "m_bIsCoreDocument",
+            "m_corruptDocument",
+            "m_devBranchInfo",
+            "m_elemTable",
+            "m_executedUpgrades",
+            "m_groupFile",
+            "m_oContentTable",
+            "m_oExServicesUsed",
+            "m_oNobleSecondaryData",
+            "m_ownerFamilyContainingGroupId",
+            "m_ownerFamilyId",
+            "m_pAppInfoManager",
+            "m_pHistory",
+            "m_pHostDocument",
+            "m_pPartitionTable",
+            "m_pSteelModelInfo",
+            "m_pStyleSettings",
+            "m_storedByRevitBuild"
+          ],
+          "fields_end": 183,
+          "selected_fields": {
+            "m_pHistory": {
+              "class_tag": null,
+              "offset": 32,
+              "pointer_token": 0
+            }
+          },
+          "start": 2
+        },
+        {
+          "class_name": "SteelModelInfo",
+          "class_tag": 3861,
+          "field_names": [
+            "m_extModelId",
+            "m_localIncrement",
+            "m_numCentralIncrements",
+            "m_steelModelLastSTC",
+            "m_steelModelLastSTC_hash",
+            "m_steelModelLatest",
+            "m_steelModelLatest_hash"
+          ],
+          "fields_end": 2003,
+          "selected_fields": {
+            "m_localIncrement": {
+              "m_binaryData": [],
+              "m_uid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "m_numCentralIncrements": 0
+          },
+          "start": 1935
+        },
+        {
+          "class_name": "GlobalParamTracking",
+          "class_tag": 2170,
+          "field_names": [
+            "m_OrderedParams",
+            "m_elemIdSet",
+            "m_episodesHistory",
+            "m_idMRU",
+            "m_orderingEpisode",
+            "m_pADoc"
+          ],
+          "fields_end": 882280,
+          "selected_fields": {
+            "m_episodesHistory": {
+              "m_arr": [
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "m_max_size": 100,
+              "m_shift": 0
+            },
+            "m_orderingEpisode": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "start": 882204
+        }
+      ],
+      "inflated_bytes": 884529,
+      "object_count": 212,
+      "status": "graph_decoded",
+      "trailing_zero_bytes": 4
+    },
+    "basic_file_info_property_spans": {
+      "Unique Document GUID": {
+        "value": "4010f260-d136-40e2-9c97-739906627cf3",
+        "start": 1689,
+        "end": 1761
+      },
+      "Unique Document Increments": {
+        "value": "7",
+        "start": 1821,
+        "end": 1823
+      },
+      "Central model's version number corresponding to the last reload latest": {
+        "value": "7",
+        "start": 1423,
+        "end": 1425
+      },
+      "Central model's episode GUID corresponding to the last reload latest": {
+        "value": "4010f260-d136-40e2-9c97-739906627cf3",
+        "start": 1569,
+        "end": 1641
+      }
+    },
+    "basic_file_info_sha256": "b274c91e865739ec4e4744332121486107ad06a1f69825f50298c7db5b587c13",
+    "document_guid_matching_history_fields": [],
+    "contents_formats_revision": 0,
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "limitations": [
+      "No paired saves establish GUID changes or counter allocation rules.",
+      "BasicFileInfo property spans identify text only, not all binary duplicates.",
+      "Global/Latest complete wire graph decoding does not establish every field semantic.",
+      "Identity-name filtering covers top-level object fields, not every possible semantic reference.",
+      "Contents root decoder stops before opaque trailing bytes; patcher preserves them."
+    ],
+    "identity_patch_byte_exact": true,
+    "all_revision_spans_trial_independently_verified": true,
+    "fixed_width_counter_trial_independently_verified": true
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "contents_stored_bytes": 212,
+    "contents_logical_bytes": 163,
+    "contents_inflated_sha256": "56980e5799501c124a4d5ca47abed8bfd1397ab404ce7e62ee0d8d7597e5625e",
+    "contents_logical_sha256": "45ef42f98492aaf01fb6f705f192d7fa955b8db3c6763e0a31b7dca80794d544",
+    "contents_header_hex": "621922051c000000010000000000000062192205af000000",
+    "contents_gzip_suffix_hex": "",
+    "contents_inflated_bytes": 240,
+    "contents_inflated_hex": "23050000000000000000000000000600000047004c004f00420041004c0000000000000000000000000000000000000000000000000000000000000000000000000001000000f852e0e35601d51193010000863f27adffff000000000012000000320030003200350030003500310035005f00310035003100350028007800360034002900070000000000000014000000ffffffff030000000100001c0100001c0100001c0100001c010000ad0000001c0100001d010000ff000000ad000000ffffffffa2000000ffffffff7105ffffffff770500000000000000000000000000000000000000000000000000000000",
+    "classes": [
+      {
+        "base": null,
+        "field_count": 0,
+        "name": "DocumentStorageIndex",
+        "tag": 1314,
+        "version": 0
+      },
+      {
+        "base": 1314,
+        "field_count": 16,
+        "name": "DocumentStorageIndexImpl",
+        "tag": 1315,
+        "version": 29
+      }
+    ],
+    "contents_root": {
+      "class_name": "DocumentStorageIndexImpl",
+      "class_tag": 1315,
+      "end": 212,
+      "field_spans": [
+        {
+          "class_tag": 1316,
+          "end": 6,
+          "name": "m_IDtoName",
+          "start": 2
+        },
+        {
+          "class_tag": 1315,
+          "end": 6,
+          "name": "m_userTable",
+          "start": 2
+        },
+        {
+          "class_tag": 782,
+          "end": 10,
+          "name": "m_centralServerPath",
+          "start": 6
+        },
+        {
+          "class_tag": 782,
+          "end": 14,
+          "name": "m_path",
+          "start": 10
+        },
+        {
+          "class_tag": 782,
+          "end": 30,
+          "name": "m_region",
+          "start": 14
+        },
+        {
+          "class_tag": 782,
+          "end": 34,
+          "name": "m_type",
+          "start": 30
+        },
+        {
+          "class_tag": 1318,
+          "end": 34,
+          "name": "m_lastKnownModelPath",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1319,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1318,
+          "end": 50,
+          "name": "m_projectIdentity",
+          "start": 34
+        },
+        {
+          "class_tag": 30,
+          "end": 66,
+          "name": "m_guid",
+          "start": 50
+        },
+        {
+          "class_tag": 1320,
+          "end": 66,
+          "name": "m_identityGUID",
+          "start": 50
+        },
+        {
+          "class_tag": 1318,
+          "end": 66,
+          "name": "m_modelIdentity",
+          "start": 50
+        },
+        {
+          "class_tag": 1315,
+          "end": 66,
+          "name": "m_centralLocation",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1072,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1321,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 626,
+          "end": 88,
+          "name": "m_id",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 88,
+          "name": "m_userID",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 89,
+          "name": "m_atRisk",
+          "start": 88
+        },
+        {
+          "class_tag": 1315,
+          "end": 89,
+          "name": "m_checkoutRecords",
+          "start": 66
+        },
+        {
+          "class_tag": 1315,
+          "end": 93,
+          "name": "m_ownerName",
+          "start": 89
+        },
+        {
+          "class_tag": 1315,
+          "end": 133,
+          "name": "m_softwareVersion",
+          "start": 93
+        },
+        {
+          "class_tag": 1315,
+          "end": 137,
+          "name": "m_version",
+          "start": 133
+        },
+        {
+          "class_tag": 1315,
+          "end": 141,
+          "name": "m_incrementWhenWorksharingEnabled",
+          "start": 137
+        },
+        {
+          "class_tag": 1315,
+          "end": 145,
+          "name": "m_maxBackups",
+          "start": 141
+        },
+        {
+          "class_tag": 1315,
+          "end": 149,
+          "name": "m_mastersMaxBackups",
+          "start": 145
+        },
+        {
+          "class_tag": 1315,
+          "end": 153,
+          "name": "m_openWorksetDefault",
+          "start": 149
+        },
+        {
+          "class_tag": 1315,
+          "end": 154,
+          "name": "m_bSingleUser",
+          "start": 153
+        },
+        {
+          "class_tag": 1315,
+          "end": 155,
+          "name": "m_alwaysRelativizeMasterPath",
+          "start": 154
+        },
+        {
+          "class_tag": 1315,
+          "end": 156,
+          "name": "m_dataInSeparateFiles",
+          "start": 155
+        },
+        {
+          "class_tag": 1322,
+          "end": 160,
+          "name": "m_previewStreamRevision",
+          "start": 156
+        },
+        {
+          "class_tag": 1322,
+          "end": 164,
+          "name": "m_globalStreamRevision",
+          "start": 160
+        },
+        {
+          "class_tag": 1322,
+          "end": 168,
+          "name": "m_historyStreamRevision",
+          "start": 164
+        },
+        {
+          "class_tag": 1322,
+          "end": 172,
+          "name": "m_elemTableStreamRevision",
+          "start": 168
+        },
+        {
+          "class_tag": 1322,
+          "end": 176,
+          "name": "m_contentDocumentsStreamRevision",
+          "start": 172
+        },
+        {
+          "class_tag": 1322,
+          "end": 180,
+          "name": "m_partitionTableStreamRevision",
+          "start": 176
+        },
+        {
+          "class_tag": 1322,
+          "end": 184,
+          "name": "m_incrementTableStreamRevision",
+          "start": 180
+        },
+        {
+          "class_tag": 1322,
+          "end": 188,
+          "name": "m_basicFileInfoStreamRevision",
+          "start": 184
+        },
+        {
+          "class_tag": 1322,
+          "end": 192,
+          "name": "m_transmissionDataStreamRevision",
+          "start": 188
+        },
+        {
+          "class_tag": 1322,
+          "end": 196,
+          "name": "m_partAtomStreamRevision",
+          "start": 192
+        },
+        {
+          "class_tag": 1322,
+          "end": 200,
+          "name": "m_projectXMLInfoStreamRevision",
+          "start": 196
+        },
+        {
+          "class_tag": 1315,
+          "end": 200,
+          "name": "m_streamRevisions",
+          "start": 156
+        },
+        {
+          "class_tag": 1315,
+          "end": 206,
+          "name": "m_oPermissions",
+          "start": 200
+        },
+        {
+          "class_tag": 1315,
+          "end": 212,
+          "name": "m_oRequests",
+          "start": 206
+        }
+      ],
+      "fields": {
+        "m_alwaysRelativizeMasterPath": false,
+        "m_bSingleUser": true,
+        "m_centralLocation": {
+          "m_lastKnownModelPath": {
+            "m_centralServerPath": "",
+            "m_path": "",
+            "m_region": "GLOBAL",
+            "m_type": 0
+          },
+          "m_modelIdentity": {
+            "m_identityGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "m_projectIdentity": {
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "m_checkoutRecords": [
+          {
+            "m_atRisk": false,
+            "m_guid": {
+              "m_guid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    248,
+                    82,
+                    224,
+                    227,
+                    86,
+                    1,
+                    213,
+                    17,
+                    147,
+                    1,
+                    0,
+                    0,
+                    134,
+                    63,
+                    39,
+                    173
+                  ]
+                }
+              }
+            },
+            "m_userID": {
+              "m_id": -1
+            }
+          }
+        ],
+        "m_dataInSeparateFiles": false,
+        "m_incrementWhenWorksharingEnabled": 0,
+        "m_mastersMaxBackups": -1,
+        "m_maxBackups": 20,
+        "m_oPermissions": {
+          "class_tag": 1393,
+          "offset": 200,
+          "pointer_token": 4294967295
+        },
+        "m_oRequests": {
+          "class_tag": 1399,
+          "offset": 206,
+          "pointer_token": 4294967295
+        },
+        "m_openWorksetDefault": 3,
+        "m_ownerName": "",
+        "m_softwareVersion": "20250515_1515(x64)",
+        "m_streamRevisions": {
+          "m_basicFileInfoStreamRevision": 255,
+          "m_contentDocumentsStreamRevision": 173,
+          "m_elemTableStreamRevision": 284,
+          "m_globalStreamRevision": 284,
+          "m_historyStreamRevision": 284,
+          "m_incrementTableStreamRevision": 285,
+          "m_partAtomStreamRevision": -1,
+          "m_partitionTableStreamRevision": 284,
+          "m_previewStreamRevision": 284,
+          "m_projectXMLInfoStreamRevision": 162,
+          "m_transmissionDataStreamRevision": 173
+        },
+        "m_userTable": {
+          "m_IDtoName": []
+        },
+        "m_version": 7
+      },
+      "start": 2
+    },
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [],
+        "name": "DocumentStorageIndex",
+        "offset": 154091,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 34084,
+                "sub": 0
+              }
+            },
+            "name": "m_userTable"
+          }
+        ],
+        "name": "DocumentStorageIndexImpl",
+        "offset": 154129,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "document_guid": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+    "document_increments": 85,
+    "latest_audit": {
+      "class_name": "ADocument",
+      "class_tag": 28,
+      "end": 823,
+      "field_names": [
+        "m_appInfoArr",
+        "m_bIsCoreDocument",
+        "m_corruptDocument",
+        "m_devBranchInfo",
+        "m_elemTable",
+        "m_executedUpgrades",
+        "m_groupFile",
+        "m_oContentTable",
+        "m_oExServicesUsed",
+        "m_oNobleSecondaryData",
+        "m_ownerFamilyContainingGroupId",
+        "m_ownerFamilyId",
+        "m_pAppInfoManager",
+        "m_pHistory",
+        "m_pHostDocument",
+        "m_pPartitionTable",
+        "m_pSteelModelInfo",
+        "m_pStyleSettings",
+        "m_storedByRevitBuild"
+      ],
+      "field_spans": [
+        {
+          "class_tag": 28,
+          "end": 6,
+          "name": "m_elemTable",
+          "start": 2
+        },
+        {
+          "class_tag": 28,
+          "end": 10,
+          "name": "m_appInfoArr",
+          "start": 6
+        },
+        {
+          "class_tag": 28,
+          "end": 16,
+          "name": "m_oContentTable",
+          "start": 10
+        },
+        {
+          "class_tag": 28,
+          "end": 20,
+          "name": "m_pHostDocument",
+          "start": 16
+        },
+        {
+          "class_tag": 28,
+          "end": 26,
+          "name": "m_pAppInfoManager",
+          "start": 20
+        },
+        {
+          "class_tag": 28,
+          "end": 32,
+          "name": "m_pStyleSettings",
+          "start": 26
+        },
+        {
+          "class_tag": 28,
+          "end": 36,
+          "name": "m_pHistory",
+          "start": 32
+        },
+        {
+          "class_tag": 28,
+          "end": 42,
+          "name": "m_pSteelModelInfo",
+          "start": 36
+        },
+        {
+          "class_tag": 28,
+          "end": 46,
+          "name": "m_pPartitionTable",
+          "start": 42
+        },
+        {
+          "class_tag": 28,
+          "end": 52,
+          "name": "m_oNobleSecondaryData",
+          "start": 46
+        },
+        {
+          "class_tag": 21,
+          "end": 60,
+          "name": "m_id64",
+          "start": 52
+        },
+        {
+          "class_tag": 20,
+          "end": 60,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 28,
+          "end": 60,
+          "name": "m_ownerFamilyId",
+          "start": 52
+        },
+        {
+          "class_tag": 21,
+          "end": 68,
+          "name": "m_id64",
+          "start": 60
+        },
+        {
+          "class_tag": 20,
+          "end": 68,
+          "name": "m_id",
+          "start": 60
+        },
+        {
+          "class_tag": 28,
+          "end": 68,
+          "name": "m_ownerFamilyContainingGroupId",
+          "start": 60
+        },
+        {
+          "class_tag": 29,
+          "end": 72,
+          "name": "m_devBranchId",
+          "start": 68
+        },
+        {
+          "class_tag": 29,
+          "end": 76,
+          "name": "m_syncVersion",
+          "start": 72
+        },
+        {
+          "class_tag": 28,
+          "end": 76,
+          "name": "m_devBranchInfo",
+          "start": 68
+        },
+        {
+          "class_tag": 28,
+          "end": 77,
+          "name": "m_groupFile",
+          "start": 76
+        },
+        {
+          "class_tag": 28,
+          "end": 78,
+          "name": "m_corruptDocument",
+          "start": 77
+        },
+        {
+          "class_tag": 28,
+          "end": 79,
+          "name": "m_bIsCoreDocument",
+          "start": 78
+        },
+        {
+          "class_tag": 28,
+          "end": 83,
+          "name": "m_executedUpgrades",
+          "start": 79
+        },
+        {
+          "class_tag": 31,
+          "end": 229,
+          "name": "m_str",
+          "start": 87
+        },
+        {
+          "class_tag": 31,
+          "end": 327,
+          "name": "m_str",
+          "start": 229
+        },
+        {
+          "class_tag": 31,
+          "end": 425,
+          "name": "m_str",
+          "start": 327
+        },
+        {
+          "class_tag": 31,
+          "end": 523,
+          "name": "m_str",
+          "start": 425
+        },
+        {
+          "class_tag": 31,
+          "end": 621,
+          "name": "m_str",
+          "start": 523
+        },
+        {
+          "class_tag": 31,
+          "end": 719,
+          "name": "m_str",
+          "start": 621
+        },
+        {
+          "class_tag": 31,
+          "end": 817,
+          "name": "m_str",
+          "start": 719
+        },
+        {
+          "class_tag": 28,
+          "end": 817,
+          "name": "m_storedByRevitBuild",
+          "start": 83
+        },
+        {
+          "class_tag": 28,
+          "end": 823,
+          "name": "m_oExServicesUsed",
+          "start": 817
+        }
+      ],
+      "inflated_bytes": 1243990,
+      "selected_fields": {
+        "m_pHistory": {
+          "class_tag": null,
+          "offset": 32,
+          "pointer_token": 0
+        }
+      },
+      "status": "root_fields_decoded"
+    },
+    "latest_graph": {
+      "consumed_bytes": 1243986,
+      "edges": 456,
+      "identity_named_objects": [
+        {
+          "class_name": "ADocument",
+          "class_tag": 28,
+          "field_names": [
+            "m_appInfoArr",
+            "m_bIsCoreDocument",
+            "m_corruptDocument",
+            "m_devBranchInfo",
+            "m_elemTable",
+            "m_executedUpgrades",
+            "m_groupFile",
+            "m_oContentTable",
+            "m_oExServicesUsed",
+            "m_oNobleSecondaryData",
+            "m_ownerFamilyContainingGroupId",
+            "m_ownerFamilyId",
+            "m_pAppInfoManager",
+            "m_pHistory",
+            "m_pHostDocument",
+            "m_pPartitionTable",
+            "m_pSteelModelInfo",
+            "m_pStyleSettings",
+            "m_storedByRevitBuild"
+          ],
+          "fields_end": 823,
+          "selected_fields": {
+            "m_pHistory": {
+              "class_tag": null,
+              "offset": 32,
+              "pointer_token": 0
+            }
+          },
+          "start": 2
+        },
+        {
+          "class_name": "SteelModelInfo",
+          "class_tag": 4006,
+          "field_names": [
+            "m_extModelId",
+            "m_localIncrement",
+            "m_numCentralIncrements",
+            "m_steelModelLastSTC",
+            "m_steelModelLastSTC_hash",
+            "m_steelModelLatest",
+            "m_steelModelLatest_hash"
+          ],
+          "fields_end": 10003,
+          "selected_fields": {
+            "m_localIncrement": {
+              "m_binaryData": [],
+              "m_uid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "m_numCentralIncrements": 0
+          },
+          "start": 9935
+        },
+        {
+          "class_name": "GlobalParamTracking",
+          "class_tag": 2270,
+          "field_names": [
+            "m_OrderedParams",
+            "m_elemIdSet",
+            "m_episodesHistory",
+            "m_idMRU",
+            "m_orderingEpisode",
+            "m_pADoc"
+          ],
+          "fields_end": 1232680,
+          "selected_fields": {
+            "m_episodesHistory": {
+              "m_arr": [
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "m_max_size": 100,
+              "m_shift": 0
+            },
+            "m_orderingEpisode": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "start": 1232600
+        }
+      ],
+      "inflated_bytes": 1243990,
+      "object_count": 457,
+      "status": "graph_decoded",
+      "trailing_zero_bytes": 4
+    },
+    "basic_file_info_property_spans": {
+      "Unique Document GUID": {
+        "value": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+        "start": 1797,
+        "end": 1869
+      },
+      "Unique Document Increments": {
+        "value": "85",
+        "start": 1929,
+        "end": 1933
+      },
+      "Central model's version number corresponding to the last reload latest": {
+        "value": "85",
+        "start": 1529,
+        "end": 1533
+      },
+      "Central model's episode GUID corresponding to the last reload latest": {
+        "value": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+        "start": 1677,
+        "end": 1749
+      }
+    },
+    "basic_file_info_sha256": "194183d7d6a41a515b80d281693dbbe71430db983744f920e47059f965994ab6",
+    "document_guid_matching_history_fields": [],
+    "contents_formats_revision": 175,
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "limitations": [
+      "No paired saves establish GUID changes or counter allocation rules.",
+      "BasicFileInfo property spans identify text only, not all binary duplicates.",
+      "Global/Latest complete wire graph decoding does not establish every field semantic.",
+      "Identity-name filtering covers top-level object fields, not every possible semantic reference.",
+      "Contents root decoder stops before opaque trailing bytes; patcher preserves them."
+    ],
+    "identity_patch_byte_exact": true,
+    "all_revision_spans_trial_independently_verified": true,
+    "fixed_width_counter_trial_independently_verified": true
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "contents_stored_bytes": 204,
+    "contents_logical_bytes": 156,
+    "contents_inflated_sha256": "523d1b60ceb2d2b42845aaf82ce6007b5ca4e52ba9970d1476a5c535f1c8ecea",
+    "contents_logical_sha256": "28c6c34506869287c8871509c09bd519f8115ad44ac7bf275770da35fe9f8cc9",
+    "contents_header_hex": "621922051c00000001000000000000006219220505000000",
+    "contents_gzip_suffix_hex": "",
+    "contents_inflated_bytes": 240,
+    "contents_inflated_hex": "23050000000000000000000000000600000047004c004f00420041004c0000000000000000000000000000000000000000000000000000000000000000000000000001000000e2fb5e843a7e334bbf1339ac5785dffdfeff000000000012000000320030003200350030003500310035005f00310035003100350028007800360034002900070000000000000003000000ffffffff03000000010000c2000000c7000000c7000000c7000000c7000000c7000000c7000000c7000000c7000000ffffffffc7000000ffffffff7105ffffffff770500000000000000000000000000000000000000000000000000000000",
+    "classes": [
+      {
+        "base": null,
+        "field_count": 0,
+        "name": "DocumentStorageIndex",
+        "tag": 1314,
+        "version": 0
+      },
+      {
+        "base": 1314,
+        "field_count": 16,
+        "name": "DocumentStorageIndexImpl",
+        "tag": 1315,
+        "version": 29
+      }
+    ],
+    "contents_root": {
+      "class_name": "DocumentStorageIndexImpl",
+      "class_tag": 1315,
+      "end": 212,
+      "field_spans": [
+        {
+          "class_tag": 1316,
+          "end": 6,
+          "name": "m_IDtoName",
+          "start": 2
+        },
+        {
+          "class_tag": 1315,
+          "end": 6,
+          "name": "m_userTable",
+          "start": 2
+        },
+        {
+          "class_tag": 782,
+          "end": 10,
+          "name": "m_centralServerPath",
+          "start": 6
+        },
+        {
+          "class_tag": 782,
+          "end": 14,
+          "name": "m_path",
+          "start": 10
+        },
+        {
+          "class_tag": 782,
+          "end": 30,
+          "name": "m_region",
+          "start": 14
+        },
+        {
+          "class_tag": 782,
+          "end": 34,
+          "name": "m_type",
+          "start": 30
+        },
+        {
+          "class_tag": 1318,
+          "end": 34,
+          "name": "m_lastKnownModelPath",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1319,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1318,
+          "end": 50,
+          "name": "m_projectIdentity",
+          "start": 34
+        },
+        {
+          "class_tag": 30,
+          "end": 66,
+          "name": "m_guid",
+          "start": 50
+        },
+        {
+          "class_tag": 1320,
+          "end": 66,
+          "name": "m_identityGUID",
+          "start": 50
+        },
+        {
+          "class_tag": 1318,
+          "end": 66,
+          "name": "m_modelIdentity",
+          "start": 50
+        },
+        {
+          "class_tag": 1315,
+          "end": 66,
+          "name": "m_centralLocation",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1072,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1321,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 626,
+          "end": 88,
+          "name": "m_id",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 88,
+          "name": "m_userID",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 89,
+          "name": "m_atRisk",
+          "start": 88
+        },
+        {
+          "class_tag": 1315,
+          "end": 89,
+          "name": "m_checkoutRecords",
+          "start": 66
+        },
+        {
+          "class_tag": 1315,
+          "end": 93,
+          "name": "m_ownerName",
+          "start": 89
+        },
+        {
+          "class_tag": 1315,
+          "end": 133,
+          "name": "m_softwareVersion",
+          "start": 93
+        },
+        {
+          "class_tag": 1315,
+          "end": 137,
+          "name": "m_version",
+          "start": 133
+        },
+        {
+          "class_tag": 1315,
+          "end": 141,
+          "name": "m_incrementWhenWorksharingEnabled",
+          "start": 137
+        },
+        {
+          "class_tag": 1315,
+          "end": 145,
+          "name": "m_maxBackups",
+          "start": 141
+        },
+        {
+          "class_tag": 1315,
+          "end": 149,
+          "name": "m_mastersMaxBackups",
+          "start": 145
+        },
+        {
+          "class_tag": 1315,
+          "end": 153,
+          "name": "m_openWorksetDefault",
+          "start": 149
+        },
+        {
+          "class_tag": 1315,
+          "end": 154,
+          "name": "m_bSingleUser",
+          "start": 153
+        },
+        {
+          "class_tag": 1315,
+          "end": 155,
+          "name": "m_alwaysRelativizeMasterPath",
+          "start": 154
+        },
+        {
+          "class_tag": 1315,
+          "end": 156,
+          "name": "m_dataInSeparateFiles",
+          "start": 155
+        },
+        {
+          "class_tag": 1322,
+          "end": 160,
+          "name": "m_previewStreamRevision",
+          "start": 156
+        },
+        {
+          "class_tag": 1322,
+          "end": 164,
+          "name": "m_globalStreamRevision",
+          "start": 160
+        },
+        {
+          "class_tag": 1322,
+          "end": 168,
+          "name": "m_historyStreamRevision",
+          "start": 164
+        },
+        {
+          "class_tag": 1322,
+          "end": 172,
+          "name": "m_elemTableStreamRevision",
+          "start": 168
+        },
+        {
+          "class_tag": 1322,
+          "end": 176,
+          "name": "m_contentDocumentsStreamRevision",
+          "start": 172
+        },
+        {
+          "class_tag": 1322,
+          "end": 180,
+          "name": "m_partitionTableStreamRevision",
+          "start": 176
+        },
+        {
+          "class_tag": 1322,
+          "end": 184,
+          "name": "m_incrementTableStreamRevision",
+          "start": 180
+        },
+        {
+          "class_tag": 1322,
+          "end": 188,
+          "name": "m_basicFileInfoStreamRevision",
+          "start": 184
+        },
+        {
+          "class_tag": 1322,
+          "end": 192,
+          "name": "m_transmissionDataStreamRevision",
+          "start": 188
+        },
+        {
+          "class_tag": 1322,
+          "end": 196,
+          "name": "m_partAtomStreamRevision",
+          "start": 192
+        },
+        {
+          "class_tag": 1322,
+          "end": 200,
+          "name": "m_projectXMLInfoStreamRevision",
+          "start": 196
+        },
+        {
+          "class_tag": 1315,
+          "end": 200,
+          "name": "m_streamRevisions",
+          "start": 156
+        },
+        {
+          "class_tag": 1315,
+          "end": 206,
+          "name": "m_oPermissions",
+          "start": 200
+        },
+        {
+          "class_tag": 1315,
+          "end": 212,
+          "name": "m_oRequests",
+          "start": 206
+        }
+      ],
+      "fields": {
+        "m_alwaysRelativizeMasterPath": false,
+        "m_bSingleUser": true,
+        "m_centralLocation": {
+          "m_lastKnownModelPath": {
+            "m_centralServerPath": "",
+            "m_path": "",
+            "m_region": "GLOBAL",
+            "m_type": 0
+          },
+          "m_modelIdentity": {
+            "m_identityGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "m_projectIdentity": {
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "m_checkoutRecords": [
+          {
+            "m_atRisk": false,
+            "m_guid": {
+              "m_guid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    226,
+                    251,
+                    94,
+                    132,
+                    58,
+                    126,
+                    51,
+                    75,
+                    191,
+                    19,
+                    57,
+                    172,
+                    87,
+                    133,
+                    223,
+                    253
+                  ]
+                }
+              }
+            },
+            "m_userID": {
+              "m_id": -2
+            }
+          }
+        ],
+        "m_dataInSeparateFiles": false,
+        "m_incrementWhenWorksharingEnabled": 0,
+        "m_mastersMaxBackups": -1,
+        "m_maxBackups": 3,
+        "m_oPermissions": {
+          "class_tag": 1393,
+          "offset": 200,
+          "pointer_token": 4294967295
+        },
+        "m_oRequests": {
+          "class_tag": 1399,
+          "offset": 206,
+          "pointer_token": 4294967295
+        },
+        "m_openWorksetDefault": 3,
+        "m_ownerName": "",
+        "m_softwareVersion": "20250515_1515(x64)",
+        "m_streamRevisions": {
+          "m_basicFileInfoStreamRevision": 199,
+          "m_contentDocumentsStreamRevision": 199,
+          "m_elemTableStreamRevision": 199,
+          "m_globalStreamRevision": 199,
+          "m_historyStreamRevision": 199,
+          "m_incrementTableStreamRevision": 199,
+          "m_partAtomStreamRevision": -1,
+          "m_partitionTableStreamRevision": 199,
+          "m_previewStreamRevision": 194,
+          "m_projectXMLInfoStreamRevision": 199,
+          "m_transmissionDataStreamRevision": 199
+        },
+        "m_userTable": {
+          "m_IDtoName": []
+        },
+        "m_version": 7
+      },
+      "start": 2
+    },
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [],
+        "name": "DocumentStorageIndex",
+        "offset": 154091,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 34084,
+                "sub": 0
+              }
+            },
+            "name": "m_userTable"
+          }
+        ],
+        "name": "DocumentStorageIndexImpl",
+        "offset": 154129,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "document_guid": "56faf749-e7fc-4f96-984c-1abc785b50c1",
+    "document_increments": 121,
+    "latest_audit": {
+      "class_name": "ADocument",
+      "class_tag": 28,
+      "end": 877,
+      "field_names": [
+        "m_appInfoArr",
+        "m_bIsCoreDocument",
+        "m_corruptDocument",
+        "m_devBranchInfo",
+        "m_elemTable",
+        "m_executedUpgrades",
+        "m_groupFile",
+        "m_oContentTable",
+        "m_oExServicesUsed",
+        "m_oNobleSecondaryData",
+        "m_ownerFamilyContainingGroupId",
+        "m_ownerFamilyId",
+        "m_pAppInfoManager",
+        "m_pHistory",
+        "m_pHostDocument",
+        "m_pPartitionTable",
+        "m_pSteelModelInfo",
+        "m_pStyleSettings",
+        "m_storedByRevitBuild"
+      ],
+      "field_spans": [
+        {
+          "class_tag": 28,
+          "end": 6,
+          "name": "m_elemTable",
+          "start": 2
+        },
+        {
+          "class_tag": 28,
+          "end": 10,
+          "name": "m_appInfoArr",
+          "start": 6
+        },
+        {
+          "class_tag": 28,
+          "end": 16,
+          "name": "m_oContentTable",
+          "start": 10
+        },
+        {
+          "class_tag": 28,
+          "end": 20,
+          "name": "m_pHostDocument",
+          "start": 16
+        },
+        {
+          "class_tag": 28,
+          "end": 26,
+          "name": "m_pAppInfoManager",
+          "start": 20
+        },
+        {
+          "class_tag": 28,
+          "end": 32,
+          "name": "m_pStyleSettings",
+          "start": 26
+        },
+        {
+          "class_tag": 28,
+          "end": 36,
+          "name": "m_pHistory",
+          "start": 32
+        },
+        {
+          "class_tag": 28,
+          "end": 42,
+          "name": "m_pSteelModelInfo",
+          "start": 36
+        },
+        {
+          "class_tag": 28,
+          "end": 46,
+          "name": "m_pPartitionTable",
+          "start": 42
+        },
+        {
+          "class_tag": 28,
+          "end": 52,
+          "name": "m_oNobleSecondaryData",
+          "start": 46
+        },
+        {
+          "class_tag": 21,
+          "end": 60,
+          "name": "m_id64",
+          "start": 52
+        },
+        {
+          "class_tag": 20,
+          "end": 60,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 28,
+          "end": 60,
+          "name": "m_ownerFamilyId",
+          "start": 52
+        },
+        {
+          "class_tag": 21,
+          "end": 68,
+          "name": "m_id64",
+          "start": 60
+        },
+        {
+          "class_tag": 20,
+          "end": 68,
+          "name": "m_id",
+          "start": 60
+        },
+        {
+          "class_tag": 28,
+          "end": 68,
+          "name": "m_ownerFamilyContainingGroupId",
+          "start": 60
+        },
+        {
+          "class_tag": 29,
+          "end": 72,
+          "name": "m_devBranchId",
+          "start": 68
+        },
+        {
+          "class_tag": 29,
+          "end": 76,
+          "name": "m_syncVersion",
+          "start": 72
+        },
+        {
+          "class_tag": 28,
+          "end": 76,
+          "name": "m_devBranchInfo",
+          "start": 68
+        },
+        {
+          "class_tag": 28,
+          "end": 77,
+          "name": "m_groupFile",
+          "start": 76
+        },
+        {
+          "class_tag": 28,
+          "end": 78,
+          "name": "m_corruptDocument",
+          "start": 77
+        },
+        {
+          "class_tag": 28,
+          "end": 79,
+          "name": "m_bIsCoreDocument",
+          "start": 78
+        },
+        {
+          "class_tag": 28,
+          "end": 83,
+          "name": "m_executedUpgrades",
+          "start": 79
+        },
+        {
+          "class_tag": 31,
+          "end": 185,
+          "name": "m_str",
+          "start": 87
+        },
+        {
+          "class_tag": 31,
+          "end": 283,
+          "name": "m_str",
+          "start": 185
+        },
+        {
+          "class_tag": 31,
+          "end": 381,
+          "name": "m_str",
+          "start": 283
+        },
+        {
+          "class_tag": 31,
+          "end": 479,
+          "name": "m_str",
+          "start": 381
+        },
+        {
+          "class_tag": 31,
+          "end": 577,
+          "name": "m_str",
+          "start": 479
+        },
+        {
+          "class_tag": 31,
+          "end": 675,
+          "name": "m_str",
+          "start": 577
+        },
+        {
+          "class_tag": 31,
+          "end": 773,
+          "name": "m_str",
+          "start": 675
+        },
+        {
+          "class_tag": 31,
+          "end": 871,
+          "name": "m_str",
+          "start": 773
+        },
+        {
+          "class_tag": 28,
+          "end": 871,
+          "name": "m_storedByRevitBuild",
+          "start": 83
+        },
+        {
+          "class_tag": 28,
+          "end": 877,
+          "name": "m_oExServicesUsed",
+          "start": 871
+        }
+      ],
+      "inflated_bytes": 1312996,
+      "selected_fields": {
+        "m_pHistory": {
+          "class_tag": null,
+          "offset": 32,
+          "pointer_token": 0
+        }
+      },
+      "status": "root_fields_decoded"
+    },
+    "latest_graph": {
+      "consumed_bytes": 1312992,
+      "edges": 235,
+      "identity_named_objects": [
+        {
+          "class_name": "ADocument",
+          "class_tag": 28,
+          "field_names": [
+            "m_appInfoArr",
+            "m_bIsCoreDocument",
+            "m_corruptDocument",
+            "m_devBranchInfo",
+            "m_elemTable",
+            "m_executedUpgrades",
+            "m_groupFile",
+            "m_oContentTable",
+            "m_oExServicesUsed",
+            "m_oNobleSecondaryData",
+            "m_ownerFamilyContainingGroupId",
+            "m_ownerFamilyId",
+            "m_pAppInfoManager",
+            "m_pHistory",
+            "m_pHostDocument",
+            "m_pPartitionTable",
+            "m_pSteelModelInfo",
+            "m_pStyleSettings",
+            "m_storedByRevitBuild"
+          ],
+          "fields_end": 877,
+          "selected_fields": {
+            "m_pHistory": {
+              "class_tag": null,
+              "offset": 32,
+              "pointer_token": 0
+            }
+          },
+          "start": 2
+        },
+        {
+          "class_name": "SteelModelInfo",
+          "class_tag": 4006,
+          "field_names": [
+            "m_extModelId",
+            "m_localIncrement",
+            "m_numCentralIncrements",
+            "m_steelModelLastSTC",
+            "m_steelModelLastSTC_hash",
+            "m_steelModelLatest",
+            "m_steelModelLatest_hash"
+          ],
+          "fields_end": 21439,
+          "selected_fields": {
+            "m_localIncrement": {
+              "m_binaryData": [],
+              "m_uid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "m_numCentralIncrements": 0
+          },
+          "start": 21371
+        },
+        {
+          "class_name": "GlobalParamTracking",
+          "class_tag": 2270,
+          "field_names": [
+            "m_OrderedParams",
+            "m_elemIdSet",
+            "m_episodesHistory",
+            "m_idMRU",
+            "m_orderingEpisode",
+            "m_pADoc"
+          ],
+          "fields_end": 1302736,
+          "selected_fields": {
+            "m_episodesHistory": {
+              "m_arr": [
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "m_max_size": 100,
+              "m_shift": 0
+            },
+            "m_orderingEpisode": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "start": 1302656
+        }
+      ],
+      "inflated_bytes": 1312996,
+      "object_count": 236,
+      "status": "graph_decoded",
+      "trailing_zero_bytes": 4
+    },
+    "basic_file_info_property_spans": {
+      "Unique Document GUID": {
+        "value": "56faf749-e7fc-4f96-984c-1abc785b50c1",
+        "start": 1845,
+        "end": 1917
+      },
+      "Unique Document Increments": {
+        "value": "121",
+        "start": 1977,
+        "end": 1983
+      },
+      "Central model's version number corresponding to the last reload latest": {
+        "value": "121",
+        "start": 1575,
+        "end": 1581
+      },
+      "Central model's episode GUID corresponding to the last reload latest": {
+        "value": "56faf749-e7fc-4f96-984c-1abc785b50c1",
+        "start": 1725,
+        "end": 1797
+      }
+    },
+    "basic_file_info_sha256": "a662b0332c8993c050657fc9544f45f91c544013d321d90ea5c99f068ee7c4bd",
+    "document_guid_matching_history_fields": [],
+    "contents_formats_revision": 5,
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "limitations": [
+      "No paired saves establish GUID changes or counter allocation rules.",
+      "BasicFileInfo property spans identify text only, not all binary duplicates.",
+      "Global/Latest complete wire graph decoding does not establish every field semantic.",
+      "Identity-name filtering covers top-level object fields, not every possible semantic reference.",
+      "Contents root decoder stops before opaque trailing bytes; patcher preserves them."
+    ],
+    "identity_patch_byte_exact": true,
+    "all_revision_spans_trial_independently_verified": true,
+    "fixed_width_counter_trial_independently_verified": true
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "contents_stored_bytes": 204,
+    "contents_logical_bytes": 156,
+    "contents_inflated_sha256": "6e75f38bc242d328856c8a222e5673f964c3cc6065c610d8ca428bce52202c8d",
+    "contents_logical_sha256": "f1a713ebaee584dd14e5dda36e4e14251568bffb710e675f3544bf1d243b5d28",
+    "contents_header_hex": "621922051c00000001000000000000006219220504000000",
+    "contents_gzip_suffix_hex": "",
+    "contents_inflated_bytes": 240,
+    "contents_inflated_hex": "23050000000000000000000000000600000047004c004f00420041004c0000000000000000000000000000000000000000000000000000000000000000000000000001000000e2fb5e843a7e334bbf1339ac5785dffdfeff000000000012000000320030003200350030003500310035005f00310035003100350028007800360034002900070000000000000003000000ffffffff030000000100009c0000009e0000009e0000009e0000009e0000009e0000009e0000009e0000009e000000ffffffff9e000000ffffffff7105ffffffff770500000000000000000000000000000000000000000000000000000000",
+    "classes": [
+      {
+        "base": null,
+        "field_count": 0,
+        "name": "DocumentStorageIndex",
+        "tag": 1314,
+        "version": 0
+      },
+      {
+        "base": 1314,
+        "field_count": 16,
+        "name": "DocumentStorageIndexImpl",
+        "tag": 1315,
+        "version": 29
+      }
+    ],
+    "contents_root": {
+      "class_name": "DocumentStorageIndexImpl",
+      "class_tag": 1315,
+      "end": 212,
+      "field_spans": [
+        {
+          "class_tag": 1316,
+          "end": 6,
+          "name": "m_IDtoName",
+          "start": 2
+        },
+        {
+          "class_tag": 1315,
+          "end": 6,
+          "name": "m_userTable",
+          "start": 2
+        },
+        {
+          "class_tag": 782,
+          "end": 10,
+          "name": "m_centralServerPath",
+          "start": 6
+        },
+        {
+          "class_tag": 782,
+          "end": 14,
+          "name": "m_path",
+          "start": 10
+        },
+        {
+          "class_tag": 782,
+          "end": 30,
+          "name": "m_region",
+          "start": 14
+        },
+        {
+          "class_tag": 782,
+          "end": 34,
+          "name": "m_type",
+          "start": 30
+        },
+        {
+          "class_tag": 1318,
+          "end": 34,
+          "name": "m_lastKnownModelPath",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1319,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1318,
+          "end": 50,
+          "name": "m_projectIdentity",
+          "start": 34
+        },
+        {
+          "class_tag": 30,
+          "end": 66,
+          "name": "m_guid",
+          "start": 50
+        },
+        {
+          "class_tag": 1320,
+          "end": 66,
+          "name": "m_identityGUID",
+          "start": 50
+        },
+        {
+          "class_tag": 1318,
+          "end": 66,
+          "name": "m_modelIdentity",
+          "start": 50
+        },
+        {
+          "class_tag": 1315,
+          "end": 66,
+          "name": "m_centralLocation",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1072,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1321,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 626,
+          "end": 88,
+          "name": "m_id",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 88,
+          "name": "m_userID",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 89,
+          "name": "m_atRisk",
+          "start": 88
+        },
+        {
+          "class_tag": 1315,
+          "end": 89,
+          "name": "m_checkoutRecords",
+          "start": 66
+        },
+        {
+          "class_tag": 1315,
+          "end": 93,
+          "name": "m_ownerName",
+          "start": 89
+        },
+        {
+          "class_tag": 1315,
+          "end": 133,
+          "name": "m_softwareVersion",
+          "start": 93
+        },
+        {
+          "class_tag": 1315,
+          "end": 137,
+          "name": "m_version",
+          "start": 133
+        },
+        {
+          "class_tag": 1315,
+          "end": 141,
+          "name": "m_incrementWhenWorksharingEnabled",
+          "start": 137
+        },
+        {
+          "class_tag": 1315,
+          "end": 145,
+          "name": "m_maxBackups",
+          "start": 141
+        },
+        {
+          "class_tag": 1315,
+          "end": 149,
+          "name": "m_mastersMaxBackups",
+          "start": 145
+        },
+        {
+          "class_tag": 1315,
+          "end": 153,
+          "name": "m_openWorksetDefault",
+          "start": 149
+        },
+        {
+          "class_tag": 1315,
+          "end": 154,
+          "name": "m_bSingleUser",
+          "start": 153
+        },
+        {
+          "class_tag": 1315,
+          "end": 155,
+          "name": "m_alwaysRelativizeMasterPath",
+          "start": 154
+        },
+        {
+          "class_tag": 1315,
+          "end": 156,
+          "name": "m_dataInSeparateFiles",
+          "start": 155
+        },
+        {
+          "class_tag": 1322,
+          "end": 160,
+          "name": "m_previewStreamRevision",
+          "start": 156
+        },
+        {
+          "class_tag": 1322,
+          "end": 164,
+          "name": "m_globalStreamRevision",
+          "start": 160
+        },
+        {
+          "class_tag": 1322,
+          "end": 168,
+          "name": "m_historyStreamRevision",
+          "start": 164
+        },
+        {
+          "class_tag": 1322,
+          "end": 172,
+          "name": "m_elemTableStreamRevision",
+          "start": 168
+        },
+        {
+          "class_tag": 1322,
+          "end": 176,
+          "name": "m_contentDocumentsStreamRevision",
+          "start": 172
+        },
+        {
+          "class_tag": 1322,
+          "end": 180,
+          "name": "m_partitionTableStreamRevision",
+          "start": 176
+        },
+        {
+          "class_tag": 1322,
+          "end": 184,
+          "name": "m_incrementTableStreamRevision",
+          "start": 180
+        },
+        {
+          "class_tag": 1322,
+          "end": 188,
+          "name": "m_basicFileInfoStreamRevision",
+          "start": 184
+        },
+        {
+          "class_tag": 1322,
+          "end": 192,
+          "name": "m_transmissionDataStreamRevision",
+          "start": 188
+        },
+        {
+          "class_tag": 1322,
+          "end": 196,
+          "name": "m_partAtomStreamRevision",
+          "start": 192
+        },
+        {
+          "class_tag": 1322,
+          "end": 200,
+          "name": "m_projectXMLInfoStreamRevision",
+          "start": 196
+        },
+        {
+          "class_tag": 1315,
+          "end": 200,
+          "name": "m_streamRevisions",
+          "start": 156
+        },
+        {
+          "class_tag": 1315,
+          "end": 206,
+          "name": "m_oPermissions",
+          "start": 200
+        },
+        {
+          "class_tag": 1315,
+          "end": 212,
+          "name": "m_oRequests",
+          "start": 206
+        }
+      ],
+      "fields": {
+        "m_alwaysRelativizeMasterPath": false,
+        "m_bSingleUser": true,
+        "m_centralLocation": {
+          "m_lastKnownModelPath": {
+            "m_centralServerPath": "",
+            "m_path": "",
+            "m_region": "GLOBAL",
+            "m_type": 0
+          },
+          "m_modelIdentity": {
+            "m_identityGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "m_projectIdentity": {
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "m_checkoutRecords": [
+          {
+            "m_atRisk": false,
+            "m_guid": {
+              "m_guid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    226,
+                    251,
+                    94,
+                    132,
+                    58,
+                    126,
+                    51,
+                    75,
+                    191,
+                    19,
+                    57,
+                    172,
+                    87,
+                    133,
+                    223,
+                    253
+                  ]
+                }
+              }
+            },
+            "m_userID": {
+              "m_id": -2
+            }
+          }
+        ],
+        "m_dataInSeparateFiles": false,
+        "m_incrementWhenWorksharingEnabled": 0,
+        "m_mastersMaxBackups": -1,
+        "m_maxBackups": 3,
+        "m_oPermissions": {
+          "class_tag": 1393,
+          "offset": 200,
+          "pointer_token": 4294967295
+        },
+        "m_oRequests": {
+          "class_tag": 1399,
+          "offset": 206,
+          "pointer_token": 4294967295
+        },
+        "m_openWorksetDefault": 3,
+        "m_ownerName": "",
+        "m_softwareVersion": "20250515_1515(x64)",
+        "m_streamRevisions": {
+          "m_basicFileInfoStreamRevision": 158,
+          "m_contentDocumentsStreamRevision": 158,
+          "m_elemTableStreamRevision": 158,
+          "m_globalStreamRevision": 158,
+          "m_historyStreamRevision": 158,
+          "m_incrementTableStreamRevision": 158,
+          "m_partAtomStreamRevision": -1,
+          "m_partitionTableStreamRevision": 158,
+          "m_previewStreamRevision": 156,
+          "m_projectXMLInfoStreamRevision": 158,
+          "m_transmissionDataStreamRevision": 158
+        },
+        "m_userTable": {
+          "m_IDtoName": []
+        },
+        "m_version": 7
+      },
+      "start": 2
+    },
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [],
+        "name": "DocumentStorageIndex",
+        "offset": 154091,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 34084,
+                "sub": 0
+              }
+            },
+            "name": "m_userTable"
+          }
+        ],
+        "name": "DocumentStorageIndexImpl",
+        "offset": 154129,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "document_guid": "d4228fd8-e867-4082-b2ab-1f70c6e3b406",
+    "document_increments": 80,
+    "latest_audit": {
+      "class_name": "ADocument",
+      "class_tag": 28,
+      "end": 877,
+      "field_names": [
+        "m_appInfoArr",
+        "m_bIsCoreDocument",
+        "m_corruptDocument",
+        "m_devBranchInfo",
+        "m_elemTable",
+        "m_executedUpgrades",
+        "m_groupFile",
+        "m_oContentTable",
+        "m_oExServicesUsed",
+        "m_oNobleSecondaryData",
+        "m_ownerFamilyContainingGroupId",
+        "m_ownerFamilyId",
+        "m_pAppInfoManager",
+        "m_pHistory",
+        "m_pHostDocument",
+        "m_pPartitionTable",
+        "m_pSteelModelInfo",
+        "m_pStyleSettings",
+        "m_storedByRevitBuild"
+      ],
+      "field_spans": [
+        {
+          "class_tag": 28,
+          "end": 6,
+          "name": "m_elemTable",
+          "start": 2
+        },
+        {
+          "class_tag": 28,
+          "end": 10,
+          "name": "m_appInfoArr",
+          "start": 6
+        },
+        {
+          "class_tag": 28,
+          "end": 16,
+          "name": "m_oContentTable",
+          "start": 10
+        },
+        {
+          "class_tag": 28,
+          "end": 20,
+          "name": "m_pHostDocument",
+          "start": 16
+        },
+        {
+          "class_tag": 28,
+          "end": 26,
+          "name": "m_pAppInfoManager",
+          "start": 20
+        },
+        {
+          "class_tag": 28,
+          "end": 32,
+          "name": "m_pStyleSettings",
+          "start": 26
+        },
+        {
+          "class_tag": 28,
+          "end": 36,
+          "name": "m_pHistory",
+          "start": 32
+        },
+        {
+          "class_tag": 28,
+          "end": 42,
+          "name": "m_pSteelModelInfo",
+          "start": 36
+        },
+        {
+          "class_tag": 28,
+          "end": 46,
+          "name": "m_pPartitionTable",
+          "start": 42
+        },
+        {
+          "class_tag": 28,
+          "end": 52,
+          "name": "m_oNobleSecondaryData",
+          "start": 46
+        },
+        {
+          "class_tag": 21,
+          "end": 60,
+          "name": "m_id64",
+          "start": 52
+        },
+        {
+          "class_tag": 20,
+          "end": 60,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 28,
+          "end": 60,
+          "name": "m_ownerFamilyId",
+          "start": 52
+        },
+        {
+          "class_tag": 21,
+          "end": 68,
+          "name": "m_id64",
+          "start": 60
+        },
+        {
+          "class_tag": 20,
+          "end": 68,
+          "name": "m_id",
+          "start": 60
+        },
+        {
+          "class_tag": 28,
+          "end": 68,
+          "name": "m_ownerFamilyContainingGroupId",
+          "start": 60
+        },
+        {
+          "class_tag": 29,
+          "end": 72,
+          "name": "m_devBranchId",
+          "start": 68
+        },
+        {
+          "class_tag": 29,
+          "end": 76,
+          "name": "m_syncVersion",
+          "start": 72
+        },
+        {
+          "class_tag": 28,
+          "end": 76,
+          "name": "m_devBranchInfo",
+          "start": 68
+        },
+        {
+          "class_tag": 28,
+          "end": 77,
+          "name": "m_groupFile",
+          "start": 76
+        },
+        {
+          "class_tag": 28,
+          "end": 78,
+          "name": "m_corruptDocument",
+          "start": 77
+        },
+        {
+          "class_tag": 28,
+          "end": 79,
+          "name": "m_bIsCoreDocument",
+          "start": 78
+        },
+        {
+          "class_tag": 28,
+          "end": 83,
+          "name": "m_executedUpgrades",
+          "start": 79
+        },
+        {
+          "class_tag": 31,
+          "end": 185,
+          "name": "m_str",
+          "start": 87
+        },
+        {
+          "class_tag": 31,
+          "end": 283,
+          "name": "m_str",
+          "start": 185
+        },
+        {
+          "class_tag": 31,
+          "end": 381,
+          "name": "m_str",
+          "start": 283
+        },
+        {
+          "class_tag": 31,
+          "end": 479,
+          "name": "m_str",
+          "start": 381
+        },
+        {
+          "class_tag": 31,
+          "end": 577,
+          "name": "m_str",
+          "start": 479
+        },
+        {
+          "class_tag": 31,
+          "end": 675,
+          "name": "m_str",
+          "start": 577
+        },
+        {
+          "class_tag": 31,
+          "end": 773,
+          "name": "m_str",
+          "start": 675
+        },
+        {
+          "class_tag": 31,
+          "end": 871,
+          "name": "m_str",
+          "start": 773
+        },
+        {
+          "class_tag": 28,
+          "end": 871,
+          "name": "m_storedByRevitBuild",
+          "start": 83
+        },
+        {
+          "class_tag": 28,
+          "end": 877,
+          "name": "m_oExServicesUsed",
+          "start": 871
+        }
+      ],
+      "inflated_bytes": 1259982,
+      "selected_fields": {
+        "m_pHistory": {
+          "class_tag": null,
+          "offset": 32,
+          "pointer_token": 0
+        }
+      },
+      "status": "root_fields_decoded"
+    },
+    "latest_graph": {
+      "consumed_bytes": 1259978,
+      "edges": 263,
+      "identity_named_objects": [
+        {
+          "class_name": "ADocument",
+          "class_tag": 28,
+          "field_names": [
+            "m_appInfoArr",
+            "m_bIsCoreDocument",
+            "m_corruptDocument",
+            "m_devBranchInfo",
+            "m_elemTable",
+            "m_executedUpgrades",
+            "m_groupFile",
+            "m_oContentTable",
+            "m_oExServicesUsed",
+            "m_oNobleSecondaryData",
+            "m_ownerFamilyContainingGroupId",
+            "m_ownerFamilyId",
+            "m_pAppInfoManager",
+            "m_pHistory",
+            "m_pHostDocument",
+            "m_pPartitionTable",
+            "m_pSteelModelInfo",
+            "m_pStyleSettings",
+            "m_storedByRevitBuild"
+          ],
+          "fields_end": 877,
+          "selected_fields": {
+            "m_pHistory": {
+              "class_tag": null,
+              "offset": 32,
+              "pointer_token": 0
+            }
+          },
+          "start": 2
+        },
+        {
+          "class_name": "SteelModelInfo",
+          "class_tag": 4006,
+          "field_names": [
+            "m_extModelId",
+            "m_localIncrement",
+            "m_numCentralIncrements",
+            "m_steelModelLastSTC",
+            "m_steelModelLastSTC_hash",
+            "m_steelModelLatest",
+            "m_steelModelLatest_hash"
+          ],
+          "fields_end": 6099,
+          "selected_fields": {
+            "m_localIncrement": {
+              "m_binaryData": [],
+              "m_uid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "m_numCentralIncrements": 0
+          },
+          "start": 6031
+        },
+        {
+          "class_name": "GlobalParamTracking",
+          "class_tag": 2270,
+          "field_names": [
+            "m_OrderedParams",
+            "m_elemIdSet",
+            "m_episodesHistory",
+            "m_idMRU",
+            "m_orderingEpisode",
+            "m_pADoc"
+          ],
+          "fields_end": 1246400,
+          "selected_fields": {
+            "m_episodesHistory": {
+              "m_arr": [
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "m_max_size": 100,
+              "m_shift": 0
+            },
+            "m_orderingEpisode": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "start": 1246320
+        }
+      ],
+      "inflated_bytes": 1259982,
+      "object_count": 264,
+      "status": "graph_decoded",
+      "trailing_zero_bytes": 4
+    },
+    "basic_file_info_property_spans": {
+      "Unique Document GUID": {
+        "value": "d4228fd8-e867-4082-b2ab-1f70c6e3b406",
+        "start": 1737,
+        "end": 1809
+      },
+      "Unique Document Increments": {
+        "value": "80",
+        "start": 1869,
+        "end": 1873
+      },
+      "Central model's version number corresponding to the last reload latest": {
+        "value": "80",
+        "start": 1469,
+        "end": 1473
+      },
+      "Central model's episode GUID corresponding to the last reload latest": {
+        "value": "d4228fd8-e867-4082-b2ab-1f70c6e3b406",
+        "start": 1617,
+        "end": 1689
+      }
+    },
+    "basic_file_info_sha256": "6c29a1426676b6193b8c9845bbb31496d8d2eca2580bd522327ee24d36c1f918",
+    "document_guid_matching_history_fields": [],
+    "contents_formats_revision": 4,
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "limitations": [
+      "No paired saves establish GUID changes or counter allocation rules.",
+      "BasicFileInfo property spans identify text only, not all binary duplicates.",
+      "Global/Latest complete wire graph decoding does not establish every field semantic.",
+      "Identity-name filtering covers top-level object fields, not every possible semantic reference.",
+      "Contents root decoder stops before opaque trailing bytes; patcher preserves them."
+    ],
+    "identity_patch_byte_exact": true,
+    "all_revision_spans_trial_independently_verified": true,
+    "fixed_width_counter_trial_independently_verified": true
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "contents_stored_bytes": 204,
+    "contents_logical_bytes": 156,
+    "contents_inflated_sha256": "0663c39354579135ad45614d7e5ea4b3454f7f0a225c34a738946fc10169ba62",
+    "contents_logical_sha256": "dc9e7c44fcd2bf1e72d4064b0998eff0dd1bd1bd40151998b824880d17ffd2d6",
+    "contents_header_hex": "621922051c00000001000000000000006219220504000000",
+    "contents_gzip_suffix_hex": "",
+    "contents_inflated_bytes": 240,
+    "contents_inflated_hex": "23050000000000000000000000000600000047004c004f00420041004c0000000000000000000000000000000000000000000000000000000000000000000000000001000000e2fb5e843a7e334bbf1339ac5785dffdfeff000000000012000000320030003200350030003500310035005f00310035003100350028007800360034002900070000000000000003000000ffffffff03000000010000890000008d0000008d0000008d0000008d0000008d0000008d0000008d0000008d000000ffffffff8d000000ffffffff7105ffffffff770500000000000000000000000000000000000000000000000000000000",
+    "classes": [
+      {
+        "base": null,
+        "field_count": 0,
+        "name": "DocumentStorageIndex",
+        "tag": 1314,
+        "version": 0
+      },
+      {
+        "base": 1314,
+        "field_count": 16,
+        "name": "DocumentStorageIndexImpl",
+        "tag": 1315,
+        "version": 29
+      }
+    ],
+    "contents_root": {
+      "class_name": "DocumentStorageIndexImpl",
+      "class_tag": 1315,
+      "end": 212,
+      "field_spans": [
+        {
+          "class_tag": 1316,
+          "end": 6,
+          "name": "m_IDtoName",
+          "start": 2
+        },
+        {
+          "class_tag": 1315,
+          "end": 6,
+          "name": "m_userTable",
+          "start": 2
+        },
+        {
+          "class_tag": 782,
+          "end": 10,
+          "name": "m_centralServerPath",
+          "start": 6
+        },
+        {
+          "class_tag": 782,
+          "end": 14,
+          "name": "m_path",
+          "start": 10
+        },
+        {
+          "class_tag": 782,
+          "end": 30,
+          "name": "m_region",
+          "start": 14
+        },
+        {
+          "class_tag": 782,
+          "end": 34,
+          "name": "m_type",
+          "start": 30
+        },
+        {
+          "class_tag": 1318,
+          "end": 34,
+          "name": "m_lastKnownModelPath",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1319,
+          "end": 50,
+          "name": "m_guid",
+          "start": 34
+        },
+        {
+          "class_tag": 1318,
+          "end": 50,
+          "name": "m_projectIdentity",
+          "start": 34
+        },
+        {
+          "class_tag": 30,
+          "end": 66,
+          "name": "m_guid",
+          "start": 50
+        },
+        {
+          "class_tag": 1320,
+          "end": 66,
+          "name": "m_identityGUID",
+          "start": 50
+        },
+        {
+          "class_tag": 1318,
+          "end": 66,
+          "name": "m_modelIdentity",
+          "start": 50
+        },
+        {
+          "class_tag": 1315,
+          "end": 66,
+          "name": "m_centralLocation",
+          "start": 6
+        },
+        {
+          "class_tag": 30,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1072,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 1321,
+          "end": 86,
+          "name": "m_guid",
+          "start": 70
+        },
+        {
+          "class_tag": 626,
+          "end": 88,
+          "name": "m_id",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 88,
+          "name": "m_userID",
+          "start": 86
+        },
+        {
+          "class_tag": 1321,
+          "end": 89,
+          "name": "m_atRisk",
+          "start": 88
+        },
+        {
+          "class_tag": 1315,
+          "end": 89,
+          "name": "m_checkoutRecords",
+          "start": 66
+        },
+        {
+          "class_tag": 1315,
+          "end": 93,
+          "name": "m_ownerName",
+          "start": 89
+        },
+        {
+          "class_tag": 1315,
+          "end": 133,
+          "name": "m_softwareVersion",
+          "start": 93
+        },
+        {
+          "class_tag": 1315,
+          "end": 137,
+          "name": "m_version",
+          "start": 133
+        },
+        {
+          "class_tag": 1315,
+          "end": 141,
+          "name": "m_incrementWhenWorksharingEnabled",
+          "start": 137
+        },
+        {
+          "class_tag": 1315,
+          "end": 145,
+          "name": "m_maxBackups",
+          "start": 141
+        },
+        {
+          "class_tag": 1315,
+          "end": 149,
+          "name": "m_mastersMaxBackups",
+          "start": 145
+        },
+        {
+          "class_tag": 1315,
+          "end": 153,
+          "name": "m_openWorksetDefault",
+          "start": 149
+        },
+        {
+          "class_tag": 1315,
+          "end": 154,
+          "name": "m_bSingleUser",
+          "start": 153
+        },
+        {
+          "class_tag": 1315,
+          "end": 155,
+          "name": "m_alwaysRelativizeMasterPath",
+          "start": 154
+        },
+        {
+          "class_tag": 1315,
+          "end": 156,
+          "name": "m_dataInSeparateFiles",
+          "start": 155
+        },
+        {
+          "class_tag": 1322,
+          "end": 160,
+          "name": "m_previewStreamRevision",
+          "start": 156
+        },
+        {
+          "class_tag": 1322,
+          "end": 164,
+          "name": "m_globalStreamRevision",
+          "start": 160
+        },
+        {
+          "class_tag": 1322,
+          "end": 168,
+          "name": "m_historyStreamRevision",
+          "start": 164
+        },
+        {
+          "class_tag": 1322,
+          "end": 172,
+          "name": "m_elemTableStreamRevision",
+          "start": 168
+        },
+        {
+          "class_tag": 1322,
+          "end": 176,
+          "name": "m_contentDocumentsStreamRevision",
+          "start": 172
+        },
+        {
+          "class_tag": 1322,
+          "end": 180,
+          "name": "m_partitionTableStreamRevision",
+          "start": 176
+        },
+        {
+          "class_tag": 1322,
+          "end": 184,
+          "name": "m_incrementTableStreamRevision",
+          "start": 180
+        },
+        {
+          "class_tag": 1322,
+          "end": 188,
+          "name": "m_basicFileInfoStreamRevision",
+          "start": 184
+        },
+        {
+          "class_tag": 1322,
+          "end": 192,
+          "name": "m_transmissionDataStreamRevision",
+          "start": 188
+        },
+        {
+          "class_tag": 1322,
+          "end": 196,
+          "name": "m_partAtomStreamRevision",
+          "start": 192
+        },
+        {
+          "class_tag": 1322,
+          "end": 200,
+          "name": "m_projectXMLInfoStreamRevision",
+          "start": 196
+        },
+        {
+          "class_tag": 1315,
+          "end": 200,
+          "name": "m_streamRevisions",
+          "start": 156
+        },
+        {
+          "class_tag": 1315,
+          "end": 206,
+          "name": "m_oPermissions",
+          "start": 200
+        },
+        {
+          "class_tag": 1315,
+          "end": 212,
+          "name": "m_oRequests",
+          "start": 206
+        }
+      ],
+      "fields": {
+        "m_alwaysRelativizeMasterPath": false,
+        "m_bSingleUser": true,
+        "m_centralLocation": {
+          "m_lastKnownModelPath": {
+            "m_centralServerPath": "",
+            "m_path": "",
+            "m_region": "GLOBAL",
+            "m_type": 0
+          },
+          "m_modelIdentity": {
+            "m_identityGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "m_projectIdentity": {
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          }
+        },
+        "m_checkoutRecords": [
+          {
+            "m_atRisk": false,
+            "m_guid": {
+              "m_guid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    226,
+                    251,
+                    94,
+                    132,
+                    58,
+                    126,
+                    51,
+                    75,
+                    191,
+                    19,
+                    57,
+                    172,
+                    87,
+                    133,
+                    223,
+                    253
+                  ]
+                }
+              }
+            },
+            "m_userID": {
+              "m_id": -2
+            }
+          }
+        ],
+        "m_dataInSeparateFiles": false,
+        "m_incrementWhenWorksharingEnabled": 0,
+        "m_mastersMaxBackups": -1,
+        "m_maxBackups": 3,
+        "m_oPermissions": {
+          "class_tag": 1393,
+          "offset": 200,
+          "pointer_token": 4294967295
+        },
+        "m_oRequests": {
+          "class_tag": 1399,
+          "offset": 206,
+          "pointer_token": 4294967295
+        },
+        "m_openWorksetDefault": 3,
+        "m_ownerName": "",
+        "m_softwareVersion": "20250515_1515(x64)",
+        "m_streamRevisions": {
+          "m_basicFileInfoStreamRevision": 141,
+          "m_contentDocumentsStreamRevision": 141,
+          "m_elemTableStreamRevision": 141,
+          "m_globalStreamRevision": 141,
+          "m_historyStreamRevision": 141,
+          "m_incrementTableStreamRevision": 141,
+          "m_partAtomStreamRevision": -1,
+          "m_partitionTableStreamRevision": 141,
+          "m_previewStreamRevision": 137,
+          "m_projectXMLInfoStreamRevision": 141,
+          "m_transmissionDataStreamRevision": 141
+        },
+        "m_userTable": {
+          "m_IDtoName": []
+        },
+        "m_version": 7
+      },
+      "start": 2
+    },
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [],
+        "name": "DocumentStorageIndex",
+        "offset": 154091,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 34084,
+                "sub": 0
+              }
+            },
+            "name": "m_userTable"
+          }
+        ],
+        "name": "DocumentStorageIndexImpl",
+        "offset": 154129,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "document_guid": "b2560b43-3969-4a48-91a1-2d5587d50afd",
+    "document_increments": 63,
+    "latest_audit": {
+      "class_name": "ADocument",
+      "class_tag": 28,
+      "end": 877,
+      "field_names": [
+        "m_appInfoArr",
+        "m_bIsCoreDocument",
+        "m_corruptDocument",
+        "m_devBranchInfo",
+        "m_elemTable",
+        "m_executedUpgrades",
+        "m_groupFile",
+        "m_oContentTable",
+        "m_oExServicesUsed",
+        "m_oNobleSecondaryData",
+        "m_ownerFamilyContainingGroupId",
+        "m_ownerFamilyId",
+        "m_pAppInfoManager",
+        "m_pHistory",
+        "m_pHostDocument",
+        "m_pPartitionTable",
+        "m_pSteelModelInfo",
+        "m_pStyleSettings",
+        "m_storedByRevitBuild"
+      ],
+      "field_spans": [
+        {
+          "class_tag": 28,
+          "end": 6,
+          "name": "m_elemTable",
+          "start": 2
+        },
+        {
+          "class_tag": 28,
+          "end": 10,
+          "name": "m_appInfoArr",
+          "start": 6
+        },
+        {
+          "class_tag": 28,
+          "end": 16,
+          "name": "m_oContentTable",
+          "start": 10
+        },
+        {
+          "class_tag": 28,
+          "end": 20,
+          "name": "m_pHostDocument",
+          "start": 16
+        },
+        {
+          "class_tag": 28,
+          "end": 26,
+          "name": "m_pAppInfoManager",
+          "start": 20
+        },
+        {
+          "class_tag": 28,
+          "end": 32,
+          "name": "m_pStyleSettings",
+          "start": 26
+        },
+        {
+          "class_tag": 28,
+          "end": 36,
+          "name": "m_pHistory",
+          "start": 32
+        },
+        {
+          "class_tag": 28,
+          "end": 42,
+          "name": "m_pSteelModelInfo",
+          "start": 36
+        },
+        {
+          "class_tag": 28,
+          "end": 46,
+          "name": "m_pPartitionTable",
+          "start": 42
+        },
+        {
+          "class_tag": 28,
+          "end": 52,
+          "name": "m_oNobleSecondaryData",
+          "start": 46
+        },
+        {
+          "class_tag": 21,
+          "end": 60,
+          "name": "m_id64",
+          "start": 52
+        },
+        {
+          "class_tag": 20,
+          "end": 60,
+          "name": "m_id",
+          "start": 52
+        },
+        {
+          "class_tag": 28,
+          "end": 60,
+          "name": "m_ownerFamilyId",
+          "start": 52
+        },
+        {
+          "class_tag": 21,
+          "end": 68,
+          "name": "m_id64",
+          "start": 60
+        },
+        {
+          "class_tag": 20,
+          "end": 68,
+          "name": "m_id",
+          "start": 60
+        },
+        {
+          "class_tag": 28,
+          "end": 68,
+          "name": "m_ownerFamilyContainingGroupId",
+          "start": 60
+        },
+        {
+          "class_tag": 29,
+          "end": 72,
+          "name": "m_devBranchId",
+          "start": 68
+        },
+        {
+          "class_tag": 29,
+          "end": 76,
+          "name": "m_syncVersion",
+          "start": 72
+        },
+        {
+          "class_tag": 28,
+          "end": 76,
+          "name": "m_devBranchInfo",
+          "start": 68
+        },
+        {
+          "class_tag": 28,
+          "end": 77,
+          "name": "m_groupFile",
+          "start": 76
+        },
+        {
+          "class_tag": 28,
+          "end": 78,
+          "name": "m_corruptDocument",
+          "start": 77
+        },
+        {
+          "class_tag": 28,
+          "end": 79,
+          "name": "m_bIsCoreDocument",
+          "start": 78
+        },
+        {
+          "class_tag": 28,
+          "end": 83,
+          "name": "m_executedUpgrades",
+          "start": 79
+        },
+        {
+          "class_tag": 31,
+          "end": 185,
+          "name": "m_str",
+          "start": 87
+        },
+        {
+          "class_tag": 31,
+          "end": 283,
+          "name": "m_str",
+          "start": 185
+        },
+        {
+          "class_tag": 31,
+          "end": 381,
+          "name": "m_str",
+          "start": 283
+        },
+        {
+          "class_tag": 31,
+          "end": 479,
+          "name": "m_str",
+          "start": 381
+        },
+        {
+          "class_tag": 31,
+          "end": 577,
+          "name": "m_str",
+          "start": 479
+        },
+        {
+          "class_tag": 31,
+          "end": 675,
+          "name": "m_str",
+          "start": 577
+        },
+        {
+          "class_tag": 31,
+          "end": 773,
+          "name": "m_str",
+          "start": 675
+        },
+        {
+          "class_tag": 31,
+          "end": 871,
+          "name": "m_str",
+          "start": 773
+        },
+        {
+          "class_tag": 28,
+          "end": 871,
+          "name": "m_storedByRevitBuild",
+          "start": 83
+        },
+        {
+          "class_tag": 28,
+          "end": 877,
+          "name": "m_oExServicesUsed",
+          "start": 871
+        }
+      ],
+      "inflated_bytes": 1246222,
+      "selected_fields": {
+        "m_pHistory": {
+          "class_tag": null,
+          "offset": 32,
+          "pointer_token": 0
+        }
+      },
+      "status": "root_fields_decoded"
+    },
+    "latest_graph": {
+      "consumed_bytes": 1246218,
+      "edges": 241,
+      "identity_named_objects": [
+        {
+          "class_name": "ADocument",
+          "class_tag": 28,
+          "field_names": [
+            "m_appInfoArr",
+            "m_bIsCoreDocument",
+            "m_corruptDocument",
+            "m_devBranchInfo",
+            "m_elemTable",
+            "m_executedUpgrades",
+            "m_groupFile",
+            "m_oContentTable",
+            "m_oExServicesUsed",
+            "m_oNobleSecondaryData",
+            "m_ownerFamilyContainingGroupId",
+            "m_ownerFamilyId",
+            "m_pAppInfoManager",
+            "m_pHistory",
+            "m_pHostDocument",
+            "m_pPartitionTable",
+            "m_pSteelModelInfo",
+            "m_pStyleSettings",
+            "m_storedByRevitBuild"
+          ],
+          "fields_end": 877,
+          "selected_fields": {
+            "m_pHistory": {
+              "class_tag": null,
+              "offset": 32,
+              "pointer_token": 0
+            }
+          },
+          "start": 2
+        },
+        {
+          "class_name": "SteelModelInfo",
+          "class_tag": 4006,
+          "field_names": [
+            "m_extModelId",
+            "m_localIncrement",
+            "m_numCentralIncrements",
+            "m_steelModelLastSTC",
+            "m_steelModelLastSTC_hash",
+            "m_steelModelLatest",
+            "m_steelModelLatest_hash"
+          ],
+          "fields_end": 5965,
+          "selected_fields": {
+            "m_localIncrement": {
+              "m_binaryData": [],
+              "m_uid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              }
+            },
+            "m_numCentralIncrements": 0
+          },
+          "start": 5897
+        },
+        {
+          "class_name": "GlobalParamTracking",
+          "class_tag": 2270,
+          "field_names": [
+            "m_OrderedParams",
+            "m_elemIdSet",
+            "m_episodesHistory",
+            "m_idMRU",
+            "m_orderingEpisode",
+            "m_pADoc"
+          ],
+          "fields_end": 1236020,
+          "selected_fields": {
+            "m_episodesHistory": {
+              "m_arr": [
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "m_max_size": 100,
+              "m_shift": 0
+            },
+            "m_orderingEpisode": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "start": 1235940
+        }
+      ],
+      "inflated_bytes": 1246222,
+      "object_count": 242,
+      "status": "graph_decoded",
+      "trailing_zero_bytes": 4
+    },
+    "basic_file_info_property_spans": {
+      "Unique Document GUID": {
+        "value": "b2560b43-3969-4a48-91a1-2d5587d50afd",
+        "start": 1729,
+        "end": 1801
+      },
+      "Unique Document Increments": {
+        "value": "63",
+        "start": 1861,
+        "end": 1865
+      },
+      "Central model's version number corresponding to the last reload latest": {
+        "value": "63",
+        "start": 1461,
+        "end": 1465
+      },
+      "Central model's episode GUID corresponding to the last reload latest": {
+        "value": "b2560b43-3969-4a48-91a1-2d5587d50afd",
+        "start": 1609,
+        "end": 1681
+      }
+    },
+    "basic_file_info_sha256": "00222230b03c0385d9a9810a96d85b9920124b006b1b51ac84e72c8daa0e63cd",
+    "document_guid_matching_history_fields": [],
+    "contents_formats_revision": 4,
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    },
+    "limitations": [
+      "No paired saves establish GUID changes or counter allocation rules.",
+      "BasicFileInfo property spans identify text only, not all binary duplicates.",
+      "Global/Latest complete wire graph decoding does not establish every field semantic.",
+      "Identity-name filtering covers top-level object fields, not every possible semantic reference.",
+      "Contents root decoder stops before opaque trailing bytes; patcher preserves them."
+    ],
+    "identity_patch_byte_exact": true,
+    "all_revision_spans_trial_independently_verified": true,
+    "fixed_width_counter_trial_independently_verified": true
+  }
+]

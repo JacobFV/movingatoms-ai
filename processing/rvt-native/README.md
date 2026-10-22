@@ -7,8 +7,8 @@ advertise native output or call this experimental crate.
 
 The algorithm comes exclusively from the MIT fixture bytes documented in
 [the research evidence](../../research/rvt/results/README.md). Both Python and
-Rust implementations reproduce 917 full pages and 69 final pages across six
-licensed fixtures (986 total), including held-out Revit 2025 models. See
+Rust implementations reproduce 917 full pages and 75 final pages across six
+licensed fixtures (992 total), including held-out Revit 2025 models. See
 [complete framing evidence](../../research/rvt/results/complete-codec.md).
 
 ```sh

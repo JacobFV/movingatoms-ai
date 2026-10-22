@@ -1,0 +1,212 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "unclassified_streams": [
+      {
+        "stream": "BasicFileInfo",
+        "stored_bytes": 2107,
+        "sha256": "bab8c34b28e7c4197886fdd4d53797f38b412982b26894576b2dc79920e3e88d",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "ProjectInformation",
+        "stored_bytes": 764,
+        "sha256": "7f891909bab76bf8237dd49b3cd59bbc5701bbf15652c61e806d0ebc8e349c68",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "RevitPreview4.0",
+        "stored_bytes": 9886,
+        "sha256": "f98e19f1f0fc9a91d96d15e4b4a569b2dc6fc37366e9c47fac3967ebf72d5530",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "TransmissionData",
+        "stored_bytes": 1946,
+        "sha256": "9a066dc5cad8c566fbfdbae1d807cb3bb63a98cdfdb52f8b9681c8f3ac4fcb54",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      }
+    ],
+    "interpretation": "Exact page-codec trial only; not a semantic parser or checksum audit."
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "unclassified_streams": [
+      {
+        "stream": "BasicFileInfo",
+        "stored_bytes": 2105,
+        "sha256": "b274c91e865739ec4e4744332121486107ad06a1f69825f50298c7db5b587c13",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "ProjectInformation",
+        "stored_bytes": 768,
+        "sha256": "4933031f8072ab5339479f79a9ce27a06174125e94165051e5243de87a6df694",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "RevitPreview4.0",
+        "stored_bytes": 1274,
+        "sha256": "2f1239345c60ece6b062ec2604b0f883b3f4fc7de4ca52ed08f18d8f6ffddf13",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "TransmissionData",
+        "stored_bytes": 1946,
+        "sha256": "0559f59140108ae3ecbcd225ff218f3a9ba7bf9b5839c4642e2fa6f46061afc0",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      }
+    ],
+    "interpretation": "Exact page-codec trial only; not a semantic parser or checksum audit."
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "unclassified_streams": [
+      {
+        "stream": "BasicFileInfo",
+        "stored_bytes": 2215,
+        "sha256": "194183d7d6a41a515b80d281693dbbe71430db983744f920e47059f965994ab6",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "ProjectInformation",
+        "stored_bytes": 908,
+        "sha256": "50581d9343973537e57b66fa7c21874fcab926e3fe65e58b3070fbf1c065a28c",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "RevitPreview4.0",
+        "stored_bytes": 1178,
+        "sha256": "099f4af3af35f5c803f13b8075c3aa6d01f149c20210fd015ac6a41d1d4d1c94",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "TransmissionData",
+        "stored_bytes": 6182,
+        "sha256": "518092dd26df7471edade6214f0ad6064a66e6f8286481143ff891cde53d4fc1",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      }
+    ],
+    "interpretation": "Exact page-codec trial only; not a semantic parser or checksum audit."
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "unclassified_streams": [
+      {
+        "stream": "BasicFileInfo",
+        "stored_bytes": 2265,
+        "sha256": "a662b0332c8993c050657fc9544f45f91c544013d321d90ea5c99f068ee7c4bd",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "ProjectInformation",
+        "stored_bytes": 921,
+        "sha256": "59dd128bf3da7b763dc279c9ff4b790e4021fa649bb25a67b48b2b821a6917d9",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "RevitPreview4.0",
+        "stored_bytes": 1320,
+        "sha256": "25b1f1d7514ee0e8d8c993dbae79ffaf23df7ed1da92b56105279f6ab31bdb92",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "TransmissionData",
+        "stored_bytes": 3916,
+        "sha256": "edab7549f139112f625acc70bc02c2a7ca2f0e77de5252f2a09a328f7b2f6775",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      }
+    ],
+    "interpretation": "Exact page-codec trial only; not a semantic parser or checksum audit."
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "unclassified_streams": [
+      {
+        "stream": "BasicFileInfo",
+        "stored_bytes": 2155,
+        "sha256": "6c29a1426676b6193b8c9845bbb31496d8d2eca2580bd522327ee24d36c1f918",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "ProjectInformation",
+        "stored_bytes": 922,
+        "sha256": "c8d84ac5f1c3c3b43c91d22338876f2d199b37602f72e2c70f1f2eba68555c53",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "RevitPreview4.0",
+        "stored_bytes": 1196,
+        "sha256": "c307a305c9860040498f62a7526ce3fe6b02d548579c9944794213a8fcb39cf3",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "TransmissionData",
+        "stored_bytes": 3864,
+        "sha256": "67a7d9c5ecea1c085b391844ac2a0a52df3d083c2ded0ecac045bcbb6027c6b6",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      }
+    ],
+    "interpretation": "Exact page-codec trial only; not a semantic parser or checksum audit."
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "unclassified_streams": [
+      {
+        "stream": "BasicFileInfo",
+        "stored_bytes": 2147,
+        "sha256": "00222230b03c0385d9a9810a96d85b9920124b006b1b51ac84e72c8daa0e63cd",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "ProjectInformation",
+        "stored_bytes": 920,
+        "sha256": "28c09dca0da9b1c43ed823ad2a6a5292e7800a6cb88b34a01cc04134be30c38a",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "RevitPreview4.0",
+        "stored_bytes": 1316,
+        "sha256": "06d9cbc935df3ee66ae2ceed77b7607e0eab2ff6c1b333685e64b0a39d828fba",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      },
+      {
+        "stream": "TransmissionData",
+        "stored_bytes": 6116,
+        "sha256": "04b80c57bdf865885a845e564e335a385a06b8063c127e40be436605a4dff094",
+        "page_round_trip": false,
+        "page_codec_rejection": "invalid, ambiguous, or unsupported final-page framing"
+      }
+    ],
+    "interpretation": "Exact page-codec trial only; not a semantic parser or checksum audit."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "new_stream": "Partitions/85",
+  "element": 348738,
+  "new_episode": 703,
+  "episode_guid": "5f197eb7-5987-5937-94d9-99f5208ac16c",
+  "timestamp": 1792627200,
+  "table_changed_offsets": [
+    12
+  ],
+  "new_partition_records_per_sequence": 1,
+  "signature_fields": "empty",
+  "contents_revisions_synchronized": true,
+  "basic_file_info_counts_synchronized": true,
+  "basic_file_info_guid_synchronized": true,
+  "hypotheses": [
+    "New append increment ordinal 85 maps to Partitions/85.",
+    "A modification sets only ElemTable m_history.m_lastModificationDate to new episode 703; creation fields and m_lastUserModificationDate remain unchanged (unverified assumption).",
+    "Old physical records and increment counts remain as historical storage; no compaction is performed.",
+    "New increment stores one project element and no content groups; both identical increment arrays append the same row.",
+    "Changed global/history/elemTable/partitionTable/incrementTable revisions advance prior values by one.",
+    "Other stream revisions and bytes remain unchanged, except the explicit BasicFileInfo synchronization variant; complete save state is not reconstructed.",
+    "Empty signature fields are an experimental unsigned encoding, with unknown Revit acceptance.",
+    "BasicFileInfo fixed-width text counters update to86 and its revision increments; binary fields remain opaque."
+  ],
+  "complete_save_transaction": false,
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false
+}
