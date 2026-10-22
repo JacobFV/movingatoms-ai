@@ -1,0 +1,935 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_bytes": 173230,
+        "payload_bytes": 171885,
+        "full_pages": 2,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 167,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_bytes": 243084,
+        "payload_bytes": 241355,
+        "full_pages": 3,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 185,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_bytes": 1967,
+        "payload_bytes": 1890,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 242,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_bytes": 125892,
+        "payload_bytes": 125211,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 237,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/History",
+        "stored_bytes": 837,
+        "payload_bytes": 774,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 103,
+          "generator": 131
+        }
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_bytes": 78810,
+        "payload_bytes": 78365,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 1669,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_bytes": 134,
+        "payload_bytes": 95,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 71,
+          "words": 15,
+          "generator": 19
+        }
+      },
+      {
+        "stream": "Partitions/46",
+        "stored_bytes": 17072209,
+        "payload_bytes": 16979492,
+        "full_pages": 261,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 165,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/48",
+        "stored_bytes": 2388625,
+        "payload_bytes": 2375496,
+        "full_pages": 36,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 155,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/51",
+        "stored_bytes": 598771,
+        "payload_bytes": 595497,
+        "full_pages": 9,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 1419,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/53",
+        "stored_bytes": 5692783,
+        "payload_bytes": 5661975,
+        "full_pages": 87,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 1984,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/55",
+        "stored_bytes": 2695935,
+        "payload_bytes": 2681264,
+        "full_pages": 41,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 81,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/59",
+        "stored_bytes": 1598473,
+        "payload_bytes": 1589480,
+        "full_pages": 24,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 127,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/61",
+        "stored_bytes": 2809648,
+        "payload_bytes": 2794390,
+        "full_pages": 43,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 485,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Partitions/65",
+        "stored_bytes": 94163,
+        "payload_bytes": 93325,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 113,
+          "words": 2047,
+          "generator": 2053
+        }
+      }
+    ]
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_bytes": 169647,
+        "payload_bytes": 168264,
+        "full_pages": 2,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 153,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_bytes": 30961,
+        "payload_bytes": 30296,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 121,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_bytes": 350,
+        "payload_bytes": 294,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 43,
+          "generator": 67
+        }
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_bytes": 10709,
+        "payload_bytes": 10615,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 1318,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/History",
+        "stored_bytes": 228,
+        "payload_bytes": 182,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 28,
+          "generator": 37
+        }
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_bytes": 64737,
+        "payload_bytes": 63884,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 253,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_bytes": 130,
+        "payload_bytes": 94,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 69,
+          "words": 15,
+          "generator": 19
+        }
+      },
+      {
+        "stream": "Partitions/0",
+        "stored_bytes": 464357,
+        "payload_bytes": 461789,
+        "full_pages": 7,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 937,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/1",
+        "stored_bytes": 2194,
+        "payload_bytes": 2113,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 270,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Partitions/2",
+        "stored_bytes": 7906,
+        "payload_bytes": 7813,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 973,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/3",
+        "stored_bytes": 3104,
+        "payload_bytes": 3028,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 382,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Partitions/4",
+        "stored_bytes": 5298,
+        "payload_bytes": 5203,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 652,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/5",
+        "stored_bytes": 100304,
+        "payload_bytes": 99511,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 137,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/6",
+        "stored_bytes": 291,
+        "payload_bytes": 241,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 75,
+          "words": 31,
+          "generator": 37
+        }
+      }
+    ]
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_bytes": 178347,
+        "payload_bytes": 177014,
+        "full_pages": 2,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 187,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_bytes": 453672,
+        "payload_bytes": 451080,
+        "full_pages": 6,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 243,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_bytes": 3397,
+        "payload_bytes": 3320,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 418,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_bytes": 25844,
+        "payload_bytes": 25603,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 101,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/History",
+        "stored_bytes": 11725,
+        "payload_bytes": 11630,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 1443,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_bytes": 95187,
+        "payload_bytes": 94552,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 117,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_bytes": 134,
+        "payload_bytes": 97,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 71,
+          "words": 15,
+          "generator": 19
+        }
+      },
+      {
+        "stream": "Partitions/80",
+        "stored_bytes": 5810070,
+        "payload_bytes": 5778574,
+        "full_pages": 89,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 358,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Partitions/83",
+        "stored_bytes": 1096,
+        "payload_bytes": 1018,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 69,
+          "words": 127,
+          "generator": 131
+        }
+      },
+      {
+        "stream": "Partitions/84",
+        "stored_bytes": 1967,
+        "payload_bytes": 1888,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 242,
+          "generator": 529
+        }
+      }
+    ]
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_bytes": 178347,
+        "payload_bytes": 177014,
+        "full_pages": 2,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 187,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_bytes": 203279,
+        "payload_bytes": 202123,
+        "full_pages": 3,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 927,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_bytes": 2828,
+        "payload_bytes": 2747,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 348,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_bytes": 24309,
+        "payload_bytes": 23795,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 95,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/History",
+        "stored_bytes": 2479,
+        "payload_bytes": 2397,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 305,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_bytes": 99793,
+        "payload_bytes": 99018,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 135,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_bytes": 134,
+        "payload_bytes": 96,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 71,
+          "words": 15,
+          "generator": 19
+        }
+      },
+      {
+        "stream": "Partitions/78",
+        "stored_bytes": 2811216,
+        "payload_bytes": 2795945,
+        "full_pages": 43,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 678,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/79",
+        "stored_bytes": 20215,
+        "payload_bytes": 19625,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 79,
+          "words": 2047,
+          "generator": 2053
+        }
+      }
+    ]
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_bytes": 178347,
+        "payload_bytes": 177014,
+        "full_pages": 2,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 187,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_bytes": 221591,
+        "payload_bytes": 220363,
+        "full_pages": 3,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 101,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_bytes": 2259,
+        "payload_bytes": 2183,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 278,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_bytes": 24820,
+        "payload_bytes": 24402,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 97,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/History",
+        "stored_bytes": 2292,
+        "payload_bytes": 2214,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 282,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_bytes": 98769,
+        "payload_bytes": 97825,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 131,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_bytes": 134,
+        "payload_bytes": 96,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 71,
+          "words": 15,
+          "generator": 19
+        }
+      },
+      {
+        "stream": "Partitions/61",
+        "stored_bytes": 2886337,
+        "payload_bytes": 2870711,
+        "full_pages": 44,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 1893,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/62",
+        "stored_bytes": 20215,
+        "payload_bytes": 19766,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 79,
+          "words": 2047,
+          "generator": 2053
+        }
+      }
+    ]
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_bytes": 178347,
+        "payload_bytes": 177014,
+        "full_pages": 2,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 187,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_bytes": 1111484,
+        "payload_bytes": 1105407,
+        "full_pages": 17,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 277,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_bytes": 4280,
+        "payload_bytes": 4194,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 67,
+          "words": 511,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_bytes": 53478,
+        "payload_bytes": 52838,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 209,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/History",
+        "stored_bytes": 3072,
+        "payload_bytes": 2994,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 378,
+          "generator": 529
+        }
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_bytes": 113610,
+        "payload_bytes": 112522,
+        "full_pages": 1,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 189,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_bytes": 134,
+        "payload_bytes": 96,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 71,
+          "words": 15,
+          "generator": 19
+        }
+      },
+      {
+        "stream": "Partitions/114",
+        "stored_bytes": 9328560,
+        "payload_bytes": 9277822,
+        "full_pages": 142,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 247,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/116",
+        "stored_bytes": 943,
+        "payload_bytes": 883,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 65,
+          "words": 116,
+          "generator": 131
+        }
+      },
+      {
+        "stream": "Partitions/118",
+        "stored_bytes": 2544994,
+        "payload_bytes": 2531180,
+        "full_pages": 39,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 73,
+          "words": 31,
+          "generator": 37
+        }
+      },
+      {
+        "stream": "Partitions/119",
+        "stored_bytes": 37614,
+        "payload_bytes": 37224,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 147,
+          "words": 2047,
+          "generator": 2053
+        }
+      },
+      {
+        "stream": "Partitions/120",
+        "stored_bytes": 291,
+        "payload_bytes": 238,
+        "full_pages": 0,
+        "final_page": true,
+        "byte_identical": true,
+        "final_layout": {
+          "lanes": 75,
+          "words": 31,
+          "generator": 37
+        }
+      }
+    ]
+  }
+]

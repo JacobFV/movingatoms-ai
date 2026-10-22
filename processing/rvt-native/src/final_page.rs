@@ -73,14 +73,14 @@ pub fn encode(data: &[u8], layout: Layout) -> Result<Vec<u8>> {
     Ok(stored)
 }
 
-pub fn decode(stored: &[u8]) -> Result<(Layout, Vec<u8>)> {
-    if stored.is_empty() || stored.len() >= STORED {
+pub fn candidates(stored: &[u8]) -> Result<Vec<(Layout, Vec<u8>)>> {
+    if stored.is_empty() || stored.len() > STORED {
         return Err(Error::new(
             ErrorKind::InvalidInput,
             "expected nonempty short final page",
         ));
     }
-    let mut found = None;
+    let mut found = Vec::new();
     for padding in 0..8 {
         let Some(bits) = (stored.len() * 8).checked_sub(padding) else {
             continue;
@@ -104,23 +104,23 @@ pub fn decode(stored: &[u8]) -> Result<(Layout, Vec<u8>)> {
                     *data.last_mut().unwrap() &= (1 << (data_bits % 8)) - 1;
                 }
                 if encode(&data, layout)? == stored {
-                    if found.is_some() {
-                        return Err(Error::new(
-                            ErrorKind::InvalidData,
-                            "ambiguous final-page layout",
-                        ));
-                    }
-                    found = Some((layout, data));
+                    found.push((layout, data));
                 }
             }
         }
     }
-    found.ok_or_else(|| {
-        Error::new(
+    Ok(found)
+}
+
+pub fn decode(stored: &[u8]) -> Result<(Layout, Vec<u8>)> {
+    let mut matches = candidates(stored)?;
+    if matches.len() != 1 {
+        return Err(Error::new(
             ErrorKind::InvalidData,
-            "invalid/unsupported final-page parity",
-        )
-    })
+            "invalid or ambiguous final-page parity",
+        ));
+    }
+    Ok(matches.pop().unwrap())
 }
 
 #[cfg(test)]
