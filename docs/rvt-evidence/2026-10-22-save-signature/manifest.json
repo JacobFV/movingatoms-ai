@@ -1,0 +1,43 @@
+{
+  "captured_at_utc": "2026-10-22T22:40:04.029131+00:00",
+  "source_commit": "320baea723c439ce7d6e27d11c934e72099f1029",
+  "working_tree_status": "",
+  "browser": "Google Chrome 156.0.8078.47",
+  "capture_type": "actual headless-browser screenshot of local generated research report",
+  "not_autodesk_ui": true,
+  "sources": {
+    "research/rvt/results/object-repacking.json": "d15fe4739f34fd84eb583a22cf932e75f8eb1aab144b01e35bb3ba38dd04b595",
+    "research/rvt/results/resized-graph.json": "719447d1de58d0b562ce6cb080d2a153ac238e03da21a8aebc4545e9d3cd7940",
+    "research/rvt/results/resized-reader.json": "38f4d054c997340accc077967e37a849357e0a629366cbfa43d09dbd8d101e12",
+    "research/rvt/results/record-selection.json": "d0c3ed0ef6ae0d88af354938c9db29595ef8c7fedd2e6b26b031a743c403d002",
+    "research/rvt/results/save-increments.json": "20c328d37b5ec7dd542828a15da325ef7e06fe5cecca65a5c4fbcc1c53f75889",
+    "research/rvt/results/signature-analysis.json": "3286e22a90dea8a3aa1bd752747f5a7b405b28d38397d87d386552fc4e1b9aa7"
+  },
+  "test_command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research/rvt",
+    "-p",
+    "test_*.py"
+  ],
+  "test_exit_code": 0,
+  "generator_sha256": "ed20d913f55d81f2c341f3734b87758c38535ccdf2f38750332e14a1b50b25a9",
+  "artifacts": {
+    "corpus.html": "16ed0b356ac764391284291b97ca0d3ef83614171aeaa5472ea43b9d1a8825ff",
+    "corpus.png": "54eb5824dc6ff6ae6b2ed20b8d27286bff496a8aff93c0f30b5cd8cd946113e5",
+    "investigations.html": "0151e942586ce34ee9958a4a44e1cc7c0266600e021141924a691ac2257cedd6",
+    "investigations.png": "f721892ce4e58bc6d89421e9bda102e2546c916bda36690d535d7f3c0437d105",
+    "object-repacking.json": "d15fe4739f34fd84eb583a22cf932e75f8eb1aab144b01e35bb3ba38dd04b595",
+    "record-selection.json": "d0c3ed0ef6ae0d88af354938c9db29595ef8c7fedd2e6b26b031a743c403d002",
+    "resized-graph.json": "719447d1de58d0b562ce6cb080d2a153ac238e03da21a8aebc4545e9d3cd7940",
+    "resized-reader.json": "38f4d054c997340accc077967e37a849357e0a629366cbfa43d09dbd8d101e12",
+    "room-edit.html": "c43b8a2ab9c99994d0a4d6f0ba63841c74428b18a748520509dbf1bfb7f05203",
+    "room-edit.png": "25616a4a76ed16c413d75a67e37e6058c5aec82f1404683ff496b5babb33e031",
+    "save-increments.json": "20c328d37b5ec7dd542828a15da325ef7e06fe5cecca65a5c4fbcc1c53f75889",
+    "signature-analysis.json": "3286e22a90dea8a3aa1bd752747f5a7b405b28d38397d87d386552fc4e1b9aa7",
+    "tests.txt": "7289b59631ee12be6c931eed9f22101057b55dfb4db6a418b33bdfc226d58ae9"
+  }
+}

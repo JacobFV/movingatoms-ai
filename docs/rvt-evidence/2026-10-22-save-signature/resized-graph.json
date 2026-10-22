@@ -1,0 +1,13 @@
+{
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "complete_objects": 11,
+  "resolved_pointer_edges": 10,
+  "body_growth_bytes": 26,
+  "shifted_pointer_locations": 20,
+  "one_parameter_value_changed": true,
+  "all_other_graph_values_and_pointer_targets_identical": true,
+  "original_bytes_consumed": 2531,
+  "edited_bytes_consumed": 2557,
+  "graph_evidence_sha256": "0f41651cefc806058fb88a13a473fa89b2d38d50800b50e284b7d0af3fd8e3a0",
+  "autodesk_acceptance": "not_tested"
+}

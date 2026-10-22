@@ -84,3 +84,23 @@ passed after integration. Raw source fixtures remain outside Git.
 not established. Signature generation, native element creation and Autodesk
 acceptance remain open. Screenshots are presentation evidence for these
 measured results, not substitutes for those missing checks.
+
+
+## 2026-10-22 22:40 UTC — Capture save/signature milestone
+
+Implementation and results committed as `320baea`; initial capture tooling and
+archive committed as `a746a22`. Captured the updated reports with:
+
+```sh
+python3 research/rvt/capture_evidence.py docs/rvt-evidence/2026-10-22-save-signature
+```
+
+The fresh regression run passed all 45 tests. The investigation screenshot was
+visually reviewed; artifact SHA-256 checks passed for both capture directories.
+
+- [Investigation screenshot](rvt-evidence/2026-10-22-save-signature/investigations.png)
+- [Room edit and current test run](rvt-evidence/2026-10-22-save-signature/room-edit.png)
+- [Manifest](rvt-evidence/2026-10-22-save-signature/manifest.json)
+
+Next implementation started: complete History decoding/encoding with corpus
+checks. This is recorded as work in progress, not a completed save feature.
