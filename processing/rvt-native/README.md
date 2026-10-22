@@ -127,3 +127,10 @@ It does not generate a partition envelope, authenticate its signature, connect
 it to History/Latest/element tables, or establish semantic validity. The caller
 must supply those relationships. A copied partition under an unused name is
 only a transport control and must not be described as a successful Revit save.
+
+`Contents` is also page-framed in all six tested files. Logical replacement
+payloads for that stream use `new_payload_file` and receive page encoding,
+just like Global streams. Earlier inventories omitted this stream; the
+[Contents cross-language audit](../../research/rvt/results/contents-codec.json)
+records its exact reproduction and updated inventory counts. Its gzip wrapper
+and revision fields remain the semantic caller's responsibility.

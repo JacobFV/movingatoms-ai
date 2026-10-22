@@ -104,7 +104,8 @@ pub fn is_paged(name: &str) -> bool {
     }
     matches!(
         name,
-        "Formats/Latest"
+        "Contents"
+            | "Formats/Latest"
             | "Global/ContentDocuments"
             | "Global/DocumentIncrementTable"
             | "Global/ElemTable"

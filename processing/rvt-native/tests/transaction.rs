@@ -293,3 +293,51 @@ fn creation_is_opt_in_and_output_cannot_be_overwritten() {
     assert!(writer::patch(&input, &output, &manifest, dir.path()).is_err());
     assert_eq!(fs::read(&output).unwrap(), b"do not overwrite");
 }
+
+#[test]
+fn contents_payload_uses_page_framing_and_corruption_is_rejected() {
+    let dir = tempfile::tempdir().unwrap();
+    let input = dir.path().join("input.rvt");
+    let output = dir.path().join("output.rvt");
+    fixture(&input);
+    let old = ma_rvt_native::codec::encode(b"original Contents logical bytes").unwrap();
+    {
+        let mut file = cfb::open_rw(&input).unwrap();
+        file.create_stream("Contents")
+            .unwrap()
+            .write_all(&old)
+            .unwrap();
+        file.flush().unwrap();
+    }
+    let payload = b"replacement Contents logical bytes with a different length";
+    fs::write(dir.path().join("contents.bin"), payload).unwrap();
+    let manifest = Manifest {
+        input_sha256: writer::hash(&fs::read(&input).unwrap()),
+        creates: vec![],
+        patches: vec![Patch {
+            stream: "Contents".into(),
+            expected_stored_sha256: writer::hash(&old),
+            new_payload_file: Some("contents.bin".into()),
+            new_unpaged_file: None,
+        }],
+    };
+    let report = writer::patch(&input, &output, &manifest, dir.path()).unwrap();
+    assert_eq!(report.final_pages_verified, 1);
+    let mut stored = Vec::new();
+    {
+        let mut file = cfb::open_rw(&output).unwrap();
+        file.open_stream("Contents")
+            .unwrap()
+            .read_to_end(&mut stored)
+            .unwrap();
+        assert_eq!(ma_rvt_native::codec::decode(&stored).unwrap(), payload);
+        assert_ne!(stored, payload);
+        stored[0] ^= 1;
+        file.create_stream("Contents")
+            .unwrap()
+            .write_all(&stored)
+            .unwrap();
+        file.flush().unwrap();
+    }
+    assert!(writer::verify(&output).is_err());
+}

@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 import olefile
-from pages import GLOBAL
+from pages import is_paged
 from codec import decode
 
 
@@ -14,8 +14,7 @@ def verify(binary, source):
     with tempfile.TemporaryDirectory() as tmp, olefile.OleFileIO(source) as file:
         root = Path(tmp)
         for parts in file.listdir():
-            if not (len(parts)==2 and (parts[0]=='Partitions' or
-                    parts[0]=='Global' and parts[1] in GLOBAL or parts==['Formats','Latest'])): continue
+            if not is_paged(parts): continue
             raw = file.openstream(parts).read()
             stored, payload, encoded = [root/f'{checked}-{n}' for n in ('stored','payload','encoded')]
             stored.write_bytes(raw)

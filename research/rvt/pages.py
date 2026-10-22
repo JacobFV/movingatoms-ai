@@ -8,6 +8,13 @@ PAYLOAD = 64896
 CORE_SHA256 = 'c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014'
 GLOBAL = {'ContentDocuments', 'DocumentIncrementTable', 'ElemTable', 'History', 'Latest', 'PartitionTable'}
 
+def is_paged(parts):
+    return parts == ['Contents'] or (len(parts) == 2 and (
+        parts[0] == 'Partitions' or
+        parts[0] == 'Global' and parts[1] in GLOBAL or
+        parts == ['Formats', 'Latest']))
+
+
 @dataclass(frozen=True)
 class Page:
     stream: str
@@ -27,9 +34,7 @@ def read_pages(path):
     import olefile
     with olefile.OleFileIO(path) as ole:
         for parts in ole.listdir():
-            if not (len(parts) == 2 and (parts[0] == 'Partitions' or
-                    parts[0] == 'Global' and parts[1] in GLOBAL or
-                    parts == ['Formats', 'Latest'])):
+            if not is_paged(parts):
                 continue
             stream = '/'.join(parts)
             data = ole.openstream(parts).read()

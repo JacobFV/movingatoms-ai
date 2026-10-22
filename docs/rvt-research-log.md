@@ -166,3 +166,34 @@ python3 -m unittest discover -s research/rvt -p 'test_partition_builder.py'
 The tests cover empty groups in all observed profiles, split large records,
 input preservation and failed preconditions. Save integration and revision
 rules will be recorded separately when their checks finish.
+
+## 2026-10-22 — Correct omitted Contents framing and save linkage
+
+Independent identity research found that the `Contents` stream carries the
+latest stream revisions and uses the recovered page ECC. Earlier stream
+classification omitted it. Added `Contents` to the Rust writer's paged-stream
+classification and the Python complete-codec audits. The Rust writer now
+encodes logical Contents payloads and rejects corrupt Contents parity.
+
+A new transaction regression test passed; the Rust suite now has 15 passing
+tests and Clippy is clean. `verify_contents_codec.py` verifies all six original
+Contents streams byte-for-byte using both Python and Rust and reruns each
+file's complete Rust inventory. See
+[Contents codec evidence](../research/rvt/results/contents-codec.json).
+The audit initially reused a temporary output filename, which the CLI correctly
+refused to overwrite; it now uses a separate directory per fixture.
+
+```sh
+python3 research/rvt/verify_contents_codec.py \
+  processing/rvt-native/target/release/ma-rvt-native \
+  research/rvt/local/core2024.rvt research/rvt/local/einhoven.rvt \
+  research/rvt/local/RE1-*.rvt
+cargo test --manifest-path processing/rvt-native/Cargo.toml
+cargo clippy --manifest-path processing/rvt-native/Cargo.toml --all-targets -- -D warnings
+```
+
+The first append candidate's current-room routing passed while its Contents
+revision index was stale. A corrected second candidate fixes this index;
+BasicFileInfo's increment count/version remains another independently observed
+mismatch to address. Earlier candidates are preserved as controls, not erased
+or described as complete saves.

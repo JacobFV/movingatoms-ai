@@ -4,7 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import olefile
-from pages import GLOBAL, STORED
+from pages import is_paged, STORED
 from codec import decode, encode, decode_final, choose
 
 
@@ -12,8 +12,7 @@ def verify(path):
     streams = []
     with olefile.OleFileIO(path) as file:
         for parts in file.listdir():
-            if not (len(parts)==2 and (parts[0]=='Partitions' or
-                    parts[0]=='Global' and parts[1] in GLOBAL or parts==['Formats','Latest'])): continue
+            if not is_paged(parts): continue
             raw = file.openstream(parts).read()
             data = decode(raw)
             if encode(data) != raw: raise ValueError(f'nonidentical canonical round trip: {parts}')
