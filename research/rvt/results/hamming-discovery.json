@@ -1,0 +1,148 @@
+{
+  "pages_observed": 509,
+  "always_zero_trailer_bits_lsb_first": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    2817,
+    2818,
+    2819,
+    2820,
+    2821,
+    2822,
+    2823
+  ],
+  "lane_polynomial_gcd": "0xa01",
+  "reciprocal_generator": "0x805",
+  "witnesses": [
+    {
+      "page": 0,
+      "lane": 0,
+      "gcd_degree": 2045
+    },
+    {
+      "page": 0,
+      "lane": 1,
+      "gcd_degree": 12
+    },
+    {
+      "page": 0,
+      "lane": 2,
+      "gcd_degree": 11
+    },
+    {
+      "page": 0,
+      "lane": 3,
+      "gcd_degree": 11
+    },
+    {
+      "page": 0,
+      "lane": 4,
+      "gcd_degree": 11
+    },
+    {
+      "page": 0,
+      "lane": 5,
+      "gcd_degree": 11
+    },
+    {
+      "page": 0,
+      "lane": 6,
+      "gcd_degree": 11
+    },
+    {
+      "page": 0,
+      "lane": 7,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 0,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 1,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 2,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 3,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 4,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 5,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 6,
+      "gcd_degree": 11
+    },
+    {
+      "page": 1,
+      "lane": 7,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 0,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 1,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 2,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 3,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 4,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 5,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 6,
+      "gcd_degree": 11
+    },
+    {
+      "page": 2,
+      "lane": 7,
+      "gcd_degree": 11
+    }
+  ]
+}

@@ -1,10 +1,38 @@
 # Writing native Revit (.rvt) without Revit — research notes
 
 Goal: the processing worker delivers a native `.rvt` alongside IFC, written by our own code (no Revit install, no
-Autodesk cloud). Status as of 2026-10-22: **blocked on one unknown, the 353-byte page trailer** (below). Everything
-else needed for a writer is understood or already built in open source.
+Autodesk cloud). Status as of 2026-10-22: **page parity solved and implemented**. All 519 full pages
+and 29 eligible streams in two licensed fixtures reconstruct byte-for-byte. Native
+element creation and Revit-openability remain unimplemented/unverified; the original
+claim that everything else was understood was too strong.
 
 Scripts referenced here are in [`research/rvt/`](../research/rvt/).
+
+## Follow-up: trailer solved (2026-10-22)
+
+The trailer is **255 interleaved binary Hamming(2047,2036) codewords** using
+`x^11 + x^2 + 1`. The original byte-level probes missed 12 leading and 7 trailing
+zero bits. Between them sit 2,805 parity bits = 255 × 11. The payload plus 12
+zero bits is exactly 255 × 2,036 bits. All bits are stored LSB-first.
+
+[`paged.py`](../research/rvt/paged.py) implements encoding and strict verification.
+[`discover_hamming.py`](../research/rvt/discover_hamming.py) independently recovers
+the reciprocal generator by polynomial GCD. [Recorded evidence](../research/rvt/results/README.md)
+includes exact reproduction of **509 Core Interior pages + 10 Einhoven pages**,
+including schema streams, and byte-identical reconstruction of all 29 eligible
+streams. Seven tests cover independent scalar polynomial division over all 255
+lanes, boundary lengths, corruption, padding, truncation, and linearity.
+
+This removes the page-parity blocker. It does **not** demonstrate native element
+creation or that an edited file opens in Revit. Those require further work and an
+external validation oracle. The prior feasibility percentages were subjective,
+not measured probabilities.
+
+The original notes below are preserved as the research history. Their proposed
+ECC-versus-signature binary test was not decisive: a failed code search cannot
+prove a keyed signature. All 509 payload vectors were independent, so a general
+whole-page linear fit supplied no evidence either way. Issue #745 concerns
+partition reader coverage, not a page-trailer or semantic writer gate.
 
 ## Ground rules
 
@@ -55,7 +83,7 @@ streams: `BasicFileInfo` (UTF-16 text: release, build tag, original path, file G
    one's trailer must be recomputed. rvt-rs refuses any multi-page re-encode, even an identity one ("spans a
    65249-byte stored page").
 
-## The blocker: the 353-byte page trailer
+## Original blocker (now solved): the 353-byte page trailer
 
 Every `Partitions/*` stream and the large `Global/*` streams are stored in **65,249-byte pages = 64,896 bytes of payload
 + a 353-byte trailer**. The final, short page of a stream carries no trailer.

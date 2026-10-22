@@ -1,0 +1,16 @@
+{"lanes": 256, "payload_layout": "striped", "parity_layout": "striped", "verdict": "rejected", "rank": 2028, "constraints": 1, "page": 7, "lane": 236}
+{"lanes": 256, "payload_layout": "striped", "parity_layout": "contiguous", "verdict": "rejected", "rank": 2028, "constraints": 1, "page": 7, "lane": 236}
+{"lanes": 256, "payload_layout": "contiguous", "parity_layout": "striped", "verdict": "rejected", "rank": 2024, "constraints": 1, "page": 7, "lane": 232}
+{"lanes": 256, "payload_layout": "contiguous", "parity_layout": "contiguous", "verdict": "rejected", "rank": 2024, "constraints": 1, "page": 7, "lane": 232}
+{"lanes": 128, "payload_layout": "striped", "parity_layout": "striped", "verdict": "rejected", "rank": 4056, "constraints": 1, "page": 31, "lane": 88}
+{"lanes": 128, "payload_layout": "striped", "parity_layout": "contiguous", "verdict": "rejected", "rank": 4056, "constraints": 1, "page": 31, "lane": 88}
+{"lanes": 128, "payload_layout": "contiguous", "parity_layout": "striped", "verdict": "rejected", "rank": 4055, "constraints": 1, "page": 31, "lane": 87}
+{"lanes": 128, "payload_layout": "contiguous", "parity_layout": "contiguous", "verdict": "rejected", "rank": 4055, "constraints": 1, "page": 31, "lane": 87}
+{"lanes": 64, "payload_layout": "striped", "parity_layout": "striped", "verdict": "rejected", "rank": 8112, "constraints": 1, "page": 126, "lane": 48}
+{"lanes": 64, "payload_layout": "striped", "parity_layout": "contiguous", "verdict": "rejected", "rank": 8112, "constraints": 1, "page": 126, "lane": 48}
+{"lanes": 64, "payload_layout": "contiguous", "parity_layout": "striped", "verdict": "rejected", "rank": 8112, "constraints": 1, "page": 126, "lane": 48}
+{"lanes": 64, "payload_layout": "contiguous", "parity_layout": "contiguous", "verdict": "rejected", "rank": 8112, "constraints": 1, "page": 126, "lane": 48}
+{"lanes": 32, "payload_layout": "striped", "parity_layout": "striped", "verdict": "rejected", "rank": 16224, "constraints": 1, "page": 507, "lane": 0}
+{"lanes": 32, "payload_layout": "striped", "parity_layout": "contiguous", "verdict": "rejected", "rank": 16224, "constraints": 1, "page": 507, "lane": 0}
+{"lanes": 32, "payload_layout": "contiguous", "parity_layout": "striped", "verdict": "rejected", "rank": 16221, "constraints": 1, "page": 506, "lane": 29}
+{"lanes": 32, "payload_layout": "contiguous", "parity_layout": "contiguous", "verdict": "rejected", "rank": 16221, "constraints": 1, "page": 506, "lane": 29}

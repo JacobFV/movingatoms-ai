@@ -1,0 +1,194 @@
+[
+  {
+    "file_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "generator": "x^11+x^2+1",
+    "interleaved_lanes": 255,
+    "full_pages_verified": 509,
+    "streams": [
+      {
+        "name": "Formats/Latest",
+        "stored_bytes": 173230,
+        "full_pages": 2,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/ContentDocuments",
+        "stored_bytes": 243084,
+        "full_pages": 3,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/DocumentIncrementTable",
+        "stored_bytes": 1967,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/ElemTable",
+        "stored_bytes": 125892,
+        "full_pages": 1,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/History",
+        "stored_bytes": 837,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/Latest",
+        "stored_bytes": 78810,
+        "full_pages": 1,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/PartitionTable",
+        "stored_bytes": 134,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/46",
+        "stored_bytes": 17072209,
+        "full_pages": 261,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/48",
+        "stored_bytes": 2388625,
+        "full_pages": 36,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/51",
+        "stored_bytes": 598771,
+        "full_pages": 9,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/53",
+        "stored_bytes": 5692783,
+        "full_pages": 87,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/55",
+        "stored_bytes": 2695935,
+        "full_pages": 41,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/59",
+        "stored_bytes": 1598473,
+        "full_pages": 24,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/61",
+        "stored_bytes": 2809648,
+        "full_pages": 43,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/65",
+        "stored_bytes": 94163,
+        "full_pages": 1,
+        "byte_identical": true
+      }
+    ],
+    "revit_openability": "not_tested"
+  },
+  {
+    "file_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "generator": "x^11+x^2+1",
+    "interleaved_lanes": 255,
+    "full_pages_verified": 10,
+    "streams": [
+      {
+        "name": "Formats/Latest",
+        "stored_bytes": 169647,
+        "full_pages": 2,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/ContentDocuments",
+        "stored_bytes": 30961,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/DocumentIncrementTable",
+        "stored_bytes": 350,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/ElemTable",
+        "stored_bytes": 10709,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/History",
+        "stored_bytes": 228,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/Latest",
+        "stored_bytes": 64737,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Global/PartitionTable",
+        "stored_bytes": 130,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/0",
+        "stored_bytes": 464357,
+        "full_pages": 7,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/1",
+        "stored_bytes": 2194,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/2",
+        "stored_bytes": 7906,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/3",
+        "stored_bytes": 3104,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/4",
+        "stored_bytes": 5298,
+        "full_pages": 0,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/5",
+        "stored_bytes": 100304,
+        "full_pages": 1,
+        "byte_identical": true
+      },
+      {
+        "name": "Partitions/6",
+        "stored_bytes": 291,
+        "full_pages": 0,
+        "byte_identical": true
+      }
+    ],
+    "revit_openability": "not_tested"
+  }
+]

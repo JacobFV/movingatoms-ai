@@ -1,0 +1,18 @@
+{
+  "file_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+  "stored_page_bytes": 65249,
+  "payload_bytes": 64896,
+  "full_pages": 10,
+  "streams": {
+    "Formats/Latest": 2,
+    "Partitions/0": 7,
+    "Partitions/5": 1
+  },
+  "constant_trailer_bytes": {
+    "0": 0
+  },
+  "payload_bit_rank": 10,
+  "dependent_rows": 0,
+  "linear_contradictions": [],
+  "linearity_verdict": "underdetermined"
+}
