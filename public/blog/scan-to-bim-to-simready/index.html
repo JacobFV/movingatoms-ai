@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>From Scan to BIM to SimReady: Turning Buildings into Robot Simulations | Moving Atoms</title>
+<meta name="description" content="How a Scan to BIM model becomes a SimReady digital twin in OpenUSD: separated objects, collision geometry, physics materials, articulation, Isaac Sim, and why robotics teams need scanned sites." />
+<link rel="canonical" href="https://movingatoms.ai/blog/scan-to-bim-to-simready/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/scan-to-bim-to-simready/" />
+<meta property="og:title" content="From Scan to BIM to SimReady: Turning Buildings into Robot Simulations" />
+<meta property="og:description" content="How a Scan to BIM model becomes a SimReady digital twin in OpenUSD: separated objects, collision geometry, physics materials, articulation, Isaac Sim, and why robotics teams need scanned sites." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="From Scan to BIM to SimReady: Turning Buildings into Robot Simulations" />
+<meta name="twitter:description" content="How a Scan to BIM model becomes a SimReady digital twin in OpenUSD: separated objects, collision geometry, physics materials, articulation, Isaac Sim, and why robotics teams need scanned sites." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"From Scan to BIM to SimReady: Turning Buildings into Robot Simulations","description":"How a Scan to BIM model becomes a SimReady digital twin in OpenUSD: separated objects, collision geometry, physics materials, articulation, Isaac Sim, and why robotics teams need scanned sites.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/scan-to-bim-to-simready/","articleSection":"Robotics","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://developer.nvidia.com/blog/designing-ai-factories-using-openusd-and-simready-assets","https://openusd.org/","https://www.linuxfoundation.org/press/alliance-for-openusd-announces-core-specification-1.0-the-universal-language-for-building-3d-worlds","https://developer.nvidia.com/isaac/sim"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a SimReady asset?","acceptedAnswer":{"@type":"Answer","text":"A 3D asset prepared for physically accurate simulation, typically in OpenUSD, with real materials, collision geometry, physics properties and semantic labels."}},{"@type":"Question","name":"Can a Revit model be used for robot simulation?","acceptedAnswer":{"@type":"Answer","text":"It is a good starting point. It needs collision shapes, physics materials, articulation of moving parts and export to OpenUSD to become simulation-ready."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"From Scan to BIM to SimReady","item":"https://movingatoms.ai/blog/scan-to-bim-to-simready/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">From Scan to BIM to SimReady</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Robotics</p><h1>From Scan to BIM to SimReady</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">A good Scan to BIM model already contains most of what a robot simulation needs: every object measured and separated. A few more steps turn it into a SimReady world where robots are trained and tested before they ever reach the site.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>8 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#why">Why robotics teams care about Scan to BIM</a></li><li><a href="#what">What "SimReady" means</a></li><li><a href="#steps">The extra steps</a></li><li><a href="#standard">OpenUSD is becoming a standard</a></li><li><a href="#uses">What people do with it</a></li><li><a href="#us">How Moving Atoms does it</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="why">Why robotics teams care about Scan to BIM</h2>
+<p>Robots fail in the gap between the lab and the real site: the aisle is narrower, the shelf higher, the floor rougher. Testing in a simulated copy of the real site catches those problems early. Building that copy by hand is slow; building it from a scan, using the same separated objects a BIM team would use, is fast.</p>
+
+<h2 id="what">What "SimReady" means</h2>
+<p>NVIDIA uses <a href="https://developer.nvidia.com/blog/designing-ai-factories-using-openusd-and-simready-assets" target="_blank" rel="noopener">SimReady</a> for 3D assets that are ready for physically accurate simulation, built on <a href="https://openusd.org/" target="_blank" rel="noopener">OpenUSD</a>. Compared with a BIM model, a SimReady world adds:</p>
+<div class="table-wrap"><table><thead><tr><th>Property</th><th>BIM model</th><th>SimReady world</th></tr></thead><tbody><tr><td>Separated objects</td><td>Yes (at good LOD)</td><td>Required</td></tr><tr><td>Visual geometry</td><td>Yes</td><td>Yes, with real materials</td></tr><tr><td>Collision geometry</td><td>No</td><td>Simplified shapes for physics</td></tr><tr><td>Mass and friction</td><td>No</td><td>Per object</td></tr><tr><td>Moving parts</td><td>Rarely</td><td>Doors, drawers, hinges, joints</td></tr><tr><td>Format</td><td>Revit, IFC</td><td>OpenUSD</td></tr><tr><td>Semantic labels</td><td>Categories</td><td>Labels for perception training</td></tr></tbody></table></div>
+
+<h2 id="steps">The extra steps</h2>
+<ol>
+<li><strong>Separate everything.</strong> A robot needs every box, chair and tool as its own body. This is where object-level Scan to BIM pays off.</li>
+<li><strong>Add collision shapes</strong> that are simple enough for fast, stable physics.</li>
+<li><strong>Assign physics materials</strong>: mass, friction, restitution.</li>
+<li><strong>Articulate moving parts</strong>: door hinges, drawer slides, lids.</li>
+<li><strong>Export to OpenUSD</strong> with semantic labels, ready for simulators such as <a href="https://developer.nvidia.com/isaac/sim" target="_blank" rel="noopener">NVIDIA Isaac Sim</a>.</li>
+<li><strong>Randomize.</strong> Vary layouts, lighting and object placement so robots generalize beyond one fixed copy.</li>
+</ol>
+
+<h2 id="standard">OpenUSD is becoming a standard</h2>
+<p>The Alliance for OpenUSD released <a href="https://www.linuxfoundation.org/press/alliance-for-openusd-announces-core-specification-1.0-the-universal-language-for-building-3d-worlds" target="_blank" rel="noopener">OpenUSD Core Specification 1.0</a> in December 2025. Just as IFC is the open record for buildings (see <a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit?</a>), USD is becoming the open format for simulation.</p>
+
+<h2 id="uses">What people do with it</h2>
+<ul>
+<li>Plan where robots, conveyors and charging stations go in a real factory or warehouse (see <a href="/blog/scan-to-bim-industrial-plants/">Scan to BIM for industrial plants</a>).</li>
+<li>Train and evaluate robot policies on the real site before deployment.</li>
+<li>Generate synthetic training data with realistic variation.</li>
+<li>Run digital twins for facilities operations (see <a href="/blog/scan-to-bim-facilities-management/">Scan to BIM for facilities management</a>).</li>
+</ul>
+
+<h2 id="us">How Moving Atoms does it</h2>
+<p>SimReady is the level we offer beyond LOD 500: the same scan becomes a BIM model for your design team and a physics-ready USD world for your robotics team. In our <a href="/lidarsample/">LiDAR samples</a> you can try domain randomization on a scanned factory and watch a Unitree G1 humanoid working in it. Read more on our <a href="/platform/environments/">environments platform</a> and <a href="/solutions/robotics/">robotics solutions</a> pages, or <a href="/#up">upload a scan</a> and book a call to scope a SimReady world.</p>
+<div class="callout"><p>Want a SimReady copy of your site? Upload a scan or book a call and we will scope it with you.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>What is a SimReady asset?</summary><p>A 3D asset prepared for physically accurate simulation, typically in OpenUSD, with real materials, collision geometry, physics properties and semantic labels.</p></details><details><summary>Can a Revit model be used for robot simulation?</summary><p>It is a good starting point. It needs collision shapes, physics materials, articulation of moving parts and export to OpenUSD to become simulation-ready.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://developer.nvidia.com/blog/designing-ai-factories-using-openusd-and-simready-assets" target="_blank" rel="noopener">NVIDIA Developer, Designing AI factories using OpenUSD and SimReady assets</a></li><li><a href="https://openusd.org/" target="_blank" rel="noopener">OpenUSD, Universal Scene Description</a></li><li><a href="https://www.linuxfoundation.org/press/alliance-for-openusd-announces-core-specification-1.0-the-universal-language-for-building-3d-worlds" target="_blank" rel="noopener">Linux Foundation, Alliance for OpenUSD announces Core Specification 1.0</a></li><li><a href="https://developer.nvidia.com/isaac/sim" target="_blank" rel="noopener">NVIDIA Isaac Sim</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/scan-to-bim-industrial-plants/">Scan to BIM for industrial plants and factories<span>Laser scanning and modeling factories, process plants and warehouses: dense pipework, equipment, racking, shutdown windows, safety, brownfield retrofits, line changes and robot deployment.</span></a></li><li><a href="/blog/scan-to-bim-facilities-management/">Scan to BIM for facilities management<span>How building owners use Scan to BIM for facilities management: asset registers, COBie, ISO 19650 asset information models, space management, maintenance and digital twins of existing buildings.</span></a></li><li><a href="/blog/scan-to-bim-breakthroughs-2026/">Recent breakthroughs in Scan to BIM<span>What changed in Scan to BIM in 2025 and 2026: AI segmentation, mesh-to-Revit workflows, Gaussian splats, faster mobile scanning, IFC 4.3 as ISO, OpenUSD 1.0 and SimReady digital twins.</span></a></li><li><a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit? Choosing Scan to BIM deliverables<span>Should your Scan to BIM model be delivered as Revit RVT, IFC or both?</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

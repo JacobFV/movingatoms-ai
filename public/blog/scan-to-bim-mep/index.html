@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Scan to BIM for MEP: Modeling Existing Ductwork, Pipework and Services | Moving Atoms</title>
+<meta name="description" content="How to scan and model existing mechanical, electrical and plumbing services: capture in ceiling voids and plant rooms, LOD 300 vs 350 for MEP, clash detection, hidden services and coordination." />
+<link rel="canonical" href="https://movingatoms.ai/blog/scan-to-bim-mep/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/scan-to-bim-mep/" />
+<meta property="og:title" content="Scan to BIM for MEP: Modeling Existing Ductwork, Pipework and Services" />
+<meta property="og:description" content="How to scan and model existing mechanical, electrical and plumbing services: capture in ceiling voids and plant rooms, LOD 300 vs 350 for MEP, clash detection, hidden services and coordination." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Scan to BIM for MEP: Modeling Existing Ductwork, Pipework and Services" />
+<meta name="twitter:description" content="How to scan and model existing mechanical, electrical and plumbing services: capture in ceiling voids and plant rooms, LOD 300 vs 350 for MEP, clash detection, hidden services and coordination." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Scan to BIM for MEP: Modeling Existing Ductwork, Pipework and Services","description":"How to scan and model existing mechanical, electrical and plumbing services: capture in ceiling voids and plant rooms, LOD 300 vs 350 for MEP, clash detection, hidden services and coordination.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/scan-to-bim-mep/","articleSection":"Use case","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://bimforum.org/resource/lod-level-of-development-lod-specification/","https://usibd.org/","https://www.mdpi.com/2072-4292/16/17/3256/html"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What LOD should MEP Scan to BIM use?","acceptedAnswer":{"@type":"Answer","text":"LOD 300 for distribution and LOD 350 for plant rooms and congested zones suits most retrofit coordination."}},{"@type":"Question","name":"Can laser scanning see services above ceilings?","acceptedAnswer":{"@type":"Answer","text":"Only if the ceiling is open or tiles are removed. Services inside walls and slabs cannot be scanned and must be inferred or surveyed by other means."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Scan to BIM for MEP","item":"https://movingatoms.ai/blog/scan-to-bim-mep/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Scan to BIM for MEP</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Use case</p><h1>Scan to BIM for MEP</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">MEP is where existing buildings hide the most surprises. Scanning ceiling voids, risers and plant rooms before designing new services avoids clashes that otherwise appear on site. Here is how to do it well.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>7 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#why">Why MEP needs Scan to BIM most</a></li><li><a href="#capture">Capturing MEP</a></li><li><a href="#lod">LOD for MEP</a></li><li><a href="#model">What to model</a></li><li><a href="#hidden">Hidden services</a></li><li><a href="#clash">Using the model for coordination</a></li><li><a href="#automation">Automation and MEP</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="why">Why MEP needs Scan to BIM most</h2>
+<p>Services change constantly through a building's life and are rarely recorded. Drawings may show the original design, not the duct rerouted ten years later. When new services are designed against old drawings, clashes show up on site, where they are most expensive to fix. A scan of the actual ceiling void, modeled as real ducts, pipes and trays, lets designers route new work around what is really there.</p>
+
+<h2 id="capture">Capturing MEP</h2>
+<ul>
+<li><strong>Open the ceilings.</strong> Remove tiles in a grid pattern, or scan before ceilings go back in during strip-out.</li>
+<li><strong>Scan from below and between.</strong> Dense services shadow each other; plan extra positions or routes. Mobile and handheld scanners help in tight spaces (see <a href="/blog/choosing-a-scanner-for-scan-to-bim/">choosing a scanner</a>).</li>
+<li><strong>Plant rooms and risers</strong> need their own plan, access and often a different scanner.</li>
+<li><strong>Take photos</strong> of labels, tags and nameplates; they help identify systems and equipment.</li>
+</ul>
+
+<h2 id="lod">LOD for MEP</h2>
+<div class="table-wrap"><table><thead><tr><th>LOD</th><th>What MEP looks like</th><th>Good for</th></tr></thead><tbody><tr><td>LOD 200</td><td>Approximate runs and boxes for equipment</td><td>Space planning</td></tr><tr><td>LOD 300</td><td>Measured size, position and routing of main runs and equipment</td><td>Design and most coordination</td></tr><tr><td>LOD 350</td><td>Adds connections, supports, clearances and interfaces to other systems</td><td>Clash detection, detailed coordination</td></tr><tr><td>LOD 400</td><td>Fabrication-level detail</td><td>Prefabrication of replacements</td></tr></tbody></table></div>
+<p>For most retrofits, LOD 300 for distribution and LOD 350 for plant rooms and congested zones is the right balance. Set size thresholds, for example "pipes 50 mm and over". See <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>.</p>
+
+<h2 id="model">What to model</h2>
+<ul>
+<li>Ductwork with sizes, fittings and terminals.</li>
+<li>Pipework by system with diameters, valves and insulation where visible.</li>
+<li>Cable trays, ladders and containment.</li>
+<li>Equipment: AHUs, pumps, chillers, boilers, panels, each as an individual element.</li>
+<li>Supports and hangers where they affect clearances (LOD 350).</li>
+<li>Systems assigned so the model can be filtered and checked by system.</li>
+</ul>
+
+<h2 id="hidden">Hidden services</h2>
+<p>Services buried in walls, slabs and shafts cannot be scanned. Agree how they will be handled: excluded, inferred from visible ends and marked as such, or surveyed by other methods. Never let inferred geometry look measured. See <a href="/blog/scan-to-bim-quality-control/">how to check a Scan to BIM model</a>.</p>
+
+<h2 id="clash">Using the model for coordination</h2>
+<p>Link the existing-services model into the design model and run clash detection in Navisworks or Revit. Clashes against existing services found in the model cost minutes; the same clash found on site costs days.</p>
+
+<h2 id="automation">Automation and MEP</h2>
+<p>Straight duct and pipe runs and trays are well suited to automated extraction; complex fittings and densely packed plant rooms benefit from review (see <a href="/blog/ai-scan-to-bim/">how AI is automating Scan to BIM</a>). Moving Atoms separates every duct run, pipe and piece of equipment as its own element and delivers Revit and IFC within 48 hours. <a href="/#up">upload a scan</a> or see the <a href="/lidarsample/">LiDAR samples</a>.</p>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>What LOD should MEP Scan to BIM use?</summary><p>LOD 300 for distribution and LOD 350 for plant rooms and congested zones suits most retrofit coordination.</p></details><details><summary>Can laser scanning see services above ceilings?</summary><p>Only if the ceiling is open or tiles are removed. Services inside walls and slabs cannot be scanned and must be inferred or surveyed by other means.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://bimforum.org/resource/lod-level-of-development-lod-specification/" target="_blank" rel="noopener">BIMForum, Level of Development (LOD) Specification</a></li><li><a href="https://usibd.org/" target="_blank" rel="noopener">USIBD, Level of Accuracy (LOA) Specification</a></li><li><a href="https://www.mdpi.com/2072-4292/16/17/3256/html" target="_blank" rel="noopener">Gharineiat et al., Assessment of NavVis VLX and BLK2GO SLAM scanner accuracy, Remote Sensing 16(17), 2024</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/scan-to-bim-industrial-plants/">Scan to BIM for industrial plants and factories<span>Laser scanning and modeling factories, process plants and warehouses: dense pipework, equipment, racking, shutdown windows, safety, brownfield retrofits, line changes and robot deployment.</span></a></li><li><a href="/blog/scan-to-bim-renovation/">Scan to BIM for renovation and retrofit<span>Using Scan to BIM for renovation, refurbishment, fit-out, historic buildings and energy retrofits: when to scan, what to model, phasing existing and new in Revit, and avoiding surprises on site.</span></a></li><li><a href="/blog/scan-to-bim-specification/">How to write a Scan to BIM specification<span>A practical template for specifying Scan to BIM: scope, LOD per discipline, USIBD LOA per element, coordinates, deliverables, naming, QA and acceptance criteria.</span></a></li><li><a href="/blog/ai-scan-to-bim/">How AI is automating Scan to BIM<span>How automated Scan to BIM works: point cloud segmentation, object detection, fitting parametric BIM elements, and human review.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

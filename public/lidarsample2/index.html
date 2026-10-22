@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Rotterdam · LiDAR Samples · Moving Atoms</title>
+    <meta name="description" content="Explore Rotterdam’s original LiDAR point cloud and reconstructed piping scene from one shared camera." />
+    <link rel="canonical" href="https://movingatoms.ai/lidarsample2/" />
+    <meta property="og:title" content="Rotterdam · LiDAR Samples · Moving Atoms" />
+    <meta property="og:description" content="Compare Rotterdam’s LiDAR point cloud with its reconstructed mesh." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://movingatoms.ai/lidarsample2/" />
+    <meta property="og:image" content="https://movingatoms.ai/rotterdam-scan/review/whole_02/model.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/logo/favicon-32.png" sizes="32x32" />
+    <link rel="stylesheet" href="/lidarsample/style.css?v=20261019-sample4" />
+    <script defer src="/lidarsample/app.js?v=20261019-rotterdam-objects"></script>
+  </head>
+  <body data-scene="rotterdam">
+    <main class="viewer" data-viewer>
+      <iframe
+        class="scene-frame"
+        data-scene-frame
+        title="Rotterdam LiDAR sample"
+        allow="fullscreen"
+      ></iframe>
+
+      <div class="loading" data-loading aria-live="polite">
+        <span class="loading-mark" aria-hidden="true"></span>
+        <span>Entering Rotterdam</span>
+      </div>
+
+      <nav class="scene-switcher" aria-label="LiDAR sample scenes">
+        <span class="switcher-label"><i aria-hidden="true"></i> LiDAR samples</span>
+        <div class="scene-tabs" data-scene-tabs role="tablist" aria-label="Choose a scene">
+          <button class="scene-tab is-active" type="button" role="tab" aria-selected="true">
+            <span class="scene-type">Scene 01</span>
+            <strong>Rotterdam</strong>
+          </button>
+        </div>
+        <span class="scene-count" data-scene-count>01 / 04</span>
+      </nav>
+    </main>
+    <script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+  <script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+.scene-modes {
+  position: absolute;
+  z-index: 5;
+  top: 88px;
+  left: 24px;
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  border: 1px solid #ffffff22;
+  border-radius: 30px;
+  background: #101420e8;
+}
+.scene-modes .pill {
+  padding: 9px 15px;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+}
+.scene-modes .pill[aria-pressed="true"] {
+  background: var(--lime);
+  color: #11160b;
+}
+.scene-modes .pill:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+body[data-robot="true"] .divider,
+body[data-robot="true"] .tag,
+body[data-robot="true"] .controls,
+body[data-robot="true"] .hint {
+  display: none;
+}
+.object-editor {
+  top: 145px;
+  max-height: calc(100dvh - 320px);
+}
+.robot-panel[hidden],
+.robot-toolbar[hidden] {
+  display: none;
+}
+.robot-panel {
+  position: absolute;
+  z-index: 4;
+  top: 148px;
+  left: 24px;
+  width: 268px;
+  padding: 19px;
+  border: 1px solid #ffffff22;
+  border-radius: 18px;
+  background: #101420ed;
+  box-shadow: 0 12px 35px #0004;
+}
+.robot-eyebrow {
+  color: var(--lime);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.robot-eyebrow span {
+  color: #929caf;
+  font-size: 8px;
+  line-height: 14px;
+}
+.robot-panel h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 12px 0 14px;
+  letter-spacing: -0.03em;
+}
+.robot-phase {
+  font-size: 12px;
+  min-height: 32px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+  color: #e1e5ed;
+}
+.robot-progress {
+  height: 3px;
+  background: #ffffff18;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.robot-progress i {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--lime);
+  transition: width 0.25s;
+}
+.robot-count {
+  font-size: 10px;
+  color: #9ba5b9;
+  margin: 10px 0 16px;
+}
+.robot-panel details {
+  border-top: 1px solid #ffffff18;
+  padding-top: 12px;
+  font-size: 10px;
+  color: #9ba5b9;
+  line-height: 1.6;
+}
+.robot-panel summary {
+  cursor: pointer;
+  color: #c7cdd8;
+}
+.robot-panel a {
+  color: var(--lime);
+}
+.robot-toolbar {
+  position: absolute;
+  z-index: 5;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  white-space: nowrap;
+}
+body[data-embedded="true"] .robot-toolbar {
+  bottom: 112px;
+}
+.robot-toolbar .pill {
+  font-size: 12px;
+  padding: 11px 15px;
+  background: #101420ed;
+}
+.robot-toolbar .pill:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+.robot-toolbar .pill[aria-pressed="true"] {
+  border-color: #c1ff0066;
+}
+.robot-speed {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: #a6aebe;
+}
+.robot-speed select {
+  color: var(--ink);
+  font: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.robot-speed option {
+  background: #101420;
+}
+.scene-modes button:focus-visible,
+.robot-toolbar button:focus-visible,
+.robot-panel summary:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+@media (max-width: 720px) {
+  .scene-modes {
+    top: 78px;
+    left: 12px;
+    right: 12px;
+    width: max-content;
+    max-width: calc(100% - 24px);
+  }
+  .scene-modes .pill {
+    font-size: 11px;
+    padding: 9px 12px;
+  }
+  .object-editor {
+    top: 132px;
+    max-height: calc(100dvh - 324px);
+  }
+  .robot-panel {
+    top: 133px;
+    left: 12px;
+    width: calc(100% - 24px);
+    padding: 13px;
+  }
+  .robot-panel h2 {
+    display: none;
+  }
+  .robot-panel details {
+    position: absolute;
+    right: 13px;
+    bottom: 10px;
+    padding: 0;
+    border: 0;
+    max-height: 155px;
+    overflow: auto;
+  }
+  .robot-panel details[open] {
+    position: static;
+    margin-top: 10px;
+  }
+  .robot-panel .robot-phase {
+    min-height: 18px;
+    font-size: 11px;
+    margin-bottom: 9px;
+    margin-top: 8px;
+  }
+  .robot-count {
+    margin-bottom: 0;
+  }
+  .robot-toolbar {
+    width: calc(100% - 24px);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  .robot-toolbar .pill {
+    font-size: 11px;
+    padding: 9px 11px;
+  }
+  .robot-eyebrow {
+    font-size: 9px;
+    gap: 6px;
+  }
+  .robot-eyebrow span {
+    font-size: 7px;
+  }
+}

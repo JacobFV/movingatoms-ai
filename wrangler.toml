@@ -1,0 +1,35 @@
+# Cloudflare Pages project: movingatoms.ai (static site in public/, Functions in functions/).
+# The Durable Objects live in the companion Worker (workers/realtime) and are bound here by script name.
+name = "movingatoms-ai"
+pages_build_output_dir = "public"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+SITE_URL = "https://movingatoms-ai.pages.dev"
+AGENT_MODEL = "claude-opus-5-5"
+EMAIL_FROM = "Moving Atoms <hello@movingatoms.ai>"
+# No email provider yet: sign-in codes are shown on screen. Remove once RESEND_API_KEY (or an EMAIL binding) is set.
+DEV_CODES = "1"
+ADMIN_EMAILS = "jacobfv123@gmail.com,jacob@humanrobots.ai"
+R2_ACCOUNT_ID = "20d4becc35c40a0bbfb8803a525aaae1"
+R2_UPLOADS_BUCKET = "movingatoms-uploads"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "movingatoms"
+database_id = "b0c7ea3e-53d6-43ba-98f8-e8946cbd9735"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "movingatoms-uploads"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "movingatoms-media"
+
+[[durable_objects.bindings]]
+name = "PROJECT_ROOM"
+class_name = "ProjectRoom"
+script_name = "movingatoms-realtime"

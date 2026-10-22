@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Scan to BIM LOD 200, 300, 350, 400, 500 Explained</title>
+<meta name="description" content="What each Scan to BIM LOD means, which level to choose for renovation, coordination, fabrication and FM, and how LOD differs from LOA." />
+<link rel="canonical" href="https://movingatoms.ai/scan-to-bim/lod-levels/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/scan-to-bim/lod-levels/" />
+<meta property="og:title" content="Scan to BIM LOD 200, 300, 350, 400, 500 Explained" />
+<meta property="og:description" content="What each Scan to BIM LOD means, which level to choose for renovation, coordination, fabrication and FM, and how LOD differs from LOA." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="article:modified_time" content="2026-10-20" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Scan to BIM LOD 200, 300, 350, 400, 500 Explained" />
+<meta name="twitter:description" content="What each Scan to BIM LOD means, which level to choose for renovation, coordination, fabrication and FM, and how LOD differs from LOA." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/scan-to-bim/seo.css?v=2" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Scan to BIM","item":"https://movingatoms.ai/scan-to-bim/"},{"@type":"ListItem","position":3,"name":"LOD levels","item":"https://movingatoms.ai/scan-to-bim/lod-levels/"}]},{"@type":"Article","@id":"https://movingatoms.ai/scan-to-bim/lod-levels/#article","headline":"Scan to BIM LOD levels explained","description":"What each Scan to BIM LOD means, which level to choose for renovation, coordination, fabrication and FM, and how LOD differs from LOA.","url":"https://movingatoms.ai/scan-to-bim/lod-levels/","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"mainEntityOfPage":"https://movingatoms.ai/scan-to-bim/lod-levels/","image":"https://movingatoms.ai/home/media/og.jpg","about":"Scan to BIM","inLanguage":"en"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is LOD 300 in Scan to BIM?","acceptedAnswer":{"@type":"Answer","text":"LOD 300 means elements are modeled with their true dimensions, shape, position and orientation as measured from the scan. It is the most common level for existing-conditions models."}},{"@type":"Question","name":"What is the difference between LOD 300 and LOD 350?","acceptedAnswer":{"@type":"Answer","text":"LOD 350 adds interfaces: how elements connect to each other, including supports, anchors and clearance zones. It is used for coordination and clash detection."}},{"@type":"Question","name":"What is LOD 500?","acceptedAnswer":{"@type":"Answer","text":"LOD 500 is an as-built, field-verified model, used for handover and facilities management."}},{"@type":"Question","name":"What is the difference between LOD and LOA?","acceptedAnswer":{"@type":"Answer","text":"LOD describes how developed each element is; LOA (Level of Accuracy, from USIBD) sets the measurement tolerance the model must meet."}}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="doc">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/scan-to-bim/">Scan to BIM</a></li><li aria-current="page">LOD levels</li></ol>
+  <h1>Scan to BIM LOD levels explained</h1>
+  <p class="lede">Level of Development (LOD) tells a modeler how much geometry and information each element needs. Picking the right LOD is the biggest decision in a Scan to BIM brief: it sets cost, turnaround and what the model can be used for.</p>
+  <p class="meta-line"><span>Updated October 20, 2026</span><span>By the Moving Atoms team</span></p>
+  <nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#what">What LOD means</a></li><li><a href="#levels">LOD 200 to LOD 500</a></li><li><a href="#choose">Which LOD to choose</a></li><li><a href="#loa">LOD vs LOA</a></li><li><a href="#ma">Choosing LOD with Moving Atoms</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+  <article class="prose">
+
+<h2 id="what">What LOD means</h2>
+<p>LOD comes from the BIMForum Level of Development Specification. It describes how far an element is developed, from a generic placeholder to a field-verified, as-built element. For Scan to BIM, where everything already exists, LOD effectively sets how faithfully each element is reproduced from the scan.</p>
+
+<h2 id="levels">LOD 200 to LOD 500</h2>
+<div class="table-wrap"><table><thead><tr><th>LOD</th><th>What the element looks like</th><th>Use it for</th></tr></thead><tbody><tr><td>LOD 200</td><td>Approximate geometry: generic placeholders with approximate size, shape, position and orientation</td><td>Space planning, massing, early studies</td></tr><tr><td>LOD 300</td><td>Precise geometry: true dimensions, shape, position and orientation as measured</td><td>Existing-conditions models, design coordination, digital twins</td></tr><tr><td>LOD 350</td><td>LOD 300 plus interfaces: connections, supports, anchors, clearance and access zones</td><td>Clash detection, MEP coordination, maintenance planning</td></tr><tr><td>LOD 400</td><td>Fabrication detail: fittings, fasteners, welds and equipment tags</td><td>Retrofits, prefabrication, procurement</td></tr><tr><td>LOD 500</td><td>As-built, field verified against the site</td><td>Handover, facilities management, records</td></tr></tbody></table></div>
+<p>You can see each level illustrated on our <a href="/#up">homepage uploader</a>: hover over LOD 200 to 500 to watch the same pump skid gain detail.</p>
+
+<h2 id="choose">Which LOD to choose</h2>
+<ul>
+<li><strong>Renovation or fit-out design:</strong> LOD 300 is the usual minimum, and guides commonly describe it as the most requested level for Scan to BIM.</li>
+<li><strong>MEP coordination and clash detection:</strong> LOD 350, because connections and clearances matter.</li>
+<li><strong>Prefabrication or retrofitting equipment:</strong> LOD 400 for the elements you will fabricate around.</li>
+<li><strong>Facilities management and handover:</strong> LOD 500 where you need a verified record.</li>
+<li><strong>Feasibility and space planning:</strong> LOD 200 is often enough.</li>
+</ul>
+<p>LOD does not have to be uniform. A common brief is LOD 300 for architecture and structure, and LOD 350 for the plant room.</p>
+
+<h2 id="loa">LOD vs LOA</h2>
+<p>LOD says how developed an element is; <strong>Level of Accuracy (LOA)</strong>, defined by the U.S. Institute of Building Documentation, says how close the model must be to the measured reality, as a tolerance. A good Scan to BIM brief states both: for example LOD 300 at a stated LOA for walls and floors.</p>
+
+<h2 id="ma">Choosing LOD with Moving Atoms</h2>
+<p>When you <a href="/#up">upload your scan</a>, pick LOD 200, 300, 350, 400 or 500 and the formats you need. Every object is delivered separately, in the scan's coordinates, within 48 hours. Not sure which level? <a href="/contact" data-cal>Book a call</a> and we will recommend one for your use.</p>
+<div class="callout"><p>Send us a scan and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a><a class="btn btn-ghost" href="/contact" data-cal>Book a demo</a></div></div>
+<h2 id="faq">Frequently asked questions</h2>
+<div class="faq"><details><summary>What is LOD 300 in Scan to BIM?</summary><p>LOD 300 means elements are modeled with their true dimensions, shape, position and orientation as measured from the scan. It is the most common level for existing-conditions models.</p></details><details><summary>What is the difference between LOD 300 and LOD 350?</summary><p>LOD 350 adds interfaces: how elements connect to each other, including supports, anchors and clearance zones. It is used for coordination and clash detection.</p></details><details><summary>What is LOD 500?</summary><p>LOD 500 is an as-built, field-verified model, used for handover and facilities management.</p></details><details><summary>What is the difference between LOD and LOA?</summary><p>LOD describes how developed each element is; LOA (Level of Accuracy, from USIBD) sets the measurement tolerance the model must meet.</p></details></div>
+  </article>
+  <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/scan-to-bim/">Scan to BIM<span>Scan to BIM from any LiDAR or SLAM scan. Upload a point cloud and get a separated, editable…</span></a></li><li><a href="/scan-to-bim/cost/">How much does Scan to BIM cost?<span>Scan to BIM pricing explained: per-square-foot rates by LOD, minimum fees, scanning vs…</span></a></li><li><a href="/scan-to-bim/best-scan-to-bim-software/">The best Scan to BIM software and services in 2026<span>Scan to BIM options compared: Autodesk ReCap, EdgeWise, FARO As-Built, Leica Cyclone 3DR,…</span></a></li><li><a href="/scan-to-bim/point-cloud-to-revit/">How to convert a point cloud to Revit<span>How to convert a point cloud to a Revit model: register in ReCap, link in Revit, model to the…</span></a></li></ul></aside>
+  <section class="sources"><p class="h">Sources</p><ol><li><a href="https://bimforum.org/resource/lod-level-of-development-lod-specification/" rel="nofollow noopener" target="_blank">BIMForum, Level of Development (LOD) Specification</a></li><li><a href="https://usibd.org/" rel="nofollow noopener" target="_blank">U.S. Institute of Building Documentation (USIBD), Level of Accuracy specification</a></li><li><a href="https://www.designingbuildings.co.uk/wiki/A_Comprehensive_Guide_to_Choose_the_Right_LOD_for_Your_Scan_to_BIM_Projects" rel="nofollow noopener" target="_blank">Designing Buildings, Choosing the right LOD for Scan to BIM projects</a></li><li><a href="https://www.thefuture3d.com/blog/lod-levels-scan-to-bim-explained" rel="nofollow noopener" target="_blank">The Future 3D, LOD levels for Scan to BIM explained</a></li></ol>
+  <p class="disclaimer">Product names are trademarks of their respective owners. Competitor information is summarized from the public sources above as of October 20, 2026; features and pricing change, so check each vendor. Spotted something out of date? <a href="/contact">Tell us</a> and we will correct it.</p></section>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

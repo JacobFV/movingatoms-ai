@@ -1,0 +1,27 @@
+# Static caching. HTML keeps Pages' default (max-age=0, must-revalidate), so new deploys show at once.
+# Hashed bundles never change; versioned (?v=) site assets and media change name when they change.
+
+/app/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/app/potree/*
+  Cache-Control: public, max-age=604800
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/home/media/*
+  Cache-Control: public, max-age=604800
+
+/home/films/*
+  Cache-Control: public, max-age=604800
+
+/media/*
+  Cache-Control: public, max-age=604800
+
+/app/index.html
+  Cache-Control: no-cache

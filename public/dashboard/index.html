@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Your scans · Moving Atoms</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/dashboard/dashboard.css?v=9" />
+<style>
+  .appnote { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; width: min(1040px, calc(100% - 48px)); margin: 20px auto 0; padding: 14px 16px 14px 20px; border: 1px solid var(--line-2); border-radius: 16px; background: #070707; color: var(--fg-2); font-size: 14.5px; line-height: 1.5; }
+  .appnote p { margin: 0; max-width: 72ch; }
+  .appnote b { color: #fff; font-weight: 500; }
+  .appnote .btn { height: 36px; padding: 0 16px; font-size: 14px; }
+</style>
+</head>
+<body class="dash">
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+  </nav>
+  <div class="nav-cta">
+    <div class="acct" id="acct" hidden>
+      <button type="button" class="acct-btn" id="acctBtn" aria-haspopup="menu" aria-expanded="false"><span class="acct-av" id="acctAv"></span></button>
+      <div class="acct-menu" id="acctMenu" role="menu" hidden>
+        <p class="acct-email" id="acctEmail"></p>
+        <button type="button" role="menuitem" id="signOut">Sign out</button>
+      </div>
+    </div>
+    <a class="btn btn-ghost book" href="/contact" data-cal>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+      Book a meeting
+    </a>
+    <a class="btn btn-white" href="/#up">New upload</a>
+  </div>
+</header>
+
+<!-- the app has taken over new uploads (movingatoms.ai/app, 2026-10-22): this page stays for earlier scans and quotes -->
+<aside class="appnote" role="note">
+  <p><b>New: the Moving Atoms app.</b> New scans now open as a project in the app: your estimate, then the agent building your model in a shared 3D view. Your earlier scans and quotes stay here.</p>
+  <a class="btn btn-white" href="/app/">Open the app</a>
+</aside>
+
+<main class="dwrap">
+  <!-- back from Stripe Checkout: confirmed with the checkout session itself, so it shows whatever account is signed in -->
+  <section class="paidcard" id="paidCard" hidden aria-live="polite">
+    <span class="pc-tick" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+    <div class="pc-body">
+      <p class="eyebrow" id="pcEb">Payment</p>
+      <h2 id="pcH">Confirming your payment…</h2>
+      <p class="pc-s" id="pcS">Checking with Stripe. This takes a moment.</p>
+      <p class="pc-links" id="pcL"></p>
+    </div>
+  </section>
+
+  <!-- signed out -->
+  <section class="gate" id="gate" hidden>
+    <p class="eyebrow">Dashboard</p>
+    <h1>Sign in to see your scans</h1>
+    <p class="gate-s" id="gateS">Enter your work email and we'll send you a 6-digit code.</p>
+    <form class="gate-f" id="gateEmail" novalidate>
+      <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+      <button class="btn btn-white" type="submit">Send code</button>
+    </form>
+    <form class="gate-f" id="gateCode" hidden novalidate>
+      <input name="code" class="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••" aria-label="6-digit code" />
+      <button class="btn btn-white" type="submit">Sign in</button>
+    </form>
+    <p class="gate-msg" id="gateMsg" role="status"></p>
+  </section>
+
+  <!-- signed in -->
+  <section id="board" hidden>
+    <div class="dhead">
+      <div>
+        <p class="eyebrow" id="hello">Dashboard</p>
+        <h1>Your scans</h1>
+      </div>
+      <dl class="stats" id="stats"></dl>
+    </div>
+    <div class="toast" id="toast" hidden>
+      <span class="toast-tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+      <p id="toastP"><b>Upload complete.</b> The team has been notified and will review your scan. You'll see every step here.</p>
+      <button type="button" class="toast-x" id="toastX" aria-label="Dismiss">×</button>
+    </div>
+    <ol class="subs" id="subs" aria-live="polite"></ol>
+    <div class="empty" id="empty" hidden>
+      <span class="drop-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></span>
+      <p class="empty-t">No scans yet</p>
+      <p class="empty-s">Upload a LiDAR or SLAM scan and follow it here from review to delivery.</p>
+      <a class="btn btn-white" href="/#up">Upload a scan</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <img src="/assets/logo-white.png" alt="Moving Atoms" width="93" height="20" />
+  <nav aria-label="Footer">
+    <a href="/">Home</a>
+    <a href="/lidarsample/">Samples</a>
+    <a href="/contact">Contact</a>
+    <a href="/terms/">Terms</a>
+    <a href="/privacy/">Privacy</a>
+  </nav>
+  <p>© 2026 Moving Atoms Inc.</p>
+</footer>
+
+<script src="/dashboard/dashboard.js?v=7" defer></script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

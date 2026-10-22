@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Can You Do Scan to BIM with an iPhone? Phone LiDAR Accuracy Explained | Moving Atoms</title>
+<meta name="description" content="How accurate is iPhone and iPad LiDAR for Scan to BIM? What peer-reviewed studies found, where phone scans work for Revit models, where they fail, and how to capture well." />
+<link rel="canonical" href="https://movingatoms.ai/blog/phone-lidar-scan-to-bim/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/phone-lidar-scan-to-bim/" />
+<meta property="og:title" content="Can You Do Scan to BIM with an iPhone? Phone LiDAR Accuracy Explained" />
+<meta property="og:description" content="How accurate is iPhone and iPad LiDAR for Scan to BIM? What peer-reviewed studies found, where phone scans work for Revit models, where they fail, and how to capture well." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Can You Do Scan to BIM with an iPhone? Phone LiDAR Accuracy Explained" />
+<meta name="twitter:description" content="How accurate is iPhone and iPad LiDAR for Scan to BIM? What peer-reviewed studies found, where phone scans work for Revit models, where they fail, and how to capture well." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Can You Do Scan to BIM with an iPhone? Phone LiDAR Accuracy Explained","description":"How accurate is iPhone and iPad LiDAR for Scan to BIM? What peer-reviewed studies found, where phone scans work for Revit models, where they fail, and how to capture well.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/phone-lidar-scan-to-bim/","articleSection":"Guide","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://update.library.uitm.edu.my/Record/WOS:001364045900001/Details","https://doaj.org/article/9cbab8e9cd04423aae61f174ca458b1e","https://learn.poly.cam/hc/en-us/articles/50434745985556-How-Accurate-Are-Polycam-Scans","https://www.mdpi.com/2072-4292/16/17/3256/html"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How accurate is iPhone LiDAR for BIM?","acceptedAnswer":{"@type":"Answer","text":"Studies report centimetre-level accuracy for building elements, best in small, uncluttered spaces scanned slowly. It is not survey grade."}},{"@type":"Question","name":"Can I make a Revit model from a phone scan?","acceptedAnswer":{"@type":"Answer","text":"Yes, for small spaces at LOD 200 to 300. Export the point cloud and convert it like any other scan."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Can you do Scan to BIM with an iPhone?","item":"https://movingatoms.ai/blog/phone-lidar-scan-to-bim/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Can you do Scan to BIM with an iPhone?</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Guide</p><h1>Can you do Scan to BIM with an iPhone?</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">Phones and tablets with LiDAR can capture a room in minutes. They will not replace a survey-grade scanner, but research shows they are usable for some BIM work. Here is where the line is.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>7 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#short">Short answer</a></li><li><a href="#research">What the studies found</a></li><li><a href="#where">Where phone scans work</a></li><li><a href="#where-not">Where they do not</a></li><li><a href="#capture">How to capture a usable phone scan</a></li><li><a href="#upgrade">When to step up</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="short">Short answer</h2>
+<p>Yes, for the right job. Phone LiDAR typically reaches <strong>centimetre-level</strong> accuracy for building elements, which suits LOD 200 to LOD 300 models of small, uncluttered spaces: offices, apartments, small shops, single rooms. It is not suitable where tight tolerances, long ranges, tall spaces or legal survey records are needed.</p>
+
+<h2 id="research">What the studies found</h2>
+<ul>
+<li>A <a href="https://update.library.uitm.edu.my/Record/WOS:001364045900001/Details" target="_blank" rel="noopener">2024 study of iPhone 13 Pro LiDAR for BIM</a> compared it with a FARO terrestrial scanner and a distometer, then modeled in Revit. Most measured elements (windows, doors, columns, walls) fell in the centimetre range, with some in the millimetre range, and the authors noted point-cloud drift but judged the data usable for BIM.</li>
+<li>A <a href="https://doaj.org/article/9cbab8e9cd04423aae61f174ca458b1e" target="_blank" rel="noopener">2023 iPad Pro study</a> found very low noise for static scanning, with average deviation rising to about 1 cm when the device moved, and better results in smaller areas.</li>
+<li>App makers give their own figures; <a href="https://learn.poly.cam/hc/en-us/articles/50434745985556-How-Accurate-Are-Polycam-Scans" target="_blank" rel="noopener">Polycam</a>, for example, states about ±½ inch on standard interiors and lower accuracy in very large, cluttered or reflective spaces. Treat vendor figures as indicative.</li>
+</ul>
+
+<h2 id="where">Where phone scans work</h2>
+<ul>
+<li>Small renovation and fit-out projects at LOD 200 to 300.</li>
+<li>Quick existing-conditions checks before a full survey.</li>
+<li>Furniture, fixtures and equipment inventories for facilities teams.</li>
+<li>Digital twins and simulation of rooms, where completeness matters more than millimetres.</li>
+</ul>
+<p>Two of our public <a href="/lidarsample/">LiDAR samples</a>, a workshop and a medical warehouse, were rebuilt from phone captures from Niantic Spatial into hundreds of individually editable objects, with Revit downloads.</p>
+
+<h2 id="where-not">Where they do not</h2>
+<ul>
+<li>Spaces larger than a few hundred square meters, where drift accumulates.</li>
+<li>High ceilings, plant rooms and anything beyond a few meters' range.</li>
+<li>Specifications at LOA30 or tighter (see <a href="/blog/scan-to-bim-specification/">how to write a Scan to BIM specification</a>).</li>
+<li>Reflective, dark or glass-heavy spaces.</li>
+</ul>
+
+<h2 id="capture">How to capture a usable phone scan</h2>
+<ol>
+<li>Clear the room of people and move slowly, overlapping your path.</li>
+<li>Capture closed loops: return to where you started so the app can correct drift.</li>
+<li>Scan in sections for larger areas and keep each section small.</li>
+<li>Measure one or two reference distances with a laser measure to check scale.</li>
+<li>Export the point cloud (for example PLY or E57) rather than only a mesh, if the app allows. See <a href="/blog/point-cloud-file-formats/">point cloud file formats</a>.</li>
+</ol>
+
+<h2 id="upgrade">When to step up</h2>
+<p>If the phone scan shows the job is bigger than expected, move to mobile SLAM or a terrestrial scanner (see <a href="/blog/choosing-a-scanner-for-scan-to-bim/">choosing a scanner</a>). Either way, you can <a href="/#up">upload a scan</a> and get a separated Revit and IFC model back within 48 hours.</p>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>How accurate is iPhone LiDAR for BIM?</summary><p>Studies report centimetre-level accuracy for building elements, best in small, uncluttered spaces scanned slowly. It is not survey grade.</p></details><details><summary>Can I make a Revit model from a phone scan?</summary><p>Yes, for small spaces at LOD 200 to 300. Export the point cloud and convert it like any other scan.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://update.library.uitm.edu.my/Record/WOS:001364045900001/Details" target="_blank" rel="noopener">Adam et al., The suitability of smartphone LiDAR for 3D BIM applications, 2024</a></li><li><a href="https://doaj.org/article/9cbab8e9cd04423aae61f174ca458b1e" target="_blank" rel="noopener">Developments in the Built Environment, iPad Pro LiDAR accuracy study (2023)</a></li><li><a href="https://learn.poly.cam/hc/en-us/articles/50434745985556-How-Accurate-Are-Polycam-Scans" target="_blank" rel="noopener">Polycam, How accurate are Polycam scans? (vendor guidance)</a></li><li><a href="https://www.mdpi.com/2072-4292/16/17/3256/html" target="_blank" rel="noopener">Gharineiat et al., Assessment of NavVis VLX and BLK2GO SLAM scanner accuracy, Remote Sensing 16(17), 2024</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/choosing-a-scanner-for-scan-to-bim/">Choosing a scanner for Scan to BIM<span>Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies.</span></a></li><li><a href="/blog/point-cloud-file-formats/">Point cloud file formats explained<span>E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need.</span></a></li><li><a href="/blog/what-is-scan-to-bim/">What is Scan to BIM? The complete guide<span>Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it.</span></a></li><li><a href="/blog/scan-to-bim-renovation/">Scan to BIM for renovation and retrofit<span>Using Scan to BIM for renovation, refurbishment, fit-out, historic buildings and energy retrofits: when to scan, what to model, phasing existing and new in Revit, and avoiding surprises on site.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

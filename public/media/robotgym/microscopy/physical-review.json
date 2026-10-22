@@ -1,0 +1,105 @@
+{
+  "review_type": "Independent post-run geometric and sequence review",
+  "task_passed": true,
+  "sim_seconds": 59.90000000002724,
+  "objects": {
+    "retaining_frame": {
+      "final_center_scene": [
+        0.5198566895587979,
+        -0.1997684331484465,
+        0.8624991754265636
+      ],
+      "bottom_z": 0.8459991755154981,
+      "yaw_degrees": -0.014913788334959686,
+      "tilt_degrees": 0.0,
+      "max_displacement_mm": 296.53458473490537,
+      "max_lift_mm": 169.1256941729272,
+      "both_pads_grasped": true,
+      "released_last_second": true,
+      "last_second_motion_mm": 0.0,
+      "xy_error_mm": [
+        0.14331044120208247,
+        0.23156685155351076
+      ],
+      "yaw_error_degrees": 0.014913788334965261,
+      "height_error_mm": 0.0008244845018934299,
+      "seated": true
+    },
+    "slide_hold": {
+      "final_center_scene": [
+        0.40000000596046453,
+        0.2300000041723523,
+        0.8047483266783801
+      ],
+      "bottom_z": 0.7999983263652408,
+      "yaw_degrees": 90.0,
+      "tilt_degrees": 0.0,
+      "max_displacement_mm": 0.0,
+      "max_lift_mm": 0.0,
+      "both_pads_grasped": false,
+      "released_last_second": true,
+      "last_second_motion_mm": 0.0
+    },
+    "slide_next": {
+      "final_center_scene": [
+        0.5200897515950682,
+        -0.1997473246998785,
+        0.8547535865632493
+      ],
+      "bottom_z": 0.8499983149179844,
+      "yaw_degrees": 0.10503313093881073,
+      "tilt_degrees": 0.02367951586353001,
+      "max_displacement_mm": 473.47099450563866,
+      "max_lift_mm": 233.06748232921203,
+      "both_pads_grasped": true,
+      "released_last_second": true,
+      "last_second_motion_mm": 2.4895017026838237e-05,
+      "xy_error_mm": [
+        0.0897515950681882,
+        0.25267530012151873
+      ],
+      "yaw_error_degrees": 0.10503313093880706,
+      "height_error_mm": 0.0016850820155900337,
+      "seated": true
+    },
+    "slide_done": {
+      "final_center_scene": [
+        0.7300919636089751,
+        -0.26022070461351055,
+        0.8047494448857
+      ],
+      "bottom_z": 0.7999983207446297,
+      "yaw_degrees": 89.90442273848814,
+      "tilt_degrees": 0.005021806449758178,
+      "max_displacement_mm": 284.87336648987315,
+      "max_lift_mm": 183.13561836518068,
+      "both_pads_grasped": true,
+      "released_last_second": true,
+      "last_second_motion_mm": 5.871232264467191e-06,
+      "xy_error_mm": [
+        0.09196360897512079,
+        0.22070461351053616
+      ],
+      "yaw_error_degrees": 0.0955772615118633,
+      "height_error_mm": 0.00167925537031266,
+      "seated": true
+    }
+  },
+  "order_passed": true,
+  "hold_untouched": true,
+  "sequence_seconds": {
+    "frame_parked": 11.000000000000343,
+    "done_returned": 25.3999999999968,
+    "next_seated": 42.8500000000064,
+    "frame_replaced": 55.90000000002235
+  },
+  "slide_edge_clearances_mm": [
+    0.5664399072499715,
+    0.38693671711365063,
+    0.6815326733540517,
+    0.17618207311104195
+  ],
+  "unexpected_robot_environment_contacts": {},
+  "environment_contact_threshold_mm": 0.1,
+  "limits": "20 Hz recorded states; authored simulation geometry. Contact review detects sampled interpenetration above 0.1 mm, excluding initial mounting contacts. No peak-force, magnetic clamp, fluid, assay or hardware-safety validation. Review withheld from acting model."
+}

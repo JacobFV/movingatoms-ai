@@ -1,0 +1,29 @@
+{
+  "revision": "linden-editor-r001-corrected",
+  "scene": "linden-editor-corrected-7fac1d71ae19.glb",
+  "assetCount": 767,
+  "sourceSha256": "ad4e9047964c1279d174d10dcb248f8298c80e5359e541b375dffd4950256186",
+  "coordinateSystem": "glTF Y-up converted to metric Z-up in the viewer",
+  "directIntensity": 0.85,
+  "boundsErrorM": 1.675760517017011e-07,
+  "exportRecipeSha256": "e963a7bfef8d9e87af3fe04ebc7122a1006b3f6d325ba727ce20871a0d1b461d",
+  "compressionRecipeSha256": "81faf38f6f9d469d77b6f8d6c1da7cb139eb86ce4d146f777e5d921db547cb86",
+  "shadowReceiversOnly": [
+    "floor_textile",
+    "floor_sewing",
+    "floor_workshop_capture_zone",
+    "wall_textile_west",
+    "wall_textile_recess_south",
+    "wall_textile_west_return",
+    "wall_textile_south",
+    "wall_textile_north",
+    "wall_sewing_west",
+    "wall_sewing_north",
+    "ceiling_textile_main",
+    "ceiling_textile_west_recess",
+    "ceiling_sewing_completion",
+    "floor_west_passage",
+    "wall_west_passage",
+    "ceiling_west_passage"
+  ]
+}

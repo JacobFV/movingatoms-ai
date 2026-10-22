@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Factory Floor: from LiDAR scan to simulation · Moving Atoms</title>
+<meta name="description" content="Explore a real factory captured with LiDAR and reconstructed in RobotGym. One camera connects the measured scan and the editable 3D environment.">
+<link rel="canonical" href="https://movingatoms.ai/factory-floor-scan/">
+<meta property="og:title" content="Factory Floor — scan to simulation">
+<meta property="og:description" content="A real factory, reconstructed from 9.6 million measured points. Explore both worlds from one camera.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://movingatoms.ai/factory-floor-scan/">
+<meta property="og:image" content="https://movingatoms.ai/factory-floor-scan/assets/preview-e22366dd2018.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0b12">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+<link rel="stylesheet" href="./style.css?v=20261011-baked-only">
+<link rel="stylesheet" href="/shared/scene-editor/style.css?v=20261011-chest1">
+<link rel="stylesheet" href="/shared/robot-demo/style.css?v=20261011-chest1">
+<link rel="stylesheet" href="/shared/domain-rand/style.css?v=20261013-desk5">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.js", "three/addons/": "./vendor/addons/" } }
+</script>
+</head>
+<body>
+<main class="stage" id="stage">
+  <canvas id="view" tabindex="0" aria-label="Factory bay: LiDAR scan on the left, simulation scene on the right"></canvas>
+
+  <header class="top">
+    <a class="brand" href="/" aria-label="Moving Atoms home">
+      <svg viewBox="0 0 660 580" fill="none" aria-hidden="true"><path d="M152 88 76 494" stroke="#8d92ad" stroke-width="58" stroke-linecap="round"/><g stroke="currentColor" stroke-linecap="round"><path d="M152 88 338 390" stroke-width="150"/><path d="M520 260 576 494" stroke-width="120"/></g><g fill="currentColor"><circle cx="152" cy="88" r="88"/><circle cx="338" cy="390" r="78"/><circle cx="76" cy="494" r="76"/><circle cx="514" cy="78" r="78"/><circle cx="576" cy="494" r="78"/></g></svg>
+      <span>moving atoms</span>
+    </a>
+    <div class="title">
+      <h1>Factory Floor, <em>scan to simulation</em></h1>
+      <p>One camera, two worlds. Drag the handle to compare.</p>
+    </div>
+  </header>
+
+  <div class="tag tag-left" id="tagLeft">
+    <span class="kicker">Before</span>
+    <b>LiDAR scan</b>
+    <span>NavVis capture · <span id="pointCount">9.6M</span> points</span>
+  </div>
+  <div class="tag tag-right" id="tagRight">
+    <span class="kicker">After</span>
+    <b>RobotGym reconstruction</b>
+    <span id="lightingStatus">Measured equipment · editable 3D scene</span>
+  </div>
+
+  <div class="divider" id="divider" role="slider" tabindex="0" aria-label="Comparison position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+    <div class="line"></div>
+    <div class="handle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  </div>
+
+  <nav class="scene-modes" aria-label="Scene mode">
+    <button id="compareBtn" type="button" class="pill" aria-pressed="true">Compare</button>
+    <button id="objectBtn" type="button" class="pill" aria-pressed="false" disabled>Object selection</button>
+    <button id="robotBtn" type="button" class="pill" aria-pressed="false" disabled>Robot demo</button>
+    <button id="drBtn" type="button" class="pill" aria-pressed="false" disabled><span class="dr-long">Domain randomization</span><span class="dr-short">Domains</span></button>
+  </nav>
+
+  <div class="controls">
+    <button id="tourBtn" type="button" class="pill" aria-pressed="true"><span class="dot"></span><span id="tourLabel">Guided tour</span></button>
+    <select id="viewSelect" class="pill" aria-label="Explore a factory viewpoint">
+      <option value="">Explore a viewpoint</option>
+      <option value="overview">Whole factory</option>
+      <option value="filling-station">Dispensing station</option>
+      <option value="workbench">Workbench & controls</option>
+      <option value="hoist">Jib & blue stand</option>
+      <option value="conveyor">Conveyors</option>
+      <option value="pipework">Pipe connections</option>
+      <option value="upper-pipework">Upper pipework</option>
+      <option value="workstand">Blue workstand</option>
+      <option value="forklift">Forklift</option>
+      <option value="storage">Storage</option>
+      <option value="north">Rear service aisle</option>
+      <option value="rear-wall">Rear wall & overhead ducts</option>
+      <option value="service-corner">Ducts & wall services</option>
+    </select>
+    <button id="aboutBtn" type="button" class="pill">About</button>
+  </div>
+  <span class="hint" id="hint">Drag to look around · scroll or WASD to move</span>
+
+  <div class="loader" id="loader">
+    <div class="bar"><i id="loadBar"></i></div>
+    <span id="loadText">Loading scan…</span>
+  </div>
+</main>
+<dialog id="aboutDialog" aria-labelledby="aboutTitle">
+  <form method="dialog"><button class="close" aria-label="Close information">×</button></form>
+  <p class="eyebrow">Moving Atoms · RobotGym</p>
+  <h2 id="aboutTitle">From scan to scene</h2>
+  <p>The factory was captured with NavVis LiDAR. We use its 9.6 million colored points to measure the equipment, rebuild objects, and compare the resulting environment from the same camera.</p>
+  <p>The reconstruction includes the workbench, dispensing station, jib, conveyors, storage, forklift, and pipework. Visible surfaces are fitted to the capture; hidden surfaces and small obscured details are inferred.</p>
+  <p>The scene remains editable in OpenUSD. Choose Object selection to move individual assets, or Robot demo to watch a programmed Unitree G1 task.</p>
+  <p>Lighting and shadows were rendered in advance. Move freely through the scene without waiting for lighting to refine.</p>
+  <a class="pill download" href="./assets/factory-floor-scene-67d59d1138e8.zip" download>Download USD · 134 MB <span aria-hidden="true">↗</span></a>
+  <p class="dialog-help">Drag the center handle to compare. Choose a viewpoint for a shareable link, or pause the tour and explore freely. Use Q / E to move down / up.</p>
+</dialog>
+<noscript><p class="no-script">Enable JavaScript to explore the factory comparison.</p></noscript>
+<script type="module" src="./app.js?v=20261020-perf1"></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+{
+  "environment": "returns-conveyor",
+  "model": "GPT-6 Astra",
+  "task": "Process three electronics returns arriving on the powered roller infeed. Let each parcel reach the middle of the marked low-rail PICK WINDOW before picking; stop/restart the conveyor as needed. Place each parcel flat and label-up in the SCAN NEST, long axes aligned. The nest has 3 mm clearance per side: settle the parcel fully between all four rails, not on their tops. Release it and clear the camera, then call scan_return. Inspect the returned close-up for seating; reposition and rescan if needed before routing. Route only by the scanner result: orange REPAIR, blue RETURN TO MAKER, yellow MANUAL REVIEW for unreadable/unregistered codes. Keep the gripper clear of the scanner support. Leave all three parcels released, upright and inside their assigned trays. Prevent falls, stop the empty line, and inspect the final result before finish.",
+  "timing": "paused",
+  "camera_inputs": "RGB plus calibrated scanner close-up",
+  "conditions": [
+    {
+      "speed_m_s": 0.03,
+      "model_calls": 33,
+      "run_loop_wall_seconds": 531.3361427639902,
+      "physical_review": {
+        "audit": "Independent conveyor, identification-sequence and final-placement checks",
+        "frames_checked": 3955,
+        "sim_seconds": 197.70000000021588,
+        "timing": "paused",
+        "all_three_pass": true,
+        "objects": {
+          "return_103": {
+            "pass": true,
+            "initial_center_m": [
+              0.36000004178194045,
+              -1.3200004481430283,
+              0.8219889440296262
+            ],
+            "final_center_m": [
+              0.5400292356228739,
+              0.4199027608077416,
+              0.7920569526117712
+            ],
+            "inside_destination": true,
+            "supported": true,
+            "released": true,
+            "upright_degrees": 0.05721227992622662,
+            "last_second_motion_m": 1.6710719701089773e-07,
+            "conveyor_travel_before_pick_m": 1.3185590722496612,
+            "picked_in_window": true,
+            "valid_scan": true
+          },
+          "return_102": {
+            "pass": true,
+            "initial_center_m": [
+              0.36000000284535094,
+              -0.9099997069828649,
+              0.8219892884926984
+            ],
+            "final_center_m": [
+              0.7597041273187566,
+              0.2993538613380033,
+              0.792033384042856
+            ],
+            "inside_destination": true,
+            "supported": true,
+            "released": true,
+            "upright_degrees": 0.03778378459487765,
+            "last_second_motion_m": 8.251651262737626e-08,
+            "conveyor_travel_before_pick_m": 0.8996105486576456,
+            "picked_in_window": true,
+            "valid_scan": true
+          },
+          "return_101": {
+            "pass": true,
+            "initial_center_m": [
+              0.35999999746135375,
+              -0.499999223034597,
+              0.8219889947199563
+            ],
+            "final_center_m": [
+              0.76845735641047,
+              -0.31973815957316076,
+              0.7920773573408108
+            ],
+            "inside_destination": true,
+            "supported": true,
+            "released": true,
+            "upright_degrees": 0.09104745294436246,
+            "last_second_motion_m": 4.195405163521794e-07,
+            "conveyor_travel_before_pick_m": 0.5001588737847774,
+            "picked_in_window": true,
+            "valid_scan": true
+          }
+        },
+        "scans": [
+          {
+            "image": "scans/00000.png",
+            "time": 71.1000000000157,
+            "body": "return_101",
+            "pass": false,
+            "checks": {
+              "fits_3mm_clearance_nest": false,
+              "supported": false,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG101",
+            "route": "REPAIR"
+          },
+          {
+            "image": "scans/00001.png",
+            "time": 81.59999999999123,
+            "body": "return_101",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG101",
+            "route": "REPAIR"
+          },
+          {
+            "image": "scans/00002.png",
+            "time": 121.74999999989765,
+            "body": "return_102",
+            "pass": false,
+            "checks": {
+              "fits_3mm_clearance_nest": false,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG102",
+            "route": "RETURN_TO_MAKER"
+          },
+          {
+            "image": "scans/00003.png",
+            "time": 131.8999999999017,
+            "body": "return_102",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG102",
+            "route": "RETURN_TO_MAKER"
+          },
+          {
+            "image": "scans/00004.png",
+            "time": 178.9000000001261,
+            "body": "return_103",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": null,
+            "route": "MANUAL_REVIEW"
+          }
+        ],
+        "limitations": "Declared rigid geometry and ideal optical simulation; not calibrated production throughput, defect diagnosis, force safety, or real-world transfer.",
+        "conveyor_stopped_at_end": true
+      }
+    },
+    {
+      "speed_m_s": 0.045,
+      "model_calls": 28,
+      "run_loop_wall_seconds": 306.5067429599876,
+      "physical_review": {
+        "conveyor_stopped_at_end": true,
+        "audit": "Independent conveyor, identification-sequence and final-placement checks",
+        "frames_checked": 2944,
+        "sim_seconds": 147.1499999999745,
+        "timing": "paused",
+        "all_three_pass": true,
+        "objects": {
+          "return_103": {
+            "pass": true,
+            "initial_center_m": [
+              0.36000004178194045,
+              -1.3200004481430283,
+              0.8219889440296262
+            ],
+            "final_center_m": [
+              0.5399933982016649,
+              0.41817314923791093,
+              0.792041276791676
+            ],
+            "inside_destination": true,
+            "supported": true,
+            "released": true,
+            "upright_degrees": 0.04792119255998688,
+            "last_second_motion_m": 2.1866708958385466e-07,
+            "conveyor_travel_before_pick_m": 1.298780282806579,
+            "picked_in_window": true,
+            "valid_scan": true
+          },
+          "return_102": {
+            "pass": true,
+            "initial_center_m": [
+              0.36000000284535094,
+              -0.9099997069828649,
+              0.8219892884926984
+            ],
+            "final_center_m": [
+              0.7500681550857105,
+              0.3002067761096159,
+              0.7920381997322443
+            ],
+            "inside_destination": true,
+            "supported": true,
+            "released": true,
+            "upright_degrees": 0.06166909398204981,
+            "last_second_motion_m": 2.7815634505382643e-07,
+            "conveyor_travel_before_pick_m": 0.877589372210941,
+            "picked_in_window": true,
+            "valid_scan": true
+          },
+          "return_101": {
+            "pass": true,
+            "initial_center_m": [
+              0.35999999746135375,
+              -0.499999223034597,
+              0.8219889947199563
+            ],
+            "final_center_m": [
+              0.7492596968551735,
+              -0.31799762951245664,
+              0.7920908121222894
+            ],
+            "inside_destination": true,
+            "supported": true,
+            "released": true,
+            "upright_degrees": 0.08725316459238912,
+            "last_second_motion_m": 2.911918623303657e-07,
+            "conveyor_travel_before_pick_m": 0.46966193760038527,
+            "picked_in_window": true,
+            "valid_scan": true
+          }
+        },
+        "scans": [
+          {
+            "image": "scans/00000.png",
+            "time": 25.199999999996912,
+            "body": "return_101",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG101",
+            "route": "REPAIR"
+          },
+          {
+            "image": "scans/00001.png",
+            "time": 35.84999999999785,
+            "body": "return_101",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG101",
+            "route": "REPAIR"
+          },
+          {
+            "image": "scans/00002.png",
+            "time": 69.50000000001943,
+            "body": "return_102",
+            "pass": false,
+            "checks": {
+              "fits_3mm_clearance_nest": false,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG102",
+            "route": "RETURN_TO_MAKER"
+          },
+          {
+            "image": "scans/00003.png",
+            "time": 79.64999999999577,
+            "body": "return_102",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": "RG102",
+            "route": "RETURN_TO_MAKER"
+          },
+          {
+            "image": "scans/00004.png",
+            "time": 115.89999999991129,
+            "body": "return_103",
+            "pass": false,
+            "checks": {
+              "fits_3mm_clearance_nest": false,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": null,
+            "route": "MANUAL_REVIEW"
+          },
+          {
+            "image": "scans/00005.png",
+            "time": 126.09999999988752,
+            "body": "return_103",
+            "pass": true,
+            "checks": {
+              "fits_3mm_clearance_nest": true,
+              "supported": true,
+              "released": true,
+              "stable_during_scan": true,
+              "expected_decode_and_route": true
+            },
+            "decoded": null,
+            "route": "MANUAL_REVIEW"
+          }
+        ],
+        "limitations": "Declared rigid geometry and ideal optical simulation; not calibrated production throughput, defect diagnosis, force safety, or real-world transfer."
+      }
+    }
+  ],
+  "interpretation": "Two recorded episodes after development; not a reliability or production-throughput benchmark. The original failed precision trial and all corrections are retained privately.",
+  "source_case": "https://www.cisco-eagle.com/vector/524/atc-logistics-electronics",
+  "rendering": "Blender Cycles rendering of actual recorded robot, roller and parcel transforms, with synchronized MuJoCo camera views. Motion is not synthesized."
+}

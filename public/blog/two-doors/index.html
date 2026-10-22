@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Two doors into one controller · Moving Atoms Blog</title>
+<meta name="description" content="A language model can drive an arm one primitive per call or by writing a short program, and we ship both doors over one controller." />
+<link rel="canonical" href="https://movingatoms.ai/blog/two-doors/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/two-doors/" />
+<meta property="og:title" content="Two doors into one controller · Moving Atoms Blog" />
+<meta property="og:description" content="A language model can drive an arm one primitive per call or by writing a short program, and we ship both doors over one controller." />
+<meta property="og:image" content="https://movingatoms.ai/media/blog/two-doors.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Two doors into one controller · Moving Atoms Blog" />
+<meta name="twitter:description" content="A language model can drive an arm one primitive per call or by writing a short program, and we ship both doors over one controller." />
+<meta name="twitter:image" content="https://movingatoms.ai/media/blog/two-doors.webp" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Two doors into one controller","datePublished":"2026-09-02","dateModified":"2026-09-02","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/media/blog/two-doors.webp","mainEntityOfPage":"https://movingatoms.ai/blog/two-doors/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Two doors into one controller","item":"https://movingatoms.ai/blog/two-doors/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Two doors into one controller</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">agents</p><h1>Two doors into one controller</h1>
+    <p class="meta-line"><span>02 September 2026</span><span>Moving Atoms</span></p>
+    <div class="img" style="margin:32px 0 8px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img style="display:block;width:100%;height:auto" src="/media/blog/two-doors.webp" alt="Two identical robot arms on one base plate, one with a single arrow and one with a small stack of cards"></div>
+    <div class="prose"><p>In the final version of our agent-path audit, the median model call took 7.01 seconds, and every motion of the arm cost one call. A pick that needs a hover, a descent, a grip and a lift is at least that many calls, and that many waits. The arm sits still through each of them.</p>
+<p>That measurement is the reason RobotGym has two ways for a language model to drive an arm. This post describes both, what each is good for, what the audits measured, and why we ship them as one harness rather than as two products.</p>
+<h2 id="one-controller-under-both">One controller under both</h2>
+<p>Before the doors, the room they open onto. Every model we run receives the same observation: three RGB cameras, the measured gripper pose and camera calibration. Every model has the same eight primitives: <code>move_to</code>, <code>move_by</code>, <code>rotate_down</code>, <code>grip</code>, <code>hold</code>, <code>look</code> (also called <code>checkpoint</code>), <code>program</code> and <code>finish</code>. And every primitive compiles to the same thing underneath: a bounded chunk of waypoints from one 20 Hz generator, solved by inverse kinematics, tracked by joint servos. Same scene, same limits, same success check decided by simulator state.</p>
+<p>Nothing in the controller knows which door a command came through. That is deliberate, and it is the whole argument of the last section.</p>
+<h2 id="door-one-a-call-per-move">Door one, a call per move</h2>
+<p>The first door is the tool-call loop. The model looks at the images and the pose readout, then calls one primitive, say <code>move_to</code> with a target a little above the mug. The harness interpolates a straight path from the measured pose to that target within the declared speed limit, executes it, and sends back fresh images and the pose the arm actually reached. The model looks again and calls again.</p>
+<p>This door is good at exactly what a language model is good at. It reads the scene and adjusts after every motion, and because every request and response is recorded, the transcript reads afterwards as a legible account of what it intended. When a grasp misses, the next images show the miss and the next call corrects for it.</p>
+<p>The cost is the round trip. Every motion waits for a model, and every wait is several seconds. A trial has a model-call limit, and in the audited version that limit was 24 calls, so a model that spends calls on small corrections runs out of them before it runs out of task. Fine contact is hard too, because the model is typing coordinates it estimated from a picture.</p>
+<h2 id="door-two-a-program-per-call">Door two, a program per call</h2>
+<p>The second door is a program. The model writes a short program over the same primitives, in a restricted language, and submits it in a single call. The program runs locally in a separate process that has no provider keys, no network and no access to other episodes. An interpreter walks it and hands out one primitive at a time, each compiling to the same bounded chunk of waypoints as before. A program can read the measured pose at the moment it executes, so “lift from wherever you are” adapts to reality without asking the model. The model is consulted again only when the program ends, reaches a <code>checkpoint</code>, or fails.</p>
+<p>Two things follow. One model call can buy several motions instead of one. And after a clean success, the sequence of programs is frozen and can be run again in fresh physics with the model switched off entirely.</p>
+<p>The program could also delegate. In the audited version it could hand a segment of the task to π0.5, a learned policy, and those calls were counted separately from the model’s.</p>
+<h2 id="what-the-audits-measured">What the audits measured</h2>
+<p>The agent path succeeded on 3 of 6 declared development cases in its final version. Of the three failures, one was the model stopping before the task was complete, one ran out of control steps, and one ran out of model calls. All 18 declared trials across the three versions are retained, including the earlier versions that did worse.</p>
+<p>The code path succeeded on 4 of 4 declared cases. Two of those four were bowl placements where the program delegated the grasp to π0.5, so the language model wrote the plan and a learned policy did the contact. The other two were a cup lift with π0.5 excluded, requiring an 8 cm lift with both fingertip pads in contact. All four saved programs, run again in fresh physics with no model access, succeeded with actions and joint positions bit-identical to the runs that generated them. A saved cup program ran in about ten seconds of wall time. Generating it had taken over a minute.</p>
+<p>Explicit prompt caching measured a 21 percent reduction in input cost on the agent path and 31 percent on the code path. That is input cost only, and it did not make the reasoning faster. The longer cached prompt on the code path used more requests and more wall time on the cup, not fewer.</p>
+<p>Now the caveats, which are the part we care about. Six cases and four cases are declared development samples, not populations. They are history, not a success rate. The custom cup scene has fixed object positions, so its two seeds do not show scene diversity. The saved-program replays are same-reset reproducibility, not adaptation: a changed scene or seed needs a new evaluation. And the code path only looks fast when the model knows where the object is. When it is unsure, its programs shrink to one or two moves followed by a checkpoint, and the code loop degenerates into the agent loop with extra syntax. The kitchen mug run was ten programs, and nine of them were that short. Generation there was not faster than the agent path. The measured wins were the replays and the hand-offs, not the first attempt.</p>
+<p>So why one harness with both doors, rather than picking a winner. Because the two doors are good at different moments of the same task, and the model is the one that knows which moment it is in. Unsure where the mug is, it takes one step and looks. Confident, it writes the whole lift. Because a comparison between GPT-6 Astra and Claude Fable 5.1 is only fair if both had the same primitives, the same limits and the same controller, whichever door each chose. And because the evidence has to be the same shape either way: the exact images, the commands with their receipts, the transcript, the trajectory, the verdict.</p>
+<p>Both doors open onto the same 20 Hz controller. That is the only reason a result from one can be set beside a result from the other.</p>
+</div><hr style="border:0;height:1px;background:var(--line);margin:44px 0 22px"><p class="small">Questions about this post go to <a href="/cdn-cgi/l/email-protection#1e78716b707a7b6c6d5e7371687770797f6a71736d307f77"><span class="__cf_email__" data-cfemail="93f5fce6fdf7f6e1e0d3fefce5fafdf4f2e7fcfee0bdf2fa">[email&#160;protected]</span></a>. Numbers in it come from recorded runs and their evidence files, linked where they appear.</p></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/">All posts<span>Guides and engineering notes.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

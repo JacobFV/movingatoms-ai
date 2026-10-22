@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>What a policy sees · Moving Atoms Blog</title>
+<meta name="description" content="Three RGB cameras, the measured gripper pose and camera calibration are what reaches a model in RobotGym, and we record exactly what it saw." />
+<link rel="canonical" href="https://movingatoms.ai/blog/what-a-policy-sees/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/what-a-policy-sees/" />
+<meta property="og:title" content="What a policy sees · Moving Atoms Blog" />
+<meta property="og:description" content="Three RGB cameras, the measured gripper pose and camera calibration are what reaches a model in RobotGym, and we record exactly what it saw." />
+<meta property="og:image" content="https://movingatoms.ai/media/blog/what-a-policy-sees.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="What a policy sees · Moving Atoms Blog" />
+<meta name="twitter:description" content="Three RGB cameras, the measured gripper pose and camera calibration are what reaches a model in RobotGym, and we record exactly what it saw." />
+<meta name="twitter:image" content="https://movingatoms.ai/media/blog/what-a-policy-sees.webp" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"What a policy sees","datePublished":"2026-08-29","dateModified":"2026-08-29","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/media/blog/what-a-policy-sees.webp","mainEntityOfPage":"https://movingatoms.ai/blog/what-a-policy-sees/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"What a policy sees","item":"https://movingatoms.ai/blog/what-a-policy-sees/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">What a policy sees</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">evaluation</p><h1>What a policy sees</h1>
+    <p class="meta-line"><span>29 August 2026</span><span>Moving Atoms</span></p>
+    <div class="img" style="margin:32px 0 8px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img style="display:block;width:100%;height:auto" src="/media/blog/what-a-policy-sees.webp" alt="Three cameras projecting thin frustums toward a mug beneath a two-finger gripper"></div>
+    <div class="prose"><p>The model that lifted the mug in our kitchen example was never told where the mug was. It received RGB images from its cameras, the measured pose of its own gripper, and the calibration of the cameras that took the images. The mug’s coordinates were in the simulator the whole time. They never crossed the wire.</p>
+<p>That boundary is the observation contract, and it was the first thing we decided about RobotGym’s evaluation path. This post is about what crosses it, what does not, and why we record exactly what crossed.</p>
+<h2 id="what-crosses-the-wire">What crosses the wire</h2>
+<p>Every model we run, GPT-6 Astra, Claude Fable 5 or Claude Fable 5.1, receives the same packet at each turn. Three RGB cameras, including the wrist camera. The measured pose of the gripper: where the point between the fingertips is, in metres from the robot’s base, which way it points, and how far open the fingers are. The calibration of each camera, meaning its intrinsics and where it sits relative to the robot, so a model that wants to reason from a pixel to a point in space has the numbers to do it. The task in plain text. The result of its previous command.</p>
+<p>Images and state are sampled from the same physical snapshot, so a picture and the pose that arrived with it describe the same instant.</p>
+<p>What does not cross: object positions, contact state, the value of the success predicate, segmentation masks. Those exist in the simulator and are saved beside the episode for grading. A model that received them would be solving a different problem, and a comparison against a model that did not would be meaningless.</p>
+<p>There is one optional assist, and it is labelled. Ideal depth assistance lets a model ask for the depth of the visible surface at a pixel it chooses. It is a lookup, frozen and recorded per run. It is not object recognition and it is not a grasp planner. A real rig has a depth camera and calibration, so we consider this sensor math rather than added capability. It is still switched on or off per run, and the run says which.</p>
+<h2 id="what-sits-under-one-target">What sits under one target</h2>
+<p>A language model does not steer an arm. It names a place for the hand to go. Everything between that sentence and a moving motor is deterministic code, and it is the same code for every model.</p>
+<p>Read the stack from the bottom. A motor needs a torque about a thousand times a second. A joint servo produces that torque from the gap between where the joint is and where it was told to be. Inverse kinematics turns a desired hand pose into a set of joint angles. A waypoint generator, running at 20 Hz, splits one requested move into a stream of small hand poses so the motion is smooth and stays inside speed limits. The model supplies the target at the top.</p>
+<p>One target from the model becomes a stream of waypoints, each solved into joint angles, each tracked by servos over many ticks. The model spoke once. When someone says a language model controlled a robot, this is what happened: it chose the destination and textbook engineering did the rest. We keep that stack identical across models so that when two of them differ on a scene, the difference is in what they decided and not in what was underneath them.</p>
+<h2 id="achieved-not-commanded">Achieved, not commanded</h2>
+<p>The pose in the packet is the pose the arm reached, not the pose it was asked to reach. This sounds like a detail. It is the difference between a run that recovers and a run that drifts.</p>
+<p>A command is a target. The arm may lag behind it, be stopped by the countertop, or reject a waypoint it cannot reach. If the next decision starts from the commanded pose, it starts from a place the arm never went, and every error compounds into the next. Starting from the measured pose means the model sees what actually happened, including the times its plan did not work.</p>
+<p>The gripper is the clearest case. When the fingers close on a mug they stop early. The commanded gap is smaller than the measured gap, and that difference is the squeeze. Report the command as the state and the model believes the gripper closed on nothing. Overwrite the command with the measurement while the model is thinking and the grip goes slack. We report the measured opening and hold the last commanded target through every pause. A gripper that quietly opens during inference is a bug in the platform, not a decision by the model.</p>
+<h2 id="the-pixels-the-model-saw">The pixels the model saw</h2>
+<p>Each run saves two kinds of image. The spectator view is for you: a camera placed to make the scene legible. For our public examples we go further and re-render the recorded poses in Cycles with presentation lighting. The other kind is the exact PNGs the model received, byte for byte, at the resolution it received them.</p>
+<p>They are different pictures. In a custom scene the model’s frames come from MuJoCo’s own renderer, and in the starter office scene they are Cycles frames, but in neither case are they the video you watch afterwards, and the presentation lighting is never a policy input. When a grasp misses, the question is what the model saw at that turn, and the answer has to be the actual file, not a nicer view of the same instant. The evidence ZIP keeps both, side by side and labelled.</p>
+<p>Both clocks are recorded with every observation too. Simulated time is the physics clock, and it advances only while the arm moves. Wall time is ours, and it keeps running while the model thinks and while frames render. Physics pauses during rendering and inference, so a 60-second simulated attempt can take several minutes of real time. We record both on every observation and in every result, and we never report one as the other. That deserves its own post, and it will get one.</p>
+<p>The mug’s position is in the evidence ZIP, inside the saved simulator state, for anyone grading the run. It was never in the prompt.</p>
+</div><hr style="border:0;height:1px;background:var(--line);margin:44px 0 22px"><p class="small">Questions about this post go to <a href="/cdn-cgi/l/email-protection#45232a302b2120373605282a332c2b2224312a28366b242c"><span class="__cf_email__" data-cfemail="96f0f9e3f8f2f3e4e5d6fbf9e0fff8f1f7e2f9fbe5b8f7ff">[email&#160;protected]</span></a>. Numbers in it come from recorded runs and their evidence files, linked where they appear.</p></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/">All posts<span>Guides and engineering notes.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

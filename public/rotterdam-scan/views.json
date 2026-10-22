@@ -1,0 +1,1438 @@
+{
+  "revision": "piping-network-20261019",
+  "master_sha256": "37c692e4b14b2379ebc02c39d9b6110c0360d3473b970b0c230a5d827cc06e8f",
+  "defaultView": 2,
+  "coverage": "full_capture_sample",
+  "point_count": 7851667,
+  "source_total_points": 188439985,
+  "source_sha256": "9ff4df8db72f4068303637818dd9cf556ea4d5d0c4ccbdf1e4acd8a357fef2a4",
+  "views": [
+    {
+      "id": "whole_00",
+      "label": "Lower pump pair",
+      "camera": {
+        "eye": [
+          6.987224014290085,
+          9.271143750090962,
+          1.969733763152493
+        ],
+        "right": [
+          -0.15270600156015648,
+          0.9882716615827399,
+          0.0
+        ],
+        "up": [
+          -0.5086610161387312,
+          -0.07859740691104368,
+          0.8573718086615477
+        ],
+        "forward": [
+          -0.8473162619401465,
+          -0.13092582075110445,
+          -0.5146975633441707
+        ],
+        "vfov": 72,
+        "width": 1200,
+        "height": 900,
+        "camera_name": "FinalMatchedSource_00",
+        "create_review_camera": true,
+        "source_view_sha256": "91d2ffa2f8d73700ae58a848a2b102fe4cfb4b559af2cf0a7588a6abee79ce51",
+        "source_manifest_sha256": "eef3fb27e4d3059f983ac44ff1b3bce09f3d88405571492a7fafd7b843c175d3",
+        "source_photo_sha256": "6278bb0bedd108f452ae43a40b2e56745c5bdb1315ec98163e370f9f6c016874",
+        "output_name": "current_00.png",
+        "id": "whole_00"
+      },
+      "source": "review/whole_00/source.jpg",
+      "points": "review/whole_00/points.jpg",
+      "model": "review/whole_00/model.jpg",
+      "point_preview_projected_points": 1964851
+    },
+    {
+      "id": "whole_01",
+      "label": "Orange valve and storage bay",
+      "camera": {
+        "eye": [
+          -10.68866866049676,
+          12.937660950106007,
+          2.016227389390468
+        ],
+        "right": [
+          -0.9804313481609618,
+          -0.1968613002681805,
+          0.0
+        ],
+        "up": [
+          0.11923913392097867,
+          -0.5938484845138785,
+          0.7956921555365144
+        ],
+        "forward": [
+          0.15664099235210957,
+          -0.7801215327737666,
+          -0.6057012412218217
+        ],
+        "vfov": 85,
+        "width": 1200,
+        "height": 900,
+        "camera_name": "FinalMatchedSource_01",
+        "create_review_camera": true,
+        "source_view_sha256": "dc0e385cb60dce7c5f81592f736c4120cc2f3b3c982e8e975d0d629f81944b40",
+        "source_manifest_sha256": "eef3fb27e4d3059f983ac44ff1b3bce09f3d88405571492a7fafd7b843c175d3",
+        "source_photo_sha256": "8365f0f49d6bc6c301715b75ae4a2eaed5a8e5d494bf4a4983176ade779bddd1",
+        "output_name": "current_01.png",
+        "id": "whole_01"
+      },
+      "source": "review/whole_01/source.jpg",
+      "points": "review/whole_01/points.jpg",
+      "model": "review/whole_01/model.jpg",
+      "point_preview_projected_points": 2418667
+    },
+    {
+      "id": "whole_02",
+      "label": "Lower tower and orange valves",
+      "camera": {
+        "eye": [
+          3.843391668154186,
+          12.604617468192497,
+          2.0159072282244948
+        ],
+        "right": [
+          -0.3434409568906485,
+          -0.9391742698402867,
+          0.0
+        ],
+        "up": [
+          -0.19726505501104596,
+          0.0721366645464012,
+          0.9776925895697527
+        ],
+        "forward": [
+          0.9182237239374316,
+          -0.33577967850673196,
+          0.21004094910371884
+        ],
+        "vfov": 100,
+        "width": 1000,
+        "height": 1000,
+        "camera_name": "FinalMatchedSource_02",
+        "create_review_camera": true,
+        "source_view_sha256": "4a421f74bb8db1ea85631e2fda199d38635913c02a974d3b78cf175a82875b16",
+        "source_manifest_sha256": "c42dfc764826a4e65d4958e62bfd9046762dd05cfaa2aa093cd7eafa9e97c550",
+        "source_photo_sha256": "17899bc9e18193d1f5007f5c68378786bf01b37408fa1aac0c691060d75e59fb",
+        "output_name": "current_02.png",
+        "id": "whole_02"
+      },
+      "source": "review/whole_02/source.jpg",
+      "points": "review/whole_02/points.jpg",
+      "model": "review/whole_02/model.jpg",
+      "point_preview_projected_points": 1918960
+    },
+    {
+      "id": "whole_03",
+      "label": "West platform underside",
+      "camera": {
+        "eye": [
+          -7.193493300884352,
+          -7.935568960544513,
+          2.072510656759465
+        ],
+        "right": [
+          0.9770618289446861,
+          0.21295582269396823,
+          -0.0
+        ],
+        "up": [
+          0.11370016176315766,
+          -0.5216672951143686,
+          0.8455385895528895
+        ],
+        "forward": [
+          -0.18006236595773314,
+          0.8261434807518566,
+          0.5339143129537829
+        ],
+        "vfov": 78,
+        "width": 1400,
+        "height": 1000,
+        "camera_name": "FinalMatchedSource_03",
+        "create_review_camera": true,
+        "source_view_sha256": "884a6e2fabc0af670d64e932629d3726b63369837a44dd6987ed6f33670df01b",
+        "source_manifest_sha256": "787cd56a9efb75810b611ef499062ee455e14ba671c0f3318078c2e33efd5396",
+        "source_photo_sha256": "275ec0cb9e7b76e68420c901f49583a038d47135031e40aa75d6868c0a32975b",
+        "output_name": "current_03.png",
+        "id": "whole_03"
+      },
+      "source": "review/whole_03/source.jpg",
+      "points": "review/whole_03/points.jpg",
+      "model": "review/whole_03/model.jpg",
+      "point_preview_projected_points": 2544901
+    },
+    {
+      "id": "whole_04",
+      "label": "Platform framing and hatch",
+      "camera": {
+        "eye": [
+          -10.65252557632296,
+          -0.14127606735301781,
+          2.001303460569164
+        ],
+        "right": [
+          -0.7080776617915998,
+          -0.7061345656967523,
+          0.0
+        ],
+        "up": [
+          -0.53161325613251,
+          0.533076115610209,
+          0.6581923737556686
+        ],
+        "forward": [
+          0.4647723859868734,
+          -0.46605131701797653,
+          0.7528497852359914
+        ],
+        "vfov": 90,
+        "width": 1400,
+        "height": 1000,
+        "camera_name": "FinalMatchedSource_04",
+        "create_review_camera": true,
+        "source_view_sha256": "0a8e7b9159fbf6d950a106cb0cab5322cd6c17386b81039fe766b51e52e980e6",
+        "source_manifest_sha256": "787cd56a9efb75810b611ef499062ee455e14ba671c0f3318078c2e33efd5396",
+        "source_photo_sha256": "4c1972e5e275f035e8fe44878291cbcf5c9c884c7ed2e1c2e7001703fb356ffe",
+        "output_name": "current_04.png",
+        "id": "whole_04"
+      },
+      "source": "review/whole_04/source.jpg",
+      "points": "review/whole_04/points.jpg",
+      "model": "review/whole_04/model.jpg",
+      "point_preview_projected_points": 2266448
+    },
+    {
+      "id": "whole_05",
+      "label": "Open exchanger and green return",
+      "camera": {
+        "eye": [
+          3.2707879206754096,
+          -8.26824181797651,
+          7.932917125669536
+        ],
+        "right": [
+          0.9999975578184909,
+          -0.0022100581562449926,
+          0.0
+        ],
+        "up": [
+          0.00043306146783483125,
+          0.19594978032429475,
+          0.9806138363538552
+        ],
+        "forward": [
+          0.00216721360716053,
+          0.9806114415168765,
+          -0.19595025887039366
+        ],
+        "vfov": 72,
+        "width": 960,
+        "height": 800,
+        "camera_name": "FinalMatchedSource_05",
+        "create_review_camera": true,
+        "source_view_sha256": "0f306ac50c3a20fd03fca5ffd71e746434cb5a4993152a13332bc6fd66d9d037",
+        "source_manifest_sha256": "ad044af5974952f4d98badcd57f8994291d93c250e73dc80282c00edab45d183",
+        "source_photo_sha256": "de75ea90297f99213a6db5135043aa42f2b5e9ce3fcc6686bd2efc37961b3b8a",
+        "output_name": "current_05.png",
+        "id": "whole_05"
+      },
+      "source": "review/whole_05/source.jpg",
+      "points": "review/whole_05/points.jpg",
+      "model": "review/whole_05/model.jpg",
+      "point_preview_projected_points": 3463622
+    },
+    {
+      "id": "whole_06",
+      "label": "Upper equipment deck",
+      "camera": {
+        "eye": [
+          2.0703009315195073,
+          -0.2055706699471509,
+          7.844484934307576
+        ],
+        "right": [
+          -0.9549889229535939,
+          -0.29664146209849807,
+          0.0
+        ],
+        "up": [
+          0.053274942272999504,
+          -0.1715100086879065,
+          0.98374086905327
+        ],
+        "forward": [
+          0.2918183297220091,
+          -0.9394616330026146,
+          -0.179593715241701
+        ],
+        "vfov": 85,
+        "width": 960,
+        "height": 800,
+        "camera_name": "FinalMatchedSource_06",
+        "create_review_camera": true,
+        "source_view_sha256": "9db868e3165f09f9c30f828d7198ee4e5ef305cacbf9dc94ca92e785e1ac053b",
+        "source_manifest_sha256": "ad044af5974952f4d98badcd57f8994291d93c250e73dc80282c00edab45d183",
+        "source_photo_sha256": "66b46d99fda881d2d992b4874ca69d9e042a5325a8224dc47af62d6e87ed50d3",
+        "output_name": "current_06.png",
+        "id": "whole_06"
+      },
+      "source": "review/whole_06/source.jpg",
+      "points": "review/whole_06/points.jpg",
+      "model": "review/whole_06/model.jpg",
+      "point_preview_projected_points": 1440315
+    },
+    {
+      "id": "whole_07",
+      "label": "Scaffold and steel frame",
+      "camera": {
+        "eye": [
+          2.0703009315195073,
+          -0.2055706699471509,
+          7.844484934307576
+        ],
+        "right": [
+          -0.7870130934639437,
+          0.616936293888043,
+          0.0
+        ],
+        "up": [
+          -0.08636069881802252,
+          -0.11016858856226407,
+          0.9901538828858174
+        ],
+        "forward": [
+          -0.6108618668864316,
+          -0.7792640703753027,
+          -0.1399831711533162
+        ],
+        "vfov": 95,
+        "width": 1200,
+        "height": 1000,
+        "camera_name": "FinalMatchedSource_07",
+        "create_review_camera": true,
+        "source_view_sha256": "4cc845be5f20b2a8d2bb7084e367e1dc5d990e5e15550d04840bcb1fa2be73fb",
+        "source_manifest_sha256": "760f15ad3cb96eb9435cc713fa284724042897ca71cc343d7d60481b89a80a0f",
+        "source_photo_sha256": "66b46d99fda881d2d992b4874ca69d9e042a5325a8224dc47af62d6e87ed50d3",
+        "output_name": "current_07.png",
+        "id": "whole_07"
+      },
+      "source": "review/whole_07/source.jpg",
+      "points": "review/whole_07/points.jpg",
+      "model": "review/whole_07/model.jpg",
+      "point_preview_projected_points": 2262345
+    },
+    {
+      "id": "whole_08",
+      "label": "Rear vessel aisle",
+      "camera": {
+        "eye": [
+          7.721367775030739,
+          -0.6407394608993362,
+          7.854321749349498
+        ],
+        "right": [
+          0.20785255097528899,
+          0.9781601694267994,
+          -0.0
+        ],
+        "up": [
+          -0.12345585006160494,
+          0.02623354964776828,
+          0.9920032529979146
+        ],
+        "forward": [
+          -0.9703380700243763,
+          0.20619040671140154,
+          -0.12621230542841455
+        ],
+        "vfov": 100.0,
+        "width": 1200,
+        "height": 900,
+        "camera_name": "FinalMatchedSource_08",
+        "create_review_camera": true,
+        "source_view_sha256": "a27cdd51a1e287ae1de0f44fb8d4172244b60ae7cd8562b21520b16c267f0f35",
+        "source_manifest_sha256": "d508bf0105e3c0473c7f6acfb05cdf9ab91bd81d3adca0c21132ac5b726c29bb",
+        "source_photo_sha256": "2ca0726f0f10c534493adf59acdd3a742613f87a63ba6a867e5a73c5f3a640b7",
+        "output_name": "current_08.png",
+        "id": "whole_08"
+      },
+      "source": "review/whole_08/source.jpg",
+      "points": "review/whole_08/points.jpg",
+      "model": "review/whole_08/model.jpg",
+      "point_preview_projected_points": 4601786
+    },
+    {
+      "id": "whole_09",
+      "label": "Rear vessels and covered equipment",
+      "camera": {
+        "eye": [
+          12.352497337600939,
+          -1.2584279875382447,
+          7.8651857732304675
+        ],
+        "right": [
+          0.997921470853836,
+          -0.06444174120022249,
+          0.0
+        ],
+        "up": [
+          0.018426222638004346,
+          0.28534181191761565,
+          0.9582486758096075
+        ],
+        "forward": [
+          0.06175121317197863,
+          0.9562569280076643,
+          -0.2859361385154616
+        ],
+        "vfov": 70.0,
+        "width": 1200,
+        "height": 900,
+        "camera_name": "FinalMatchedSource_09",
+        "create_review_camera": true,
+        "source_view_sha256": "48b55f78fdd6fd274ab38d06265cef90e9b017a172b10f14b72ef1863002b640",
+        "source_manifest_sha256": "d508bf0105e3c0473c7f6acfb05cdf9ab91bd81d3adca0c21132ac5b726c29bb",
+        "source_photo_sha256": "7c941c70157b4cd783183c34abdab6ca42e4ac237c5831bdedd8c1dd00b03bf5",
+        "output_name": "current_09.png",
+        "id": "whole_09"
+      },
+      "source": "review/whole_09/source.jpg",
+      "points": "review/whole_09/points.jpg",
+      "model": "review/whole_09/model.jpg",
+      "point_preview_projected_points": 1274847
+    },
+    {
+      "id": "whole_10",
+      "label": "Upper return pipework",
+      "camera": {
+        "eye": [
+          9.984042370475505,
+          -1.0075790906743383,
+          7.855475504925169
+        ],
+        "right": [
+          0.9988542930805031,
+          -0.04785500177252785,
+          0.0
+        ],
+        "up": [
+          0.008913067297048898,
+          0.1860381403074902,
+          0.9825020954594903
+        ],
+        "forward": [
+          0.04701763951972622,
+          0.9813764360103019,
+          -0.18625152997414846
+        ],
+        "vfov": 83,
+        "width": 1200,
+        "height": 800,
+        "camera_name": "FinalMatchedSource_10",
+        "create_review_camera": true,
+        "source_view_sha256": "39f35fe951fbcb91a3f5cff1305b03e8af945e5a458592aa104320713927f0b5",
+        "source_manifest_sha256": "bf0951132ee5e994a42d8c3345f6f0b94c0c72d1ea7a958fc1f3e7265be53fe3",
+        "source_photo_sha256": "2b29519ff947a6c873ccf16bf9f690a5c22a8e34753ae7e6d01940faa2d9553a",
+        "output_name": "current_10.png",
+        "id": "whole_10"
+      },
+      "source": "review/whole_10/source.jpg",
+      "points": "review/whole_10/points.jpg",
+      "model": "review/whole_10/model.jpg",
+      "point_preview_projected_points": 1924373
+    },
+    {
+      "id": "whole_11",
+      "label": "North access gate",
+      "camera": {
+        "eye": [
+          -11.298567283785182,
+          2.989738939580533,
+          7.834353673102629
+        ],
+        "right": [
+          0.29484084014401646,
+          0.9555463772016356,
+          -0.0
+        ],
+        "up": [
+          -0.8556291207241722,
+          0.2640106381281032,
+          0.44519343068375505
+        ],
+        "forward": [
+          -0.42540296984382964,
+          0.1312612051293953,
+          -0.8954344248888516
+        ],
+        "vfov": 80.81235025375858,
+        "width": 1400,
+        "height": 1000,
+        "camera_name": "FinalMatchedSource_11",
+        "create_review_camera": true,
+        "source_view_sha256": "899fae744e9490c23ee9416df72ff37cad4cf5213fce375d7b01c89f0c0d1822",
+        "source_manifest_sha256": "62699a670cad505cf11389762f378aab956740ff2b233021f3b9bd05df68d17f",
+        "source_photo_sha256": "ae278d5a221396c8cf43f8118d161bff1ea917c3037a7f5f9827b7b6520a428b",
+        "output_name": "current_11.png",
+        "id": "whole_11"
+      },
+      "source": "review/whole_11/source.jpg",
+      "points": "review/whole_11/points.jpg",
+      "model": "review/whole_11/model.jpg",
+      "point_preview_projected_points": 833821
+    },
+    {
+      "id": "storage138",
+      "label": "Drums and caged tanks",
+      "camera": {
+        "eye": [
+          -8.659340873583774,
+          12.961372720443059,
+          2.0269172619568563
+        ],
+        "right": [
+          -0.44558500113027794,
+          0.8952396365039531,
+          0.0
+        ],
+        "up": [
+          -0.14586532820934953,
+          -0.07260112240879806,
+          0.9866369053767254
+        ],
+        "forward": [
+          -0.883276464530845,
+          -0.43963060659746217,
+          -0.16293439461525164
+        ],
+        "width": 1400,
+        "height": 1000,
+        "vfov": 80,
+        "id": "storage138"
+      },
+      "source": "review/storage138/source.jpg",
+      "points": "review/storage138/points.jpg",
+      "model": "review/storage138/model.jpg",
+      "point_preview_projected_points": 911379
+    },
+    {
+      "id": "yardwest",
+      "label": "West yard and training cages",
+      "camera": {
+        "id": "yardwest",
+        "index": 277,
+        "eye": [
+          -12.30573471631942,
+          4.3351936617837055,
+          7.8104307494809735
+        ],
+        "forward": [
+          -0.9073300684283591,
+          0.044047546023825594,
+          -0.41810520280793945
+        ],
+        "right": [
+          0.04848922643931753,
+          0.9988237056254304,
+          -0.0
+        ],
+        "up": [
+          -0.4176133880098982,
+          0.020273597854410956,
+          0.9083986126062346
+        ],
+        "vfov": 95,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/yardwest/source.jpg",
+      "points": "review/yardwest/points.jpg",
+      "model": "review/yardwest/model.jpg",
+      "point_preview_projected_points": 469788
+    },
+    {
+      "id": "drumsnorthwest",
+      "label": "Northwest drums and stocked rack",
+      "camera": {
+        "id": "drumsnorthwest",
+        "index": 155,
+        "eye": [
+          -17.61188549668441,
+          12.041612281507696,
+          1.847466200768105
+        ],
+        "forward": [
+          0.9724829278425364,
+          -0.20622430263920116,
+          -0.10839046109221705
+        ],
+        "right": [
+          -0.20744649472117618,
+          -0.9782463656093474,
+          0.0
+        ],
+        "up": [
+          0.1060325746301827,
+          -0.022485221214792458,
+          0.9941083984879199
+        ],
+        "vfov": 80,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/drumsnorthwest/source.jpg",
+      "points": "review/drumsnorthwest/points.jpg",
+      "model": "review/drumsnorthwest/model.jpg",
+      "point_preview_projected_points": 6048274
+    },
+    {
+      "id": "northcages",
+      "label": "North storage cage and open pipe",
+      "camera": {
+        "id": "northcages",
+        "index": 138,
+        "eye": [
+          -8.659340873549809,
+          12.961372720397776,
+          2.026917261956818
+        ],
+        "forward": [
+          0.6189564930765882,
+          0.7604354305896518,
+          -0.19654723499012292
+        ],
+        "right": [
+          0.7755632911485337,
+          -0.6312698166575483,
+          0.0
+        ],
+        "up": [
+          0.12407433699676296,
+          0.15243482043508397,
+          0.9804943571575196
+        ],
+        "vfov": 85,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/northcages/source.jpg",
+      "points": "review/northcages/points.jpg",
+      "model": "review/northcages/model.jpg",
+      "point_preview_projected_points": 566479
+    },
+    {
+      "id": "northorange",
+      "label": "Northern orange pipework",
+      "camera": {
+        "id": "northorange",
+        "index": 7,
+        "eye": [
+          3.843391668102413,
+          12.60461746812507,
+          2.0159072282245045
+        ],
+        "forward": [
+          0.7965980657091206,
+          0.6044959940842268,
+          -0.004014329907954178
+        ],
+        "right": [
+          0.6045008648226013,
+          -0.7966044843137196,
+          0.0
+        ],
+        "up": [
+          0.003197833206190979,
+          0.002426665901041534,
+          0.9999919425452337
+        ],
+        "vfov": 90,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/northorange/source.jpg",
+      "points": "review/northorange/points.jpg",
+      "model": "review/northorange/model.jpg",
+      "point_preview_projected_points": 453044
+    },
+    {
+      "id": "eastoffice",
+      "label": "East office and yard",
+      "camera": {
+        "id": "eastoffice",
+        "index": 33,
+        "eye": [
+          15.454304031736683,
+          -4.750959343844443,
+          1.8283233001873667
+        ],
+        "forward": [
+          0.4098833896337222,
+          0.9099147413769791,
+          0.06364566228137968
+        ],
+        "right": [
+          0.9117632871196218,
+          -0.4107160920402584,
+          0.0
+        ],
+        "up": [
+          -0.026140297687522338,
+          -0.05802977825257606,
+          0.9979725595790521
+        ],
+        "vfov": 85,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/eastoffice/source.jpg",
+      "points": "review/eastoffice/points.jpg",
+      "model": "review/eastoffice/model.jpg",
+      "point_preview_projected_points": 817306
+    },
+    {
+      "id": "southyard",
+      "label": "South yard and equipment boundary",
+      "camera": {
+        "id": "southyard",
+        "index": 192,
+        "eye": [
+          3.240652888045588,
+          -9.531491566303885,
+          2.078763540743564
+        ],
+        "forward": [
+          0.22705950436004774,
+          -0.9638779134266813,
+          -0.13922409808648992
+        ],
+        "right": [
+          -0.9733575396230095,
+          -0.22929260794679213,
+          0.0
+        ],
+        "up": [
+          0.03192305653929126,
+          -0.13551482556969838,
+          0.990260900223776
+        ],
+        "vfov": 90,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/southyard/source.jpg",
+      "points": "review/southyard/points.jpg",
+      "model": "review/southyard/model.jpg",
+      "point_preview_projected_points": 194497
+    },
+    {
+      "id": "westtank",
+      "label": "West storage tank",
+      "camera": {
+        "id": "westtank",
+        "index": 266,
+        "eye": [
+          -11.34852831268654,
+          -5.1687643262557685,
+          7.91090710804963
+        ],
+        "forward": [
+          -0.9293911779474285,
+          -0.2868808699569329,
+          -0.23223136051413165
+        ],
+        "right": [
+          -0.29494448235459336,
+          0.9555143914816672,
+          0.0
+        ],
+        "up": [
+          -0.22190040712462017,
+          -0.06849535841334352,
+          0.97266057553175
+        ],
+        "vfov": 80,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/westtank/source.jpg",
+      "points": "review/westtank/points.jpg",
+      "model": "review/westtank/model.jpg",
+      "point_preview_projected_points": 221903
+    },
+    {
+      "id": "southeast",
+      "label": "Southeast equipment and trailer",
+      "camera": {
+        "id": "southeast",
+        "index": 248,
+        "eye": [
+          2.232247878710041,
+          -6.555771912506316,
+          7.916933543250696
+        ],
+        "forward": [
+          0.7904517490750671,
+          -0.4608722863957526,
+          -0.4034634655288119
+        ],
+        "right": [
+          -0.5036878955891165,
+          -0.8638857006786299,
+          0.0
+        ],
+        "up": [
+          0.3485463186165859,
+          -0.20321966389929932,
+          0.9149957551723841
+        ],
+        "vfov": 85,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/southeast/source.jpg",
+      "points": "review/southeast/points.jpg",
+      "model": "review/southeast/model.jpg",
+      "point_preview_projected_points": 1010296
+    },
+    {
+      "id": "northarticles",
+      "label": "Northern loose equipment",
+      "camera": {
+        "id": "northarticles",
+        "index": 20,
+        "eye": [
+          6.787286586804839,
+          10.598825079505332,
+          1.9794287966250206
+        ],
+        "forward": [
+          -0.7888489152536825,
+          0.5999118947711808,
+          -0.133503211254038
+        ],
+        "right": [
+          0.6053305838006175,
+          0.7959741731460912,
+          -0.0
+        ],
+        "up": [
+          -0.10626510819028083,
+          0.08081357680766399,
+          0.9910483805470145
+        ],
+        "vfov": 80,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/northarticles/source.jpg",
+      "points": "review/northarticles/points.jpg",
+      "model": "review/northarticles/model.jpg",
+      "point_preview_projected_points": 1115485
+    },
+    {
+      "id": "pallets62",
+      "label": "Lower east scaffold and pallets",
+      "camera": {
+        "id": "pallets62",
+        "index": 62,
+        "eye": [
+          5.518586434867757,
+          4.573652961596963,
+          1.9367972321137277
+        ],
+        "forward": [
+          0.6002564786696326,
+          -0.7940228908936559,
+          -0.09601983415948093
+        ],
+        "right": [
+          -0.7977087673935275,
+          -0.6030428860566212,
+          0.0
+        ],
+        "up": [
+          0.057904077910211516,
+          -0.07659586355269045,
+          0.9953794208481435
+        ],
+        "vfov": 85,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/pallets62/source.jpg",
+      "points": "review/pallets62/points.jpg",
+      "model": "review/pallets62/model.jpg",
+      "point_preview_projected_points": 1608555
+    },
+    {
+      "id": "small65",
+      "label": "Central small vessel",
+      "camera": {
+        "id": "small65",
+        "index": 65,
+        "eye": [
+          1.9552571585591068,
+          1.9888523935951525,
+          1.9646608241561019
+        ],
+        "forward": [
+          0.2145993803040741,
+          -0.9709081359478512,
+          -0.10622851558492293
+        ],
+        "right": [
+          -0.9764330447616747,
+          -0.21582054836702946,
+          0.0
+        ],
+        "up": [
+          0.022926296485753603,
+          -0.1037250329130993,
+          0.9943417433038922
+        ],
+        "vfov": 78,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/small65/source.jpg",
+      "points": "review/small65/points.jpg",
+      "model": "review/small65/model.jpg",
+      "point_preview_projected_points": 1454968
+    },
+    {
+      "id": "small57",
+      "label": "Lower vessels and pallet truck",
+      "camera": {
+        "id": "small57",
+        "index": 57,
+        "eye": [
+          5.724769660475431,
+          -1.7958167517499533,
+          2.006230567548826
+        ],
+        "forward": [
+          -0.5585291967290965,
+          -0.804411318444303,
+          -0.20240446427845482
+        ],
+        "right": [
+          -0.8214129121484857,
+          0.5703339616012222,
+          0.0
+        ],
+        "up": [
+          -0.1154381399577042,
+          -0.16625764043481972,
+          0.9793020130889918
+        ],
+        "vfov": 78,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/small57/source.jpg",
+      "points": "review/small57/points.jpg",
+      "model": "review/small57/model.jpg",
+      "point_preview_projected_points": 1229375
+    },
+    {
+      "id": "pumps108",
+      "label": "Lower pump bank and green pair",
+      "camera": {
+        "id": "pumps108",
+        "index": 108,
+        "eye": [
+          -3.8016467079651193,
+          -1.7439820174040506,
+          2.008880876766721
+        ],
+        "forward": [
+          -0.4618557919908724,
+          0.8654152958757253,
+          -0.19428225103908625
+        ],
+        "right": [
+          0.882225512171128,
+          0.4708270868104245,
+          -0.0
+        ],
+        "up": [
+          -0.09147334627570455,
+          0.17140075842871752,
+          0.9809456697142738
+        ],
+        "vfov": 78,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/pumps108/source.jpg",
+      "points": "review/pumps108/points.jpg",
+      "model": "review/pumps108/model.jpg",
+      "point_preview_projected_points": 1457313
+    },
+    {
+      "id": "narrow94",
+      "label": "Long narrow exchanger",
+      "camera": {
+        "id": "narrow94",
+        "index": 94,
+        "eye": [
+          -8.976312448750832,
+          -3.6628893255692674,
+          2.034447403123389
+        ],
+        "forward": [
+          0.8546224162673994,
+          -0.3548128404942626,
+          -0.3791152513862571
+        ],
+        "right": [
+          -0.38343658823076765,
+          -0.9235672053542984,
+          0.0
+        ],
+        "up": [
+          0.3501384132299978,
+          -0.14536665853779623,
+          0.9253494616448076
+        ],
+        "vfov": 78,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/narrow94/source.jpg",
+      "points": "review/narrow94/points.jpg",
+      "model": "review/narrow94/model.jpg",
+      "point_preview_projected_points": 2184242
+    },
+    {
+      "id": "actuator96",
+      "label": "Actuator and orange gate valve",
+      "camera": {
+        "id": "actuator96",
+        "index": 96,
+        "eye": [
+          -10.489812195461127,
+          -2.06675185378117,
+          2.02114896188413
+        ],
+        "forward": [
+          0.7682960886841999,
+          -0.6159971657849547,
+          0.17397876841000853
+        ],
+        "right": [
+          -0.6255369776848702,
+          -0.780194520327385,
+          0.0
+        ],
+        "up": [
+          -0.1357372817667958,
+          0.1088301529725327,
+          0.9847494037279418
+        ],
+        "vfov": 65,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/actuator96/source.jpg",
+      "points": "review/actuator96/points.jpg",
+      "model": "review/actuator96/model.jpg",
+      "point_preview_projected_points": 2291409
+    },
+    {
+      "id": "forklift33",
+      "label": "Parked forklift and transport vessel",
+      "camera": {
+        "id": "forklift33",
+        "index": 33,
+        "eye": [
+          15.454304031736683,
+          -4.750959343844443,
+          1.8283233001873667
+        ],
+        "forward": [
+          0.878419408017092,
+          0.4710723033457114,
+          -0.08043773144158033
+        ],
+        "right": [
+          0.4726037115406981,
+          -0.8812750602609589,
+          0.0
+        ],
+        "up": [
+          0.07088776662343353,
+          0.038015170427204766,
+          0.9967596356998674
+        ],
+        "vfov": 55,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/forklift33/source.jpg",
+      "points": "review/forklift33/points.jpg",
+      "model": "review/forklift33/model.jpg",
+      "point_preview_projected_points": 114630
+    },
+    {
+      "id": "eaststock49",
+      "label": "Forklift, containers and drum stacks",
+      "camera": {
+        "id": "eaststock49",
+        "index": 49,
+        "eye": [
+          16.24073184315057,
+          -7.474300846966798,
+          1.7727995550981168
+        ],
+        "forward": [
+          0.9334146820037323,
+          0.35023971282847766,
+          -0.07790490984332604
+        ],
+        "right": [
+          0.35130740836792884,
+          -0.9362601694111575,
+          0.0
+        ],
+        "up": [
+          0.07293926408787339,
+          0.02736857197619602,
+          0.9969607941249763
+        ],
+        "vfov": 70,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/eaststock49/source.jpg",
+      "points": "review/eaststock49/points.jpg",
+      "model": "review/eaststock49/model.jpg",
+      "point_preview_projected_points": 126167
+    },
+    {
+      "id": "southfixtures192",
+      "label": "Southern fixtures and boundary",
+      "camera": {
+        "id": "southfixtures192",
+        "index": 192,
+        "eye": [
+          3.240652888045588,
+          -9.531491566303885,
+          2.078763540743564
+        ],
+        "forward": [
+          -0.3219502398327639,
+          -0.9406711136302754,
+          -0.10717228677789395
+        ],
+        "right": [
+          -0.9461203273870046,
+          0.3238152653985096,
+          0.0
+        ],
+        "up": [
+          -0.03470402248634891,
+          -0.10139787905311497,
+          0.9942404643479346
+        ],
+        "vfov": 82,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/southfixtures192/source.jpg",
+      "points": "review/southfixtures192/points.jpg",
+      "model": "review/southfixtures192/model.jpg",
+      "point_preview_projected_points": 230255
+    },
+    {
+      "id": "weststock277",
+      "label": "West stock and mesh panels",
+      "camera": {
+        "id": "weststock277",
+        "index": 277,
+        "eye": [
+          -12.30573471631942,
+          4.3351936617837055,
+          7.8104307494809735
+        ],
+        "forward": [
+          -0.6545423461985215,
+          0.6528934929518249,
+          -0.3811881476306683
+        ],
+        "right": [
+          0.7062144623917673,
+          0.7079979753563616,
+          -0.0
+        ],
+        "up": [
+          -0.26988043675235496,
+          0.269200582749106,
+          0.924497483017612
+        ],
+        "vfov": 60,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/weststock277/source.jpg",
+      "points": "review/weststock277/points.jpg",
+      "model": "review/weststock277/model.jpg",
+      "point_preview_projected_points": 308556
+    },
+    {
+      "id": "panel100",
+      "label": "White panel beneath the platform",
+      "camera": {
+        "id": "panel100",
+        "index": 100,
+        "eye": [
+          -10.652525576282642,
+          -0.14127606741385534,
+          2.001303460569156
+        ],
+        "forward": [
+          0.9145657228482955,
+          0.17169682039748838,
+          -0.3661826599613471
+        ],
+        "right": [
+          0.18451250712207712,
+          -0.9828301657537407,
+          0.0
+        ],
+        "up": [
+          0.35989536438595643,
+          0.0675652806540992,
+          0.9305429917761096
+        ],
+        "vfov": 85,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/panel100/source.jpg",
+      "points": "review/panel100/points.jpg",
+      "model": "review/panel100/model.jpg",
+      "point_preview_projected_points": 4003992
+    },
+    {
+      "id": "trailer50",
+      "label": "Loading trailer and grated ramp",
+      "camera": {
+        "id": "trailer50",
+        "index": 50,
+        "eye": [
+          14.007117521767213,
+          -11.119605075320578,
+          1.756733505338623
+        ],
+        "forward": [
+          0.7148743105490565,
+          -0.6947348592303184,
+          0.07936117115593072
+        ],
+        "right": [
+          -0.6969330360855561,
+          -0.7171362096649204,
+          0.0
+        ],
+        "up": [
+          -0.05691276947733317,
+          0.055309421961008264,
+          0.9968459281718309
+        ],
+        "vfov": 75,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/trailer50/source.jpg",
+      "points": "review/trailer50/points.jpg",
+      "model": "review/trailer50/model.jpg",
+      "point_preview_projected_points": 48189
+    },
+    {
+      "id": "trailer31",
+      "label": "Trailer and loose pipe",
+      "camera": {
+        "id": "trailer31",
+        "index": 31,
+        "eye": [
+          13.782133007531229,
+          -9.061959811093402,
+          1.7948441386621088
+        ],
+        "forward": [
+          0.5781976992646316,
+          -0.8140041356204841,
+          0.05553996541081857
+        ],
+        "right": [
+          -0.8152625219627069,
+          -0.5790915474111212,
+          0.0
+        ],
+        "up": [
+          -0.03216272451291108,
+          0.04527965227054546,
+          0.9984564648707348
+        ],
+        "vfov": 75,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/trailer31/source.jpg",
+      "points": "review/trailer31/points.jpg",
+      "model": "review/trailer31/model.jpg",
+      "point_preview_projected_points": 75447
+    },
+    {
+      "id": "eastyellow49",
+      "label": "Eastern training module",
+      "camera": {
+        "id": "eastyellow49",
+        "index": 49,
+        "eye": [
+          16.24073184315057,
+          -7.474300846966798,
+          1.7727995550981168
+        ],
+        "forward": [
+          0.9890564988313408,
+          -0.057149624845970394,
+          0.13601897845321012
+        ],
+        "right": [
+          -0.05768574277436338,
+          -0.9983347910799113,
+          0.0
+        ],
+        "up": [
+          -0.1357924784369885,
+          0.007846355803483553,
+          0.9907062316855312
+        ],
+        "vfov": 75,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/eastyellow49/source.jpg",
+      "points": "review/eastyellow49/points.jpg",
+      "model": "review/eastyellow49/model.jpg",
+      "point_preview_projected_points": 81128
+    },
+    {
+      "id": "eastyellow32",
+      "label": "Eastern equipment yard",
+      "camera": {
+        "id": "eastyellow32",
+        "index": 32,
+        "eye": [
+          15.397393377505068,
+          -6.965298801660538,
+          1.7995693300310238
+        ],
+        "forward": [
+          0.9879302798973694,
+          -0.09101204973201345,
+          0.12534180813073828
+        ],
+        "right": [
+          -0.09173551100955414,
+          -0.9957834081866478,
+          0.0
+        ],
+        "up": [
+          -0.12481329288870345,
+          0.011498294819734764,
+          0.9921136180571846
+        ],
+        "vfov": 75,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/eastyellow32/source.jpg",
+      "points": "review/eastyellow32/points.jpg",
+      "model": "review/eastyellow32/model.jpg",
+      "point_preview_projected_points": 100803
+    },
+    {
+      "id": "northeast_rig14",
+      "label": "Four-pipe crossing",
+      "camera": {
+        "id": "northeast_rig14",
+        "index": 14,
+        "eye": [
+          12.480931079757283,
+          12.07436580209469,
+          2.0157508955188117
+        ],
+        "forward": [
+          0.6024823671518564,
+          -0.7383411981134369,
+          -0.3030961438875624
+        ],
+        "right": [
+          -0.7747872019298256,
+          -0.632222106324788,
+          0.0
+        ],
+        "up": [
+          0.19162408250751573,
+          -0.23483501323836428,
+          0.9529599821401158
+        ],
+        "vfov": 75,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/northeast_rig14/source.jpg",
+      "points": "review/northeast_rig14/points.jpg",
+      "model": "review/northeast_rig14/model.jpg",
+      "point_preview_projected_points": 762929
+    },
+    {
+      "id": "northeast_rig17",
+      "label": "Pipe crossing and office",
+      "camera": {
+        "id": "northeast_rig17",
+        "index": 17,
+        "eye": [
+          12.624745016175439,
+          6.684294613718521,
+          1.9445106387270563
+        ],
+        "forward": [
+          0.5219115154335924,
+          0.8114844273649029,
+          -0.2628714404458322
+        ],
+        "right": [
+          0.8410639143377531,
+          -0.5409357558886793,
+          0.0
+        ],
+        "up": [
+          0.14219656133911218,
+          0.2210916826689752,
+          0.9648308690117317
+        ],
+        "vfov": 75,
+        "width": 1200,
+        "height": 1000
+      },
+      "source": "review/northeast_rig17/source.jpg",
+      "points": "review/northeast_rig17/points.jpg",
+      "model": "review/northeast_rig17/model.jpg",
+      "point_preview_projected_points": 224094
+    }
+  ],
+  "asset_count": 788,
+  "limits": "Source-supported training site, independently editable articles. Towers and outer buildings include photo-constrained continuation. Hidden construction and fine wear are approximated. Distant harbour excluded.",
+  "download_mb": 216
+}

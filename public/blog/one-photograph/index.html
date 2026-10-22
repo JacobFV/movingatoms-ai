@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>One photograph, one mug, one trial · Moving Atoms Blog</title>
+<meta name="description" content="Atom rebuilt a kitchen from one public photograph and an agent lifted the mug 8.2 cm in a single recorded trial, with every caveat written down." />
+<link rel="canonical" href="https://movingatoms.ai/blog/one-photograph/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/one-photograph/" />
+<meta property="og:title" content="One photograph, one mug, one trial · Moving Atoms Blog" />
+<meta property="og:description" content="Atom rebuilt a kitchen from one public photograph and an agent lifted the mug 8.2 cm in a single recorded trial, with every caveat written down." />
+<meta property="og:image" content="https://movingatoms.ai/media/blog/one-photograph.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="One photograph, one mug, one trial · Moving Atoms Blog" />
+<meta name="twitter:description" content="Atom rebuilt a kitchen from one public photograph and an agent lifted the mug 8.2 cm in a single recorded trial, with every caveat written down." />
+<meta name="twitter:image" content="https://movingatoms.ai/media/blog/one-photograph.webp" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"One photograph, one mug, one trial","datePublished":"2026-09-07","dateModified":"2026-09-07","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/media/blog/one-photograph.webp","mainEntityOfPage":"https://movingatoms.ai/blog/one-photograph/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"One photograph, one mug, one trial","item":"https://movingatoms.ai/blog/one-photograph/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">One photograph, one mug, one trial</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">environments</p><h1>One photograph, one mug, one trial</h1>
+    <p class="meta-line"><span>07 September 2026</span><span>Moving Atoms</span></p>
+    <div class="img" style="margin:32px 0 8px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img style="display:block;width:100%;height:auto" src="/media/blog/one-photograph.webp" alt="A photograph on a table with a simplified kitchen counter and mug rising out of it toward a robot arm"></div>
+    <div class="prose"><p>The photograph is titled Modern kitchen on Wikimedia Commons. Gnangarra took it and published it under CC BY 2.5 AU. The photographer does not endorse the product. In the reconstruction built from it, a pale blue ceramic mug sits on the countertop.</p>
+<p>Everything below happened inside a rebuild of that one image.</p>
+<h2 id="the-rebuild">The rebuild</h2>
+<p>Atom rebuilt the kitchen from the photograph alone. Dimensions and every surface the camera could not see were inferred, so the result is an editable generated approximation and not a survey of the room. It is an editable Blender scene plus a GLB, with MuJoCo 3.3.2 physics underneath. Contact meshes, masses and friction are explicit estimates, and the run’s evidence records that. The reconstruction is shared under the same license as the photograph.</p>
+<p>The robot placed in it is a Franka Panda. The task, in the words the model received, was: “Pick up the pale blue ceramic mug and lift it clear of the countertop.”</p>
+<h2 id="the-run">The run</h2>
+<p>The policy was Atom Code, our program-writing door, with GPT-6 Astra as the model. The model received RGB frames rendered by MuJoCo, the measured pose of its gripper and the camera calibration. It did not receive the mug’s position. The reset seed was 7. The clock mode was simulation, meaning physics paused while the model thought.</p>
+<p>The programs ran in a bounded interpreter with no arbitrary Python execution, inside a separate process with no provider keys, no network and no access to other episodes. The evidence names the scene version and its hash, so any later run can be checked against exactly this kitchen and not a revised one.</p>
+<p>Over the trial the model made 10 calls and wrote 10 programs. It made zero calls to a learned policy. The programs compiled to 329 control steps at 20 Hz, which is 16.45 seconds of simulated motion. The whole run, including setup and thinking, took 4 minutes and 22 seconds of wall time. The median model call took 14.2 seconds and the 95th percentile was 28.2. No request to the provider failed. The model consumed 34,352 input tokens, of which 12,420 were cache reads, and produced 6,075 output tokens.</p>
+<p>The trial ended with the termination reason success. The simulator’s predicate for this task, named height-and-both-fingertip-pads-v1 in the evidence, requires the mug to rise at least 8 cm while both fingertip pads are in contact with it. The recorded lift was 8.2 cm. The left pad was in contact and the right pad was in contact. The model’s <code>finish</code> call was a request to stop. The predicate decided.</p>
+<h2 id="what-zero-shot-means-here">What zero-shot means here</h2>
+<p>We describe the run as zero-shot, and the phrase needs its definition attached or it means too much.</p>
+<p>It means this. The model had no task-specific training. No saved program was loaded. No skills from earlier runs in the project were available to it. It was placed in a kitchen that did not exist as a scene until Atom built it, asked in plain text to lift the mug, and it did.</p>
+<p>It does not mean open-loop, and it does not mean one model call. The model looked at its cameras ten times and revised what it wrote in response to what it saw. Most of those ten programs were only a short move followed by a checkpoint to look again, which is the code door behaving like the agent door when the model is unsure exactly where the mug is. Closed-loop correction from camera feedback is the method here, not a caveat to it. The seed fixed the scene’s reset state. It did not fix the model’s decisions, which are not deterministic, so a second generation from the same reset could have written different programs and arrived at a different result.</p>
+<p>It does not mean generalisation either. This is one development trial. It is not a success rate, and we have no aggregate claim to make from it. We claim no hardware transfer, and no policy was trained.</p>
+<h2 id="the-video-and-the-replay">The video and the replay</h2>
+<p>The presentation video was rendered afterwards. It takes the recorded simulator poses at 20 Hz and re-renders them in Blender 4.5 Cycles inside the original reconstructed kitchen, with presentation lighting. That lighting was not an input to the model, whose frames were the MuJoCo renders, and those original frames are unchanged in the evidence. Setup and the model’s thinking pauses are omitted from the video, and the final frame is held for two seconds. So the video shows 16.45 seconds of motion plus two seconds of stillness, standing in for a run that took 4 minutes and 22 seconds. The caption says so.</p>
+<p>After the success, the ten programs were frozen as a saved program. A fresh run of that program, in fresh physics, with the same scene, configuration and seed, succeeded with zero new model calls and produced the same actions and the same joint positions as the original. Nothing was played back from a recording. The replay stepped the physics again from the same reset, ran the frozen programs through the same interpreter, and the predicate was evaluated again. That is a strong statement about reproducibility and a weak one about anything else. Change the scene or the seed and the saved program is a guess that needs its own evaluation.</p>
+<p>The evidence ZIP for the run holds the frozen manifest, the exact images the model saw, every command, the transcript with the model identifier the provider returned, the simulator model, the trajectory, the spectator video, the independent grade and the source snapshots, plus a replay helper. The saved program is published beside the showcase as a Python file.</p>
+<p>One trial lifted the mug 8.2 centimetres. The replay is the second time it has left this countertop, and it counts as reproducibility of the first trial, not as a second one.</p>
+</div><hr style="border:0;height:1px;background:var(--line);margin:44px 0 22px"><p class="small">Questions about this post go to <a href="/cdn-cgi/l/email-protection#fa9c958f949e9f8889ba97958c93949d9b8e959789d49b93"><span class="__cf_email__" data-cfemail="b9dfd6ccd7dddccbcaf9d4d6cfd0d7ded8cdd6d4ca97d8d0">[email&#160;protected]</span></a>. Numbers in it come from recorded runs and their evidence files, linked where they appear.</p></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/">All posts<span>Guides and engineering notes.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

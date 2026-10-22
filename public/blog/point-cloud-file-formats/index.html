@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Point Cloud File Formats Explained: E57, LAS, LAZ, RCP, RCS, PTS | Moving Atoms</title>
+<meta name="description" content="E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need." />
+<link rel="canonical" href="https://movingatoms.ai/blog/point-cloud-file-formats/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/point-cloud-file-formats/" />
+<meta property="og:title" content="Point Cloud File Formats Explained: E57, LAS, LAZ, RCP, RCS, PTS" />
+<meta property="og:description" content="E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Point Cloud File Formats Explained: E57, LAS, LAZ, RCP, RCS, PTS" />
+<meta name="twitter:description" content="E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Point Cloud File Formats Explained: E57, LAS, LAZ, RCP, RCS, PTS","description":"E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/point-cloud-file-formats/","articleSection":"Guide","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://www.ri.cmu.edu/publications/the-astm-e57-file-format-for-3d-imaging-data-exchange/","https://e57-3d-imgfmt.sourceforge.net/index.html","https://en.wikipedia.org/wiki/LAS_file_format","https://www.ogc.org/announcement/ogc-announces-publication-of-the-laz-1-4-community-standard/","https://autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Difference-between-RCS-and-RCP-links-in-Revit.html","https://help.autodesk.com/cloudhelp/ENU/RealityCapture-New/files/WhatsNew/WN_Mesh_in_Revit.html"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an E57 file?","acceptedAnswer":{"@type":"Answer","text":"E57 is a vendor-neutral point cloud format defined by ASTM E2807. It stores points with colour and intensity, scan positions and images, and is the best format for exchanging and archiving building scans."}},{"@type":"Question","name":"Can Revit open E57 files directly?","acceptedAnswer":{"@type":"Answer","text":"Revit links point clouds as Autodesk ReCap RCP or RCS files. E57 is usually opened in ReCap Pro and saved as an RCP before linking."}},{"@type":"Question","name":"What is the difference between LAS and LAZ?","acceptedAnswer":{"@type":"Answer","text":"LAZ is a lossless compressed version of the LAS LiDAR format, typically much smaller on disk."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Point cloud file formats explained","item":"https://movingatoms.ai/blog/point-cloud-file-formats/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Point cloud file formats explained</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Guide</p><h1>Point cloud file formats explained</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">Your surveyor will offer you a scan in half a dozen formats. Picking the right one saves conversions, keeps metadata and avoids losing data. Here is what each format is for.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>7 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#short">The short answer</a></li><li><a href="#table">The formats at a glance</a></li><li><a href="#e57">E57: the one to archive</a></li><li><a href="#las">LAS and LAZ: the LiDAR formats</a></li><li><a href="#rcp">RCP and RCS: what Revit links</a></li><li><a href="#native">Scanner-native formats</a></li><li><a href="#size">File size and performance</a></li><li><a href="#send">What to send for Scan to BIM</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="short">The short answer</h2>
+<p>Ask for <strong>E57</strong> as the archival, vendor-neutral copy of the registered scan, plus <strong>RCP/RCS</strong> if your team will link it in Revit. Keep the scanner-native project too, in case you need to re-register.</p>
+
+<h2 id="table">The formats at a glance</h2>
+<div class="table-wrap"><table><thead><tr><th>Format</th><th>What it is</th><th>Best for</th></tr></thead><tbody><tr><td>E57</td><td>Vendor-neutral standard (ASTM E2807) for points, colour, intensity, scan positions and images</td><td>Exchange and archiving; input to most Scan to BIM tools</td></tr><tr><td>LAS / LAZ</td><td>ASPRS LiDAR format; LAZ is its lossless compression</td><td>Aerial, mobile mapping and GIS workflows</td></tr><tr><td>RCP / RCS</td><td>Autodesk ReCap project and scan files</td><td>Linking point clouds in Revit and Navisworks</td></tr><tr><td>PTS / PTX</td><td>Simple text formats (PTX keeps per-scan structure)</td><td>Legacy exchange; easy to read, large on disk</td></tr><tr><td>PLY / XYZ</td><td>Generic point (and mesh) formats</td><td>Research, meshes and quick exchange</td></tr><tr><td>FLS, LGSx, RDBX, LCC</td><td>Scanner-native projects (FARO, Leica, RIEGL, XGRIDS)</td><td>Re-registration in the vendor's software</td></tr></tbody></table></div>
+
+<h2 id="e57">E57: the one to archive</h2>
+<p>E57 is defined by the ASTM standard <strong>E2807</strong>, maintained by ASTM committee E57 on 3D imaging systems. As described in the <a href="https://www.ri.cmu.edu/publications/the-astm-e57-file-format-for-3d-imaging-data-exchange/" target="_blank" rel="noopener">CMU paper introducing the format</a>, it stores 3D points with attributes such as colour and intensity, plus 2D images and metadata, and keeps individual scans and their poses. An open-source reference library, <a href="https://e57-3d-imgfmt.sourceforge.net/index.html" target="_blank" rel="noopener">libE57</a>, means almost every tool can read it. Because it keeps per-scan structure, it is the best copy to keep for the long term.</p>
+
+<h2 id="las">LAS and LAZ: the LiDAR formats</h2>
+<p>LAS was created by the American Society for Photogrammetry and Remote Sensing for LiDAR point data and is common in aerial and mobile mapping. LAZ is lossless compression of LAS; the <a href="https://www.ogc.org/announcement/ogc-announces-publication-of-the-laz-1-4-community-standard/" target="_blank" rel="noopener">OGC published LAZ 1.4 as a community standard</a>, and compressed files are typically a fraction of the LAS size. LAS is less suited than E57 to terrestrial building scans with many scan positions and images, but it is perfectly usable as Scan to BIM input.</p>
+
+<h2 id="rcp">RCP and RCS: what Revit links</h2>
+<p>Revit links point clouds through Autodesk ReCap formats. According to <a href="https://autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Difference-between-RCS-and-RCP-links-in-Revit.html" target="_blank" rel="noopener">Autodesk</a>, an RCS holds one scan position or a unified cloud, while an RCP is a project that gathers several RCS files; for unified clouds there is no functional difference in Revit, though RCP gives finer visibility control. Most teams open an E57 in ReCap Pro, check registration, and save an RCP to link. <a href="/scan-to-bim/point-cloud-to-revit/">how to convert a point cloud to Revit</a> walks through the steps.</p>
+
+<h2 id="native">Scanner-native formats</h2>
+<p>FARO (.fls), Leica (.lgsx), RIEGL (.rdbx), XGRIDS (.lcc) and others keep raw data in their own formats. They matter if a registration needs fixing, so keep them, but use E57 for exchange.</p>
+
+<h2 id="size">File size and performance</h2>
+<p>Building scans are big: tens to hundreds of gigabytes for a large site is normal. Practical tips:</p>
+<ul>
+<li>Keep a full-resolution E57 for archive and QA, and a decimated or segmented copy for day-to-day linking.</li>
+<li>Use section boxes and view-specific visibility in Revit to keep the cloud responsive.</li>
+<li>Upload large files with a resumable uploader; ours accepts up to 200 GB per file and resumes after a dropped connection.</li>
+</ul>
+
+<h2 id="send">What to send for Scan to BIM</h2>
+<p>For Moving Atoms, any of these work: E57, LAS/LAZ, PLY, PTS, PTX, RCP/RCS, scanner-native projects or a zipped folder. If you have a choice, send the registered E57. You can <a href="/#up">upload a scan</a> directly from the browser.</p>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>What is an E57 file?</summary><p>E57 is a vendor-neutral point cloud format defined by ASTM E2807. It stores points with colour and intensity, scan positions and images, and is the best format for exchanging and archiving building scans.</p></details><details><summary>Can Revit open E57 files directly?</summary><p>Revit links point clouds as Autodesk ReCap RCP or RCS files. E57 is usually opened in ReCap Pro and saved as an RCP before linking.</p></details><details><summary>What is the difference between LAS and LAZ?</summary><p>LAZ is a lossless compressed version of the LAS LiDAR format, typically much smaller on disk.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://www.ri.cmu.edu/publications/the-astm-e57-file-format-for-3d-imaging-data-exchange/" target="_blank" rel="noopener">Huber (CMU Robotics Institute), The ASTM E57 file format for 3D imaging data exchange</a></li><li><a href="https://e57-3d-imgfmt.sourceforge.net/index.html" target="_blank" rel="noopener">libE57, open-source reference implementation of ASTM E2807</a></li><li><a href="https://en.wikipedia.org/wiki/LAS_file_format" target="_blank" rel="noopener">LAS file format (overview of the ASPRS specification)</a></li><li><a href="https://www.ogc.org/announcement/ogc-announces-publication-of-the-laz-1-4-community-standard/" target="_blank" rel="noopener">OGC, LAZ 1.4 Community Standard</a></li><li><a href="https://autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Difference-between-RCS-and-RCP-links-in-Revit.html" target="_blank" rel="noopener">Autodesk, Is there a difference between RCS and RCP links in Revit?</a></li><li><a href="https://help.autodesk.com/cloudhelp/ENU/RealityCapture-New/files/WhatsNew/WN_Mesh_in_Revit.html" target="_blank" rel="noopener">Autodesk Help, ReCap scan to Revit workflow (segmented meshes)</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/scan-to-bim-workflow/">The Scan to BIM workflow, step by step<span>Every stage of a Scan to BIM project: scoping, scan planning, capture, registration, cleaning, modeling at the right LOD, QA against the point cloud, and delivery in Revit and IFC.</span></a></li><li><a href="/blog/choosing-a-scanner-for-scan-to-bim/">Choosing a scanner for Scan to BIM<span>Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies.</span></a></li><li><a href="/blog/phone-lidar-scan-to-bim/">Can you do Scan to BIM with an iPhone?<span>How accurate is iPhone and iPad LiDAR for Scan to BIM?</span></a></li><li><a href="/blog/what-is-scan-to-bim/">What is Scan to BIM? The complete guide<span>Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

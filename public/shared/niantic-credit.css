@@ -1,0 +1,29 @@
+/* Source attribution for scenes rebuilt from Niantic Spatial captures (Linden Workshop, Medical Warehouse).
+   Viewer pages: a quiet line under the title, top right. Gallery pages: a line under the footer hint. */
+.ma-credit { color: rgba(214, 218, 236, .6); letter-spacing: .01em; }
+.ma-credit a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(214, 218, 236, .26); pointer-events: auto;
+  transition: color .2s ease, border-color .2s ease; }
+.ma-credit a:hover { color: #fff; border-bottom-color: rgba(255, 255, 255, .6); }
+.ma-credit a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 2px; }
+.ma-credit .short { display: none; }
+
+/* viewer: overrides `.title p` (13px, hidden on phones) */
+/* a small frosted pill (same family as the viewer's hint pill) so it reads over bright and dark scenery alike */
+.title p.ma-credit { display: inline-block; margin: 10px 0 0; padding: 5px 11px; border-radius: 999px;
+  font-size: 11.5px; line-height: 1.35; color: rgba(226, 229, 242, .86); text-shadow: none;
+  background: rgba(16, 19, 32, .62); border: 1px solid rgba(255, 255, 255, .08);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+
+/* gallery footer */
+footer p.ma-credit { margin: -4px 0 10px; font-size: 11px; color: #7d8796; }
+
+/* phones: the title area is shared with the mode pills, so the credit moves into the Before / After tags */
+.tag .ma-tag-credit { display: none; }
+@media (max-width: 720px) {
+  .title p.ma-credit { display: none; }
+  .tag .ma-tag-credit { display: block; margin-top: 1px; font-size: 10px; letter-spacing: .01em; color: rgba(222, 226, 240, .72); }
+  footer .ma-credit .long { display: none; }
+  footer .ma-credit .short { display: inline; }
+  footer .ma-credit .short span { display: block; }
+}
+@media (max-width: 700px) { footer p.ma-credit { font-size: 10px; margin-bottom: 8px; } }

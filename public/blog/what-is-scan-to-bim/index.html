@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>What Is Scan to BIM? The Complete Guide for 2026 | Moving Atoms</title>
+<meta name="description" content="Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it. A plain-English guide for AEC teams." />
+<link rel="canonical" href="https://movingatoms.ai/blog/what-is-scan-to-bim/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/what-is-scan-to-bim/" />
+<meta property="og:title" content="What Is Scan to BIM? The Complete Guide for 2026" />
+<meta property="og:description" content="Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it. A plain-English guide for AEC teams." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="What Is Scan to BIM? The Complete Guide for 2026" />
+<meta name="twitter:description" content="Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it. A plain-English guide for AEC teams." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"What Is Scan to BIM? The Complete Guide for 2026","description":"Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it. A plain-English guide for AEC teams.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/what-is-scan-to-bim/","articleSection":"Guide","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://bimforum.org/resource/lod-level-of-development-lod-specification/","https://usibd.org/","https://dev.geoweeknews.com/articles/vol12no40-usibds-new-level-of-accuracy-specificiation/","https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/","https://www.thefuture3d.com/learn/bim-cost-per-square-foot/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Scan to BIM mean?","acceptedAnswer":{"@type":"Answer","text":"Scan to BIM means converting a 3D laser scan (point cloud) of an existing building or site into a Building Information Model: editable objects with real dimensions, usually delivered in Revit and IFC."}},{"@type":"Question","name":"How accurate is Scan to BIM?","acceptedAnswer":{"@type":"Answer","text":"It depends on the scanner, registration and the accuracy specified. Projects usually state a USIBD Level of Accuracy, such as LOA30 (15 mm to 5 mm at 95% confidence), per element."}},{"@type":"Question","name":"How long does Scan to BIM take?","acceptedAnswer":{"@type":"Answer","text":"Manual modeling is usually quoted in weeks for larger buildings. Automated services such as Moving Atoms deliver within 48 hours."}},{"@type":"Question","name":"What software is used for Scan to BIM?","acceptedAnswer":{"@type":"Answer","text":"Common tools include Autodesk ReCap Pro and Revit, FARO As-Built, ClearEdge3D EdgeWise, Leica Cyclone 3DR and Pointfuse, or an automated service that delivers the finished model."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"What is Scan to BIM? The complete guide","item":"https://movingatoms.ai/blog/what-is-scan-to-bim/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">What is Scan to BIM? The complete guide</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Guide</p><h1>What is Scan to BIM? The complete guide</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">Scan to BIM turns a laser scan of a real building into a Building Information Model you can design, coordinate and manage against. This guide covers what it is, how it works, what it costs and how to get it right.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>9 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#definition">Scan to BIM in one paragraph</a></li><li><a href="#why">Why teams use Scan to BIM</a></li><li><a href="#how">How Scan to BIM works</a></li><li><a href="#lod-loa">LOD and LOA: the two numbers that define the job</a></li><li><a href="#deliverables">What you get at the end</a></li><li><a href="#cost">What Scan to BIM costs</a></li><li><a href="#automation">Manual, assisted or automated?</a></li><li><a href="#pitfalls">Common mistakes to avoid</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="definition">Scan to BIM in one paragraph</h2>
+<p><strong>Scan to BIM</strong> is the process of capturing an existing building, plant or site with a 3D laser scanner (or another reality-capture device), then converting the resulting point cloud into a <strong>Building Information Model</strong>: a set of intelligent, editable objects such as walls, floors, columns, ducts, pipes and equipment, each with real dimensions and a position in a shared coordinate system. The deliverable is usually an Autodesk Revit model (.rvt) and an open <a href="https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/" target="_blank" rel="noopener">IFC</a> file. A point cloud shows you what is there; a BIM model lets you work with it.</p>
+
+<h2 id="why">Why teams use Scan to BIM</h2>
+<p>Most construction work happens to buildings that already exist. Drawings of those buildings are often missing, out of date or wrong, and measuring by hand is slow and error-prone. Scan to BIM replaces the tape and the site sketch with a measured model. Typical reasons:</p>
+<ul>
+<li><strong>Renovation and fit-out design.</strong> Architects start from accurate existing conditions instead of assumptions. See <a href="/blog/scan-to-bim-renovation/">Scan to BIM for renovation and retrofit</a>.</li>
+<li><strong>MEP coordination.</strong> New services are routed around what is really in the ceiling void. See <a href="/blog/scan-to-bim-mep/">Scan to BIM for MEP</a>.</li>
+<li><strong>As-built verification.</strong> Contractors compare what was built with the design while fixes are still cheap.</li>
+<li><strong>Facilities management.</strong> Owners get a model of every asset for maintenance and space planning. See <a href="/blog/scan-to-bim-facilities-management/">Scan to BIM for facilities management</a>.</li>
+<li><strong>Industrial retrofits.</strong> Plants with dense pipework get modeled without shutting down for weeks of manual surveys. See <a href="/blog/scan-to-bim-industrial-plants/">Scan to BIM for industrial plants</a>.</li>
+<li><strong>Robotics and simulation.</strong> The same model becomes a digital twin where robots are tested before deployment. See <a href="/blog/scan-to-bim-to-simready/">from Scan to BIM to SimReady</a>.</li>
+</ul>
+
+<h2 id="how">How Scan to BIM works</h2>
+<p>The workflow has five stages, covered in detail in <a href="/blog/scan-to-bim-workflow/">the Scan to BIM workflow, step by step</a>:</p>
+<ol>
+<li><strong>Specify.</strong> Agree the scope, the level of development (LOD) and the level of accuracy (LOA). See <a href="/blog/scan-to-bim-specification/">how to write a Scan to BIM specification</a>.</li>
+<li><strong>Capture.</strong> Scan the site with a terrestrial, mobile or handheld scanner. See <a href="/blog/choosing-a-scanner-for-scan-to-bim/">choosing a scanner for Scan to BIM</a>.</li>
+<li><strong>Register.</strong> Align the individual scans into one point cloud in a known coordinate system, and clean it.</li>
+<li><strong>Model.</strong> Build BIM elements against the cloud, manually, with assistance tools, or automatically.</li>
+<li><strong>Check and deliver.</strong> Compare the model with the cloud, then issue Revit, IFC and any other formats. See <a href="/blog/scan-to-bim-quality-control/">how to check a Scan to BIM model</a>.</li>
+</ol>
+
+<h2 id="lod-loa">LOD and LOA: the two numbers that define the job</h2>
+<p>Two specifications decide most of the cost and usefulness of a Scan to BIM model:</p>
+<ul>
+<li><strong>Level of Development (LOD)</strong>, from the <a href="https://bimforum.org/resource/lod-level-of-development-lod-specification/" target="_blank" rel="noopener">BIMForum LOD Specification</a>, says how much geometry and information each element carries, from approximate placeholders (LOD 200) to field-verified as-built elements (LOD 500). Our <a href="/scan-to-bim/lod-levels/">LOD levels explained</a> guide covers each level.</li>
+<li><strong>Level of Accuracy (LOA)</strong>, from the <a href="https://usibd.org/" target="_blank" rel="noopener">U.S. Institute of Building Documentation</a>, says how close the measured and modeled geometry must be to reality. Secondary sources summarise the bands as LOA10 (coarser than 5 cm) through LOA50 (better than 1 mm), stated at 95% confidence.</li>
+</ul>
+<p>A good brief states both, and can vary them by element: LOD 300 at LOA30 for architecture, LOD 350 for the plant room, for example.</p>
+
+<h2 id="deliverables">What you get at the end</h2>
+<div class="table-wrap"><table><thead><tr><th>Deliverable</th><th>Used for</th></tr></thead><tbody><tr><td>Revit model (.rvt)</td><td>Design, documentation and coordination in Autodesk Revit</td></tr><tr><td>IFC</td><td>Open BIM exchange with any tool; long-term records. See <a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit?</a></td></tr><tr><td>2D drawings</td><td>Plans, sections and elevations cut from the model</td></tr><tr><td>Registered point cloud (E57, RCP/RCS)</td><td>Reference and QA. See <a href="/blog/point-cloud-file-formats/">point cloud file formats</a></td></tr><tr><td>USD / GLB</td><td>Digital twins, visualization and robot simulation</td></tr></tbody></table></div>
+
+<h2 id="cost">What Scan to BIM costs</h2>
+<p>Traditional Scan to BIM is priced per square foot because the modeling is manual. Published guides from providers give ranges of roughly $0.15 to $0.75 per square foot for modeling depending on LOD, with minimum fees, plus scanning if you do not already have a point cloud. Density matters as much as area: a plant room has far more elements per square foot than an office. Our <a href="/scan-to-bim/cost/">Scan to BIM cost guide</a> explains what drives price and how to compare quotes.</p>
+
+<h2 id="automation">Manual, assisted or automated?</h2>
+<p>There are three ways to do the modeling. Your team can trace the cloud in Revit by hand; specialist tools such as FARO As-Built, ClearEdge3D EdgeWise or Autodesk ReCap Pro can speed parts of it up; or an automated service can deliver the finished model. Our <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM software and services compared</a> page covers the main options, and <a href="/blog/ai-scan-to-bim/">how AI is automating Scan to BIM</a> explains what has changed.</p>
+<p>Moving Atoms is an automated service: you <a href="/#up">upload a scan</a> from any scanner, choose LOD 200 to 500, and within 48 hours every object comes back separated and measured in Revit, IFC, STEP, USD and GLB. You can open finished examples in our <a href="/lidarsample/">LiDAR samples</a>.</p>
+
+<h2 id="pitfalls">Common mistakes to avoid</h2>
+<ul>
+<li><strong>No accuracy requirement.</strong> "Model the building" invites disputes. State LOA per element.</li>
+<li><strong>Over-specifying LOD.</strong> LOD 400 everywhere costs a fortune and is rarely used. Specify by use.</li>
+<li><strong>Missing coordinates.</strong> Agree the coordinate system and survey control before scanning.</li>
+<li><strong>Shadows in the scan.</strong> What the scanner cannot see cannot be measured. Ask how hidden geometry will be flagged.</li>
+<li><strong>No QA step.</strong> Require a deviation check of the model against the cloud before acceptance.</li>
+</ul>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>What does Scan to BIM mean?</summary><p>Scan to BIM means converting a 3D laser scan (point cloud) of an existing building or site into a Building Information Model: editable objects with real dimensions, usually delivered in Revit and IFC.</p></details><details><summary>How accurate is Scan to BIM?</summary><p>It depends on the scanner, registration and the accuracy specified. Projects usually state a USIBD Level of Accuracy, such as LOA30 (15 mm to 5 mm at 95% confidence), per element.</p></details><details><summary>How long does Scan to BIM take?</summary><p>Manual modeling is usually quoted in weeks for larger buildings. Automated services such as Moving Atoms deliver within 48 hours.</p></details><details><summary>What software is used for Scan to BIM?</summary><p>Common tools include Autodesk ReCap Pro and Revit, FARO As-Built, ClearEdge3D EdgeWise, Leica Cyclone 3DR and Pointfuse, or an automated service that delivers the finished model.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://bimforum.org/resource/lod-level-of-development-lod-specification/" target="_blank" rel="noopener">BIMForum, Level of Development (LOD) Specification</a></li><li><a href="https://usibd.org/" target="_blank" rel="noopener">USIBD, Level of Accuracy (LOA) Specification</a></li><li><a href="https://dev.geoweeknews.com/articles/vol12no40-usibds-new-level-of-accuracy-specificiation/" target="_blank" rel="noopener">Geo Week News, The USIBD's new Level of Accuracy specification</a></li><li><a href="https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/" target="_blank" rel="noopener">buildingSMART, Industry Foundation Classes (IFC)</a></li><li><a href="https://www.thefuture3d.com/learn/bim-cost-per-square-foot/" target="_blank" rel="noopener">The Future 3D, BIM cost per square foot</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/scan-to-bim-workflow/">The Scan to BIM workflow, step by step<span>Every stage of a Scan to BIM project: scoping, scan planning, capture, registration, cleaning, modeling at the right LOD, QA against the point cloud, and delivery in Revit and IFC.</span></a></li><li><a href="/blog/scan-to-bim-specification/">How to write a Scan to BIM specification<span>A practical template for specifying Scan to BIM: scope, LOD per discipline, USIBD LOA per element, coordinates, deliverables, naming, QA and acceptance criteria.</span></a></li><li><a href="/blog/scan-to-bim-breakthroughs-2026/">Recent breakthroughs in Scan to BIM<span>What changed in Scan to BIM in 2025 and 2026: AI segmentation, mesh-to-Revit workflows, Gaussian splats, faster mobile scanning, IFC 4.3 as ISO, OpenUSD 1.0 and SimReady digital twins.</span></a></li><li><a href="/blog/ai-scan-to-bim/">How AI is automating Scan to BIM<span>How automated Scan to BIM works: point cloud segmentation, object detection, fitting parametric BIM elements, and human review.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

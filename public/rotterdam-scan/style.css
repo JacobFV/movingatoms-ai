@@ -1,0 +1,38 @@
+/* Shared sample typography, chrome and controls come from Factory Floor. */
+[hidden], #view[hidden] { display: none !important; }
+.preview, .preview img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.preview img { object-fit: cover; }
+#cloudPreview { clip-path: inset(0 calc(100% - var(--split)) 0 0); }
+.mode-status { position: absolute; top: 92px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; justify-content: center; gap: 10px; max-width: calc(100% - 28px); padding: 8px 14px; border-radius: 16px; background: #131626e8; font-size: 12px; color: #c4c7da; text-align: center; z-index: 3; }
+.mode-status .pill { white-space: nowrap; }
+.top { z-index: 3; }
+.controls { max-width: calc(100% - 24px); flex-wrap: nowrap; }
+.controls .pill { flex-shrink: 0; }
+.controls select { flex-shrink: 1; min-width: 0; }
+.scene-modes { position: absolute; z-index: 5; top: 88px; left: 24px; display: flex; gap: 3px; padding: 4px; border: 1px solid #ffffff22; border-radius: 30px; background: #101420e8; }
+.scene-modes .pill { padding: 9px 15px; border: 0; background: transparent; font-size: 12px; }
+.scene-modes .pill[aria-pressed="true"] { background: var(--lime); color: #11160b; }
+.object-editor { top: 144px; max-height: calc(100dvh - 340px); }
+body[data-editor="true"] .preview { display: none; }
+@media (max-width: 720px) {
+  .mode-status { top: 78px; flex-wrap: wrap; gap: 5px; width: max-content; }
+  .mode-status .pill { padding: 7px 12px; }
+  .tag { max-width: 43vw; }
+  .controls { gap: 5px; }
+  .controls .pill { padding: 9px 10px; }
+  .scene-modes { top: 78px; left: 12px; max-width: calc(100% - 24px); }
+  .scene-modes .pill { font-size: 12px; padding: 9px 12px; }
+  .object-editor { top: 132px; max-height: calc(100dvh - 300px); }
+  body[data-embedded="true"] .controls { bottom: max(98px, calc(env(safe-area-inset-bottom) + 82px)); }
+  body[data-embedded="true"] .tag { bottom: max(148px, calc(env(safe-area-inset-bottom) + 132px)); }
+}
+@media (max-height: 480px) {
+  .top { padding-top: 10px; }
+  .title p, .tag > span:last-child { display: none; }
+  .mode-status { top: 52px; }
+  .scene-modes { top: 50px; }
+  .object-editor { top: 102px; max-height: calc(100dvh - 260px); }
+  .editor-help { display: none; }
+  body[data-embedded="true"] .tag { bottom: auto; top: 86px; padding: 7px 10px; }
+  .hint { display: none; }
+}

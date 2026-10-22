@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Scan to BIM in 48 Hours: Point Cloud to Revit | Moving Atoms</title>
+<meta name="description" content="Scan to BIM from any LiDAR or SLAM scanner: upload a point cloud and get every object separated and editable in Revit and IFC within 48 hours." />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<link rel="canonical" href="https://movingatoms.ai/" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://movingatoms.ai/#org", "name": "Moving Atoms", "url": "https://movingatoms.ai/", "logo": "https://movingatoms.ai/assets/logo-white.png", "description": "Scan to BIM and SimReady worlds: LiDAR and SLAM scans converted into separated, editable Revit, IFC and USD models within 48 hours.", "sameAs": ["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]}, {"@type": "WebSite", "@id": "https://movingatoms.ai/#website", "url": "https://movingatoms.ai/", "name": "Moving Atoms", "publisher": {"@id": "https://movingatoms.ai/#org"}}, {"@type": "Service", "name": "Scan to BIM", "serviceType": "Scan to BIM", "provider": {"@id": "https://movingatoms.ai/#org"}, "url": "https://movingatoms.ai/scan-to-bim/", "areaServed": "Worldwide", "description": "Point cloud to Revit, IFC, STEP, USD and GLB within 48 hours, at LOD 200 to 500, from any scanner."}]}</script>
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/" />
+<meta property="og:title" content="Scan to BIM in 48 Hours · Point Cloud to Revit &amp; IFC | Moving Atoms" />
+<meta property="og:description" content="Scan to BIM from any LiDAR or SLAM scanner: upload a point cloud and get every object separated and editable in Revit and IFC within 48 hours." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+<script defer src="/ma/analytics/ma-analytics.js"></script>
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=32" />
+<link rel="stylesheet" href="/home/revit.css?v=1" />
+</head>
+<body>
+
+<div class="announce" id="announce">
+  <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener">
+    <span class="announce-tag">News</span>
+    <span class="announce-long">Marc Andreessen of a16z now follows Moving Atoms (YC S26) on X.</span>
+    <span class="announce-short">Marc Andreessen now follows us on X.</span>
+    <span class="announce-go">Follow along <span aria-hidden="true">→</span></span>
+  </a>
+  <button type="button" class="announce-x" id="announceX" aria-label="Dismiss announcement">×</button>
+</div>
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+
+<main>
+  <!-- ── Hero: the uploader is the product ─────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <a class="pill" href="/lidarsample/">
+      <span class="pill-tag">New</span>
+      Revit and IFC export for every sample
+      <span aria-hidden="true">→</span>
+    </a>
+
+    <h1>Scan to BIM <br /><span class="dim">and</span> SimReady worlds</h1>
+    <p class="lede">Drop a LiDAR or SLAM scan. Within 48 hours every object comes back separated, measured and editable: a BIM model for Revit or IFC, and a SimReady world in USD for robot simulation.</p>
+
+    <form id="up" class="composer" autocomplete="on" novalidate>
+      <input id="file" type="file" multiple hidden />
+
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose files, or drag and drop them here">
+        <div class="drop-empty">
+          <span class="drop-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+          </span>
+          <p class="drop-title">Drag and drop your scan</p>
+          <p class="drop-sub">or <span class="u">browse files</span> · E57, LAS, PLY, RCS, OBJ, IFC, ZIP and more, up to 200&nbsp;GB each</p>
+        </div>
+        <ul class="files" id="files" aria-live="polite"></ul>
+      </div>
+
+      <div class="who" id="who">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" />
+        <input name="name" autocomplete="name" placeholder="Name" aria-label="Name" />
+        <input name="company" autocomplete="organization" placeholder="Company" aria-label="Company" />
+        <label class="pick">
+          <select name="role" aria-label="Role">
+            <option value="" selected>Role</option>
+            <optgroup label="Buildings and sites">
+              <option>BIM/VDC manager</option>
+              <option>Architect</option>
+              <option>Structural/MEP engineer</option>
+              <option>Scanning/survey company</option>
+              <option>Contractor</option>
+              <option>Owner/facility manager</option>
+            </optgroup>
+            <optgroup label="Robotics and simulation">
+              <option>Robotics engineer</option>
+              <option>Simulation engineer</option>
+              <option>ML/AI researcher</option>
+              <option>Robotics founder/lead</option>
+            </optgroup>
+            <option>Other</option>
+          </select>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </label>
+      </div>
+
+      <div class="auth" id="auth" hidden>
+        <div class="auth-head">
+          <p class="auth-t" id="authT">Check your email</p>
+          <p class="auth-s" id="authS">We sent you a 6-digit code. It expires in 10 minutes.</p>
+        </div>
+        <div class="auth-step" data-step="code">
+          <input name="code" class="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="••••••" aria-label="6-digit code" />
+          <button type="button" class="btn btn-white auth-go" id="authVerify">Verify and upload</button>
+          <button type="button" class="auth-link" id="authBack">Use a different email</button>
+        </div>
+        <p class="auth-dev" id="authDev" hidden></p>
+      </div>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <div class="bar">
+        <span class="status" id="status" aria-live="polite"></span>
+        <button type="submit" class="send" id="send" disabled>
+          <i class="send-fill" aria-hidden="true"></i>
+          <span class="send-label" id="sendLabel">Start model</span>
+          <svg class="send-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <p class="msg" id="msg" role="status"></p>
+
+      <div class="done" id="done" hidden>
+        <span class="done-tick" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        <p class="done-title">Scan received</p>
+        <p class="done-sub" id="doneSub"></p>
+        <button type="button" class="btn btn-ghost" id="again">Upload another</button>
+      </div>
+    </form>
+
+    <p class="fine" id="fine">Private and resumable. Files go straight to our storage and never become public.</p>
+
+    <a class="ent-row" href="/contact" data-cal aria-label="Enterprise customers: book a call with our team">
+      <span class="ent-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 21h19"/><rect x="4" y="3" width="9" height="18" rx="1.6"/><path d="M13 9h5.4a1.6 1.6 0 0 1 1.6 1.6V21"/><path d="M7.2 7h2.6M7.2 10.5h2.6M7.2 14h2.6M15.6 13h1.4M15.6 16.5h1.4"/></svg>
+      </span>
+      <span class="ent-text">
+        <span class="ent-t">Enterprise customers</span>
+        <span class="ent-s">Large, multi-site or custom projects, scoped with our team</span>
+      </span>
+      <span class="ent-go">
+        <span class="ent-go-l">Book a call</span>
+        <span class="ent-arrow" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </span>
+      </span>
+    </a>
+
+    <div class="strip">
+      <div class="works">
+        <span class="strip-l">Works with</span>
+        <div class="marquee" aria-label="Revit, IFC, OpenUSD, NVIDIA Isaac Sim, Leica, NavVis, FARO and Trimble">
+          <ul class="marquee-track" aria-hidden="true">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 22.665H2.994c-.519 0-.838-.293-.835-.723.001.042.002-.148.003-.463.142-.083.283-.165.427-.247l.078-.045.07-.058.015-.013.127-.078 1.294-.804h1.134c3.35 0 11.817 0 16.548.007.159 0 .631 0 1.002-.371.371-.372.37-.853.37-1.011-.008-2.057-.001-4.109.005-6.16.008-2.39.016-4.86 0-7.298v-.063l.61-.007c.169-.003.143.197.143.296.014 5.68-.02 11.36.015 17.038zM14.326 8.982c.006-.281.006-.56.006-.859-.009-.5-.395-1.055-.916-1.055-.435 0-.919.006-1.432.006v3.01h1.432c.52 0 .9-.584.91-1.102zM3.887 19.234 3.853 1.363l.007-.025.026-.003h17.313c.51.232.943.56 1.033 1.16.023 1.052 0 1.896 0 2.854.001.023-.002.036 0 .059.03 4.489-.022 8.963-.005 13.453 0 .285-.072.38-.37.38-5.99-.008-17.97-.007-17.97-.007zm5.624-3.971h2.395l.057-.051v-3.5c.316.001.57-.005.787-.005.075 0 .348.075.449.286.36.757.692 1.531 1.125 2.25.583.967 1.704 1.204 2.469 1.204.528 0 .528-.024.528-.245 0-.423-.006-.935-.006-1.374-.403-.039-.734-.163-.929-.541-.362-.705-.74-1.401-1.119-2.114.248-.072.218-.057.302-.092.859-.357 1.139-.951 1.213-1.71.05-.503.059-1.144.025-1.395-.112-.833-.378-1.454-1.036-1.932-.773-.562-1.678-.657-2.582-.687a62.395 62.395 0 0 0-3.678.012v9.894zm-5.658-13.9C1.631 2.64.98 3.087.223 3.513.025 3.622 0 3.895 0 4.1l.02 17.45c.575-.357 3.293-1.96 3.867-2.316L3.853 1.363z"/></svg><span>Revit</span></li>
+            <li class="wm"><span>IFC</span></li>
+            <li class="wm"><span>OpenUSD</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851c-.398 0-.787-.062-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964c-.37 0-.733-.035-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z"/></svg><span>Isaac Sim</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.42 10.954c.198.011.35.146.343.29-.033.94-1.19.795-1.19.795s.17-1.126.846-1.085zm9.313 2.064c.794 0 .952-1.605.952-1.64a.41.41 0 0 0-.423-.398c-.66 0-.9 1.203-.9 1.508 0 .116.007.53.37.53zm-9.949-5.08c.036-.318-.12-.662-.555-.662-1.06 0-1.509 2.963-1.509 2.963s1.853-.438 2.064-2.301zm-6.244 5.82c-.207.021-.423.114-.423.344 0 .139.235.382.608.37.49-.014 1.085-.475 1.085-.475s-.506-.207-1.085-.239a1.026 1.026 0 0 0-.185 0zM24 12.003C24 18.628 18.627 24 12 24 5.37 24 0 18.628 0 12.003 0 5.374 5.371 0 12 0c6.627 0 12 5.374 12 12.003zM11.933 9.446c0 .446.377.555.794.555.418 0 .82-.18.82-.635 0-.456-.48-.555-.82-.555-.471 0-.794.193-.794.635zM9.366 10.53c-1.41 0-2.407.866-2.407 1.904 0 .948.808 1.35 1.852 1.35 1.184 0 2.354-.714 2.354-.714s.071.714 1.006.714c.964 0 1.72-.714 1.72-.714s.417.687 1.376.687c.98 0 1.72-.793 1.72-.793s.272.74 1.243.74c.759 0 1.164-.476 1.164-.476s.212.477.873.477c.808 0 1.402-.556 1.402-.556l-.132-.476s-.307.238-.529.238c-.168 0-.265-.137-.265-.291 0-.347.556-2.064.556-2.064l-1.35.026-.052.212s-.201-.37-.9-.37c-1.352 0-2.085 1.166-2.116 1.852-.007.149-.027.158-.027.158-.032.036-.497.583-1.085.583-.47 0-.555-.384-.555-.635 0-.273.233-1.35.873-1.35.348 0 .555.291.555.291l.186-.608s-.292-.236-.9-.238c-1.308-.001-2.19.967-2.222 1.852-.007.132-.03.176-.027.185-.043.053-.35.423-.767.423-.286 0-.291-.219-.291-.317 0-.135.555-2.064.555-2.064l-1.481.026-.503 1.879s-.826.581-1.958.661c-.584.04-.794-.32-.794-.529v-.08c.001 0 .246.027.424.027.14 0 1.878-.134 1.878-1.19 0-.605-.613-.82-1.376-.82zm12.568 3.889-.132-.476s-3.096 1.078-9.022 1.005c-4.089-.05-7.224-1.243-7.224-1.243s.119-.212.185-.344c.41-.835.9-2.514.9-2.514s2.805-.785 2.805-3.016c0-.706-.674-1.162-1.323-1.19-2.264-.089-2.877 3.128-3.017 3.677-.007.039-.026.053-.026.053-.698-.095-1.085-.238-1.085-.238l-.159.45c.471.223 1.165.29 1.165.29-.136.865-.82 2.488-.82 2.488s-.608-.186-1.376-.186c-1 0-1.35.47-1.376.768-.066.77.911 1.137 1.587 1.137 1.32 0 2.011-.714 2.011-.714s3.695 1.402 7.567 1.402c5.069 0 9.34-1.35 9.34-1.35z"/></svg><span>Leica</span></li>
+            <li class="wm"><span>NavVis</span></li>
+            <li class="wm"><span>FARO</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.598 18.338a9.1 9.1 0 0 0 4.799 2.82L2.598 24zm4.764-15.52a9.14 9.14 0 0 0-4.764 2.81V0zM22.854 12l-4.811 2.851a9.65 9.65 0 0 0 .014-5.693zM5.758 4.301a9.4 9.4 0 0 1 5.297-.615 4.3 4.3 0 0 0-2.425.828c-.756-.213-2.185-.369-2.872-.213M14.9 14.602c-2.367 1.828-6.156 1.322-8.459-.605a23 23 0 0 1 2.673-3.483c1.359 1.208 3.398 1.7 5.035.936.38 1.014.633 2.073.751 3.152m-9.72-.42a15.4 15.4 0 0 0-1.621 3.751 8.5 8.5 0 0 1-2.406-5.603 8.54 8.54 0 0 1 1.939-5.79c-.651 2.393.058 5.506 2.088 7.642m8.6-3.636c-1.137.532-2.746.326-3.976-.723a19 19 0 0 1 2.339-1.865 11.4 11.4 0 0 1 1.637 2.588m-1.527-3.893a8.7 8.7 0 0 0-2.519-1.735c.909-.593 3-.629 4.301.72a8.4 8.4 0 0 0-1.782 1.015M5.922 14.88c2.399 1.937 6.253 2.59 9.051.881a7.4 7.4 0 0 1-.468 2.719 8.06 8.06 0 0 1-5.014 1.893 8.05 8.05 0 0 1-5.085-1.684c.136-.689.505-2.016 1.516-3.809m8.653-4.932a12.7 12.7 0 0 0-1.632-2.544 7 7 0 0 1 1.667-1.003c.681.945.861 2.587-.035 3.547m1.544-2.064c.837 1.87.874 4.207-.354 5.844a14 14 0 0 0-.778-2.822c.419-.367.743-.835.941-1.363a3.5 3.5 0 0 0 .191-1.659M9.14 9.096c-.758-1.049-.992-2.402-.229-3.451a7.7 7.7 0 0 1 2.53 1.581 19.5 19.5 0 0 0-2.301 1.87m6.773 5.95a6.5 6.5 0 0 0 1.609-3.749 8.65 8.65 0 0 1-1.71 5.88q.144-1.061.101-2.131M7.956 5.347c-.846 1.347-.467 3.226.487 4.443a24 24 0 0 0-2.725 3.499c-1.876-2.141-2.624-5.575-1.013-7.92a6.5 6.5 0 0 1 3.251-.022"/></svg><span>Trimble</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="backed">
+        <span class="strip-l">Backed by</span>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Y Combinator">
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg>
+          Combinator
+        </a>
+        <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener" aria-label="NVIDIA Inception Program">
+          <img src="/home/media/nvidia.svg" alt="" width="78" height="16" />
+          <small>Inception</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How it works: scan → separated model → Revit project (Revit window drawn by /home/revit.js) ── -->
+  <section class="deliver" id="how">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2>From point cloud to Revit project</h2>
+      </div>
+      <p class="sec-side">Send the scan you already have. Get back a model your team can open, schedule and coordinate against, within 48 hours.</p>
+    </div>
+    <div class="dl-row">
+      <div class="dl-step">
+        <div class="dl-media"><img src="/home/media/rotterdam-scan.webp" alt="LiDAR point cloud of a process plant in Rotterdam" loading="lazy" /></div>
+        <p class="dl-n">01 · Your scan</p><h3>Any scanner, any format</h3><p class="dl-p">Registered or raw, up to 200 GB per file.</p>
+        <div class="dl-chips"><span>E57</span><span>RCP / RCS</span><span>LAS</span><span>FLS</span><span>LGSx</span></div>
+      </div>
+      <div class="dl-conn" aria-hidden="true"><svg viewBox="0 0 32 20" preserveAspectRatio="none"><line x1="0" y1="10" x2="32" y2="10"/><circle cx="2" cy="10" r="3"/></svg></div>
+      <div class="dl-step">
+        <div class="dl-media"><img src="/home/media/rotterdam-model.webp" alt="The same plant rebuilt as separated 3D objects" loading="lazy" /></div>
+        <p class="dl-n">02 · Rebuilt</p><h3>Every object separated</h3><p class="dl-p">Measured in the scan's coordinates, at LOD 200 to 500.</p>
+        <div class="dl-chips"><span>Pumps</span><span>Vessels</span><span>Pipe runs</span><span>Stairs</span><span>Guardrails</span></div>
+      </div>
+      <div class="dl-conn" aria-hidden="true"><svg viewBox="0 0 32 20" preserveAspectRatio="none"><line x1="0" y1="10" x2="32" y2="10"/><circle cx="2" cy="10" r="3"/></svg></div>
+      <div class="dl-step">
+        <div class="dl-media dl-revit" data-revit role="img" aria-label="The model open in Revit, with a pump assembly selected as Mechanical Equipment on the Existing phase"><img src="/home/media/rotterdam-model.webp" alt="" loading="lazy" /></div>
+        <p class="dl-n">03 · Delivered</p><h3>Open it in Revit</h3><p class="dl-p">Native elements in their categories, on the Existing phase.</p>
+        <div class="dl-chips"><span class="on">.rvt</span><span class="on">.ifc</span><span>STEP</span><span>USD</span><span>GLB</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Films ──────────────────────────────────────────────────────────── -->
+  <section class="films" id="films">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">In motion</p>
+        <h2>Watch a scan become a world</h2>
+      </div>
+      <p class="sec-side">Real captures, rebuilt by Moving Atoms. Every frame is rendered from the delivered model.</p>
+    </div>
+    <div class="stage" id="stage">
+      <video class="stage-v is-on" muted playsinline preload="none" poster="/home/films/rotterdam-objects.webp"></video>
+      <video class="stage-v" muted playsinline preload="none"></video>
+      <p class="credit stage-credit" id="stageCredit"></p>
+      <button type="button" class="stage-pp" id="stagePP" aria-label="Pause">
+        <svg class="i-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2.5" y="2" width="3" height="10" rx="1" fill="currentColor"/><rect x="8.5" y="2" width="3" height="10" rx="1" fill="currentColor"/></svg>
+        <svg class="i-play" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2.5v9l7.5-4.5z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <ol class="reel" id="reel">
+        <li><button type="button" data-film="rotterdam-objects" data-credit="navvis"><span class="reel-n">01</span><span class="reel-t">Every asset separated</span><span class="reel-s">Columns, vessels and pumps</span><i class="reel-p"><b></b></i></button></li>
+        <li><button type="button" data-film="factory" data-credit="navvis"><span class="reel-n">02</span><span class="reel-t">Factory floor</span><span class="reel-s">LiDAR to a SimReady scene</span><i class="reel-p"><b></b></i></button></li>
+        <li><button type="button" data-film="linden" data-credit="niantic"><span class="reel-n">03</span><span class="reel-t">Workshop</span><span class="reel-s">Phone scan to model</span><i class="reel-p"><b></b></i></button></li>
+        <li><button type="button" data-film="rotterdam-plant" data-credit="navvis"><span class="reel-n">04</span><span class="reel-t">Process plant</span><span class="reel-s">Rotterdam · scan to model</span><i class="reel-p"><b></b></i></button></li>
+        <li><button type="button" data-film="medical" data-credit="niantic"><span class="reel-n">05</span><span class="reel-t">Medical warehouse</span><span class="reel-s">1,575 objects, randomized</span><i class="reel-p"><b></b></i></button></li>
+    </ol>
+  </section>
+
+  <!-- ── Examples ───────────────────────────────────────────────────────── -->
+  <section class="examples" id="examples">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Examples</p>
+        <h2>Real sites, rebuilt for simulation</h2>
+      </div>
+      <p class="sec-side">Hover to compare the raw scan with the model we deliver. Open any of them in the 3D viewer.</p>
+    </div>
+
+    <div class="grid">
+      <a class="card card-xl" href="/lidarsample/?scene=rotterdam" data-compare>
+        <div class="media">
+          <img class="m-model" src="/home/media/rotterdam-model.webp" alt="Rotterdam process plant, reconstructed model" loading="lazy" />
+          <img class="m-scan" src="/home/media/rotterdam-scan.webp" alt="" loading="lazy" />
+          <span class="tag tag-l">Scan</span><span class="tag tag-r">Model</span>
+          <span class="credit">Captured with NavVis LiDAR</span>
+          <i class="wipe" aria-hidden="true"></i>
+        </div>
+        <div class="meta">
+          <div><h3>Process plant</h3><p>Rotterdam · 4.3M NavVis LiDAR points · 89 objects</p></div>
+          <span class="go" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a class="card card-md" href="/lidarsample/?scene=factory-floor" data-compare>
+        <div class="media">
+          <img class="m-model" src="/home/media/factory-model-sm.webp" alt="Factory floor, reconstructed model" loading="lazy" />
+          <img class="m-scan" src="/home/media/factory-scan-sm.webp" alt="" loading="lazy" />
+          <span class="tag tag-l">Scan</span><span class="tag tag-r">Model</span>
+          <span class="credit">Captured with NavVis LiDAR</span>
+          <i class="wipe" aria-hidden="true"></i>
+        </div>
+        <div class="meta">
+          <div><h3>Factory floor</h3><p>9.6M LiDAR points · 394 objects</p></div>
+          <span class="go" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a class="card" href="/lidarsample/?scene=linden-workshop" data-compare>
+        <div class="media">
+          <img class="m-model" src="/home/media/linden-model-sm.webp" alt="Linden workshop, reconstructed model" loading="lazy" />
+          <img class="m-scan" src="/home/media/linden-scan-sm.webp" alt="" loading="lazy" />
+          <span class="tag tag-l">Scan</span><span class="tag tag-r">Model</span>
+          <span class="credit">Scan from Niantic Spatial</span>
+          <i class="wipe" aria-hidden="true"></i>
+        </div>
+        <div class="meta">
+          <div><h3>Workshop</h3><p>Phone capture · 767 objects</p></div>
+          <span class="go" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a class="card" href="/lidarsample/?scene=medical-warehouse" data-compare>
+        <div class="media">
+          <img class="m-model" src="/home/media/medical-model-sm.webp" alt="Medical supply warehouse, reconstructed model" loading="lazy" />
+          <img class="m-scan" src="/home/media/medical-scan-sm.webp" alt="" loading="lazy" />
+          <span class="tag tag-l">Scan</span><span class="tag tag-r">Model</span>
+          <span class="credit">Scan from Niantic Spatial</span>
+          <i class="wipe" aria-hidden="true"></i>
+        </div>
+        <div class="meta">
+          <div><h3>Medical warehouse</h3><p>2.8M points · 1,575 objects</p></div>
+          <span class="go" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a class="card" href="/lidarsample/?scene=factory-floor&amp;mode=dr" data-cycle>
+        <div class="media">
+          <img class="m-model" src="/home/media/domains-a-sm.webp" alt="One workbench, randomized layouts and lighting" loading="lazy" />
+          <img class="m-alt" src="/home/media/domains-b-sm.webp" alt="" loading="lazy" />
+          <span class="tag tag-l">Variant <b data-n>01</b></span>
+          <span class="credit">Captured with NavVis LiDAR</span>
+        </div>
+        <div class="meta">
+          <div><h3>Domain randomization</h3><p>One scan, endless layouts and lighting</p></div>
+          <span class="go" aria-hidden="true">↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── What people are saying (real comments, quoted verbatim; each card links to its source) ── -->
+  <section class="voices" id="voices">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">On LinkedIn and X</p>
+        <h2>What people are saying</h2>
+      </div>
+      <p class="sec-side"><a href="https://x.com/MovingAtomsLab/status/2111224248555712997" target="_blank" rel="noopener"><b>87K views</b> on our Scan to Sim launch on X</a> and <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener"><b>811 reactions</b> on LinkedIn</a>. Follow along on <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener">X</a>.</p>
+    </div>
+    <div class="wall">
+      <div class="wall-row"><ul class="wall-track"></ul></div>
+      <div class="wall-row rev"><ul class="wall-track"></ul></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Have a site in mind?</h2>
+    <p>Send us the scan, or talk to the team about a fleet-scale rollout.</p>
+    <div class="cta-row">
+      <a class="btn btn-white" href="#up" data-focus-upload>Upload a scan</a>
+      <a class="btn btn-ghost" href="/contact" data-cal>Book a demo</a>
+    </div>
+  </section>
+</main>
+
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+
+<div class="page-drop" id="pageDrop" aria-hidden="true"><div><span>Drop to upload</span></div></div>
+
+<script src="/home/social.js?v=5" defer></script>
+<script src="/home/revit.js?v=1" defer></script>
+<script src="/home/app.js?v=31" defer></script>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

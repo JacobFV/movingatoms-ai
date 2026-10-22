@@ -1,0 +1,11 @@
+.scene-modes { position: absolute; z-index: 5; top: 88px; left: 24px; display: flex; gap: 3px; padding: 4px; border: 1px solid #ffffff22; border-radius: 30px; background: #101420e8; }
+.scene-modes .pill { padding: 9px 15px; border: 0; background: transparent; font-size: 12px; }
+.scene-modes .pill[aria-pressed="true"] { background: var(--lime); color: #11160b; }
+.scene-modes .pill:disabled { opacity: .45; cursor: wait; }
+.scene-modes button:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+.object-editor { top: 144px; max-height: calc(100dvh - 323px); }
+@media (max-width: 720px) {
+  .scene-modes { top: 78px; left: 12px; right: 12px; width: max-content; max-width: calc(100% - 24px); }
+  .scene-modes .pill { font-size: 11px; padding: 9px 12px; }
+  .object-editor { top: 132px; max-height: calc(100dvh - 324px); }
+}

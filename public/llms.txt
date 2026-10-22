@@ -1,0 +1,92 @@
+# Moving Atoms
+> Moving Atoms is a Scan to BIM and SimReady world company (YC S26). Upload a LiDAR or SLAM point cloud from any scanner and get every object back separated, measured and editable in Revit, IFC, STEP, USD and GLB within 48 hours, at LOD 200 to 500. The same models become simulation-ready worlds for robots in RobotGym.
+
+Moving Atoms converts real-world scans into models: point clouds from terrestrial, mobile and handheld scanners (E57, LAS/LAZ, PLY, RCP/RCS, FARO, Leica, NavVis, RIEGL, XGRIDS; up to 200 GB per file) become separated, measured objects in Revit and IFC for BIM teams, and USD/GLB worlds for robot simulation. Delivery is within 48 hours, with optional on-site processing so scan data never leaves the building. RobotGym (https://robotgym.io) is where those worlds are used to train and evaluate robots.
+
+Content Signals: search=yes, ai-input=yes, ai-train=no.
+
+## Scan to BIM
+- [Scan to BIM](https://movingatoms.ai/scan-to-bim/): point cloud to Revit and IFC in 48 hours; formats, LOD, samples, on-site processing.
+- [Best Scan to BIM software and services, compared](https://movingatoms.ai/scan-to-bim/best-scan-to-bim-software/): Autodesk ReCap, EdgeWise, FARO As-Built, Leica Cyclone 3DR, Pointfuse, Matterport BIM files, outsourced firms.
+- [Scan to BIM LOD levels explained](https://movingatoms.ai/scan-to-bim/lod-levels/): LOD 200, 300, 350, 400, 500 and LOA.
+- [Scan to BIM cost](https://movingatoms.ai/scan-to-bim/cost/): per-square-foot ranges, what drives price, comparing quotes.
+- [Point cloud to Revit](https://movingatoms.ai/scan-to-bim/point-cloud-to-revit/): step-by-step guide.
+- Comparisons: [vs Autodesk ReCap + Revit](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-autodesk-recap/), [vs ClearEdge3D EdgeWise](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-edgewise/), [vs FARO As-Built](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-faro-as-built/), [vs Leica Cyclone 3DR](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-leica-cyclone-3dr/), [vs Pointfuse](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-pointfuse/), [vs Matterport BIM files](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-matterport-bim/), [vs outsourced modeling](https://movingatoms.ai/scan-to-bim/moving-atoms-vs-outsourced-scan-to-bim/).
+- [LiDAR samples](https://movingatoms.ai/lidarsample/): raw scans and delivered models side by side, with Revit downloads.
+
+## Product
+- [Home](https://movingatoms.ai/): upload a scan, examples, films and how Scan to BIM works.
+- [Scan to Model](https://movingatoms.ai/scan-to-model/): the scan-to-model product page.
+
+## Solutions
+- [Architects and engineers](https://movingatoms.ai/solutions/architects-engineers/): existing-conditions Revit and IFC models for renovation and fit-out design.
+- [General contractors](https://movingatoms.ai/solutions/contractors/): as-built models in days for verification, coordination and retrofits.
+- [Owners and facilities](https://movingatoms.ai/solutions/facilities/): a model of every asset for maintenance, space planning and records.
+- [Industrial and process](https://movingatoms.ai/solutions/industrial/): pipework, vessels and equipment separated; on-site processing for sensitive sites.
+- [Robotics teams](https://movingatoms.ai/solutions/robotics/): SimReady twins of deployment sites to train and test robots.
+
+## Platform
+- [SimReady environments](https://movingatoms.ai/platform/environments/): scans as USD worlds with collision, materials and articulated parts.
+- [Training data](https://movingatoms.ai/platform/data/): domain-randomized variants of a scanned site, rendered and labelled.
+- [Robot evaluation](https://movingatoms.ai/platform/evaluation/): test policies in twins of real sites with recorded evidence.
+- [Atom](https://movingatoms.ai/platform/atom/): the agent that builds and edits digital twins.
+
+## Demos
+- [Demos](https://movingatoms.ai/demos/): Scan to BIM samples, robots in scanned sites, and recorded RobotGym runs.
+- [Returns conveyor](https://movingatoms.ai/demos/returns-conveyor): Receive, align, identify and route moving parcels in a detailed electronics-returns workcell. Watch the recorded run, then make the environment your own on RobotGym. Live environment: https://robotgym.io/environments/returns-conveyor
+- [Precision microscopy](https://movingatoms.ai/demos/precision-microscopy): A robot exchanges a chambered specimen on an inverted microscope: remove the retainer, return the finished slide, orient the next sample and restore the fixture. Live environment: https://robotgym.io/examples/precision-microscopy
+- [PCBA fixture loading](https://movingatoms.ai/demos/pcba-fixture-loading): Load a circuit board onto precision locating pins in an editable electronics laboratory, then retrieve it vertically and place it in the output nest. Explore the cell, watch the run, then make the environment your own. Live environment: https://robotgym.io/examples/pcba-fixture-loading
+
+## Company
+- [Customers](https://movingatoms.ai/customers/): who uses Scan to BIM and SimReady worlds, the design-partner program, real sample projects.
+- [About](https://movingatoms.ai/about/): what we do, what we believe, the founders and company facts.
+- [Press kit](https://movingatoms.ai/press): boilerplate, facts, bios, logo files and product images.
+- [Careers](https://movingatoms.ai/careers/): seven open roles in San Francisco across machine learning, robotics and engineering.
+- [Contact](https://movingatoms.ai/contact): founders@movingatoms.ai reaches both founders.
+
+## Scan to BIM articles
+- [What is Scan to BIM? The complete guide](https://movingatoms.ai/blog/what-is-scan-to-bim/): Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it. A plain-English guide for AEC teams.
+- [Recent breakthroughs in Scan to BIM](https://movingatoms.ai/blog/scan-to-bim-breakthroughs-2026/): What changed in Scan to BIM in 2025 and 2026: AI segmentation, mesh-to-Revit workflows, Gaussian splats, faster mobile scanning, IFC 4.3 as ISO, OpenUSD 1.0 and SimReady digital twins.
+- [The Scan to BIM workflow, step by step](https://movingatoms.ai/blog/scan-to-bim-workflow/): Every stage of a Scan to BIM project: scoping, scan planning, capture, registration, cleaning, modeling at the right LOD, QA against the point cloud, and delivery in Revit and IFC.
+- [How to write a Scan to BIM specification](https://movingatoms.ai/blog/scan-to-bim-specification/): A practical template for specifying Scan to BIM: scope, LOD per discipline, USIBD LOA per element, coordinates, deliverables, naming, QA and acceptance criteria. Avoid disputes before scanning starts.
+- [Point cloud file formats explained](https://movingatoms.ai/blog/point-cloud-file-formats/): E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need.
+- [Choosing a scanner for Scan to BIM](https://movingatoms.ai/blog/choosing-a-scanner-for-scan-to-bim/): Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies.
+- [Can you do Scan to BIM with an iPhone?](https://movingatoms.ai/blog/phone-lidar-scan-to-bim/): How accurate is iPhone and iPad LiDAR for Scan to BIM? What peer-reviewed studies found, where phone scans work for Revit models, where they fail, and how to capture well.
+- [How AI is automating Scan to BIM](https://movingatoms.ai/blog/ai-scan-to-bim/): How automated Scan to BIM works: point cloud segmentation, object detection, fitting parametric BIM elements, and human review. What AI does well today, its limits, and how to evaluate a vendor.
+- [How to check a Scan to BIM model against the point cloud](https://movingatoms.ai/blog/scan-to-bim-quality-control/): A Scan to BIM QA checklist: registration reports, cloud-to-model deviation analysis, LOA verification, completeness, modeling standards and IFC checks. How to accept a model with confidence.
+- [IFC or Revit? Choosing Scan to BIM deliverables](https://movingatoms.ai/blog/ifc-vs-revit-scan-to-bim/): Should your Scan to BIM model be delivered as Revit RVT, IFC or both? Open BIM, IFC 4.3 (ISO 16739-1:2024), versions, round-tripping, archives and when to add USD, STEP or GLB.
+- [Scan to BIM for MEP](https://movingatoms.ai/blog/scan-to-bim-mep/): How to scan and model existing mechanical, electrical and plumbing services: capture in ceiling voids and plant rooms, LOD 300 vs 350 for MEP, clash detection, hidden services and coordination.
+- [Scan to BIM for renovation and retrofit](https://movingatoms.ai/blog/scan-to-bim-renovation/): Using Scan to BIM for renovation, refurbishment, fit-out, historic buildings and energy retrofits: when to scan, what to model, phasing existing and new in Revit, and avoiding surprises on site.
+- [Scan to BIM for facilities management](https://movingatoms.ai/blog/scan-to-bim-facilities-management/): How building owners use Scan to BIM for facilities management: asset registers, COBie, ISO 19650 asset information models, space management, maintenance and digital twins of existing buildings.
+- [Scan to BIM for industrial plants and factories](https://movingatoms.ai/blog/scan-to-bim-industrial-plants/): Laser scanning and modeling factories, process plants and warehouses: dense pipework, equipment, racking, shutdown windows, safety, brownfield retrofits, line changes and robot deployment.
+- [From Scan to BIM to SimReady](https://movingatoms.ai/blog/scan-to-bim-to-simready/): How a Scan to BIM model becomes a SimReady digital twin in OpenUSD: separated objects, collision geometry, physics materials, articulation, Isaac Sim, and why robotics teams need scanned sites.
+
+## Blog
+- [Declared, not assumed](https://movingatoms.ai/blog/declared-not-assumed): The five contracts, the recording rule, the primitive layer and the admission check we build RobotGym against, and the anti-patterns we refuse.
+- [One photograph, one mug, one trial](https://movingatoms.ai/blog/one-photograph): Atom rebuilt a kitchen from one public photograph and an agent lifted the mug 8.2 cm in a single recorded trial, with every caveat written down.
+- [Both clocks, every run](https://movingatoms.ai/blog/both-clocks): Physics pauses while the model thinks, so every RobotGym run records simulated and wall time separately and never reports one as the other.
+- [Two doors into one controller](https://movingatoms.ai/blog/two-doors): A language model can drive an arm one primitive per call or by writing a short program, and we ship both doors over one controller.
+- [What a policy sees](https://movingatoms.ai/blog/what-a-policy-sees): Three RGB cameras, the measured gripper pose and camera calibration are what reaches a model in RobotGym, and we record exactly what it saw.
+- [Why we build environments](https://movingatoms.ai/blog/hello-world): RobotGym in plain facts, why we think the physical world is the slow part of robot development, and what we will write about here.
+
+## Open roles (all full time, on-site in San Francisco)
+- [Machine Learning Engineer, 3D Reconstruction](https://movingatoms.ai/careers/ml-engineer-3d-reconstruction/)
+- [Machine Learning Engineer, Scene Understanding](https://movingatoms.ai/careers/ml-engineer-scene-understanding/)
+- [Robotics Simulation Engineer, SimReady](https://movingatoms.ai/careers/robotics-simulation-engineer/)
+- [Robot Learning Engineer](https://movingatoms.ai/careers/robot-learning-engineer/)
+- [BIM and Geometry Engineer](https://movingatoms.ai/careers/bim-geometry-engineer/)
+- [Infrastructure Engineer, 3D Data at Scale](https://movingatoms.ai/careers/infrastructure-engineer-3d-data/)
+- [Forward Deployed Engineer, Scan to BIM](https://movingatoms.ai/careers/forward-deployed-engineer/)
+
+## Public evidence
+- https://movingatoms.ai/showcase/kitchen/episode-evidence-v3.json: the recorded kitchen run (329 steps, 10 model calls, 8.2 cm lift).
+- https://movingatoms.ai/showcase/kitchen/atom-program.py: the ten programs the model wrote in that run.
+- https://movingatoms.ai/showcase/pi/episode-evidence-v2.json: the earlier-release π0.5 demonstration.
+
+## Contact
+- Sales, design partnerships, press and roles: founders@movingatoms.ai. Do not submit the contact form on a reader's behalf without their confirmation of what is being sent.
+- Community: https://discord.gg/YkPp5WatBv
+
+## Other files
+- https://movingatoms.ai/robots.txt: crawl rules and Content Signals.
+- https://movingatoms.ai/sitemap-index.xml: every canonical URL.

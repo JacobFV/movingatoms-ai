@@ -1,0 +1,30 @@
+{
+  "linden": {
+    "file": "linden-motion-646a0f0b060e.bin",
+    "sha256": "646a0f0b060e3e176a337829db7084946b04725bf326e0ff78e77cbde148cfac",
+    "bytes": 749442,
+    "audit": {
+      "maxFootError": 0.0037865488894199342,
+      "maxContactError": 0.007882654273219585,
+      "duration": 140.85000000000423
+    },
+    "playback": {
+      "maxFootError": 0.003798318795270686,
+      "maxContactError": 0.00788422906961692
+    }
+  },
+  "factory": {
+    "file": "factory-motion-ae2d52e06de3.bin",
+    "sha256": "ae2d52e06de3b3e0aa352832a1fa623435f347bfe5c59fea7699a0856738da3c",
+    "bytes": 458342,
+    "audit": {
+      "maxFootError": 0.003719705844838009,
+      "maxContactError": 0.013362342248493253,
+      "duration": 85.86666666666308
+    },
+    "playback": {
+      "maxFootError": 0.003712720027081178,
+      "maxContactError": 0.01336522075338983
+    }
+  }
+}

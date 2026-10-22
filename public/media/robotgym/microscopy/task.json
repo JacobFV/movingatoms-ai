@@ -1,0 +1,90 @@
+{
+  "assumptions": [
+    "Representative microscopy workcell informed by attributed reference images and manufacturer slide dimensions.",
+    "Authored nest clearance is 0.5 mm per side; this is a test condition, not a manufacturer tolerance.",
+    "Ideal RGB and depth, supplied fixed-fixture calibration, paused inference timing and human evaluation.",
+    "Four rigid assemblies. Fluid, magnetic preload, sterility, assay and force-limited hardware handling are not modeled.",
+    "Published result is one accepted calibrated nominal run after iteration, not a robustness benchmark."
+  ],
+  "dynamic_object": "slide_next",
+  "dynamic_objects": [],
+  "fixed_objects": [],
+  "friction": 1.0,
+  "instruction": "Prepare the next chamber slide for imaging. The microscope currently holds S03 DONE under a separate black retaining frame. First lift that frame to FRAME PARK. Return S03 to the empty RETURN rack. Select S07 NEXT, leaving S09 HOLD untouched. Rotate S07 to match the microscope nest and lower it squarely onto the support ledges. Then replace the retaining frame around S07. Keep the culture lids attached. Release every object and retract. Inspect alignment and seating before finishing; use close views and small corrections. Do not move any other sample or equipment. Keep S07's identification tab toward the '0' end of the stage ruler to preserve well orientation.",
+  "lift_height": 0.08,
+  "mass_scale": 1.0,
+  "max_steps": 220,
+  "mvp": {
+    "limits": {
+      "sim_seconds": 300.0,
+      "wall_seconds": 1800,
+      "model_calls": 48,
+      "response_tokens": 8192,
+      "program_steps": 30000,
+      "final_settle_seconds": 2.0
+    },
+    "depth": true,
+    "timing": "paused",
+    "evaluation": "human",
+    "conveyor_speed": 0.02,
+    "conveyor": null,
+    "scanner": null,
+    "image_history": 1,
+    "layout": "nominal",
+    "cameras": {
+      "left": {
+        "position": [
+          0.22,
+          -0.57,
+          1.13
+        ],
+        "target": [
+          0.53,
+          -0.03,
+          0.83
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "fov": 47.0,
+        "frame": "scene"
+      },
+      "right": {
+        "position": [
+          0.83,
+          0.48,
+          1.14
+        ],
+        "target": [
+          0.53,
+          -0.03,
+          0.83
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "fov": 47.0,
+        "frame": "scene"
+      }
+    }
+  },
+  "object_mass": 0.025,
+  "physics_mode": "auto",
+  "policy_guidance": "The chambered carrier footprint is 75.5 by 25.5 mm and height with attached culture lid is 10.8 mm. The microscope nest has 0.5 mm clearance per side. Robot calibration for these parts: a stable slide grasp puts the TCP roughly 4 mm below the top of the attached culture lid; a stable frame grasp puts it roughly 8 mm below the top of its long rails. Jaw opening 0.65 is enough to clear these parts; use the finger-access cutouts. Approach vertically, lift clear before translating or turning, and inspect the actual grasp and seating. These are relative grasp dimensions, not target coordinates. Lift clear of the fixtures before translating or rotating; approximately 0.30 m above the robot base is the tested transfer height for this cell. Check the achieved pose and observations after each transfer. Calibrated fixed-fixture map, in robot-base metres: microscope slide center (0.540,0.220), slide support z=0.110 and frame FOOT support z=0.106; frame parking center (0.400,0.020), foot support z=0.066; RETURN center (0.330,0.280), support z=0.060, long axis Y; input rests centered (0.380,-0.160) and (0.660,-0.210), support z=0.060, long axes Y. Use camera labels to select the correct sample. The stage ruler zero end is toward positive base X. Calibrated gripper yaw for the initial slides in the input rests is +90 degrees. For the selected next slide, rotate the held gripper from +90 to 0 degrees at transfer height; do not use 180 degrees, which reverses specimen indexing. Use yaw 0 for the frame. The completed slide may turn from 0 to +90 for RETURN. Frame feet extend 33 mm below its rail top. Transfer at z=0.300. Slides can be held at support+0.007 m; frame grasp is foot support+0.025 m. These are fixed-cell calibrations, not live object state. Treat this fixed-cell calibration as the nominal setup; do not spend calls surveying known fixture centers. Plan one complete transfer per bounded program, with a checkpoint only after placing, releasing and retracting; checkpoint earlier only for an unexpected receipt or visible discrepancy. Budget four complete transfer programs plus finish. At each program end, inspect from the retracted transfer pose; the fixed fixture map and stated yaw already resolve nominal coordinates and orientation, so additional camera-survey or locate calls are unnecessary unless something visibly deviates. Select samples from their visible IDs. Do not call finish until the frame is restored. Keep the slide level and make the last lowering increment small. For this loading preset, use a transfer TCP height around 0.30 m above the robot base, lifting vertically before translating across the instrument.",
+  "robot": "franka-panda",
+  "robot_base": [
+    1.06,
+    0.02,
+    0.74
+  ],
+  "robot_yaw": 3.141592653589793,
+  "scene_version": null,
+  "seed": 7,
+  "source": "project",
+  "suite": "libero_spatial",
+  "task_id": 0
+}

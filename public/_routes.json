@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/assets/*",
+    "/fonts/*",
+    "/app/assets/*",
+    "/app/potree/*",
+    "/app/brand/*",
+    "/app/favicon.png",
+    "/app/favicon-dark.png",
+    "/app/apple-touch-icon.png",
+    "/home/*",
+    "/media/*",
+    "/shared/*",
+    "/_astro/*",
+    "/chat/*",
+    "/ma/stats.js",
+    "/ma/analytics/*",
+    "/ma/cal/*",
+    "/ma/fonts/*",
+    "/favicon.png",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/sitemap-index.xml",
+    "/llms.txt"
+  ]
+}

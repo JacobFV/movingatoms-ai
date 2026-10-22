@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical Warehouse: from capture to editable scene · Moving Atoms</title>
+<meta name="description" content="Explore a real warehouse captured on site and reconstructed in RobotGym. One camera connects the captured reference and the editable 3D environment.">
+<link rel="canonical" href="https://movingatoms.ai/medical-warehouse-scan/">
+<meta property="og:title" content="Medical Warehouse — capture to editable scene">
+<meta property="og:description" content="A captured warehouse rebuilt as individually editable assets. Explore both representations from one camera.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://movingatoms.ai/medical-warehouse-scan/">
+<meta property="og:image" content="https://movingatoms.ai/medical-warehouse-scan/Review/render-042.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0b12">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32.png">
+<link rel="stylesheet" href="/factory-floor-scan/style.css?v=20261011-baked-only">
+<link rel="stylesheet" href="/shared/scene-editor/style.css?v=20261014-medical-r016">
+<link rel="stylesheet" href="./style.css?v=20261014-medical-r016">
+<script type="importmap">
+{ "imports": { "three": "/factory-floor-scan/vendor/three.module.js", "three/addons/": "/factory-floor-scan/vendor/addons/" } }
+</script>
+<link rel="stylesheet" href="/shared/niantic-credit.css?v=3">
+</head>
+<body>
+<main class="stage" id="stage">
+  <canvas id="view" tabindex="0" aria-label="Medical Warehouse: captured surface points on the left, authored reconstruction on the right"></canvas>
+
+  <header class="top">
+    <a class="brand" href="/" aria-label="Moving Atoms home">
+      <svg viewBox="0 0 660 580" fill="none" aria-hidden="true"><path d="M152 88 76 494" stroke="#8d92ad" stroke-width="58" stroke-linecap="round"/><g stroke="currentColor" stroke-linecap="round"><path d="M152 88 338 390" stroke-width="150"/><path d="M520 260 576 494" stroke-width="120"/></g><g fill="currentColor"><circle cx="152" cy="88" r="88"/><circle cx="338" cy="390" r="78"/><circle cx="76" cy="494" r="76"/><circle cx="514" cy="78" r="78"/><circle cx="576" cy="494" r="78"/></g></svg>
+      <span>moving atoms</span>
+    </a>
+    <div class="title">
+      <h1>Medical Warehouse, <em>scan to scene</em></h1>
+      <p>Work in progress · Drag the handle to compare.</p>
+      <p class="ma-credit"><span class="long">Scan from <a href="https://www.nianticspatial.com/" target="_blank" rel="noopener">Niantic Spatial</a>, converted into separable meshes by Moving Atoms</span><span class="short"><span>Scan: <a href="https://www.nianticspatial.com/" target="_blank" rel="noopener">Niantic Spatial</a></span><span>Meshes: Moving Atoms</span></span></p>
+    </div>
+  </header>
+
+  <div class="tag tag-left" id="tagLeft">
+    <span class="kicker">Before</span>
+    <b>Capture-derived surface points</b>
+    <span class="ma-tag-credit">Scan: Niantic Spatial</span>
+    <span>Capture-derived preview · <span id="pointCount">3.0M</span> points</span>
+  </div>
+  <div class="tag tag-right" id="tagRight">
+    <span class="kicker">After</span>
+    <b>Authored reconstruction</b>
+    <span class="ma-tag-credit">Meshes: Moving Atoms</span>
+    <span id="lightingStatus">Individually editable assets</span>
+  </div>
+
+  <div class="divider" id="divider" role="slider" tabindex="0" aria-label="Comparison position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+    <div class="line"></div>
+    <div class="handle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  </div>
+
+  <nav class="scene-modes" aria-label="Scene mode">
+    <button id="compareBtn" type="button" class="pill" aria-pressed="true">Compare</button>
+    <button id="objectBtn" type="button" class="pill" aria-pressed="false" disabled>Object selection</button>
+  </nav>
+
+  <div class="controls">
+    <button id="tourBtn" type="button" class="pill" aria-pressed="true"><span class="dot"></span><span id="tourLabel">Guided tour</span></button>
+    <select id="viewSelect" class="pill" aria-label="Explore a warehouse viewpoint">
+      <option value="">Explore a viewpoint</option>
+    </select>
+    <button id="aboutBtn" type="button" class="pill">About</button>
+  </div>
+  <span class="hint" id="hint">Drag to look around · scroll or WASD to move</span>
+
+  <div class="loader" id="loader">
+    <div class="bar"><i id="loadBar"></i></div>
+    <span id="loadText">Loading scan…</span>
+  </div>
+</main>
+<dialog id="aboutDialog" aria-labelledby="aboutTitle">
+  <form method="dialog"><button class="close" aria-label="Close information">×</button></form>
+  <p class="eyebrow">Moving Atoms · RobotGym</p>
+  <h2 id="aboutTitle">From scan to scene</h2>
+  <p>Medical Warehouse was rebuilt as custom-authored, separately editable assets, fitted to a Niantic Spatial capture. Visible details follow the source; hidden surfaces and obscured construction are inferred.</p>
+  <p>The left side shows surface points derived from the capture’s depth, rather than original LiDAR. Both sides use the same camera.</p>
+  <p>Lighting and shadows were rendered in advance. Explore freely, or open the matched views to compare the current Blender renders with their reference images.</p>
+  <a class="pill download" href="/medical-warehouse-scan/gallery.html?mode=photos" target="_top">Matched reference views <span aria-hidden="true">↗</span></a>
+  <p class="dialog-help">Drag the center handle to compare. Choose a viewpoint for a shareable link, or pause the tour and explore freely. Use Q / E to move down / up.</p>
+</dialog>
+<noscript><p class="no-script">Enable JavaScript to explore the Medical Warehouse comparison.</p></noscript>
+<script type="module" src="./app.js?v=20261020-perf2"></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

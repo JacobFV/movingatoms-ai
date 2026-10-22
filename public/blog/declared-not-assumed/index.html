@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Declared, not assumed · Moving Atoms Blog</title>
+<meta name="description" content="The five contracts, the recording rule, the primitive layer and the admission check we build RobotGym against, and the anti-patterns we refuse." />
+<link rel="canonical" href="https://movingatoms.ai/blog/declared-not-assumed/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/declared-not-assumed/" />
+<meta property="og:title" content="Declared, not assumed · Moving Atoms Blog" />
+<meta property="og:description" content="The five contracts, the recording rule, the primitive layer and the admission check we build RobotGym against, and the anti-patterns we refuse." />
+<meta property="og:image" content="https://movingatoms.ai/media/blog/declared-not-assumed.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Declared, not assumed · Moving Atoms Blog" />
+<meta name="twitter:description" content="The five contracts, the recording rule, the primitive layer and the admission check we build RobotGym against, and the anti-patterns we refuse." />
+<meta name="twitter:image" content="https://movingatoms.ai/media/blog/declared-not-assumed.webp" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Declared, not assumed","datePublished":"2026-09-09","dateModified":"2026-09-09","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/media/blog/declared-not-assumed.webp","mainEntityOfPage":"https://movingatoms.ai/blog/declared-not-assumed/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Declared, not assumed","item":"https://movingatoms.ai/blog/declared-not-assumed/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Declared, not assumed</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">conventions</p><h1>Declared, not assumed</h1>
+    <p class="meta-line"><span>09 September 2026</span><span>Moving Atoms</span></p>
+    <div class="img" style="margin:32px 0 8px;border-radius:16px;overflow:hidden;border:1px solid var(--line)"><img style="display:block;width:100%;height:auto" src="/media/blog/declared-not-assumed.webp" alt="A robot arm drawn as an engineering drawing with dimension lines and coordinate axes"></div>
+    <div class="prose"><p>A wrist camera whose position is measured from the wrist flange instead of from the fingertips shifts every point the model sees by the length of the gripper. Nothing crashes. The arm goes somewhere plausible and wrong, and the run is recorded as a policy failure. We have lost time to that class of mistake and to its cousins: a rotation written in one convention and read in another, a camera principal point with the opposite sign to the library everyone assumes, a gripper whose closed reading nobody wrote down.</p>
+<p>Every one of those bugs is an assumption that could have been a declaration. This post is about the conventions we build RobotGym against so that they are declarations. It describes how we work, not how anyone else should.</p>
+<h2 id="five-contracts">Five contracts</h2>
+<p>The platform is held together by five contracts. Everything a robot, a policy, a task or a recording does is declared against one of them.</p>
+<ul>
+<li>The embodiment description is the datasheet a robot hands the platform: its joints and their limits, its gripper and what its open and closed readings are, its cameras and their calibration, its controller and control rate, the action families it accepts, and the frames and units it uses.</li>
+<li>The action contract says what a command means: which family, in which frame, in which units, with which limits and which gripper semantics.</li>
+<li>The observation contract says what a policy receives: which images, which state fields, their units and frames, the calibration, and the instant they were sampled.</li>
+<li>The episode contract says what one attempt is: the reset and seed, the limits, the success predicate, the clock mode and the set of termination reasons.</li>
+<li>The recording contract says what gets saved, in what layout, with what provenance and license.</li>
+</ul>
+<p>A policy declares what it needs from the action and observation contracts. An embodiment declares what it offers. Nothing is inferred from the length of an action array, from the direction a number moves, or from what the last person to touch the code remembers. Units are metres, radians and seconds. The quaternion order is written down, XYZW, rather than assumed. The state a policy receives is the achieved state, never the commanded one, and the point called the hand is the point between the fingertips.</p>
+<p>Each contract is versioned, and a run freezes the versions it ran under, together with the hashes of the scene and the source and the model identifier the provider actually returned. A run from months ago has to remain interpretable without anyone’s memory.</p>
+<h2 id="both-forms-of-every-action">Both forms of every action</h2>
+<p>An action passes through three forms on its way to the motors. The policy emits it in canonical form, which for a language model is an absolute hand pose and a gripper fraction. The adapter converts it to the native command the controller executes. The arm then does something, and that is the achieved state.</p>
+<p>We record all three. The transcript holds what the model asked for. The command receipts hold what the controller was sent, with identifiers and revisions. The trajectory holds what the arm did, at 20 Hz.</p>
+<p>The reason is that recording one form and deriving the others later is how datasets rot. The adapter changes version, the derivation changes with it, and a corpus that looked consistent is now two corpora with the same file names. Someone with the same robot stack wants the native command to reproduce a motion exactly. Someone training across robots wants the canonical form. The gap between the command and the achieved state is itself the most useful signal in the file. Keeping all three costs disk. Losing one costs the dataset.</p>
+<h2 id="primitives-that-compile-down">Primitives that compile down</h2>
+<p>A language model does not emit twenty small vectors a second. It names a destination and a condition. So the interface we give it is a set of primitives: <code>move_to</code>, <code>move_by</code>, <code>rotate_down</code>, <code>grip</code>, <code>hold</code>, <code>look</code> (also called <code>checkpoint</code>), <code>program</code> and <code>finish</code>. Same names and same meanings on every robot that has an adapter, with the robot-specific behaviour inside the adapter and not in the prompt.</p>
+<p>Each primitive compiles into a bounded chunk of the same raw actions a learned policy would emit, through the same 20 Hz waypoint generator, the same inverse kinematics and the same joint servos. Whether the model calls one primitive per turn or writes a short program over several, the controller cannot tell the difference. That is what lets a result from one door be set beside a result from the other, and it is why the saved programs in our audits replayed with bit-identical actions.</p>
+<p>There is a line here that we hold. Anything that names an object, a hypothetical <code>locate(mug)</code> or <code>pick(mug)</code>, adds capability the model did not have, and a run that used it is a measurement of a different system. Our one assist, ideal depth assistance, is a visible-surface depth lookup at a pixel the model chooses. It is sensor math rather than perception, and even so it is frozen and labelled per run so that nobody compares a run that had it with one that did not.</p>
+<h2 id="admission-before-compute">Admission before compute</h2>
+<p>Conventions that are not enforced are suggestions. The enforcement point is the moment a run is requested.</p>
+<p>Before any GPU time is spent, the platform checks that the policy’s declared needs match what the embodiment offers, that the requested robot has a tested adapter, and that the configuration is one it can run. A mismatch returns an error that says what mismatched, and nothing runs. A match freezes the scene, the controller, the prompt and the model, reserves a slot, and starts. The server rejects a robot mismatch before the queue ever sees the request.</p>
+<p>This is also why the workspace exposes one robot. Six arms times forty LIBERO tasks passed startup, camera and observation checks on our side. That is infrastructure validation, and it says nothing about whether any policy succeeds on them. The Franka Panda is the reference robot because it is the one with a tested adapter, a validated gripper mapping and recorded trials behind it. The others stay out of the menu until they can pass the same admission.</p>
+<p>Four anti-patterns follow from all of this, and the platform is built to refuse each of them rather than to warn about them.</p>
+<ul>
+<li>Padding every robot’s actions into one giant vector with masks for the unused slots. It works inside a single training run and poisons an interface.</li>
+<li>Inferring gripper semantics from whether a number goes up or down. The reading for closed is a declared field.</li>
+<li>Reporting a lockstep result as real-time performance. Both clocks are recorded on every run, and the clock mode is part of the result.</li>
+<li>Recording only the canonical action and regenerating the native command later.</li>
+</ul>
+<p>The wrist camera’s transform is now recomputed at every observation and saved beside the images it produced. Nothing in RobotGym is inferred from the length of an action array.</p>
+</div><hr style="border:0;height:1px;background:var(--line);margin:44px 0 22px"><p class="small">Questions about this post go to <a href="/cdn-cgi/l/email-protection#3f59504a515b5a4d4c7f5250495651585e4b50524c115e56"><span class="__cf_email__" data-cfemail="3f59504a515b5a4d4c7f5250495651585e4b50524c115e56">[email&#160;protected]</span></a>. Numbers in it come from recorded runs and their evidence files, linked where they appear.</p></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/">All posts<span>Guides and engineering notes.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

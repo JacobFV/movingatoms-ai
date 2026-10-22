@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>LiDAR Samples · Moving Atoms</title>
+    <meta name="description" content="Explore Rotterdam’s original LiDAR point cloud and reconstructed piping scene from one shared camera." />
+    <link rel="canonical" href="https://movingatoms.ai/lidarsample/" />
+    <meta property="og:title" content="Rotterdam · LiDAR Samples · Moving Atoms" />
+    <meta property="og:description" content="Compare Rotterdam’s LiDAR point cloud with its reconstructed mesh." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://movingatoms.ai/lidarsample/" />
+    <meta property="og:image" content="https://movingatoms.ai/rotterdam-scan/review/whole_02/model.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/logo/favicon-32.png" sizes="32x32" />
+    <link rel="stylesheet" href="/lidarsample/style.css?v=20261019-sample4" />
+    <script defer src="/lidarsample/app.js?v=20261020-switch2"></script>
+  </head>
+  <body data-scene="rotterdam">
+    <main class="viewer" data-viewer>
+      <iframe
+        class="scene-frame"
+        data-scene-frame
+        title="LiDAR sample"
+        allow="fullscreen"
+      ></iframe>
+
+      <div class="loading" data-loading aria-live="polite">
+        <span class="loading-mark" aria-hidden="true"></span>
+        <span>Loading the sample</span>
+      </div>
+
+      <nav class="scene-switcher" aria-label="LiDAR sample scenes">
+        <span class="switcher-label"><i aria-hidden="true"></i> LiDAR samples</span>
+        <div class="scene-tabs" data-scene-tabs role="tablist" aria-label="Choose a scene">
+          <button class="scene-tab is-active" type="button" role="tab" aria-selected="true">
+            <span class="scene-type">&nbsp;</span>
+            <strong>&nbsp;</strong>
+          </button>
+        </div>
+        <span class="scene-count" data-scene-count>01 / 04</span>
+        <a class="scene-download" data-scene-download hidden href="/lidarsample/revit/Factory_Floor_Revit2027.zip?v=20261019-aligned-bim" download title="Download the Factory Floor Revit 2027 model (.rvt, 806 MB zip)">
+          <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14"><path d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M3 13h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="download-label"><span class="download-verb">Download </span>Revit <small data-download-size>806 MB</small></span>
+        </a>
+      </nav>
+    </main>
+  <script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

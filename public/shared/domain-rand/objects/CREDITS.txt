@@ -1,0 +1,12 @@
+Domain randomization props (browser derivatives: textures resized to 1024 px WebP, Meshopt-compressed).
+
+mug-white, mug-yellow, mug-blue
+  Google Scanned Objects (Google Research), via Gazebo Fuel:
+  Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White, Room_Essentials_Mug_White_Yellow, Cole_Hardware_Mug_Classic_Blue
+  License: Creative Commons Attribution 4.0 International (CC BY 4.0) https://creativecommons.org/licenses/by/4.0/
+
+bottle-water
+  "Water Bottle", Khronos glTF Sample Assets. License: CC0 1.0
+
+bottle-thermos, bottle-vintage, plant-succulent, pot-clay
+  Poly Haven (polyhaven.com): plastic_thermos, modified_thermos, potted_plant_04, planter_pot_clay. License: CC0 1.0

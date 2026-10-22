@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Your estimate · Moving Atoms</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/quote/quote.css?v=7" />
+<style>
+  .appnote { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; width: min(1320px, calc(100% - 40px)); margin: 20px auto 0; padding: 14px 16px 14px 20px; border: 1px solid var(--line-2); border-radius: 16px; background: #070707; color: var(--fg-2); font-size: 14.5px; line-height: 1.5; }
+  .appnote p { margin: 0; max-width: 72ch; }
+  .appnote b { color: #fff; font-weight: 500; }
+  .appnote .btn { height: 36px; padding: 0 16px; font-size: 14px; }
+</style>
+</head>
+<body class="dash qpage">
+
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost book" href="/contact" data-cal>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg>
+      Book a meeting
+    </a>
+    <a class="btn btn-white" href="/dashboard/">Dashboard</a>
+  </div>
+</header>
+
+<!-- the app has taken over new uploads (movingatoms.ai/app, 2026-10-22): this page stays for earlier scans and quotes -->
+<aside class="appnote" role="note">
+  <p><b>New: the Moving Atoms app.</b> New scans now open as a project in the app: your estimate, then the agent building your model in a shared 3D view. Your earlier scans and quotes stay here.</p>
+  <a class="btn btn-white" href="/app/">Open the app</a>
+</aside>
+
+<main class="qwrap" id="qroot" data-auto></main>
+
+<footer class="foot">
+  <img src="/assets/logo-white.png" alt="Moving Atoms" width="93" height="20" />
+  <nav aria-label="Footer">
+    <a href="/">Home</a>
+    <a href="/lidarsample/">Samples</a>
+    <a href="/contact">Contact</a>
+    <a href="/terms/">Terms</a>
+    <a href="/privacy/">Privacy</a>
+  </nav>
+  <p>© 2026 Moving Atoms Inc.</p>
+</footer>
+
+<script type="module" src="/quote/quote.js?v=18"></script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+<script defer src="/ma/analytics/ma-analytics.js"></script>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

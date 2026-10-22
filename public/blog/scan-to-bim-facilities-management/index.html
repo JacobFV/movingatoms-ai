@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Scan to BIM for Facilities Management and Digital Twins | Moving Atoms</title>
+<meta name="description" content="How building owners use Scan to BIM for facilities management: asset registers, COBie, ISO 19650 asset information models, space management, maintenance and digital twins of existing buildings." />
+<link rel="canonical" href="https://movingatoms.ai/blog/scan-to-bim-facilities-management/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/scan-to-bim-facilities-management/" />
+<meta property="og:title" content="Scan to BIM for Facilities Management and Digital Twins" />
+<meta property="og:description" content="How building owners use Scan to BIM for facilities management: asset registers, COBie, ISO 19650 asset information models, space management, maintenance and digital twins of existing buildings." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Scan to BIM for Facilities Management and Digital Twins" />
+<meta name="twitter:description" content="How building owners use Scan to BIM for facilities management: asset registers, COBie, ISO 19650 asset information models, space management, maintenance and digital twins of existing buildings." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Scan to BIM for Facilities Management and Digital Twins","description":"How building owners use Scan to BIM for facilities management: asset registers, COBie, ISO 19650 asset information models, space management, maintenance and digital twins of existing buildings.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/scan-to-bim-facilities-management/","articleSection":"Use case","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://www.iso.org/standard/68078.html","https://www.cdbb.cam.ac.uk/files/air_guidance.pdf","https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-D_Developing-information-requirements_Edition-2.pdf","https://www.wbdg.org/bim/cobie","https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is Scan to BIM used in facilities management?","acceptedAnswer":{"@type":"Answer","text":"A scan-based model locates every asset and space in 3D with identifiers and properties, which feed maintenance, space management and capital planning systems."}},{"@type":"Question","name":"What LOD is needed for facilities management?","acceptedAnswer":{"@type":"Answer","text":"Usually LOD 200 to 300. Separated assets and good data matter more than geometric detail."}},{"@type":"Question","name":"What is COBie?","acceptedAnswer":{"@type":"Answer","text":"COBie (Construction-Operations Building information exchange) is a widely used format for handing building asset data to facilities management systems."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Scan to BIM for facilities management","item":"https://movingatoms.ai/blog/scan-to-bim-facilities-management/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Scan to BIM for facilities management</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Use case</p><h1>Scan to BIM for facilities management</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">Most buildings were handed over without a usable model. Scan to BIM gives owners and facilities teams one after the fact: every asset located, identified and ready to connect to maintenance and space systems.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>7 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#why">Why owners scan existing buildings</a></li><li><a href="#what">What a facilities model needs</a></li><li><a href="#standards">Standards that help</a></li><li><a href="#process">A practical process</a></li><li><a href="#twin">From model to digital twin</a></li><li><a href="#portfolio">Portfolios</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="why">Why owners scan existing buildings</h2>
+<p>Facilities teams manage thousands of assets: air handlers, pumps, fire equipment, lighting, doors, furniture. Records are often spreadsheets that do not say where anything is. A model built from a scan places every asset in 3D with its type and properties, which makes maintenance planning, space management and capital planning much easier.</p>
+
+<h2 id="what">What a facilities model needs</h2>
+<ul>
+<li><strong>Assets as individual objects</strong>, not merged geometry, so each can carry an ID and data.</li>
+<li><strong>Spaces and rooms</strong> with names, numbers and areas.</li>
+<li><strong>Consistent classification</strong> of asset types.</li>
+<li><strong>Properties</strong> that link to your CAFM or CMMS system: asset tag, manufacturer, model, service dates.</li>
+<li><strong>Modest geometry.</strong> LOD 200 to 300 is usually enough; information matters more than detail (see <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>).</li>
+</ul>
+
+<h2 id="standards">Standards that help</h2>
+<ul>
+<li><a href="https://www.iso.org/standard/68078.html" target="_blank" rel="noopener">ISO 19650</a> defines the <strong>asset information model</strong> (AIM) and the asset information requirements that describe it. The <a href="https://www.cdbb.cam.ac.uk/files/air_guidance.pdf" target="_blank" rel="noopener">CDBB guidance on asset information requirements</a> is a practical starting point.</li>
+<li><a href="https://www.wbdg.org/bim/cobie" target="_blank" rel="noopener">COBie</a> is a widely used format for handing asset data to facilities systems.</li>
+<li><a href="https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/" target="_blank" rel="noopener">IFC</a> is the open format to keep the model in for the long term (see <a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit?</a>).</li>
+</ul>
+
+<h2 id="process">A practical process</h2>
+<ol>
+<li>Define what you need: which asset types, which properties, which system they feed.</li>
+<li>Scan the building; mobile scanners are efficient for large portfolios (see <a href="/blog/choosing-a-scanner-for-scan-to-bim/">choosing a scanner</a>).</li>
+<li>Model spaces and assets, with each asset separated.</li>
+<li>Populate identifiers and link to existing asset registers.</li>
+<li>Export IFC or COBie and import into your facilities system.</li>
+<li>Rescan changed areas after major works to keep the model current.</li>
+</ol>
+
+<h2 id="twin">From model to digital twin</h2>
+<p>A digital twin connects the model to live data: sensors, work orders, occupancy. The scan-based model is the spatial backbone. Twins built on OpenUSD can also be used for simulation, for example testing how robots for cleaning, delivery or inspection would move through the building (see <a href="/blog/scan-to-bim-to-simready/">from Scan to BIM to SimReady</a>).</p>
+
+<h2 id="portfolio">Portfolios</h2>
+<p>For owners with many sites, speed and consistency matter more than anything. Automated modeling (see <a href="/blog/ai-scan-to-bim/">AI Scan to BIM</a>) makes it practical to model a portfolio in weeks. Moving Atoms separates every object in each building and delivers within 48 hours per site, with on-site processing available for secure facilities. <a href="/#up">upload a scan</a> or open the <a href="/lidarsample/">LiDAR samples</a>.</p>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>How is Scan to BIM used in facilities management?</summary><p>A scan-based model locates every asset and space in 3D with identifiers and properties, which feed maintenance, space management and capital planning systems.</p></details><details><summary>What LOD is needed for facilities management?</summary><p>Usually LOD 200 to 300. Separated assets and good data matter more than geometric detail.</p></details><details><summary>What is COBie?</summary><p>COBie (Construction-Operations Building information exchange) is a widely used format for handing building asset data to facilities management systems.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://www.iso.org/standard/68078.html" target="_blank" rel="noopener">ISO, ISO 19650-1:2018 Organization and digitization of information about buildings</a></li><li><a href="https://www.cdbb.cam.ac.uk/files/air_guidance.pdf" target="_blank" rel="noopener">CDBB, Asset information requirements guidance</a></li><li><a href="https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-D_Developing-information-requirements_Edition-2.pdf" target="_blank" rel="noopener">UK BIM Framework, Guidance Part D: Developing information requirements</a></li><li><a href="https://www.wbdg.org/bim/cobie" target="_blank" rel="noopener">WBDG, Construction-Operations Building information exchange (COBie)</a></li><li><a href="https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/" target="_blank" rel="noopener">buildingSMART, Industry Foundation Classes (IFC)</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit? Choosing Scan to BIM deliverables<span>Should your Scan to BIM model be delivered as Revit RVT, IFC or both?</span></a></li><li><a href="/blog/scan-to-bim-to-simready/">From Scan to BIM to SimReady<span>How a Scan to BIM model becomes a SimReady digital twin in OpenUSD: separated objects, collision geometry, physics materials, articulation, Isaac Sim, and why robotics teams need scanned sites.</span></a></li><li><a href="/blog/scan-to-bim-specification/">How to write a Scan to BIM specification<span>A practical template for specifying Scan to BIM: scope, LOD per discipline, USIBD LOA per element, coordinates, deliverables, naming, QA and acceptance criteria.</span></a></li><li><a href="/blog/what-is-scan-to-bim/">What is Scan to BIM? The complete guide<span>Scan to BIM explained: how laser scans become Revit and IFC models, the workflow, LOD and accuracy, costs, software, and when to use it.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

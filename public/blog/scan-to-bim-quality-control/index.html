@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Scan to BIM Quality Control: How to Check a Model Against the Point Cloud | Moving Atoms</title>
+<meta name="description" content="A Scan to BIM QA checklist: registration reports, cloud-to-model deviation analysis, LOA verification, completeness, modeling standards and IFC checks. How to accept a model with confidence." />
+<link rel="canonical" href="https://movingatoms.ai/blog/scan-to-bim-quality-control/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/scan-to-bim-quality-control/" />
+<meta property="og:title" content="Scan to BIM Quality Control: How to Check a Model Against the Point Cloud" />
+<meta property="og:description" content="A Scan to BIM QA checklist: registration reports, cloud-to-model deviation analysis, LOA verification, completeness, modeling standards and IFC checks. How to accept a model with confidence." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Scan to BIM Quality Control: How to Check a Model Against the Point Cloud" />
+<meta name="twitter:description" content="A Scan to BIM QA checklist: registration reports, cloud-to-model deviation analysis, LOA verification, completeness, modeling standards and IFC checks. How to accept a model with confidence." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Scan to BIM Quality Control: How to Check a Model Against the Point Cloud","description":"A Scan to BIM QA checklist: registration reports, cloud-to-model deviation analysis, LOA verification, completeness, modeling standards and IFC checks. How to accept a model with confidence.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/scan-to-bim-quality-control/","articleSection":"Guide","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://usibd.org/","https://dev.geoweeknews.com/articles/vol12no40-usibds-new-level-of-accuracy-specificiation/","https://www.cloudcompare.org/","https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/","https://www.mdpi.com/2072-4292/16/17/3256/html"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you check the accuracy of a Scan to BIM model?","acceptedAnswer":{"@type":"Answer","text":"Run a deviation analysis that measures distances from the point cloud to the model surfaces, by element category, and compare the results with the agreed LOA at 95% confidence."}},{"@type":"Question","name":"What software is used for deviation analysis?","acceptedAnswer":{"@type":"Answer","text":"ClearEdge3D Verity, Leica Cyclone 3DR, FARO software, Navisworks and the open-source CloudCompare are commonly used."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"How to check a Scan to BIM model against the point cloud","item":"https://movingatoms.ai/blog/scan-to-bim-quality-control/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">How to check a Scan to BIM model against the point cloud</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Guide</p><h1>How to check a Scan to BIM model against the point cloud</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">A Scan to BIM model looks convincing whether it is right or not. The only way to know is to measure it against the scan. This is the checklist we recommend for accepting any model, ours included.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>7 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#layers">Check three things, in order</a></li><li><a href="#scan">Check the scan</a></li><li><a href="#deviation">Run a deviation analysis</a></li><li><a href="#spot">Spot-check critical dimensions</a></li><li><a href="#complete">Check completeness</a></li><li><a href="#standards">Check modeling standards</a></li><li><a href="#ifc">Check the IFC</a></li><li><a href="#accept">Acceptance checklist</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="layers">Check three things, in order</h2>
+<ol>
+<li><strong>The scan</strong>: is the point cloud itself accurate and complete?</li>
+<li><strong>The geometry</strong>: does the model match the point cloud within the agreed tolerance?</li>
+<li><strong>The information</strong>: is the model built to your standards and usable in your tools?</li>
+</ol>
+
+<h2 id="scan">1. Check the scan</h2>
+<ul>
+<li><strong>Registration report.</strong> Look at errors between scans and against survey control. Large or uneven errors show up later as doubled or skewed walls.</li>
+<li><strong>Control check.</strong> Compare a few independently surveyed points with the cloud.</li>
+<li><strong>Coverage.</strong> Walk through the cloud. Note shadows, missing ceiling voids and inaccessible rooms.</li>
+<li><strong>Noise.</strong> Check that people, vehicles and reflections were cleaned out.</li>
+</ul>
+<p>The model can never be more accurate than this data. See <a href="/blog/choosing-a-scanner-for-scan-to-bim/">choosing a scanner</a> for typical accuracy by device.</p>
+
+<h2 id="deviation">2. Run a deviation analysis</h2>
+<p>A deviation analysis measures the distance from every point to the nearest modeled surface and colours the result. Tools include ClearEdge3D Verity, Leica Cyclone 3DR, FARO software, Navisworks and the open-source <a href="https://www.cloudcompare.org/" target="_blank" rel="noopener">CloudCompare</a>, which can compute cloud-to-mesh distances after exporting the model as a mesh.</p>
+<ul>
+<li>Compare by element category so results map to the LOA in the specification (see <a href="/blog/scan-to-bim-specification/">how to write a Scan to BIM specification</a>).</li>
+<li>Look at the distribution, not just the average: the <a href="https://usibd.org/" target="_blank" rel="noopener">USIBD LOA</a> bands are stated at 95% confidence.</li>
+<li>Investigate clusters of large deviation. They usually mean a misplaced element, a missed object or a registration problem.</li>
+<li>Remember that points on things not modeled (furniture, clutter) will show large deviations. Filter them out.</li>
+</ul>
+
+<h2 id="spot">3. Spot-check critical dimensions</h2>
+<p>Measure a handful of dimensions that matter to the design in both the cloud and the model: floor-to-floor heights, structural grid spacing, opening widths, clearances in plant rooms, pipe centrelines at connection points.</p>
+
+<h2 id="complete">4. Check completeness</h2>
+<ul>
+<li>Every area and discipline in scope is modeled.</li>
+<li>Inferred geometry (hidden behind finishes or out of view) is flagged, for example with a parameter or workset.</li>
+<li>Objects that should be separate elements are not merged.</li>
+</ul>
+
+<h2 id="standards">5. Check modeling standards</h2>
+<ul>
+<li>Correct categories: walls as walls, not generic models; pipes as pipes.</li>
+<li>Levels, grids and phases as specified; existing elements on an "Existing" phase if required.</li>
+<li>Naming, worksets and parameters as in your template.</li>
+<li>Coordinates match the survey control or project base point.</li>
+<li>LOD per discipline as specified (see <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>).</li>
+</ul>
+
+<h2 id="ifc">6. Check the IFC</h2>
+<p>Open the IFC in an independent viewer and check that entity types, property sets and spatial structure came through the export. If your organisation defines requirements formally, buildingSMART's <a href="https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/" target="_blank" rel="noopener">Information Delivery Specification (IDS)</a> lets you check an IFC automatically. See <a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit?</a>.</p>
+
+<h2 id="accept">Acceptance checklist</h2>
+<div class="table-wrap"><table><thead><tr><th>Check</th><th>Pass when</th></tr></thead><tbody><tr><td>Registration</td><td>Errors within the specified tolerance; report supplied</td></tr><tr><td>Deviation</td><td>Each element category meets its LOA at 95% confidence</td></tr><tr><td>Critical dimensions</td><td>Spot checks agree within tolerance</td></tr><tr><td>Completeness</td><td>All scope modeled; inferred geometry flagged</td></tr><tr><td>Standards</td><td>Categories, levels, phases, naming and coordinates as specified</td></tr><tr><td>IFC</td><td>Opens cleanly; types and properties correct</td></tr></tbody></table></div>
+<p>Apply the same checklist to any provider, us included. You can compare scan and model side by side, from the same camera, in our <a href="/lidarsample/">LiDAR samples</a>.</p>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>How do you check the accuracy of a Scan to BIM model?</summary><p>Run a deviation analysis that measures distances from the point cloud to the model surfaces, by element category, and compare the results with the agreed LOA at 95% confidence.</p></details><details><summary>What software is used for deviation analysis?</summary><p>ClearEdge3D Verity, Leica Cyclone 3DR, FARO software, Navisworks and the open-source CloudCompare are commonly used.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://usibd.org/" target="_blank" rel="noopener">USIBD, Level of Accuracy (LOA) Specification</a></li><li><a href="https://dev.geoweeknews.com/articles/vol12no40-usibds-new-level-of-accuracy-specificiation/" target="_blank" rel="noopener">Geo Week News, The USIBD's new Level of Accuracy specification</a></li><li><a href="https://www.cloudcompare.org/" target="_blank" rel="noopener">CloudCompare, open-source point cloud and mesh processing</a></li><li><a href="https://www.buildingsmart.org/standards/bsi-standards/information-delivery-specification-ids/" target="_blank" rel="noopener">buildingSMART, Information Delivery Specification (IDS)</a></li><li><a href="https://www.mdpi.com/2072-4292/16/17/3256/html" target="_blank" rel="noopener">Gharineiat et al., Assessment of NavVis VLX and BLK2GO SLAM scanner accuracy, Remote Sensing 16(17), 2024</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/scan-to-bim-specification/">How to write a Scan to BIM specification<span>A practical template for specifying Scan to BIM: scope, LOD per discipline, USIBD LOA per element, coordinates, deliverables, naming, QA and acceptance criteria.</span></a></li><li><a href="/blog/scan-to-bim-workflow/">The Scan to BIM workflow, step by step<span>Every stage of a Scan to BIM project: scoping, scan planning, capture, registration, cleaning, modeling at the right LOD, QA against the point cloud, and delivery in Revit and IFC.</span></a></li><li><a href="/blog/ai-scan-to-bim/">How AI is automating Scan to BIM<span>How automated Scan to BIM works: point cloud segmentation, object detection, fitting parametric BIM elements, and human review.</span></a></li><li><a href="/blog/ifc-vs-revit-scan-to-bim/">IFC or Revit? Choosing Scan to BIM deliverables<span>Should your Scan to BIM model be delivered as Revit RVT, IFC or both?</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

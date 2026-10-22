@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rotterdam · LiDAR scan to mesh · Moving Atoms</title>
+  <meta name="description" content="Explore Rotterdam's original LiDAR point cloud and reconstructed piping scene from one shared camera.">
+  <link rel="canonical" href="https://movingatoms.ai/lidarsample/?scene=rotterdam">
+  <meta name="theme-color" content="#0a0b12">
+  <link rel="icon" href="/assets/logo/favicon-32.png">
+  <link rel="stylesheet" href="/factory-floor-scan/style.css?v=20261011-baked-only">
+  <link rel="stylesheet" href="/shared/scene-editor/style.css?v=20261019-rotterdam-objects">
+  <link rel="stylesheet" href="./style.css?v=20261019-rotterdam-objects">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+<main class="stage" id="stage">
+  <div class="preview" id="preview" aria-label="Matched point cloud and mesh images">
+    <img id="modelPreview" alt="Rotterdam reconstructed mesh at the selected viewpoint">
+    <img id="cloudPreview" alt="Original Rotterdam LiDAR points at the same viewpoint">
+  </div>
+  <canvas id="view" tabindex="0" aria-label="Rotterdam: LiDAR point cloud on the left, reconstructed mesh on the right" hidden></canvas>
+  <header class="top">
+    <a class="brand" href="/" target="_top" aria-label="Moving Atoms home">
+      <svg viewBox="0 0 660 580" fill="none" aria-hidden="true"><path d="M152 88 76 494" stroke="#8d92ad" stroke-width="58" stroke-linecap="round"/><g stroke="currentColor" stroke-linecap="round"><path d="M152 88 338 390" stroke-width="150"/><path d="M520 260 576 494" stroke-width="120"/></g><g fill="currentColor"><circle cx="152" cy="88" r="88"/><circle cx="338" cy="390" r="78"/><circle cx="76" cy="494" r="76"/><circle cx="514" cy="78" r="78"/><circle cx="576" cy="494" r="78"/></g></svg>
+      <span>moving atoms</span>
+    </a>
+    <div class="title"><h1>Rotterdam, <em>scan to mesh</em></h1><p>One camera, two worlds. Drag the handle to compare.</p></div>
+  </header>
+  <div class="tag tag-left" id="tagLeft"><span class="kicker">Before</span><b>LiDAR point cloud</b><span>7.85M points · full-capture sample</span></div>
+  <div class="tag tag-right" id="tagRight"><span class="kicker">After</span><b>Reconstructed mesh</b><span>Piping, equipment and structures</span></div>
+  <div class="divider" id="divider" role="slider" tabindex="0" aria-label="Comparison position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+    <div class="line"></div><div class="handle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  </div>
+  <div class="mode-status" id="modeStatus">
+    <span id="loadText" role="status">Loading matched views…</span>
+    <button class="pill" id="liveBtn" type="button" hidden>Explore in 3D · 216 MB</button>
+  </div>
+  <nav class="scene-modes" id="sceneModes" aria-label="Scene mode" hidden>
+    <button id="compareBtn" type="button" class="pill" aria-pressed="true">Compare</button>
+    <button id="objectBtn" type="button" class="pill" aria-pressed="false" disabled>Object selection</button>
+  </nav>
+  <nav class="controls" aria-label="Rotterdam viewer controls">
+    <button id="tourBtn" type="button" class="pill" aria-pressed="false"><span class="dot"></span><span id="tourLabel">Start tour</span></button>
+    <select id="viewSelect" class="pill" aria-label="Explore a Rotterdam viewpoint"></select>
+    <button id="aboutBtn" type="button" class="pill">About</button>
+  </nav>
+  <span class="hint" id="hint">Drag the handle to compare the matched views</span>
+</main>
+<dialog id="aboutDialog" aria-labelledby="aboutTitle">
+  <form method="dialog"><button class="close" aria-label="Close information">×</button></form>
+  <p class="eyebrow">Moving Atoms · LiDAR sample 01</p>
+  <h2 id="aboutTitle">Rotterdam, scan to mesh</h2>
+  <p>The left side shows original LiDAR points sampled across the complete 188.4-million-point Rotterdam capture. The interactive preview contains 7.85 million points; natural scan occlusions remain.</p>
+  <p>The right side shows the reconstructed piping, equipment and structures. Both use the same registered coordinates and camera. Visible surfaces follow the capture; hidden construction and small obscured details are approximate.</p>
+  <p>The 3D scene downloads about 216 MB. Phones start with lightweight matched images; choose Explore in 3D to load the interactive scene. The original project and full-density source stay unchanged.</p>
+  <p>Choose Object selection to explore 788 separate objects. Click a mesh or search the list, focus it, and move it with the arrows or X / Y / Z fields. Undo, redo and reset are available. Changes are temporary and reset when you return to comparison.</p>
+  <p class="dialog-help">Drag to orbit, right-drag to pan, scroll or pinch to zoom. Focus the scene and use W / A / S / D to walk, Q / E to change height. Choose a viewpoint for a shareable link.</p>
+</dialog>
+<noscript><p class="no-script">Enable JavaScript to explore the Rotterdam comparison.</p></noscript>
+<script type="module" src="./app.js?v=20261019-rotterdam-objects"></script>
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

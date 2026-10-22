@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Terrestrial, Mobile or Handheld: Choosing a Scanner for Scan to BIM | Moving Atoms</title>
+<meta name="description" content="Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies." />
+<link rel="canonical" href="https://movingatoms.ai/blog/choosing-a-scanner-for-scan-to-bim/" />
+<meta name="theme-color" content="#000000" />
+<link rel="icon" href="/favicon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Moving Atoms" />
+<meta property="og:url" content="https://movingatoms.ai/blog/choosing-a-scanner-for-scan-to-bim/" />
+<meta property="og:title" content="Terrestrial, Mobile or Handheld: Choosing a Scanner for Scan to BIM" />
+<meta property="og:description" content="Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies." />
+<meta property="og:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@MovingAtomsLab" />
+<meta name="twitter:title" content="Terrestrial, Mobile or Handheld: Choosing a Scanner for Scan to BIM" />
+<meta name="twitter:description" content="Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies." />
+<meta name="twitter:image" content="https://movingatoms.ai/home/media/og.jpg" />
+<link rel="preload" href="/fonts/generalsans-500.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/home/style.css?v=23" />
+<link rel="stylesheet" href="/home/pages.css?v=5" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://movingatoms.ai/#org","name":"Moving Atoms","legalName":"MovingAtoms Inc.","url":"https://movingatoms.ai/","logo":"https://movingatoms.ai/assets/logo-white.png","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"CA","addressCountry":"US"},"sameAs":["https://x.com/MovingAtomsLab","https://www.ycombinator.com/companies/moving-atoms"]},{"@type":"BlogPosting","headline":"Terrestrial, Mobile or Handheld: Choosing a Scanner for Scan to BIM","description":"Terrestrial laser scanners vs mobile SLAM vs handheld and phone LiDAR for Scan to BIM: accuracy, speed, coverage and when to use each, with independent accuracy studies.","datePublished":"2026-10-20","dateModified":"2026-10-20","author":{"@id":"https://movingatoms.ai/#org"},"publisher":{"@id":"https://movingatoms.ai/#org"},"image":"https://movingatoms.ai/home/media/og.jpg","mainEntityOfPage":"https://movingatoms.ai/blog/choosing-a-scanner-for-scan-to-bim/","articleSection":"Guide","about":{"@type":"Thing","name":"Scan to BIM"},"citation":["https://www.mdpi.com/2072-4292/16/17/3256/html","https://www.navvis.com/blog/testing-navvis-vlx-side-by-side-with-a-terrestrial-laser-scanner","https://update.library.uitm.edu.my/Record/WOS:001364045900001/Details","https://doaj.org/article/9cbab8e9cd04423aae61f174ca458b1e","https://usibd.org/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is mobile laser scanning accurate enough for Scan to BIM?","acceptedAnswer":{"@type":"Answer","text":"Often, yes. A 2024 peer-reviewed study found indoor errors around 5 mm for NavVis VLX and Leica BLK2GO, adequate for many LOD 300 existing-conditions models, especially when tied to survey control."}},{"@type":"Question","name":"When should I use a terrestrial laser scanner?","acceptedAnswer":{"@type":"Answer","text":"Use TLS where tight tolerances matter (LOA40), for facades and long ranges, and where a defensible survey record is required."}},{"@type":"Question","name":"Can I mix scanners on one project?","acceptedAnswer":{"@type":"Answer","text":"Yes. Mixing TLS for critical areas with mobile capture for interiors is common and efficient, as long as all data ties into the same control."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://movingatoms.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://movingatoms.ai/blog/"},{"@type":"ListItem","position":3,"name":"Choosing a scanner for Scan to BIM","item":"https://movingatoms.ai/blog/choosing-a-scanner-for-scan-to-bim/"}]}]}</script>
+<script defer src="/ma/stats.js" data-website-id="d8ee8d12-387a-411b-ba36-a8fb95dd1b95" data-host-url="/ma"></script>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/" aria-label="Moving Atoms home"><img src="/assets/logo-mark-white.png" alt="" width="20" height="22" /><span class="brand-word">moving atoms</span></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="/#examples">Examples</a>
+    <a href="/scan-to-bim/">Scan to BIM</a>
+    <a href="/blog">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-ghost" href="/dashboard/" id="navAcct">Sign in</a>
+    <a class="btn btn-white" href="/contact" data-cal>Book a demo</a>
+  </div>
+</header>
+<main class="page">
+  <ol class="crumbs" aria-label="Breadcrumb"><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">Choosing a scanner for Scan to BIM</li></ol>
+  <article class="doc" style="width:auto;margin:0;padding:0;max-width:760px">
+    <p class="eyebrow">Guide</p><h1>Choosing a scanner for Scan to BIM</h1>
+    <p class="lede" style="margin-top:18px;color:var(--fg-2);font-size:18px;line-height:1.6">The scanner you choose sets the accuracy ceiling of your BIM model and most of the site time. Here is how terrestrial, mobile and handheld capture compare, and how to choose per area.</p>
+    <p class="meta-line"><span>20 October 2026</span><span>8 min read</span><span>Moving Atoms</span></p>
+    <nav class="toc" aria-label="Contents"><p>Contents</p><ol><li><a href="#types">Three families of scanner</a></li><li><a href="#tls">Terrestrial laser scanners</a></li><li><a href="#slam">Mobile and backpack SLAM</a></li><li><a href="#handheld">Handheld and phone LiDAR</a></li><li><a href="#choose">How to choose</a></li><li><a href="#modeling">Does the scanner change the modeling?</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+    <div class="prose">
+<h2 id="types">Three families of scanner</h2>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>How it captures</th><th>Strengths</th><th>Watch out for</th></tr></thead><tbody><tr><td>Terrestrial (TLS)</td><td>From fixed tripod positions</td><td>Highest accuracy and range; long-established survey workflows</td><td>Slow on large interiors; many setups</td></tr><tr><td>Mobile / backpack SLAM</td><td>While walking, using SLAM to track position</td><td>Many times faster on large interiors and industrial sites</td><td>Drift on long or featureless routes; check against control</td></tr><tr><td>Handheld and phone LiDAR</td><td>Short-range, walking</td><td>Cheap, quick, good for small rooms and details</td><td>Centimetre-level accuracy; drift in large spaces</td></tr></tbody></table></div>
+
+<h2 id="tls">Terrestrial laser scanners</h2>
+<p>Tripod scanners from Leica, FARO, Trimble, RIEGL and others remain the reference for accuracy. Each setup measures a dense, precise sphere of points; scans are then registered together. They are the right choice for facades, structure that must meet tight tolerances, long ranges and anywhere a survey must be defensible. The cost is time: a large building can need hundreds of setups.</p>
+
+<h2 id="slam">Mobile and backpack SLAM</h2>
+<p>Mobile mapping systems such as NavVis VLX and Leica BLK2GO capture continuously while you walk. A 2024 <a href="https://www.mdpi.com/2072-4292/16/17/3256/html" target="_blank" rel="noopener">peer-reviewed study in Remote Sensing</a> tested both against a total station and a static scanner and found indoor errors of about 5 mm, with larger errors outdoors (roughly 10 to 60 mm). NavVis' own <a href="https://www.navvis.com/blog/testing-navvis-vlx-side-by-side-with-a-terrestrial-laser-scanner" target="_blank" rel="noopener">side-by-side test</a> claims much faster capture than TLS; treat vendor figures as indicative. For large interiors, plants and warehouses at LOD 300, mobile capture is often the best value, especially when tied to a few control points.</p>
+
+<h2 id="handheld">Handheld and phone LiDAR</h2>
+<p>Handheld scanners and phone or tablet LiDAR are ideal for small rooms, quick checks and details. Studies put phone LiDAR at centimetre level for BIM measurements (see <a href="/blog/phone-lidar-scan-to-bim/">Scan to BIM with an iPhone</a>). Two of our public <a href="/lidarsample/">LiDAR samples</a> were rebuilt from phone captures from Niantic Spatial.</p>
+
+<h2 id="choose">How to choose</h2>
+<ul>
+<li><strong>Start from the LOA.</strong> If the spec calls for LOA40 on structure, plan TLS for those elements. If LOA20 to LOA30 is enough, mobile capture may do the whole job. See <a href="/blog/scan-to-bim-specification/">how to write a Scan to BIM specification</a>.</li>
+<li><strong>Mix devices.</strong> TLS for the facade and critical structure, mobile for the interior, handheld for tight plant rooms is a common, efficient mix.</li>
+<li><strong>Tie into control.</strong> A handful of surveyed control points dramatically reduces SLAM drift and lets everything align.</li>
+<li><strong>Plan for coverage, not just accuracy.</strong> A precise scanner that misses the ceiling void gives you an incomplete model.</li>
+</ul>
+
+<h2 id="modeling">Does the scanner change the modeling?</h2>
+<p>Noisier data takes more care to model, and sparse areas force more inference. Good automated pipelines handle data from any scanner, but the accuracy of the model can never exceed the accuracy of the scan. We accept scans from terrestrial, mobile, handheld and phone devices, including FARO, Leica, NavVis, RIEGL and XGRIDS formats, up to 200 GB per file. Read <a href="/blog/point-cloud-file-formats/">point cloud file formats</a> for what to export.</p>
+<div class="callout"><p>Have a scan? Send it to us and get separated, editable Revit and IFC objects back within 48 hours.</p><div class="row"><a class="btn btn-white" href="/#up">Upload a scan</a><a class="btn btn-ghost" href="/lidarsample/">See sample models</a></div></div><h2 id="faq">Frequently asked questions</h2><div class="faq"><details><summary>Is mobile laser scanning accurate enough for Scan to BIM?</summary><p>Often, yes. A 2024 peer-reviewed study found indoor errors around 5 mm for NavVis VLX and Leica BLK2GO, adequate for many LOD 300 existing-conditions models, especially when tied to survey control.</p></details><details><summary>When should I use a terrestrial laser scanner?</summary><p>Use TLS where tight tolerances matter (LOA40), for facades and long ranges, and where a defensible survey record is required.</p></details><details><summary>Can I mix scanners on one project?</summary><p>Yes. Mixing TLS for critical areas with mobile capture for interiors is common and efficient, as long as all data ties into the same control.</p></details></div></div>
+    <div class="sources"><p class="h">Sources</p><ol><li><a href="https://www.mdpi.com/2072-4292/16/17/3256/html" target="_blank" rel="noopener">Gharineiat et al., Assessment of NavVis VLX and BLK2GO SLAM scanner accuracy, Remote Sensing 16(17), 2024</a></li><li><a href="https://www.navvis.com/blog/testing-navvis-vlx-side-by-side-with-a-terrestrial-laser-scanner" target="_blank" rel="noopener">NavVis, Testing NavVis VLX side by side with a terrestrial laser scanner (vendor test)</a></li><li><a href="https://update.library.uitm.edu.my/Record/WOS:001364045900001/Details" target="_blank" rel="noopener">Adam et al., The suitability of smartphone LiDAR for 3D BIM applications, 2024</a></li><li><a href="https://doaj.org/article/9cbab8e9cd04423aae61f174ca458b1e" target="_blank" rel="noopener">Developments in the Built Environment, iPad Pro LiDAR accuracy study (2023)</a></li><li><a href="https://usibd.org/" target="_blank" rel="noopener">USIBD, Level of Accuracy (LOA) Specification</a></li></ol></div>
+    <aside class="related"><p class="h">Keep reading</p><ul><li><a href="/blog/phone-lidar-scan-to-bim/">Can you do Scan to BIM with an iPhone?<span>How accurate is iPhone and iPad LiDAR for Scan to BIM?</span></a></li><li><a href="/blog/point-cloud-file-formats/">Point cloud file formats explained<span>E57, LAS, LAZ, RCP, RCS, PTS, PTX, PLY and scanner-native formats compared: what each stores, which to request from your surveyor, and which Revit and Scan to BIM tools need.</span></a></li><li><a href="/blog/scan-to-bim-specification/">How to write a Scan to BIM specification<span>A practical template for specifying Scan to BIM: scope, LOD per discipline, USIBD LOA per element, coordinates, deliverables, naming, QA and acceptance criteria.</span></a></li><li><a href="/blog/scan-to-bim-breakthroughs-2026/">Recent breakthroughs in Scan to BIM<span>What changed in Scan to BIM in 2025 and 2026: AI segmentation, mesh-to-Revit workflows, Gaussian splats, faster mobile scanning, IFC 4.3 as ISO, OpenUSD 1.0 and SimReady digital twins.</span></a></li><li><a href="/scan-to-bim/">Scan to BIM<span>Point cloud to Revit and IFC in 48 hours.</span></a></li><li><a href="/lidarsample/">LiDAR samples<span>Open real scans and the models we delivered.</span></a></li></ul></aside>
+  </article>
+</main>
+<footer class="bigfoot">
+  <div class="bf-top">
+    <div class="bf-brand">
+      <img src="/assets/logo-white.png" alt="Moving Atoms" width="130" height="28" />
+      <p>Scan to BIM and SimReady worlds for the teams building with robots.</p>
+      <div class="bf-social">
+        <a href="https://x.com/MovingAtomsLab" target="_blank" rel="noopener" aria-label="Moving Atoms on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"/></svg></a>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7514548602183200768/" target="_blank" rel="noopener" aria-label="Moving Atoms on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener" aria-label="Moving Atoms on Y Combinator"><svg viewBox="0 0 18 18" aria-hidden="true"><rect width="18" height="18" rx="3" fill="currentColor"/><path d="M5.2 4.4h1.7L9 8.5l2.1-4.1h1.7L9.8 9.9v3.7H8.2V9.9z" fill="#000"/></svg></a>
+      </div>
+    </div>
+    <form class="bf-news" id="news" novalidate>
+      <p class="bf-news-t">Product updates, once a month</p>
+      <p class="bf-news-s">New formats, new sample sites and what we're shipping. No spam.</p>
+      <div class="bf-news-row">
+        <input name="email" type="email" autocomplete="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-white" type="submit">Subscribe</button>
+      </div>
+      <p class="bf-news-msg" id="newsMsg" role="status"></p>
+    </form>
+  </div>
+
+  <nav class="bf-cols" aria-label="Footer">
+    <div>
+      <p class="bf-h">Product</p>
+      <a href="/scan-to-bim/">Scan to BIM</a>
+      <a href="/#up">Upload a scan</a>
+      <a href="/platform/environments/">SimReady environments</a>
+      <a href="/platform/data/">Training data</a>
+      <a href="/platform/evaluation/">Robot evaluation</a>
+      <a href="/platform/atom/">Atom</a>
+    </div>
+    <div>
+      <p class="bf-h">Solutions</p>
+      <a href="/solutions/architects-engineers/">Architects and engineers</a>
+      <a href="/solutions/contractors/">General contractors</a>
+      <a href="/solutions/facilities/">Owners and facilities</a>
+      <a href="/solutions/industrial/">Industrial and process</a>
+      <a href="/solutions/robotics/">Robotics teams</a>
+    </div>
+    <div>
+      <p class="bf-h">Resources</p>
+      <a href="/scan-to-bim/best-scan-to-bim-software/">Scan to BIM compared</a>
+      <a href="/scan-to-bim/lod-levels/">LOD levels explained</a>
+      <a href="/scan-to-bim/cost/">Scan to BIM cost</a>
+      <a href="/scan-to-bim/point-cloud-to-revit/">Point cloud to Revit</a>
+      <a href="/lidarsample/">LiDAR samples</a>
+      <a href="/demos/">Demos</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <div>
+      <p class="bf-h">Company</p>
+      <a href="/about/">About</a>
+      <a href="/customers/">Customers</a>
+      <a href="/careers/">Careers <span class="bf-badge">Hiring</span></a>
+      <a href="/press/">Press</a>
+      <a href="/contact/">Contact</a>
+      <a href="/contact" data-cal>Book a demo</a>
+    </div>
+    <div>
+      <p class="bf-h">Account</p>
+      <a href="/app/">Your projects</a>
+      <a href="/app/sign-in">Sign in</a>
+      <a href="/dashboard/">Earlier scans</a>
+    </div>
+  </nav>
+
+  <div class="bf-bottom">
+    <p>© 2026 Moving Atoms Inc. · San Francisco, CA · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/refunds/">Refunds</a></p>
+    <p class="bf-backed">Backed by <a href="https://www.ycombinator.com/companies/moving-atoms" target="_blank" rel="noopener">Y Combinator</a> and <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener">NVIDIA Inception</a></p>
+  </div>
+</footer>
+<script src="/ma/cal/ma-cal.js?v=2" defer></script>
+
+<script src="/chat/chat.js?v=2" defer></script>
+</body>
+</html>

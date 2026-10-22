@@ -1,0 +1,11 @@
+{
+  "scene": "editor-compact.glb?v=20261014-medical-r016",
+  "revision": "refinement-integrated-review-r016",
+  "assetCount": 1786,
+  "shadowReceiversOnly": [
+    "Floor_Lower",
+    "Floor_Upper",
+    "Floor_Approach"
+  ],
+  "directIntensity": 0.45
+}

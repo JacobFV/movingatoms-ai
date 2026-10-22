@@ -1,0 +1,31 @@
+# The realtime Worker: the ProjectRoom Durable Object (live sockets, the live model, agent turns).
+# Deploy before the Pages project, which binds PROJECT_ROOM to this script.
+name = "movingatoms-realtime"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "20d4becc35c40a0bbfb8803a525aaae1"
+workers_dev = false
+
+[vars]
+AGENT_MODEL = "claude-opus-5-5"
+SITE_URL = "https://movingatoms-ai.pages.dev"
+
+[[durable_objects.bindings]]
+name = "PROJECT_ROOM"
+class_name = "ProjectRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ProjectRoom"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "movingatoms"
+database_id = "b0c7ea3e-53d6-43ba-98f8-e8946cbd9735"
+
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "movingatoms-uploads"
+
+# secrets: SESSION_SECRET (same value as the Pages project), ANTHROPIC_API_KEY
