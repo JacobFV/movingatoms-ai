@@ -1,0 +1,27 @@
+{
+  "file_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "stored_page_bytes": 65249,
+  "payload_bytes": 64896,
+  "full_pages": 509,
+  "streams": {
+    "Formats/Latest": 2,
+    "Global/ContentDocuments": 3,
+    "Global/ElemTable": 1,
+    "Global/Latest": 1,
+    "Partitions/46": 261,
+    "Partitions/48": 36,
+    "Partitions/51": 9,
+    "Partitions/53": 87,
+    "Partitions/55": 41,
+    "Partitions/59": 24,
+    "Partitions/61": 43,
+    "Partitions/65": 1
+  },
+  "constant_trailer_bytes": {
+    "0": 0
+  },
+  "payload_bit_rank": 509,
+  "dependent_rows": 0,
+  "linear_contradictions": [],
+  "linearity_verdict": "underdetermined"
+}
