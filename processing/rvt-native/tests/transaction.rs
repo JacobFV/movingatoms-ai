@@ -19,6 +19,20 @@ fn fixture(path: &Path) -> Vec<u8> {
         .unwrap()
         .write_all(b"must survive unchanged")
         .unwrap();
+    file.set_state_bits("Global", 0x12345678).unwrap();
+    file.set_state_bits("UnknownMetadata", 0x87654321).unwrap();
+    for path in ["/", "Global", "Global/Latest", "UnknownMetadata"] {
+        file.set_created_time(
+            path,
+            std::time::UNIX_EPOCH + std::time::Duration::from_secs(123456789),
+        )
+        .unwrap();
+        file.set_modified_time(
+            path,
+            std::time::UNIX_EPOCH + std::time::Duration::from_secs(234567890),
+        )
+        .unwrap();
+    }
     file.flush().unwrap();
     data
 }

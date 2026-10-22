@@ -23,7 +23,8 @@ uv run --with olefile python research/rvt/verify_pages.py \
 python3 -m unittest discover -s research/rvt -p 'test_*.py' -v
 ```
 
-`paged.py` is the dependency-free reference encoder/strict verifier.
+`codec.py` is the complete reference encoder/strict verifier. `paged.py`
+retains the historical partial-page representation for compatibility.
 `bch_probe.py` and `lane_probe.py` document the rejected byte-aligned
 hypotheses; the latter runs with `uv run --with numpy python ...`.
 The original `hist_patch.py` remains historical and must not be treated as
@@ -45,11 +46,34 @@ processing/rvt-native/target/release/ma-rvt-native patch \
 This experiment accepts only the hash-pinned MIT fixture. It changes both
 History counts from 39 to 40 and prepends a correctly terminated episode,
 preserving the episode numbers of all previous GUIDs. It preserves the gzip
-prefix and unused data suffix, constructs a slightly longer shortened page,
-and regenerates its parity. The current experiment keeps the same generator
-and lane count; no general Revit layout-selection rule is claimed.
+prefix, selects dimensions for the resized payload, and regenerates its padding
+length and parity. The complete framing rule is tested against six fixtures;
+see [complete codec evidence](results/complete-codec.md).
 
 rvt-rs 0.6.1 (`b6086d41b9758fd9b92f42f0a47b8345b9c58056`) re-reads the
 result into byte-identical element JSON and a byte-identical IFC export,
 including all 15,332 IFC GlobalIds. **This is not a full save transaction**:
 other bookkeeping is unchanged and Revit acceptance is still untested.
+
+## Reproducible external-validation bundle
+
+Build the Rust CLI and obtain the documented pinned rvt-rs reader binaries.
+Then use a fresh destination:
+
+```sh
+python3 research/rvt/validation_bundle.py research/rvt/local/core2024.rvt \
+  research/rvt/local/validation-new \
+  --writer processing/rvt-native/target/release/ma-rvt-native \
+  --elements research/rvt/local/rvt-elements --ifc research/rvt/local/rvt-ifc
+```
+
+The bundle contains identity, gzip-MTIME, and History candidates, IFC exports,
+strict manifests, file/tool hashes, and `VALIDATE.txt`. It checks all element
+JSON bytes and all IFC bytes except exactly two exporter timestamps. The
+recorded run is [validation-bundle.json](results/validation-bundle.json).
+No uploads occur and Autodesk results remain `not_tested` until independently
+observed. Viewer conversion success alone does not prove editable Revit saves.
+
+`partition_audit.py` separately verifies explicitly framed gzip members up to
+the first segment terminator and records the unresolved footer. See
+[partition-audit.md](results/partition-audit.md) before attempting model writes.

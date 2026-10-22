@@ -78,6 +78,17 @@ native model exporter is wired into the processing worker. This runtime has
 neither usable browser automation nor APS credentials; no Autodesk validation
 has occurred.
 
+### Additional partition integrity concern
+
+The [partition audit](../research/rvt/results/partition-audit.md) validates
+1,756 explicitly length-framed gzip members in the first segments of 27
+partition streams. It also finds a separate 64-byte footer blob in 25 of those
+segments, adjacent to Autodesk-generated-data text. Seven ordinary digest
+explanations did not match; its purpose and enforcement remain unknown. This
+is **not** evidence of a keyed signature, but it is another unresolved field
+for native element writing. Later segments, indexes, and references are not
+yet completely parsed. The claim that parity was the only blocker is false.
+
 ## Ground rules
 
 - **Clean-room only.** Work from the bytes of `.rvt` files and from public documentation. Do not disassemble, decompile

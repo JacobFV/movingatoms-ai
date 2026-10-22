@@ -83,3 +83,13 @@ Choose fresh output paths on subsequent runs. The second experiment changes
 only gzip MTIME in the multipage ElemTable stream, exercising a real changed
 page and regenerated trailer while preserving the inflated element table and
 opaque suffix exactly. It is a transport experiment, not a semantic edit.
+
+## Unresolved model-writing integrity
+
+The [partition audit](../../research/rvt/results/partition-audit.md) found a
+separate, unexplained 64-byte footer field in 25 first segments. The writer
+cannot regenerate that field or update unknown semantic relationships. It is
+not a semantic validator. Do not equate `verify` success with a valid model
+edit. Concrete Autodesk acceptance candidates and independent comparison
+results are produced by `research/rvt/validation_bundle.py`; no Autodesk check
+has yet been run.
