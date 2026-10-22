@@ -1,0 +1,58 @@
+[
+  {
+    "file": "save-candidate.rvt",
+    "sha256": "7905c5147279ce05d9dc6979c3f3a62819fe054267b7b21845cef1c4d38cd28b",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "relationships": {
+      "contents_revisions_equal_latest_increment": false,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": false,
+      "document_increments_equal_latest_major_version": false,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": false
+    }
+  },
+  {
+    "file": "save-candidate-v2.rvt",
+    "sha256": "647b64d1c01bd3beec1d388a68f1d5b7835e2e144734dddc0ecc5f73c366b2d0",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": false,
+      "document_increments_equal_latest_major_version": false,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": false
+    }
+  },
+  {
+    "file": "save-candidate-v3.rvt",
+    "sha256": "634b4dfde528877e8af185562cb488e8ffd6d3cebb1af10df634b9f86ae9d064",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": false
+    }
+  },
+  {
+    "file": "save-candidate-v4.rvt",
+    "sha256": "daf2424e219292b0c5661e4ad5c029717de11741e5e50f5c9c910c2801e23cae",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "relationships": {
+      "contents_revisions_equal_latest_increment": true,
+      "wrapper_formats_revision_equals_latest_increment": true,
+      "document_increments_equal_increment_entries": true,
+      "document_increments_equal_latest_major_version": true,
+      "reload_latest_version_equals_document_increments": true,
+      "reload_latest_guid_equals_document_guid": true,
+      "document_guid_equals_newest_history_episode": true
+    }
+  }
+]

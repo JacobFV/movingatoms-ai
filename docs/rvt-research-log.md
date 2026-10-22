@@ -235,3 +235,22 @@ python3 -m unittest discover -s research/rvt -p 'test_*.py'
 65 tests pass. Native acceptance, nonempty unsigned partitions, ancillary revision
 semantics and new element creation remain unresolved. These scripts deliberately
 require acknowledgment of the experimental save hypotheses.
+
+### Subsequent binary-header finding and screenshot checkpoint
+
+The BasicFileInfo framing audit identified two length-prefixed UTF-16 GUID
+copies and a preceding binary counter. They match the textual values in all
+six source files but remain stale in v4. The candidate report now explicitly
+records this additional inconsistency; v4 remains a preserved control.
+
+Captured actual local report pages with Chrome using:
+
+```sh
+python3 research/rvt/capture_evidence.py docs/rvt-evidence/2026-10-22-save-candidate-controls
+```
+
+The new candidate panel was visually inspected. The capture reran 65 Python
+tests successfully; its manifest binds screenshots, JSON reports and tested
+source hashes. Corpus/Rust results in the pages are recorded evidence, not
+fresh runs. The next work is a strict BasicFileInfo framing codec and a candidate
+that also synchronizes binary duplicates.

@@ -35,6 +35,14 @@ and stream verification. `save-candidate[-vN]-verification.json` records native
 route, full graph, identity, element and IFC checks. Earlier candidates are
 negative bookkeeping controls, despite their successful element projections.
 
+## Subsequent binary-header finding
+
+The seven checks above cover the decoded Contents revisions and textual
+BasicFileInfo properties. A subsequent audit found binary-prefix copies of the
+BasicFileInfo counter and two GUIDs; v4 leaves those stale. A codec and further
+candidate are in progress. The passing seven checks do not cover this newly
+identified inconsistency.
+
 ## Unresolved validity
 
 This is **not a complete or Autodesk-validated save algorithm**. Generation

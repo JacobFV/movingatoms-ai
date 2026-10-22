@@ -15,7 +15,8 @@ import tempfile
 
 ROOT=Path(__file__).resolve().parents[2]
 SOURCES=('object-repacking','resized-graph','resized-reader','record-selection',
-         'save-increments','signature-analysis','save-history','transport-create')
+         'save-increments','signature-analysis','save-history','transport-create',
+         'contents-codec','save-candidate-identity','save-candidate-v4-verification')
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -24,6 +25,7 @@ def esc(value):return html.escape(str(value))
 
 def code_hashes():
     paths=list((ROOT/'research/rvt').glob('*.py'))
+    paths+=list((ROOT/'research/rvt').glob('*.rs'))
     paths+=list((ROOT/'processing/rvt-native/src').rglob('*.rs'))
     paths+=list((ROOT/'processing/rvt-native/tests').rglob('*.rs'))
     paths += [ROOT/'processing/rvt-native/Cargo.toml', ROOT/'processing/rvt-native/Cargo.lock']
@@ -64,9 +66,18 @@ def capture(dest,chrome):
     pipeline=common+'<h1>History codec and atomic partition creation</h1>'+f'<div class="cards"><div class="card"><div class="number">{sum(r["episodes"] for r in history):,}</div>History episodes verified</div><div class="card"><div class="number">{sum(r["inflated_bytes"] for r in history):,}</div>History bytes reproduced</div><div class="card"><div class="number">{transport["rust_unit_tests_passed"]+transport["rust_transaction_tests_passed"]}</div>Rust tests passed</div></div>'
     pipeline+='<h2>Complete observed History serialization</h2><p>Six files: all root fields and episode GUID/strength fields independently decoded before and after a guarded prepend. Existing episode identities remain mapped to their original GUIDs.</p>'
     pipeline+=f'<h2>Explicit new-partition transaction</h2><p>Real-file transport control: {transport["independent_olefile_comparison"]["unchanged_original_streams"]} original streams unchanged; one new stream copied byte-for-byte from Partitions/80. Input and output hashes are recorded in transport-create.json.</p><p>Creation requires an absent numeric partition name and an existing parent storage. Output is published only after stream hashes, page framing and original directory metadata pass verification. Existing output files are never overwritten.</p><p>This control does not link the new partition into History, increment tables or element tables. It is not a complete save or a new-element creation test.</p>'+warning
+    candidate=values['save-candidate-v4-verification'];identities=values['save-candidate-identity']
+    contents=values['contents-codec']
+    candidate_rows=''.join('<tr><td>'+esc(row['file'])+'</td><td>'+str(sum(row['relationships'].values()))+' / '+str(len(row['relationships']))+'</td></tr>' for row in identities)
+    candidate_page=common+'<h1>Append-save candidate: independent checks</h1>'
+    candidate_page+=f'<div class="cards"><div class="card"><div class="number">{candidate["reader_element_count"]}</div>elements retained</div><div class="card"><div class="number">{candidate["full_graph"]["complete_objects"]}</div>room graph objects</div><div class="card"><div class="number">{sum(r["rust_inventory"]["parity_pages_verified"]+r["rust_inventory"]["final_pages_verified"] for r in contents)}</div>original pages verified, including Contents</div></div>'
+    candidate_page+='<table><tr><th>Preserved candidate</th><th>Save-metadata relationships satisfied</th></tr>'+candidate_rows+'</table>'
+    candidate_page+=f'<p>Current room route: {esc(candidate["current_record_before"])} → {esc(candidate["current_record_after"])}. Native UniqueId and derived element IFC GUID are unchanged. The requested finish edit is the only graph value change.</p>'
+    candidate_page+=f'<h2>Open finding: IFC projection identifiers</h2><p>{sum(candidate["ifc_identifier_only_changes"].values())} generated IFC identifiers change after updating the document episode GUID; two further lines contain the intended finish and source-stream changes. Export identifier stability is explicitly false.</p>'
+    candidate_page+='<p><strong>Subsequent finding: v4 still has stale binary-header counter and GUID copies in BasicFileInfo.</strong> The seven checks above cover textual metadata and Contents. Unsigned nonempty partition acceptance and ancillary save revisions remain unproven. All four controls retain their file hashes and independent results.</p><pre>Latest candidate SHA-256: '+esc(candidate['candidate_sha256'])+'</pre>'+warning
     browser_version=subprocess.check_output([chrome,'--version'],text=True).strip()
     with tempfile.TemporaryDirectory(prefix='rvt-evidence-browser-') as profile:
-        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations),('save-pipeline',pipeline)]:
+        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations),('save-pipeline',pipeline),('save-candidate',candidate_page)]:
             page=dest/f'{name}.html';page.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>RVT research evidence</title><style>'+style+'</style><main>'+body+f'<footer>Source JSON copies and SHA-256 provenance are stored beside this capture. Browser: {esc(browser_version)}.</footer></main></html>')
             args=[chrome,'--headless','--no-sandbox','--disable-gpu','--disable-background-networking','--no-first-run',f'--user-data-dir={profile}','--hide-scrollbars','--window-size=1280,1100',f'--screenshot={dest/name}.png',page.as_uri()]
             subprocess.run(args,check=True,capture_output=True,text=True,timeout=45)

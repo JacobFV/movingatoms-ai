@@ -55,3 +55,18 @@ when new milestones need different evidence; do not reuse old results to imply
 a new capability. The browser runs with a temporary profile, reading local HTML
 without external scripts, fonts or images. The raw reports remain the primary
 quantitative evidence; screenshots make them convenient to review and present.
+
+## Coordinated save controls — 2026-10-22
+
+[Manifest](2026-10-22-save-candidate-controls/manifest.json) records source commit
+`e96902f`, the dirty-tree changes, exact code/report hashes and the actual Chrome
+capture command inputs. [Test log](2026-10-22-save-candidate-controls/tests.txt):
+65 Python tests passed during capture. Corpus and Rust results are copied recorded
+evidence, not rerun by the screenshot command. Historical save-pipeline panel
+retains its original 14-test result; the later Contents correction has 15 Rust tests.
+
+![Four append-save controls and newly identified remaining BFI issue](2026-10-22-save-candidate-controls/save-candidate.png)
+
+The screenshot explicitly records v4's stale binary-header counter/GUID copies,
+found after its seven text/Contents relationships passed. These are local
+research report screenshots, not Autodesk UI or evidence of Autodesk acceptance.
