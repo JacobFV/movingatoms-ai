@@ -1,0 +1,15 @@
+{
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "element_count": 4833,
+  "element_json_byte_identical": true,
+  "element_json_sha256": "d815d8c553e92dd62fa8d68e821f52f06a2bd9bca48bd02a00ec43eb82ce18c7",
+  "ifc_byte_identical": false,
+  "ifc_equal_except_export_timestamps": true,
+  "ifc_bytes": 4467238,
+  "ifc_canonical_sha256": "4c18ea4e9ac99c04c4648c2d16fdc022a88a283cd009af03fb2824beb7c05608",
+  "ifc_timestamp_normalization": [
+    "FILE_NAME timestamp",
+    "IFCOWNERHISTORY creation timestamp"
+  ],
+  "revit_openability": "not_tested"
+}

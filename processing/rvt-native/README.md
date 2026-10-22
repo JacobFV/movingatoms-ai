@@ -7,8 +7,9 @@ advertise native output or call this experimental crate.
 
 The algorithm comes exclusively from the MIT fixture bytes documented in
 [the research evidence](../../research/rvt/results/README.md). Both Python and
-Rust implementations reproduce 519 full-page trailers and 29 shortened final
-pages in two fixtures (548 total).
+Rust implementations reproduce 917 full pages and 69 final pages across six
+licensed fixtures (986 total), including held-out Revit 2025 models. See
+[complete framing evidence](../../research/rvt/results/complete-codec.md).
 
 ```sh
 cargo test --manifest-path processing/rvt-native/Cargo.toml
@@ -35,31 +36,32 @@ The manifest is strict JSON; byte-file paths resolve relative to the manifest:
   "patches": [{
     "stream": "Global/ElemTable",
     "expected_stored_sha256": "SHA256_OF_ORIGINAL_STORED_STREAM",
-    "new_unpaged_file": "elem-table-logical.bin"
+    "new_payload_file": "elem-table-payload.bin"
   }]
 }
 ```
 
-`new_unpaged_file` contains the **compressed stream bytes with full-page
-trailers removed**, including its existing prefix, gzip headers/footers,
-member boundaries, and opaque suffix bytes. It is not the inflated element
-buffer. Nonpaged streams are replaced verbatim. All names must already exist.
-The caller is responsible for compression, object checksums, reference/index
-updates, schema/version compatibility, and any unresolved stream framing.
+`new_payload_file` contains exact logical stream bytes: compressed members and
+stream framing, with **all** page parity and padding removed. It is not the
+inflated element buffer. The complete `codec` selects page dimensions, writes
+padding lengths, and computes parity, including for resized final pages.
+Nonpaged streams are replaced verbatim. All stream names must already exist.
+The writer checks directory metadata (storage/stream kind, CLSID, state bits,
+and timestamps) as well as every stream hash after changes.
 
-The `paged` codec retains short final pages in their encoded form. The writer
-validates those final pages using `final_page::decode`, which infers and checks
-the shortened Hamming layout. `final_page::encode` re-encodes a padded data bit
-vector against an explicit layout. A caller changing final-page data must use
-that API and supply valid final-page parity in `new_unpaged_file`; stale parity
-is rejected. Layout selection for newly sized streams is not yet derived.
-Some gzip members have extra data/padding before final-page parity; preserve it
-until its meaning is established.
+For compatibility, `new_unpaged_file` retains the old representation: full-page
+trailers removed but the final short page still encoded. Exactly one field is
+required. New callers should use `new_payload_file`; stale padding metadata or
+parity in legacy input is rejected by complete post-write validation.
 
-`encode-pages INPUT OUTPUT` and `decode-pages INPUT OUTPUT` expose the codec
-for standalone binary streams. Decoding checks parity and all padding bits;
-it rejects incomplete trailers when their length is distinguishable from a
-short final page. It does not correct damaged data or authenticate files.
+`encode-stream INPUT OUTPUT` and `decode-stream INPUT OUTPUT` expose the complete
+codec. `encode-pages`/`decode-pages` expose the legacy partial representation.
+Neither corrects damaged data or authenticates files. All-zero data and final
+payloads that fill a stored page despite being short are covered by tests.
+
+The caller remains responsible for compression, object checksums, element
+references, save bookkeeping, and schema/version compatibility. Passing
+transport verification does not establish Revit acceptance.
 
 ## Reproduced real-file experiments
 

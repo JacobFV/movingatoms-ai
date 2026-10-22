@@ -35,7 +35,8 @@ fn plan(input: &Path, dir: &Path, data: &[u8]) -> Manifest {
         patches: vec![Patch {
             stream: "UnknownMetadata".into(),
             expected_stored_sha256: writer::hash(&stored),
-            new_unpaged_file: "logical.bin".into(),
+            new_unpaged_file: Some("logical.bin".into()),
+            new_payload_file: None,
         }],
     }
 }
@@ -126,4 +127,40 @@ fn paged_growth_and_invalid_final_page_rollback() {
     let bad = dir.path().join("bad.rvt");
     assert!(writer::patch(&input, &bad, &manifest, dir.path()).is_err());
     assert!(!bad.exists());
+}
+
+#[test]
+fn complete_payload_growth_shrink_and_manifest_exclusivity() {
+    for size in [
+        1,
+        97,
+        4095,
+        4096,
+        paged::PAYLOAD - 1,
+        paged::PAYLOAD + 1,
+        2 * paged::PAYLOAD + 9,
+    ] {
+        let dir = tempfile::tempdir().unwrap();
+        let input = dir.path().join("input.rvt");
+        let output = dir.path().join("output.rvt");
+        fixture(&input);
+        let data: Vec<u8> = (0..size).map(|i| (i * 17 + 191) as u8).collect();
+        let mut manifest = plan(&input, dir.path(), &data);
+        let p = &mut manifest.patches[0];
+        p.stream = "Global/Latest".into();
+        p.expected_stored_sha256 = writer::hash(&paged::encode(&vec![19; paged::PAYLOAD]).unwrap());
+        p.new_payload_file = p.new_unpaged_file.take();
+        writer::patch(&input, &output, &manifest, dir.path()).unwrap();
+        let mut file = cfb::open(&output).unwrap();
+        let mut stored = Vec::new();
+        file.open_stream("Global/Latest")
+            .unwrap()
+            .read_to_end(&mut stored)
+            .unwrap();
+        assert_eq!(ma_rvt_native::codec::decode(&stored).unwrap(), data);
+        manifest.patches[0].new_unpaged_file = Some("logical.bin".into());
+        let bad = dir.path().join("ambiguous.rvt");
+        assert!(writer::patch(&input, &bad, &manifest, dir.path()).is_err());
+        assert!(!bad.exists());
+    }
 }

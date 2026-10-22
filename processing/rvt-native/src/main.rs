@@ -1,4 +1,4 @@
-use ma_rvt_native::{paged, writer};
+use ma_rvt_native::{codec, paged, writer};
 use std::{env, fs, path::Path};
 fn main() {
     if let Err(error) = run() {
@@ -17,13 +17,18 @@ fn run() -> writer::Result<()> {
             let report = writer::patch(Path::new(input), Path::new(output), &plan, base)?;
             println!("{}", serde_json::to_string_pretty(&report)?);
         }
-        [operation @ ("encode-pages" | "decode-pages"), input, output] => {
+        [operation @ ("encode-pages" | "decode-pages" | "encode-stream" | "decode-stream"), input, output] => {
             let data = fs::read(input)?;
-            let result = if *operation == "encode-pages" { paged::encode(&data)? } else { paged::decode(&data)? };
+            let result = match *operation {
+                "encode-stream" => codec::encode(&data)?,
+                "decode-stream" => codec::decode(&data)?,
+                "encode-pages" => paged::encode(&data)?,
+                _ => paged::decode(&data)?,
+            };
             use std::io::Write;
             fs::OpenOptions::new().write(true).create_new(true).open(output)?.write_all(&result)?;
         }
-        _ => return Err("usage: ma-rvt-native verify INPUT | patch INPUT OUTPUT MANIFEST | encode-pages INPUT OUTPUT | decode-pages INPUT OUTPUT".into()),
+        _ => return Err("usage: ma-rvt-native verify INPUT | patch INPUT OUTPUT MANIFEST | encode-stream INPUT OUTPUT | decode-stream INPUT OUTPUT | encode-pages INPUT OUTPUT | decode-pages INPUT OUTPUT".into()),
     }
     Ok(())
 }

@@ -1,8 +1,8 @@
 # Writing native Revit (.rvt) without Revit — research notes
 
 Goal: the processing worker delivers a native `.rvt` alongside IFC, written by our own code (no Revit install, no
-Autodesk cloud). Status as of 2026-10-22: **page parity solved and implemented**. All 519 full pages
-and 29 eligible streams in two licensed fixtures reconstruct byte-for-byte. Native
+Autodesk cloud). Status as of 2026-10-22: **complete page framing solved and implemented**. All 917 full pages
+and 69 final pages in six licensed fixtures reconstruct byte-for-byte. Native
 element creation and Revit-openability remain unimplemented/unverified; the original
 claim that everything else was understood was too strong.
 
@@ -50,10 +50,33 @@ IFC export**, including 15,332 IFC GlobalIds. This is not a complete Revit save:
 save-counter and other transaction bookkeeping remain unchanged. The two parity
 fixtures span Revit **2024 (Core Interior)** and **2023 (Einhoven)**.
 
-Remaining: canonical layout selection for newly sized final pages, exact
-stream/member framing and data lengths, native element encoders and reference
-bookkeeping, and an external Revit acceptance check. No native model exporter
-is wired into the processing worker.
+### Complete framing follow-up
+
+[Complete codec evidence](../research/rvt/results/complete-codec.md) recovers
+exact payload lengths and layout selection, validated on four held-out Revit
+2025 models as well as the original 2023/2024 models. The apparent opaque suffix
+is page padding plus a bit-count field. A final padded page can occupy a full
+65,249 stored bytes; the codecs handle this boundary explicitly. Python and
+Rust independently reproduce all 69 streams byte for byte.
+
+The earlier episode experiment above had correct ECC but stale padding-length
+metadata. It is superseded by `episode-complete*.json`: both counts and GUID
+ordering remain correct, padding is regenerated, and the real payload ends
+exactly at gzip EOF. All 4,833 elements remain byte-identical. The IFC output
+is identical except for the exporter's two wall-clock timestamps (explicitly
+normalized in the recorded comparison). This still does not represent a
+complete Revit save transaction.
+
+The Rust writer now accepts `new_payload_file`, allowing stream growth/shrink
+without a final-page template. It verifies exact framing and preserves/checks
+CFB directory metadata as well as stream hashes. Legacy `new_unpaged_file`
+remains available with strict post-write checks.
+
+Remaining: partition/member semantic framing, native element encoders,
+reference and save bookkeeping, and an external Revit acceptance check. No
+native model exporter is wired into the processing worker. This runtime has
+neither usable browser automation nor APS credentials; no Autodesk validation
+has occurred.
 
 ## Ground rules
 

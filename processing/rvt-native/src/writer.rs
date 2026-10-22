@@ -1,7 +1,7 @@
 //! Transactional replacement of existing logical stream bytes. The caller owns
 //! compression/member framing and semantic invariants; this layer owns parity,
 //! CFB allocation, preconditions, unchanged-stream verification and atomic output.
-use crate::{final_page, paged};
+use crate::{codec, paged};
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 use std::{
@@ -24,7 +24,8 @@ pub struct Manifest {
 pub struct Patch {
     pub stream: String,
     pub expected_stored_sha256: String,
-    pub new_unpaged_file: PathBuf,
+    pub new_unpaged_file: Option<PathBuf>,
+    pub new_payload_file: Option<PathBuf>,
 }
 #[derive(Serialize)]
 pub struct Report {
@@ -75,17 +76,44 @@ fn inventory(path: &Path) -> Result<(BTreeMap<String, String>, usize, usize)> {
     for name in names {
         let data = stream_bytes(&mut file, &name)?;
         if paged::is_paged(&name) {
-            paged::decode(&data)?;
-            pages += data.len() / paged::STORED;
-            let tail = &data[data.len() / paged::STORED * paged::STORED..];
-            if !tail.is_empty() {
-                final_page::decode(tail)?;
+            let decoded = codec::decode(&data)?;
+            pages += decoded.len() / paged::PAYLOAD;
+            if !decoded.len().is_multiple_of(paged::PAYLOAD) {
                 finals += 1;
             }
         }
         hashes.insert(name, hash(&data));
     }
     Ok((hashes, pages, finals))
+}
+
+#[derive(Debug, PartialEq, Eq)]
+struct EntryMetadata {
+    stream: bool,
+    root: bool,
+    clsid: String,
+    state: u32,
+    created: std::time::SystemTime,
+    modified: std::time::SystemTime,
+}
+fn metadata(path: &Path) -> Result<BTreeMap<PathBuf, EntryMetadata>> {
+    let file = cfb::open(path)?;
+    Ok(file
+        .walk()
+        .map(|e| {
+            (
+                e.path().to_owned(),
+                EntryMetadata {
+                    stream: e.is_stream(),
+                    root: e.is_root(),
+                    clsid: e.clsid().to_string(),
+                    state: e.state_bits(),
+                    created: e.created(),
+                    modified: e.modified(),
+                },
+            )
+        })
+        .collect())
 }
 
 pub fn verify(path: &Path) -> Result<Report> {
@@ -98,7 +126,7 @@ pub fn verify(path: &Path) -> Result<Report> {
         streams_verified: streams.len(),
         parity_pages_verified: pages,
         final_pages_verified: finals,
-        validation: "CFB streams and page parity only",
+        validation: "CFB streams, page parity, and exact payload framing",
         revit_openability: "not_tested",
     })
 }
@@ -118,6 +146,7 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
         return Err("input SHA-256 precondition failed".into());
     }
     let (mut expected, _, _) = inventory(temp.path())?;
+    let original_metadata = metadata(temp.path())?;
     let mut replacements = BTreeMap::new();
     for p in &manifest.patches {
         let name = format!("/{}", p.stream.trim_start_matches('/'));
@@ -130,9 +159,18 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
         if old != &p.expected_stored_sha256 {
             return Err(format!("stream SHA-256 precondition failed: {name}").into());
         }
-        let logical = fs::read(base.join(&p.new_unpaged_file))?;
+        let (path, complete) = match (&p.new_payload_file, &p.new_unpaged_file) {
+            (Some(path), None) => (path, true),
+            (None, Some(path)) => (path, false),
+            _ => return Err("exactly one of new_payload_file/new_unpaged_file is required".into()),
+        };
+        let logical = fs::read(base.join(path))?;
         let stored = if paged::is_paged(&name) {
-            paged::encode(&logical)?
+            if complete {
+                codec::encode(&logical)?
+            } else {
+                paged::encode(&logical)?
+            }
         } else {
             logical
         };
@@ -162,6 +200,9 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
     if actual != expected {
         return Err("post-write stream inventory/hash verification failed".into());
     }
+    if metadata(temp.path())? != original_metadata {
+        return Err("post-write directory metadata verification failed".into());
+    }
     temp.as_file().sync_all()?;
     let output_sha = file_hash(temp.path())?;
     temp.persist_noclobber(output)?;
@@ -173,7 +214,7 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
         streams_verified: actual.len(),
         parity_pages_verified: pages,
         final_pages_verified: finals,
-        validation: "CFB streams, page parity, and unchanged-stream SHA-256",
+        validation: "CFB streams, exact page framing, and unchanged-stream SHA-256",
         revit_openability: "not_tested",
     })
 }

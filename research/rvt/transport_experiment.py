@@ -11,7 +11,7 @@ from pathlib import Path
 import zlib
 import olefile
 from pages import GLOBAL
-from paged import decode
+from codec import decode
 
 
 def make(input_path, output_dir, mode):
@@ -48,7 +48,7 @@ def make(input_path, output_dir, mode):
             filename = f'{len(patches):03}.bin'
             (output_dir/filename).write_bytes(logical)
             patches.append({'stream': name, 'expected_stored_sha256': hashlib.sha256(raw).hexdigest(),
-                            'new_unpaged_file': filename})
+                            'new_payload_file': filename})
     if not patches: raise ValueError('no matching streams')
     (output_dir/'manifest.json').write_text(json.dumps({
         'input_sha256': hashlib.sha256(input_path.read_bytes()).hexdigest(), 'patches': patches}, indent=2)+'\n')

@@ -58,3 +58,14 @@ its parity is recomputed. `episode-independent-reader.json` records identical
 4,833-element JSON and a byte-identical 4,467,238-byte IFC export from rvt-rs,
 including 15,332 GlobalIds. This corrects the earlier invalid spike; it does
 not claim a complete save transaction or Autodesk acceptance.
+
+## Complete framing supersedes the partial-page assumptions above
+
+See [complete-codec.md](complete-codec.md), `complete-codec.json`, and
+`complete-codec-rust.json`: 986 pages across six fixtures reproduce exactly,
+including their payload lengths and canonical dimensions. The earlier
+`episode-plan.json` / `rust-episode-write.json` retained stale padding-length
+metadata and are historical evidence only. `episode-complete.json`,
+`episode-complete-writer.json`, and `episode-complete-reader.json` supersede
+them. The new IFC comparison normalizes only the two export timestamps;
+all other bytes match. Autodesk acceptance remains untested.
