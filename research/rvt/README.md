@@ -123,3 +123,9 @@ from GUID-keyed content IDs; it does not implement new-element allocation.
 by independent element/IFC projections and the complete schema object graph.
 [Writer evidence](results/object-writer.md) includes corpus-wide repacking and
 reproduction commands. Existing signatures are preserved, not regenerated.
+
+`bookkeeping_probe.py` independently decodes History/index/increment metadata.
+`verify_bookkeeping.py` checks physical group counts, and `verify_routing.py`
+checks modification-episode routes without a highest-stream fallback.
+[Bookkeeping evidence](results/bookkeeping.md) records 17 unresolved storage
+routes and explains why History-only changes are not complete saves.

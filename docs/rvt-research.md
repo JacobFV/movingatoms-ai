@@ -267,3 +267,13 @@ room finish grows by 26 bytes; independent full-graph validation preserves all
 All 736,332 corpus records survive repacking. This does not yet implement save
 bookkeeping, signature generation or new element creation. The user confirmed
 no Autodesk installation or APS account is available for acceptance testing.
+
+## Save bookkeeping audit
+
+[Schema-directed bookkeeping](../research/rvt/results/bookkeeping.md) confirms
+that physical increment counts include embedded content, while table partition
+IDs are not physical stream ordinals. History offset 14 is the next local
+sequence number; it equals the episode count only as an observed invariant.
+Explicit modification-episode routing locates 53,527 of 53,544 records; 17
+exceptions remain unresolved without a fallback guess. A complete save still
+requires correct increment, per-stream revision and signature behavior.

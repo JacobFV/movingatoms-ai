@@ -1,0 +1,1194 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "history_episodes": 39,
+    "increment_entries": 66,
+    "project_table_records": 26425,
+    "table_partition_id_histogram": {
+      "0": 26425
+    },
+    "graveyard_records": 0,
+    "next_local_sequence_equals_episode_count": true,
+    "modification_episodes_in_history": true,
+    "all_active_increments_present": true,
+    "all_partition_counts_match": true,
+    "streams": [
+      {
+        "stream": "Partitions/46",
+        "base_objects": 20156,
+        "all_group_objects": 42270,
+        "content_groups": 46,
+        "greatest_episode": 30,
+        "total_episodes": 31
+      },
+      {
+        "stream": "Partitions/48",
+        "base_objects": 6680,
+        "all_group_objects": 6680,
+        "content_groups": 0,
+        "greatest_episode": 31,
+        "total_episodes": 32
+      },
+      {
+        "stream": "Partitions/51",
+        "base_objects": 869,
+        "all_group_objects": 869,
+        "content_groups": 0,
+        "greatest_episode": 33,
+        "total_episodes": 34
+      },
+      {
+        "stream": "Partitions/53",
+        "base_objects": 13,
+        "all_group_objects": 13,
+        "content_groups": 0,
+        "greatest_episode": 34,
+        "total_episodes": 35
+      },
+      {
+        "stream": "Partitions/55",
+        "base_objects": 121,
+        "all_group_objects": 121,
+        "content_groups": 0,
+        "greatest_episode": 35,
+        "total_episodes": 36
+      },
+      {
+        "stream": "Partitions/59",
+        "base_objects": 651,
+        "all_group_objects": 651,
+        "content_groups": 0,
+        "greatest_episode": 36,
+        "total_episodes": 37
+      },
+      {
+        "stream": "Partitions/61",
+        "base_objects": 41,
+        "all_group_objects": 41,
+        "content_groups": 0,
+        "greatest_episode": 37,
+        "total_episodes": 38
+      },
+      {
+        "stream": "Partitions/65",
+        "base_objects": 29,
+        "all_group_objects": 29,
+        "content_groups": 0,
+        "greatest_episode": 38,
+        "total_episodes": 39
+      }
+    ],
+    "history_root_field_spans": [
+      {
+        "class_tag": 1279,
+        "end": 6,
+        "name": "m_pADoc",
+        "start": 2
+      },
+      {
+        "class_tag": 1279,
+        "end": 10,
+        "name": "m_pIncrementTable",
+        "start": 6
+      },
+      {
+        "class_tag": 1280,
+        "end": 14,
+        "name": "m_oEpisodes",
+        "start": 10
+      },
+      {
+        "class_tag": 1279,
+        "end": 14,
+        "name": "m_episodeList",
+        "start": 10
+      },
+      {
+        "class_tag": 1279,
+        "end": 18,
+        "name": "m_nextLocalSequenceNumber",
+        "start": 14
+      },
+      {
+        "class_tag": 1279,
+        "end": 22,
+        "name": "m_subsequenceNumberDeficit",
+        "start": 18
+      },
+      {
+        "class_tag": 30,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 604,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 1279,
+        "end": 38,
+        "name": "m_creationGUID",
+        "start": 22
+      },
+      {
+        "class_tag": 30,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 604,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 1279,
+        "end": 54,
+        "name": "m_detachGUID",
+        "start": 38
+      },
+      {
+        "class_tag": 30,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 604,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 1279,
+        "end": 70,
+        "name": "m_upgradeGUID",
+        "start": 54
+      },
+      {
+        "class_tag": 30,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 604,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 1279,
+        "end": 86,
+        "name": "m_previousUpgradeGUID",
+        "start": 70
+      },
+      {
+        "class_tag": 30,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 604,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 1279,
+        "end": 102,
+        "name": "m_saveAsGUID",
+        "start": 86
+      },
+      {
+        "class_tag": 1279,
+        "end": 106,
+        "name": "m_upgradeVersions",
+        "start": 102
+      }
+    ],
+    "increment_root_fields": [
+      "m_increments",
+      "m_localIncrements",
+      "m_permutation"
+    ],
+    "room_identity": null,
+    "complete_save_semantics": "not_established"
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "history_episodes": 6,
+    "increment_entries": 7,
+    "project_table_records": 2615,
+    "table_partition_id_histogram": {
+      "0": 2615
+    },
+    "graveyard_records": 0,
+    "next_local_sequence_equals_episode_count": true,
+    "modification_episodes_in_history": true,
+    "all_active_increments_present": true,
+    "all_partition_counts_match": true,
+    "streams": [
+      {
+        "stream": "Partitions/0",
+        "base_objects": 2520,
+        "all_group_objects": 4381,
+        "content_groups": 4,
+        "greatest_episode": 0,
+        "total_episodes": 1
+      },
+      {
+        "stream": "Partitions/1",
+        "base_objects": 11,
+        "all_group_objects": 11,
+        "content_groups": 0,
+        "greatest_episode": 1,
+        "total_episodes": 2
+      },
+      {
+        "stream": "Partitions/2",
+        "base_objects": 12,
+        "all_group_objects": 12,
+        "content_groups": 0,
+        "greatest_episode": 2,
+        "total_episodes": 3
+      },
+      {
+        "stream": "Partitions/3",
+        "base_objects": 7,
+        "all_group_objects": 7,
+        "content_groups": 0,
+        "greatest_episode": 3,
+        "total_episodes": 4
+      },
+      {
+        "stream": "Partitions/4",
+        "base_objects": 14,
+        "all_group_objects": 14,
+        "content_groups": 0,
+        "greatest_episode": 4,
+        "total_episodes": 5
+      },
+      {
+        "stream": "Partitions/5",
+        "base_objects": 66,
+        "all_group_objects": 844,
+        "content_groups": 2,
+        "greatest_episode": 5,
+        "total_episodes": 6
+      },
+      {
+        "stream": "Partitions/6",
+        "base_objects": 0,
+        "all_group_objects": 0,
+        "content_groups": 0,
+        "greatest_episode": 5,
+        "total_episodes": 6
+      }
+    ],
+    "history_root_field_spans": [
+      {
+        "class_tag": 1244,
+        "end": 6,
+        "name": "m_pADoc",
+        "start": 2
+      },
+      {
+        "class_tag": 1244,
+        "end": 10,
+        "name": "m_pIncrementTable",
+        "start": 6
+      },
+      {
+        "class_tag": 1245,
+        "end": 14,
+        "name": "m_oEpisodes",
+        "start": 10
+      },
+      {
+        "class_tag": 1244,
+        "end": 14,
+        "name": "m_episodeList",
+        "start": 10
+      },
+      {
+        "class_tag": 1244,
+        "end": 18,
+        "name": "m_nextLocalSequenceNumber",
+        "start": 14
+      },
+      {
+        "class_tag": 1244,
+        "end": 22,
+        "name": "m_subsequenceNumberDeficit",
+        "start": 18
+      },
+      {
+        "class_tag": 30,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 585,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 1244,
+        "end": 38,
+        "name": "m_creationGUID",
+        "start": 22
+      },
+      {
+        "class_tag": 30,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 585,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 1244,
+        "end": 54,
+        "name": "m_detachGUID",
+        "start": 38
+      },
+      {
+        "class_tag": 30,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 585,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 1244,
+        "end": 70,
+        "name": "m_upgradeGUID",
+        "start": 54
+      },
+      {
+        "class_tag": 30,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 585,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 1244,
+        "end": 86,
+        "name": "m_previousUpgradeGUID",
+        "start": 70
+      },
+      {
+        "class_tag": 30,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 585,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 1244,
+        "end": 102,
+        "name": "m_saveAsGUID",
+        "start": 86
+      },
+      {
+        "class_tag": 1244,
+        "end": 106,
+        "name": "m_upgradeVersions",
+        "start": 102
+      }
+    ],
+    "increment_root_fields": [
+      "m_increments",
+      "m_localIncrements",
+      "m_permutation"
+    ],
+    "room_identity": null,
+    "complete_save_semantics": "not_established"
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "history_episodes": 703,
+    "increment_entries": 85,
+    "project_table_records": 4668,
+    "table_partition_id_histogram": {
+      "0": 4668
+    },
+    "graveyard_records": 0,
+    "next_local_sequence_equals_episode_count": true,
+    "modification_episodes_in_history": true,
+    "all_active_increments_present": true,
+    "all_partition_counts_match": true,
+    "streams": [
+      {
+        "stream": "Partitions/80",
+        "base_objects": 4668,
+        "all_group_objects": 38438,
+        "content_groups": 77,
+        "greatest_episode": 698,
+        "total_episodes": 699
+      },
+      {
+        "stream": "Partitions/83",
+        "base_objects": 1,
+        "all_group_objects": 1,
+        "content_groups": 0,
+        "greatest_episode": 701,
+        "total_episodes": 702
+      },
+      {
+        "stream": "Partitions/84",
+        "base_objects": 3,
+        "all_group_objects": 3,
+        "content_groups": 0,
+        "greatest_episode": 702,
+        "total_episodes": 703
+      }
+    ],
+    "history_root_field_spans": [
+      {
+        "class_tag": 1309,
+        "end": 6,
+        "name": "m_pADoc",
+        "start": 2
+      },
+      {
+        "class_tag": 1309,
+        "end": 10,
+        "name": "m_pIncrementTable",
+        "start": 6
+      },
+      {
+        "class_tag": 1310,
+        "end": 14,
+        "name": "m_oEpisodes",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 14,
+        "name": "m_episodeList",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 18,
+        "name": "m_nextLocalSequenceNumber",
+        "start": 14
+      },
+      {
+        "class_tag": 1309,
+        "end": 22,
+        "name": "m_subsequenceNumberDeficit",
+        "start": 18
+      },
+      {
+        "class_tag": 30,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 623,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 1309,
+        "end": 38,
+        "name": "m_creationGUID",
+        "start": 22
+      },
+      {
+        "class_tag": 30,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 623,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 1309,
+        "end": 54,
+        "name": "m_detachGUID",
+        "start": 38
+      },
+      {
+        "class_tag": 30,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 623,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 1309,
+        "end": 70,
+        "name": "m_upgradeGUID",
+        "start": 54
+      },
+      {
+        "class_tag": 30,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 623,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 1309,
+        "end": 86,
+        "name": "m_previousUpgradeGUID",
+        "start": 70
+      },
+      {
+        "class_tag": 30,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 623,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 102,
+        "name": "m_saveAsGUID",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 866,
+        "name": "m_upgradeVersions",
+        "start": 102
+      }
+    ],
+    "increment_root_fields": [
+      "m_increments",
+      "m_localIncrements",
+      "m_permutation"
+    ],
+    "room_identity": {
+      "creation_episode": 639,
+      "element_id": 348738,
+      "original_id_suffix": 348738,
+      "other_revision": 639,
+      "owning_element_id": -1,
+      "partition_id": 0,
+      "raw_fields": [
+        348738,
+        0,
+        639,
+        687,
+        639,
+        348738,
+        0,
+        4294967295,
+        4294967295,
+        0
+      ],
+      "row_offset": 109206,
+      "stored_revision": 687,
+      "unique_id": "c1104319-15e9-42d2-b2f7-40d05b0bb07c-00055242"
+    },
+    "complete_save_semantics": "not_established"
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "history_episodes": 172,
+    "increment_entries": 121,
+    "project_table_records": 10266,
+    "table_partition_id_histogram": {
+      "0": 10266
+    },
+    "graveyard_records": 0,
+    "next_local_sequence_equals_episode_count": true,
+    "modification_episodes_in_history": true,
+    "all_active_increments_present": true,
+    "all_partition_counts_match": true,
+    "streams": [
+      {
+        "stream": "Partitions/114",
+        "base_objects": 9731,
+        "all_group_objects": 81702,
+        "content_groups": 208,
+        "greatest_episode": 166,
+        "total_episodes": 167
+      },
+      {
+        "stream": "Partitions/116",
+        "base_objects": 6,
+        "all_group_objects": 6,
+        "content_groups": 0,
+        "greatest_episode": 168,
+        "total_episodes": 169
+      },
+      {
+        "stream": "Partitions/118",
+        "base_objects": 2162,
+        "all_group_objects": 27099,
+        "content_groups": 80,
+        "greatest_episode": 170,
+        "total_episodes": 171
+      },
+      {
+        "stream": "Partitions/119",
+        "base_objects": 100,
+        "all_group_objects": 100,
+        "content_groups": 0,
+        "greatest_episode": 171,
+        "total_episodes": 172
+      },
+      {
+        "stream": "Partitions/120",
+        "base_objects": 0,
+        "all_group_objects": 0,
+        "content_groups": 0,
+        "greatest_episode": 171,
+        "total_episodes": 172
+      }
+    ],
+    "history_root_field_spans": [
+      {
+        "class_tag": 1309,
+        "end": 6,
+        "name": "m_pADoc",
+        "start": 2
+      },
+      {
+        "class_tag": 1309,
+        "end": 10,
+        "name": "m_pIncrementTable",
+        "start": 6
+      },
+      {
+        "class_tag": 1310,
+        "end": 14,
+        "name": "m_oEpisodes",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 14,
+        "name": "m_episodeList",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 18,
+        "name": "m_nextLocalSequenceNumber",
+        "start": 14
+      },
+      {
+        "class_tag": 1309,
+        "end": 22,
+        "name": "m_subsequenceNumberDeficit",
+        "start": 18
+      },
+      {
+        "class_tag": 30,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 623,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 1309,
+        "end": 38,
+        "name": "m_creationGUID",
+        "start": 22
+      },
+      {
+        "class_tag": 30,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 623,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 1309,
+        "end": 54,
+        "name": "m_detachGUID",
+        "start": 38
+      },
+      {
+        "class_tag": 30,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 623,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 1309,
+        "end": 70,
+        "name": "m_upgradeGUID",
+        "start": 54
+      },
+      {
+        "class_tag": 30,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 623,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 1309,
+        "end": 86,
+        "name": "m_previousUpgradeGUID",
+        "start": 70
+      },
+      {
+        "class_tag": 30,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 623,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 102,
+        "name": "m_saveAsGUID",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 106,
+        "name": "m_upgradeVersions",
+        "start": 102
+      }
+    ],
+    "increment_root_fields": [
+      "m_increments",
+      "m_localIncrements",
+      "m_permutation"
+    ],
+    "room_identity": null,
+    "complete_save_semantics": "not_established"
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "history_episodes": 136,
+    "increment_entries": 80,
+    "project_table_records": 4743,
+    "table_partition_id_histogram": {
+      "0": 4743
+    },
+    "graveyard_records": 0,
+    "next_local_sequence_equals_episode_count": true,
+    "modification_episodes_in_history": true,
+    "all_active_increments_present": true,
+    "all_partition_counts_match": true,
+    "streams": [
+      {
+        "stream": "Partitions/78",
+        "base_objects": 4743,
+        "all_group_objects": 20342,
+        "content_groups": 40,
+        "greatest_episode": 134,
+        "total_episodes": 135
+      },
+      {
+        "stream": "Partitions/79",
+        "base_objects": 32,
+        "all_group_objects": 32,
+        "content_groups": 0,
+        "greatest_episode": 135,
+        "total_episodes": 136
+      }
+    ],
+    "history_root_field_spans": [
+      {
+        "class_tag": 1309,
+        "end": 6,
+        "name": "m_pADoc",
+        "start": 2
+      },
+      {
+        "class_tag": 1309,
+        "end": 10,
+        "name": "m_pIncrementTable",
+        "start": 6
+      },
+      {
+        "class_tag": 1310,
+        "end": 14,
+        "name": "m_oEpisodes",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 14,
+        "name": "m_episodeList",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 18,
+        "name": "m_nextLocalSequenceNumber",
+        "start": 14
+      },
+      {
+        "class_tag": 1309,
+        "end": 22,
+        "name": "m_subsequenceNumberDeficit",
+        "start": 18
+      },
+      {
+        "class_tag": 30,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 623,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 1309,
+        "end": 38,
+        "name": "m_creationGUID",
+        "start": 22
+      },
+      {
+        "class_tag": 30,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 623,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 1309,
+        "end": 54,
+        "name": "m_detachGUID",
+        "start": 38
+      },
+      {
+        "class_tag": 30,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 623,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 1309,
+        "end": 70,
+        "name": "m_upgradeGUID",
+        "start": 54
+      },
+      {
+        "class_tag": 30,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 623,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 1309,
+        "end": 86,
+        "name": "m_previousUpgradeGUID",
+        "start": 70
+      },
+      {
+        "class_tag": 30,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 623,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 102,
+        "name": "m_saveAsGUID",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 106,
+        "name": "m_upgradeVersions",
+        "start": 102
+      }
+    ],
+    "increment_root_fields": [
+      "m_increments",
+      "m_localIncrements",
+      "m_permutation"
+    ],
+    "room_identity": null,
+    "complete_save_semantics": "not_established"
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "history_episodes": 125,
+    "increment_entries": 63,
+    "project_table_records": 4827,
+    "table_partition_id_histogram": {
+      "0": 4827
+    },
+    "graveyard_records": 0,
+    "next_local_sequence_equals_episode_count": true,
+    "modification_episodes_in_history": true,
+    "all_active_increments_present": true,
+    "all_partition_counts_match": true,
+    "streams": [
+      {
+        "stream": "Partitions/61",
+        "base_objects": 4827,
+        "all_group_objects": 21224,
+        "content_groups": 39,
+        "greatest_episode": 123,
+        "total_episodes": 124
+      },
+      {
+        "stream": "Partitions/62",
+        "base_objects": 31,
+        "all_group_objects": 31,
+        "content_groups": 0,
+        "greatest_episode": 124,
+        "total_episodes": 125
+      }
+    ],
+    "history_root_field_spans": [
+      {
+        "class_tag": 1309,
+        "end": 6,
+        "name": "m_pADoc",
+        "start": 2
+      },
+      {
+        "class_tag": 1309,
+        "end": 10,
+        "name": "m_pIncrementTable",
+        "start": 6
+      },
+      {
+        "class_tag": 1310,
+        "end": 14,
+        "name": "m_oEpisodes",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 14,
+        "name": "m_episodeList",
+        "start": 10
+      },
+      {
+        "class_tag": 1309,
+        "end": 18,
+        "name": "m_nextLocalSequenceNumber",
+        "start": 14
+      },
+      {
+        "class_tag": 1309,
+        "end": 22,
+        "name": "m_subsequenceNumberDeficit",
+        "start": 18
+      },
+      {
+        "class_tag": 30,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 623,
+        "end": 38,
+        "name": "m_guid",
+        "start": 22
+      },
+      {
+        "class_tag": 1309,
+        "end": 38,
+        "name": "m_creationGUID",
+        "start": 22
+      },
+      {
+        "class_tag": 30,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 623,
+        "end": 54,
+        "name": "m_guid",
+        "start": 38
+      },
+      {
+        "class_tag": 1309,
+        "end": 54,
+        "name": "m_detachGUID",
+        "start": 38
+      },
+      {
+        "class_tag": 30,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 623,
+        "end": 70,
+        "name": "m_guid",
+        "start": 54
+      },
+      {
+        "class_tag": 1309,
+        "end": 70,
+        "name": "m_upgradeGUID",
+        "start": 54
+      },
+      {
+        "class_tag": 30,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 623,
+        "end": 86,
+        "name": "m_guid",
+        "start": 70
+      },
+      {
+        "class_tag": 1309,
+        "end": 86,
+        "name": "m_previousUpgradeGUID",
+        "start": 70
+      },
+      {
+        "class_tag": 30,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 623,
+        "end": 102,
+        "name": "m_guid",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 102,
+        "name": "m_saveAsGUID",
+        "start": 86
+      },
+      {
+        "class_tag": 1309,
+        "end": 106,
+        "name": "m_upgradeVersions",
+        "start": 102
+      }
+    ],
+    "increment_root_fields": [
+      "m_increments",
+      "m_localIncrements",
+      "m_permutation"
+    ],
+    "room_identity": null,
+    "complete_save_semantics": "not_established"
+  }
+]
