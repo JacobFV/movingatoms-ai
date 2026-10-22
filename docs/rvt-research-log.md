@@ -310,3 +310,26 @@ Candidate SHA-256:
 [Reproduction and remaining hypotheses](../research/rvt/results/save-candidate.md).
 No evidence here settles unsigned nonempty partitions, ancillary revision policy,
 user-modification dates or Revit acceptance.
+
+## 2026-10-22 — Signature coverage and modification-date audits
+
+A signature relationship audit finds four repeated ContentKeys across Mechanical
+and Plumbing with mostly identical objects but different IDs, selected body
+bytes, and private fields. All sequence-103 body lists match for these pairs;
+the complete groups do not. ContentKey alone therefore cannot cache exact
+serialized bytes or private fields. No identical complete input pair was found,
+so signature determinism/keying remains undecided. The embedded-schema name
+search finds no additional algorithm declaration. [Evidence](../research/rvt/results/signature-relations.md).
+
+The independent modification-date audit covers 53,544 identities. Valid dates
+satisfy creation <= user modification <= modification; 1,575 user-modification
+fields instead contain 0xffffffff. Both experimental room-date variants preserve
+native identity and route successfully, so reader success cannot determine
+whether a user edit must advance that field. The channel-101 investigation
+explicitly covers only the decoded root, not its deferred remainder.
+[Evidence](../research/rvt/results/modification-history.md).
+
+The complete Python discovery suite now passes 74 tests, including both new
+audits. A historical licensed corpus search is continuing to obtain actual
+same-document save transitions rather than infer temporal rules from unrelated
+static files.
