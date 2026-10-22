@@ -143,3 +143,26 @@ All artifact hashes were checked after capture.
 ```sh
 python3 research/rvt/capture_evidence.py docs/rvt-evidence/2026-10-22-history-transport
 ```
+
+## 2026-10-22 — Resume coordinated save-candidate work
+
+Started parallel revision-rule auditing and a guarded, pinned append-save
+candidate. These are active investigations, not a complete-save claim.
+
+Implemented `partition_builder.py`: constructs a complete single-base-group
+partition from the three ordered record sequences, derives counts and
+sentinels, packs whole/split members and verifies the encoded envelope. It
+rejects mismatched profiles, duplicate/sentinel input IDs and inconsistent
+sequence lists. Nonempty unsigned output requires an explicit experimental
+opt-in because source evidence does not establish acceptance. It does not
+encode class bodies or generate signatures.
+
+Three focused tests passed:
+
+```sh
+python3 -m unittest discover -s research/rvt -p 'test_partition_builder.py'
+```
+
+The tests cover empty groups in all observed profiles, split large records,
+input preservation and failed preconditions. Save integration and revision
+rules will be recorded separately when their checks finish.
