@@ -1,0 +1,21 @@
+{
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "element_count": 154,
+  "changed_element": 348738,
+  "changed_field": "m_room_floor_finish",
+  "old": "Wood",
+  "new": "Cork",
+  "all_other_element_data_identical": true,
+  "controls_element_json_byte_identical": {
+    "recompress-control": true,
+    "footer-control": true
+  },
+  "ifc_changes_excluding_export_timestamps": 1,
+  "ifc_before_line": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Wood'),$);",
+  "ifc_after_line": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Cork'),$);",
+  "all_other_ifc_data_identical_except_export_timestamps": true,
+  "element_output_sha256": "ee6c6c6583b776914aee2eda25e63dea7dfef0ebad706f1d27d1d7130673effa",
+  "revit_openability": "not_tested",
+  "unknown_footer_integrity_verified": false,
+  "complete_save_transaction": false
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "output_sha256": "5346c3f69b5f961248205f929615c852ad7b1eeb0a83bd7a85489d6a988b2cd5",
+  "changed_streams": [
+    "/Partitions/80"
+  ],
+  "streams_verified": 15,
+  "parity_pages_verified": 98,
+  "final_pages_verified": 10,
+  "validation": "CFB streams, exact page framing, and unchanged-stream SHA-256",
+  "revit_openability": "not_tested"
+}

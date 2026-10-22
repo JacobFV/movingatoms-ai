@@ -1,0 +1,14 @@
+{
+  "mode": "footer-control",
+  "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "stream": "Partitions/80",
+  "changed_members": [],
+  "parameter_edit": null,
+  "all_unedited_segments_preserved": true,
+  "inflated_member_lengths_preserved": true,
+  "footer_preserved": false,
+  "footer_integrity_regenerated": false,
+  "save_bookkeeping_updated": false,
+  "revit_openability": "not_tested",
+  "production_native_export": false
+}

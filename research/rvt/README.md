@@ -82,3 +82,11 @@ the first segment terminator and records the unresolved footer. See
 partition envelope parser/serializer. [Recorded evidence](results/partition-segments.md)
 covers all 523 segments and 3,736 gzip members, with byte-identical
 reconstruction. Unknown footer bytes are preserved, not regenerated.
+
+`parameter_experiment.py` produces a pinned, same-length room floor-finish
+edit plus recompression/footer controls. `data_objects.py` verifies the owning
+object's length and Adler-32 before editing and recomputes its checksum.
+[Room-edit evidence](results/room-finish.md) demonstrates exactly one changed
+reader/IFC property. It does not establish Autodesk acceptance or regenerate
+the unresolved footer. The footer-control artifact is deliberately corrupted
+at that field for future differential validation, not a production output.

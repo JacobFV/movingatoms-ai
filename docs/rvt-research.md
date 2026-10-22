@@ -100,6 +100,17 @@ contain byte-sorted GUIDs, not proven editing-episode identifiers. There are
 SHA-512 inputs. No repeated inflated segment exists for a determinism test.
 This resolves envelope traversal, not footer generation or model semantics.
 
+### First model-parameter edit
+
+The [room-finish experiment](../research/rvt/results/room-finish.md) changes
+room 348738 in the MIT RE1 Architecture fixture from `Wood` to `Cork`, updating
+its owning object's Adler-32, gzip framing, and page parity. The independent
+reader changes exactly one field among 154 elements; its IFC changes exactly
+one property after timestamp normalization. Recompression-only and footer-bit
+controls preserve all reader elements. These are research candidates: the
+unknown footer is not regenerated, save bookkeeping is unchanged, and
+Autodesk acceptance remains untested. No element creation is claimed.
+
 ## Ground rules
 
 - **Clean-room only.** Work from the bytes of `.rvt` files and from public documentation. Do not disassemble, decompile
