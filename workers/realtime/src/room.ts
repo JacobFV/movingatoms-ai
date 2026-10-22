@@ -9,6 +9,9 @@ import { accountSummary, loadProject, platformSettings, postLedger, SCAN_JSON } 
 import { now, parseRows, uuid } from '../../../src/util'
 import { LiveModel, type Author, type Op } from './model'
 import { AGENT_AUTHOR, costOf, historyFrom, runAgent } from './agent'
+import { scheduleProcessors, type ProcEnv } from './processor'
+
+const PROCESSOR_GRACE_MS = 10_000
 
 interface Attachment {
   project_id: string
@@ -41,6 +44,20 @@ export class ProjectRoom extends DurableObject<Env> {
     super(ctx, env)
     this.model = new LiveModel(ctx.storage.sql)
     ctx.setWebSocketAutoResponse(new WebSocketRequestResponsePair('{"type":"ping"}', '{"type":"pong"}'))
+  }
+
+  /** Give the always-on machines (the GB10s poll every 1.5 s) first pick; whatever is still waiting after
+   *  PROCESSOR_GRACE_MS goes to Cloudflare containers. */
+  async jobQueued() {
+    const at = Date.now() + PROCESSOR_GRACE_MS
+    const cur = await this.ctx.storage.getAlarm()
+    if (cur === null || cur > at) await this.ctx.storage.setAlarm(at)
+  }
+
+  async alarm() {
+    const r = await scheduleProcessors(this.env as ProcEnv)
+    // still waiting (a container is booting, or none could start): look again in a minute, while there is work
+    if (r.queued > 0) await this.ctx.storage.setAlarm(Date.now() + 60_000)
   }
 
   async fetch(req: Request): Promise<Response> {
@@ -92,6 +109,17 @@ export class ProjectRoom extends DurableObject<Env> {
           if ('conflicts' in r) return json({ error: 'conflict', conflicts: r.conflicts }, 409)
           return json({ seq: r.seq, applied: r.applied })
         }
+        // a model build finished (§17.5): its files become the base the viewer draws before later changes
+        case '/model/base': {
+          const base = { seq: Number(body.seq), glb: String(body.glb), view: body.view ?? null, graph: String(body.graph), index: String(body.index ?? '') }
+          this.model.setBase(base)
+          this.broadcast(pid, { type: 'model.base', ...base })
+          return json({ base })
+        }
+        // a job was queued for this project: if no machine claims it soon, wake a Cloudflare container
+        case '/jobs/queued':
+          await this.jobQueued()
+          return json({ ok: true })
         case '/turn':
           return this.turn(pid, Number(body.message_id), body.user)
         case '/stop':
@@ -325,6 +353,7 @@ export class ProjectRoom extends DurableObject<Env> {
             await activity('running', summary)
           },
           drainSteered: () => run.steered.splice(0),
+          jobQueued: () => this.jobQueued(),
         },
         env.ANTHROPIC_API_KEY!,
         modelId,

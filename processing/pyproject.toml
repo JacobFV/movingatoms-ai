@@ -1,0 +1,32 @@
+[project]
+name = "ma-proc"
+version = "0.1.0"
+description = "Moving Atoms processing worker: scan ingest, labelling, Potree layers, model fit/build/heatmap"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "requests>=2.32",
+  "numpy>=2.0",
+  "scipy>=1.14",
+  "laspy[lazrs]>=2.5",
+  "pye57>=0.4",
+  "plyfile>=1.1",
+  "trimesh>=4.4",
+  "pillow>=10.4",
+  # the model jobs (ma_proc/model: fit, build, heatmap)
+  "ifcopenshell>=0.8",
+  "mapbox-earcut>=1.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ma_proc"]
+
+[tool.pytest.ini_options]
+pythonpath = ["tests", "."]
+testpaths = ["tests"]

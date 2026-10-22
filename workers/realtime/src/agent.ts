@@ -18,7 +18,11 @@ How you work:
 - When you need a decision from the person (formats, level of detail, what to include), use ask_question and end your turn; they answer from the card.
 - Use viewer_command to show them what you mean (isolate or highlight elements, fly the camera, draw a box).
 - For long work, post_progress short notes so they can follow along. Your last text is your answer.
-- You can't run point-cloud processing yourself: scan conversion, fitting and exports run on the platform's processing workers. Say so plainly when asked for them.
+- Scan conversion runs on the platform's processing workers, not in your tools. You can start three kinds of work there, which finish in the background (the person sees progress in the project):
+  publish_revision builds a checkpoint of the model: model.glb, IFC (it opens in Revit; a native .rvt file can't be produced here) and a new revision;
+  fit_to_scan fits elements (walls, columns, beams, pipes, ducts) to the scan points and updates them;
+  compute_heatmap measures the scan's deviation from the model.
+  Start them when the person asks, or when a checkpoint is due after a batch of edits; say what you started.
 
 The model (CONTRACTS §17). Each element: { id, kind, ifc_class, type_id, level_id, parent_id, params, geometry, relations: {connects: []}, props: {name, ...}, provenance: {status: "observed" | "designed" | "assumed", ...}, version }.
 Kinds include level, wall, slab, column, beam, door, window, opening, stair, railing, pipe, duct, cable_tray, equipment, furniture and mesh. Levels carry params.elevation (m). Walls carry params.start and params.end ([x, y], m), thickness and height; doors and windows sit in a wall (parent_id) with params.along, width, height and sill; columns carry params.position ([x, y]) and a section; pipes carry params.od (m), a path and a spec.
@@ -112,6 +116,39 @@ export const TOOLS: Anthropic.Beta.BetaTool[] = [
     strict: true,
   },
   {
+    name: 'publish_revision',
+    description: 'Build a checkpoint of the current model on the processing workers: a new revision with model.glb and an IFC file (IFC opens in Revit). Returns the job id.',
+    input_schema: {
+      type: 'object',
+      properties: { title: { type: 'string', description: 'Short revision title' }, notes: { type: 'string', description: 'What changed since the last revision' } },
+      required: ['title', 'notes'],
+      additionalProperties: false,
+    },
+    strict: true,
+  },
+  {
+    name: 'fit_to_scan',
+    description: 'Fit elements to the scan points on the processing workers (walls, columns, beams, pipes, ducts; doors, windows, openings and levels are skipped). The fitted elements are updated in the model. Returns the job id.',
+    input_schema: {
+      type: 'object',
+      properties: { element_ids: { type: 'array', items: { type: 'string' }, description: 'Up to 500 element ids' } },
+      required: ['element_ids'],
+      additionalProperties: false,
+    },
+    strict: true,
+  },
+  {
+    name: 'compute_heatmap',
+    description: 'Measure how far the scan points are from the model (a deviation heatmap per scan, with p50/p95 and the share within 25 mm). revision: a revision number, or 0 for the live model. Returns the job id.',
+    input_schema: {
+      type: 'object',
+      properties: { revision: { type: 'integer', description: 'Revision number, or 0 for the live model' } },
+      required: ['revision'],
+      additionalProperties: false,
+    },
+    strict: true,
+  },
+  {
     name: 'post_progress',
     description: 'Post a short progress note in the chat while you keep working.',
     input_schema: { type: 'object', properties: { text: { type: 'string' } }, required: ['text'], additionalProperties: false },
@@ -133,6 +170,8 @@ export interface AgentHost {
   activity(summary: string, item?: { kind: 'command' | 'edit' | 'tool' | 'thought'; text: string }): Promise<void>
   /** People's messages that arrived mid-turn (steering), drained by the loop before its next call. */
   drainSteered(): string[]
+  /** A job was queued: make sure a processor will pick it up. */
+  jobQueued(): Promise<void>
 }
 
 export interface TurnResult {
@@ -188,6 +227,27 @@ async function runTool(host: AgentHost, name: string, input: any): Promise<{ con
       host.emit({ type: 'viewer.command', command })
       await host.postMessage({ text: '', phase: 'commentary', blocks: [{ type: 'viewer', label: String(input.label).slice(0, 80), command }] })
       return { content: 'Shown.' }
+    }
+    case 'publish_revision':
+    case 'fit_to_scan':
+    case 'compute_heatmap': {
+      const type = name === 'publish_revision' ? 'build' : name === 'fit_to_scan' ? 'model_fit' : 'heatmap'
+      let jobInput: Record<string, unknown>
+      if (type === 'build') jobInput = { title: String(input.title ?? '').slice(0, 200), notes: String(input.notes ?? '').slice(0, 4000), by: 'agent' }
+      else if (type === 'model_fit') {
+        const ids = [...new Set(((input.element_ids ?? []) as unknown[]).map(String))].slice(0, 500)
+        if (!ids.length) return { content: 'Give at least one element id.', isError: true }
+        jobInput = { element_ids: ids, by: 'agent' }
+      } else jobInput = Number(input.revision) > 0 ? { revision: Number(input.revision) } : { live: true }
+      const id = crypto.randomUUID()
+      const t = new Date().toISOString()
+      await host.env.DB.prepare("INSERT INTO jobs (id, project_id, type, status, input, created_at, updated_at) VALUES (?, ?, ?, 'queued', ?, ?, ?)")
+        .bind(id, host.pid, type, JSON.stringify(jobInput), t, t)
+        .run()
+      host.emit({ type: 'job.updated', id, type_: type, status: 'queued', stage: null, progress: 0, job: { id, type, status: 'queued', stage: null, progress: 0 } })
+      await host.jobQueued()
+      await host.activity(`Started ${type.replace('_', ' ')} on the processing workers`, { kind: 'tool', text: `${name} → job ${id.slice(0, 8)}` })
+      return { content: JSON.stringify({ job_id: id, type, status: 'queued', note: 'Runs in the background; the person sees its progress. Do not wait for it.' }) }
     }
     case 'post_progress':
       await host.postMessage({ text: String(input.text), phase: 'commentary', item: `msg_${crypto.randomUUID().slice(0, 8)}` })

@@ -39,7 +39,7 @@ import {
   type ProjectRow,
   type Role,
 } from '../../../src/projects'
-import { abortUpload, completeUpload, listParts, partUrl, relayPart } from '../../../src/r2'
+import { abortUpload, completeUpload, listParts, partUrl, relayPart, serveObject } from '../../../src/r2'
 import { HttpError, errorResponse, now, parseRow, parseRows, randomToken, round2, uuid } from '../../../src/util'
 
 type C = Context<{ Bindings: Env; Variables: { user: User } }>
@@ -151,15 +151,18 @@ worker.use('*', async (c, next) => {
 // claim the oldest queued job (of the given types); the claim lapses after 15 minutes without an update
 worker.post('/jobs/claim', async (c) => {
   const b = await body(c)
-  const types: string[] = Array.isArray(b.types) && b.types.length ? b.types : ['ingest', 'link_import', 'model_fit', 'estimate', 'build']
+  const types: string[] = Array.isArray(b.types) && b.types.length ? b.types : ['ingest', 'link_import', 'model_fit', 'estimate', 'build', 'heatmap']
   const stale = Date.now() - 15 * 60_000
   const job = await c.env.DB.prepare(
     `UPDATE jobs SET status = 'running', claimed_by = ?, claimed_at = ?, updated_at = ?
      WHERE id = (SELECT id FROM jobs WHERE type IN (${types.map(() => '?').join(',')})
-                 AND (status = 'queued' OR (status = 'running' AND claimed_at < ?)) ORDER BY created_at LIMIT 1)
+                 AND (status = 'queued' OR (status = 'running' AND claimed_at < ?))
+                 AND (? IS NULL OR COALESCE(json_extract(input, '$.size'), 0) <= ?)
+                 ORDER BY created_at LIMIT 1)
      RETURNING *`,
   )
-    .bind(String(b.worker ?? 'worker'), Date.now(), now(), ...types, stale)
+    // max_size: a worker with little disk (a Cloudflare container) leaves big scans to a bigger machine
+    .bind(String(b.worker ?? 'worker'), Date.now(), now(), ...types, stale, b.max_size ?? null, b.max_size ?? null)
     .first()
   if (!job) return c.body(null, 204)
   const j = parseRow<any>(job, ['input', 'result'])!
@@ -208,6 +211,11 @@ worker.patch('/scans/:id', async (c) => {
   const scan = parseRow<any>(await c.env.DB.prepare('SELECT * FROM scans WHERE id = ?').bind(s.id).first(), SCAN_JSON)
   await emit(c.env, s.project_id, { type: 'scan.updated', scan })
   if (b.status === 'ready' && s.status !== 'ready') await scanReady(c.env, s.project_id, scan)
+  // measured (bounds or a footprint arrive before labelling): price it now, not at the end
+  else if ((b.bounds || b.brief?.footprint_m2) && !s.bounds) {
+    const p = await loadProject(c.env, s.project_id)
+    if (p) c.executionCtx.waitUntil(estimate(c.env, p.id, p.settings?.scope))
+  }
   if (b.status === 'error' && s.status !== 'error')
     await addMessage(c.env, s.project_id, { role: 'system', body: { text: `We couldn’t read **${s.name}**: ${b.error ?? 'the file is unreadable'}. Our team has been told.` } })
   return c.json({ scan })
@@ -323,25 +331,133 @@ worker.post('/projects/:pid/events', async (c) => {
   return c.json({ ok: true })
 })
 
-// public site media (files too big for Pages) into the MEDIA bucket, multipart through the binding
+// R2 for the processing worker: `bucket` is uploads (default, private project files) or media (public site files).
+// Reads stream with Range; writes are a single PUT (up to ~95 MB) or multipart through the binding.
+const bucketOf = (env: Env, b?: string | null) => (b === 'media' ? env.MEDIA : env.UPLOADS)
+const cleanKey = (k: unknown) => {
+  const key = String(k ?? '').replace(/^\/+/, '')
+  if (!key || key.includes('..')) throw new HttpError(400, 'bad_key', 'A key is needed.')
+  return key
+}
+worker.get('/r2', async (c) => serveObject(bucketOf(c.env, c.req.query('bucket')), cleanKey(c.req.query('key')), c.req.raw, { cache: 'no-store' }))
+worker.on('HEAD', '/r2', async (c) => {
+  const h = await bucketOf(c.env, c.req.query('bucket')).head(cleanKey(c.req.query('key')))
+  return h ? c.body(null, 200, { 'Content-Length': String(h.size), ETag: h.httpEtag }) : c.body(null, 404)
+})
+worker.get('/r2/list', async (c) => {
+  const r = await bucketOf(c.env, c.req.query('bucket')).list({ prefix: cleanKey(c.req.query('prefix')), cursor: c.req.query('cursor') || undefined, limit: 1000 })
+  return c.json({ objects: r.objects.map((o) => ({ key: o.key, size: o.size })), cursor: r.truncated ? r.cursor : null })
+})
+worker.put('/r2', async (c) => {
+  const len = Number(c.req.header('Content-Length') ?? 0)
+  const obj = await bucketOf(c.env, c.req.query('bucket')).put(cleanKey(c.req.query('key')), len > 0 ? c.req.raw.body!.pipeThrough(new FixedLengthStream(len)) : await c.req.arrayBuffer(), {
+    httpMetadata: { contentType: c.req.header('Content-Type') || 'application/octet-stream' },
+  })
+  return c.json({ key: obj?.key, size: obj?.size })
+})
+worker.post('/r2/create', async (c) => {
+  const b = await body(c)
+  const up = await bucketOf(c.env, b.bucket).createMultipartUpload(cleanKey(b.key), { httpMetadata: { contentType: b.type || 'application/octet-stream' } })
+  return c.json({ key: up.key, uploadId: up.uploadId })
+})
+worker.put('/r2/part', async (c) => {
+  const up = bucketOf(c.env, c.req.query('bucket')).resumeMultipartUpload(cleanKey(c.req.query('key')), c.req.query('uploadId') ?? '')
+  const len = Number(c.req.header('Content-Length') ?? 0)
+  const part = await up.uploadPart(Number(c.req.query('n')), len > 0 ? c.req.raw.body!.pipeThrough(new FixedLengthStream(len)) : await c.req.arrayBuffer())
+  return c.json({ PartNumber: part.partNumber, ETag: part.etag })
+})
+worker.post('/r2/complete', async (c) => {
+  const b = await body(c)
+  const obj = await bucketOf(c.env, b.bucket).resumeMultipartUpload(cleanKey(b.key), b.uploadId).complete(b.parts.map((p: any) => ({ partNumber: p.PartNumber, etag: p.ETag })))
+  return c.json({ key: obj.key, size: obj.size })
+})
+// the old names, used by scripts/media-upload-big.mjs
 worker.post('/media/create', async (c) => {
   const b = await body(c)
-  const key = String(b.key ?? '').replace(/^\/+/, '')
-  if (!key || key.includes('..')) throw new HttpError(400, 'bad_key', 'A key is needed.')
-  const up = await c.env.MEDIA.createMultipartUpload(key, { httpMetadata: { contentType: b.type || 'application/octet-stream' } })
-  return c.json({ key, uploadId: up.uploadId })
+  const up = await c.env.MEDIA.createMultipartUpload(cleanKey(b.key), { httpMetadata: { contentType: b.type || 'application/octet-stream' } })
+  return c.json({ key: up.key, uploadId: up.uploadId })
 })
 worker.put('/media/part', async (c) => {
-  const key = c.req.query('key') ?? ''
-  const up = c.env.MEDIA.resumeMultipartUpload(key, c.req.query('uploadId') ?? '')
+  const up = c.env.MEDIA.resumeMultipartUpload(cleanKey(c.req.query('key')), c.req.query('uploadId') ?? '')
   const len = Number(c.req.header('Content-Length') ?? 0)
   const part = await up.uploadPart(Number(c.req.query('n')), len > 0 ? c.req.raw.body!.pipeThrough(new FixedLengthStream(len)) : await c.req.arrayBuffer())
   return c.json({ PartNumber: part.partNumber, ETag: part.etag })
 })
 worker.post('/media/complete', async (c) => {
   const b = await body(c)
-  const obj = await c.env.MEDIA.resumeMultipartUpload(b.key, b.uploadId).complete(b.parts.map((p: any) => ({ partNumber: p.PartNumber, etag: p.ETag })))
+  const obj = await c.env.MEDIA.resumeMultipartUpload(cleanKey(b.key), b.uploadId).complete(b.parts.map((p: any) => ({ partNumber: p.PartNumber, etag: p.ETag })))
   return c.json({ key: obj.key, size: obj.size })
+})
+
+// the live model, for fits, builds and heatmaps: read it whole, apply ops as a named author, set a finished build
+const roomCall = async (env: Env, pid: string, path: string, init?: { method: string; body?: unknown }) => {
+  const r = await room(env, pid).fetch(`https://room${path}${path.includes('?') ? '&' : '?'}project_id=${pid}`, {
+    method: init?.method ?? 'GET',
+    headers: { 'Content-Type': 'application/json' },
+    body: init?.body === undefined ? undefined : JSON.stringify({ project_id: pid, ...(init.body as object) }),
+  })
+  return new Response(r.body, { status: r.status, headers: { 'Content-Type': 'application/json' } })
+}
+worker.get('/projects/:pid/model', async (c) => {
+  const pid = c.req.param('pid')
+  const q = new URL(c.req.url).searchParams
+  return roomCall(c.env, pid, `/model${q.toString() ? `?${q}` : ''}`)
+})
+worker.get('/projects/:pid/model/seq', (c) => roomCall(c.env, c.req.param('pid'), '/model/seq'))
+worker.post('/projects/:pid/model/ops', async (c) => {
+  const b = await body(c)
+  return roomCall(c.env, c.req.param('pid'), '/model/ops', {
+    method: 'POST',
+    body: { batch_id: b.batch_id ?? uuid(), ops: b.ops, note: b.note ?? null, author: b.author ?? { kind: 'agent', id: 'agent:processing', name: 'Moving Atoms' } },
+  })
+})
+worker.post('/projects/:pid/model/base', async (c) => roomCall(c.env, c.req.param('pid'), '/model/base', { method: 'POST', body: await body(c) }))
+worker.get('/projects/:pid', async (c) => {
+  const p = await loadProject(c.env, c.req.param('pid'))
+  if (!p) throw new HttpError(404, 'not_found', 'No such project.')
+  const [scans, revisions, files] = await Promise.all([
+    projectScans(c.env, p.id),
+    projectRevisions(c.env, p.id),
+    c.env.DB.prepare("SELECT * FROM files WHERE project_id = ? AND status = 'ready'").bind(p.id).all(),
+  ])
+  return c.json({ project: projectOut(p), scans, revisions, files: parseRows(files.results, ['meta']) })
+})
+// the live heatmap (§9 heatmap_live), one per scan, kept on the project and served in the viewer manifest
+worker.put('/projects/:pid/live-heatmaps/:scan', async (c) => {
+  const pid = c.req.param('pid')
+  const p = await loadProject(c.env, pid)
+  if (!p) throw new HttpError(404, 'not_found', 'No such project.')
+  const settings = { ...(p.settings ?? {}), live_heatmaps: { ...(p.settings?.live_heatmaps ?? {}), [c.req.param('scan')]: await body(c) } }
+  await c.env.DB.prepare('UPDATE projects SET settings = ? WHERE id = ?').bind(JSON.stringify(settings), pid).run()
+  return c.json({ ok: true })
+})
+// a file's status once its bytes are in R2 (a link import finished)
+worker.post('/files/:id', async (c) => {
+  const b = await body(c)
+  const f = await c.env.DB.prepare('SELECT * FROM files WHERE id = ?').bind(c.req.param('id')).first<any>()
+  if (!f) throw new HttpError(404, 'not_found', 'No such file.')
+  await c.env.DB.prepare('UPDATE files SET status = COALESCE(?, status), size_bytes = COALESCE(?, size_bytes), content_type = COALESCE(?, content_type) WHERE id = ?')
+    .bind(b.status ?? null, b.size_bytes ?? null, b.content_type ?? null, f.id)
+    .run()
+  const file = parseRow(await c.env.DB.prepare('SELECT * FROM files WHERE id = ?').bind(f.id).first(), ['meta'])
+  await emit(c.env, f.project_id, { type: 'file.updated', file })
+  return c.json({ file })
+})
+// hand a claimed job back to the queue (a worker too small for it, or shutting down)
+worker.post('/jobs/:id/release', async (c) => {
+  await c.env.DB.prepare("UPDATE jobs SET status = 'queued', claimed_by = NULL, claimed_at = NULL, updated_at = ? WHERE id = ? AND status = 'running'").bind(now(), c.req.param('id')).run()
+  return c.json({ ok: true })
+})
+// queue work from the processing side too (e.g. a build after a fit)
+worker.post('/projects/:pid/jobs', async (c) => {
+  const b = await body(c)
+  const id = uuid()
+  const t = now()
+  await c.env.DB.prepare("INSERT INTO jobs (id, project_id, type, status, input, created_at, updated_at) VALUES (?, ?, ?, 'queued', ?, ?, ?)")
+    .bind(id, c.req.param('pid'), String(b.type), JSON.stringify(b.input ?? {}), t, t)
+    .run()
+  c.executionCtx.waitUntil(jobQueued(c.env, c.req.param('pid')))
+  return c.json({ job: { id, type: b.type, status: 'queued' } })
 })
 
 app.route('/worker', worker)
@@ -481,6 +597,15 @@ async function toRoom(c: C, pid: string, path: string, init?: { method: string; 
   return new Response(r.body, { status: r.status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } })
 }
 
+/** A job was queued: the project's room wakes a Cloudflare container if no machine claims it soon. */
+async function jobQueued(env: Env, pid: string) {
+  try {
+    await room(env, pid).fetch('https://room/jobs/queued', { method: 'POST', body: JSON.stringify({ project_id: pid }) })
+  } catch (e) {
+    console.error('jobQueued', pid, e)
+  }
+}
+
 async function startTurn(env: Env, pid: string, messageId: number, user: { id: string; email: string; name: string | null }) {
   const r = await room(env, pid).fetch('https://room/turn', { method: 'POST', body: JSON.stringify({ project_id: pid, message_id: messageId, user }) })
   if (!r.ok && r.status !== 202) console.error('turn', pid, r.status, await r.text().catch(() => ''))
@@ -610,6 +735,7 @@ async function viewerManifest(env: Env, p: ProjectRow, isPublic: boolean) {
     points: points.results.map(pointOut),
     model: { seq: model.seq, base: model.base },
     live_heatmap: { on: p.settings?.live_heatmap !== false, ...(p.settings?.live_heatmap === false ? { reason: 'paused' } : {}) },
+    live_heatmaps: isPublic ? {} : (p.settings?.live_heatmaps ?? {}),
   }
 }
 
@@ -771,6 +897,7 @@ async function projectWrite(c: C, p: ProjectRow, role: Role, rest: string): Prom
     ])
     const full = parseRow<any>(await env.DB.prepare('SELECT * FROM scans WHERE id = ?').bind(scan.id).first(), SCAN_JSON)
     await emit(env, pid, { type: 'file.created', file: f }, { type: 'scan.updated', scan: full })
+    c.executionCtx.waitUntil(jobQueued(env, pid))
     return c.json({ job: { id: jobId, type: 'link_import', status: 'queued' }, file: f, scan: full })
   }
 
@@ -787,6 +914,7 @@ async function projectWrite(c: C, p: ProjectRow, role: Role, rest: string): Prom
       .run()
     const job = { id, type: 'model_fit', status: 'queued', stage: null, progress: 0 }
     await emit(env, pid, { type: 'job.updated', id, type_: 'model_fit', status: 'queued', stage: null, progress: 0, job })
+    c.executionCtx.waitUntil(jobQueued(env, pid))
     return c.json({ job })
   }
 
@@ -1026,7 +1154,7 @@ async function fileArrived(c: C, p: ProjectRow, up: any, size: number) {
   await env.DB.batch(stmts)
   await emit(env, pid, { type: 'file.created', file: f }, ...(scan ? [{ type: 'scan.updated', scan }, { type: 'project.updated', project: { id: pid, status: p.status === 'setup' ? 'processing' : p.status } }] : []))
   await addMessage(env, pid, { role: 'system', body: { text: `${u.name || u.email} uploaded **${up.name}**.`, blocks: [{ type: 'file', file_id: f.id }] } })
-  if (src) c.executionCtx.waitUntil(estimate(env, pid, p.settings?.scope))
+  if (src) c.executionCtx.waitUntil(Promise.all([estimate(env, pid, p.settings?.scope), jobQueued(env, pid)]))
   return { file: f, scan }
 }
 

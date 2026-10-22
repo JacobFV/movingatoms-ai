@@ -1,0 +1,24 @@
+# The scan-processing worker on a big machine (it claims every job size; Cloudflare containers take the small ones).
+# Install: sudo cp movingatoms-worker.service /etc/systemd/system/ && sudo systemctl enable --now movingatoms-worker
+# Needs /etc/movingatoms/worker.env with WORKER_TOKEN=… (and optionally MA_SITE=…), mode 600.
+[Unit]
+Description=Moving Atoms scan-processing worker
+After=docker.service network-online.target
+Requires=docker.service
+Wants=network-online.target
+
+[Service]
+Restart=always
+RestartSec=10
+TimeoutStopSec=120
+ExecStartPre=-/usr/bin/docker rm -f movingatoms-worker
+ExecStart=/usr/bin/docker run --rm --name movingatoms-worker \
+  --env-file /etc/movingatoms/worker.env \
+  -e MA_WORKER_NAME=%H \
+  -v /var/lib/movingatoms:/work \
+  -e MA_WORK_DIR=/work \
+  movingatoms-processing:latest
+ExecStop=/usr/bin/docker stop -t 110 movingatoms-worker
+
+[Install]
+WantedBy=multi-user.target

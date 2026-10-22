@@ -1,0 +1,8 @@
+# ma_proc.model (build, model_fit, heatmap)
+numpy>=2.0
+scipy>=1.13
+mapbox-earcut>=1.0
+ifcopenshell>=0.8
+trimesh>=4.4
+laspy[lazrs]>=2.5
+requests>=2.32

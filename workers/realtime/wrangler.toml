@@ -1,23 +1,46 @@
-# The realtime Worker: the ProjectRoom Durable Object (live sockets, the live model, agent turns).
+# The realtime Worker: the ProjectRoom Durable Object (live sockets, the live model, agent turns) and the
+# scan-processing containers (processing/Dockerfile), woken every minute while jobs are queued.
 # Deploy before the Pages project, which binds PROJECT_ROOM to this script.
 name = "movingatoms-realtime"
 main = "src/index.ts"
 compatibility_date = "2026-10-01"
 compatibility_flags = ["nodejs_compat"]
 account_id = "20d4becc35c40a0bbfb8803a525aaae1"
-workers_dev = false
+workers_dev = true  # only /__processors (bearer WORKER_TOKEN) answers; everything else is 404
+
+[observability]
+enabled = true
 
 [vars]
 AGENT_MODEL = "claude-opus-5-5"
 SITE_URL = "https://movingatoms-ai.pages.dev"
+PROCESSOR_INSTANCES = "2"
+
+[triggers]
+crons = ["* * * * *"]
 
 [[durable_objects.bindings]]
 name = "PROJECT_ROOM"
 class_name = "ProjectRoom"
 
+[[durable_objects.bindings]]
+name = "PROCESSOR"
+class_name = "Processor"
+
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["ProjectRoom"]
+
+[[migrations]]
+tag = "v2"
+new_sqlite_classes = ["Processor"]
+
+[[containers]]
+class_name = "Processor"
+image = "../../processing/Dockerfile"
+image_build_context = "../../processing"
+instance_type = "standard-4"
+max_instances = 4
 
 [[d1_databases]]
 binding = "DB"
@@ -28,4 +51,4 @@ database_id = "b0c7ea3e-53d6-43ba-98f8-e8946cbd9735"
 binding = "UPLOADS"
 bucket_name = "movingatoms-uploads"
 
-# secrets: SESSION_SECRET (same value as the Pages project), ANTHROPIC_API_KEY
+# secrets: SESSION_SECRET (same value as the Pages project), WORKER_TOKEN (same as Pages), ANTHROPIC_API_KEY
