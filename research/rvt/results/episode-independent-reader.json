@@ -1,0 +1,13 @@
+{
+  "reader": "rvt-rs 0.6.1",
+  "source_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "experiment": "episode-prepend",
+  "element_count": 4833,
+  "element_json_byte_identical": true,
+  "ifc_byte_identical": true,
+  "ifc_global_ids_equal": true,
+  "ifc_global_id_count": 15332,
+  "ifc_before_sha256": "d8152e36745e532312173e445cf03cd0634384d08513ccc86050284b1efb04a7",
+  "ifc_after_sha256": "d8152e36745e532312173e445cf03cd0634384d08513ccc86050284b1efb04a7",
+  "revit_openability": "not_tested"
+}

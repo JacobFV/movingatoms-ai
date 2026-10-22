@@ -6,7 +6,6 @@ canonical layout for a newly sized stream or where meaningful gzip data ends.
 import argparse
 import json
 from pathlib import Path
-import olefile
 from pages import GLOBAL, STORED
 
 GENERATORS = (0x13, 0x25, 0x43, 0x83, 0x211, 0x805)
@@ -50,6 +49,7 @@ def identify(raw):
 
 
 def probe(path):
+    import olefile
     results = []
     with olefile.OleFileIO(path) as f:
         for parts in f.listdir():

@@ -20,7 +20,7 @@ zero bits is exactly 255 × 2,036 bits. All bits are stored LSB-first.
 the reciprocal generator by polynomial GCD. [Recorded evidence](../research/rvt/results/README.md)
 includes exact reproduction of **509 Core Interior pages + 10 Einhoven pages**,
 including schema streams, and byte-identical reconstruction of all 29 eligible
-streams. Eight Python tests cover independent scalar polynomial division over all 255
+streams. The Python tests cover independent scalar polynomial division over all 255
 lanes, boundary lengths, corruption, padding, truncation, and linearity.
 
 This removes the page-parity blocker. It does **not** demonstrate native element
@@ -42,6 +42,13 @@ transactions, and refuses stale final-page parity. Its identity write is
 whole-file byte identical. A real multipage gzip-header edit re-reads as
 byte-identical JSON for all 4,833 elements in rvt-rs. Seven Rust tests cover the
 codec, short-page layouts, allocation changes, and failed transactions.
+
+The corrected episode experiment grows `Global/History` from 837 to 845 stored
+bytes with fresh parity and preserves all existing episode GUID mappings. The
+independent reader emits byte-identical element JSON **and the complete 4.47 MB
+IFC export**, including 15,332 IFC GlobalIds. This is not a complete Revit save:
+save-counter and other transaction bookkeeping remain unchanged. The two parity
+fixtures span Revit **2024 (Core Interior)** and **2023 (Einhoven)**.
 
 Remaining: canonical layout selection for newly sized final pages, exact
 stream/member framing and data lengths, native element encoders and reference
@@ -87,11 +94,15 @@ streams: `BasicFileInfo` (UTF-16 text: release, build tag, original path, file G
 
 1. Built rvt-rs 0.6.1 (rustc 1.97, all 19 CLIs) and ran `rvt-info`, `rvt-analyze`, `rvt-elements` on Core Interior
    (2024) and Linden Workshop (2027; only Material ×1,229 and GenericModel ×767 decode there).
-2. **Semantic write that worked:** on the single-page `Global/History` stream, inflate → append one transaction GUID
-   entry and bump the entry count 39 → 40 → re-encode → `rvt-write`. rvt-rs re-reads it; file GUID, save counter (66)
-   and all 4,833 elements unchanged. `research/rvt/hist_patch.py` builds that kind of patch manifest. Caveat: Revit's
-   8-byte stream prefix there is `01 00 00 00 00 00 00 00`; rvt-rs's `CustomPrefix8` framing writes 8 zero bytes, so
-   even this edit is not yet faithful to Revit's own framing. **Not validated by Revit.**
+2. **Original History edit — invalidated by the follow-up audit:** the scratch manifest changed
+   count 39 → 40 at offset 0x0e but not the second list count, appended (instead of prepending) an
+   episode, and used terminator 0x3f instead of 0x28. Metadata/element re-reading did not validate
+   that structure. The old build-tag script also does not apply to the pinned Core Interior fixture.
+   The new `episode_experiment.py` changes both counts, prepends a correctly framed GUID, preserves
+   existing episode-number mappings and the original 8-byte prefix, and regenerates final-page
+   parity. It produces a structurally verified 39 → 40 episode list; both the 4,833-element JSON
+   and complete IFC export remain byte-identical through independent rvt-rs reading. It is still
+   **not a complete save transaction or Revit-validated output**.
 3. **Semantic write that is blocked:** adding an element. That needs `Global/ElemTable` changed (record count at offset
    2, 40-byte records with id/owner on 2024+), and ElemTable is multi-page (~126 KB even in a small project) — so page
    one's trailer must be recomputed. rvt-rs refuses any multi-page re-encode, even an identity one ("spans a
@@ -100,7 +111,8 @@ streams: `BasicFileInfo` (UTF-16 text: release, build tag, original path, file G
 ## Original blocker (now solved): the 353-byte page trailer
 
 Every `Partitions/*` stream and the large `Global/*` streams are stored in **65,249-byte pages = 64,896 bytes of payload
-+ a 353-byte trailer**. The final, short page of a stream carries no trailer.
++ a 353-byte trailer**. The original spike assumed the final short page carried no trailer. **That was wrong:**
+the follow-up recovered shortened Hamming parity on every final page in both fixtures.
 
 Observed (`research/rvt/tail_probe.py`, `tail_probe2.py`):
 - High entropy, ~7.4 bits/byte; no internal record structure at 8/11/16/22/32/44/88-byte strides; only byte 0 is

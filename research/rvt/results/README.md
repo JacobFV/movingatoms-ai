@@ -47,3 +47,14 @@ regenerates its full-page parity, verifies its final-page parity, and checks
 all other streams remain identical. `independent-reader.json` records that
 rvt-rs emits byte-identical JSON for all 4,833 elements before and after.
 These are structural/transport results, not Revit-openability or model export.
+
+
+## Corrected History experiment
+
+`episode-plan.json` and `rust-episode-write.json` record a properly framed
+39 → 40 episode-list edit, preserving the stream prefix and all existing
+episode-number-to-GUID mappings. The shortened page grows 837 → 845 bytes and
+its parity is recomputed. `episode-independent-reader.json` records identical
+4,833-element JSON and a byte-identical 4,467,238-byte IFC export from rvt-rs,
+including 15,332 GlobalIds. This corrects the earlier invalid spike; it does
+not claim a complete save transaction or Autodesk acceptance.
