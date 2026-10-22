@@ -77,3 +77,8 @@ observed. Viewer conversion success alone does not prove editable Revit saves.
 `partition_audit.py` separately verifies explicitly framed gzip members up to
 the first segment terminator and records the unresolved footer. See
 [partition-audit.md](results/partition-audit.md) before attempting model writes.
+
+`partition_segments.py` extends the first-segment audit to a strict complete
+partition envelope parser/serializer. [Recorded evidence](results/partition-segments.md)
+covers all 523 segments and 3,736 gzip members, with byte-identical
+reconstruction. Unknown footer bytes are preserved, not regenerated.

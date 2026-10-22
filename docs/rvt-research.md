@@ -89,6 +89,17 @@ is **not** evidence of a keyed signature, but it is another unresolved field
 for native element writing. Later segments, indexes, and references are not
 yet completely parsed. The claim that parity was the only blocker is false.
 
+### Complete partition envelope follow-up
+
+[Complete traversal evidence](../research/rvt/results/partition-segments.md)
+accounts for every byte of all 27 partition payloads: 523 segments, 3,736
+length-framed gzip members, and optional final zero bytes. The new strict
+parser/serializer reconstructs each payload exactly. Continuation records
+contain byte-sorted GUIDs, not proven editing-episode identifiers. There are
+521 nonempty footer blobs, none matching the three tested per-segment
+SHA-512 inputs. No repeated inflated segment exists for a determinism test.
+This resolves envelope traversal, not footer generation or model semantics.
+
 ## Ground rules
 
 - **Clean-room only.** Work from the bytes of `.rvt` files and from public documentation. Do not disassemble, decompile
