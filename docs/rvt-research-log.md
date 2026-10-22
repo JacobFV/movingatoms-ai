@@ -128,3 +128,18 @@ claim to add a model element or link a complete save transaction.
 **Reporting improvement:** capture manifests now hash the tested Python and
 Rust source files and reject code changes during the test run. Earlier capture
 manifests retain their original format and are not rewritten.
+
+
+## 2026-10-22 22:44 UTC — Capture History/transport milestone
+
+Implementation committed as `cbdc8e0`. Captured and visually reviewed the
+[History/transport report](rvt-evidence/2026-10-22-history-transport/save-pipeline.png).
+The capture reran all 50 Python tests successfully; its 14-test Rust result
+comes from the recorded transport verification, not a second Cargo run.
+[Manifest](rvt-evidence/2026-10-22-history-transport/manifest.json) includes exact
+source hashes and verifies that sources stayed unchanged during the test run.
+All artifact hashes were checked after capture.
+
+```sh
+python3 research/rvt/capture_evidence.py docs/rvt-evidence/2026-10-22-history-transport
+```

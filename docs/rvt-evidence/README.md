@@ -10,12 +10,15 @@ connects screenshots to commits, commands and machine-readable results.
 | --- | --- | --- |
 | [2026-10-22 baseline](2026-10-22-baseline/manifest.json) | Corpus reconstruction, real room edit, 37-test regression run | `d92645d` |
 | [2026-10-22 save/signature](2026-10-22-save-signature/manifest.json) | Save-table codec, signature hypothesis tests, 45-test regression run | `320baea` |
+| [2026-10-22 History/transport](2026-10-22-history-transport/manifest.json) | History codec, new-partition transport, 50 Python tests; recorded 14 Rust tests | `cbdc8e0` |
 
 ![Corpus reconstruction report](2026-10-22-baseline/corpus.png)
 
 ![Real room-edit evidence report](2026-10-22-baseline/room-edit.png)
 
 ![Save and signature investigation report](2026-10-22-save-signature/investigations.png)
+
+![History and partition transport report](2026-10-22-history-transport/save-pipeline.png)
 
 These are actual headless Chrome screenshots of **local generated evidence
 reports**. They are not Autodesk/Revit screenshots, model renders, or evidence
@@ -47,7 +50,7 @@ The baseline capture command (choose a new destination for later runs):
 python3 research/rvt/capture_evidence.py docs/rvt-evidence/YYYY-MM-DD-milestone
 ```
 
-The current generator captures corpus, room-edit, and save/signature reports. Extend it
+The current generator captures corpus, room-edit, save/signature, and History/transport reports. Extend it
 when new milestones need different evidence; do not reuse old results to imply
 a new capability. The browser runs with a temporary profile, reading local HTML
 without external scripts, fonts or images. The raw reports remain the primary
