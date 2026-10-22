@@ -1,0 +1,4177 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "id_width": 8,
+    "table_tag": 1411,
+    "identifier_source_tag": 2305,
+    "byte_identical_round_trip": true,
+    "records": 26425,
+    "owner_links": 22368,
+    "maximum_owner_chain_nodes": 8,
+    "primary_current_id_differences": 0,
+    "last_id": 133209,
+    "maximum_current_id": 133206,
+    "history_episode_count": 39,
+    "history_opaque_suffix_bytes": 0,
+    "table_episode_numbers": [
+      0,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      16,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "episode_numbers_outside_zero_based_history": [],
+    "base_object_union": 27058,
+    "base_objects_not_in_table": 633,
+    "table_ids_missing_base_objects": 0,
+    "content_object_union": 22114,
+    "content_ids_in_project_table": 0,
+    "groups": [
+      {
+        "stream": "Partitions/46",
+        "group": 0,
+        "content_key": null,
+        "ids": 20156,
+        "not_in_project_table": 502
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 1,
+        "content_key": "03956a51769cc3428658e4cf80b45a86",
+        "ids": 586,
+        "not_in_project_table": 586
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 2,
+        "content_key": "04fc4026ac5fec46899f918e2104e11e",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 3,
+        "content_key": "09568ecad14d0247a8e4dd4f6f1808b2",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 4,
+        "content_key": "09e4faf425220b4a9800faf86271df10",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 5,
+        "content_key": "0cd2dd9b5bcd6447a3be24c16d12a5f6",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 6,
+        "content_key": "1b788201e07afa4e926b9094a52b1a75",
+        "ids": 526,
+        "not_in_project_table": 526
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 7,
+        "content_key": "213003e68eed834fad787ec3de0357c4",
+        "ids": 586,
+        "not_in_project_table": 586
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 8,
+        "content_key": "23cb2f73bb98024fa2655bdd73cf96cd",
+        "ids": 762,
+        "not_in_project_table": 762
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 9,
+        "content_key": "31e2c4a1da35384f83a46e159daac083",
+        "ids": 1000,
+        "not_in_project_table": 1000
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 10,
+        "content_key": "495b2944af024940a299b29db0e2c823",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 11,
+        "content_key": "4a5862b67ef0f54098be23617ec9c85c",
+        "ids": 394,
+        "not_in_project_table": 394
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 12,
+        "content_key": "4ecba76d30e7e64cacd66390bbcbea2b",
+        "ids": 622,
+        "not_in_project_table": 622
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 13,
+        "content_key": "52de878946986c43b017a5b21efba22e",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 14,
+        "content_key": "58912773aabdde41bb3f12d37d4e0172",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 15,
+        "content_key": "5dda045ca3386347acea0dc4f727b4c0",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 16,
+        "content_key": "6326f460ce4fd448a445565562c03303",
+        "ids": 501,
+        "not_in_project_table": 501
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 17,
+        "content_key": "63bb0d2d58e6294db6ae83e56ca268b2",
+        "ids": 586,
+        "not_in_project_table": 586
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 18,
+        "content_key": "65be8bd79c2a73458728a1b621e7424e",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 19,
+        "content_key": "6640650cc324d046b2d8df121f232852",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 20,
+        "content_key": "6befd36f31345346a094a06a4e7dd205",
+        "ids": 620,
+        "not_in_project_table": 620
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 21,
+        "content_key": "6d40e50dc665834b8d3ea1beb551e7c9",
+        "ids": 580,
+        "not_in_project_table": 580
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 22,
+        "content_key": "72f0b9cf2630db43b84b6cfb3332d31c",
+        "ids": 586,
+        "not_in_project_table": 586
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 23,
+        "content_key": "7758124b90747c4db1ead48f9ba7bf96",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 24,
+        "content_key": "77e23a6079e46b49bb7092f147762672",
+        "ids": 1129,
+        "not_in_project_table": 1129
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 25,
+        "content_key": "7d63b3a524c1ae4c8c2e21bb4a5234f9",
+        "ids": 210,
+        "not_in_project_table": 210
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 26,
+        "content_key": "7ee4d74271aeee458ef0acff6a0aa231",
+        "ids": 814,
+        "not_in_project_table": 814
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 27,
+        "content_key": "8a335d8e98b3f74ab94ef3fb982940c3",
+        "ids": 1194,
+        "not_in_project_table": 1194
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 28,
+        "content_key": "8fc577194de78444a7aee30da1a173b3",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 29,
+        "content_key": "92c0edfab827c24cb9ab0c4f1d047193",
+        "ids": 689,
+        "not_in_project_table": 689
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 30,
+        "content_key": "9751475bfa3d4c4886fd8c2f57fd459b",
+        "ids": 777,
+        "not_in_project_table": 777
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 31,
+        "content_key": "9d8f03f572b5214191953ef1ae67048a",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 32,
+        "content_key": "a2c0e383e8aa4e40905235e2b95dcac3",
+        "ids": 501,
+        "not_in_project_table": 501
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 33,
+        "content_key": "aaef7e9d1fa7d04985ee4cb9479d6853",
+        "ids": 649,
+        "not_in_project_table": 649
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 34,
+        "content_key": "ac2843815e606f458cb3ddc35c245a2a",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 35,
+        "content_key": "aca26736c94bb5418acd3f53cc3a6739",
+        "ids": 219,
+        "not_in_project_table": 219
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 36,
+        "content_key": "bd047451e3164142b4226959805db8c3",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 37,
+        "content_key": "c976e407c84eba4a8227a1e8f6d509bd",
+        "ids": 638,
+        "not_in_project_table": 638
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 38,
+        "content_key": "de6fd1579e4207458450f6f51571b59d",
+        "ids": 593,
+        "not_in_project_table": 593
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 39,
+        "content_key": "dedf264dc4559d418a8985645d845cf5",
+        "ids": 902,
+        "not_in_project_table": 902
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 40,
+        "content_key": "df6d563ea7f035468ed7bed418144784",
+        "ids": 345,
+        "not_in_project_table": 345
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 41,
+        "content_key": "e4165b0d597a974c97d7c216048a3600",
+        "ids": 540,
+        "not_in_project_table": 540
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 42,
+        "content_key": "e76698d1f9bb4c48953770587171e7c8",
+        "ids": 202,
+        "not_in_project_table": 202
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 43,
+        "content_key": "e844b20fc5ff3f4b845e93793e980a25",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 44,
+        "content_key": "f57cf47af171e847b4730d3212ca2ab8",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 45,
+        "content_key": "f88e5854a21b4246974e0414fd3ec0c9",
+        "ids": 891,
+        "not_in_project_table": 891
+      },
+      {
+        "stream": "Partitions/46",
+        "group": 46,
+        "content_key": "fefe4aa4e4536a44a98929e1b6fda224",
+        "ids": 678,
+        "not_in_project_table": 678
+      },
+      {
+        "stream": "Partitions/48",
+        "group": 0,
+        "content_key": null,
+        "ids": 6680,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/51",
+        "group": 0,
+        "content_key": null,
+        "ids": 869,
+        "not_in_project_table": 206
+      },
+      {
+        "stream": "Partitions/53",
+        "group": 0,
+        "content_key": null,
+        "ids": 13,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/55",
+        "group": 0,
+        "content_key": null,
+        "ids": 121,
+        "not_in_project_table": 16
+      },
+      {
+        "stream": "Partitions/59",
+        "group": 0,
+        "content_key": null,
+        "ids": 651,
+        "not_in_project_table": 1
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 0,
+        "content_key": null,
+        "ids": 41,
+        "not_in_project_table": 12
+      },
+      {
+        "stream": "Partitions/65",
+        "group": 0,
+        "content_key": null,
+        "ids": 29,
+        "not_in_project_table": 0
+      }
+    ]
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "id_width": 4,
+    "table_tag": 1370,
+    "identifier_source_tag": 2261,
+    "byte_identical_round_trip": true,
+    "records": 2615,
+    "owner_links": 339,
+    "maximum_owner_chain_nodes": 4,
+    "primary_current_id_differences": 0,
+    "last_id": 8719,
+    "maximum_current_id": 8686,
+    "history_episode_count": 6,
+    "history_opaque_suffix_bytes": 0,
+    "table_episode_numbers": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "episode_numbers_outside_zero_based_history": [],
+    "base_object_union": 2616,
+    "base_objects_not_in_table": 1,
+    "table_ids_missing_base_objects": 0,
+    "content_object_union": 2639,
+    "content_ids_in_project_table": 0,
+    "groups": [
+      {
+        "stream": "Partitions/0",
+        "group": 0,
+        "content_key": null,
+        "ids": 2520,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/0",
+        "group": 1,
+        "content_key": "97e8c0ad9fbc3a42ac7d1cce279d4c49",
+        "ids": 424,
+        "not_in_project_table": 424
+      },
+      {
+        "stream": "Partitions/0",
+        "group": 2,
+        "content_key": "b3f6e959b355064aa66d5be5b07422f8",
+        "ids": 657,
+        "not_in_project_table": 657
+      },
+      {
+        "stream": "Partitions/0",
+        "group": 3,
+        "content_key": "c21ca79de61d9444800114cacb9577a4",
+        "ids": 556,
+        "not_in_project_table": 556
+      },
+      {
+        "stream": "Partitions/0",
+        "group": 4,
+        "content_key": "d73af6f21c5494499e8b2b26b1eeb0be",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/1",
+        "group": 0,
+        "content_key": null,
+        "ids": 11,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/2",
+        "group": 0,
+        "content_key": null,
+        "ids": 12,
+        "not_in_project_table": 1
+      },
+      {
+        "stream": "Partitions/3",
+        "group": 0,
+        "content_key": null,
+        "ids": 7,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/4",
+        "group": 0,
+        "content_key": null,
+        "ids": 14,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/5",
+        "group": 0,
+        "content_key": null,
+        "ids": 66,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/5",
+        "group": 1,
+        "content_key": "1c4b44555232e64087ed99f51500a673",
+        "ids": 555,
+        "not_in_project_table": 555
+      },
+      {
+        "stream": "Partitions/5",
+        "group": 2,
+        "content_key": "600800a112531941b95b63184aaf1fd2",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/6",
+        "group": 0,
+        "content_key": null,
+        "ids": 0,
+        "not_in_project_table": 0
+      }
+    ]
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "id_width": 8,
+    "table_tag": 1451,
+    "identifier_source_tag": 2363,
+    "byte_identical_round_trip": true,
+    "records": 4668,
+    "owner_links": 1384,
+    "maximum_owner_chain_nodes": 4,
+    "primary_current_id_differences": 0,
+    "last_id": 482723,
+    "maximum_current_id": 482715,
+    "history_episode_count": 703,
+    "history_opaque_suffix_bytes": 1,
+    "table_episode_numbers": [
+      0,
+      4,
+      5,
+      8,
+      9,
+      10,
+      12,
+      16,
+      17,
+      18,
+      35,
+      38,
+      58,
+      64,
+      71,
+      72,
+      90,
+      95,
+      96,
+      116,
+      122,
+      131,
+      136,
+      144,
+      147,
+      149,
+      151,
+      152,
+      154,
+      160,
+      163,
+      167,
+      169,
+      180,
+      184,
+      209,
+      227,
+      229,
+      235,
+      247,
+      253,
+      258,
+      259,
+      263,
+      269,
+      277,
+      279,
+      281,
+      285,
+      289,
+      294,
+      295,
+      302,
+      304,
+      305,
+      306,
+      311,
+      312,
+      314,
+      318,
+      320,
+      335,
+      337,
+      339,
+      341,
+      344,
+      346,
+      353,
+      354,
+      356,
+      365,
+      366,
+      368,
+      372,
+      376,
+      378,
+      379,
+      383,
+      384,
+      386,
+      389,
+      390,
+      393,
+      394,
+      401,
+      404,
+      406,
+      408,
+      410,
+      412,
+      414,
+      416,
+      418,
+      420,
+      425,
+      434,
+      436,
+      438,
+      440,
+      443,
+      445,
+      449,
+      452,
+      456,
+      457,
+      461,
+      463,
+      464,
+      466,
+      468,
+      469,
+      471,
+      472,
+      476,
+      479,
+      484,
+      486,
+      488,
+      500,
+      509,
+      511,
+      514,
+      516,
+      519,
+      520,
+      522,
+      524,
+      526,
+      527,
+      529,
+      531,
+      533,
+      536,
+      538,
+      539,
+      543,
+      545,
+      548,
+      551,
+      553,
+      555,
+      558,
+      559,
+      564,
+      570,
+      573,
+      580,
+      587,
+      589,
+      591,
+      593,
+      597,
+      599,
+      604,
+      605,
+      607,
+      609,
+      612,
+      618,
+      621,
+      624,
+      627,
+      630,
+      632,
+      636,
+      639,
+      640,
+      641,
+      645,
+      646,
+      650,
+      651,
+      653,
+      655,
+      657,
+      663,
+      664,
+      666,
+      667,
+      668,
+      671,
+      678,
+      694
+    ],
+    "episode_numbers_outside_zero_based_history": [],
+    "base_object_union": 4668,
+    "base_objects_not_in_table": 0,
+    "table_ids_missing_base_objects": 0,
+    "content_object_union": 33770,
+    "content_ids_in_project_table": 0,
+    "groups": [
+      {
+        "stream": "Partitions/80",
+        "group": 0,
+        "content_key": null,
+        "ids": 4668,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 1,
+        "content_key": "02d331496ab36945a5cf7b28fd16ad2a",
+        "ids": 578,
+        "not_in_project_table": 578
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 2,
+        "content_key": "088ce1adcf15a2488665ce429517f51e",
+        "ids": 541,
+        "not_in_project_table": 541
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 3,
+        "content_key": "0e295bda69612d45b7d64f5af02c15e7",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 4,
+        "content_key": "0ed4202fa553614183a325bb27bb83e0",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 5,
+        "content_key": "0fd7db187ed3e1498e49fc6430e39b49",
+        "ids": 599,
+        "not_in_project_table": 599
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 6,
+        "content_key": "14efc231e6561b48911230dd0583f954",
+        "ids": 671,
+        "not_in_project_table": 671
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 7,
+        "content_key": "18e29bfc7b219a4a9e4d5fae30e799fe",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 8,
+        "content_key": "1a57911676366b49a87ceab2f80388f2",
+        "ids": 576,
+        "not_in_project_table": 576
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 9,
+        "content_key": "1fe92dd1be70a44e9f995c26128896fe",
+        "ids": 439,
+        "not_in_project_table": 439
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 10,
+        "content_key": "20e6da2defd04b41bafc6f6fb5eb626f",
+        "ids": 430,
+        "not_in_project_table": 430
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 11,
+        "content_key": "23f63a4e2ff4d94f8621b348aace452a",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 12,
+        "content_key": "30998f4fb40f314ebe0807446717c0c2",
+        "ids": 691,
+        "not_in_project_table": 691
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 13,
+        "content_key": "3513cf7f78adbc4bb7aae5c7383bff60",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 14,
+        "content_key": "37f43a8fc725fe4dade52f8d31335f28",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 15,
+        "content_key": "380842f2ed813444a84d495bfc219d79",
+        "ids": 545,
+        "not_in_project_table": 545
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 16,
+        "content_key": "38adfd70af7e054ba9bcd998ab024378",
+        "ids": 257,
+        "not_in_project_table": 257
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 17,
+        "content_key": "3cb6c930a91485418056c69d9f96d7fe",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 18,
+        "content_key": "4166c25a4ca8eb4dae38a180cfe8dcad",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 19,
+        "content_key": "441947c1a01d844281028469d13cd44e",
+        "ids": 566,
+        "not_in_project_table": 566
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 20,
+        "content_key": "4794e5dc803ca2418c35b28f7563c125",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 21,
+        "content_key": "4897c6edaafac246bf75c76ccfd884aa",
+        "ids": 1466,
+        "not_in_project_table": 1466
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 22,
+        "content_key": "4d0c1b2156c6d84fa7e384808f591a2a",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 23,
+        "content_key": "4f011378ef0bf448a8f8e8caeaee0558",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 24,
+        "content_key": "535bb7f4837bf3429723738bbc04830f",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 25,
+        "content_key": "562e5d33991b3f4fb732e2b39e418794",
+        "ids": 604,
+        "not_in_project_table": 604
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 26,
+        "content_key": "5655c997f347d745987dcaf57a6f3c57",
+        "ids": 625,
+        "not_in_project_table": 625
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 27,
+        "content_key": "57da0410c1fafe47a468e1267498346e",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 28,
+        "content_key": "5a341e5a2aa0c24e979c65bde0223f86",
+        "ids": 594,
+        "not_in_project_table": 594
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 29,
+        "content_key": "5ad0824476ea414ba275fd4ce0b64451",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 30,
+        "content_key": "5d28bfe94b7cac42be61c1475bf65113",
+        "ids": 439,
+        "not_in_project_table": 439
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 31,
+        "content_key": "5ec9dd092350e045a244bf6c02914720",
+        "ids": 631,
+        "not_in_project_table": 631
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 32,
+        "content_key": "6050a978cb142141bd4b0500450c4381",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 33,
+        "content_key": "638b6c22f16c2540975028fe46de70c4",
+        "ids": 608,
+        "not_in_project_table": 608
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 34,
+        "content_key": "639cb5e6bcc45043a604760e0710e9b3",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 35,
+        "content_key": "64222156151f20488afcea02dc99cb60",
+        "ids": 279,
+        "not_in_project_table": 279
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 36,
+        "content_key": "6839d2fad155cb439e5800292591184d",
+        "ids": 574,
+        "not_in_project_table": 574
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 37,
+        "content_key": "6889dd423939d84ca5b812f7f2a2dce3",
+        "ids": 815,
+        "not_in_project_table": 815
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 38,
+        "content_key": "70e8eee708291b45b79af30222d285d2",
+        "ids": 731,
+        "not_in_project_table": 731
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 39,
+        "content_key": "766fe4c570e44a4db473e356b7b5b000",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 40,
+        "content_key": "7d5f5268b33d2440990ff8be5bdad7ec",
+        "ids": 643,
+        "not_in_project_table": 643
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 41,
+        "content_key": "905515f5bb840f458a729b92604a859f",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 42,
+        "content_key": "9b1fee57aca2584fa98a182cbd2ca4f5",
+        "ids": 245,
+        "not_in_project_table": 245
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 43,
+        "content_key": "9caac5c98448ba498e778651149ab04d",
+        "ids": 507,
+        "not_in_project_table": 507
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 44,
+        "content_key": "9ede135bc0312c41a759f4816bfde890",
+        "ids": 689,
+        "not_in_project_table": 689
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 45,
+        "content_key": "a01ff0c46005a94298fc2e84a1768db4",
+        "ids": 604,
+        "not_in_project_table": 604
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 46,
+        "content_key": "a375e351386a484cb4c4b6fcb5e89094",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 47,
+        "content_key": "ae4326636c010048b71c05b1768b91ba",
+        "ids": 792,
+        "not_in_project_table": 792
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 48,
+        "content_key": "aed9c307fa26f84fbd04c07758634a94",
+        "ids": 812,
+        "not_in_project_table": 812
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 49,
+        "content_key": "b1e3f43e84fdc44b9d74181ec5cf1aba",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 50,
+        "content_key": "b65a110e64fe0e4bade31e7eb7b35b06",
+        "ids": 727,
+        "not_in_project_table": 727
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 51,
+        "content_key": "b774c687f52ec2498827c32730a4e4c0",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 52,
+        "content_key": "b9451665d477304a82cfeb234a1ce4b7",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 53,
+        "content_key": "bbb2e082030c66449820b6951c5060c7",
+        "ids": 223,
+        "not_in_project_table": 223
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 54,
+        "content_key": "bd01b9f6b2fbb346b38e00f970bada2f",
+        "ids": 561,
+        "not_in_project_table": 561
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 55,
+        "content_key": "bd45b4409ba6e24e98ace029d701153e",
+        "ids": 267,
+        "not_in_project_table": 267
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 56,
+        "content_key": "bd6c1ca1db5ccc47bd5e027e54c0fd8f",
+        "ids": 690,
+        "not_in_project_table": 690
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 57,
+        "content_key": "bdfce687d30feb44b7d2e05f30e8bc01",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 58,
+        "content_key": "bf3047e6cd51a14ba80f85a36a29b3d1",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 59,
+        "content_key": "c1765e8808531342829df600621a9457",
+        "ids": 617,
+        "not_in_project_table": 617
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 60,
+        "content_key": "c1fe0a8d4f1cd64b88193225346883e4",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 61,
+        "content_key": "cb281d604d5b4f498ae85cd575c5da82",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 62,
+        "content_key": "cc9f0586d76bba41b67a3d3c7779bf2b",
+        "ids": 575,
+        "not_in_project_table": 575
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 63,
+        "content_key": "cd8b2943dcb5144ca8ce99e7e79bafea",
+        "ids": 660,
+        "not_in_project_table": 660
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 64,
+        "content_key": "cee4506c2df2344f9188bca644b9249f",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 65,
+        "content_key": "cfa4e3dd6ca7604881fade578b864ab4",
+        "ids": 227,
+        "not_in_project_table": 227
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 66,
+        "content_key": "d2e5b7066e6cad4cb95f2e864fe880d5",
+        "ids": 430,
+        "not_in_project_table": 430
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 67,
+        "content_key": "d2ecfbbed093b44e94e3762825c170d2",
+        "ids": 679,
+        "not_in_project_table": 679
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 68,
+        "content_key": "d8aa9360a4d25445990a7db588579cd1",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 69,
+        "content_key": "d975c2820e5aa144a8f83cb9aafe9695",
+        "ids": 628,
+        "not_in_project_table": 628
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 70,
+        "content_key": "dd6dbfd96630ef468365832d52686773",
+        "ids": 259,
+        "not_in_project_table": 259
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 71,
+        "content_key": "dd83635f89b7894b99473c9ccedab648",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 72,
+        "content_key": "ddc076b32a201941a7ff3a03b6b3e845",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 73,
+        "content_key": "e4128140c881f444b678ee70beaf5abc",
+        "ids": 882,
+        "not_in_project_table": 882
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 74,
+        "content_key": "e422e45a60476148b0f954a8b98adaf7",
+        "ids": 566,
+        "not_in_project_table": 566
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 75,
+        "content_key": "e829cc0943635845ba2b486aadfd2b1c",
+        "ids": 600,
+        "not_in_project_table": 600
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 76,
+        "content_key": "e87cd8f72c326745b8c59dd1f690df65",
+        "ids": 622,
+        "not_in_project_table": 622
+      },
+      {
+        "stream": "Partitions/80",
+        "group": 77,
+        "content_key": "fab6e66244f04a4d8f73a0860657f073",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/83",
+        "group": 0,
+        "content_key": null,
+        "ids": 1,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/84",
+        "group": 0,
+        "content_key": null,
+        "ids": 3,
+        "not_in_project_table": 0
+      }
+    ]
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "id_width": 8,
+    "table_tag": 1451,
+    "identifier_source_tag": 2363,
+    "byte_identical_round_trip": true,
+    "records": 10266,
+    "owner_links": 6274,
+    "maximum_owner_chain_nodes": 4,
+    "primary_current_id_differences": 0,
+    "last_id": 1021874,
+    "maximum_current_id": 1021814,
+    "history_episode_count": 172,
+    "history_opaque_suffix_bytes": 0,
+    "table_episode_numbers": [
+      0,
+      2,
+      3,
+      5,
+      8,
+      9,
+      10,
+      17,
+      18,
+      19,
+      22,
+      25,
+      26,
+      28,
+      29,
+      30,
+      32,
+      34,
+      37,
+      38,
+      51,
+      53,
+      61,
+      64,
+      66,
+      70,
+      71,
+      72,
+      77,
+      78,
+      79,
+      81,
+      86,
+      88,
+      89,
+      91,
+      93,
+      97,
+      102,
+      105,
+      132,
+      134,
+      135,
+      136,
+      137,
+      140,
+      141,
+      142,
+      143,
+      144,
+      147,
+      148,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      168,
+      170
+    ],
+    "episode_numbers_outside_zero_based_history": [],
+    "base_object_union": 11877,
+    "base_objects_not_in_table": 1611,
+    "table_ids_missing_base_objects": 0,
+    "content_object_union": 96908,
+    "content_ids_in_project_table": 0,
+    "groups": [
+      {
+        "stream": "Partitions/114",
+        "group": 0,
+        "content_key": null,
+        "ids": 9731,
+        "not_in_project_table": 1611
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 1,
+        "content_key": "02b2307c898dd341a176a71477906f91",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 2,
+        "content_key": "033a9bd2ab18d54b97d914805fdd4a98",
+        "ids": 254,
+        "not_in_project_table": 254
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 3,
+        "content_key": "03e17e79a43b5b48a08b27dc1bcf34c8",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 4,
+        "content_key": "062114fa60bd76458774786efc42c117",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 5,
+        "content_key": "07b0c9f4e43aa1428e68979db6feeaab",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 6,
+        "content_key": "07fd4c947b0e2e47b557afc5f12426b0",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 7,
+        "content_key": "08d92655feafb14bbae8a071363b4954",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 8,
+        "content_key": "0dc00c7b44cabf47a2a03666e26a083e",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 9,
+        "content_key": "0dc7963a21ddbc41b65549a83ce0048f",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 10,
+        "content_key": "0e84b9d2ea689d41af17793dac649031",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 11,
+        "content_key": "0e97888ac409544e881978baab2349c0",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 12,
+        "content_key": "0ed788376d0a214ca444ad45a41a75b1",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 13,
+        "content_key": "13d5c8eea3b93440a5e9d45d6faad055",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 14,
+        "content_key": "15990f3dc2ec0d438fa483c1a69ebb23",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 15,
+        "content_key": "15fbce18f05e834f8f117160621ab8a6",
+        "ids": 576,
+        "not_in_project_table": 576
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 16,
+        "content_key": "1b8556bc3240ae4692b49ff4d1d7fa0f",
+        "ids": 1484,
+        "not_in_project_table": 1484
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 17,
+        "content_key": "1c13a760639d754c8b5451c01eff8911",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 18,
+        "content_key": "1c80377e3de00642a2664c4869df4477",
+        "ids": 1078,
+        "not_in_project_table": 1078
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 19,
+        "content_key": "1f54b587437cd04ea4e8a5ffa8d563b2",
+        "ids": 254,
+        "not_in_project_table": 254
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 20,
+        "content_key": "2087606134ec6f4b9af57cc56957e48c",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 21,
+        "content_key": "22a79401fafa754d8408bd0d252c1fec",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 22,
+        "content_key": "22fae2e5e64dc945822c88967c93ec19",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 23,
+        "content_key": "233f4758c4893b4f82601fb025314aed",
+        "ids": 446,
+        "not_in_project_table": 446
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 24,
+        "content_key": "23a21e0996649243bc67806cc3fa9188",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 25,
+        "content_key": "24610045f9e2bd4b99e4832a8d489381",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 26,
+        "content_key": "26d60a373443ab42a85d0a9ce64514f1",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 27,
+        "content_key": "2925097c0ff6b44f91ace06c589d6c23",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 28,
+        "content_key": "29da73cb67bbe645a6a79ce861881827",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 29,
+        "content_key": "29e0ec9e91d38d46ab90393a0fc8e8df",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 30,
+        "content_key": "2aaf042c1c78924a9263953bda191197",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 31,
+        "content_key": "2b04b1b63b62634699d5894777971445",
+        "ids": 915,
+        "not_in_project_table": 915
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 32,
+        "content_key": "2b62a936948ff34c850dcadd3d993d1d",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 33,
+        "content_key": "2bbceefffc4df14789e0e4a2ba573de6",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 34,
+        "content_key": "2c5b9377e1af6d48af62aa64a628d7f8",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 35,
+        "content_key": "2eb3efe10adfd448b56b48deb47dd610",
+        "ids": 248,
+        "not_in_project_table": 248
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 36,
+        "content_key": "2fb0e83ccfe4b44c81817f0d133df955",
+        "ids": 265,
+        "not_in_project_table": 265
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 37,
+        "content_key": "3183da7d0ee7df4fb0a4502dd4506569",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 38,
+        "content_key": "33294052f97a4945be77452036ccceb2",
+        "ids": 1147,
+        "not_in_project_table": 1147
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 39,
+        "content_key": "3505fe30e4ed2b4d84fe34314e22fbef",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 40,
+        "content_key": "35204bf4a0b60841b69f1d4d2ff59d67",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 41,
+        "content_key": "38d8aedfea6e0e429b773508e653f1c2",
+        "ids": 598,
+        "not_in_project_table": 598
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 42,
+        "content_key": "3be8a58c15424f47924a9d478d7b442f",
+        "ids": 260,
+        "not_in_project_table": 260
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 43,
+        "content_key": "3ccc917ae7effe4eac9d2311082660ce",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 44,
+        "content_key": "3f0c3b9efa21a944aad559060f302203",
+        "ids": 245,
+        "not_in_project_table": 245
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 45,
+        "content_key": "3fa37a794fe46f4fb5acc5357b5a8f7e",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 46,
+        "content_key": "4082ffd10287114495c611f646942e14",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 47,
+        "content_key": "42123a36cc260e418a1b9407e8033a89",
+        "ids": 1077,
+        "not_in_project_table": 1077
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 48,
+        "content_key": "44b32064792da04cae64c77dad69e497",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 49,
+        "content_key": "44fab95a13baa042a58c212a4e26ddc7",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 50,
+        "content_key": "47b5fca906392c46ad7d0e16bab40aa3",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 51,
+        "content_key": "47caeb27f7467047a4f6414260fdb0b0",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 52,
+        "content_key": "4b139b099e9ca1418dbfd75ae2c46e4b",
+        "ids": 1254,
+        "not_in_project_table": 1254
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 53,
+        "content_key": "4ea71720505d074bbdc16646e074136b",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 54,
+        "content_key": "4f3a4be1571f0e4881bb61e466617c57",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 55,
+        "content_key": "512e881a8803cf44a0d08ac625ad00eb",
+        "ids": 1255,
+        "not_in_project_table": 1255
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 56,
+        "content_key": "51ed6d88d610ae408fe5c9146483b4e3",
+        "ids": 620,
+        "not_in_project_table": 620
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 57,
+        "content_key": "52d8a67a053ed4478d163fc005fa565b",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 58,
+        "content_key": "5798024c56439f4c9a9c7e391fc795e2",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 59,
+        "content_key": "57b5010f90d829469f7b0a2234442eec",
+        "ids": 245,
+        "not_in_project_table": 245
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 60,
+        "content_key": "5a57fa2173269b4db9b24b27e1c8776d",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 61,
+        "content_key": "5c7d9e4b649823429ca6dc12c1f74f38",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 62,
+        "content_key": "5d7bb3658d83cc4ab35d2d1f62841d04",
+        "ids": 769,
+        "not_in_project_table": 769
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 63,
+        "content_key": "5e281880bc436e41b9e40a096dc6ff05",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 64,
+        "content_key": "5edc46a70043cb4b99088679e7825f42",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 65,
+        "content_key": "5fc39a08e67d404a8c8c57b684c88f37",
+        "ids": 674,
+        "not_in_project_table": 674
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 66,
+        "content_key": "609f5119b7b05b4d913a4f4a66cabcde",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 67,
+        "content_key": "61513f9ceec38f4f9739da6df94ee4ae",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 68,
+        "content_key": "6175f74ac1c03c47bcced1bd4b780a63",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 69,
+        "content_key": "62249ef0207b9440a08447b9b77efdd5",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 70,
+        "content_key": "625754a15c667c458cdcc2c1b1683fd2",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 71,
+        "content_key": "6489825080c20445ae23111cd8c32934",
+        "ids": 1289,
+        "not_in_project_table": 1289
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 72,
+        "content_key": "64fc907c6e68944ea1f70f4618236703",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 73,
+        "content_key": "6516379bae40ad469363ba0c2fb26398",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 74,
+        "content_key": "65fd2723d604094ab89a219dae7be9e0",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 75,
+        "content_key": "66a1127203b61b45b36ef191f75f1996",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 76,
+        "content_key": "66b4ba2d8ef5934f916adac8018bfd6a",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 77,
+        "content_key": "682ef5665ab2d84a9a632b799ec37058",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 78,
+        "content_key": "6affa5a9f669bf49bbd1cc4d58702cfd",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 79,
+        "content_key": "6d9e67af2677024b846e5f7a92cbf8c9",
+        "ids": 265,
+        "not_in_project_table": 265
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 80,
+        "content_key": "6deeae1c9cdc9e4cb48dcec31354890b",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 81,
+        "content_key": "6faf09e16c479e46a3e77200a6920838",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 82,
+        "content_key": "70e56708c0b47d40bbf53e46317dfc27",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 83,
+        "content_key": "714e3f1bb490c04d842ac6dab5ad27a3",
+        "ids": 576,
+        "not_in_project_table": 576
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 84,
+        "content_key": "72051fa26cafe04c9a9eb5d3256b10bf",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 85,
+        "content_key": "74361629a9441841b6ded75faaebf8a4",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 86,
+        "content_key": "786fe5158d28b64390a034a6506fd7b6",
+        "ids": 561,
+        "not_in_project_table": 561
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 87,
+        "content_key": "793fa9d4130d5a4fa882c0610577549e",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 88,
+        "content_key": "7b38b89050ccb743a7fc6ba9c1d6c279",
+        "ids": 256,
+        "not_in_project_table": 256
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 89,
+        "content_key": "7b890b6ad3621e42a44480cf2bb22779",
+        "ids": 232,
+        "not_in_project_table": 232
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 90,
+        "content_key": "7cf416dac9ceaa4b951cb05a9cf2ed3d",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 91,
+        "content_key": "7d28ebee8cfc3149b74c4a95a34bc22f",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 92,
+        "content_key": "7dd8e804d91d6e49a0e69a0e3cba2e87",
+        "ids": 1077,
+        "not_in_project_table": 1077
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 93,
+        "content_key": "7e2d8339ada3d1409130c08b709325f9",
+        "ids": 1120,
+        "not_in_project_table": 1120
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 94,
+        "content_key": "7f16c008c3e2f845b63c4b8c2b978c7a",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 95,
+        "content_key": "812151b43d42ae40b500629ee11b21f7",
+        "ids": 651,
+        "not_in_project_table": 651
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 96,
+        "content_key": "834b3f615f95404da0a171763bfdcee4",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 97,
+        "content_key": "83858d18ab094d48bd887e7271794004",
+        "ids": 239,
+        "not_in_project_table": 239
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 98,
+        "content_key": "8458da0d35384748aba0160e006f7f91",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 99,
+        "content_key": "85c45c8bce0fdb45ab5ce1c7eb7055ea",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 100,
+        "content_key": "863219f5a7aa2b4a89d24203500aa848",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 101,
+        "content_key": "864209718653284dad652b3b7dd15ae8",
+        "ids": 1120,
+        "not_in_project_table": 1120
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 102,
+        "content_key": "8750a34f4be8a043882f784f8ddbb5e7",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 103,
+        "content_key": "87704c698de6864db561adc25488ff9d",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 104,
+        "content_key": "88527d8652dfd043bad1c5775c17e0af",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 105,
+        "content_key": "893a5aa6cbd81140b01d937d0d3e82c1",
+        "ids": 585,
+        "not_in_project_table": 585
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 106,
+        "content_key": "8a6cbd2eacef4042985ef6781d9a49c7",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 107,
+        "content_key": "8a798417d6a032408f5a182d26520c34",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 108,
+        "content_key": "8ec4f1c65c373c4f9afc9fbc3d37cc49",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 109,
+        "content_key": "90469aec25004447a1d50dfdcaa69da9",
+        "ids": 915,
+        "not_in_project_table": 915
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 110,
+        "content_key": "952fb3fd41147f43bdb2bec9cb07d7d7",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 111,
+        "content_key": "95b6bcd895ea2c49b87860b4f010ec1a",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 112,
+        "content_key": "976b74707644564e8eb21843bdb3d812",
+        "ids": 830,
+        "not_in_project_table": 830
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 113,
+        "content_key": "9947e656ae39ca488e0ad6bfdc790769",
+        "ids": 266,
+        "not_in_project_table": 266
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 114,
+        "content_key": "998c6ee87cc2ec429ff8e253a2c006ec",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 115,
+        "content_key": "9a40b1f21458434dbce421c934c1b022",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 116,
+        "content_key": "9a5c2885fdb1e14388ed5a90d8b8d6f3",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 117,
+        "content_key": "9a79120393111c40ad5a50ea07ab2be0",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 118,
+        "content_key": "9be2b49147fa894ab3b7470a6aa9f1c9",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 119,
+        "content_key": "9cc4b2bd6f808d49832b83a9d3f31fb9",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 120,
+        "content_key": "9ed77ab19e331c42a3dd3c60288151cb",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 121,
+        "content_key": "9f1199a8d6e5e645bd6bf9d2d7740bc7",
+        "ids": 239,
+        "not_in_project_table": 239
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 122,
+        "content_key": "9ff8edcdf7cc8640a6cd7ad5b9a36c8e",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 123,
+        "content_key": "a036c7c794b851489f6f1e94d0d445d7",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 124,
+        "content_key": "a08a80787ee3ba44b8c1bc05c0af4431",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 125,
+        "content_key": "a341f382c82bdb4596afcae0e0133e34",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 126,
+        "content_key": "a8780e64b7df5641b39b982a2c301728",
+        "ids": 848,
+        "not_in_project_table": 848
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 127,
+        "content_key": "a8ee9cf11e560f4a9b9bd4a3887736ad",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 128,
+        "content_key": "a949fbf953ca92449e2ed8a577261e6d",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 129,
+        "content_key": "a94e8979abbf57488a9ea0e19ce8bcc0",
+        "ids": 245,
+        "not_in_project_table": 245
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 130,
+        "content_key": "a9500e73e2ceda44aae7d11c73968190",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 131,
+        "content_key": "aa343814632ec74bb18dc3c1a0674c30",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 132,
+        "content_key": "aa54d1a95927d443815b6a2d07124cc0",
+        "ids": 266,
+        "not_in_project_table": 266
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 133,
+        "content_key": "af3a7fcb24652d42a1f78c0076f08289",
+        "ids": 236,
+        "not_in_project_table": 236
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 134,
+        "content_key": "afc9e76886a16546aee2cab0dcd76f6e",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 135,
+        "content_key": "b1244e3c5c06574e83f60a7e520f33bf",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 136,
+        "content_key": "b247af8dcd6ce44fbfc9bff8598964a3",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 137,
+        "content_key": "b30359930e1d68418938c2fe570f0f85",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 138,
+        "content_key": "b3ac73764037c44e9343800d7b1166e0",
+        "ids": 578,
+        "not_in_project_table": 578
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 139,
+        "content_key": "b3db5d8d0083dc4b8db8a3423f7e1687",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 140,
+        "content_key": "b542638e28e6cb419f8a573360ac4310",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 141,
+        "content_key": "b5447f7b411e914ebd096006b38bb2ef",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 142,
+        "content_key": "b65c25d8aa7d9b4fb818c6581bba8de8",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 143,
+        "content_key": "b998cbb11d777540b0d7a2956b4cf9d2",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 144,
+        "content_key": "ba30ee1225de884eb7fffc076667c942",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 145,
+        "content_key": "ba8e1f2a61f2584d801f01b681c00bab",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 146,
+        "content_key": "bb9d5f60f5cd14459f7022066e4f93a6",
+        "ids": 267,
+        "not_in_project_table": 267
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 147,
+        "content_key": "bc7369156222614586a51dd37618ed08",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 148,
+        "content_key": "bd57c2824e99f6489040e54b9e57fe99",
+        "ids": 239,
+        "not_in_project_table": 239
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 149,
+        "content_key": "be3ee12244c44f4ca7344f85fa4b5ccc",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 150,
+        "content_key": "c01f239f7e1b2d4194332e10061a7aa6",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 151,
+        "content_key": "c10f2558349f5f4caa157a165f6e7099",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 152,
+        "content_key": "c336fbb47a899343a023a620b5295011",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 153,
+        "content_key": "c4c8bac53b1caf449ae669cd45997d76",
+        "ids": 867,
+        "not_in_project_table": 867
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 154,
+        "content_key": "c652fc8844fa344885d8f1e5951c5db0",
+        "ids": 255,
+        "not_in_project_table": 255
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 155,
+        "content_key": "c6a066ef920e844bb0335dfb5dada1af",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 156,
+        "content_key": "c893d9870305af42bba7c2c9418f03cd",
+        "ids": 572,
+        "not_in_project_table": 572
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 157,
+        "content_key": "c8bd3abc7961384f86c5fb89647bb48e",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 158,
+        "content_key": "c8dfbb490c35ab428a79059b042d4bff",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 159,
+        "content_key": "c93340fc42efcf41ac2cdf167e6f48c9",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 160,
+        "content_key": "c964261ea3df3342a9d980db550e74e8",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 161,
+        "content_key": "cb4cb6a54e93f74c826d3b83f602e81b",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 162,
+        "content_key": "cd06538b49b28f44919bcf4110c77ed2",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 163,
+        "content_key": "d001915fc91dde48abcc98aee745e496",
+        "ids": 616,
+        "not_in_project_table": 616
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 164,
+        "content_key": "d1a70191089b3242ab47a21f3158853b",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 165,
+        "content_key": "d453e5c5ab1be8489ebd0a0ad8be3b2b",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 166,
+        "content_key": "d4bc915527f46e4a9728b3b22060eb7e",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 167,
+        "content_key": "d4e0bcd8abd09f41899cd5d91b3952a9",
+        "ids": 255,
+        "not_in_project_table": 255
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 168,
+        "content_key": "d6147d8fb3f04d4fbe9bedf22f7a7496",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 169,
+        "content_key": "d67f78eedcde54458347dceb9a122de0",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 170,
+        "content_key": "d70cfd258ab28e4e98c4b1d6e6ef5348",
+        "ids": 252,
+        "not_in_project_table": 252
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 171,
+        "content_key": "d78d8d1567593544b5390a463e3e2e7d",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 172,
+        "content_key": "d7c6d6d271482e48a7c72efa88cf70b3",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 173,
+        "content_key": "da7261dbe37dfb4eb9b48d48dea7c603",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 174,
+        "content_key": "dcafb406398dbf45a6fdc8c80be42d89",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 175,
+        "content_key": "dd5a327cd8c38e4a80716595fee8d892",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 176,
+        "content_key": "dd7d48e5804d5440888278876eafa4d8",
+        "ids": 285,
+        "not_in_project_table": 285
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 177,
+        "content_key": "deac5497e9211740a490be0598f26cf7",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 178,
+        "content_key": "df00665dee4705439186c62a57f482a0",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 179,
+        "content_key": "e4f5709e01f54844969c69c60988fcf1",
+        "ids": 625,
+        "not_in_project_table": 625
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 180,
+        "content_key": "e6a8402510ab4f46b844419b87e93d3c",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 181,
+        "content_key": "e969cdc36dc77040869ec23e21481e28",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 182,
+        "content_key": "e9ea379f66c74e4f826402f0f8172256",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 183,
+        "content_key": "ea8f017b122e9c41ad39b68316fbd8f1",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 184,
+        "content_key": "ec351343e6f72548a39f5452417c2c4f",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 185,
+        "content_key": "ee61094b96218f45b1a9ce3d727b8d89",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 186,
+        "content_key": "ee669b6d70ac6242a5187f0ea0660200",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 187,
+        "content_key": "ef81c20b0cb618499b4e3a6eb4683537",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 188,
+        "content_key": "ef9aa58f6c317a4abaaed36b965d00c8",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 189,
+        "content_key": "ef9d2092a9394a4381c2490925c176a9",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 190,
+        "content_key": "f0782cf32080cd45b15146365c559438",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 191,
+        "content_key": "f11370e9c0ad544d9d64d357687a93b6",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 192,
+        "content_key": "f31085c199c5074caf24222834c6bb1c",
+        "ids": 543,
+        "not_in_project_table": 543
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 193,
+        "content_key": "f33277cfb4889f4a9c87c0575216d9ee",
+        "ids": 1152,
+        "not_in_project_table": 1152
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 194,
+        "content_key": "f6090fc618e19246b82760f8d645dcb6",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 195,
+        "content_key": "f62e6918e30e78409efadc24e1262d1d",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 196,
+        "content_key": "f7ac7a983b3d2e499ef0bb03461c8e99",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 197,
+        "content_key": "f81b0152ff1aef48a5a13d416445027a",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 198,
+        "content_key": "f841e962db62db4e8fdace829424825d",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 199,
+        "content_key": "f90e8a202c5c324f9ccb7b513ba0676a",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 200,
+        "content_key": "f9a9cbe28913a04b9b5e3f68c434b474",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 201,
+        "content_key": "facf644e1925ec4dbf16ddc9358d4966",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 202,
+        "content_key": "fb0e3e2fcb248644ab89702647dd6392",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 203,
+        "content_key": "fcafd846707fd0418b46974466b0ef5c",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 204,
+        "content_key": "fe5f310d1963f14d951b0ca9cc89d39b",
+        "ids": 245,
+        "not_in_project_table": 245
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 205,
+        "content_key": "fe9cdf09160cc54a8af06b6f65a9cb08",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 206,
+        "content_key": "feb46c36b52d174595bc545ccf33d30e",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 207,
+        "content_key": "fec622d376f4f14dba0f9924c19c921d",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/114",
+        "group": 208,
+        "content_key": "fedeef888c9c3b4ab547a22d01282645",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/116",
+        "group": 0,
+        "content_key": null,
+        "ids": 6,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 0,
+        "content_key": null,
+        "ids": 2162,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 1,
+        "content_key": "004869d3bf9daa4fb2783a1a1e4afa9a",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 2,
+        "content_key": "0397802d4911b849b22cc1d308a0efa4",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 3,
+        "content_key": "0485c6dd6289dd4cb5d7c808b51eb016",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 4,
+        "content_key": "07aa030b03556d4288709b354763a21f",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 5,
+        "content_key": "091622e220a64847b09530297f3facda",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 6,
+        "content_key": "093a1fd396be7e4bbe786bd2138daede",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 7,
+        "content_key": "0d17453c0670e145881e60411245157c",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 8,
+        "content_key": "0fdfe0170e8cc24c8bcc6275a7a8378b",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 9,
+        "content_key": "174fe2d4bb405f4484232327895b2f41",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 10,
+        "content_key": "1a2985faa5e5564386cee49f782c2d5a",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 11,
+        "content_key": "26b5e5b4c0bf9347a2156e8687656752",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 12,
+        "content_key": "27e36c6be215a44184a1baefb8589721",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 13,
+        "content_key": "293461f63a5743419f9de842f95e6434",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 14,
+        "content_key": "2a2f87e8b093334c9cb7996ba1b26baf",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 15,
+        "content_key": "2a82946a52c34d499f9d8039113566b5",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 16,
+        "content_key": "2b72d6af64edbf40940915d982623895",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 17,
+        "content_key": "2bad072930d6d94fbe0ba18eab25827a",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 18,
+        "content_key": "2e77435248b1db47822dae39aed078a9",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 19,
+        "content_key": "30c45a497f38a24f91a0a1375de1e4f2",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 20,
+        "content_key": "34404a8a0ff3e348881ff02d072ef47b",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 21,
+        "content_key": "3806aee0dd434e47947dab70bc62bb2e",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 22,
+        "content_key": "3f7a2877df35bd4694bfc7b985805ee2",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 23,
+        "content_key": "3f7bf8af0d4c024bbc4c44c76e7d3558",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 24,
+        "content_key": "3fc8b4806f8b3f49861a7e7e194dcbcd",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 25,
+        "content_key": "4263d2f289020247a7a07ee30bd662de",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 26,
+        "content_key": "448583aad48264439284b15bc62b30ce",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 27,
+        "content_key": "4e4ccfb0648a544e9111d9507890502f",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 28,
+        "content_key": "4e94ce8adfb5114cb1c1b03808b6453f",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 29,
+        "content_key": "4f3cd3cc9668ac4b90ba9bd1aa1e9363",
+        "ids": 1078,
+        "not_in_project_table": 1078
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 30,
+        "content_key": "5272d07eceb47348a94c93990d7a6c6a",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 31,
+        "content_key": "52d6dd4106957b4cbad7d86ae2d9376f",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 32,
+        "content_key": "57148e66900bf845b66799ba21539e10",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 33,
+        "content_key": "5c0dbe763a7ed14399fa399a477e5d6d",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 34,
+        "content_key": "5def3634c2e0f842b95b3a36d6fc4414",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 35,
+        "content_key": "5ff78b71efae2742982eda6d0ba540a9",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 36,
+        "content_key": "622fafe84b1d1a478c1808ddd62df923",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 37,
+        "content_key": "65ed9f431c7e0e49b359983abe024dd5",
+        "ids": 1078,
+        "not_in_project_table": 1078
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 38,
+        "content_key": "67cff2aa5b170b40bd7a4d85b801f55d",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 39,
+        "content_key": "683b88682c81904db594d8536899e40c",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 40,
+        "content_key": "697f3ebf86617b46b110fe7afd8a12b6",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 41,
+        "content_key": "6a33194eb21e1b4c9c96d270dc0b3d86",
+        "ids": 1078,
+        "not_in_project_table": 1078
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 42,
+        "content_key": "6aebabddfaf8cf4eb7498590bc5258ca",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 43,
+        "content_key": "723ec8d1573a084a9533197980103bfd",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 44,
+        "content_key": "7680d1aca1853e44aecefa7c1d466d9f",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 45,
+        "content_key": "784cfd57b0b87148aced454456f3e166",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 46,
+        "content_key": "7a538622f712ce46a81a60751b1a231a",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 47,
+        "content_key": "7c4b196ef49ea047a4818640cb93f0d9",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 48,
+        "content_key": "7d73b238a51e2e4f8603f4ddf016a18d",
+        "ids": 1079,
+        "not_in_project_table": 1079
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 49,
+        "content_key": "81b7cf78648d5046a8218852672e2896",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 50,
+        "content_key": "82280517d8063f489b981508e6dbc15c",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 51,
+        "content_key": "82cb7644f3e5914c830b9608fed1c7b6",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 52,
+        "content_key": "835989742a80c7448939ca7d9bc4f71b",
+        "ids": 242,
+        "not_in_project_table": 242
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 53,
+        "content_key": "8e956caf2e77c547b6e914010600a172",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 54,
+        "content_key": "96b79bb9b7907b48a96cbdc8b1658051",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 55,
+        "content_key": "98ff3493be6dca4d8f2802932d8acf7b",
+        "ids": 216,
+        "not_in_project_table": 216
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 56,
+        "content_key": "9ae4576517e40b45a55d0e47d04da9c9",
+        "ids": 249,
+        "not_in_project_table": 249
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 57,
+        "content_key": "9b9a130b4886f34d9e61c6e721b1c91a",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 58,
+        "content_key": "9f79655c1b2f7649b5e54f9c823d6892",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 59,
+        "content_key": "a6c1800781bd4047b3ba182d9cb0fb08",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 60,
+        "content_key": "a7cecdd2e7faef4780d5ef529cce3076",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 61,
+        "content_key": "b0aeca4c720cfd4dad9562b874359fc3",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 62,
+        "content_key": "b87f06b0967fef478f7f1609081eaeb8",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 63,
+        "content_key": "bb0083cf9cdbf2419c3d1aa7aa1b1a4b",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 64,
+        "content_key": "be0203fc4efa2149ad235efa72700f4c",
+        "ids": 253,
+        "not_in_project_table": 253
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 65,
+        "content_key": "bf88dbffac51fb458e1c756d9f605c31",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 66,
+        "content_key": "c067b8bdc0701f4183c586e3392d6af3",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 67,
+        "content_key": "c627019b5f5ede42ba31b4fdb116d532",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 68,
+        "content_key": "ccf15af974acf0458f98816727fc1b72",
+        "ids": 243,
+        "not_in_project_table": 243
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 69,
+        "content_key": "cdb5b80c56535e43bdbdbe3b5cc0c147",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 70,
+        "content_key": "d7a4fba7eb2a91498ebcd1dddf42c9d9",
+        "ids": 244,
+        "not_in_project_table": 244
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 71,
+        "content_key": "dd5503a6279dad4b88b3c4291a91bf50",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 72,
+        "content_key": "de838fb7b95fae4d804eb60dc011eb6e",
+        "ids": 250,
+        "not_in_project_table": 250
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 73,
+        "content_key": "de88989f5f3b674da8c65069de3916cd",
+        "ids": 246,
+        "not_in_project_table": 246
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 74,
+        "content_key": "e0c746bdd2eaf947afc8fcb272cf0bf8",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 75,
+        "content_key": "e1245704cbe5404ea56485061d523c46",
+        "ids": 241,
+        "not_in_project_table": 241
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 76,
+        "content_key": "e3b272426a920947abf1da0b47de90ce",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 77,
+        "content_key": "e5f3d6d1995c5a4f8f240ca1a2e05c2f",
+        "ids": 804,
+        "not_in_project_table": 804
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 78,
+        "content_key": "f0eb051aaacc3f4db3b8f1609db5e64f",
+        "ids": 220,
+        "not_in_project_table": 220
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 79,
+        "content_key": "f12f66ce745fcc4da2df849210fc7b0e",
+        "ids": 247,
+        "not_in_project_table": 247
+      },
+      {
+        "stream": "Partitions/118",
+        "group": 80,
+        "content_key": "fcdf70ac039ce54bbfad687233878f7b",
+        "ids": 251,
+        "not_in_project_table": 251
+      },
+      {
+        "stream": "Partitions/119",
+        "group": 0,
+        "content_key": null,
+        "ids": 100,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/120",
+        "group": 0,
+        "content_key": null,
+        "ids": 0,
+        "not_in_project_table": 0
+      }
+    ]
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "id_width": 8,
+    "table_tag": 1451,
+    "identifier_source_tag": 2363,
+    "byte_identical_round_trip": true,
+    "records": 4743,
+    "owner_links": 1019,
+    "maximum_owner_chain_nodes": 4,
+    "primary_current_id_differences": 0,
+    "last_id": 494395,
+    "maximum_current_id": 491907,
+    "history_episode_count": 136,
+    "history_opaque_suffix_bytes": 0,
+    "table_episode_numbers": [
+      0,
+      3,
+      5,
+      8,
+      9,
+      10,
+      17,
+      18,
+      19,
+      22,
+      25,
+      26,
+      28,
+      29,
+      30,
+      32,
+      34,
+      37,
+      38,
+      51,
+      53,
+      61,
+      64,
+      66,
+      70,
+      71,
+      72,
+      76,
+      78,
+      79,
+      80,
+      86,
+      88,
+      93,
+      94,
+      98,
+      101,
+      104,
+      105,
+      108,
+      119,
+      126,
+      127,
+      129,
+      130
+    ],
+    "episode_numbers_outside_zero_based_history": [],
+    "base_object_union": 4743,
+    "base_objects_not_in_table": 0,
+    "table_ids_missing_base_objects": 0,
+    "content_object_union": 15599,
+    "content_ids_in_project_table": 0,
+    "groups": [
+      {
+        "stream": "Partitions/78",
+        "group": 0,
+        "content_key": null,
+        "ids": 4743,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 1,
+        "content_key": "18ca593721164f4582a01f987554a557",
+        "ids": 549,
+        "not_in_project_table": 549
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 2,
+        "content_key": "1aa6bc7fd917a446be38d3ffad599f55",
+        "ids": 222,
+        "not_in_project_table": 222
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 3,
+        "content_key": "1b9bdf7dc6be94409eafe377553d3e71",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 4,
+        "content_key": "2c72417147101d4a88f5d2775d3eeef8",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 5,
+        "content_key": "389f615232b9154689c3161112d58e0f",
+        "ids": 235,
+        "not_in_project_table": 235
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 6,
+        "content_key": "3e1e358200259c4b9cf93d2156ceda70",
+        "ids": 795,
+        "not_in_project_table": 795
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 7,
+        "content_key": "3f8b734ebb54154091078b095ab2220f",
+        "ids": 668,
+        "not_in_project_table": 668
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 8,
+        "content_key": "3faeaad366a71f4880d57d782ac51834",
+        "ids": 654,
+        "not_in_project_table": 654
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 9,
+        "content_key": "46f1e7f490e3cf438cbeafc9512dc449",
+        "ids": 326,
+        "not_in_project_table": 326
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 10,
+        "content_key": "49a38430d593d148a71dee77992742aa",
+        "ids": 235,
+        "not_in_project_table": 235
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 11,
+        "content_key": "4fc13ccb6f372c4bb8b1d4d15f1f11f0",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 12,
+        "content_key": "6901b2faea9c4548aea228a9910f4c8c",
+        "ids": 446,
+        "not_in_project_table": 446
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 13,
+        "content_key": "691592482422274881a18da2c3cd28a6",
+        "ids": 560,
+        "not_in_project_table": 560
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 14,
+        "content_key": "69be6009fd407b45bf0cec69a66a1bd7",
+        "ids": 240,
+        "not_in_project_table": 240
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 15,
+        "content_key": "6a2cdffdc52dbe49af785d8b9770472c",
+        "ids": 235,
+        "not_in_project_table": 235
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 16,
+        "content_key": "6b410548d922854ea2a89d497cfb8595",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 17,
+        "content_key": "70e1b70598d77b439c9c4ed04f253bd5",
+        "ids": 607,
+        "not_in_project_table": 607
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 18,
+        "content_key": "810bebe94dd60149b69881da7531031b",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 19,
+        "content_key": "8426606516f15046b1e4cff1799f86b9",
+        "ids": 639,
+        "not_in_project_table": 639
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 20,
+        "content_key": "877ba24fa24a51469a51c823f86e5a39",
+        "ids": 222,
+        "not_in_project_table": 222
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 21,
+        "content_key": "8cbc2442c35e764f853475032bac5596",
+        "ids": 589,
+        "not_in_project_table": 589
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 22,
+        "content_key": "901926a96cfcf94e9a8a130cf88e5c50",
+        "ids": 235,
+        "not_in_project_table": 235
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 23,
+        "content_key": "9097d84e0849fd49ada56476393a27e0",
+        "ids": 672,
+        "not_in_project_table": 672
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 24,
+        "content_key": "9732d9e4bca1a34e997fb4c1e45d96ea",
+        "ids": 719,
+        "not_in_project_table": 719
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 25,
+        "content_key": "a397603b3b14a043962bff4d7a59c584",
+        "ids": 222,
+        "not_in_project_table": 222
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 26,
+        "content_key": "a9ad3ad3922d574fb00a9e3c59a47763",
+        "ids": 222,
+        "not_in_project_table": 222
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 27,
+        "content_key": "aa5848fa2cda1b4c98f7651ca4d53727",
+        "ids": 233,
+        "not_in_project_table": 233
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 28,
+        "content_key": "b39ca8a64a633a44a9a711bb27f6ada4",
+        "ids": 239,
+        "not_in_project_table": 239
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 29,
+        "content_key": "ba9822d7581bf7439d4ad5ebbe132829",
+        "ids": 730,
+        "not_in_project_table": 730
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 30,
+        "content_key": "bbbd539f39e37d4382ede484cbe34ec7",
+        "ids": 590,
+        "not_in_project_table": 590
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 31,
+        "content_key": "bc53660b12e7cb4884253cb1467d3477",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 32,
+        "content_key": "c27e297325223c4e81cc1788b3435708",
+        "ids": 555,
+        "not_in_project_table": 555
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 33,
+        "content_key": "d14032e0bbb516499a977c4efa55983f",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 34,
+        "content_key": "d37db45d679531478cf8c819e0e6230e",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 35,
+        "content_key": "d5549908e14820408612c5824f7460b2",
+        "ids": 326,
+        "not_in_project_table": 326
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 36,
+        "content_key": "e01aa6307bde404b993dfcbfc7c4b784",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 37,
+        "content_key": "e266d49717ddeb4585a21a2443260253",
+        "ids": 546,
+        "not_in_project_table": 546
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 38,
+        "content_key": "f62f1ec0e4b1024486303a9aa54431fb",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 39,
+        "content_key": "f8dda58ba3d6464a82e83014b1859fdb",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/78",
+        "group": 40,
+        "content_key": "ff30306deea71f4f9905b9f519a62991",
+        "ids": 669,
+        "not_in_project_table": 669
+      },
+      {
+        "stream": "Partitions/79",
+        "group": 0,
+        "content_key": null,
+        "ids": 32,
+        "not_in_project_table": 0
+      }
+    ]
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "id_width": 8,
+    "table_tag": 1451,
+    "identifier_source_tag": 2363,
+    "byte_identical_round_trip": true,
+    "records": 4827,
+    "owner_links": 1021,
+    "maximum_owner_chain_nodes": 4,
+    "primary_current_id_differences": 0,
+    "last_id": 493337,
+    "maximum_current_id": 492952,
+    "history_episode_count": 125,
+    "history_opaque_suffix_bytes": 0,
+    "table_episode_numbers": [
+      0,
+      2,
+      5,
+      8,
+      9,
+      10,
+      17,
+      18,
+      19,
+      22,
+      25,
+      28,
+      29,
+      30,
+      32,
+      34,
+      37,
+      38,
+      51,
+      53,
+      61,
+      64,
+      66,
+      70,
+      71,
+      72,
+      76,
+      78,
+      79,
+      81,
+      84,
+      86,
+      89,
+      90,
+      93,
+      97,
+      104,
+      116,
+      119,
+      120
+    ],
+    "episode_numbers_outside_zero_based_history": [],
+    "base_object_union": 4827,
+    "base_objects_not_in_table": 0,
+    "table_ids_missing_base_objects": 0,
+    "content_object_union": 16397,
+    "content_ids_in_project_table": 0,
+    "groups": [
+      {
+        "stream": "Partitions/61",
+        "group": 0,
+        "content_key": null,
+        "ids": 4827,
+        "not_in_project_table": 0
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 1,
+        "content_key": "0833a6dfa7c4d94dada4bede3532a9a7",
+        "ids": 584,
+        "not_in_project_table": 584
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 2,
+        "content_key": "1506de106abd204eb6023818a7d4f990",
+        "ids": 632,
+        "not_in_project_table": 632
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 3,
+        "content_key": "1a933452ca1c5243904cb955e6931ad6",
+        "ids": 611,
+        "not_in_project_table": 611
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 4,
+        "content_key": "1cf0e1ca8360b74da90b09e39adf7a6b",
+        "ids": 578,
+        "not_in_project_table": 578
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 5,
+        "content_key": "1e49b1edf12e1e4baf242eb4b42871ec",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 6,
+        "content_key": "1eef02c17be32b4bb0d2b5f9420e4230",
+        "ids": 606,
+        "not_in_project_table": 606
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 7,
+        "content_key": "227a181f9574674185a8a75a23315bf4",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 8,
+        "content_key": "22afa9488d19c447bc7bb947a65571b8",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 9,
+        "content_key": "23789015bcd4fe40a2f694fbac19bccc",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 10,
+        "content_key": "2f2f5faf835fac479abc0969856c3c3b",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 11,
+        "content_key": "3aa5f25e8913864e938fff3970dd8cf8",
+        "ids": 584,
+        "not_in_project_table": 584
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 12,
+        "content_key": "4058ceaf3ff7fd44bdcd170c77b223aa",
+        "ids": 609,
+        "not_in_project_table": 609
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 13,
+        "content_key": "42438e99ec23324c8a05209570d63a18",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 14,
+        "content_key": "4751b9366da2c0499093583740b50139",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 15,
+        "content_key": "5142007357bb0d40b4dded73e098c77a",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 16,
+        "content_key": "5413763ef63f4646aa1f02222412673e",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 17,
+        "content_key": "5a6eb9c27fe86449b030dbe2993cfe52",
+        "ids": 584,
+        "not_in_project_table": 584
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 18,
+        "content_key": "5c03fe3255018e42893d73c8cc49c79b",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 19,
+        "content_key": "61f7f20cb73ec24882c7e7dd9fcca4f4",
+        "ids": 605,
+        "not_in_project_table": 605
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 20,
+        "content_key": "68dc979a38114b4b8de9a258207f1ec4",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 21,
+        "content_key": "78f6887b30b5214688ae2ae773c835be",
+        "ids": 584,
+        "not_in_project_table": 584
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 22,
+        "content_key": "810bebe94dd60149b69881da7531031b",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 23,
+        "content_key": "9732d9e4bca1a34e997fb4c1e45d96ea",
+        "ids": 719,
+        "not_in_project_table": 719
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 24,
+        "content_key": "98b0415006b6f3438117f047f9199819",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 25,
+        "content_key": "9cf27681eec1fb44a96451022ee4322d",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 26,
+        "content_key": "9d5f286cbcd96148bed392c9afc5a191",
+        "ids": 624,
+        "not_in_project_table": 624
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 27,
+        "content_key": "a66b952b407f01498d9ea5657a5edeab",
+        "ids": 683,
+        "not_in_project_table": 683
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 28,
+        "content_key": "a8ff5d8b7f1e414aabb9a5492e3dec4f",
+        "ids": 707,
+        "not_in_project_table": 707
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 29,
+        "content_key": "ad21b830452d574c99c39b7e2aaaae6a",
+        "ids": 224,
+        "not_in_project_table": 224
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 30,
+        "content_key": "ae334ffed2c81849a6c6241bf10d9dff",
+        "ids": 570,
+        "not_in_project_table": 570
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 31,
+        "content_key": "b59df1ffd00cbe4e9660bf90ee75f7f9",
+        "ids": 225,
+        "not_in_project_table": 225
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 32,
+        "content_key": "bbbd539f39e37d4382ede484cbe34ec7",
+        "ids": 590,
+        "not_in_project_table": 590
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 33,
+        "content_key": "bc53660b12e7cb4884253cb1467d3477",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 34,
+        "content_key": "c522c89244031b4490320f5b4232180f",
+        "ids": 221,
+        "not_in_project_table": 221
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 35,
+        "content_key": "d5588ccdf26b6b4e810e2730f6ca65ce",
+        "ids": 446,
+        "not_in_project_table": 446
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 36,
+        "content_key": "e46e24145f7c66459fbc90fcb536f546",
+        "ids": 526,
+        "not_in_project_table": 526
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 37,
+        "content_key": "e47811d4ca49b84c8833cc3eded78bd2",
+        "ids": 554,
+        "not_in_project_table": 554
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 38,
+        "content_key": "e56ebf1670a174439faff5ce121ded47",
+        "ids": 213,
+        "not_in_project_table": 213
+      },
+      {
+        "stream": "Partitions/61",
+        "group": 39,
+        "content_key": "f32a3ef05cf86e498979d25fef82522f",
+        "ids": 808,
+        "not_in_project_table": 808
+      },
+      {
+        "stream": "Partitions/62",
+        "group": 0,
+        "content_key": null,
+        "ids": 31,
+        "not_in_project_table": 0
+      }
+    ]
+  }
+]

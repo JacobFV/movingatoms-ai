@@ -249,3 +249,11 @@ that. If the trailer turns out to be a standard ECC, that rises sharply — the 
 Customers get IFC4 (Revit opens/links it natively). Legitimate native-RVT routes: Autodesk APS Design Automation for
 Revit (Revit engine in Autodesk's cloud, pay per processing hour; a C# app bundle builds native families from our
 model) or ODA BimRv.
+
+## Project table and object membership audit
+
+The [element-table codec and audit](../research/rvt/results/element-tables.md)
+cover the observed 28/40-byte records, owner chains, History episode ranges,
+and partition membership. Embedded schemas identify the trailing allocator
+field as `IdentifierSource.m_last`; allocation behavior is not yet proven.
+Content-keyed groups must be tracked separately from project-table elements.

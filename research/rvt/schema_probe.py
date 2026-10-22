@@ -42,6 +42,11 @@ def run(source,files,target):
                       'SegmentMarker':int(a['schema_tag'],16),
                       'SegmentCheckback':int(a['schema_tag'],16)-7,
                       'SignatureMarker':int(a['footer_tag'],16)}
+                from element_table import decode as table_decode
+                from verify_element_tables import inflate
+                table=table_decode(inflate(decode(f.openstream('Global/ElemTable').read())),
+                                   4 if tags['ContentMarker']==0x365 else 8)
+                tags['IdentifierSource']=int.from_bytes(table.trailer[8:10],'little')
                 actual={c['name']:c['tag']for c in result['classes']}
                 if actual!=tags:raise ValueError('schema class names do not match observed wire tags')
                 result.update({'file':path.name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),

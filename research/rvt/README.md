@@ -111,3 +111,9 @@ hashes and exact expected reader projections. Its `VALIDATE.txt` distinguishes
 Autodesk open, Viewer conversion, and Revit save/reopen checks. No upload is
 performed. The recorded package is `local/signature-validation.zip`, with
 [manifest evidence](results/signature-validation.json).
+
+`element_table.py` preserves the project table's opaque fields while validating
+IDs, owner references and acyclic owner chains. `verify_element_tables.py`
+checks exact re-encoding and joins the table to History and partition object
+lists. [Table evidence](results/element-tables.md) distinguishes project IDs
+from GUID-keyed content IDs; it does not implement new-element allocation.
