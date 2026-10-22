@@ -70,3 +70,17 @@ retains its original 14-test result; the later Contents correction has 15 Rust t
 The screenshot explicitly records v4's stale binary-header counter/GUID copies,
 found after its seven text/Contents relationships passed. These are local
 research report screenshots, not Autodesk UI or evidence of Autodesk acceptance.
+
+## Binary identity correction — 2026-10-22
+
+[v5 capture manifest](2026-10-22-save-v5/manifest.json) and
+[fresh 74-test Python log](2026-10-22-save-v5/tests.txt) bind this milestone to
+commit `0185e31` plus the recorded generator changes. The panel was visually
+inspected and the captured artifact hashes verified. It shows all five controls,
+the additional binary identity check, and the stable-namespace IFC result.
+
+![v5 binary metadata and stable IFC namespace checks](2026-10-22-save-v5/save-candidate.png)
+
+These are actual screenshots of local research reports, not Autodesk UI.
+Subsequent historical corpus additions and page-layout findings are recorded in
+the research log; this snapshot retains its original six-file corpus scope.

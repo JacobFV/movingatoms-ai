@@ -333,3 +333,12 @@ The complete Python discovery suite now passes 74 tests, including both new
 audits. A historical licensed corpus search is continuing to obtain actual
 same-document save transitions rather than infer temporal rules from unrelated
 static files.
+
+### Fifth-candidate screenshot checkpoint
+
+Captured and visually inspected the fifth-candidate panel under
+`docs/rvt-evidence/2026-10-22-save-v5/`. Its fresh test log records 74 passing
+Python tests; its immutable manifest records source/report hashes. The panel
+compares all five candidates, including binary identity, and the explicit
+stable-namespace IFC adapter. This capture precedes the newly obtained
+historical files and retains the six-original-file corpus scope.

@@ -16,7 +16,8 @@ import tempfile
 ROOT=Path(__file__).resolve().parents[2]
 SOURCES=('object-repacking','resized-graph','resized-reader','record-selection',
          'save-increments','signature-analysis','save-history','transport-create',
-         'contents-codec','save-candidate-identity','save-candidate-v4-verification')
+         'contents-codec','save-candidate-identity','save-candidate-v5-verification',
+         'ifc-identity-audit-v5')
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -66,15 +67,15 @@ def capture(dest,chrome):
     pipeline=common+'<h1>History codec and atomic partition creation</h1>'+f'<div class="cards"><div class="card"><div class="number">{sum(r["episodes"] for r in history):,}</div>History episodes verified</div><div class="card"><div class="number">{sum(r["inflated_bytes"] for r in history):,}</div>History bytes reproduced</div><div class="card"><div class="number">{transport["rust_unit_tests_passed"]+transport["rust_transaction_tests_passed"]}</div>Rust tests passed</div></div>'
     pipeline+='<h2>Complete observed History serialization</h2><p>Six files: all root fields and episode GUID/strength fields independently decoded before and after a guarded prepend. Existing episode identities remain mapped to their original GUIDs.</p>'
     pipeline+=f'<h2>Explicit new-partition transaction</h2><p>Real-file transport control: {transport["independent_olefile_comparison"]["unchanged_original_streams"]} original streams unchanged; one new stream copied byte-for-byte from Partitions/80. Input and output hashes are recorded in transport-create.json.</p><p>Creation requires an absent numeric partition name and an existing parent storage. Output is published only after stream hashes, page framing and original directory metadata pass verification. Existing output files are never overwritten.</p><p>This control does not link the new partition into History, increment tables or element tables. It is not a complete save or a new-element creation test.</p>'+warning
-    candidate=values['save-candidate-v4-verification'];identities=values['save-candidate-identity']
+    candidate=values['save-candidate-v5-verification'];identities=values['save-candidate-identity']
     contents=values['contents-codec']
-    candidate_rows=''.join('<tr><td>'+esc(row['file'])+'</td><td>'+str(sum(row['relationships'].values()))+' / '+str(len(row['relationships']))+'</td></tr>' for row in identities)
+    candidate_rows=''.join('<tr><td>'+esc(row['file'])+'</td><td>'+str(sum(row['relationships'].values()))+' / '+str(len(row['relationships']))+'</td><td>'+('yes' if row['binary_and_text_match_new_increment_and_episode'] else 'no')+'</td></tr>' for row in identities)
     candidate_page=common+'<h1>Append-save candidate: independent checks</h1>'
     candidate_page+=f'<div class="cards"><div class="card"><div class="number">{candidate["reader_element_count"]}</div>elements retained</div><div class="card"><div class="number">{candidate["full_graph"]["complete_objects"]}</div>room graph objects</div><div class="card"><div class="number">{sum(r["rust_inventory"]["parity_pages_verified"]+r["rust_inventory"]["final_pages_verified"] for r in contents)}</div>original pages verified, including Contents</div></div>'
-    candidate_page+='<table><tr><th>Preserved candidate</th><th>Save-metadata relationships satisfied</th></tr>'+candidate_rows+'</table>'
+    candidate_page+='<table><tr><th>Preserved candidate</th><th>Text / Contents checks</th><th>Binary identity updated</th></tr>'+candidate_rows+'</table>'
     candidate_page+=f'<p>Current room route: {esc(candidate["current_record_before"])} → {esc(candidate["current_record_after"])}. Native UniqueId and derived element IFC GUID are unchanged. The requested finish edit is the only graph value change.</p>'
-    candidate_page+=f'<h2>Open finding: IFC projection identifiers</h2><p>{sum(candidate["ifc_identifier_only_changes"].values())} generated IFC identifiers change after updating the document episode GUID; two further lines contain the intended finish and source-stream changes. Export identifier stability is explicitly false.</p>'
-    candidate_page+='<p><strong>Subsequent finding: v4 still has stale binary-header counter and GUID copies in BasicFileInfo.</strong> The seven checks above cover textual metadata and Contents. Unsigned nonempty partition acceptance and ancillary save revisions remain unproven. All four controls retain their file hashes and independent results.</p><pre>Latest candidate SHA-256: '+esc(candidate['candidate_sha256'])+'</pre>'+warning
+    candidate_page+=f'<h2>IFC projection: cause isolated and adapter tested</h2><p>Default exporter: {sum(candidate["ifc_identifier_only_changes"].values())} generated ID changes. Explicit persistent namespace: {values["ifc-identity-audit-v5"]["explicit_stable_namespace_projection"]["identifier_change_count"]} ID changes; only the intended finish and source-stream lines differ. Native IDs are preserved.</p>'
+    candidate_page+='<p><strong>v5 synchronizes all four counter copies and four GUID copies.</strong> Reversing the BasicFileInfo edit restores original bytes exactly. Unsigned partition acceptance and ancillary save revisions remain unproven. All five controls retain hashes and independent results.</p><pre>Latest candidate SHA-256: '+esc(candidate['candidate_sha256'])+'</pre>'+warning
     browser_version=subprocess.check_output([chrome,'--version'],text=True).strip()
     with tempfile.TemporaryDirectory(prefix='rvt-evidence-browser-') as profile:
         for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations),('save-pipeline',pipeline),('save-candidate',candidate_page)]:
