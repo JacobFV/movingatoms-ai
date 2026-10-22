@@ -1,0 +1,14 @@
+{
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "element_count": 154,
+  "changed_element": 348738,
+  "changed_field": "m_room_floor_finish",
+  "old": "Wood",
+  "new": "Polished concrete",
+  "all_other_element_fields_identical": true,
+  "ifc_changes_excluding_export_timestamps": 1,
+  "ifc_before_line": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Wood'),$);",
+  "ifc_after_line": "#2967=IFCPROPERTYSINGLEVALUE('FloorCovering',$,IFCLABEL('Polished concrete'),$);",
+  "output_sha256": "6b420d8d5d29f55ad77500ea32f8f906d31a458ee35abe624518d8fffa098eb0",
+  "autodesk_acceptance": "not_tested"
+}

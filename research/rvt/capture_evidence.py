@@ -17,7 +17,8 @@ ROOT=Path(__file__).resolve().parents[2]
 SOURCES=('object-repacking','resized-graph','resized-reader','record-selection',
          'save-increments','signature-analysis','save-history','transport-create',
          'contents-codec','save-candidate-identity','save-candidate-v5-verification',
-         'ifc-identity-audit-v5')
+         'ifc-identity-audit-v5','historical-codec','new-element-registration',
+         'create-candidate-registered-verification')
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -76,9 +77,22 @@ def capture(dest,chrome):
     candidate_page+=f'<p>Current room route: {esc(candidate["current_record_before"])} → {esc(candidate["current_record_after"])}. Native UniqueId and derived element IFC GUID are unchanged. The requested finish edit is the only graph value change.</p>'
     candidate_page+=f'<h2>IFC projection: cause isolated and adapter tested</h2><p>Default exporter: {sum(candidate["ifc_identifier_only_changes"].values())} generated ID changes. Explicit persistent namespace: {values["ifc-identity-audit-v5"]["explicit_stable_namespace_projection"]["identifier_change_count"]} ID changes; only the intended finish and source-stream lines differ. Native IDs are preserved.</p>'
     candidate_page+='<p><strong>v5 synchronizes all four counter copies and four GUID copies.</strong> Reversing the BasicFileInfo edit restores original bytes exactly. Unsigned partition acceptance and ancillary save revisions remain unproven. All five controls retain hashes and independent results.</p><pre>Latest candidate SHA-256: '+esc(candidate['candidate_sha256'])+'</pre>'+warning
+    historical=values['historical-codec']['files']
+    noncanonical=sum(not s['canonical_encoding_equals_source'] for f in historical for s in f['streams'])
+    historical_page=common+'<h1>Historical corpus: verified layout extension</h1>'
+    historical_page+=f'<div class="cards"><div class="card"><div class="number">{len(historical)}</div>licensed files</div><div class="card"><div class="number">{sum(f["rust_inventory"]["parity_pages_verified"]+f["rust_inventory"]["final_pages_verified"] for f in historical):,}</div>pages verified</div><div class="card"><div class="number">{noncanonical}</div>streams outside default encoder policy</div></div>'
+    historical_page+='<table><tr><th>File</th><th>Full pages</th><th>Final pages</th></tr>'+''.join(f'<tr><td>{esc(f["file"])}</td><td>{f["rust_inventory"]["parity_pages_verified"]}</td><td>{f["rust_inventory"]["final_pages_verified"]}</td></tr>' for f in historical)+'</table>'
+    historical_page+='<p>Both decoders agree on every logical byte. Every source layout reproduces exactly with its detected dimensions. Default encoder output agrees across languages and roundtrips, but does not reproduce nine historical layouts.</p><p>Unchanged streams and no-op logical patches preserve original bytes. Alternative output layout acceptance is untested.</p>'+warning
+    created=values['create-candidate-registered-verification'];registration=values['new-element-registration']
+    creation_page=common+'<h1>Fresh native DataStorage: registered candidate</h1>'
+    creation_page+=f'<div class="cards"><div class="card"><div class="number">{created["new_native_identity"]["element_id"]}</div>new element ID</div><div class="card"><div class="number">{created["prior_native_identities_preserved"]:,}</div>existing identities preserved</div><div class="card"><div class="number">{len(registration["changes"])}</div>known registration lists updated</div></div>'
+    creation_page+='<table><tr><th>Record channel</th><th>Bytes</th><th>Complete objects / edges</th></tr>'+''.join(f'<tr><td>{esc(k)}</td><td>{v["bytes"]}</td><td>{v["objects"]} / {v["edges"]}</td></tr>' for k,v in sorted(created['new_channels'].items()))+'</table>'
+    creation_page+=f'<p>Fresh bodies are encoded from named values and file-local schema declarations. Positive element references are self-only; the new storage GUID is absent from the source DataStorage inventory.</p><p>Global/Latest: {registration["objects_after"]} objects and {registration["edges_after"]} edges independently decoded. Exactly three ID-list insertions; +{registration["byte_growth"]} bytes. All other semantic graph values match.</p>'
+    creation_page+='<p>BasicFileInfo identity copies agree. The candidate preserves original partitions and all existing native identities. A retained unregistered control demonstrates why element extraction alone misses document registrations.</p><pre>Candidate SHA-256: '+esc(created['candidate_sha256'])+'</pre>'
+    creation_page+='<div class="warning"><strong>Scope:</strong> a non-geometric DataStorage element in one measured 2024 profile, using existing ES schemas. All registration rules, signatures, complete native save semantics and Autodesk acceptance remain unproven. This is not a Revit screenshot.</div>'
     browser_version=subprocess.check_output([chrome,'--version'],text=True).strip()
     with tempfile.TemporaryDirectory(prefix='rvt-evidence-browser-') as profile:
-        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations),('save-pipeline',pipeline),('save-candidate',candidate_page)]:
+        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations),('save-pipeline',pipeline),('save-candidate',candidate_page),('historical-layouts',historical_page),('element-creation',creation_page)]:
             page=dest/f'{name}.html';page.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>RVT research evidence</title><style>'+style+'</style><main>'+body+f'<footer>Source JSON copies and SHA-256 provenance are stored beside this capture. Browser: {esc(browser_version)}.</footer></main></html>')
             args=[chrome,'--headless','--no-sandbox','--disable-gpu','--disable-background-networking','--no-first-run',f'--user-data-dir={profile}','--hide-scrollbars','--window-size=1280,1100',f'--screenshot={dest/name}.png',page.as_uri()]
             subprocess.run(args,check=True,capture_output=True,text=True,timeout=45)

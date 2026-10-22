@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22",
+  "commands": [
+    "cargo test --manifest-path processing/rvt-native/Cargo.toml",
+    "cargo clippy --manifest-path processing/rvt-native/Cargo.toml --all-targets -- -D warnings",
+    "processing/rvt-native/target/debug/ma-rvt-native patch research/rvt/local/RE1-Architecture.rvt research/rvt/local/transport-create/control.rvt research/rvt/local/transport-create/manifest.json"
+  ],
+  "rust_unit_tests_passed": 6,
+  "rust_transaction_tests_passed": 8,
+  "clippy_warnings": 0,
+  "real_file_control": {
+    "input_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "output_sha256": "13c0bc63c2224125493a19fecec5e1fda4a13b5c219749b9593105a2e2d979df",
+    "changed_streams": [],
+    "created_streams": [
+      "/Partitions/999999"
+    ],
+    "streams_verified": 16,
+    "parity_pages_verified": 187,
+    "final_pages_verified": 11,
+    "validation": "CFB streams, exact page framing, and unchanged-stream SHA-256",
+    "revit_openability": "not_tested"
+  },
+  "independent_olefile_comparison": {
+    "unchanged_original_streams": 15,
+    "new_streams": [
+      "Partitions/999999"
+    ],
+    "new_stored_stream_equals_source": "Partitions/80"
+  },
+  "limitations": [
+    "Transport-only copy under a new partition name; no History/Latest/element-table linkage was attempted.",
+    "No new elements or signature generation.",
+    "No Revit or Autodesk validation available.",
+    "New CFB entry timestamps make output hash specific to this run."
+  ]
+}

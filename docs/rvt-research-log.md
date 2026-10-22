@@ -416,3 +416,24 @@ pass. Native acceptance, all possible incoming registrations, unsigned partition
 and complete save-policy semantics remain unresolved. The next revision-policy
 audit has already found unchanged stream bytes with advanced revision counters;
 these candidates preserve the earlier policy as an explicit research control.
+
+## 2026-10-22 — Retained signatures across real save history
+
+The historical signature audit compares 307 content-group occurrences. All 729
+pairs with equal complete inflated content retain the same private field (723
+nonempty, six empty). Repeated nonempty private fields also retain identical
+gzip/member framing. Eight complete partition payloads recur, including one
+unchanged across all six Core snapshots. This supports preserving earlier groups
+and their opaque integrity bytes during append experiments; it does not prove
+signatures were regenerated deterministically or identify their algorithm.
+[Evidence](../research/rvt/results/signature-history.md). Two comparison tests pass.
+
+### Native creation and historical framing screenshots
+
+Captured actual Chrome screenshots under
+`docs/rvt-evidence/2026-10-22-native-creation/`. The new element-creation and
+historical-layout panels were visually inspected. The capture's fresh Python
+suite passes 92 tests. Its manifest binds the tested code, copied evidence and
+all artifact hashes; the code snapshot follows commit `e998483` with recorded
+working-tree additions. Rust/corpus counts in pages are recorded runs, not
+rerun by the screenshot command.

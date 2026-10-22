@@ -1,0 +1,1071 @@
+{
+  "actual_candidate": {
+    "file": "create-candidate-registered.rvt",
+    "sha256": "99dcd64c7d5a881e4cdbc8bf202b05f9abaf85e06917967c0cb5ddab19de5936",
+    "latest_stored_sha256": "7323b3c47ceb81637aa38a15fd973c6fba8319ea5d4d05aca2f1e15357395ca8",
+    "latest_inflated_sha256": "b493505f5fd9ae874b83043464dec61e02276405e7009055f58305028ac64499",
+    "actual_candidate_payload_exactly_matches_registration": true
+  },
+  "source_evidence": {
+    "source_file_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "inflated_sha256": "df6c58e975c778153437f6f2ff07befd1055c7d156ce02b955dad1e956f777c3",
+    "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "objects": [
+      {
+        "class_name": "ElemsSetWithCellsTracking",
+        "class_tag": 1464,
+        "end": 99735,
+        "field_spans": [
+          {
+            "class_tag": 27,
+            "end": 99555,
+            "name": "m_pADoc",
+            "start": 99551
+          },
+          {
+            "class_tag": 1465,
+            "end": 99563,
+            "name": "first",
+            "start": 99559
+          },
+          {
+            "class_tag": 21,
+            "end": 99575,
+            "name": "m_id64",
+            "start": 99567
+          },
+          {
+            "class_tag": 20,
+            "end": 99575,
+            "name": "m_id",
+            "start": 99567
+          },
+          {
+            "class_tag": 21,
+            "end": 99583,
+            "name": "m_id64",
+            "start": 99575
+          },
+          {
+            "class_tag": 20,
+            "end": 99583,
+            "name": "m_id",
+            "start": 99575
+          },
+          {
+            "class_tag": 21,
+            "end": 99591,
+            "name": "m_id64",
+            "start": 99583
+          },
+          {
+            "class_tag": 20,
+            "end": 99591,
+            "name": "m_id",
+            "start": 99583
+          },
+          {
+            "class_tag": 21,
+            "end": 99599,
+            "name": "m_id64",
+            "start": 99591
+          },
+          {
+            "class_tag": 20,
+            "end": 99599,
+            "name": "m_id",
+            "start": 99591
+          },
+          {
+            "class_tag": 21,
+            "end": 99607,
+            "name": "m_id64",
+            "start": 99599
+          },
+          {
+            "class_tag": 20,
+            "end": 99607,
+            "name": "m_id",
+            "start": 99599
+          },
+          {
+            "class_tag": 1466,
+            "end": 99607,
+            "name": "m_idSet",
+            "start": 99563
+          },
+          {
+            "class_tag": 1465,
+            "end": 99607,
+            "name": "second",
+            "start": 99563
+          },
+          {
+            "class_tag": 1465,
+            "end": 99611,
+            "name": "first",
+            "start": 99607
+          },
+          {
+            "class_tag": 21,
+            "end": 99623,
+            "name": "m_id64",
+            "start": 99615
+          },
+          {
+            "class_tag": 20,
+            "end": 99623,
+            "name": "m_id",
+            "start": 99615
+          },
+          {
+            "class_tag": 21,
+            "end": 99631,
+            "name": "m_id64",
+            "start": 99623
+          },
+          {
+            "class_tag": 20,
+            "end": 99631,
+            "name": "m_id",
+            "start": 99623
+          },
+          {
+            "class_tag": 21,
+            "end": 99639,
+            "name": "m_id64",
+            "start": 99631
+          },
+          {
+            "class_tag": 20,
+            "end": 99639,
+            "name": "m_id",
+            "start": 99631
+          },
+          {
+            "class_tag": 21,
+            "end": 99647,
+            "name": "m_id64",
+            "start": 99639
+          },
+          {
+            "class_tag": 20,
+            "end": 99647,
+            "name": "m_id",
+            "start": 99639
+          },
+          {
+            "class_tag": 21,
+            "end": 99655,
+            "name": "m_id64",
+            "start": 99647
+          },
+          {
+            "class_tag": 20,
+            "end": 99655,
+            "name": "m_id",
+            "start": 99647
+          },
+          {
+            "class_tag": 21,
+            "end": 99663,
+            "name": "m_id64",
+            "start": 99655
+          },
+          {
+            "class_tag": 20,
+            "end": 99663,
+            "name": "m_id",
+            "start": 99655
+          },
+          {
+            "class_tag": 21,
+            "end": 99671,
+            "name": "m_id64",
+            "start": 99663
+          },
+          {
+            "class_tag": 20,
+            "end": 99671,
+            "name": "m_id",
+            "start": 99663
+          },
+          {
+            "class_tag": 21,
+            "end": 99679,
+            "name": "m_id64",
+            "start": 99671
+          },
+          {
+            "class_tag": 20,
+            "end": 99679,
+            "name": "m_id",
+            "start": 99671
+          },
+          {
+            "class_tag": 21,
+            "end": 99687,
+            "name": "m_id64",
+            "start": 99679
+          },
+          {
+            "class_tag": 20,
+            "end": 99687,
+            "name": "m_id",
+            "start": 99679
+          },
+          {
+            "class_tag": 21,
+            "end": 99695,
+            "name": "m_id64",
+            "start": 99687
+          },
+          {
+            "class_tag": 20,
+            "end": 99695,
+            "name": "m_id",
+            "start": 99687
+          },
+          {
+            "class_tag": 21,
+            "end": 99703,
+            "name": "m_id64",
+            "start": 99695
+          },
+          {
+            "class_tag": 20,
+            "end": 99703,
+            "name": "m_id",
+            "start": 99695
+          },
+          {
+            "class_tag": 1466,
+            "end": 99703,
+            "name": "m_idSet",
+            "start": 99611
+          },
+          {
+            "class_tag": 1465,
+            "end": 99703,
+            "name": "second",
+            "start": 99611
+          },
+          {
+            "class_tag": 1465,
+            "end": 99707,
+            "name": "first",
+            "start": 99703
+          },
+          {
+            "class_tag": 21,
+            "end": 99719,
+            "name": "m_id64",
+            "start": 99711
+          },
+          {
+            "class_tag": 20,
+            "end": 99719,
+            "name": "m_id",
+            "start": 99711
+          },
+          {
+            "class_tag": 21,
+            "end": 99727,
+            "name": "m_id64",
+            "start": 99719
+          },
+          {
+            "class_tag": 20,
+            "end": 99727,
+            "name": "m_id",
+            "start": 99719
+          },
+          {
+            "class_tag": 21,
+            "end": 99735,
+            "name": "m_id64",
+            "start": 99727
+          },
+          {
+            "class_tag": 20,
+            "end": 99735,
+            "name": "m_id",
+            "start": 99727
+          },
+          {
+            "class_tag": 1466,
+            "end": 99735,
+            "name": "m_idSet",
+            "start": 99707
+          },
+          {
+            "class_tag": 1465,
+            "end": 99735,
+            "name": "second",
+            "start": 99707
+          },
+          {
+            "class_tag": 1464,
+            "end": 99735,
+            "name": "m_elemIdSetMap",
+            "start": 99555
+          }
+        ],
+        "fields": {
+          "m_elemIdSetMap": [
+            {
+              "first": -100,
+              "second": {
+                "m_idSet": [
+                  {
+                    "m_id": {
+                      "m_id64": 1434
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 80437
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 133180
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 133181
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 133182
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "first": 1200,
+              "second": {
+                "m_idSet": [
+                  {
+                    "m_id": {
+                      "m_id64": 6
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 1780
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 2089
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34475
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34476
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34868
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34870
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34871
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34897
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34900
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 34901
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "first": 1201,
+              "second": {
+                "m_idSet": [
+                  {
+                    "m_id": {
+                      "m_id64": 6
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 1780
+                    }
+                  },
+                  {
+                    "m_id": {
+                      "m_id64": 2089
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "m_pADoc": {
+            "class_tag": null,
+            "offset": 99551,
+            "pointer_token": 1
+          }
+        },
+        "start": 99551
+      },
+      {
+        "class_name": "EStorageTracking",
+        "class_tag": 1337,
+        "end": 1000067,
+        "field_spans": [
+          {
+            "class_tag": 27,
+            "end": 999831,
+            "name": "m_pADoc",
+            "start": 999827
+          },
+          {
+            "class_tag": 30,
+            "end": 999851,
+            "name": "m_guid",
+            "start": 999835
+          },
+          {
+            "class_tag": 1338,
+            "end": 999851,
+            "name": "m_schemaGuid",
+            "start": 999835
+          },
+          {
+            "class_tag": 21,
+            "end": 999863,
+            "name": "m_id64",
+            "start": 999855
+          },
+          {
+            "class_tag": 20,
+            "end": 999863,
+            "name": "m_id",
+            "start": 999855
+          },
+          {
+            "class_tag": 1338,
+            "end": 999863,
+            "name": "m_elemIdSet",
+            "start": 999851
+          },
+          {
+            "class_tag": 30,
+            "end": 999879,
+            "name": "m_guid",
+            "start": 999863
+          },
+          {
+            "class_tag": 1338,
+            "end": 999879,
+            "name": "m_schemaGuid",
+            "start": 999863
+          },
+          {
+            "class_tag": 21,
+            "end": 999891,
+            "name": "m_id64",
+            "start": 999883
+          },
+          {
+            "class_tag": 20,
+            "end": 999891,
+            "name": "m_id",
+            "start": 999883
+          },
+          {
+            "class_tag": 1338,
+            "end": 999891,
+            "name": "m_elemIdSet",
+            "start": 999879
+          },
+          {
+            "class_tag": 30,
+            "end": 999907,
+            "name": "m_guid",
+            "start": 999891
+          },
+          {
+            "class_tag": 1338,
+            "end": 999907,
+            "name": "m_schemaGuid",
+            "start": 999891
+          },
+          {
+            "class_tag": 21,
+            "end": 999919,
+            "name": "m_id64",
+            "start": 999911
+          },
+          {
+            "class_tag": 20,
+            "end": 999919,
+            "name": "m_id",
+            "start": 999911
+          },
+          {
+            "class_tag": 1338,
+            "end": 999919,
+            "name": "m_elemIdSet",
+            "start": 999907
+          },
+          {
+            "class_tag": 30,
+            "end": 999935,
+            "name": "m_guid",
+            "start": 999919
+          },
+          {
+            "class_tag": 1338,
+            "end": 999935,
+            "name": "m_schemaGuid",
+            "start": 999919
+          },
+          {
+            "class_tag": 21,
+            "end": 999947,
+            "name": "m_id64",
+            "start": 999939
+          },
+          {
+            "class_tag": 20,
+            "end": 999947,
+            "name": "m_id",
+            "start": 999939
+          },
+          {
+            "class_tag": 1338,
+            "end": 999947,
+            "name": "m_elemIdSet",
+            "start": 999935
+          },
+          {
+            "class_tag": 30,
+            "end": 999963,
+            "name": "m_guid",
+            "start": 999947
+          },
+          {
+            "class_tag": 1338,
+            "end": 999963,
+            "name": "m_schemaGuid",
+            "start": 999947
+          },
+          {
+            "class_tag": 21,
+            "end": 999975,
+            "name": "m_id64",
+            "start": 999967
+          },
+          {
+            "class_tag": 20,
+            "end": 999975,
+            "name": "m_id",
+            "start": 999967
+          },
+          {
+            "class_tag": 1338,
+            "end": 999975,
+            "name": "m_elemIdSet",
+            "start": 999963
+          },
+          {
+            "class_tag": 30,
+            "end": 999991,
+            "name": "m_guid",
+            "start": 999975
+          },
+          {
+            "class_tag": 1338,
+            "end": 999991,
+            "name": "m_schemaGuid",
+            "start": 999975
+          },
+          {
+            "class_tag": 21,
+            "end": 1000003,
+            "name": "m_id64",
+            "start": 999995
+          },
+          {
+            "class_tag": 20,
+            "end": 1000003,
+            "name": "m_id",
+            "start": 999995
+          },
+          {
+            "class_tag": 1338,
+            "end": 1000003,
+            "name": "m_elemIdSet",
+            "start": 999991
+          },
+          {
+            "class_tag": 30,
+            "end": 1000019,
+            "name": "m_guid",
+            "start": 1000003
+          },
+          {
+            "class_tag": 1338,
+            "end": 1000019,
+            "name": "m_schemaGuid",
+            "start": 1000003
+          },
+          {
+            "class_tag": 21,
+            "end": 1000031,
+            "name": "m_id64",
+            "start": 1000023
+          },
+          {
+            "class_tag": 20,
+            "end": 1000031,
+            "name": "m_id",
+            "start": 1000023
+          },
+          {
+            "class_tag": 1338,
+            "end": 1000031,
+            "name": "m_elemIdSet",
+            "start": 1000019
+          },
+          {
+            "class_tag": 30,
+            "end": 1000047,
+            "name": "m_guid",
+            "start": 1000031
+          },
+          {
+            "class_tag": 1338,
+            "end": 1000047,
+            "name": "m_schemaGuid",
+            "start": 1000031
+          },
+          {
+            "class_tag": 21,
+            "end": 1000059,
+            "name": "m_id64",
+            "start": 1000051
+          },
+          {
+            "class_tag": 20,
+            "end": 1000059,
+            "name": "m_id",
+            "start": 1000051
+          },
+          {
+            "class_tag": 21,
+            "end": 1000067,
+            "name": "m_id64",
+            "start": 1000059
+          },
+          {
+            "class_tag": 20,
+            "end": 1000067,
+            "name": "m_id",
+            "start": 1000059
+          },
+          {
+            "class_tag": 1338,
+            "end": 1000067,
+            "name": "m_elemIdSet",
+            "start": 1000047
+          },
+          {
+            "class_tag": 1337,
+            "end": 1000067,
+            "name": "m_trackingItems",
+            "start": 999831
+          }
+        ],
+        "fields": {
+          "m_pADoc": {
+            "class_tag": null,
+            "offset": 999827,
+            "pointer_token": 1
+          },
+          "m_trackingItems": [
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 133180
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    24,
+                    17,
+                    250,
+                    199,
+                    204,
+                    242,
+                    90,
+                    79,
+                    129,
+                    0,
+                    48,
+                    93,
+                    104,
+                    126,
+                    112,
+                    179
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 80437
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    66,
+                    16,
+                    228,
+                    141,
+                    166,
+                    125,
+                    69,
+                    77,
+                    175,
+                    180,
+                    248,
+                    229,
+                    186,
+                    119,
+                    152,
+                    22
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 1434
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    79,
+                    169,
+                    150,
+                    167,
+                    69,
+                    158,
+                    130,
+                    78,
+                    183,
+                    22,
+                    80,
+                    49,
+                    120,
+                    183,
+                    68,
+                    70
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 1434
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    93,
+                    229,
+                    11,
+                    254,
+                    179,
+                    213,
+                    169,
+                    79,
+                    138,
+                    72,
+                    58,
+                    77,
+                    167,
+                    97,
+                    0,
+                    254
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 80437
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    103,
+                    200,
+                    71,
+                    65,
+                    254,
+                    205,
+                    253,
+                    66,
+                    128,
+                    143,
+                    59,
+                    186,
+                    253,
+                    167,
+                    61,
+                    165
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 1434
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    216,
+                    128,
+                    216,
+                    169,
+                    77,
+                    144,
+                    190,
+                    69,
+                    183,
+                    110,
+                    235,
+                    199,
+                    156,
+                    120,
+                    79,
+                    2
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 1434
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    242,
+                    161,
+                    28,
+                    253,
+                    223,
+                    139,
+                    73,
+                    65,
+                    185,
+                    128,
+                    197,
+                    96,
+                    24,
+                    224,
+                    219,
+                    204
+                  ]
+                }
+              }
+            },
+            {
+              "m_elemIdSet": [
+                {
+                  "m_id": {
+                    "m_id64": 133181
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_id64": 133182
+                  }
+                }
+              ],
+              "m_schemaGuid": {
+                "m_guid": {
+                  "guid_bytes": [
+                    254,
+                    230,
+                    163,
+                    194,
+                    81,
+                    206,
+                    53,
+                    79,
+                    143,
+                    241,
+                    32,
+                    195,
+                    69,
+                    103,
+                    182,
+                    135
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "start": 999827
+      }
+    ]
+  },
+  "new_element": 133210,
+  "changes": [
+    {
+      "class_name": "ElemsSetWithCellsTracking",
+      "field": "m_elemIdSetMap",
+      "item_index": 0,
+      "ids_before": [
+        1434,
+        80437,
+        133180,
+        133181,
+        133182
+      ],
+      "ids_after": [
+        1434,
+        80437,
+        133180,
+        133181,
+        133182,
+        133210
+      ],
+      "span_before": {
+        "class_tag": 1466,
+        "end": 99607,
+        "name": "m_idSet",
+        "start": 99563
+      }
+    },
+    {
+      "class_name": "EStorageTracking",
+      "field": "m_trackingItems",
+      "item_index": 1,
+      "schema_guid": "8de41042-7da6-4d45-afb4-f8e5ba779816",
+      "ids_before": [
+        80437
+      ],
+      "ids_after": [
+        80437,
+        133210
+      ],
+      "span_before": {
+        "class_tag": 1338,
+        "end": 999891,
+        "name": "m_elemIdSet",
+        "start": 999879
+      }
+    },
+    {
+      "class_name": "EStorageTracking",
+      "field": "m_trackingItems",
+      "item_index": 4,
+      "schema_guid": "4147c867-cdfe-42fd-808f-3bbafda73da5",
+      "ids_before": [
+        80437
+      ],
+      "ids_after": [
+        80437,
+        133210
+      ],
+      "span_before": {
+        "class_tag": 1338,
+        "end": 999975,
+        "name": "m_elemIdSet",
+        "start": 999963
+      }
+    }
+  ],
+  "before_bytes": 1008506,
+  "after_bytes": 1008530,
+  "byte_growth": 24,
+  "objects_before": 252,
+  "objects_after": 252,
+  "edges_before": 251,
+  "edges_after": 251,
+  "semantic_graph_exact_except_three_id_insertions": true,
+  "new_references": [
+    {
+      "path": ".m_elemIdSetMap[0].second.m_idSet[5].m_id.m_id64",
+      "id": 133210
+    },
+    {
+      "path": ".m_trackingItems[1].m_elemIdSet[1].m_id.m_id64",
+      "id": 133210
+    },
+    {
+      "path": ".m_trackingItems[4].m_elemIdSet[1].m_id.m_id64",
+      "id": 133210
+    }
+  ],
+  "new_inflated_sha256": "b493505f5fd9ae874b83043464dec61e02276405e7009055f58305028ac64499",
+  "known_registration_consistent": true,
+  "all_possible_registration_rules_proven": false,
+  "autodesk_acceptance": "not_tested"
+}

@@ -84,3 +84,17 @@ the additional binary identity check, and the stable-namespace IFC result.
 These are actual screenshots of local research reports, not Autodesk UI.
 Subsequent historical corpus additions and page-layout findings are recorded in
 the research log; this snapshot retains its original six-file corpus scope.
+
+## Native creation and historical framing — 2026-10-22
+
+[Capture manifest](2026-10-22-native-creation/manifest.json) and
+[92-test Python log](2026-10-22-native-creation/tests.txt). Both new panels were
+visually inspected; every artifact hash was verified against the manifest.
+The corpus/graph results are recorded experiments copied into this capture.
+
+![Registered DataStorage candidate](2026-10-22-native-creation/element-creation.png)
+
+![Historical layout extension across eleven files](2026-10-22-native-creation/historical-layouts.png)
+
+These are local research evidence pages. They do not depict Revit UI or establish
+native application acceptance.
