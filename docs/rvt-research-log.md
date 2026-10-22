@@ -271,3 +271,22 @@ valid gzip members. The newest History episode GUID appears only in its History
 record and four BasicFileInfo UTF-16 locations under the tested encodings. This
 independently confirms the two previously missed binary-header GUID copies.
 [Scan evidence and limits](../research/rvt/results/save-reference-scan.md).
+
+## 2026-10-22 — BasicFileInfo identity framing codec
+
+Implemented a guarded codec for the observed BasicFileInfo identity records.
+It updates all four counter representations and all four GUID representations,
+including the binary-prefix copies missed by v4. Counter digit growth/shrinkage
+is supported by rebuilding the UTF-16 record length and preserving every other
+byte slice. The parser requires the observed header value, unique named text
+fields, adjacent framed GUID copies, matching binary counters and a following
+framed model identity GUID; unsupported layouts are rejected.
+
+Six original streams roundtrip byte-for-byte. Twenty-four independent text-reader
+trials cover counts 99, 100, 1000 and 9 with changed GUIDs; reversing each edit
+restores the original bytes. Five focused tests pass. Binary semantics rely on
+observed framing/cross-copy equality, because the independent BasicFileInfo reader
+only decodes the text block. See [codec evidence](../research/rvt/results/basic-file-info.md).
+
+The following model identity GUID is zero in all six originals; it supplies no
+useful persistent export namespace. Unknown BasicFileInfo bytes remain preserved.

@@ -1,0 +1,539 @@
+{
+  "status": "guarded_observed_identity_framing",
+  "limitations": [
+    "Opaque prefix fields remain unparsed.",
+    "Observed header value 14 layout only; other arrangements are rejected.",
+    "Independent public reader verifies text properties, not all binary semantics.",
+    "No Autodesk acceptance result."
+  ],
+  "fixtures": [
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "basic_file_info_bytes": 2107,
+      "basic_file_info_sha256": "bab8c34b28e7c4197886fdd4d53797f38b412982b26894576b2dc79920e3e88d",
+      "text_start": 583,
+      "increments": 66,
+      "document_guid": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+      "following_model_identity_guid": "00000000-0000-0000-0000-000000000000",
+      "following_model_identity_nonzero": false,
+      "following_model_identity_history_matches": [
+        "m_previousUpgradeGUID"
+      ],
+      "zero_guid_equality_establishes_namespace": false,
+      "binary_uint32_counter_offset": 272,
+      "binary_guid_record_spans": [
+        [
+          276,
+          352
+        ],
+        [
+          352,
+          428
+        ]
+      ],
+      "binary_decimal_record_span": [
+        428,
+        436
+      ],
+      "text_property_spans": {
+        "Unique Document Increments": [
+          1821,
+          1825
+        ],
+        "Central model's version number corresponding to the last reload latest": [
+          1421,
+          1425
+        ],
+        "Unique Document GUID": [
+          1689,
+          1761
+        ],
+        "Central model's episode GUID corresponding to the last reload latest": [
+          1569,
+          1641
+        ]
+      },
+      "byte_exact_roundtrip": true,
+      "trials": [
+        {
+          "count": 99,
+          "stored_bytes": 2107,
+          "byte_length_delta": 0,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 99
+        },
+        {
+          "count": 100,
+          "stored_bytes": 2113,
+          "byte_length_delta": 6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 100
+        },
+        {
+          "count": 1000,
+          "stored_bytes": 2119,
+          "byte_length_delta": 12,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 1000
+        },
+        {
+          "count": 9,
+          "stored_bytes": 2101,
+          "byte_length_delta": -6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 9
+        }
+      ]
+    },
+    {
+      "file": "einhoven.rvt",
+      "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "basic_file_info_bytes": 2105,
+      "basic_file_info_sha256": "b274c91e865739ec4e4744332121486107ad06a1f69825f50298c7db5b587c13",
+      "text_start": 583,
+      "increments": 7,
+      "document_guid": "4010f260-d136-40e2-9c97-739906627cf3",
+      "following_model_identity_guid": "00000000-0000-0000-0000-000000000000",
+      "following_model_identity_nonzero": false,
+      "following_model_identity_history_matches": [
+        "m_previousUpgradeGUID"
+      ],
+      "zero_guid_equality_establishes_namespace": false,
+      "binary_uint32_counter_offset": 274,
+      "binary_guid_record_spans": [
+        [
+          278,
+          354
+        ],
+        [
+          354,
+          430
+        ]
+      ],
+      "binary_decimal_record_span": [
+        430,
+        436
+      ],
+      "text_property_spans": {
+        "Unique Document Increments": [
+          1821,
+          1823
+        ],
+        "Central model's version number corresponding to the last reload latest": [
+          1423,
+          1425
+        ],
+        "Unique Document GUID": [
+          1689,
+          1761
+        ],
+        "Central model's episode GUID corresponding to the last reload latest": [
+          1569,
+          1641
+        ]
+      },
+      "byte_exact_roundtrip": true,
+      "trials": [
+        {
+          "count": 99,
+          "stored_bytes": 2111,
+          "byte_length_delta": 6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 99
+        },
+        {
+          "count": 100,
+          "stored_bytes": 2117,
+          "byte_length_delta": 12,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 100
+        },
+        {
+          "count": 1000,
+          "stored_bytes": 2123,
+          "byte_length_delta": 18,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 1000
+        },
+        {
+          "count": 9,
+          "stored_bytes": 2105,
+          "byte_length_delta": 0,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 9
+        }
+      ]
+    },
+    {
+      "file": "RE1-Architecture.rvt",
+      "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "basic_file_info_bytes": 2215,
+      "basic_file_info_sha256": "194183d7d6a41a515b80d281693dbbe71430db983744f920e47059f965994ab6",
+      "text_start": 637,
+      "increments": 85,
+      "document_guid": "49409459-71bb-4a7f-9f74-674b7dd20d9d",
+      "following_model_identity_guid": "00000000-0000-0000-0000-000000000000",
+      "following_model_identity_nonzero": false,
+      "following_model_identity_history_matches": [
+        "m_previousUpgradeGUID"
+      ],
+      "zero_guid_equality_establishes_namespace": false,
+      "binary_uint32_counter_offset": 326,
+      "binary_guid_record_spans": [
+        [
+          330,
+          406
+        ],
+        [
+          406,
+          482
+        ]
+      ],
+      "binary_decimal_record_span": [
+        482,
+        490
+      ],
+      "text_property_spans": {
+        "Unique Document Increments": [
+          1929,
+          1933
+        ],
+        "Central model's version number corresponding to the last reload latest": [
+          1529,
+          1533
+        ],
+        "Unique Document GUID": [
+          1797,
+          1869
+        ],
+        "Central model's episode GUID corresponding to the last reload latest": [
+          1677,
+          1749
+        ]
+      },
+      "byte_exact_roundtrip": true,
+      "trials": [
+        {
+          "count": 99,
+          "stored_bytes": 2215,
+          "byte_length_delta": 0,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 99
+        },
+        {
+          "count": 100,
+          "stored_bytes": 2221,
+          "byte_length_delta": 6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 100
+        },
+        {
+          "count": 1000,
+          "stored_bytes": 2227,
+          "byte_length_delta": 12,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 1000
+        },
+        {
+          "count": 9,
+          "stored_bytes": 2209,
+          "byte_length_delta": -6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 9
+        }
+      ]
+    },
+    {
+      "file": "RE1-Mechanical.rvt",
+      "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "basic_file_info_bytes": 2155,
+      "basic_file_info_sha256": "6c29a1426676b6193b8c9845bbb31496d8d2eca2580bd522327ee24d36c1f918",
+      "text_start": 607,
+      "increments": 80,
+      "document_guid": "d4228fd8-e867-4082-b2ab-1f70c6e3b406",
+      "following_model_identity_guid": "00000000-0000-0000-0000-000000000000",
+      "following_model_identity_nonzero": false,
+      "following_model_identity_history_matches": [
+        "m_previousUpgradeGUID"
+      ],
+      "zero_guid_equality_establishes_namespace": false,
+      "binary_uint32_counter_offset": 296,
+      "binary_guid_record_spans": [
+        [
+          300,
+          376
+        ],
+        [
+          376,
+          452
+        ]
+      ],
+      "binary_decimal_record_span": [
+        452,
+        460
+      ],
+      "text_property_spans": {
+        "Unique Document Increments": [
+          1869,
+          1873
+        ],
+        "Central model's version number corresponding to the last reload latest": [
+          1469,
+          1473
+        ],
+        "Unique Document GUID": [
+          1737,
+          1809
+        ],
+        "Central model's episode GUID corresponding to the last reload latest": [
+          1617,
+          1689
+        ]
+      },
+      "byte_exact_roundtrip": true,
+      "trials": [
+        {
+          "count": 99,
+          "stored_bytes": 2155,
+          "byte_length_delta": 0,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 99
+        },
+        {
+          "count": 100,
+          "stored_bytes": 2161,
+          "byte_length_delta": 6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 100
+        },
+        {
+          "count": 1000,
+          "stored_bytes": 2167,
+          "byte_length_delta": 12,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 1000
+        },
+        {
+          "count": 9,
+          "stored_bytes": 2149,
+          "byte_length_delta": -6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 9
+        }
+      ]
+    },
+    {
+      "file": "RE1-Plumbing.rvt",
+      "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "basic_file_info_bytes": 2147,
+      "basic_file_info_sha256": "00222230b03c0385d9a9810a96d85b9920124b006b1b51ac84e72c8daa0e63cd",
+      "text_start": 603,
+      "increments": 63,
+      "document_guid": "b2560b43-3969-4a48-91a1-2d5587d50afd",
+      "following_model_identity_guid": "00000000-0000-0000-0000-000000000000",
+      "following_model_identity_nonzero": false,
+      "following_model_identity_history_matches": [
+        "m_previousUpgradeGUID"
+      ],
+      "zero_guid_equality_establishes_namespace": false,
+      "binary_uint32_counter_offset": 292,
+      "binary_guid_record_spans": [
+        [
+          296,
+          372
+        ],
+        [
+          372,
+          448
+        ]
+      ],
+      "binary_decimal_record_span": [
+        448,
+        456
+      ],
+      "text_property_spans": {
+        "Unique Document Increments": [
+          1861,
+          1865
+        ],
+        "Central model's version number corresponding to the last reload latest": [
+          1461,
+          1465
+        ],
+        "Unique Document GUID": [
+          1729,
+          1801
+        ],
+        "Central model's episode GUID corresponding to the last reload latest": [
+          1609,
+          1681
+        ]
+      },
+      "byte_exact_roundtrip": true,
+      "trials": [
+        {
+          "count": 99,
+          "stored_bytes": 2147,
+          "byte_length_delta": 0,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 99
+        },
+        {
+          "count": 100,
+          "stored_bytes": 2153,
+          "byte_length_delta": 6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 100
+        },
+        {
+          "count": 1000,
+          "stored_bytes": 2159,
+          "byte_length_delta": 12,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 1000
+        },
+        {
+          "count": 9,
+          "stored_bytes": 2141,
+          "byte_length_delta": -6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 9
+        }
+      ]
+    },
+    {
+      "file": "RE1-Electrical.rvt",
+      "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "basic_file_info_bytes": 2265,
+      "basic_file_info_sha256": "a662b0332c8993c050657fc9544f45f91c544013d321d90ea5c99f068ee7c4bd",
+      "text_start": 661,
+      "increments": 121,
+      "document_guid": "56faf749-e7fc-4f96-984c-1abc785b50c1",
+      "following_model_identity_guid": "00000000-0000-0000-0000-000000000000",
+      "following_model_identity_nonzero": false,
+      "following_model_identity_history_matches": [
+        "m_previousUpgradeGUID"
+      ],
+      "zero_guid_equality_establishes_namespace": false,
+      "binary_uint32_counter_offset": 348,
+      "binary_guid_record_spans": [
+        [
+          352,
+          428
+        ],
+        [
+          428,
+          504
+        ]
+      ],
+      "binary_decimal_record_span": [
+        504,
+        514
+      ],
+      "text_property_spans": {
+        "Unique Document Increments": [
+          1977,
+          1983
+        ],
+        "Central model's version number corresponding to the last reload latest": [
+          1575,
+          1581
+        ],
+        "Unique Document GUID": [
+          1845,
+          1917
+        ],
+        "Central model's episode GUID corresponding to the last reload latest": [
+          1725,
+          1797
+        ]
+      },
+      "byte_exact_roundtrip": true,
+      "trials": [
+        {
+          "count": 99,
+          "stored_bytes": 2259,
+          "byte_length_delta": -6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 99
+        },
+        {
+          "count": 100,
+          "stored_bytes": 2265,
+          "byte_length_delta": 0,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 100
+        },
+        {
+          "count": 1000,
+          "stored_bytes": 2271,
+          "byte_length_delta": 6,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 1000
+        },
+        {
+          "count": 9,
+          "stored_bytes": 2253,
+          "byte_length_delta": -12,
+          "reverse_edit_byte_exact": true,
+          "all_properties_equal_expected": true,
+          "document_guid": "01234567-89ab-4cde-8f01-23456789abcd",
+          "document_increments": 9
+        }
+      ]
+    }
+  ]
+}
