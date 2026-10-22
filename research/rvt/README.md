@@ -90,3 +90,9 @@ object's length and Adler-32 before editing and recomputes its checksum.
 reader/IFC property. It does not establish Autodesk acceptance or regenerate
 the unresolved footer. The footer-control artifact is deliberately corrupted
 at that field for future differential validation, not a production output.
+
+`partition_objects.py` decodes and encodes object envelopes, validates split
+objects and Adler-32, and checks the three matching ID lists and terminal
+sentinels. [Object evidence](results/partition-objects.md) covers 736,332 records
+in the licensed corpus. Class bodies and signature generation remain outside
+this envelope encoder.

@@ -111,6 +111,17 @@ controls preserve all reader elements. These are research candidates: the
 unknown footer is not regenerated, save bookkeeping is unchanged, and
 Autodesk acceptance remains untested. No element creation is claimed.
 
+### Object-envelope encoders and structural validation
+
+[Object evidence](../research/rvt/results/partition-objects.md) verifies and
+re-encodes 736,332 records exactly. Each content group has three matching,
+unique ID lists and an empty terminal record; each list's length is its
+declared count plus one. All 490,888 applicable Adler-32 values verify.
+Whole and split object members are decoded by their explicit framing. The
+room edit changes exactly one checksummed object; both matched controls leave
+all objects unchanged. These encoders preserve opaque class bodies and do not
+supply class-specific model creation or signature generation.
+
 ## Ground rules
 
 - **Clean-room only.** Work from the bytes of `.rvt` files and from public documentation. Do not disassemble, decompile

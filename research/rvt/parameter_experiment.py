@@ -14,6 +14,7 @@ import olefile
 from codec import decode as unpage
 from partition_segments import decode,encode
 from data_objects import replace_text
+from partition_objects import validate
 
 SOURCE_SHA='4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4'
 STREAM='Partitions/80'
@@ -47,6 +48,7 @@ def make(source,dest,mode):
         raise ValueError('experiment accepts only the pinned MIT RE1 Architecture fixture')
     with olefile.OleFileIO(source) as f:raw=f.openstream(STREAM).read()
     logical=unpage(raw);partition=decode(logical);base=partition.segments[0]
+    original_records=validate(base,8)
     before=b''.join(m.inflate()for m in base.members)
     after,detail=replace_text(before,ELEMENT,PARAMETER,'Wood','Cork')
     edited,changed=replace_member_payloads(base,before,after)
@@ -56,6 +58,11 @@ def make(source,dest,mode):
         if len(base.footer)!=64:raise ValueError('expected nonempty footer')
         edited=replace(base,footer=bytes([base.footer[0]^1])+base.footer[1:]);changed=[]
     elif mode!='room-finish':raise ValueError('unknown experiment')
+    edited_records=validate(edited,8)
+    record_changes=[(seq,a.element_id) for seq,items in original_records.items()
+                    for a,b in zip(items,edited_records[seq]) if a!=b]
+    expected_changes=[(102,ELEMENT)] if mode=='room-finish' else []
+    if record_changes!=expected_changes:raise ValueError('unexpected object record changes')
     new_partition=replace(partition,segments=(edited,)+partition.segments[1:])
     payload=encode(new_partition)
     if payload==logical:raise ValueError('experiment made no change')
@@ -66,6 +73,8 @@ def make(source,dest,mode):
     (dest/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     return {'mode':mode,'source_sha256':SOURCE_SHA,'stream':STREAM,'changed_members':changed,
             'parameter_edit':detail if mode=='room-finish' else None,
+            'changed_object_records':record_changes,
+            'all_object_counts_ids_lengths_and_adler32_verified':True,
             'all_unedited_segments_preserved':new_partition.segments[1:]==partition.segments[1:],
             'inflated_member_lengths_preserved':True,
             'footer_preserved':edited.footer==base.footer,

@@ -1,6 +1,5 @@
 """Require exactly the intended reader-visible room property change."""
 import argparse
-import copy
 import hashlib
 import json
 from pathlib import Path

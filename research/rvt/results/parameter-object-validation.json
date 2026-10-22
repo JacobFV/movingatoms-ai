@@ -1,0 +1,26 @@
+[
+  {
+    "file": "room-finish.rvt",
+    "sha256": "f2862aaba1df9f429dd85a1fe5774c16c91ec9c399c5b7680bd1ee9c061e59c6",
+    "segments_verified": 80,
+    "object_records_verified": 115566,
+    "all_counts_ids_lengths_adler32_and_reencoding_valid": true,
+    "footer_integrity_verified": false
+  },
+  {
+    "file": "recompress-control.rvt",
+    "sha256": "5346c3f69b5f961248205f929615c852ad7b1eeb0a83bd7a85489d6a988b2cd5",
+    "segments_verified": 80,
+    "object_records_verified": 115566,
+    "all_counts_ids_lengths_adler32_and_reencoding_valid": true,
+    "footer_integrity_verified": false
+  },
+  {
+    "file": "footer-control.rvt",
+    "sha256": "99ba268b3f1d1f0f6448577a86244368d3c598ff11368fa4fbc6e3de76ad3317",
+    "segments_verified": 80,
+    "object_records_verified": 115566,
+    "all_counts_ids_lengths_adler32_and_reencoding_valid": true,
+    "footer_integrity_verified": false
+  }
+]
