@@ -112,3 +112,14 @@ Source attribution: [Magnetar dataset MIT license](../../research/rvt/licenses/m
 for Core/Einhoven, [IFC-ECS MIT license](../../research/rvt/licenses/IFC-ECS-MIT.txt)
 for RE1. The preview audit records structure and pixel changes separately from
 save-counter hypotheses.
+
+
+### Native wall geometry comparison
+
+[Wall geometry capture](2026-10-22-wall-geometry/manifest.json) records actual IFC mesh
+coordinates, triangles, dimensions and source hashes, plotted with Matplotlib and
+captured in Chrome. All 360 existing wall meshes remain unchanged. The new wall is
+translated 121.92 m along X. This is an independent technical plot, not a Revit UI capture
+or proof of native acceptance.
+
+![Independent wall mesh comparison](2026-10-22-wall-geometry/wall-comparison.png)

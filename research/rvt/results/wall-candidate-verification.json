@@ -1,0 +1,152 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "candidate_sha256": "fa05b77818ff31559face50461d95d722792962d7eec595a030f91401b29c5ca",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "prior_native_identities_unchanged": 26425,
+  "new_identity": {
+    "element_id": 133210,
+    "original_id_suffix": 133210,
+    "creation_episode": 39,
+    "stored_revision": 39,
+    "other_revision": 39,
+    "row_offset": 1057006,
+    "raw_fields": [
+      133210,
+      0,
+      39,
+      39,
+      39,
+      133210,
+      0,
+      4294967295,
+      4294967295,
+      0
+    ],
+    "owning_element_id": -1,
+    "partition_id": 0,
+    "unique_id": "859411ca-d713-532e-a032-d1ac0f41975a-0002085a"
+  },
+  "original_partitions_byte_identical": 8,
+  "actual_global_registration_verified": true,
+  "global_graph_objects": 252,
+  "complete_new_channels": {
+    "101": {
+      "objects": 3,
+      "edges": 2,
+      "bytes": 233,
+      "sha256": "7dc7ea7cd3eef25ebea0283dac2c8f0d69384fe4b6149f37624691f186dd4bba"
+    },
+    "103": {
+      "objects": 74,
+      "edges": 73,
+      "bytes": 6884,
+      "sha256": "0f4e98341bab9b6a75685fa0ddf594b5d061bcefd7a2c42abbf3fbcfe76fc7f3"
+    },
+    "102": {
+      "objects": 29,
+      "edges": 28,
+      "bytes": 2946,
+      "sha256": "c842007980331753b16917beacab717f0a7c82d029813e50d7f34ca1ed1dafcd"
+    }
+  },
+  "ifc_projection": {
+    "existing_projected_elements_unchanged": 970,
+    "source_wall_count": 360,
+    "candidate_wall_count": 361,
+    "source_location_feet": [
+      124.24999999999997,
+      67.74999999999994,
+      76.0
+    ],
+    "new_location_feet": [
+      154.24999999999994,
+      87.74999999999994,
+      76.0
+    ],
+    "translation_feet": [
+      30.0,
+      20.0,
+      0
+    ],
+    "source_extrusion": {
+      "depth_feet": 0.6666666666666998,
+      "height_feet": 15.0,
+      "profile_override": null,
+      "width_feet": 9.500000000000014
+    },
+    "new_extrusion": {
+      "depth_feet": 0.6666666666666998,
+      "height_feet": 15.0,
+      "profile_override": null,
+      "width_feet": 9.500000000000028
+    },
+    "floating_geometry_tolerance_feet": 1e-10,
+    "new_native_ifc_guid": "25b17ArnDJBg0oqQmFGvy0",
+    "material_projection_changes": {
+      "material_index": {
+        "source": 1,
+        "new": null
+      },
+      "material_layer_set_index": {
+        "source": null,
+        "new": 0
+      }
+    },
+    "source_layers": null,
+    "new_layers": {
+      "exterior_normal": [
+        2.991758887410948e-15,
+        1.0
+      ],
+      "layers": [
+        {
+          "color_packed": 8355711,
+          "name": "Default Wall",
+          "transparency": 0.0,
+          "width_feet": 0.6666666666666666
+        }
+      ],
+      "stacked": false,
+      "system_family": "Basic Wall"
+    },
+    "material_projection_unchanged": false,
+    "unchanged_rotation": null,
+    "existing_native_projected_guids_preserved": true
+  },
+  "ifc_step_artifacts": [
+    {
+      "file": "wall-candidate-source.ifc",
+      "sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+      "bytes": 4467238
+    },
+    {
+      "file": "wall-candidate-candidate.ifc",
+      "sha256": "19b04dd2204a35665328d2dc15ed5c51b6478dae94e630e879093fa7983e0f40",
+      "bytes": 4471900
+    }
+  ],
+  "room_bounding": true,
+  "material_scanner_diagnostic": [
+    {
+      "has_line": false,
+      "id": 20826,
+      "orientation": {
+        "flip": false,
+        "location_line": 2,
+        "word": 1
+      }
+    },
+    {
+      "has_line": true,
+      "id": 133210,
+      "orientation": {
+        "flip": false,
+        "location_line": 2,
+        "word": 1
+      }
+    }
+  ],
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false,
+  "all_incoming_registration_rules_proven": false
+}

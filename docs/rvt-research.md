@@ -10,6 +10,19 @@ adds one bounded non-geometric element and preserves all existing identities.
 observed revision counters and ProjectInformation timestamp copies.
 Full save semantics, arbitrary geometry creation and native acceptance remain unresolved. [Screenshots and evidence](rvt-evidence/README.md).
 
+A [schema-encoded straight-wall candidate](../research/rvt/results/wall-candidate.md)
+now adds a fresh native wall with fully reconstructed geometry and measured Global registration.
+Independent IfcOpenShell/OpenCASCADE checks preserve all 360 existing wall meshes and verify
+the new wall's dimensions, volume, material and translation. The outside-model variant
+sets two measured room/space-bounding booleans false; native regeneration remains a hypothesis.
+[Actual mesh evidence and screenshot](rvt-evidence/2026-10-22-wall-geometry/wall-comparison.png).
+
+**Correction to the signature assessment:** Autodesk explicitly documents opening
+third-party RVT files through a foreign-file warning. An Autodesk producer signature
+is therefore not established as a universal desktop-opening requirement. This does
+not identify the 64-byte partition field or validate our unsigned candidates.
+[Primary sources and limits](../research/rvt/results/signature_public_sources.md).
+
 Goal: the processing worker delivers a native `.rvt` alongside IFC, written by our own code (no Revit install, no
 Autodesk cloud). Status as of 2026-10-22: **complete page framing solved and implemented**. All 917 full pages
 and 75 final pages in six licensed fixtures reconstruct byte-for-byte (including

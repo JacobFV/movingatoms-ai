@@ -499,3 +499,30 @@ a local browser contact sheet. The manifest binds exact source thumbnails and
 hashes. These are original licensed source previews, explicitly not renders of
 our edited candidates. Source MIT notices accompany the extracted images through
 the linked license files. Every capture artifact hash was verified.
+
+
+## Schema-encoded native wall and independent geometry evidence
+
+Added a bounded straight-wall encoder that reconstructs all three source bodies exactly
+from named embedded-schema fields (106 objects, 103 edges), then assigns a fresh identity
+and translates the measured world-coordinate fields. The writer preserves all 26,425
+existing identities and original partitions, registers the new wall in Global tracking,
+and applies the observed save bookkeeping. The outside variant moves 400 feet along X
+and disables the two measured bounding booleans with explicit hypothesis acknowledgment.
+
+IfcOpenShell 0.8.5/OpenCASCADE independently verifies every one of the 360 previous wall
+meshes and the new 8-vertex/12-triangle wall. Its dimensions are 2.8956 × 0.2032 × 4.572 m,
+volume 2.69010042624 m³, displacement 121.92 m, and material matches the source. Separate
+IFC OwnerHistory correction controls resolve a pre-existing exporter schema violation;
+all other STEP attributes remain unchanged. These controls do not modify RVT files.
+
+Recorded actual mesh arrays, report hashes, plot measurements and a headless Chrome
+screenshot in [wall geometry evidence](rvt-evidence/2026-10-22-wall-geometry/manifest.json).
+Visually inspected the screenshot. Full Python discovery passed 114 tests, including
+the two initial parametric integration guard tests; this checkpoint does not claim the
+pending length-change experiment is complete. Native regeneration, foreign-producer
+encoding and acceptance remain unverified.
+
+The [public-source audit](../research/rvt/results/signature_public_sources.md) corrects
+the old signature dead-end premise: Autodesk documents desktop opening of foreign RVT
+files. It does not identify our partition field or establish cloud acceptance.

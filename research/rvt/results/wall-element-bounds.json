@@ -1,0 +1,171 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "selection_report_sha256": "d0c3ed0ef6ae0d88af354938c9db29595ef8c7fedd2e6b26b031a743c403d002",
+  "header_graphs_complete": 26425,
+  "exact_episode_routes": 26415,
+  "explicit_compaction_header_bindings": [
+    {
+      "element": 20951,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "00d8cb116ff3f25ff0a3d1992c2da0d7d420db96565634848e9d9df9da4fcc5f",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64158,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "83fc602bd48a7aa30655202a80068bcb65bffb22ebc393d94920c4248203b4a5",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64225,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "55c30fa34779dc34f7b0b24fff24e625f4b93436659605255c18e7b9a4ee99ac",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64290,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "995c64534916be3800f0b92b4defef7028884f7273eded35803cb36d86e40634",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64356,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "270bc181fdb9151a0489f02447d078033d09c3fd139da90eb6613fbc98cfc75a",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64421,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "d11d000a536d4c3b002dd09d0dad3c987eab68b0d89fed0e19e20a07f22f9a7a",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64486,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "47936397f1796f89495e3c075baf151a3772a6a1534a98ef582d7a864c9b9e16",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64551,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "371459c85038fe374eb06627c4213324956767e8d083bef88598f8266fc1f282",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64616,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "6c6d66eea844c6a577dddcad6d5370f360a8b94042822b52a586cc63d91dd258",
+      "independent_reader_body_matches": true
+    },
+    {
+      "element": 64681,
+      "modification_episode": 31,
+      "routed_increment": 48,
+      "holder_increments": [
+        46,
+        51
+      ],
+      "selected_increment": 51,
+      "selection_evidence": "unique_compaction_history_holder",
+      "stream": "Partitions/51",
+      "header_body_sha256": "de006930b86b412b49369cad84f780076bc6694ae1515180cc4d52e60d624279",
+      "independent_reader_body_matches": true
+    }
+  ],
+  "unexplained_fallbacks_used": 0,
+  "saved_bounds_feet": [
+    [
+      -196.6926620031623,
+      -27.278847928383243,
+      -50.26632871502527
+    ],
+    [
+      379.02599533649595,
+      239.23572535942236,
+      234.59966204835854
+    ]
+  ],
+  "finite_outline_boxes": 22331,
+  "invalid_outline_boxes": 0,
+  "outside_variant_translation_xy_feet": [
+    400,
+    0
+  ],
+  "outside_wall_min_x_feet": 519.5,
+  "x_clearance_from_saved_bounds_feet": 140.47400466350405,
+  "scope": "All independently selected current saved header Outline boxes; not proof of evaluated/regenerated geometry bounds."
+}

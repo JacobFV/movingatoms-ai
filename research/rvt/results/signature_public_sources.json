@@ -1,0 +1,107 @@
+{
+  "research_date": "2026-10-22",
+  "method": "Primary documentation and published patent text only; no proprietary implementation inspection.",
+  "sources": [
+    {
+      "publisher": "Autodesk",
+      "title": "About Importing Foreign Files",
+      "url": "https://help.autodesk.com/cloudhelp/2023/ENU/Revit-GetStarted/files/GUID-7CEDA377-9C1B-4486-B127-492922233759.htm",
+      "document_version": "2023",
+      "publication_date": null,
+      "date_note": "No publication date shown; product documentation version is explicit.",
+      "supports": "Desktop Revit opens foreign RVT with an origin warning and continue option; Autodesk does not support those files.",
+      "does_not_establish": "SignatureMarker encoding, unsigned-group validity, or our candidate acceptance."
+    },
+    {
+      "publisher": "Autodesk",
+      "title": "About Importing Foreign Files",
+      "url": "https://help.autodesk.com/cloudhelp/2024/ENU/Revit-GetStarted/files/GUID-7CEDA377-9C1B-4486-B127-492922233759.htm",
+      "document_version": "2024",
+      "publication_date": null,
+      "date_note": "No publication date shown; product documentation version is explicit.",
+      "supports": "Desktop Revit opens foreign RVT with an origin warning and continue option; Autodesk does not support those files.",
+      "does_not_establish": "SignatureMarker encoding, unsigned-group validity, or our candidate acceptance."
+    },
+    {
+      "publisher": "Autodesk",
+      "title": "About Importing Foreign Files",
+      "url": "https://help.autodesk.com/cloudhelp/2025/ENU/Revit-GetStarted/files/GUID-7CEDA377-9C1B-4486-B127-492922233759.htm",
+      "document_version": "2025",
+      "publication_date": null,
+      "date_note": "No publication date shown; product documentation version is explicit.",
+      "supports": "Desktop Revit opens foreign RVT with an origin warning and continue option; Autodesk does not support those files.",
+      "does_not_establish": "SignatureMarker encoding, unsigned-group validity, or our candidate acceptance."
+    },
+    {
+      "publisher": "Autodesk",
+      "title": "About Importing Foreign Files",
+      "url": "https://help.autodesk.com/cloudhelp/2026/ENU/Revit-GetStarted/files/GUID-7CEDA377-9C1B-4486-B127-492922233759.htm",
+      "document_version": "2026",
+      "publication_date": null,
+      "date_note": "No publication date shown; product documentation version is explicit.",
+      "supports": "Desktop Revit opens foreign RVT with an origin warning and continue option; Autodesk does not support those files.",
+      "does_not_establish": "SignatureMarker encoding, unsigned-group validity, or our candidate acceptance."
+    },
+    {
+      "publisher": "Autodesk",
+      "title": "File Notification Suppression Settings in Revit.ini",
+      "url": "https://help.autodesk.com/cloudhelp/2023/ENU/Revit-Customize/files/GUID-1C00E999-B157-4640-90BC-75AFA0AB56B3.htm",
+      "publication_date": null,
+      "document_version": "2023",
+      "supports": "Filename-list preference suppresses opening notification for known foreign files.",
+      "does_not_establish": "Any file-byte alteration or integrity bypass."
+    },
+    {
+      "publisher": "Open Design Alliance",
+      "title": "BimRv SDK",
+      "url": "https://www.opendesign.com/products/bimrv",
+      "publication_date": null,
+      "supports": "Vendor claims compatible full/incremental RVT writes independent of Revit.",
+      "does_not_establish": "Implementation details, independent validation, or our writer compatibility."
+    },
+    {
+      "publisher": "Open Design Alliance",
+      "title": "BimRv FAQ",
+      "url": "https://www.opendesign.com/faq/bimrv",
+      "publication_date": null,
+      "supports": "Vendor says new RVT/RFA creation requires a template.",
+      "does_not_establish": "Template requirements for our implementation or signature representation."
+    },
+    {
+      "publisher": "Autodesk Support",
+      "title": "Extraction failed or broken icon when uploading or publishing a Revit file",
+      "url": "https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/BIM-360-Docs-Processing-failed-when-trying-to-upload-a-Revit-file.html",
+      "publication_date": "2026-07-29",
+      "supports": "Third-party/invalid models and origin warning appear among cloud extraction failure causes.",
+      "does_not_establish": "Universal rejection of foreign files or the specific failure mechanism."
+    },
+    {
+      "publisher": "Published US patent application; original assignee Autodesk Inc",
+      "title": "Extensible mechanism for attaching digital signatures to different file types",
+      "publication_number": "US20030221105A1",
+      "url": "https://patents.google.com/patent/US20030221105A1/en",
+      "publication_date": "2003-11-27",
+      "supports": "Generic modular signature and certificate architecture.",
+      "does_not_establish": "Any connection to Revit SignatureMarker; no Revit or SignatureMarker occurrence found."
+    }
+  ],
+  "searches": [
+    "site:autodesk.com \"Data generated by Autodesk\" Revit",
+    "site:opendesign.com Revit digital signature generated files warning",
+    "\"SignatureMarker\" Revit",
+    "site:autodesk.com Revit \"third-party\" \"created\" file warning",
+    "site:help.autodesk.com \"Foreign File\" Revit \"2024\"",
+    "site:opendesign.com \"Revit\" \"foreign\"",
+    "site:patents.google.com/patent Autodesk \"digital signature\" \"file format\"",
+    "\"m_privateSignature\" \"Revit\"",
+    "site:opendesign.com \"BimRv\" \"watermark\""
+  ],
+  "conclusion": "Official desktop foreign-file opening contradicts treating Autodesk-origin authenticity as a universal opening prerequisite. Exact 64-byte field role remains unidentified.",
+  "inference": "Producer authentication feeding an origin warning is consistent with the observed marker and public documentation, not proven.",
+  "not_found": [
+    "Primary specification tying warning to SignatureMarker",
+    "Published algorithm/key or field verification procedure",
+    "Valid unsigned nonempty-group encoding"
+  ],
+  "candidate_validation": "not_tested"
+}

@@ -1,0 +1,31 @@
+{
+  "candidate_sha256": "a9612aa28bcc755fa5536a04aca1a981209bf7119dff65dd4a73c8f7efad02aa",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "rows": [
+    {
+      "has_line": false,
+      "id": 20826,
+      "orientation": {
+        "flip": false,
+        "location_line": 2,
+        "word": 1
+      }
+    },
+    {
+      "has_line": true,
+      "id": 133210,
+      "orientation": {
+        "flip": false,
+        "location_line": 2,
+        "word": 1
+      }
+    }
+  ],
+  "source_functions": [
+    "partition_compound_structure::scan_wall_lines",
+    "partition_beam_axes::scan_first_records",
+    "partition_schema_mvp::attach_wall_layers"
+  ],
+  "finding": "Original wall has no unambiguous bounded line; new wall does. attach_wall_layers requires a line or arc before it adds layer information. scan_first_records scans all historical partitions and drops disagreeing copies; native current-record graphs use exact revision routing.",
+  "limitation": "This probe establishes the different public-reader lookup result, not which historical copy caused the missing line."
+}

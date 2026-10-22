@@ -1,0 +1,1335 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "source_wall": 20826,
+  "new_id": 133210,
+  "translation_xy_feet": [
+    30,
+    20
+  ],
+  "room_bounding_override": null,
+  "bounding_toggle_lifecycle_proven": null,
+  "channels": {
+    "101": {
+      "source_bytes": 233,
+      "source_sha256": "163aa678aaefa32c0ead36b984e0a880045ccfc263386763ddf2ee9250815c46",
+      "source_reconstruction_exact": true,
+      "new_bytes": 233,
+      "new_sha256": "7dc7ea7cd3eef25ebea0283dac2c8f0d69384fe4b6149f37624691f186dd4bba",
+      "objects": 3,
+      "edges": 2,
+      "references": [
+        {
+          "path": "[0].m_categroryId.m_id.m_id64",
+          "id": -2000011
+        },
+        {
+          "path": "[0].m_designOptionId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_familyId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_miscId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_ownerViewId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_unplacedOwnerId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[2].m_appearanceParents[0].m_id.m_id64",
+          "id": 113
+        },
+        {
+          "path": "[2].m_appearanceParents[1].m_id.m_id64",
+          "id": 17328
+        },
+        {
+          "path": "[2].m_appearanceParents[2].m_id.m_id64",
+          "id": 20308
+        },
+        {
+          "path": "[2].m_deletion[0].m_id.m_id64",
+          "id": 3
+        },
+        {
+          "path": "[2].m_deletion[1].m_id.m_id64",
+          "id": 17328
+        },
+        {
+          "path": "[2].m_deletion[2].m_id.m_id64",
+          "id": 20307
+        },
+        {
+          "path": "[2].m_deletion[3].m_id.m_id64",
+          "id": 20308
+        },
+        {
+          "path": "[2].m_deletion[4].m_id.m_id64",
+          "id": 133210
+        },
+        {
+          "path": "[2].m_regenOnly[0].m_id.m_id64",
+          "id": 113
+        }
+      ]
+    },
+    "103": {
+      "source_bytes": 6884,
+      "source_sha256": "d78539ad6fa0926c2569e6e65a06d928033d78935c21c46254d9da740234ffc4",
+      "source_reconstruction_exact": true,
+      "new_bytes": 6884,
+      "new_sha256": "0f4e98341bab9b6a75685fa0ddf594b5d061bcefd7a2c42abbf3fbcfe76fc7f3",
+      "objects": 74,
+      "edges": 73,
+      "references": [
+        {
+          "path": "[0].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 113
+        },
+        {
+          "path": "[1].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 681
+        },
+        {
+          "path": "[2].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 681
+        },
+        {
+          "path": "[3].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 681
+        },
+        {
+          "path": "[4].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 681
+        },
+        {
+          "path": "[5].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[6].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[7].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[8].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[9].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[10].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[10].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[11].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[11].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[12].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[12].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[13].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[13].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[14].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[14].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[15].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[15].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[16].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[17].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[18].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[19].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[20].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[21].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[22].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[23].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[24].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[25].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[26].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[27].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[28].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[28].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[29].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[30].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[31].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[32].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[33].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[33].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[34].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[35].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[36].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[37].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[38].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[38].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[39].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[40].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[41].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[42].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[43].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[43].m_renderStyleId.m_id.m_id64",
+          "id": 87
+        },
+        {
+          "path": "[44].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[45].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[46].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[47].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[48].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[49].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 119
+        },
+        {
+          "path": "[49].m_patternId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[51].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[52].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 119
+        },
+        {
+          "path": "[52].m_patternId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[54].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[55].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 119
+        },
+        {
+          "path": "[55].m_patternId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[57].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[58].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 119
+        },
+        {
+          "path": "[58].m_patternId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[60].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[61].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 119
+        },
+        {
+          "path": "[61].m_patternId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[63].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[64].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": 119
+        },
+        {
+          "path": "[64].m_patternId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[66].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[68].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[70].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[72].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        }
+      ]
+    },
+    "102": {
+      "source_bytes": 2946,
+      "source_sha256": "816072c39ffe4de748103185e6d5bce5b7291f37d9a2551844525414a99128d7",
+      "source_reconstruction_exact": true,
+      "new_bytes": 2946,
+      "new_sha256": "c842007980331753b16917beacab717f0a7c82d029813e50d7f34ca1ed1dafcd",
+      "objects": 29,
+      "edges": 28,
+      "references": [
+        {
+          "path": "[0].m_WallAttributesId.m_id.m_id64",
+          "id": 17328
+        },
+        {
+          "path": "[0].m_analyticalBottomPlane.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_analyticalProjectionSurfaceId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_analyticalTopPlane.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_assocLevelId.m_id.m_id64",
+          "id": 20308
+        },
+        {
+          "path": "[0].m_contFootingId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_createdPhaseId.m_id.m_id64",
+          "id": 3
+        },
+        {
+          "path": "[0].m_demolishedPhaseId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_designOptionId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_famId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_id.m_id.m_id64",
+          "id": 133210
+        },
+        {
+          "path": "[0].m_ownerDBViewId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_unplacedOwnerId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[0].m_upToLevelId.m_id.m_id64",
+          "id": 20307
+        },
+        {
+          "path": "[1].m_paramSet[0].m_paramId.m_id.m_id64",
+          "id": -1012829
+        },
+        {
+          "path": "[1].m_paramSet[1].m_paramId.m_id.m_id64",
+          "id": -1012828
+        },
+        {
+          "path": "[1].m_paramSet[2].m_paramId.m_id.m_id64",
+          "id": -1001111
+        },
+        {
+          "path": "[1].m_paramSet[3].m_paramId.m_id.m_id64",
+          "id": -1001109
+        },
+        {
+          "path": "[1].m_paramSet[4].m_paramId.m_id.m_id64",
+          "id": -1001108
+        },
+        {
+          "path": "[1].m_paramSet[5].m_paramId.m_id.m_id64",
+          "id": -1001105
+        },
+        {
+          "path": "[1].m_paramSet[6].m_paramId.m_id.m_id64",
+          "id": -1001101
+        },
+        {
+          "path": "[6].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[6].m_renderStyleId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[7].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[7].m_renderStyleId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[8].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[8].m_renderStyleId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[9].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[9].m_renderStyleId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[20].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[25].m_geom.m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[26].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[27].m_geom.m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        },
+        {
+          "path": "[28].m_GInfo.m_categoryId.m_id.m_id64",
+          "id": -1
+        }
+      ]
+    }
+  },
+  "world_coordinate_changes": [
+    {
+      "channel": 101,
+      "object": 1,
+      "class": "Outline",
+      "field": "m_minmax",
+      "before": [
+        [
+          119.49999999999996,
+          67.41666666666659,
+          76.0
+        ],
+        [
+          128.99999999999997,
+          68.08333333333329,
+          91.0
+        ]
+      ],
+      "after": [
+        [
+          149.49999999999994,
+          87.41666666666659,
+          76.0
+        ],
+        [
+          158.99999999999997,
+          88.08333333333329,
+          91.0
+        ]
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 0,
+      "class": "GElement",
+      "field": "m_bBox",
+      "before": [
+        [
+          119.49999999999996,
+          67.41666666666659,
+          76.0
+        ],
+        [
+          128.99999999999997,
+          68.08333333333329,
+          91.0
+        ]
+      ],
+      "after": [
+        [
+          149.49999999999994,
+          87.41666666666659,
+          76.0
+        ],
+        [
+          158.99999999999997,
+          88.08333333333329,
+          91.0
+        ]
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 0,
+      "class": "GElement",
+      "field": "m_tightbBox",
+      "before": [
+        [
+          119.49999999999996,
+          67.41666666666659,
+          76.0
+        ],
+        [
+          128.99999999999997,
+          68.08333333333329,
+          91.0
+        ]
+      ],
+      "after": [
+        [
+          149.49999999999994,
+          87.41666666666659,
+          76.0
+        ],
+        [
+          158.99999999999997,
+          88.08333333333329,
+          91.0
+        ]
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 50,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.74999999999996,
+        67.41666666666661,
+        76.0
+      ],
+      "after": [
+        149.74999999999994,
+        87.41666666666661,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 53,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.74999999999996,
+        68.08333333333329,
+        76.0
+      ],
+      "after": [
+        149.74999999999994,
+        88.08333333333329,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 56,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.41666666666661,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.41666666666661,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 59,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        128.99999999999997,
+        67.41666666666659,
+        76.0
+      ],
+      "after": [
+        158.99999999999997,
+        87.41666666666659,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 62,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        128.99999999999997,
+        67.41666666666659,
+        91.0
+      ],
+      "after": [
+        158.99999999999997,
+        87.41666666666659,
+        91.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 65,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.41666666666661,
+        91.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.41666666666661,
+        91.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 67,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.74999999999996,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.74999999999996,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 69,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.41666666666663,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.41666666666663,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 71,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        68.08333333333329,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        88.08333333333329,
+        76.0
+      ]
+    },
+    {
+      "channel": 103,
+      "object": 73,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.74999999999996,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.74999999999996,
+        76.0
+      ]
+    },
+    {
+      "channel": 102,
+      "object": 20,
+      "class": "GLine",
+      "field": "m_origin",
+      "before": [
+        119.74999999999996,
+        67.74999999999996,
+        76.0
+      ],
+      "after": [
+        149.74999999999994,
+        87.74999999999996,
+        76.0
+      ]
+    },
+    {
+      "channel": 102,
+      "object": 21,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.74999999999996,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.74999999999996,
+        76.0
+      ]
+    },
+    {
+      "channel": 102,
+      "object": 22,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        68.08333333333329,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        88.08333333333329,
+        76.0
+      ]
+    },
+    {
+      "channel": 102,
+      "object": 23,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.41666666666663,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.41666666666663,
+        76.0
+      ]
+    },
+    {
+      "channel": 102,
+      "object": 24,
+      "class": "Plane",
+      "field": "m_origin",
+      "before": [
+        119.49999999999996,
+        67.74999999999996,
+        76.0
+      ],
+      "after": [
+        149.49999999999994,
+        87.74999999999996,
+        76.0
+      ]
+    }
+  ],
+  "self_identity_changes": [
+    [
+      "101",
+      2,
+      "m_deletion.self"
+    ],
+    [
+      "103",
+      0,
+      "m_elementId"
+    ],
+    [
+      "103",
+      0,
+      "m_GInfo.m_tag"
+    ],
+    [
+      "102",
+      0,
+      "m_id"
+    ]
+  ],
+  "verified_existing_context": [
+    {
+      "id": 3,
+      "class": "ProjectPhase",
+      "unique_id": "e6162d87-0925-4f50-b0e0-fa7dc572aad5-00000003"
+    },
+    {
+      "id": 87,
+      "class": "MaterialElem",
+      "unique_id": "e6162d87-0925-4f50-b0e0-fa7dc572aad5-00000057"
+    },
+    {
+      "id": 113,
+      "class": "GStyleElem",
+      "unique_id": "e6162d87-0925-4f50-b0e0-fa7dc572aad5-00000071"
+    },
+    {
+      "id": 119,
+      "class": "GStyleElem",
+      "unique_id": "e6162d87-0925-4f50-b0e0-fa7dc572aad5-00000077"
+    },
+    {
+      "id": 681,
+      "class": "GStyleElem",
+      "unique_id": "e6162d87-0925-4f50-b0e0-fa7dc572aad5-000002a9"
+    },
+    {
+      "id": 17328,
+      "class": "BasicWallType",
+      "unique_id": "b9d5c304-c65d-4423-9f5c-718751701022-000043b0"
+    },
+    {
+      "id": 20307,
+      "class": "Level",
+      "unique_id": "b9d5c304-c65d-4423-9f5c-718751701022-00004f53"
+    },
+    {
+      "id": 20308,
+      "class": "Level",
+      "unique_id": "b9d5c304-c65d-4423-9f5c-718751701022-00004f54"
+    }
+  ],
+  "source_ifc": {
+    "entity": {
+      "extrusion": {
+        "depth_feet": 0.6666666666666998,
+        "height_feet": 15.0,
+        "profile_override": null,
+        "width_feet": 9.500000000000014
+      },
+      "host_element_index": null,
+      "ifc_type": "IFCWALL",
+      "kind": "BuildingElement",
+      "location_feet": [
+        124.24999999999997,
+        67.74999999999994,
+        76.0
+      ],
+      "material_index": 1,
+      "material_layer_set_index": null,
+      "material_profile_set_index": null,
+      "name": "Basic Wall:8\" Interior Partition 3 Hour:20826",
+      "predefined_type": "NOTDEFINED",
+      "property_set": {
+        "name": "RvtElementRecordGeometry",
+        "properties": [
+          {
+            "name": "BodySource",
+            "value": {
+              "kind": "Text",
+              "value": "partition_element_record_join_trimmed"
+            }
+          },
+          {
+            "name": "ProfileResolved",
+            "value": {
+              "kind": "Boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "LevelBindResolved",
+            "value": {
+              "kind": "Boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "BoundingBoxHeight",
+            "value": {
+              "kind": "LengthFeet",
+              "value": 15.0
+            }
+          },
+          {
+            "name": "LevelElementId",
+            "value": {
+              "kind": "Integer",
+              "value": 20308
+            }
+          },
+          {
+            "name": "LevelBindSource",
+            "value": {
+              "kind": "Text",
+              "value": "partition_element_record_base_constraint"
+            }
+          },
+          {
+            "name": "ThicknessResolved",
+            "value": {
+              "kind": "Boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "Thickness",
+            "value": {
+              "kind": "LengthFeet",
+              "value": 0.6666666666666998
+            }
+          },
+          {
+            "name": "ThicknessSource",
+            "value": {
+              "kind": "Text",
+              "value": "partition_element_record_bbox_thin_axis"
+            }
+          },
+          {
+            "name": "JoinTrimStart",
+            "value": {
+              "kind": "LengthFeet",
+              "value": 0.0
+            }
+          },
+          {
+            "name": "JoinTrimEnd",
+            "value": {
+              "kind": "LengthFeet",
+              "value": 0.0
+            }
+          },
+          {
+            "name": "SourceStream",
+            "value": {
+              "kind": "Text",
+              "value": "Partitions/59"
+            }
+          },
+          {
+            "name": "RevitClass",
+            "value": {
+              "kind": "Text",
+              "value": "SWall"
+            }
+          },
+          {
+            "name": "Fire Rating",
+            "value": {
+              "kind": "Text",
+              "value": "3HR"
+            }
+          },
+          {
+            "name": "FamilyName",
+            "value": {
+              "kind": "Text",
+              "value": "Basic Wall"
+            }
+          },
+          {
+            "name": "FamilyNameSource",
+            "value": {
+              "kind": "Text",
+              "value": "system_family_by_category"
+            }
+          },
+          {
+            "name": "TypeName",
+            "value": {
+              "kind": "Text",
+              "value": "8\" Interior Partition 3 Hour"
+            }
+          },
+          {
+            "name": "StoreyBindSource",
+            "value": {
+              "kind": "Text",
+              "value": "record_level_reference"
+            }
+          }
+        ]
+      },
+      "representation_map_index": null,
+      "rotation_radians": null,
+      "solid_shape": null,
+      "storey_index": 7,
+      "type_guid": "20826"
+    },
+    "layers": null
+  },
+  "actual_candidate": {
+    "file": "wall-candidate.rvt",
+    "sha256": "fa05b77818ff31559face50461d95d722792962d7eec595a030f91401b29c5ca",
+    "all_three_graphs_match_generated": true,
+    "original_wall_graphs_unchanged": true,
+    "registration_payload_exact": true,
+    "ifc_location_delta_feet": [
+      29.99999999999997,
+      20.0,
+      0.0
+    ],
+    "ifc_dimensions_level_unchanged": true,
+    "ifc_material_projection_unchanged": false,
+    "material_projection": {
+      "material_index": {
+        "before": 1,
+        "after": null
+      },
+      "material_layer_set_index": {
+        "before": null,
+        "after": 0
+      },
+      "material_profile_set_index": {
+        "before": null,
+        "after": null
+      }
+    },
+    "ifc": {
+      "entity": {
+        "extrusion": {
+          "depth_feet": 0.6666666666666998,
+          "height_feet": 15.0,
+          "profile_override": null,
+          "width_feet": 9.500000000000028
+        },
+        "host_element_index": null,
+        "ifc_type": "IFCWALL",
+        "kind": "BuildingElement",
+        "location_feet": [
+          154.24999999999994,
+          87.74999999999994,
+          76.0
+        ],
+        "material_index": null,
+        "material_layer_set_index": 0,
+        "material_profile_set_index": null,
+        "name": "Basic Wall:8\" Interior Partition 3 Hour:133210",
+        "predefined_type": "NOTDEFINED",
+        "property_set": {
+          "name": "RvtElementRecordGeometry",
+          "properties": [
+            {
+              "name": "BodySource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_join_trimmed"
+              }
+            },
+            {
+              "name": "ProfileResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": false
+              }
+            },
+            {
+              "name": "LevelBindResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "BoundingBoxHeight",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 15.0
+              }
+            },
+            {
+              "name": "LevelElementId",
+              "value": {
+                "kind": "Integer",
+                "value": 20308
+              }
+            },
+            {
+              "name": "LevelBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_base_constraint"
+              }
+            },
+            {
+              "name": "ThicknessResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "Thickness",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.6666666666666998
+              }
+            },
+            {
+              "name": "ThicknessSource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_bbox_thin_axis"
+              }
+            },
+            {
+              "name": "JoinTrimStart",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.0
+              }
+            },
+            {
+              "name": "JoinTrimEnd",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.0
+              }
+            },
+            {
+              "name": "SourceStream",
+              "value": {
+                "kind": "Text",
+                "value": "Partitions/66"
+              }
+            },
+            {
+              "name": "RevitClass",
+              "value": {
+                "kind": "Text",
+                "value": "SWall"
+              }
+            },
+            {
+              "name": "Fire Rating",
+              "value": {
+                "kind": "Text",
+                "value": "3HR"
+              }
+            },
+            {
+              "name": "FamilyName",
+              "value": {
+                "kind": "Text",
+                "value": "Basic Wall"
+              }
+            },
+            {
+              "name": "FamilyNameSource",
+              "value": {
+                "kind": "Text",
+                "value": "system_family_by_category"
+              }
+            },
+            {
+              "name": "TypeName",
+              "value": {
+                "kind": "Text",
+                "value": "8\" Interior Partition 3 Hour"
+              }
+            },
+            {
+              "name": "StoreyBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "record_level_reference"
+              }
+            }
+          ]
+        },
+        "representation_map_index": null,
+        "rotation_radians": null,
+        "solid_shape": null,
+        "storey_index": 7,
+        "type_guid": "133210"
+      },
+      "layers": {
+        "exterior_normal": [
+          2.991758887410948e-15,
+          1.0
+        ],
+        "layers": [
+          {
+            "color_packed": 8355711,
+            "name": "Default Wall",
+            "transparency": 0.0,
+            "width_feet": 0.6666666666666666
+          }
+        ],
+        "stacked": false,
+        "system_family": "Basic Wall"
+      }
+    }
+  },
+  "registration": {
+    "objects": 252,
+    "edges": 251,
+    "growth_bytes": 8,
+    "only_structural_id_set_changed": true
+  },
+  "limits": [
+    "Measured straight unjoined Basic Wall only; all type/level/material references are explicit existing context.",
+    "Topology/flags/cache defaults are re-encoded from named source graph values, not inferred universal creation defaults.",
+    "Source room tag, view override and LevelRoomPlan references remain attached to original wall; new room-bounding topology regeneration is unresolved.",
+    "Independent graph/IFC decoding does not establish Autodesk acceptance."
+  ],
+  "autodesk_acceptance": "not_tested"
+}

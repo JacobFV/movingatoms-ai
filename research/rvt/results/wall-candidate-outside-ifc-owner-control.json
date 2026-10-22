@@ -1,0 +1,157 @@
+{
+  "ifcopenshell_version": "0.8.5",
+  "python_version": "3.13.15",
+  "installed_dependencies": {
+    "ifcopenshell": "0.8.5",
+    "six": "1.17.0",
+    "python-dateutil": "3.0.0",
+    "pytest": "8.4.2",
+    "lark": "1.3.1",
+    "iniconfig": "2.3.1",
+    "pluggy": "1.7.0",
+    "isodate": "0.7.2",
+    "shapely": "2.2.0",
+    "Pygments": "2.21.0",
+    "numpy": "2.5.4",
+    "typing_extensions": "4.16.0",
+    "packaging": "26.3",
+    "tzdata": "2026.5"
+  },
+  "validator_sha256": "38fb7fc4a4ee6fb98e7845858fbdd970fdcd62b83f85aa29bc1170a1c145a32a",
+  "geometry_kernel": "opencascade",
+  "geometry_units": "metres",
+  "coordinate_tolerance_metres": 1e-08,
+  "volume_tolerance_cubic_metres": 1e-08,
+  "schema_validation": [
+    {
+      "file": "wall-candidate-outside-source-owner-corrected.ifc",
+      "schema": "IFC4",
+      "unit_scale_to_metres": 1,
+      "validation_messages": 0,
+      "levels": {},
+      "messages": []
+    },
+    {
+      "file": "wall-candidate-outside-candidate-owner-corrected.ifc",
+      "schema": "IFC4",
+      "unit_scale_to_metres": 1,
+      "validation_messages": 0,
+      "levels": {},
+      "messages": []
+    }
+  ],
+  "source_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+  "candidate_sha256": "a4d72a6a08d5189bf46096b5bdd337f4b922b480a454da6b532927fc74c6223b",
+  "existing_wall_meshes_exactly_preserved": 360,
+  "new_wall_count": 361,
+  "source_wall_guid": "2vrSC4nbr48vzSSOTHS45u",
+  "new_wall_guid": "25b17ArnDJBg0oqQmFGvy0",
+  "source_wall": {
+    "name": "Basic Wall:8\" Interior Partition 3 Hour:20826",
+    "minimum_metres": [
+      36.4236,
+      20.5486,
+      23.1648
+    ],
+    "maximum_metres": [
+      39.3192,
+      20.751800000000003,
+      27.7368
+    ],
+    "volume_cubic_metres": 2.6901004262435935,
+    "vertices": 8,
+    "triangles": 12
+  },
+  "new_wall": {
+    "name": "Basic Wall:8\" Interior Partition 3 Hour:133210",
+    "minimum_metres": [
+      158.3436,
+      20.5486,
+      23.1648
+    ],
+    "maximum_metres": [
+      161.2392,
+      20.751800000000003,
+      27.7368
+    ],
+    "volume_cubic_metres": 2.6901004262326778,
+    "vertices": 8,
+    "triangles": 12
+  },
+  "translation_metres": [
+    121.92,
+    0.0,
+    0.0
+  ],
+  "material_association_comparison": {
+    "source": {
+      "kind": "IfcMaterial",
+      "materials": [
+        {
+          "id": 111,
+          "type": "IfcMaterial",
+          "Name": "Default Wall",
+          "Description": null,
+          "Category": null
+        }
+      ],
+      "layer_thickness_metres": null
+    },
+    "new": {
+      "kind": "IfcMaterialLayerSetUsage",
+      "materials": [
+        {
+          "id": 111,
+          "type": "IfcMaterial",
+          "Name": "Default Wall",
+          "Description": null,
+          "Category": null
+        }
+      ],
+      "layer_thickness_metres": 0.2032,
+      "layer_set_name": "Basic Wall:8\" Interior Partition 3 Hour",
+      "layer_direction": "AXIS2",
+      "direction_sense": "NEGATIVE",
+      "offset_from_reference_line_metres": 0.1016
+    },
+    "same_exact_material_entities": true,
+    "new_layer_total_matches_wall_mesh_thickness": true
+  },
+  "new_mesh_translation_and_volume_verified": true,
+  "documentation": "https://docs.ifcopenshell.org/ifcopenshell-python/geometry_processing.html",
+  "autodesk_acceptance": "not_tested",
+  "explicit_owner_history_correction_controls": [
+    {
+      "input_file": "wall-candidate-outside-source.ifc",
+      "input_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+      "output_file": "wall-candidate-outside-source-owner-corrected.ifc",
+      "output_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59349
+    },
+    {
+      "input_file": "wall-candidate-outside-candidate.ifc",
+      "input_sha256": "2e6ac5721efbdf26da8762b681aedd1f9f448fb755d26a7507ed82e4899886f7",
+      "output_file": "wall-candidate-outside-candidate-owner-corrected.ifc",
+      "output_sha256": "a4d72a6a08d5189bf46096b5bdd337f4b922b480a454da6b532927fc74c6223b",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59407
+    }
+  ],
+  "correction_script_sha256": "4abb205350fa48dcb5f0f1bb5597033de42f030ec47448cee3bd5d972e864e16",
+  "native_rvt_modified": false
+}

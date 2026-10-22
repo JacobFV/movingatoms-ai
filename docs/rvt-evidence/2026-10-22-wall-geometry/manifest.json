@@ -1,0 +1,26 @@
+{
+  "captured_at_utc": "2026-10-22T23:50:44.138846+00:00",
+  "source_commit": "8642c281f991c6aab8f9223d931afeafb26fbb16",
+  "working_tree_status": "?? docs/rvt-evidence/2026-10-22-wall-geometry/\n?? research/rvt/capture_wall_evidence.py\n?? research/rvt/results/signature_public_sources.json\n?? research/rvt/results/signature_public_sources.md\n?? research/rvt/results/wall-candidate-ifc-owner-control.json\n?? research/rvt/results/wall-candidate-ifc.json\n?? research/rvt/results/wall-candidate-material-route.json\n?? research/rvt/results/wall-candidate-outside-ifc-owner-control.json\n?? research/rvt/results/wall-candidate-outside-ifc.json\n?? research/rvt/results/wall-candidate-outside-plan.json\n?? research/rvt/results/wall-candidate-outside-verification.json\n?? research/rvt/results/wall-candidate-outside-writer.json\n?? research/rvt/results/wall-candidate-plan.json\n?? research/rvt/results/wall-candidate-verification.json\n?? research/rvt/results/wall-candidate-writer.json\n?? research/rvt/results/wall-candidate.md\n?? research/rvt/results/wall-element-bounding-flags.json\n?? research/rvt/results/wall-element-bounds.json\n?? research/rvt/results/wall-element-outside.json\n?? research/rvt/results/wall-element-profile.json\n?? research/rvt/results/wall-element-registration.json\n?? research/rvt/results/wall-element.json\n?? research/rvt/results/wall-geometry-evidence.json\n?? research/rvt/test_wall_candidate.py\n?? research/rvt/test_wall_element.py\n?? research/rvt/test_wall_element_registration.py\n?? research/rvt/wall_candidate.py\n?? research/rvt/wall_candidate_ifc.py\n?? research/rvt/wall_candidate_ifc_owner_control.py\n?? research/rvt/wall_candidate_mesh_evidence.py\n?? research/rvt/wall_candidate_probe.rs\n?? research/rvt/wall_candidate_verify.py\n?? research/rvt/wall_element.py\n?? research/rvt/wall_element_bounds.py\n?? research/rvt/wall_element_experiment.py\n?? research/rvt/wall_element_probe.rs\n?? research/rvt/wall_element_registration.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "3074aa01eeb3add6e8240f77a6dcf5d8924c90af750c77b7522c46b29f57775b",
+  "source_report_sha256": {
+    "wall-geometry-evidence": "97836111c195a5121b70c49ba39a34c758b18629ec17a93392f737f94aa404cd",
+    "wall-candidate-outside-verification": "a63811e26a46f5659be1d64dbfc682cd34639d494347eaeef41ba99c05faf2eb",
+    "wall-candidate-outside-ifc-owner-control": "0c58bf0466cfde47e7913ec75c8e98ec7fbe7e29bcec9ec35de7b70ff93c672d"
+  },
+  "actual_ifc_meshes": true,
+  "not_autodesk_ui": true,
+  "artifacts": {
+    "plot-measurements.json": "ae6aff2c9424f753a4aca2975aa63c94e997e2dac14900b87173ec5cf3976d04",
+    "wall-candidate-outside-ifc-owner-control.json": "0c58bf0466cfde47e7913ec75c8e98ec7fbe7e29bcec9ec35de7b70ff93c672d",
+    "wall-candidate-outside-verification.json": "a63811e26a46f5659be1d64dbfc682cd34639d494347eaeef41ba99c05faf2eb",
+    "wall-comparison.html": "ef67385d023146d8772cb0f7e45ae0798eead6a7d8038e2f3a580e21275b70dd",
+    "wall-comparison.png": "1fc1f5579a1eeb907e2e640d068a5931e691044ccacc9e7591ae00cbf96c40e7",
+    "wall-geometry-evidence.json": "97836111c195a5121b70c49ba39a34c758b18629ec17a93392f737f94aa404cd",
+    "wall-meshes.png": "d3e73bb7fa952653dc5e66ef729fb6b0d9f7175e452ccb5002a3b6d7196d2524",
+    "wall-meshes.svg": "ed580198491432f1ad79a4de0691972180814f404654de0d7114f1205f4df130"
+  }
+}
