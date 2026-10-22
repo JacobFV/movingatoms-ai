@@ -104,3 +104,27 @@ visually reviewed; artifact SHA-256 checks passed for both capture directories.
 
 Next implementation started: complete History decoding/encoding with corpus
 checks. This is recorded as work in progress, not a completed save feature.
+
+## 2026-10-22 — History codec and new-partition transport
+
+**Parallel changes:** complete observed History codec and guarded episode
+prepend; atomic creation of absent numeric partition streams in the Rust
+transport writer. [History evidence](../research/rvt/results/save-history.md)
+and [transport evidence](../research/rvt/results/transport-create.md) contain
+commands, hashes, contracts and limitations.
+
+**History observations:** 21,521 bytes and 1,181 episodes across six files
+reproduce exactly. Independent schema decoding confirms every root field and
+episode GUID/strength before and after a test prepend. Review corrected the
+signed i32 interpretation of sequence/deficit fields using embedded descriptors.
+The tests include signed boundaries and reject unsupported allocation states.
+
+**Transport observations:** 14 Rust tests pass, Clippy reports no warnings.
+A licensed RE1 Architecture control adds a copy of `Partitions/80` under the
+absent name `Partitions/999999`; all 15 original streams remain unchanged.
+This operation validates CFB/page transport only. It deliberately does not
+claim to add a model element or link a complete save transaction.
+
+**Reporting improvement:** capture manifests now hash the tested Python and
+Rust source files and reject code changes during the test run. Earlier capture
+manifests retain their original format and are not rewritten.

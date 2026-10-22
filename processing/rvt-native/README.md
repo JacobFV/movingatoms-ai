@@ -45,7 +45,7 @@ The manifest is strict JSON; byte-file paths resolve relative to the manifest:
 stream framing, with **all** page parity and padding removed. It is not the
 inflated element buffer. The complete `codec` selects page dimensions, writes
 padding lengths, and computes parity, including for resized final pages.
-Nonpaged streams are replaced verbatim. All stream names must already exist.
+Nonpaged streams are replaced verbatim. All replacement stream names must already exist.
 The writer checks directory metadata (storage/stream kind, CLSID, state bits,
 and timestamps) as well as every stream hash after changes.
 
@@ -93,3 +93,37 @@ not a semantic validator. Do not equate `verify` success with a valid model
 edit. Concrete Autodesk acceptance candidates and independent comparison
 results are produced by `research/rvt/validation_bundle.py`; no Autodesk check
 has yet been run.
+
+## Explicit partition stream creation
+
+The same atomic `patch` transaction accepts an optional `creates` array, so a
+caller can create a partition and replace bookkeeping streams together:
+
+```json
+{
+  "input_sha256": "SHA256_OF_ORIGINAL_RVT",
+  "patches": [],
+  "creates": [{
+    "stream": "Partitions/123",
+    "expected_absent": true,
+    "new_payload_file": "partition-payload.bin"
+  }]
+}
+```
+
+Creation requires an existing `Partitions` storage, a canonical unsigned-decimal
+child name (no leading zeros except `0`, within u64), an absent directory entry,
+and a nonempty exact logical payload. One optional leading `/` is accepted.
+Only `new_payload_file` is supported for creation. The writer encodes and
+round-trips complete page framing before writing, then reopens and checks the
+entire expected stream inventory and all preexisting directory metadata.
+Duplicate creations, wrong paths, missing payloads, absent parent storage,
+stale source hashes, and existing entries fail without publishing output.
+The report separates `created_streams` from replaced `changed_streams`.
+Existing manifests without `creates` retain their behavior.
+
+This is a CFB/page transport operation, not a complete append-save operation.
+It does not generate a partition envelope, authenticate its signature, connect
+it to History/Latest/element tables, or establish semantic validity. The caller
+must supply those relationships. A copied partition under an unused name is
+only a transport control and must not be described as a successful Revit save.

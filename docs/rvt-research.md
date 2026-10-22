@@ -299,3 +299,11 @@ standard canonical raw Ed25519 as a universal explanation in that exact byte
 layout and finds no match in 56,268 enumerated digest/coverage comparisons.
 Neither finding identifies the actual algorithm or establishes keying.
 Both unsigned source groups are empty; unsigned nonempty acceptance is unknown.
+
+## History codec and partition-stream creation
+
+[History serialization](../research/rvt/results/save-history.md) now covers
+all observed root/episode fields and guarded prepends, independently checked
+against all six files. [Atomic partition creation](../research/rvt/results/transport-create.md)
+adds missing numeric streams while preserving existing stream bytes and
+metadata. Both are prerequisites; neither constitutes a complete native save.

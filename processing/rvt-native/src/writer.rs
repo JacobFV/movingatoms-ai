@@ -1,4 +1,4 @@
-//! Transactional replacement of existing logical stream bytes. The caller owns
+//! Transactional stream replacement and explicit partition creation. The caller owns
 //! compression/member framing and semantic invariants; this layer owns parity,
 //! CFB allocation, preconditions, unchanged-stream verification and atomic output.
 use crate::{codec, paged};
@@ -18,6 +18,8 @@ pub type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
 pub struct Manifest {
     pub input_sha256: String,
     pub patches: Vec<Patch>,
+    #[serde(default)]
+    pub creates: Vec<Create>,
 }
 #[derive(Deserialize)]
 #[serde(deny_unknown_fields)]
@@ -27,11 +29,20 @@ pub struct Patch {
     pub new_unpaged_file: Option<PathBuf>,
     pub new_payload_file: Option<PathBuf>,
 }
+/// Creation is deliberately restricted to new numeric children of Partitions.
+#[derive(Deserialize)]
+#[serde(deny_unknown_fields)]
+pub struct Create {
+    pub stream: String,
+    pub expected_absent: bool,
+    pub new_payload_file: PathBuf,
+}
 #[derive(Serialize)]
 pub struct Report {
     pub input_sha256: String,
     pub output_sha256: String,
     pub changed_streams: Vec<String>,
+    pub created_streams: Vec<String>,
     pub streams_verified: usize,
     pub parity_pages_verified: usize,
     pub final_pages_verified: usize,
@@ -123,6 +134,7 @@ pub fn verify(path: &Path) -> Result<Report> {
         input_sha256: sha.clone(),
         output_sha256: sha,
         changed_streams: vec![],
+        created_streams: vec![],
         streams_verified: streams.len(),
         parity_pages_verified: pages,
         final_pages_verified: finals,
@@ -178,7 +190,46 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
             return Err(format!("duplicate patch: {name}").into());
         }
     }
+    let mut creations = BTreeMap::new();
+    for c in &manifest.creates {
+        let name = format!("/{}", c.stream.strip_prefix('/').unwrap_or(&c.stream));
+        let suffix = name.strip_prefix("/Partitions/").unwrap_or("");
+        if suffix.is_empty()
+            || !suffix.bytes().all(|b| b.is_ascii_digit())
+            || (suffix.len() > 1 && suffix.starts_with('0'))
+            || suffix.parse::<u64>().is_err()
+        {
+            return Err(format!(
+                "creation requires canonical Partitions/<unsigned integer>: {name}"
+            )
+            .into());
+        }
+        if !c.expected_absent {
+            return Err("creation requires expected_absent: true".into());
+        }
+        if original_metadata.contains_key(Path::new(&name)) {
+            return Err(format!("creation absence precondition failed: {name}").into());
+        }
+        if !original_metadata
+            .get(Path::new("/Partitions"))
+            .is_some_and(|m| !m.stream)
+        {
+            return Err("creation requires existing Partitions storage".into());
+        }
+        let logical = fs::read(base.join(&c.new_payload_file))?;
+        if logical.is_empty() {
+            return Err("new partition payload must be nonempty".into());
+        }
+        let stored = codec::encode(&logical)?;
+        if codec::decode(&stored)? != logical {
+            return Err("new partition page framing did not round trip".into());
+        }
+        if creations.insert(name.clone(), stored).is_some() {
+            return Err(format!("duplicate creation: {name}").into());
+        }
+    }
     let mut changed = Vec::new();
+    let mut created = Vec::new();
     {
         let mut file = cfb::open_rw(temp.path())?;
         for (name, stored) in replacements {
@@ -194,13 +245,30 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
             expected.insert(name.clone(), new_hash);
             changed.push(name);
         }
+        for (name, stored) in creations {
+            // create_new_stream refuses an existing entry rather than truncating it.
+            let mut stream = file.create_new_stream(&name)?;
+            stream.write_all(&stored)?;
+            stream.flush()?;
+            expected.insert(name.clone(), hash(&stored));
+            created.push(name);
+        }
         file.flush()?;
     }
     let (actual, pages, finals) = inventory(temp.path())?;
     if actual != expected {
         return Err("post-write stream inventory/hash verification failed".into());
     }
-    if metadata(temp.path())? != original_metadata {
+    let mut actual_metadata = metadata(temp.path())?;
+    for name in &created {
+        let entry = actual_metadata
+            .remove(Path::new(name))
+            .ok_or("created stream missing from directory")?;
+        if !entry.stream || entry.root {
+            return Err("created entry is not a stream".into());
+        }
+    }
+    if actual_metadata != original_metadata {
         return Err("post-write directory metadata verification failed".into());
     }
     temp.as_file().sync_all()?;
@@ -211,6 +279,7 @@ pub fn patch(input: &Path, output: &Path, manifest: &Manifest, base: &Path) -> R
         input_sha256: input_sha,
         output_sha256: output_sha,
         changed_streams: changed,
+        created_streams: created,
         streams_verified: actual.len(),
         parity_pages_verified: pages,
         final_pages_verified: finals,

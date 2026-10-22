@@ -15,11 +15,19 @@ import tempfile
 
 ROOT=Path(__file__).resolve().parents[2]
 SOURCES=('object-repacking','resized-graph','resized-reader','record-selection',
-         'save-increments','signature-analysis')
+         'save-increments','signature-analysis','save-history','transport-create')
 
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def esc(value):return html.escape(str(value))
+
+
+def code_hashes():
+    paths=list((ROOT/'research/rvt').glob('*.py'))
+    paths+=list((ROOT/'processing/rvt-native/src').rglob('*.rs'))
+    paths+=list((ROOT/'processing/rvt-native/tests').rglob('*.rs'))
+    paths += [ROOT/'processing/rvt-native/Cargo.toml', ROOT/'processing/rvt-native/Cargo.lock']
+    return {str(p.relative_to(ROOT)):sha(p) for p in sorted(paths) if p.is_file()}
 
 
 def capture(dest,chrome):
@@ -34,11 +42,14 @@ def capture(dest,chrome):
         values[name]=json.loads(path.read_bytes())
         shutil.copyfile(path,dest/path.name)
     test_command=['python3','-m','unittest','discover','-s','research/rvt','-p','test_*.py']
+    tested_code=code_hashes()
     test=subprocess.run(test_command,cwd=ROOT,capture_output=True,text=True)
     log=test.stdout+test.stderr;(dest/'tests.txt').write_text(log)
+    if tested_code!=code_hashes():
+        raise RuntimeError('source changed during test run; retry in a fresh capture directory')
     corpus=values['object-repacking'];graph=values['resized-graph'];edit=values['resized-reader']
     routing=values['record-selection']
-    style='''body{margin:0;background:#edf1f5;color:#172338;font:19px Arial,sans-serif}main{max-width:1100px;margin:35px auto;padding:35px;background:white;border-top:7px solid #166c61}h1{font-size:34px;margin:12px 0 22px}h2{font-size:23px}small,.label{font-size:14px;color:#536274}table{border-collapse:collapse;width:100%;font-size:17px}td,th{padding:11px;border-bottom:1px solid #dce3e9;text-align:left}.cards{display:flex;gap:20px;margin:20px 0}.card{flex:1;background:#eef7f5;padding:20px}.number{font-size:34px;font-weight:bold}.warning{background:#fff3dc;padding:17px;margin-top:25px}pre{font:15px monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#eef1f5;padding:16px}footer{font-size:13px;color:#536274;margin-top:24px;overflow-wrap:anywhere}'''
+    style='''body{margin:0;background:#edf1f5;color:#172338;font:19px Arial,sans-serif}main{max-width:1100px;margin:35px auto;padding:35px;background:white;border-top:7px solid #166c61}h1{font-size:34px;margin:12px 0 22px}h2{font-size:23px}small,.label{font-size:14px;color:#536274}table{border-collapse:collapse;width:100%;font-size:17px}td,th{padding:11px;border-bottom:1px solid #dce3e9;text-align:left}.cards{display:flex;gap:20px;margin:20px 0}.card{flex:1;min-width:0;font-size:17px;line-height:1.4;background:#eef7f5;padding:20px}.number{font-size:34px;font-weight:bold}.warning{background:#fff3dc;padding:17px;margin-top:25px}pre{font:15px monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#eef1f5;padding:16px}footer{font-size:13px;color:#536274;margin-top:24px;overflow-wrap:anywhere}'''
     common=f'<div class="label">RVT CLEAN-ROOM RESEARCH · LOCAL EVIDENCE REPORT</div><small>Captured {esc(timestamp)} · source commit {revision[:12]}</small>'
     warning='<div class="warning"><strong>Acceptance boundary:</strong> no Autodesk open/save test. Signature generation, complete save transactions and new-element creation remain unresolved. This is not a Revit screenshot.</div>'
     rows=''.join(f'<tr><td>{esc(r["file"])}</td><td>{r["object_records"]:,}</td><td>{r["content_groups"]}</td><td>Exact record bodies</td></tr>' for r in corpus)
@@ -49,9 +60,13 @@ def capture(dest,chrome):
     investigations=common+'<h1>Parallel investigations: save tables and signatures</h1>'+f'<div class="cards"><div class="card"><div class="number">{sum(r["increments"]+r["local_increments"] for r in save):,}</div>save records reproduced</div><div class="card"><div class="number">{sum(r["inflated_bytes"] for r in save):,}</div>bytes reproduced exactly</div><div class="card"><div class="number">{signature["nonempty_private_signature_groups"]}</div>nonempty signature fields</div></div>'
     investigations+='<h2>Save-table codec</h2><p>Six licensed files: byte-for-byte reconstruction and field-for-field comparison against the independent schema decoder. Revision advancement and save semantics remain unproven.</p>'
     investigations+=f'<h2>Signature hypotheses tested</h2><p>{rejected} fields fail the necessary scalar bound for standard canonical raw Ed25519 in R || S layout. This excludes that exact interpretation, not transformed encodings.</p><p>{signature["digest_comparisons"]:,} enumerated SHA-512, SHA3-512 and BLAKE2b comparisons; {len(signature["digest_matches"])} matches. Negative tests do not establish keying or identify an algorithm.</p><p>Both observed unsigned groups contain zero elements. No unsigned nonempty source group establishes that removing the signature is accepted.</p>'+warning
+    history=values['save-history'];transport=values['transport-create']
+    pipeline=common+'<h1>History codec and atomic partition creation</h1>'+f'<div class="cards"><div class="card"><div class="number">{sum(r["episodes"] for r in history):,}</div>History episodes verified</div><div class="card"><div class="number">{sum(r["inflated_bytes"] for r in history):,}</div>History bytes reproduced</div><div class="card"><div class="number">{transport["rust_unit_tests_passed"]+transport["rust_transaction_tests_passed"]}</div>Rust tests passed</div></div>'
+    pipeline+='<h2>Complete observed History serialization</h2><p>Six files: all root fields and episode GUID/strength fields independently decoded before and after a guarded prepend. Existing episode identities remain mapped to their original GUIDs.</p>'
+    pipeline+=f'<h2>Explicit new-partition transaction</h2><p>Real-file transport control: {transport["independent_olefile_comparison"]["unchanged_original_streams"]} original streams unchanged; one new stream copied byte-for-byte from Partitions/80. Input and output hashes are recorded in transport-create.json.</p><p>Creation requires an absent numeric partition name and an existing parent storage. Output is published only after stream hashes, page framing and original directory metadata pass verification. Existing output files are never overwritten.</p><p>This control does not link the new partition into History, increment tables or element tables. It is not a complete save or a new-element creation test.</p>'+warning
     browser_version=subprocess.check_output([chrome,'--version'],text=True).strip()
     with tempfile.TemporaryDirectory(prefix='rvt-evidence-browser-') as profile:
-        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations)]:
+        for name,body in [('corpus',summary),('room-edit',changed),('investigations',investigations),('save-pipeline',pipeline)]:
             page=dest/f'{name}.html';page.write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>RVT research evidence</title><style>'+style+'</style><main>'+body+f'<footer>Source JSON copies and SHA-256 provenance are stored beside this capture. Browser: {esc(browser_version)}.</footer></main></html>')
             args=[chrome,'--headless','--no-sandbox','--disable-gpu','--disable-background-networking','--no-first-run',f'--user-data-dir={profile}','--hide-scrollbars','--window-size=1280,1100',f'--screenshot={dest/name}.png',page.as_uri()]
             subprocess.run(args,check=True,capture_output=True,text=True,timeout=45)
@@ -59,6 +74,7 @@ def capture(dest,chrome):
     manifest={'captured_at_utc':timestamp,'source_commit':revision,'working_tree_status':status,
               'browser':browser_version,'capture_type':'actual headless-browser screenshot of local generated research report',
               'not_autodesk_ui':True,'sources':sources,'test_command':test_command,'test_exit_code':test.returncode,
+              'tested_code_sha256':tested_code,
               'generator_sha256':sha(Path(__file__)),'artifacts':artifacts}
     (dest/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     if test.returncode:raise RuntimeError('regression tests failed; evidence retained')

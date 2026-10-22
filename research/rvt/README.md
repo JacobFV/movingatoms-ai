@@ -138,3 +138,9 @@ without interpreting negative results as proof of keying.
 
 The [research work log](../../docs/rvt-research-log.md) and
 [screenshot archive](../../docs/rvt-evidence/README.md) preserve reporting evidence.
+
+`save_history.py` handles the complete observed History payload and guarded
+episode prepends, with [independent schema evidence](results/save-history.md).
+The Rust transport now supports explicit absent-partition creation; its
+[real-file control and tests](results/transport-create.md) verify container
+integrity, not a complete semantic save.
