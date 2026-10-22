@@ -1,0 +1,125 @@
+[
+  {
+    "before": "core-history-21b61e69.rvt",
+    "after": "core-history-5859762b.rvt",
+    "element": 58253,
+    "before_episodes": [
+      20,
+      31,
+      31
+    ],
+    "after_episodes": [
+      20,
+      31,
+      31
+    ],
+    "before_increment": 48,
+    "after_increment": 48,
+    "selection_reasons": [
+      "exact_episode_route",
+      "exact_episode_route"
+    ],
+    "before_bytes": 239,
+    "after_bytes": 239,
+    "before_sha256": "5a42d21f573f43ce36383a63bba6c5f9378778a3b62ccbd60bcfa7f179efe88f",
+    "after_sha256": "f906f31093964f0dd114a951a8e46bc8a7050724b0e35742757f1bd47e1cd650",
+    "changed_overlapping_bytes": [
+      {
+        "offset": 60,
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "trailing_bytes_before": "",
+    "trailing_bytes_after": "",
+    "byte_offsets_are_native_record_body_relative": true,
+    "semantic_cause": "not_established"
+  },
+  {
+    "before": "core-history-21b61e69.rvt",
+    "after": "core-history-5859762b.rvt",
+    "element": 108205,
+    "before_episodes": [
+      31,
+      31,
+      31
+    ],
+    "after_episodes": [
+      31,
+      31,
+      31
+    ],
+    "before_increment": 48,
+    "after_increment": 48,
+    "selection_reasons": [
+      "exact_episode_route",
+      "exact_episode_route"
+    ],
+    "before_bytes": 53375,
+    "after_bytes": 53367,
+    "before_sha256": "805516a48d5c49d6cca378df1973c72735d60b8b20831abd0c24afb446a52439",
+    "after_sha256": "012dd890f4fe1cb3a07d0e37d90e066432549ef156af4dce8a6b2823099b79c5",
+    "changed_overlapping_bytes": [
+      {
+        "offset": 74,
+        "before": 2,
+        "after": 1
+      },
+      {
+        "offset": 53334,
+        "before": 191,
+        "after": 0
+      },
+      {
+        "offset": 53335,
+        "before": 192,
+        "after": 0
+      },
+      {
+        "offset": 53336,
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "trailing_bytes_before": "0000000000000000",
+    "trailing_bytes_after": "",
+    "byte_offsets_are_native_record_body_relative": true,
+    "semantic_cause": "not_established"
+  },
+  {
+    "before": "core-history-ede6e635.rvt",
+    "after": "core-history-8946a8ca.rvt",
+    "element": 130252,
+    "before_episodes": [
+      34,
+      34,
+      34
+    ],
+    "after_episodes": [
+      34,
+      34,
+      34
+    ],
+    "before_increment": 53,
+    "after_increment": 53,
+    "selection_reasons": [
+      "exact_episode_route",
+      "exact_episode_route"
+    ],
+    "before_bytes": 215,
+    "after_bytes": 215,
+    "before_sha256": "e1773c844d5962703211b3271b6a5289d5e5722757e0221129cc7a482801159d",
+    "after_sha256": "14f9bdf0d70992360e6f9fd0419fa25abee96141fcc669faafd7f7dfe8cda019",
+    "changed_overlapping_bytes": [
+      {
+        "offset": 60,
+        "before": 1,
+        "after": 0
+      }
+    ],
+    "trailing_bytes_before": "",
+    "trailing_bytes_after": "",
+    "byte_offsets_are_native_record_body_relative": true,
+    "semantic_cause": "not_established"
+  }
+]

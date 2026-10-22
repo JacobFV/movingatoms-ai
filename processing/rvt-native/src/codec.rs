@@ -1,4 +1,4 @@
-//! Complete page framing inferred from six licensed RVT fixtures.
+//! Page framing inferred from licensed RVT fixtures and historical snapshots.
 //! Dimension selection outside the observed corpus is experimental.
 use crate::{
     final_page::{self, Layout, GENERATORS},
@@ -71,9 +71,22 @@ pub fn layout(payload: &[u8]) -> Result<Layout> {
         .find(|l| padded(payload, *l).is_ok())
         .ok_or_else(|| invalid("no supported layout fits payload"))
 }
-pub fn encode_final(payload: &[u8]) -> Result<Vec<u8>> {
-    let l = layout(payload)?;
+pub fn encode_final_with_layout(payload: &[u8], l: Layout) -> Result<Vec<u8>> {
+    if payload.is_empty()
+        || payload.len() > PAYLOAD
+        || !GENERATORS.contains(&l.generator)
+        || !(65..=255).contains(&l.lanes)
+        || l.lanes.is_multiple_of(2)
+        || l.codeword_bits <= l.degree()
+        || l.codeword_bits >= (1 << l.degree())
+        || (l.lanes != 65 && l.codeword_bits != (1 << l.degree()) - 1)
+    {
+        return Err(invalid("unsupported final-page layout"));
+    }
     final_page::encode(&padded(payload, l)?, l)
+}
+pub fn encode_final(payload: &[u8]) -> Result<Vec<u8>> {
+    encode_final_with_layout(payload, layout(payload)?)
 }
 fn unpack(data: &[u8], l: Layout) -> Result<Vec<u8>> {
     let a = available(l);
@@ -95,23 +108,33 @@ fn unpack(data: &[u8], l: Layout) -> Result<Vec<u8>> {
     for i in a..length * 8 {
         body[i / 8] &= !(1 << (i % 8));
     }
-    if layout(&body)? != l {
-        return Err(invalid("noncanonical layout"));
-    }
     Ok(body)
 }
 pub fn decode_final(stored: &[u8]) -> Result<Vec<u8>> {
-    let mut matches = final_page::candidates(stored)?
-        .into_iter()
-        .filter_map(|(l, data)| unpack(&data, l).ok());
-    let found = matches
-        .next()
-        .ok_or_else(|| invalid("invalid final-page framing"))?;
-    if matches.next().is_some() {
-        return Err(invalid("ambiguous final-page framing"));
+    let mut canonical = Vec::new();
+    let mut alternatives = Vec::new();
+    for (l, data) in final_page::candidates(stored)? {
+        let Ok(body) = unpack(&data, l) else { continue };
+        if encode_final_with_layout(&body, l).is_ok_and(|encoded| encoded == stored) {
+            if layout(&body)? == l {
+                canonical.push(body.clone());
+            }
+            alternatives.push(body);
+        }
     }
-    Ok(found)
+    // The encoder policy disambiguates degenerate zero pages. Historical
+    // layouts outside that policy require a unique exact interpretation.
+    let mut matches = if canonical.is_empty() {
+        alternatives
+    } else {
+        canonical
+    };
+    if matches.len() != 1 {
+        return Err(invalid("invalid or ambiguous final-page framing"));
+    }
+    Ok(matches.remove(0))
 }
+
 pub fn encode(payload: &[u8]) -> Result<Vec<u8>> {
     let mut out = Vec::new();
     for block in payload.chunks(PAYLOAD) {
@@ -162,6 +185,29 @@ mod tests {
                 let stored = encode(&data).unwrap();
                 assert_eq!(decode(&stored).unwrap(), data, "size {n}");
             }
+        }
+    }
+    #[test]
+    fn historical_noncanonical_layouts() {
+        for (n, lanes, codeword_bits, generator) in [
+            (308, 65, 44, 0x43),
+            (739, 65, 98, 0x83),
+            (1697, 65, 218, 0x211),
+            (4136, 67, 511, 0x211),
+        ] {
+            let l = Layout {
+                lanes,
+                codeword_bits,
+                generator,
+            };
+            let mut data: Vec<_> = (0..n).map(|i| (i * 37 + i / 251) as u8).collect();
+            data[n - 1] = 0;
+            assert_ne!(layout(&data).unwrap(), l);
+            let stored = encode_final_with_layout(&data, l).unwrap();
+            assert_eq!(decode_final(&stored).unwrap(), data);
+            let mut bad = stored;
+            bad[0] ^= 1;
+            assert!(decode_final(&bad).is_err());
         }
     }
     #[test]

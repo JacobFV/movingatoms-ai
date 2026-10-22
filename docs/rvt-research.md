@@ -10,8 +10,10 @@ acceptance are unresolved. [Screenshots and evidence](rvt-evidence/README.md).
 Goal: the processing worker delivers a native `.rvt` alongside IFC, written by our own code (no Revit install, no
 Autodesk cloud). Status as of 2026-10-22: **complete page framing solved and implemented**. All 917 full pages
 and 75 final pages in six licensed fixtures reconstruct byte-for-byte (including
-the subsequently identified Contents pages). Native
-element creation and Revit-openability remain unimplemented/unverified; the original
+the subsequently identified Contents pages). The expanded historical corpus now verifies 2,760 full and 138 final pages in
+eleven files. Nine historical stream layouts require explicit-layout reproduction;
+the default encoder selection rule is not universal. Native
+element creation and Revit-openability remain under development/unverified; the original
 claim that everything else was understood was too strong.
 
 Scripts referenced here are in [`research/rvt/`](../research/rvt/).

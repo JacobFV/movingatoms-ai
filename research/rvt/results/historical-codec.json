@@ -1,0 +1,2815 @@
+{
+  "writer_sha256": "a777df353f9ea6841c2b170a90508658c6ffbc0dee62da2af17f9fb2aea08105",
+  "files": [
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 276,
+          "logical_bytes": 225,
+          "source_sha256": "c375b99604b3fc19d1fff55c157df6f3e1595bd4519f7162965d86ae2898a4b0",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 225,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 173230,
+          "logical_bytes": 171885,
+          "source_sha256": "cbe815e5b5427cb685bd5d7e81c952a9346f36f802dec00edd5422b664ae0a47",
+          "final_layouts": [
+            {
+              "lanes": 167,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 42093,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 243084,
+          "logical_bytes": 241355,
+          "source_sha256": "3d2d2e6c7e08ae0e267f4eb7df11775077a168dde2d6084ba334888ad34638d2",
+          "final_layouts": [
+            {
+              "lanes": 185,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 46667,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 1967,
+          "logical_bytes": 1890,
+          "source_sha256": "0c50ad2039a6a07c8e0714571cd9c99a432d8e99a52252bf7f6fde860cec1f23",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 242,
+              "generator": "0x211",
+              "payload_bytes": 1890,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 125892,
+          "logical_bytes": 125211,
+          "source_sha256": "f08ac60fd57ccdd6ac543eaa737dcca15ca846fb124a33fcf3eb7cf7a5a13e24",
+          "final_layouts": [
+            {
+              "lanes": 237,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 60315,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 837,
+          "logical_bytes": 774,
+          "source_sha256": "19a8182447cae2d91e19dfdbd34c5fceb3d8063fc5d930392bc279ebe6213479",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 103,
+              "generator": "0x83",
+              "payload_bytes": 774,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 78810,
+          "logical_bytes": 78365,
+          "source_sha256": "e3b45827e16d7016570f74a222b1e3bcca96712ef1029e728b8a9b64f8c069e1",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1669,
+              "generator": "0x805",
+              "payload_bytes": 13469,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 95,
+          "source_sha256": "9b371f5ac7552cd77f9e6f528636fcad3a742e8e1f0741c63306b923328de7cb",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 95,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/46",
+          "stored_bytes": 17072209,
+          "logical_bytes": 16979492,
+          "source_sha256": "d844102ce8e1b7fcefb9b42abed9cbf03e0b95a12b878aea35fe5150a2c59027",
+          "final_layouts": [
+            {
+              "lanes": 165,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 41636,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/48",
+          "stored_bytes": 2388625,
+          "logical_bytes": 2375496,
+          "source_sha256": "01d09acc77a5e7eadc58626f124bea5ae1c52ee834e37c73ad3e3ca5a273379a",
+          "final_layouts": [
+            {
+              "lanes": 155,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 39240,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/51",
+          "stored_bytes": 598771,
+          "logical_bytes": 595497,
+          "source_sha256": "3bda148787625a831c90fc78f90c0e3f59ab1289e4d552eaea64a7d89065ae9a",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1419,
+              "generator": "0x805",
+              "payload_bytes": 11433,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/53",
+          "stored_bytes": 5692783,
+          "logical_bytes": 5661975,
+          "source_sha256": "1a06b17704c6a0eec6c87557e8084078fb801a3824a158ba6fa1c51efa3aa0ad",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1984,
+              "generator": "0x805",
+              "payload_bytes": 16023,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/55",
+          "stored_bytes": 2695935,
+          "logical_bytes": 2681264,
+          "source_sha256": "4bc62554fc36f4fc6f012d47cae949c751b3ced7dee23e8b1c163c2f8fedc269",
+          "final_layouts": [
+            {
+              "lanes": 81,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 20528,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/59",
+          "stored_bytes": 1598473,
+          "logical_bytes": 1589480,
+          "source_sha256": "8712d3a506cd378aa4716f6a8b1ee3fe01f37fe8ac174b1263328f8968741a76",
+          "final_layouts": [
+            {
+              "lanes": 127,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 31976,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/61",
+          "stored_bytes": 2809648,
+          "logical_bytes": 2794390,
+          "source_sha256": "bb4e2fdee0fece71548ebffaf777481ac1158ead3c50215568572f3b97626210",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 485,
+              "generator": "0x211",
+              "payload_bytes": 3862,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/65",
+          "stored_bytes": 94163,
+          "logical_bytes": 93325,
+          "source_sha256": "7643df2e42202ac95f345b5edaf9628477ad670dac54bda44bfb4b5d37d4ba95",
+          "final_layouts": [
+            {
+              "lanes": 113,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 28429,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "output_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 20,
+        "parity_pages_verified": 509,
+        "final_pages_verified": 16,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "einhoven.rvt",
+      "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 276,
+          "logical_bytes": 224,
+          "source_sha256": "95521e2d82429cb7fad661ad437adedffb740708237f1a03951566d1d8747097",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 224,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 169647,
+          "logical_bytes": 168264,
+          "source_sha256": "3d65495991921a8668c0b5b88415095f325cd402c5c5a8ed69673dae08397aa3",
+          "final_layouts": [
+            {
+              "lanes": 153,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 38472,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 30961,
+          "logical_bytes": 30296,
+          "source_sha256": "511d3c49af443e58e5fb7c948036ce950797196ae3c73df6b9e3a894fdfb0b34",
+          "final_layouts": [
+            {
+              "lanes": 121,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 30296,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 350,
+          "logical_bytes": 294,
+          "source_sha256": "20cddc9210a1b3d564552bb85c299732cebb9a0548c07e137db91c278794fdce",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 43,
+              "generator": "0x43",
+              "payload_bytes": 294,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 10709,
+          "logical_bytes": 10615,
+          "source_sha256": "3080b0825c8599ec4e4055664fc61077c6a12ebe42b4ddfb1e4f11b9691fc56c",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1318,
+              "generator": "0x805",
+              "payload_bytes": 10615,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 228,
+          "logical_bytes": 182,
+          "source_sha256": "ae069696ab2901aa68676bb1857991528b2927ad2d55f0e1dbdeca238f0878d5",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 28,
+              "generator": "0x25",
+              "payload_bytes": 182,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 64737,
+          "logical_bytes": 63884,
+          "source_sha256": "e80c440e0befce573f38cb46eba469b890794b6faefb438d8517ad5d7102f67a",
+          "final_layouts": [
+            {
+              "lanes": 253,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 63884,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 130,
+          "logical_bytes": 94,
+          "source_sha256": "2b163141659edb22e8fc586a57b66d0cbf70b7b20d93f5733519543e04326692",
+          "final_layouts": [
+            {
+              "lanes": 69,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 94,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/0",
+          "stored_bytes": 464357,
+          "logical_bytes": 461789,
+          "source_sha256": "fc8143e7a805210909e9915d6035e9b2a501b157db2e891d7f7dd75148dfbb34",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 937,
+              "generator": "0x805",
+              "payload_bytes": 7517,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/1",
+          "stored_bytes": 2194,
+          "logical_bytes": 2113,
+          "source_sha256": "fbd3cefd0665af2c7349f6ac89c4d411e482e582ba03db3c486b1bdc604013e8",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 270,
+              "generator": "0x211",
+              "payload_bytes": 2113,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/2",
+          "stored_bytes": 7906,
+          "logical_bytes": 7813,
+          "source_sha256": "c0e5a997b61136e8a4bfcc2c5088f3e21cb88c35426c72189f0d08af8e016792",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 973,
+              "generator": "0x805",
+              "payload_bytes": 7813,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/3",
+          "stored_bytes": 3104,
+          "logical_bytes": 3028,
+          "source_sha256": "3461bbc35b534d7be057ce872e0dec7e384869de23901d6ec9262f9a28e8a5cc",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 382,
+              "generator": "0x211",
+              "payload_bytes": 3028,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/4",
+          "stored_bytes": 5298,
+          "logical_bytes": 5203,
+          "source_sha256": "be45a575f23197458773ba47b871673676e2bf4dcaefbb71764f167e6934a1c5",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 652,
+              "generator": "0x805",
+              "payload_bytes": 5203,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/5",
+          "stored_bytes": 100304,
+          "logical_bytes": 99511,
+          "source_sha256": "6a3add390cd6d56e30228227e99657c68f2754a014754a3ac8de7390ba8a2cbf",
+          "final_layouts": [
+            {
+              "lanes": 137,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 34615,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/6",
+          "stored_bytes": 291,
+          "logical_bytes": 241,
+          "source_sha256": "87d3451ba4fb7aaf9d51ad4ec5348737d315199a573d474500b40e594aa49e55",
+          "final_layouts": [
+            {
+              "lanes": 75,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 241,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+        "output_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 19,
+        "parity_pages_verified": 10,
+        "final_pages_verified": 15,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "RE1-Architecture.rvt",
+      "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 212,
+          "logical_bytes": 163,
+          "source_sha256": "7ef94daa398c2dd4a6558322b18ff8e9db70febe2b1eab3e7a97c338777d7643",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 26,
+              "generator": "0x25",
+              "payload_bytes": 163,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 178347,
+          "logical_bytes": 177014,
+          "source_sha256": "152ae3628291fd20206507766158c6460af0281a2f56d79bec05590b419d7dd9",
+          "final_layouts": [
+            {
+              "lanes": 187,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 47222,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 453672,
+          "logical_bytes": 451080,
+          "source_sha256": "e6d105f316b7823df02f8b03afcae5fbe872a5f4e7920a935191ff9623d7ff2f",
+          "final_layouts": [
+            {
+              "lanes": 243,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 61704,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 3397,
+          "logical_bytes": 3320,
+          "source_sha256": "a9b607c3ed8766ed8cb189e20f30b87e86899bd010c123907470b46c41357257",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 418,
+              "generator": "0x211",
+              "payload_bytes": 3320,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 25844,
+          "logical_bytes": 25603,
+          "source_sha256": "37e60ad3e5739ca7c7e7d84d963029d8689eb784b38d7cded11fe343d3dbaab9",
+          "final_layouts": [
+            {
+              "lanes": 101,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 25603,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 11725,
+          "logical_bytes": 11630,
+          "source_sha256": "89ae2b47bca623bbff6eb63908e2b53b3a8ed9161accb21859ef2598b25d79ae",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1443,
+              "generator": "0x805",
+              "payload_bytes": 11630,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 95187,
+          "logical_bytes": 94552,
+          "source_sha256": "7aa8525b8632a25b64ddf964b106c02bd77b1af93983f9627fd7088154843c3e",
+          "final_layouts": [
+            {
+              "lanes": 117,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 29656,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 97,
+          "source_sha256": "4c09b9bb8937ff07185ef93fd97edf375c11f0beb73f4b830bb8987b31a78b11",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 97,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/80",
+          "stored_bytes": 5810070,
+          "logical_bytes": 5778574,
+          "source_sha256": "a3bfaa785c3e37b996209b0059b6c500b7c8fcf7657f48b8deb68a4d076b6ad0",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 358,
+              "generator": "0x211",
+              "payload_bytes": 2830,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/83",
+          "stored_bytes": 1096,
+          "logical_bytes": 1018,
+          "source_sha256": "81d1af1dc5ead6b84c2490fe2b76bfa5f3ac2963a62d36a713236deece280724",
+          "final_layouts": [
+            {
+              "lanes": 69,
+              "words": 127,
+              "generator": "0x83",
+              "payload_bytes": 1018,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/84",
+          "stored_bytes": 1967,
+          "logical_bytes": 1888,
+          "source_sha256": "06515f914e80b5e3cff0fad98ec33aecb602ada12def3082b9c16aa9dcd58bc1",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 242,
+              "generator": "0x211",
+              "payload_bytes": 1888,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+        "output_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 15,
+        "parity_pages_verified": 98,
+        "final_pages_verified": 11,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "RE1-Electrical.rvt",
+      "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 204,
+          "logical_bytes": 156,
+          "source_sha256": "d22613d67bacc30666f3d6db63641f18a2c03baca807a0ffe0571f7e6cfde186",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 25,
+              "generator": "0x25",
+              "payload_bytes": 156,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 178347,
+          "logical_bytes": 177014,
+          "source_sha256": "152ae3628291fd20206507766158c6460af0281a2f56d79bec05590b419d7dd9",
+          "final_layouts": [
+            {
+              "lanes": 187,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 47222,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 1111484,
+          "logical_bytes": 1105407,
+          "source_sha256": "c61aea22702030d7ef1b4ad0abf7640a4ba6f18163c5beace82e612b7b4cbf01",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 277,
+              "generator": "0x211",
+              "payload_bytes": 2175,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 4280,
+          "logical_bytes": 4194,
+          "source_sha256": "2989d5b189fa97b74a5f28ef10b604f381db945df8d64b58854dc3e619f416bb",
+          "final_layouts": [
+            {
+              "lanes": 67,
+              "words": 511,
+              "generator": "0x211",
+              "payload_bytes": 4194,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 53478,
+          "logical_bytes": 52838,
+          "source_sha256": "8e9608be2c9f8c37edb97f154115b13ba47f584f638d97f39a9a8c86975bf348",
+          "final_layouts": [
+            {
+              "lanes": 209,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 52838,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 3072,
+          "logical_bytes": 2994,
+          "source_sha256": "50ecbad9eb37a05051e9001040d065b1e1b81ec0115f716a87743e134973de9f",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 378,
+              "generator": "0x211",
+              "payload_bytes": 2994,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 113610,
+          "logical_bytes": 112522,
+          "source_sha256": "39513c45cbced5a8d904646c03105f377db69ba4aa8cf6eb676b52c33a56f77a",
+          "final_layouts": [
+            {
+              "lanes": 189,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 47626,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 96,
+          "source_sha256": "589f53a4800e5d1d3af8e0c44bb329130829e46bd3ac3a11bbbebb2ea880cbff",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 96,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/114",
+          "stored_bytes": 9328560,
+          "logical_bytes": 9277822,
+          "source_sha256": "5240539e3dd4d33ef64dd05b6e688d0cd5b729e4252c627c7fca7794cfb9aee1",
+          "final_layouts": [
+            {
+              "lanes": 247,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 62590,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/116",
+          "stored_bytes": 943,
+          "logical_bytes": 883,
+          "source_sha256": "16612fba26b0effad66e31ff31c23e35187f721d348e5006869516d4454f7bbb",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 116,
+              "generator": "0x83",
+              "payload_bytes": 883,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/118",
+          "stored_bytes": 2544994,
+          "logical_bytes": 2531180,
+          "source_sha256": "e6ef4f9267e4cb07d2e55fae5aee9e566f47e5d88e692858f260871b181e88ef",
+          "final_layouts": [
+            {
+              "lanes": 73,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 236,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/119",
+          "stored_bytes": 37614,
+          "logical_bytes": 37224,
+          "source_sha256": "c7ce406291c7d1962bb108d0b1dc070e63f1fbc051338e00abd034af447ac80d",
+          "final_layouts": [
+            {
+              "lanes": 147,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 37224,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/120",
+          "stored_bytes": 291,
+          "logical_bytes": 238,
+          "source_sha256": "93f2cb658960652eaca07b2f82bb7cbb7c8af8bdcd86dd346534ea2bb6225f2e",
+          "final_layouts": [
+            {
+              "lanes": 75,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 238,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+        "output_sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 17,
+        "parity_pages_verified": 201,
+        "final_pages_verified": 13,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "RE1-Mechanical.rvt",
+      "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 204,
+          "logical_bytes": 156,
+          "source_sha256": "613a37f6920cc83b85f68a303a7fe6e8f34abc5dd72bf63ab5222c6994a14414",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 25,
+              "generator": "0x25",
+              "payload_bytes": 156,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 178347,
+          "logical_bytes": 177014,
+          "source_sha256": "152ae3628291fd20206507766158c6460af0281a2f56d79bec05590b419d7dd9",
+          "final_layouts": [
+            {
+              "lanes": 187,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 47222,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 203279,
+          "logical_bytes": 202123,
+          "source_sha256": "787fa8d69e94cfd30ed659205e6db357ca1b967b03f44598f463b35032912cbf",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 927,
+              "generator": "0x805",
+              "payload_bytes": 7435,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 2828,
+          "logical_bytes": 2747,
+          "source_sha256": "bc6c2cf800310e31630dadf43db015c3b6c91fcce1c4e5c78cc0ed2a4399e810",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 348,
+              "generator": "0x211",
+              "payload_bytes": 2747,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 24309,
+          "logical_bytes": 23795,
+          "source_sha256": "7124a9503f5485c39849dd244ffdc0e0f88b99f06a7d646fed4e85c8b31e69f1",
+          "final_layouts": [
+            {
+              "lanes": 95,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 23795,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 2479,
+          "logical_bytes": 2397,
+          "source_sha256": "b175cf7423f0c9c4a94fbc5b9b7735cd27f979f2d3e9748830a923e0c317e16a",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 305,
+              "generator": "0x211",
+              "payload_bytes": 2397,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 99793,
+          "logical_bytes": 99018,
+          "source_sha256": "c74afc260c3f6db42b8e4df0e307a66e1b79079c63c2b1c6db80b3be07ab35ab",
+          "final_layouts": [
+            {
+              "lanes": 135,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 34122,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 96,
+          "source_sha256": "589f53a4800e5d1d3af8e0c44bb329130829e46bd3ac3a11bbbebb2ea880cbff",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 96,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/78",
+          "stored_bytes": 2811216,
+          "logical_bytes": 2795945,
+          "source_sha256": "fdf4e309e644699f7fd4fbe031142a158cd3bd3546ccdfa02fbe4f9289caa855",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 678,
+              "generator": "0x805",
+              "payload_bytes": 5417,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/79",
+          "stored_bytes": 20215,
+          "logical_bytes": 19625,
+          "source_sha256": "56098e5caaa00cbfa5b7f36005326e01cc1d0353d44f8a6362b554dedfee3248",
+          "final_layouts": [
+            {
+              "lanes": 79,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 19625,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+        "output_sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 14,
+        "parity_pages_verified": 49,
+        "final_pages_verified": 10,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "RE1-Plumbing.rvt",
+      "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 204,
+          "logical_bytes": 156,
+          "source_sha256": "738a37f8a9084d6473724cd109ff20fb4395b58a0d87d34e416c9afa63f82666",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 25,
+              "generator": "0x25",
+              "payload_bytes": 156,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 178347,
+          "logical_bytes": 177014,
+          "source_sha256": "152ae3628291fd20206507766158c6460af0281a2f56d79bec05590b419d7dd9",
+          "final_layouts": [
+            {
+              "lanes": 187,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 47222,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 221591,
+          "logical_bytes": 220363,
+          "source_sha256": "c4e85f461778bfe427ad64ac8c7d69666e6aa2fa8a318f7dd6261a9383e8f895",
+          "final_layouts": [
+            {
+              "lanes": 101,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 25675,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 2259,
+          "logical_bytes": 2183,
+          "source_sha256": "936f74ae3852d29b77769e25537c4c07109b550cabaaac866f0d357e8b58a0e2",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 278,
+              "generator": "0x211",
+              "payload_bytes": 2183,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 24820,
+          "logical_bytes": 24402,
+          "source_sha256": "38ebda816b3ecac18a7d59d309cb2e4f3bf1a41891a1da37302e8f4f3e76eaa9",
+          "final_layouts": [
+            {
+              "lanes": 97,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 24402,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 2292,
+          "logical_bytes": 2214,
+          "source_sha256": "bcdb68c8d12bac81cc02665a8ee36ba9ab7d54d3012d37c62879d4f7cd893f31",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 282,
+              "generator": "0x211",
+              "payload_bytes": 2214,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 98769,
+          "logical_bytes": 97825,
+          "source_sha256": "6cd24d50e893f256431188b3840b49872fe8dc717057a0dbd2d40e4d1e493c2a",
+          "final_layouts": [
+            {
+              "lanes": 131,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 32929,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 96,
+          "source_sha256": "4c4096224a627e35eb12a993fe81d0964e8a0b8793dba3ecb9959362c173dff9",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 96,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/61",
+          "stored_bytes": 2886337,
+          "logical_bytes": 2870711,
+          "source_sha256": "657877d69017cc20b7dfa4329b3672675247f7c3d8fed369dd01bc293b8b2e6c",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1893,
+              "generator": "0x805",
+              "payload_bytes": 15287,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/62",
+          "stored_bytes": 20215,
+          "logical_bytes": 19766,
+          "source_sha256": "cac81b6e36320d6ab6e0b7a4596b94077be3ac18fd7512f8df1c5a38965eb5b4",
+          "final_layouts": [
+            {
+              "lanes": 79,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 19766,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+        "output_sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 14,
+        "parity_pages_verified": 50,
+        "final_pages_verified": 10,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "core-history-21b61e69.rvt",
+      "sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 358,
+          "logical_bytes": 308,
+          "source_sha256": "9d7586436668ca7cfba68c0c842b24050cfeccbb299caeecd62c16f6b43f335e",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 44,
+              "generator": "0x43",
+              "payload_bytes": 308,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 173230,
+          "logical_bytes": 171885,
+          "source_sha256": "cbe815e5b5427cb685bd5d7e81c952a9346f36f802dec00edd5422b664ae0a47",
+          "final_layouts": [
+            {
+              "lanes": 167,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 42093,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 243084,
+          "logical_bytes": 241355,
+          "source_sha256": "3d2d2e6c7e08ae0e267f4eb7df11775077a168dde2d6084ba334888ad34638d2",
+          "final_layouts": [
+            {
+              "lanes": 185,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 46667,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 1569,
+          "logical_bytes": 1490,
+          "source_sha256": "459c7b8750b113160451d32f5a9ea72de63b73862f91bde279d2813328a02578",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 193,
+              "generator": "0x211",
+              "payload_bytes": 1490,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 158901,
+          "logical_bytes": 157844,
+          "source_sha256": "2f4011efea40dd31d74e13aedb359e489603cb8f4c3d492ba9dfa0879d15906c",
+          "final_layouts": [
+            {
+              "lanes": 111,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 28052,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 732,
+          "logical_bytes": 668,
+          "source_sha256": "3112ce2700701f18dc033c5487662225735b26590df56b58d63bc9cc30a631a5",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 90,
+              "generator": "0x83",
+              "payload_bytes": 668,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 79809,
+          "logical_bytes": 79365,
+          "source_sha256": "a5c88e89351eb6d5d2c48784550a39875d71db7db5f4ca08a7f5a984a0266103",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1792,
+              "generator": "0x805",
+              "payload_bytes": 14469,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 95,
+          "source_sha256": "9b371f5ac7552cd77f9e6f528636fcad3a742e8e1f0741c63306b923328de7cb",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 95,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/46",
+          "stored_bytes": 17072209,
+          "logical_bytes": 16979492,
+          "source_sha256": "d844102ce8e1b7fcefb9b42abed9cbf03e0b95a12b878aea35fe5150a2c59027",
+          "final_layouts": [
+            {
+              "lanes": 165,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 41636,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/48",
+          "stored_bytes": 5659775,
+          "logical_bytes": 5628666,
+          "source_sha256": "2a45724d101f4a3c5525d989b5aa04c303ab803038083866c76471b27727a708",
+          "final_layouts": [
+            {
+              "lanes": 189,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 47610,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/50",
+          "stored_bytes": 4280,
+          "logical_bytes": 4136,
+          "source_sha256": "3b92d1f520fe7cf0b2da7d8221103987451f7ba114695a86c63ff6680aed4450",
+          "final_layouts": [
+            {
+              "lanes": 67,
+              "words": 511,
+              "generator": "0x211",
+              "payload_bytes": 4136,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+        "output_sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 15,
+        "parity_pages_verified": 355,
+        "final_pages_verified": 11,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "core-history-5859762b.rvt",
+      "sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 358,
+          "logical_bytes": 308,
+          "source_sha256": "e5cd3979616302bea3756e83fafa1b9b30bba30bd40775592a80ee42f76249bd",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 44,
+              "generator": "0x43",
+              "payload_bytes": 308,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 173230,
+          "logical_bytes": 171885,
+          "source_sha256": "cbe815e5b5427cb685bd5d7e81c952a9346f36f802dec00edd5422b664ae0a47",
+          "final_layouts": [
+            {
+              "lanes": 167,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 42093,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 243084,
+          "logical_bytes": 241355,
+          "source_sha256": "3d2d2e6c7e08ae0e267f4eb7df11775077a168dde2d6084ba334888ad34638d2",
+          "final_layouts": [
+            {
+              "lanes": 185,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 46667,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 1625,
+          "logical_bytes": 1547,
+          "source_sha256": "861f7952000b254fd2f96164fed2acebf96a2392d96a34baa9384aced6aac21e",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 200,
+              "generator": "0x211",
+              "payload_bytes": 1547,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 127939,
+          "logical_bytes": 126933,
+          "source_sha256": "6be8af3db71a178ad7c1bc39277959d79cffb736bf97eb0e9ca99b3075aa5e1f",
+          "final_layouts": [
+            {
+              "lanes": 245,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 62037,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 748,
+          "logical_bytes": 685,
+          "source_sha256": "22bd925d41ef9f3da36aa5cff0344fe86704cc897f87d4ed570a3b9701e3fa7c",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 92,
+              "generator": "0x83",
+              "payload_bytes": 685,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 79216,
+          "logical_bytes": 78770,
+          "source_sha256": "4df41531159a34bf12b3602fe7c022c19f3bcc4c370c9c526dcc8a750d167844",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1719,
+              "generator": "0x805",
+              "payload_bytes": 13874,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 95,
+          "source_sha256": "9b371f5ac7552cd77f9e6f528636fcad3a742e8e1f0741c63306b923328de7cb",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 95,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/46",
+          "stored_bytes": 17072209,
+          "logical_bytes": 16979492,
+          "source_sha256": "d844102ce8e1b7fcefb9b42abed9cbf03e0b95a12b878aea35fe5150a2c59027",
+          "final_layouts": [
+            {
+              "lanes": 165,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 41636,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/48",
+          "stored_bytes": 2388625,
+          "logical_bytes": 2375496,
+          "source_sha256": "01d09acc77a5e7eadc58626f124bea5ae1c52ee834e37c73ad3e3ca5a273379a",
+          "final_layouts": [
+            {
+              "lanes": 155,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 39240,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/50",
+          "stored_bytes": 4280,
+          "logical_bytes": 4136,
+          "source_sha256": "3b92d1f520fe7cf0b2da7d8221103987451f7ba114695a86c63ff6680aed4450",
+          "final_layouts": [
+            {
+              "lanes": 67,
+              "words": 511,
+              "generator": "0x211",
+              "payload_bytes": 4136,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/51",
+          "stored_bytes": 598771,
+          "logical_bytes": 595497,
+          "source_sha256": "3bda148787625a831c90fc78f90c0e3f59ab1289e4d552eaea64a7d89065ae9a",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1419,
+              "generator": "0x805",
+              "payload_bytes": 11433,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/52",
+          "stored_bytes": 291,
+          "logical_bytes": 238,
+          "source_sha256": "73e765b37edcde7846dee0ccb0c1ddfa4899f8bbdbb0089b2faec0dd9e2b1b53",
+          "final_layouts": [
+            {
+              "lanes": 75,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 238,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+        "output_sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 17,
+        "parity_pages_verified": 313,
+        "final_pages_verified": 13,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "core-history-8946a8ca.rvt",
+      "sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 358,
+          "logical_bytes": 308,
+          "source_sha256": "c72b47d258bdb12ff13bf1a605306e3a0e30cb9e343156cd04379cadf182d165",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 44,
+              "generator": "0x43",
+              "payload_bytes": 308,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 173230,
+          "logical_bytes": 171885,
+          "source_sha256": "cbe815e5b5427cb685bd5d7e81c952a9346f36f802dec00edd5422b664ae0a47",
+          "final_layouts": [
+            {
+              "lanes": 167,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 42093,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 243084,
+          "logical_bytes": 241355,
+          "source_sha256": "3d2d2e6c7e08ae0e267f4eb7df11775077a168dde2d6084ba334888ad34638d2",
+          "final_layouts": [
+            {
+              "lanes": 185,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 46667,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 1837,
+          "logical_bytes": 1758,
+          "source_sha256": "f3d76fe19633d6e80040756dc68cccaa21f4b30d3281b2490f740a54c6b1916d",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 226,
+              "generator": "0x211",
+              "payload_bytes": 1758,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 127939,
+          "logical_bytes": 127050,
+          "source_sha256": "b24c41554b0d0aac1c249b997dd8043d7376a12b20254152ddc2868f8551fbb1",
+          "final_layouts": [
+            {
+              "lanes": 245,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 62154,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 797,
+          "logical_bytes": 739,
+          "source_sha256": "4a6736e6864a866bc21faaff2f6e0e54346077afff41aac33a3c6078e18614e5",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 98,
+              "generator": "0x83",
+              "payload_bytes": 739,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 79533,
+          "logical_bytes": 79083,
+          "source_sha256": "cb93c44dd8fa5e5ba0712e423c7f3a471e2e2e504ab150c4b8a3018f943175af",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1758,
+              "generator": "0x805",
+              "payload_bytes": 14187,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 95,
+          "source_sha256": "9b371f5ac7552cd77f9e6f528636fcad3a742e8e1f0741c63306b923328de7cb",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 95,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/46",
+          "stored_bytes": 17072209,
+          "logical_bytes": 16979492,
+          "source_sha256": "d844102ce8e1b7fcefb9b42abed9cbf03e0b95a12b878aea35fe5150a2c59027",
+          "final_layouts": [
+            {
+              "lanes": 165,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 41636,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/48",
+          "stored_bytes": 2388625,
+          "logical_bytes": 2375496,
+          "source_sha256": "01d09acc77a5e7eadc58626f124bea5ae1c52ee834e37c73ad3e3ca5a273379a",
+          "final_layouts": [
+            {
+              "lanes": 155,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 39240,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/51",
+          "stored_bytes": 598771,
+          "logical_bytes": 595497,
+          "source_sha256": "3bda148787625a831c90fc78f90c0e3f59ab1289e4d552eaea64a7d89065ae9a",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1419,
+              "generator": "0x805",
+              "payload_bytes": 11433,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/53",
+          "stored_bytes": 5692783,
+          "logical_bytes": 5661975,
+          "source_sha256": "1a06b17704c6a0eec6c87557e8084078fb801a3824a158ba6fa1c51efa3aa0ad",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1984,
+              "generator": "0x805",
+              "payload_bytes": 16023,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/55",
+          "stored_bytes": 2695935,
+          "logical_bytes": 2681264,
+          "source_sha256": "4bc62554fc36f4fc6f012d47cae949c751b3ced7dee23e8b1c163c2f8fedc269",
+          "final_layouts": [
+            {
+              "lanes": 81,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 20528,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/59",
+          "stored_bytes": 1598473,
+          "logical_bytes": 1589480,
+          "source_sha256": "8712d3a506cd378aa4716f6a8b1ee3fe01f37fe8ac174b1263328f8968741a76",
+          "final_layouts": [
+            {
+              "lanes": 127,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 31976,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/60",
+          "stored_bytes": 291,
+          "logical_bytes": 238,
+          "source_sha256": "73e765b37edcde7846dee0ccb0c1ddfa4899f8bbdbb0089b2faec0dd9e2b1b53",
+          "final_layouts": [
+            {
+              "lanes": 75,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 238,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+        "output_sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 19,
+        "parity_pages_verified": 465,
+        "final_pages_verified": 15,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "core-history-bd8c0792.rvt",
+      "sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 358,
+          "logical_bytes": 308,
+          "source_sha256": "f9a75ece720535ee897d61b2be97a7300bb8238c0d8403e5046925a73a7b832d",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 44,
+              "generator": "0x43",
+              "payload_bytes": 308,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 173230,
+          "logical_bytes": 171885,
+          "source_sha256": "cbe815e5b5427cb685bd5d7e81c952a9346f36f802dec00edd5422b664ae0a47",
+          "final_layouts": [
+            {
+              "lanes": 167,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 42093,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 243084,
+          "logical_bytes": 241355,
+          "source_sha256": "3d2d2e6c7e08ae0e267f4eb7df11775077a168dde2d6084ba334888ad34638d2",
+          "final_layouts": [
+            {
+              "lanes": 185,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 46667,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 1487,
+          "logical_bytes": 1409,
+          "source_sha256": "09ccadb3a2ddd5f9ce54c14fbc4425d4c827e24074b30e1998e4f0f423d28176",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 183,
+              "generator": "0x211",
+              "payload_bytes": 1409,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 96210,
+          "logical_bytes": 95666,
+          "source_sha256": "9b70e627c01477320f57735840a6a193b85e42d49553f41e85896be2d38ebf2d",
+          "final_layouts": [
+            {
+              "lanes": 121,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 30770,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 691,
+          "logical_bytes": 631,
+          "source_sha256": "38d6b3c0cd89f208372ffea75833022e3525b1f83d85c7577d608fa3d42038c0",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 85,
+              "generator": "0x83",
+              "payload_bytes": 631,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 78282,
+          "logical_bytes": 77831,
+          "source_sha256": "0068dd60179423cf36ef05a3dc28d36b4139df2027f8703e3cc5d0fd1b5b7e14",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1604,
+              "generator": "0x805",
+              "payload_bytes": 12935,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 95,
+          "source_sha256": "9b371f5ac7552cd77f9e6f528636fcad3a742e8e1f0741c63306b923328de7cb",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 95,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/46",
+          "stored_bytes": 17072209,
+          "logical_bytes": 16979492,
+          "source_sha256": "d844102ce8e1b7fcefb9b42abed9cbf03e0b95a12b878aea35fe5150a2c59027",
+          "final_layouts": [
+            {
+              "lanes": 165,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 41636,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/47",
+          "stored_bytes": 291,
+          "logical_bytes": 238,
+          "source_sha256": "73e765b37edcde7846dee0ccb0c1ddfa4899f8bbdbb0089b2faec0dd9e2b1b53",
+          "final_layouts": [
+            {
+              "lanes": 75,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 238,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+        "output_sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 14,
+        "parity_pages_verified": 268,
+        "final_pages_verified": 10,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    },
+    {
+      "file": "core-history-ede6e635.rvt",
+      "sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+      "streams": [
+        {
+          "stream": "Contents",
+          "stored_bytes": 358,
+          "logical_bytes": 308,
+          "source_sha256": "8b06c5e50d883235905bf4dd6abbd1762be3ca5c1c007b54dc5ecc6315d00616",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 44,
+              "generator": "0x43",
+              "payload_bytes": 308,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Formats/Latest",
+          "stored_bytes": 173230,
+          "logical_bytes": 171885,
+          "source_sha256": "cbe815e5b5427cb685bd5d7e81c952a9346f36f802dec00edd5422b664ae0a47",
+          "final_layouts": [
+            {
+              "lanes": 167,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 42093,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ContentDocuments",
+          "stored_bytes": 243084,
+          "logical_bytes": 241355,
+          "source_sha256": "3d2d2e6c7e08ae0e267f4eb7df11775077a168dde2d6084ba334888ad34638d2",
+          "final_layouts": [
+            {
+              "lanes": 185,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 46667,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/DocumentIncrementTable",
+          "stored_bytes": 1772,
+          "logical_bytes": 1697,
+          "source_sha256": "5ff98fba110ccb6ebd44bcfaa341b393ac4b272b3fc8661cd018939505dec37d",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 218,
+              "generator": "0x211",
+              "payload_bytes": 1697,
+              "encoder_policy_matches": false
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": false,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/ElemTable",
+          "stored_bytes": 127939,
+          "logical_bytes": 126877,
+          "source_sha256": "f5c27604268130575fa9636ac9dc49b68e9439e749c713c46e62df307e4a5345",
+          "final_layouts": [
+            {
+              "lanes": 245,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 61981,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/History",
+          "stored_bytes": 780,
+          "logical_bytes": 721,
+          "source_sha256": "973d3e5f3ee305d8ccf9890aa18a39eeebab4b4032d9026b3b7ce893b2b51e87",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 96,
+              "generator": "0x83",
+              "payload_bytes": 721,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/Latest",
+          "stored_bytes": 79363,
+          "logical_bytes": 78912,
+          "source_sha256": "2fb16294dd5629047387b622fdc0a22ba08b34946d5574e27635b378b61d6e4f",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1737,
+              "generator": "0x805",
+              "payload_bytes": 14016,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Global/PartitionTable",
+          "stored_bytes": 134,
+          "logical_bytes": 95,
+          "source_sha256": "9b371f5ac7552cd77f9e6f528636fcad3a742e8e1f0741c63306b923328de7cb",
+          "final_layouts": [
+            {
+              "lanes": 71,
+              "words": 15,
+              "generator": "0x13",
+              "payload_bytes": 95,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/46",
+          "stored_bytes": 17072209,
+          "logical_bytes": 16979492,
+          "source_sha256": "d844102ce8e1b7fcefb9b42abed9cbf03e0b95a12b878aea35fe5150a2c59027",
+          "final_layouts": [
+            {
+              "lanes": 165,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 41636,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/48",
+          "stored_bytes": 2388625,
+          "logical_bytes": 2375496,
+          "source_sha256": "01d09acc77a5e7eadc58626f124bea5ae1c52ee834e37c73ad3e3ca5a273379a",
+          "final_layouts": [
+            {
+              "lanes": 155,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 39240,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/51",
+          "stored_bytes": 598771,
+          "logical_bytes": 595497,
+          "source_sha256": "3bda148787625a831c90fc78f90c0e3f59ab1289e4d552eaea64a7d89065ae9a",
+          "final_layouts": [
+            {
+              "lanes": 65,
+              "words": 1419,
+              "generator": "0x805",
+              "payload_bytes": 11433,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/53",
+          "stored_bytes": 5780038,
+          "logical_bytes": 5748373,
+          "source_sha256": "7679962fc3c4f14a77abf965d963b0c0aef95aa197fcb379407b4580a2998567",
+          "final_layouts": [
+            {
+              "lanes": 149,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 37525,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/55",
+          "stored_bytes": 2695935,
+          "logical_bytes": 2681264,
+          "source_sha256": "4bc62554fc36f4fc6f012d47cae949c751b3ced7dee23e8b1c163c2f8fedc269",
+          "final_layouts": [
+            {
+              "lanes": 81,
+              "words": 2047,
+              "generator": "0x805",
+              "payload_bytes": 20528,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        },
+        {
+          "stream": "Partitions/58",
+          "stored_bytes": 291,
+          "logical_bytes": 238,
+          "source_sha256": "73e765b37edcde7846dee0ccb0c1ddfa4899f8bbdbb0089b2faec0dd9e2b1b53",
+          "final_layouts": [
+            {
+              "lanes": 75,
+              "words": 31,
+              "generator": "0x25",
+              "payload_bytes": 238,
+              "encoder_policy_matches": true
+            }
+          ],
+          "both_decoders_agree": true,
+          "source_layout_reproduced_exactly": true,
+          "canonical_encoding_equals_source": true,
+          "both_encoders_agree_and_roundtrip": true
+        }
+      ],
+      "rust_inventory": {
+        "input_sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+        "output_sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+        "changed_streams": [],
+        "created_streams": [],
+        "streams_verified": 18,
+        "parity_pages_verified": 442,
+        "final_pages_verified": 14,
+        "validation": "CFB streams, page parity, and exact payload framing",
+        "revit_openability": "not_tested"
+      }
+    }
+  ],
+  "limits": "Decoder accepts unique valid historical layouts; default encoder policy is not proven to reproduce every historical layout or Autodesk save behavior."
+}

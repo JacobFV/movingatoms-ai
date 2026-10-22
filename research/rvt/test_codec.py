@@ -1,6 +1,6 @@
 import random
 import unittest
-from codec import decode, encode, decode_final, encode_final, choose, padded_data
+from codec import decode, encode, decode_final, encode_final, choose, padded_data, Layout, encode_final_with_layout
 from pages import PAYLOAD
 from partial_pages import parity
 
@@ -28,3 +28,16 @@ class CompleteCodecTests(unittest.TestCase):
         raw = encode_final(random.Random(2).randbytes(1000))
         for bad in [raw[:-1], raw[:-4], bytes([raw[0]^1])+raw[1:]]:
             with self.assertRaises(ValueError): decode_final(bad)
+
+    def test_historical_noncanonical_layouts(self):
+        rng = random.Random(824)
+        for size, layout in [(308, Layout(65,44,0x43)), (739, Layout(65,98,0x83)),
+                             (1697, Layout(65,218,0x211)),
+                             (4136, Layout(67,511,0x211))]:
+            data = rng.randbytes(size-1)+b'\0'
+            self.assertNotEqual(choose(data), layout)
+            stored = encode_final_with_layout(data, layout)
+            self.assertEqual(decode_final(stored), data)
+            self.assertEqual(encode_final_with_layout(decode_final(stored), layout), stored)
+            corrupt = bytearray(stored); corrupt[0] ^= 1
+            with self.assertRaises(ValueError): decode_final(corrupt)

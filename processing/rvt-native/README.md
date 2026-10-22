@@ -134,3 +134,18 @@ just like Global streams. Earlier inventories omitted this stream; the
 [Contents cross-language audit](../../research/rvt/results/contents-codec.json)
 records its exact reproduction and updated inventory counts. Its gzip wrapper
 and revision fields remain the semantic caller's responsibility.
+
+## Historical layout extension
+
+Eleven licensed files now pass cross-language decoding: 2,760 full pages and
+138 final pages. The five historical snapshots expose nine streams whose final
+layouts differ from the default encoder's size-selection policy. Each observed
+layout reproduces its source bytes exactly through explicit-layout encoding;
+both default encoders agree and their output decodes to the same logical bytes.
+This does not establish Autodesk acceptance of alternative layouts.
+
+The decoder preserves the existing encoder policy to resolve degenerate zero
+pages. When no such match exists, it requires one unique valid historical
+layout, exact same-layout reconstruction, valid padding and parity. The encoder
+policy is therefore a supported output convention, not a universal recovered
+Revit selection algorithm. See `research/rvt/results/historical-codec.json`.

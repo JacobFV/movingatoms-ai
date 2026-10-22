@@ -1,0 +1,362 @@
+{
+  "repo_history_api": "https://api.github.com/repos/magnetar-io/revit-test-datasets/commits?path=Revit/2024_Core_Interior.rvt&per_page=100",
+  "discovered_path_history": [
+    {
+      "repo": "magnetar-io/revit-test-datasets",
+      "path": "Revit/2024_Core_Interior.rvt",
+      "api_url": "https://api.github.com/repos/magnetar-io/revit-test-datasets/commits?path=Revit/2024_Core_Interior.rvt&per_page=100",
+      "commits": [
+        {
+          "sha": "fd755e18cec40ed016d06b082f420d796571fef1",
+          "date": "2024-06-02T17:15:46Z",
+          "message": "added curtain wal and wall sample."
+        },
+        {
+          "sha": "8946a8caaf7ca00ee81d843581b91d97fdbe4c6f",
+          "date": "2023-08-13T14:42:13Z",
+          "message": "Updated Demo view and Properties"
+        },
+        {
+          "sha": "ede6e635abd10a251e1d11a3603e9002898d0632",
+          "date": "2023-08-12T23:36:19Z",
+          "message": "Updated Rhino\n\nI added the objects the layers, added materials and colors and added a custom \"Classification\" value.  Plate or Mullion"
+        },
+        {
+          "sha": "5859762b4fb07319829ad382fbad356237dec1ca",
+          "date": "2023-08-06T14:18:12Z",
+          "message": "Update 2024_Core_Interior.rvt"
+        },
+        {
+          "sha": "21b61e69b5d0552214fc2159e6d529118c6c24f1",
+          "date": "2023-08-06T14:02:46Z",
+          "message": "Add Rhino Facade"
+        },
+        {
+          "sha": "bd8c079268e7b109e37ff5cf9037de0877ec4a01",
+          "date": "2023-08-06T13:45:57Z",
+          "message": "CleanedUP"
+        }
+      ]
+    },
+    {
+      "repo": "magnetar-io/revit-test-datasets",
+      "path": "Revit/Revit_IFC5_Einhoven.rvt",
+      "api_url": "https://api.github.com/repos/magnetar-io/revit-test-datasets/commits?path=Revit/Revit_IFC5_Einhoven.rvt&per_page=100",
+      "commits": [
+        {
+          "sha": "fd755e18cec40ed016d06b082f420d796571fef1",
+          "date": "2024-06-02T17:15:46Z",
+          "message": "added curtain wal and wall sample."
+        }
+      ]
+    },
+    {
+      "repo": "Drshelden/IFC-ECS",
+      "path": "data/RE1/RE1-Architecture.rvt",
+      "api_url": "https://api.github.com/repos/Drshelden/IFC-ECS/commits?path=data/RE1/RE1-Architecture.rvt&per_page=100",
+      "commits": [
+        {
+          "sha": "c5a9ecffbd93dc6900cf351686656f0736230e88",
+          "date": "2026-02-17T01:24:21Z",
+          "message": "with repaired tree"
+        }
+      ]
+    },
+    {
+      "repo": "Drshelden/IFC-ECS",
+      "path": "data/RE1/RE1-Electrical.rvt",
+      "api_url": "https://api.github.com/repos/Drshelden/IFC-ECS/commits?path=data/RE1/RE1-Electrical.rvt&per_page=100",
+      "commits": [
+        {
+          "sha": "c5a9ecffbd93dc6900cf351686656f0736230e88",
+          "date": "2026-02-17T01:24:21Z",
+          "message": "with repaired tree"
+        }
+      ]
+    },
+    {
+      "repo": "Drshelden/IFC-ECS",
+      "path": "data/RE1/RE1-Mechanical.rvt",
+      "api_url": "https://api.github.com/repos/Drshelden/IFC-ECS/commits?path=data/RE1/RE1-Mechanical.rvt&per_page=100",
+      "commits": [
+        {
+          "sha": "c5a9ecffbd93dc6900cf351686656f0736230e88",
+          "date": "2026-02-17T01:24:21Z",
+          "message": "with repaired tree"
+        }
+      ]
+    },
+    {
+      "repo": "Drshelden/IFC-ECS",
+      "path": "data/RE1/RE1-Plumbing.rvt",
+      "api_url": "https://api.github.com/repos/Drshelden/IFC-ECS/commits?path=data/RE1/RE1-Plumbing.rvt&per_page=100",
+      "commits": [
+        {
+          "sha": "c5a9ecffbd93dc6900cf351686656f0736230e88",
+          "date": "2026-02-17T01:24:21Z",
+          "message": "with repaired tree"
+        }
+      ]
+    }
+  ],
+  "initial_transport_counterexamples": [
+    {
+      "file": "core-history-8946a8ca.rvt",
+      "stream": "Global/History",
+      "stored_bytes": 797,
+      "initial_error": "invalid, ambiguous, or unsupported final-page framing",
+      "cause": "unique valid historical layout was excluded by canonical layout selection"
+    },
+    {
+      "file": "core-history-ede6e635.rvt",
+      "stream": "Global/DocumentIncrementTable",
+      "stored_bytes": 1772,
+      "initial_error": "invalid, ambiguous, or unsupported final-page framing",
+      "cause": "unique valid historical layout was excluded by canonical layout selection"
+    }
+  ],
+  "snapshots": [
+    {
+      "file": "core-history-bd8c0792.rvt",
+      "repo": "magnetar-io/revit-test-datasets",
+      "commit": "bd8c079268e7b109e37ff5cf9037de0877ec4a01",
+      "sha256": "7504e04526fa581fa76236cc0c99f2a14029cdfb6ee62be86fa75733aa1075da",
+      "size": 17731584,
+      "model_url": "https://media.githubusercontent.com/media/magnetar-io/revit-test-datasets/bd8c079268e7b109e37ff5cf9037de0877ec4a01/Revit/2024_Core_Interior.rvt",
+      "license_url": "https://raw.githubusercontent.com/magnetar-io/revit-test-datasets/bd8c079268e7b109e37ff5cf9037de0877ec4a01/LICENSE",
+      "license_sha256": "0ab138580e235fd4024d9a0d7589a9fe6982aab1503356415cdef15d1e2cb4fc",
+      "license": "MIT",
+      "history": {
+        "stored_sha256": "38d6b3c0cd89f208372ffea75833022e3525b1f83d85c7577d608fa3d42038c0",
+        "stored_bytes": 691,
+        "status": "decoded",
+        "inflated_sha256": "51030dc72f10793b05e5ae4a0375b3eac86edbb41f188eaf254f8015468414bd",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "episodes": 31,
+        "newest_episode_guid": "f35f2658-bb73-415c-8ade-49f3800aee79",
+        "creation_guid": "676874be-2f6c-41d2-bd1e-b8762579db52"
+      },
+      "increments": {
+        "stored_sha256": "09ccadb3a2ddd5f9ce54c14fbc4425d4c827e24074b30e1998e4f0f423d28176",
+        "stored_bytes": 1487,
+        "status": "decoded",
+        "inflated_sha256": "4380b8f6d7ddf50616c897533b0c7b1f375135004a86efa2e90e2dbdf8e9751d",
+        "opaque_logical_gzip_suffix_bytes": 1,
+        "entries": 48,
+        "latest_major_version": 48
+      }
+    },
+    {
+      "file": "core-history-21b61e69.rvt",
+      "repo": "magnetar-io/revit-test-datasets",
+      "commit": "21b61e69b5d0552214fc2159e6d529118c6c24f1",
+      "sha256": "5a963a88f67ad709c232a4f7e2b94de85bd23ac73ba77903cc3ec996de1b9d28",
+      "size": 23490560,
+      "model_url": "https://media.githubusercontent.com/media/magnetar-io/revit-test-datasets/21b61e69b5d0552214fc2159e6d529118c6c24f1/Revit/2024_Core_Interior.rvt",
+      "license_url": "https://raw.githubusercontent.com/magnetar-io/revit-test-datasets/21b61e69b5d0552214fc2159e6d529118c6c24f1/LICENSE",
+      "license_sha256": "0ab138580e235fd4024d9a0d7589a9fe6982aab1503356415cdef15d1e2cb4fc",
+      "license": "MIT",
+      "history": {
+        "stored_sha256": "3112ce2700701f18dc033c5487662225735b26590df56b58d63bc9cc30a631a5",
+        "stored_bytes": 732,
+        "status": "decoded",
+        "inflated_sha256": "9b2fe58c8bdf46f013e7fdf1189c2ca9caec9b89aec910dc3d9bc1abc20506a1",
+        "opaque_logical_gzip_suffix_bytes": 1,
+        "episodes": 33,
+        "newest_episode_guid": "1fa65c94-f1de-4be4-b496-f8b23e6fad1c",
+        "creation_guid": "676874be-2f6c-41d2-bd1e-b8762579db52"
+      },
+      "increments": {
+        "stored_sha256": "459c7b8750b113160451d32f5a9ea72de63b73862f91bde279d2813328a02578",
+        "stored_bytes": 1569,
+        "status": "decoded",
+        "inflated_sha256": "1e3e5242ecaefe83445dd411b8144d88ab8638b246c8678248ad09b35324de82",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "entries": 51,
+        "latest_major_version": 51
+      }
+    },
+    {
+      "file": "core-history-5859762b.rvt",
+      "repo": "magnetar-io/revit-test-datasets",
+      "commit": "5859762b4fb07319829ad382fbad356237dec1ca",
+      "sha256": "108d28c14e4789cd2aadf89c4c308ff09c769ed6b30546d129dacda749bc8164",
+      "size": 20779008,
+      "model_url": "https://media.githubusercontent.com/media/magnetar-io/revit-test-datasets/5859762b4fb07319829ad382fbad356237dec1ca/Revit/2024_Core_Interior.rvt",
+      "license_url": "https://raw.githubusercontent.com/magnetar-io/revit-test-datasets/5859762b4fb07319829ad382fbad356237dec1ca/LICENSE",
+      "license_sha256": "0ab138580e235fd4024d9a0d7589a9fe6982aab1503356415cdef15d1e2cb4fc",
+      "license": "MIT",
+      "history": {
+        "stored_sha256": "22bd925d41ef9f3da36aa5cff0344fe86704cc897f87d4ed570a3b9701e3fa7c",
+        "stored_bytes": 748,
+        "status": "decoded",
+        "inflated_sha256": "e6d41dcafecf7d4b143750aad61a4786d63885184e36888cdcb5c7eb881a06ee",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "episodes": 34,
+        "newest_episode_guid": "f3d66e74-ade3-43b4-b55c-8d77afb9401a",
+        "creation_guid": "676874be-2f6c-41d2-bd1e-b8762579db52"
+      },
+      "increments": {
+        "stored_sha256": "861f7952000b254fd2f96164fed2acebf96a2392d96a34baa9384aced6aac21e",
+        "stored_bytes": 1625,
+        "status": "decoded",
+        "inflated_sha256": "99b25791763f7feb980ba0bc27b5f52e63fa471b5ec5a79ab471c14df85d3af4",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "entries": 53,
+        "latest_major_version": 53
+      }
+    },
+    {
+      "file": "core-history-ede6e635.rvt",
+      "repo": "magnetar-io/revit-test-datasets",
+      "commit": "ede6e635abd10a251e1d11a3603e9002898d0632",
+      "sha256": "8518ea433d63e1d35c136b1f6fc7588d40004efff0d73e8b71ffaca90241c37c",
+      "size": 29282304,
+      "model_url": "https://media.githubusercontent.com/media/magnetar-io/revit-test-datasets/ede6e635abd10a251e1d11a3603e9002898d0632/Revit/2024_Core_Interior.rvt",
+      "license_url": "https://raw.githubusercontent.com/magnetar-io/revit-test-datasets/ede6e635abd10a251e1d11a3603e9002898d0632/LICENSE",
+      "license_sha256": "0ab138580e235fd4024d9a0d7589a9fe6982aab1503356415cdef15d1e2cb4fc",
+      "license": "MIT",
+      "history": {
+        "stored_sha256": "973d3e5f3ee305d8ccf9890aa18a39eeebab4b4032d9026b3b7ce893b2b51e87",
+        "stored_bytes": 780,
+        "status": "decoded",
+        "inflated_sha256": "548343ba7752f5a964de97420970b00b03f47aaf341141640cf15e90218f1cf9",
+        "opaque_logical_gzip_suffix_bytes": 1,
+        "episodes": 36,
+        "newest_episode_guid": "f8da6af8-0a89-4538-806b-dc6570f5cf47",
+        "creation_guid": "676874be-2f6c-41d2-bd1e-b8762579db52"
+      },
+      "increments": {
+        "stored_sha256": "5ff98fba110ccb6ebd44bcfaa341b393ac4b272b3fc8661cd018939505dec37d",
+        "stored_bytes": 1772,
+        "status": "decoded",
+        "inflated_sha256": "3b8513a4c5e8c244fc6efb8479fdb7c3d0f28fd75ecb64f18f8050bfd67bb5ea",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "entries": 59,
+        "latest_major_version": 59
+      }
+    },
+    {
+      "file": "core-history-8946a8ca.rvt",
+      "repo": "magnetar-io/revit-test-datasets",
+      "commit": "8946a8caaf7ca00ee81d843581b91d97fdbe4c6f",
+      "sha256": "dd016430d9ce0a115895a81ccad6c576475914890a538322885bb80744119a69",
+      "size": 30814208,
+      "model_url": "https://media.githubusercontent.com/media/magnetar-io/revit-test-datasets/8946a8caaf7ca00ee81d843581b91d97fdbe4c6f/Revit/2024_Core_Interior.rvt",
+      "license_url": "https://raw.githubusercontent.com/magnetar-io/revit-test-datasets/8946a8caaf7ca00ee81d843581b91d97fdbe4c6f/LICENSE",
+      "license_sha256": "0ab138580e235fd4024d9a0d7589a9fe6982aab1503356415cdef15d1e2cb4fc",
+      "license": "MIT",
+      "history": {
+        "stored_sha256": "4a6736e6864a866bc21faaff2f6e0e54346077afff41aac33a3c6078e18614e5",
+        "stored_bytes": 797,
+        "status": "decoded",
+        "inflated_sha256": "bed7fa5f5568db7497fd4b55246416dd27264904006f0bcb12a062e62c30a16f",
+        "opaque_logical_gzip_suffix_bytes": 1,
+        "episodes": 37,
+        "newest_episode_guid": "0e0099be-122d-4720-8d78-4c98ce343cee",
+        "creation_guid": "676874be-2f6c-41d2-bd1e-b8762579db52"
+      },
+      "increments": {
+        "stored_sha256": "f3d76fe19633d6e80040756dc68cccaa21f4b30d3281b2490f740a54c6b1916d",
+        "stored_bytes": 1837,
+        "status": "decoded",
+        "inflated_sha256": "82a56cced5ab77694d2aa6f83e349008608982aab3c8305021c7bddca15527fb",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "entries": 61,
+        "latest_major_version": 61
+      }
+    },
+    {
+      "file": "core2024.rvt",
+      "repo": "magnetar-io/revit-test-datasets",
+      "commit": "fd755e18cec40ed016d06b082f420d796571fef1",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "size": 33718272,
+      "model_url": "https://media.githubusercontent.com/media/magnetar-io/revit-test-datasets/fd755e18cec40ed016d06b082f420d796571fef1/Revit/2024_Core_Interior.rvt",
+      "license_url": "https://raw.githubusercontent.com/magnetar-io/revit-test-datasets/fd755e18cec40ed016d06b082f420d796571fef1/LICENSE",
+      "license_sha256": "0ab138580e235fd4024d9a0d7589a9fe6982aab1503356415cdef15d1e2cb4fc",
+      "license": "MIT",
+      "history": {
+        "stored_sha256": "19a8182447cae2d91e19dfdbd34c5fceb3d8063fc5d930392bc279ebe6213479",
+        "stored_bytes": 837,
+        "status": "decoded",
+        "inflated_sha256": "581697f03caa89bf60089324255c8156d32c0608ae0059a826400ae4742ee443",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "episodes": 39,
+        "newest_episode_guid": "2a619b2e-a277-4154-90ff-ca7b37baec5b",
+        "creation_guid": "676874be-2f6c-41d2-bd1e-b8762579db52"
+      },
+      "increments": {
+        "stored_sha256": "0c50ad2039a6a07c8e0714571cd9c99a432d8e99a52252bf7f6fde860cec1f23",
+        "stored_bytes": 1967,
+        "status": "decoded",
+        "inflated_sha256": "f7e71589b9667f2e868fa3b06ec3e0d8be630c3b146dd99b6425ed434c9f00df",
+        "opaque_logical_gzip_suffix_bytes": 0,
+        "entries": 66,
+        "latest_major_version": 66
+      }
+    }
+  ],
+  "adjacent_git_snapshot_pairs": [
+    {
+      "older": "core-history-bd8c0792.rvt",
+      "newer": "core-history-21b61e69.rvt",
+      "status": "history_lineage_checked",
+      "same_creation_guid": true,
+      "newer_preserves_all_older_episodes_as_suffix": true,
+      "older_episodes": 31,
+      "newer_episodes": 33,
+      "episode_delta": 2,
+      "different_newest_episode": true
+    },
+    {
+      "older": "core-history-21b61e69.rvt",
+      "newer": "core-history-5859762b.rvt",
+      "status": "history_lineage_checked",
+      "same_creation_guid": true,
+      "newer_preserves_all_older_episodes_as_suffix": true,
+      "older_episodes": 33,
+      "newer_episodes": 34,
+      "episode_delta": 1,
+      "different_newest_episode": true
+    },
+    {
+      "older": "core-history-5859762b.rvt",
+      "newer": "core-history-ede6e635.rvt",
+      "status": "history_lineage_checked",
+      "same_creation_guid": true,
+      "newer_preserves_all_older_episodes_as_suffix": true,
+      "older_episodes": 34,
+      "newer_episodes": 36,
+      "episode_delta": 2,
+      "different_newest_episode": true
+    },
+    {
+      "older": "core-history-ede6e635.rvt",
+      "newer": "core-history-8946a8ca.rvt",
+      "status": "history_lineage_checked",
+      "same_creation_guid": true,
+      "newer_preserves_all_older_episodes_as_suffix": true,
+      "older_episodes": 36,
+      "newer_episodes": 37,
+      "episode_delta": 1,
+      "different_newest_episode": true
+    },
+    {
+      "older": "core-history-8946a8ca.rvt",
+      "newer": "core2024.rvt",
+      "status": "history_lineage_checked",
+      "same_creation_guid": true,
+      "newer_preserves_all_older_episodes_as_suffix": true,
+      "older_episodes": 37,
+      "newer_episodes": 39,
+      "episode_delta": 2,
+      "different_newest_episode": true
+    }
+  ],
+  "limitations": [
+    "Git-adjacent snapshots need not be adjacent Revit saves.",
+    "Shared creation GUID and preserved episode history establish file lineage, not the exact user operation.",
+    "Unsupported page framing is reported; no unchecked transport fallback is used."
+  ]
+}

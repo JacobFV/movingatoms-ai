@@ -342,3 +342,31 @@ Python tests; its immutable manifest records source/report hashes. The panel
 compares all five candidates, including binary identity, and the explicit
 stable-namespace IFC adapter. This capture precedes the newly obtained
 historical files and retains the six-original-file corpus scope.
+
+## 2026-10-22 — Historical corpus exposes valid alternative page layouts
+
+Recovered five earlier MIT-licensed Core Interior snapshots from the existing
+dataset's Git history. All six Core versions share creation identity and retain
+older History episodes as an exact suffix. License, commit, LFS hash/size and
+retrieval provenance are recorded in [paired source evidence](../research/rvt/results/paired-save-sources.md).
+These are adjacent Git snapshots, not controlled adjacent Revit saves.
+
+Initial strict decoding rejected historical History and increment-table pages,
+then Partitions/50 and Contents. Algebraic identification proved their parity
+valid. The failure was our assumption that every source used the default
+encoder's dimension-selection policy. Both codecs now accept a unique valid
+historical layout after exact same-layout reconstruction, while retaining the
+existing policy for ambiguous degenerate zero pages.
+
+The expanded cross-language audit passes all 138 streams in eleven files:
+2,760 full pages and 138 final pages. Nine historical streams differ from default
+canonical re-encoding, explicitly reported rather than called byte-identical.
+Every detected source layout reproduces exactly; default Python/Rust encoders
+agree and roundtrip to identical logical bytes. Sixteen Rust tests and four
+Python codec tests pass; Clippy is clean. [Details](../research/rvt/results/historical-codec.md).
+
+All five chronological pairs now pass record comparisons with no unresolved
+shared selections and no reused native UniqueIds. Changed bodies sometimes
+retain user dates; three header changes retain both modification dates. The
+reports preserve exact bytes, conservative routing and the limits of inferring
+user actions from Git snapshots. [Paired changes](../research/rvt/results/paired-modification.md).

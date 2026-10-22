@@ -1,6 +1,7 @@
-"""Complete byte-derived RVT page framing, including final-page length metadata.
+"""Byte-derived RVT page framing, including final-page length metadata.
 
-Observed profile: choose the smallest stored size among generators 4/5/6/7/9/11.
+Encoder profile: choose the smallest stored size among generators 4/5/6/7/9/11.
+Historical files also contain unique valid layouts outside that encoder policy.
 Use 65 lanes with shortened codewords, or odd lane counts with full codewords.
 Reserve m+1 bits when choosing dimensions; the padding-count field occupies
 max(7,m+1) bits. Small m may overlap zero high bits of the last payload byte;
@@ -64,11 +65,20 @@ def choose(payload):
     raise ValueError('no supported layout fits payload')
 
 
-def encode_final(payload):
-    layout = choose(payload)
+def encode_final_with_layout(payload, layout):
+    if not 0 < len(payload) <= PAYLOAD: raise ValueError('invalid final-page payload length')
+    if (layout.generator not in GENERATORS or not 65 <= layout.lanes <= 255
+            or layout.lanes % 2 != 1
+            or not layout.degree < layout.words <= (1 << layout.degree)-1
+            or (layout.lanes != 65 and layout.words != (1 << layout.degree)-1)):
+        raise ValueError('unsupported final-page layout')
     value = padded_data(payload, layout)
     value |= parity(value, layout.lanes, layout.words-layout.degree, layout.generator) << layout.data_bits
     return value.to_bytes(layout.size, 'little')
+
+
+def encode_final(payload):
+    return encode_final_with_layout(payload, choose(payload))
 
 
 def unpack(raw, layout):
@@ -84,13 +94,19 @@ def unpack(raw, layout):
 
 
 def decode_final(raw):
-    matches = []
+    canonical, alternatives = [], []
     for hit in identify(raw):
         layout = Layout(hit['lanes'], hit['codeword_bits'], int(hit['generator'], 16))
         try:
             data = unpack(raw, layout)
-            if choose(data) == layout: matches.append(data)
+            if encode_final_with_layout(data, layout) != raw: continue
+            alternatives.append(data)
+            if choose(data) == layout: canonical.append(data)
         except ValueError: pass
+    # Preserve the documented encoder policy for degenerate all-zero pages.
+    # Otherwise accept only a unique parity/framing interpretation, not a
+    # guessed canonical re-encoding of a historical layout.
+    matches = canonical if canonical else alternatives
     if len(matches) != 1: raise ValueError('invalid, ambiguous, or unsupported final-page framing')
     return matches[0]
 
