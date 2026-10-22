@@ -277,3 +277,9 @@ sequence number; it equals the episode count only as an observed invariant.
 Explicit modification-episode routing locates 53,527 of 53,544 records; 17
 exceptions remain unresolved without a fallback guess. A complete save still
 requires correct increment, per-stream revision and signature behavior.
+
+The follow-up selector uses explicit partial-compaction histories for 12 of
+those exceptions, including both cases with conflicting bodies. Five have a
+sole physical holder but an unexplained historical route. It rejects ambiguous
+candidates rather than choosing the greatest stream ordinal; see
+[record selection](../research/rvt/results/record-selection.json).

@@ -35,3 +35,38 @@ def route(episode,increments,present):
         if count!=0 or target<=index:raise ValueError('invalid terminal redirect')
         index=target
     raise ValueError('increment redirect cycle')
+
+
+def select_record(episode,increments,present,holders):
+    """Select only with an exact route, unique compaction holder, or sole holder.
+
+    Partial compaction is an evidence-based extension: a chronological version
+    names a later causing increment but does not redirect the entire residual
+    population. When the initial route lacks the ID, follow those explicit
+    causal links. Never choose between multiple reachable physical holders.
+    The single-holder case establishes uniqueness, not its historical cause.
+    """
+    holders=set(holders)
+    if not holders or not holders.issubset(present):raise ValueError('missing/invalid record holders')
+    initial=route(episode,increments,present)
+    if initial in holders:return initial,'exact_episode_route'
+    reachable=set();queue=[initial]
+    while queue:
+        index=queue.pop()
+        if index in reachable:continue
+        reachable.add(index)
+        row=increments[index]
+        previous_cause=-2;previous_count=None
+        for cause,count in row['redirects']:
+            if (cause< -1 or cause<=previous_cause or (cause!=-1 and not index<cause<len(increments))
+                    or count<0 or (previous_count is not None and count>previous_count)):
+                raise ValueError('invalid partial-compaction history')
+            previous_cause,previous_count=cause,count
+            if cause>=0:queue.append(cause)
+        if row['redirects'] and row['redirects'][-1][1]!=row['stored_elements']:
+            raise ValueError('partial-compaction terminal count mismatch')
+    candidates=holders & reachable
+    if len(candidates)==1:return next(iter(candidates)),'unique_compaction_history_holder'
+    if len(candidates)>1:raise ValueError('multiple compaction-history holders')
+    if len(holders)==1:return next(iter(holders)),'sole_physical_holder_history_unresolved'
+    raise ValueError('ambiguous holders outside explicit compaction history')

@@ -56,3 +56,23 @@ Einhoven element 2846 (increments 0/3) and Electrical element 509784
 (increments 114/119). Equality is not proof of the storage route, and these
 two conflicting cases specifically rule out treating every duplicate as an
 interchangeable copy.
+
+## Conservative candidate selection follow-up
+
+`select_record` adds an explicitly labeled partial-compaction selection rule:
+when the episode route lacks the ID, traverse the later causing-increment
+links and require a unique physical holder on that traversal. It does not
+choose the greatest ordinal. This selects 12 candidates, including both
+conflicting-body cases. Five exceptions have a sole physical holder; their
+historical movement remains unexplained and is labeled accordingly. Multiple
+reachable holders and multiple holders outside the explicit history are errors.
+
+`record-selection.json` records 53,527 exact episode routes, 12 unique
+compaction-history holders and 5 sole physical holders with unresolved history.
+The latter two categories are selection evidence from static files, not an
+Autodesk-validated model of save/compaction behavior.
+
+```sh
+python3 research/rvt/resolve_route_candidates.py research/rvt/local/bookkeeping.json \
+  research/rvt/results/increment-routing.json research/rvt/results/partition-objects.json
+```
