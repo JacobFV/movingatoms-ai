@@ -14,5 +14,6 @@
   "footer_integrity_regenerated": false,
   "save_bookkeeping_updated": false,
   "revit_openability": "not_tested",
-  "production_native_export": false
+  "production_native_export": false,
+  "signature_fields_cleared": false
 }

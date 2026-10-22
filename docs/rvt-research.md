@@ -122,6 +122,21 @@ room edit changes exactly one checksummed object; both matched controls leave
 all objects unchanged. These encoders preserve opaque class bodies and do not
 supply class-specific model creation or signature generation.
 
+### Signature marker identified from embedded metadata
+
+The [schema binding probe](../research/rvt/results/schema-bindings.md) resolves
+the footer's exact wire tag to `SignatureMarker` on all six fixtures. Its
+fields are named `m_privateSignature` and `m_publicSignature`. This strengthens
+the authentication hypothesis but does not reveal the algorithm, covered
+bytes, keying, or enforcement. Content continuation GUIDs map to `ContentKey`.
+All identification comes from the files' embedded schema and a pinned public
+clean-room reader. Additional unsigned-control candidates clear both signature
+fields, using the empty representation seen in two source content groups.
+Autodesk acceptance of changed or unsigned nonempty data remains untested.
+The local `research/rvt/local/signature-validation.zip` contains the original
+and five matched candidates, verified hashes/projections, the fixture MIT
+license, and instructions for separate open and save/reopen checks.
+
 ## Ground rules
 
 - **Clean-room only.** Work from the bytes of `.rvt` files and from public documentation. Do not disassemble, decompile

@@ -57,11 +57,15 @@ def make(source,dest,mode):
     elif mode=='footer-control':
         if len(base.footer)!=64:raise ValueError('expected nonempty footer')
         edited=replace(base,footer=bytes([base.footer[0]^1])+base.footer[1:]);changed=[]
+    elif mode=='unsigned-control':
+        edited=replace(base,footer=b'',label=b'');changed=[]
+    elif mode=='unsigned-room-finish':
+        edited=replace(edited,footer=b'',label=b'')
     elif mode!='room-finish':raise ValueError('unknown experiment')
     edited_records=validate(edited,8)
     record_changes=[(seq,a.element_id) for seq,items in original_records.items()
                     for a,b in zip(items,edited_records[seq]) if a!=b]
-    expected_changes=[(102,ELEMENT)] if mode=='room-finish' else []
+    expected_changes=[(102,ELEMENT)] if mode in ('room-finish','unsigned-room-finish') else []
     if record_changes!=expected_changes:raise ValueError('unexpected object record changes')
     new_partition=replace(partition,segments=(edited,)+partition.segments[1:])
     payload=encode(new_partition)
@@ -72,16 +76,17 @@ def make(source,dest,mode):
               'expected_stored_sha256':hashlib.sha256(raw).hexdigest(),'new_payload_file':'partition.bin'}]}
     (dest/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     return {'mode':mode,'source_sha256':SOURCE_SHA,'stream':STREAM,'changed_members':changed,
-            'parameter_edit':detail if mode=='room-finish' else None,
+            'parameter_edit':detail if mode in ('room-finish','unsigned-room-finish') else None,
             'changed_object_records':record_changes,
             'all_object_counts_ids_lengths_and_adler32_verified':True,
             'all_unedited_segments_preserved':new_partition.segments[1:]==partition.segments[1:],
             'inflated_member_lengths_preserved':True,
             'footer_preserved':edited.footer==base.footer,
+            'signature_fields_cleared':not edited.footer and not edited.label,
             'footer_integrity_regenerated':False,'save_bookkeeping_updated':False,
             'revit_openability':'not_tested','production_native_export':False}
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('source',type=Path);p.add_argument('dest',type=Path)
-    p.add_argument('--mode',required=True,choices=['room-finish','recompress-control','footer-control'])
+    p.add_argument('--mode',required=True,choices=['room-finish','recompress-control','footer-control','unsigned-control','unsigned-room-finish'])
     a=p.parse_args();print(json.dumps(make(a.source,a.dest,a.mode),indent=2))

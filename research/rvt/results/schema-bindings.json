@@ -1,0 +1,1208 @@
+[
+  {
+    "class_count": 4492,
+    "classes": [
+      {
+        "base": null,
+        "field_count": 1,
+        "name": "ContentKey",
+        "tag": 890,
+        "version": 1
+      },
+      {
+        "base": 819,
+        "field_count": 2,
+        "name": "ContentMarker",
+        "tag": 891,
+        "version": 1
+      },
+      {
+        "base": 819,
+        "field_count": 1,
+        "name": "SegmentCheckback",
+        "tag": 3701,
+        "version": 1
+      },
+      {
+        "base": 819,
+        "field_count": 4,
+        "name": "SegmentMarker",
+        "tag": 3708,
+        "version": 1
+      },
+      {
+        "base": 819,
+        "field_count": 2,
+        "name": "SignatureMarker",
+        "tag": 3727,
+        "version": 1
+      }
+    ],
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 30,
+                "sub": 0
+              }
+            },
+            "name": "m_guidKey"
+          }
+        ],
+        "name": "ContentKey",
+        "offset": 108186,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Pointer": {
+                "kind": 1
+              }
+            },
+            "name": "m_oContentKey"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 4,
+                "size": 4
+              }
+            },
+            "name": "m_nElementCount"
+          }
+        ],
+        "name": "ContentMarker",
+        "offset": 108233,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          }
+        ],
+        "name": "SegmentCheckback",
+        "offset": 392419,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_continuationBits"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_objectCount"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_uncompressedSize"
+          }
+        ],
+        "name": "SegmentMarker",
+        "offset": 393065,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Container": {
+                "body": [],
+                "cpp_signature": null,
+                "kind": 2
+              }
+            },
+            "name": "m_privateSignature"
+          },
+          {
+            "cpp_type": null,
+            "field_type": "String",
+            "name": "m_publicSignature"
+          }
+        ],
+        "name": "SignatureMarker",
+        "offset": 394405,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "grammar_complete": true,
+    "schema_bytes": 470502,
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "partition_sample": "Partitions/46",
+    "observed_tags_match": true,
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "signature_algorithm": "unknown",
+    "autodesk_enforcement": "not_tested"
+  },
+  {
+    "class_count": 4418,
+    "classes": [
+      {
+        "base": null,
+        "field_count": 1,
+        "name": "ContentKey",
+        "tag": 868,
+        "version": 1
+      },
+      {
+        "base": 794,
+        "field_count": 2,
+        "name": "ContentMarker",
+        "tag": 869,
+        "version": 1
+      },
+      {
+        "base": 794,
+        "field_count": 1,
+        "name": "SegmentCheckback",
+        "tag": 3655,
+        "version": 1
+      },
+      {
+        "base": 794,
+        "field_count": 4,
+        "name": "SegmentMarker",
+        "tag": 3662,
+        "version": 1
+      },
+      {
+        "base": 794,
+        "field_count": 2,
+        "name": "SignatureMarker",
+        "tag": 3681,
+        "version": 1
+      }
+    ],
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 30,
+                "sub": 0
+              }
+            },
+            "name": "m_guidKey"
+          }
+        ],
+        "name": "ContentKey",
+        "offset": 105246,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Pointer": {
+                "kind": 1
+              }
+            },
+            "name": "m_oContentKey"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 4,
+                "size": 4
+              }
+            },
+            "name": "m_nElementCount"
+          }
+        ],
+        "name": "ContentMarker",
+        "offset": 105293,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          }
+        ],
+        "name": "SegmentCheckback",
+        "offset": 386986,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_continuationBits"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_objectCount"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_uncompressedSize"
+          }
+        ],
+        "name": "SegmentMarker",
+        "offset": 387632,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Container": {
+                "body": [],
+                "cpp_signature": null,
+                "kind": 2
+              }
+            },
+            "name": "m_privateSignature"
+          },
+          {
+            "cpp_type": null,
+            "field_type": "String",
+            "name": "m_publicSignature"
+          }
+        ],
+        "name": "SignatureMarker",
+        "offset": 388972,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "grammar_complete": true,
+    "schema_bytes": 462765,
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "partition_sample": "Partitions/0",
+    "observed_tags_match": true,
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "signature_algorithm": "unknown",
+    "autodesk_enforcement": "not_tested"
+  },
+  {
+    "class_count": 4600,
+    "classes": [
+      {
+        "base": null,
+        "field_count": 1,
+        "name": "ContentKey",
+        "tag": 912,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "ContentMarker",
+        "tag": 913,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 1,
+        "name": "SegmentCheckback",
+        "tag": 3794,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 4,
+        "name": "SegmentMarker",
+        "tag": 3801,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "SignatureMarker",
+        "tag": 3822,
+        "version": 1
+      }
+    ],
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 30,
+                "sub": 0
+              }
+            },
+            "name": "m_guidKey"
+          }
+        ],
+        "name": "ContentKey",
+        "offset": 112141,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Pointer": {
+                "kind": 1
+              }
+            },
+            "name": "m_oContentKey"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 4,
+                "size": 4
+              }
+            },
+            "name": "m_nElementCount"
+          }
+        ],
+        "name": "ContentMarker",
+        "offset": 112188,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          }
+        ],
+        "name": "SegmentCheckback",
+        "offset": 404710,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_continuationBits"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_objectCount"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_uncompressedSize"
+          }
+        ],
+        "name": "SegmentMarker",
+        "offset": 405356,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Container": {
+                "body": [],
+                "cpp_signature": null,
+                "kind": 2
+              }
+            },
+            "name": "m_privateSignature"
+          },
+          {
+            "cpp_type": null,
+            "field_type": "String",
+            "name": "m_publicSignature"
+          }
+        ],
+        "name": "SignatureMarker",
+        "offset": 406844,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "grammar_complete": true,
+    "schema_bytes": 484585,
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "partition_sample": "Partitions/80",
+    "observed_tags_match": true,
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "signature_algorithm": "unknown",
+    "autodesk_enforcement": "not_tested"
+  },
+  {
+    "class_count": 4600,
+    "classes": [
+      {
+        "base": null,
+        "field_count": 1,
+        "name": "ContentKey",
+        "tag": 912,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "ContentMarker",
+        "tag": 913,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 1,
+        "name": "SegmentCheckback",
+        "tag": 3794,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 4,
+        "name": "SegmentMarker",
+        "tag": 3801,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "SignatureMarker",
+        "tag": 3822,
+        "version": 1
+      }
+    ],
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 30,
+                "sub": 0
+              }
+            },
+            "name": "m_guidKey"
+          }
+        ],
+        "name": "ContentKey",
+        "offset": 112141,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Pointer": {
+                "kind": 1
+              }
+            },
+            "name": "m_oContentKey"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 4,
+                "size": 4
+              }
+            },
+            "name": "m_nElementCount"
+          }
+        ],
+        "name": "ContentMarker",
+        "offset": 112188,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          }
+        ],
+        "name": "SegmentCheckback",
+        "offset": 404710,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_continuationBits"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_objectCount"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_uncompressedSize"
+          }
+        ],
+        "name": "SegmentMarker",
+        "offset": 405356,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Container": {
+                "body": [],
+                "cpp_signature": null,
+                "kind": 2
+              }
+            },
+            "name": "m_privateSignature"
+          },
+          {
+            "cpp_type": null,
+            "field_type": "String",
+            "name": "m_publicSignature"
+          }
+        ],
+        "name": "SignatureMarker",
+        "offset": 406844,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "grammar_complete": true,
+    "schema_bytes": 484585,
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "partition_sample": "Partitions/114",
+    "observed_tags_match": true,
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "signature_algorithm": "unknown",
+    "autodesk_enforcement": "not_tested"
+  },
+  {
+    "class_count": 4600,
+    "classes": [
+      {
+        "base": null,
+        "field_count": 1,
+        "name": "ContentKey",
+        "tag": 912,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "ContentMarker",
+        "tag": 913,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 1,
+        "name": "SegmentCheckback",
+        "tag": 3794,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 4,
+        "name": "SegmentMarker",
+        "tag": 3801,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "SignatureMarker",
+        "tag": 3822,
+        "version": 1
+      }
+    ],
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 30,
+                "sub": 0
+              }
+            },
+            "name": "m_guidKey"
+          }
+        ],
+        "name": "ContentKey",
+        "offset": 112141,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Pointer": {
+                "kind": 1
+              }
+            },
+            "name": "m_oContentKey"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 4,
+                "size": 4
+              }
+            },
+            "name": "m_nElementCount"
+          }
+        ],
+        "name": "ContentMarker",
+        "offset": 112188,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          }
+        ],
+        "name": "SegmentCheckback",
+        "offset": 404710,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_continuationBits"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_objectCount"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_uncompressedSize"
+          }
+        ],
+        "name": "SegmentMarker",
+        "offset": 405356,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Container": {
+                "body": [],
+                "cpp_signature": null,
+                "kind": 2
+              }
+            },
+            "name": "m_privateSignature"
+          },
+          {
+            "cpp_type": null,
+            "field_type": "String",
+            "name": "m_publicSignature"
+          }
+        ],
+        "name": "SignatureMarker",
+        "offset": 406844,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "grammar_complete": true,
+    "schema_bytes": 484585,
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "partition_sample": "Partitions/78",
+    "observed_tags_match": true,
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "signature_algorithm": "unknown",
+    "autodesk_enforcement": "not_tested"
+  },
+  {
+    "class_count": 4600,
+    "classes": [
+      {
+        "base": null,
+        "field_count": 1,
+        "name": "ContentKey",
+        "tag": 912,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "ContentMarker",
+        "tag": 913,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 1,
+        "name": "SegmentCheckback",
+        "tag": 3794,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 4,
+        "name": "SegmentMarker",
+        "tag": 3801,
+        "version": 1
+      },
+      {
+        "base": 842,
+        "field_count": 2,
+        "name": "SignatureMarker",
+        "tag": 3822,
+        "version": 1
+      }
+    ],
+    "declarations": [
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "ElementIdRef": {
+                "referenced_tag": 30,
+                "sub": 0
+              }
+            },
+            "name": "m_guidKey"
+          }
+        ],
+        "name": "ContentKey",
+        "offset": 112141,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Pointer": {
+                "kind": 1
+              }
+            },
+            "name": "m_oContentKey"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 4,
+                "size": 4
+              }
+            },
+            "name": "m_nElementCount"
+          }
+        ],
+        "name": "ContentMarker",
+        "offset": 112188,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          }
+        ],
+        "name": "SegmentCheckback",
+        "offset": 404710,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_continuationBits"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_objectCount"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_segmentSize"
+          },
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Primitive": {
+                "kind": 5,
+                "size": 4
+              }
+            },
+            "name": "m_uncompressedSize"
+          }
+        ],
+        "name": "SegmentMarker",
+        "offset": 405356,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      },
+      {
+        "ancestor_tag": null,
+        "declared_field_count": null,
+        "fields": [
+          {
+            "cpp_type": null,
+            "field_type": {
+              "Container": {
+                "body": [],
+                "cpp_signature": null,
+                "kind": 2
+              }
+            },
+            "name": "m_privateSignature"
+          },
+          {
+            "cpp_type": null,
+            "field_type": "String",
+            "name": "m_publicSignature"
+          }
+        ],
+        "name": "SignatureMarker",
+        "offset": 406844,
+        "parent": null,
+        "tag": null,
+        "was_parent_only": false
+      }
+    ],
+    "grammar_complete": true,
+    "schema_bytes": 484585,
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "partition_sample": "Partitions/61",
+    "observed_tags_match": true,
+    "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+    "signature_algorithm": "unknown",
+    "autodesk_enforcement": "not_tested"
+  }
+]

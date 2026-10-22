@@ -1,0 +1,35 @@
+{
+  "mode": "unsigned-room-finish",
+  "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "stream": "Partitions/80",
+  "changed_members": [
+    20
+  ],
+  "parameter_edit": {
+    "element_id": 348738,
+    "parameter_id": -1006903,
+    "old": "Wood",
+    "new": "Cork",
+    "object_start": 2588151,
+    "object_end": 2590702,
+    "class_tag": 3704,
+    "value_start": 2588686,
+    "value_end": 2588694,
+    "new_adler32": "ba0fc180"
+  },
+  "changed_object_records": [
+    [
+      102,
+      348738
+    ]
+  ],
+  "all_object_counts_ids_lengths_and_adler32_verified": true,
+  "all_unedited_segments_preserved": true,
+  "inflated_member_lengths_preserved": true,
+  "footer_preserved": false,
+  "signature_fields_cleared": true,
+  "footer_integrity_regenerated": false,
+  "save_bookkeeping_updated": false,
+  "revit_openability": "not_tested",
+  "production_native_export": false
+}

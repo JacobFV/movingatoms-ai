@@ -96,3 +96,18 @@ objects and Adler-32, and checks the three matching ID lists and terminal
 sentinels. [Object evidence](results/partition-objects.md) covers 736,332 records
 in the licensed corpus. Class bodies and signature generation remain outside
 this envelope encoder.
+
+`schema_probe.py` / `schema_probe.rs` bind observed partition tags to names in
+the files' embedded schemas, using a clean pinned public rvt-rs checkout.
+[Schema evidence](results/schema-bindings.md) identifies `SignatureMarker` and
+its private/public signature fields. The algorithm and Autodesk enforcement
+remain unverified. `unsigned-control` and `unsigned-room-finish` experiment
+modes clear both fields using the empty representation observed in source
+files; their acceptance for nonempty data is not assumed.
+
+`signature_bundle.py LOCAL_DIRECTORY OUTPUT.zip` packages the five prebuilt
+signature/parameter experiments and licensed original, after checking file
+hashes and exact expected reader projections. Its `VALIDATE.txt` distinguishes
+Autodesk open, Viewer conversion, and Revit save/reopen checks. No upload is
+performed. The recorded package is `local/signature-validation.zip`, with
+[manifest evidence](results/signature-validation.json).

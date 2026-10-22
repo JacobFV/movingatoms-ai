@@ -46,3 +46,14 @@ processing/rvt-native/target/release/ma-rvt-native patch research/rvt/local/RE1-
 `verify_parameter_experiment.py` checks the independent JSON/IFC comparisons.
 The `*-plan.json`, `*-writer.json`, and `room-finish-reader.json` files record
 preconditions, changed member, exact property change, and explicit limits.
+
+## Signature-field-empty variants
+
+The schema follow-up identifies the footer as `SignatureMarker`. Two further
+candidates, `unsigned-control` and `unsigned-room-finish`, clear both its
+private binary value and public string on the base content group. Their
+reader element JSON and IFC (apart from export timestamps) exactly match the
+unchanged and edited references respectively. Acceptance of unsigned nonempty
+content is still untested. `signature-validation.json` records all five
+candidate hashes; `signature_bundle.py` packages them with the original,
+fixture license, and concrete external-validation instructions.

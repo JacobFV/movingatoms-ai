@@ -1,0 +1,56 @@
+{
+  "original_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "license_sha256": "12d75062332fe0087934ce6660684e92601c9d385fe730f967dd2c4797530ec6",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "cases": [
+    {
+      "case": "recompress-control",
+      "sha256": "5346c3f69b5f961248205f929615c852ad7b1eeb0a83bd7a85489d6a988b2cd5",
+      "expected_room_finish": "Wood",
+      "reader_elements_match_expected": true,
+      "ifc_matches_expected_except_export_timestamps": true,
+      "autodesk_open": "not_tested",
+      "autodesk_save_reopen": "not_tested"
+    },
+    {
+      "case": "footer-control",
+      "sha256": "99ba268b3f1d1f0f6448577a86244368d3c598ff11368fa4fbc6e3de76ad3317",
+      "expected_room_finish": "Wood",
+      "reader_elements_match_expected": true,
+      "ifc_matches_expected_except_export_timestamps": true,
+      "autodesk_open": "not_tested",
+      "autodesk_save_reopen": "not_tested"
+    },
+    {
+      "case": "unsigned-control",
+      "sha256": "449fd8289c401d56b45a01075d2902aba1f083fbd545633c52d994bab895b4a5",
+      "expected_room_finish": "Wood",
+      "reader_elements_match_expected": true,
+      "ifc_matches_expected_except_export_timestamps": true,
+      "autodesk_open": "not_tested",
+      "autodesk_save_reopen": "not_tested"
+    },
+    {
+      "case": "room-finish",
+      "sha256": "f2862aaba1df9f429dd85a1fe5774c16c91ec9c399c5b7680bd1ee9c061e59c6",
+      "expected_room_finish": "Cork",
+      "reader_elements_match_expected": true,
+      "ifc_matches_expected_except_export_timestamps": true,
+      "autodesk_open": "not_tested",
+      "autodesk_save_reopen": "not_tested"
+    },
+    {
+      "case": "unsigned-room-finish",
+      "sha256": "1731b658818325971376255460661542d78fe9e63551751cf3f46fb4ee48accf",
+      "expected_room_finish": "Cork",
+      "reader_elements_match_expected": true,
+      "ifc_matches_expected_except_export_timestamps": true,
+      "autodesk_open": "not_tested",
+      "autodesk_save_reopen": "not_tested"
+    }
+  ],
+  "new_element_creation": false,
+  "save_bookkeeping_updated": false,
+  "signature_algorithm": "unknown",
+  "autodesk_enforcement": "not_tested"
+}
