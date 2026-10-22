@@ -1,0 +1,22 @@
+{
+  "source_sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+  "old": "Wood",
+  "new": "Polished concrete",
+  "element": 348738,
+  "changed_records": [
+    [
+      102,
+      348738
+    ]
+  ],
+  "body_bytes_before": 2531,
+  "body_bytes_after": 2557,
+  "members_before": 66,
+  "members_after": 66,
+  "unchanged_sequences_byte_identical": true,
+  "other_content_groups_byte_identical": true,
+  "signature_preserved_but_not_regenerated": true,
+  "save_bookkeeping_updated": false,
+  "autodesk_acceptance": "not_tested",
+  "complete_native_export": false
+}

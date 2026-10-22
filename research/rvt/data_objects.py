@@ -62,3 +62,33 @@ def replace_text(data,element,parameter,expected,new):
     return bytes(out),{'element_id':element,'parameter_id':parameter,'old':expected,'new':new,
                        'object_start':obj.start,'object_end':obj.end,'class_tag':obj.class_tag,
                        'value_start':start,'value_end':end,'new_adler32':f'{checksum:08x}'}
+
+
+def replace_record_text(record,parameter,expected,new):
+    """Resize one verified UTF-16 parameter in a 2024+ sequence-102 record.
+
+    Matching remains constrained to the existing bounded parameter probe;
+    arbitrary class layouts and nested string-length dependencies are not
+    inferred. The caller must validate class semantics independently.
+    """
+    from partition_objects import Record,encode_record
+    raw=encode_record(record,102,8)
+    hits=list(text_entries(raw,parameter))
+    if len(hits)!=1:raise ValueError('expected exactly one verified target parameter')
+    obj,start,end,value=hits[0]
+    if obj.start!=0 or obj.end!=len(raw) or obj.element_id!=record.element_id:
+        raise ValueError('parameter is not in the target object')
+    if value!=expected:raise ValueError('old parameter value precondition failed')
+    replacement=new.encode('utf-16le')
+    if value==new:raise ValueError('replacement must change the value')
+    if len(replacement)//2>256:raise ValueError('text exceeds tested parameter profile')
+    body=bytearray(record.body)
+    body[start-16:end-16]=replacement
+    struct.pack_into('<I',body,start-16-4,len(replacement)//2)
+    result=Record(record.element_id,bytes(body))
+    encoded=encode_record(result,102,8)
+    check=verify(encoded,0)
+    if not check or check.end!=len(encoded):raise ValueError('resized object did not verify')
+    found=list(text_entries(encoded,parameter))
+    if len(found)!=1 or found[0][3]!=new:raise ValueError('resized parameter did not round trip')
+    return result

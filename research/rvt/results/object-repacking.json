@@ -1,0 +1,62 @@
+[
+  {
+    "file": "core2024.rvt",
+    "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "content_groups": 54,
+    "object_records": 152184,
+    "repacked_members": 1644,
+    "all_ids_bodies_counts_and_checksums_preserved": true,
+    "partition_envelope_round_trip": true,
+    "autodesk_acceptance": "not_tested"
+  },
+  {
+    "file": "einhoven.rvt",
+    "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+    "content_groups": 13,
+    "object_records": 15846,
+    "repacked_members": 58,
+    "all_ids_bodies_counts_and_checksums_preserved": true,
+    "partition_envelope_round_trip": true,
+    "autodesk_acceptance": "not_tested"
+  },
+  {
+    "file": "RE1-Architecture.rvt",
+    "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+    "content_groups": 80,
+    "object_records": 115566,
+    "repacked_members": 416,
+    "all_ids_bodies_counts_and_checksums_preserved": true,
+    "partition_envelope_round_trip": true,
+    "autodesk_acceptance": "not_tested"
+  },
+  {
+    "file": "RE1-Electrical.rvt",
+    "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+    "content_groups": 293,
+    "object_records": 327600,
+    "repacked_members": 1145,
+    "all_ids_bodies_counts_and_checksums_preserved": true,
+    "partition_envelope_round_trip": true,
+    "autodesk_acceptance": "not_tested"
+  },
+  {
+    "file": "RE1-Mechanical.rvt",
+    "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+    "content_groups": 42,
+    "object_records": 61248,
+    "repacked_members": 243,
+    "all_ids_bodies_counts_and_checksums_preserved": true,
+    "partition_envelope_round_trip": true,
+    "autodesk_acceptance": "not_tested"
+  },
+  {
+    "file": "RE1-Plumbing.rvt",
+    "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+    "content_groups": 41,
+    "object_records": 63888,
+    "repacked_members": 230,
+    "all_ids_bodies_counts_and_checksums_preserved": true,
+    "partition_envelope_round_trip": true,
+    "autodesk_acceptance": "not_tested"
+  }
+]

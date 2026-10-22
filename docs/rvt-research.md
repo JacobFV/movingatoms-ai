@@ -257,3 +257,13 @@ cover the observed 28/40-byte records, owner chains, History episode ranges,
 and partition membership. Embedded schemas identify the trailing allocator
 field as `IdentifierSource.m_last`; allocation behavior is not yet proven.
 Content-keyed groups must be tracked separately from project-table elements.
+
+## Variable-length object edit
+
+The [object writer](../research/rvt/results/object-writer.md) now rebuilds whole
+and split records, compressed members and enclosing partition lengths. A real
+room finish grows by 26 bytes; independent full-graph validation preserves all
+11 objects and 10 pointer edges except the intended parameter/cursor changes.
+All 736,332 corpus records survive repacking. This does not yet implement save
+bookkeeping, signature generation or new element creation. The user confirmed
+no Autodesk installation or APS account is available for acceptance testing.

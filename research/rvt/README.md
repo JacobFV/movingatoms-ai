@@ -117,3 +117,9 @@ IDs, owner references and acyclic owner chains. `verify_element_tables.py`
 checks exact re-encoding and joins the table to History and partition object
 lists. [Table evidence](results/element-tables.md) distinguishes project IDs
 from GUID-keyed content IDs; it does not implement new-element allocation.
+
+`object_writer.py` repacks variable-length object records with guarded edits.
+`resized_parameter_experiment.py` demonstrates a longer room finish, checked
+by independent element/IFC projections and the complete schema object graph.
+[Writer evidence](results/object-writer.md) includes corpus-wide repacking and
+reproduction commands. Existing signatures are preserved, not regenerated.
