@@ -437,3 +437,10 @@ suite passes 92 tests. Its manifest binds the tested code, copied evidence and
 all artifact hashes; the code snapshot follows commit `e998483` with recorded
 working-tree additions. Rust/corpus counts in pages are recorded runs, not
 rerun by the screenshot command.
+
+### Evidence capture consistency
+
+The capture generator now reads each JSON source once and uses those same bytes
+for its hash, rendering inputs and archived copy, preventing a concurrent source
+update from mixing versions inside one capture. All existing archived source
+copies were checked against their recorded source hashes; every check passes.

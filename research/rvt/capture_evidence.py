@@ -42,9 +42,10 @@ def capture(dest,chrome):
     sources={};values={}
     for name in SOURCES:
         path=ROOT/'research/rvt/results'/f'{name}.json'
-        sources[str(path.relative_to(ROOT))]=sha(path)
-        values[name]=json.loads(path.read_bytes())
-        shutil.copyfile(path,dest/path.name)
+        snapshot=path.read_bytes()
+        sources[str(path.relative_to(ROOT))]=hashlib.sha256(snapshot).hexdigest()
+        values[name]=json.loads(snapshot)
+        (dest/path.name).write_bytes(snapshot)
     test_command=['python3','-m','unittest','discover','-s','research/rvt','-p','test_*.py']
     tested_code=code_hashes()
     test=subprocess.run(test_command,cwd=ROOT,capture_output=True,text=True)
