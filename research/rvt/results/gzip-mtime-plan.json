@@ -1,0 +1,10 @@
+{
+  "mode": "gzip-mtime",
+  "semantic_edit": false,
+  "revit_openability": "not_tested",
+  "decompressed_sha256": "ec3bad388acc4f89c3db64da0e42472c869c5adb87b27b109e14e9ef8087ba8f",
+  "decompressed_bytes": 1057030,
+  "opaque_suffix_bytes_preserved": 328,
+  "mtime_before": 0,
+  "mtime_after": 1
+}

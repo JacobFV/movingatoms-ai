@@ -20,7 +20,7 @@ zero bits is exactly 255 × 2,036 bits. All bits are stored LSB-first.
 the reciprocal generator by polynomial GCD. [Recorded evidence](../research/rvt/results/README.md)
 includes exact reproduction of **509 Core Interior pages + 10 Einhoven pages**,
 including schema streams, and byte-identical reconstruction of all 29 eligible
-streams. Seven tests cover independent scalar polynomial division over all 255
+streams. Eight Python tests cover independent scalar polynomial division over all 255
 lanes, boundary lengths, corruption, padding, truncation, and linearity.
 
 This removes the page-parity blocker. It does **not** demonstrate native element
@@ -33,6 +33,20 @@ ECC-versus-signature binary test was not decisive: a failed code search cannot
 prove a keyed signature. All 509 payload vectors were independent, so a general
 whole-page linear fit supplied no evidence either way. Issue #745 concerns
 partition reader coverage, not a page-trailer or semantic writer gate.
+
+The follow-up also identified parity on **all 29 short final pages**, contrary
+to the original handoff. Their shortened Hamming layouts use generators of
+degree 4/5/6/7/9/11. The new [Rust transport crate](../processing/rvt-native/README.md)
+verifies all **548 full/final pages**, performs atomic SHA-256-guarded stream
+transactions, and refuses stale final-page parity. Its identity write is
+whole-file byte identical. A real multipage gzip-header edit re-reads as
+byte-identical JSON for all 4,833 elements in rvt-rs. Seven Rust tests cover the
+codec, short-page layouts, allocation changes, and failed transactions.
+
+Remaining: canonical layout selection for newly sized final pages, exact
+stream/member framing and data lengths, native element encoders and reference
+bookkeeping, and an external Revit acceptance check. No native model exporter
+is wired into the processing worker.
 
 ## Ground rules
 

@@ -1,0 +1,389 @@
+[
+  {
+    "file": "core2024.rvt",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_remainder_bytes": 42732,
+        "layouts": [
+          {
+            "lanes": 167,
+            "codeword_bits": 2047,
+            "data_bits": 340012,
+            "generator": "0x805",
+            "trailing_padding_bits": 7
+          }
+        ]
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_remainder_bytes": 47337,
+        "layouts": [
+          {
+            "lanes": 185,
+            "codeword_bits": 2047,
+            "data_bits": 376660,
+            "generator": "0x805",
+            "trailing_padding_bits": 1
+          }
+        ]
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_remainder_bytes": 1967,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 242,
+            "data_bits": 15145,
+            "generator": "0x211",
+            "trailing_padding_bits": 6
+          }
+        ]
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_remainder_bytes": 60643,
+        "layouts": [
+          {
+            "lanes": 237,
+            "codeword_bits": 2047,
+            "data_bits": 482532,
+            "generator": "0x805",
+            "trailing_padding_bits": 5
+          }
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "stored_remainder_bytes": 837,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 103,
+            "data_bits": 6240,
+            "generator": "0x83",
+            "trailing_padding_bits": 1
+          }
+        ]
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_remainder_bytes": 13561,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 1669,
+            "data_bits": 107770,
+            "generator": "0x805",
+            "trailing_padding_bits": 3
+          }
+        ]
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_remainder_bytes": 134,
+        "layouts": [
+          {
+            "lanes": 71,
+            "codeword_bits": 15,
+            "data_bits": 781,
+            "generator": "0x13",
+            "trailing_padding_bits": 7
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/46",
+        "stored_remainder_bytes": 42220,
+        "layouts": [
+          {
+            "lanes": 165,
+            "codeword_bits": 2047,
+            "data_bits": 335940,
+            "generator": "0x805",
+            "trailing_padding_bits": 5
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/48",
+        "stored_remainder_bytes": 39661,
+        "layouts": [
+          {
+            "lanes": 155,
+            "codeword_bits": 2047,
+            "data_bits": 315580,
+            "generator": "0x805",
+            "trailing_padding_bits": 3
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/51",
+        "stored_remainder_bytes": 11530,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 1419,
+            "data_bits": 91520,
+            "generator": "0x805",
+            "trailing_padding_bits": 5
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/53",
+        "stored_remainder_bytes": 16120,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 1984,
+            "data_bits": 128245,
+            "generator": "0x805",
+            "trailing_padding_bits": 0
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/55",
+        "stored_remainder_bytes": 20726,
+        "layouts": [
+          {
+            "lanes": 81,
+            "codeword_bits": 2047,
+            "data_bits": 164916,
+            "generator": "0x805",
+            "trailing_padding_bits": 1
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/59",
+        "stored_remainder_bytes": 32497,
+        "layouts": [
+          {
+            "lanes": 127,
+            "codeword_bits": 2047,
+            "data_bits": 258572,
+            "generator": "0x805",
+            "trailing_padding_bits": 7
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/61",
+        "stored_remainder_bytes": 3941,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 485,
+            "data_bits": 30940,
+            "generator": "0x211",
+            "trailing_padding_bits": 3
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/65",
+        "stored_remainder_bytes": 28914,
+        "layouts": [
+          {
+            "lanes": 113,
+            "codeword_bits": 2047,
+            "data_bits": 230068,
+            "generator": "0x805",
+            "trailing_padding_bits": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "einhoven.rvt",
+    "streams": [
+      {
+        "stream": "Formats/Latest",
+        "stored_remainder_bytes": 39149,
+        "layouts": [
+          {
+            "lanes": 153,
+            "codeword_bits": 2047,
+            "data_bits": 311508,
+            "generator": "0x805",
+            "trailing_padding_bits": 1
+          }
+        ]
+      },
+      {
+        "stream": "Global/ContentDocuments",
+        "stored_remainder_bytes": 30961,
+        "layouts": [
+          {
+            "lanes": 121,
+            "codeword_bits": 2047,
+            "data_bits": 246356,
+            "generator": "0x805",
+            "trailing_padding_bits": 1
+          }
+        ]
+      },
+      {
+        "stream": "Global/DocumentIncrementTable",
+        "stored_remainder_bytes": 350,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 43,
+            "data_bits": 2405,
+            "generator": "0x43",
+            "trailing_padding_bits": 5
+          }
+        ]
+      },
+      {
+        "stream": "Global/ElemTable",
+        "stored_remainder_bytes": 10709,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 1318,
+            "data_bits": 84955,
+            "generator": "0x805",
+            "trailing_padding_bits": 2
+          }
+        ]
+      },
+      {
+        "stream": "Global/History",
+        "stored_remainder_bytes": 228,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 28,
+            "data_bits": 1495,
+            "generator": "0x25",
+            "trailing_padding_bits": 4
+          }
+        ]
+      },
+      {
+        "stream": "Global/Latest",
+        "stored_remainder_bytes": 64737,
+        "layouts": [
+          {
+            "lanes": 253,
+            "codeword_bits": 2047,
+            "data_bits": 515108,
+            "generator": "0x805",
+            "trailing_padding_bits": 5
+          }
+        ]
+      },
+      {
+        "stream": "Global/PartitionTable",
+        "stored_remainder_bytes": 130,
+        "layouts": [
+          {
+            "lanes": 69,
+            "codeword_bits": 15,
+            "data_bits": 759,
+            "generator": "0x13",
+            "trailing_padding_bits": 5
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/0",
+        "stored_remainder_bytes": 7614,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 937,
+            "data_bits": 60190,
+            "generator": "0x805",
+            "trailing_padding_bits": 7
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/1",
+        "stored_remainder_bytes": 2194,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 270,
+            "data_bits": 16965,
+            "generator": "0x211",
+            "trailing_padding_bits": 2
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/2",
+        "stored_remainder_bytes": 7906,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 973,
+            "data_bits": 62530,
+            "generator": "0x805",
+            "trailing_padding_bits": 3
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/3",
+        "stored_remainder_bytes": 3104,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 382,
+            "data_bits": 24245,
+            "generator": "0x211",
+            "trailing_padding_bits": 2
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/4",
+        "stored_remainder_bytes": 5298,
+        "layouts": [
+          {
+            "lanes": 65,
+            "codeword_bits": 652,
+            "data_bits": 41665,
+            "generator": "0x805",
+            "trailing_padding_bits": 4
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/5",
+        "stored_remainder_bytes": 35055,
+        "layouts": [
+          {
+            "lanes": 137,
+            "codeword_bits": 2047,
+            "data_bits": 278932,
+            "generator": "0x805",
+            "trailing_padding_bits": 1
+          }
+        ]
+      },
+      {
+        "stream": "Partitions/6",
+        "stored_remainder_bytes": 291,
+        "layouts": [
+          {
+            "lanes": 75,
+            "codeword_bits": 31,
+            "data_bits": 1950,
+            "generator": "0x25",
+            "trailing_padding_bits": 3
+          }
+        ]
+      }
+    ]
+  }
+]

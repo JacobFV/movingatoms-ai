@@ -1,0 +1,10 @@
+{
+  "input_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+  "output_sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+  "changed_streams": [],
+  "streams_verified": 19,
+  "parity_pages_verified": 10,
+  "final_pages_verified": 14,
+  "validation": "CFB streams and page parity only",
+  "revit_openability": "not_tested"
+}

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "output_sha256": "539d7b8b08161dfee94a918df2808d8fa557c6980c85ce4ba5c3a06b88a06af5",
+  "changed_streams": [
+    "/Global/ElemTable"
+  ],
+  "streams_verified": 20,
+  "parity_pages_verified": 509,
+  "final_pages_verified": 15,
+  "validation": "CFB streams, page parity, and unchanged-stream SHA-256",
+  "revit_openability": "not_tested"
+}

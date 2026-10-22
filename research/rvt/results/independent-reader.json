@@ -1,0 +1,20 @@
+{
+  "reader": "rvt-rs 0.6.1",
+  "source_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "experiment": "gzip-mtime",
+  "element_count": 4833,
+  "element_json_byte_identical": true,
+  "element_json_sha256": "d815d8c553e92dd62fa8d68e821f52f06a2bd9bca48bd02a00ec43eb82ce18c7",
+  "by_class": {
+    "ArcWallRectOpening": 3777,
+    "BuildingPad": 1,
+    "Column": 256,
+    "Door": 132,
+    "Floor": 99,
+    "Material": 86,
+    "Room": 116,
+    "Wall": 360,
+    "Window": 6
+  },
+  "revit_openability": "not_tested"
+}

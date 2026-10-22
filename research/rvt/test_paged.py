@@ -1,6 +1,6 @@
 import random
 import unittest
-from paged import decode, encode, trailer, MASK
+from paged import decode, encode, trailer
 from pages import PAYLOAD, STORED
 from bch_probe import polynomial_gcd
 
@@ -58,6 +58,18 @@ class ParityTests(unittest.TestCase):
         self.assertEqual(trailer(bytes(x ^ y for x, y in zip(self.payload, b))),
                          bytes(x ^ y for x, y in zip(trailer(self.payload), trailer(b))))
         self.assertEqual(trailer(bytes(PAYLOAD)), bytes(353))
+
+    def test_generator_has_all_2047_unique_nonzero_syndromes(self):
+        value = 1
+        syndromes = set()
+        for _ in range(2047):
+            syndromes.add(value)
+            value <<= 1
+            if value & 0x800:
+                value ^= 0x805
+        self.assertEqual(value, 1)
+        self.assertEqual(len(syndromes), 2047)
+        self.assertNotIn(0, syndromes)
 
     def test_payload_length_rejected(self):
         for data in (b'', self.payload[:-1], self.payload+b'x'):

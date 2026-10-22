@@ -7,7 +7,6 @@ parity-before/after-payload. Failure excludes these layouts, not ECC generally.
 """
 import argparse
 import json
-import math
 from pathlib import Path
 from pages import PAYLOAD, STORED
 
@@ -34,8 +33,9 @@ def lanes(page, count, layout, parity_layout):
 
 def probe(pages):
     results = []
-    # Equal lanes dividing both 64896 and 352. All lanes of the first pages
-    # are checked for positive candidates; two independent pages reject fast.
+    # Equal byte lanes dividing both 64896 and 352. Probe lane zero only;
+    # two independent pages can reject a proposed full-degree generator.
+    # A positive candidate would require verification on every other lane.
     for count in (1, 2, 4, 8, 16, 32):
         for layout in ('contiguous', 'striped'):
             for parity_layout in ('contiguous', 'striped'):

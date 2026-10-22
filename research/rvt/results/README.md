@@ -29,3 +29,21 @@ recovers the reciprocal `x^11 + x^9 + 1` (`0xa01`).
 The 353-byte trailer **is computable error-correction parity** for these
 fixtures. It is not a keyed signature. This does not establish any other
 integrity rules or Revit acceptance of semantic edits.
+
+## Final-page follow-up
+
+`partial-pages.json` corrects the original handoff: **short final pages also
+carry parity**. All 29 have exactly one matching layout within the tested
+family. They use 65–253 lanes, codewords up to 2047 bits, and generators
+`0x13`, `0x25`, `0x43`, `0x83`, `0x211`, or `0x805` (degrees 4, 5, 6, 7, 9, 11).
+The partial page can end partway through a byte. `partial_pages.py` reproduces
+all matches from bytes. Selection of the layout for newly sized Revit streams
+is not yet derived; exact template-based re-encoding is supported.
+
+The Rust verifier checks **519 full pages + 29 final pages = 548**.
+`rust-identity-write.json` proves an exact whole-file identity transaction.
+`rust-gzip-mtime-write.json` changes only the multipage ElemTable stream,
+regenerates its full-page parity, verifies its final-page parity, and checks
+all other streams remain identical. `independent-reader.json` records that
+rvt-rs emits byte-identical JSON for all 4,833 elements before and after.
+These are structural/transport results, not Revit-openability or model export.
