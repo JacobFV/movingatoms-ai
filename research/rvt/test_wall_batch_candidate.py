@@ -26,6 +26,14 @@ class BatchTests(unittest.TestCase):
         walls=prepare_walls(self.profile,[dict(s,yaw_degrees=a) for s,a in zip(DEMO_SPECS,[45,90,-30])])
         self.assertEqual([w['spec']['yaw_degrees'] for w in walls],[45,90,-30])
 
+    def test_height_defaults_and_changed_bounds(self):
+        self.assertEqual(validate_specs(DEMO_SPECS),validate_specs([dict(s,height_feet=15)for s in DEMO_SPECS]))
+        walls=prepare_walls(self.profile,[dict(s,height_feet=h)for s,h in zip(DEMO_SPECS,[8,10,20])])
+        self.assertEqual([w['bbox'][1][2]-w['bbox'][0][2]for w in walls],[8,10,20])
+        for h in (True,0,float('nan'),10001):
+            with self.assertRaises(ValueError):validate_specs([dict(DEMO_SPECS[0],height_feet=h)])
+        with self.assertRaises(ValueError):validate_specs([DEMO_SPECS[0],dict(DEMO_SPECS[0],height_feet=15)])
+
     def test_invalid_specs(self):
         for specs in [[], {}, [DEMO_SPECS[0]]*2, [{'length_feet':True,'translation_xy':[400,0]}],
                       [{'length_feet':12,'translation_xy':[float('nan'),0]}],

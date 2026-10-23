@@ -690,3 +690,18 @@ the Core source and 100-wall candidate. The only semantic change is the known
 structural-element set (+100 IDs, +800 bytes). No additional global bound or
 registration field is demonstrated by that audit. Its historical incoming-scan
 limits are identified explicitly; no claim of native cache regeneration follows.
+
+
+## Coordinated variable-height walls
+
+Three walls now combine independent lengths, heights and yaw in one verified
+research save. The8/10/20ft heights yield32/80/240ft³ closed solids; independent
+checks confirm level-offset constraints, geometry and unchanged prior identities
+and all360prior meshes. Candidate SHA is
+`0821a30548273a3f2d19b998f8fc45febc48ca12ca96c94143a45fe056931180`.
+All167research tests pass; nominal15ft preserves legacy bytes exactly.
+
+Reports and reproduction are in `research/rvt/results/wall-height-batch.md`.
+A genuine Chrome capture of actual IFC mesh plots is archived in
+`docs/rvt-evidence/2026-10-23-wall-heights/`, visually checked and hash verified.
+This establishes local saved geometry/constraint consistency, not native regeneration.

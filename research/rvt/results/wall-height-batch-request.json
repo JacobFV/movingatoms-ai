@@ -1,0 +1,29 @@
+[
+  {
+    "length_feet": 6.0,
+    "translation_xy": [
+      400.0,
+      0.0
+    ],
+    "yaw_degrees": 45.0,
+    "height_feet": 8.0
+  },
+  {
+    "length_feet": 12.0,
+    "translation_xy": [
+      430.0,
+      20.0
+    ],
+    "yaw_degrees": 90.0,
+    "height_feet": 10.0
+  },
+  {
+    "length_feet": 18.0,
+    "translation_xy": [
+      470.0,
+      0.0
+    ],
+    "yaw_degrees": -30.0,
+    "height_feet": 20.0
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-10-23T01:32:08.371280+00:00",
+  "source_commit": "a30b3e8606e2e8ac67b623a6667c8cbddafd03e5",
+  "working_tree_status": " M research/rvt/capture_wall_batch_evidence.py\n M research/rvt/test_wall_batch_candidate.py\n M research/rvt/test_wall_batch_verify.py\n M research/rvt/wall_batch_candidate.py\n M research/rvt/wall_batch_verify.py\n?? docs/rvt-evidence/2026-10-23-wall-heights/\n?? research/rvt/directshape_audit.py\n?? research/rvt/directshape_probe.rs\n?? research/rvt/results/directshape-default-budget-inventory.json\n?? research/rvt/results/directshape-global-registration.json\n?? research/rvt/results/directshape-incoming.json\n?? research/rvt/results/directshape-inventory.json\n?? research/rvt/results/seed_level-audit.json\n?? research/rvt/results/seed_level-profile.json\n?? research/rvt/results/seed_save_context.json\n?? research/rvt/results/seed_save_context.md\n?? research/rvt/results/wall-height-batch-ifc.json\n?? research/rvt/results/wall-height-batch-meshes.json\n?? research/rvt/results/wall-height-batch-metadata.json\n?? research/rvt/results/wall-height-batch-native.json\n?? research/rvt/results/wall-height-batch-plan.json\n?? research/rvt/results/wall-height-batch-request.json\n?? research/rvt/results/wall-height-batch-run.json\n?? research/rvt/results/wall-height.json\n?? research/rvt/results/wall-height.md\n?? research/rvt/seed_level.py\n?? research/rvt/seed_level_audit.py\n?? research/rvt/seed_level_test.py\n?? research/rvt/seed_save_context.py\n?? research/rvt/seed_save_context.rs\n?? research/rvt/seed_wall_context.rs\n?? research/rvt/test_seed_save_context.py\n?? research/rvt/test_wall_height.py\n?? research/rvt/test_wall_thickness.py\n?? research/rvt/wall_height.py\n?? research/rvt/wall_height_experiment.py\n?? research/rvt/wall_thickness.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "90bbb08ef18b075463b01ddfd056021e33500d7c19c8b4445ebc7c0ff4295c36",
+  "actual_ifc_meshes": true,
+  "not_autodesk_ui": true,
+  "source_report_sha256": {
+    "run": "c205f7989ff242fd679e8ea9c9ec4abff23f8f62e4debcff5d3b60016e82e025",
+    "native": "e96086b5d361cf65c890ecf487590bb80db9ddbc756a8735c3adf097b681eb35",
+    "metadata": "a073cb58a3ba8a3723e879b5b3bd55c39a2243f73e6862cd65a6c8904b616769",
+    "ifc": "da6a3ecba61845fa4969bff15da523fd057d07ec11da401dc7cb838eebc2de57",
+    "meshes": "4b5457785e74828e804879c8b0a6c3e718ab1683e4e77b8d424150261cffc7bf"
+  },
+  "artifacts": {
+    "batch.html": "8c0140ca5798511264a078dd848bb446d40ba9260257c965227f27e3360ae55f",
+    "batch.png": "464b75362c785d7b8e292cbe4586b1965003cfd0bc342526fd7aa16cb19730c3",
+    "ifc.json": "da6a3ecba61845fa4969bff15da523fd057d07ec11da401dc7cb838eebc2de57",
+    "measurements.json": "c97cf2aec68e8c6ce3972eec3742771d9a91e8b963e4a303c6354970368fa3dd",
+    "meshes.json": "4b5457785e74828e804879c8b0a6c3e718ab1683e4e77b8d424150261cffc7bf",
+    "meshes.png": "42bbd99f86a6e161fae6ec0eb069882af2e610f0beef4c9d1bd9f7a66e6d94e4",
+    "meshes.svg": "391d43bd32545b66ca81ad5190b706ad46b7cf3558009de4ca722b76796397ee",
+    "metadata.json": "a073cb58a3ba8a3723e879b5b3bd55c39a2243f73e6862cd65a6c8904b616769",
+    "native.json": "e96086b5d361cf65c890ecf487590bb80db9ddbc756a8735c3adf097b681eb35",
+    "run.json": "c205f7989ff242fd679e8ea9c9ec4abff23f8f62e4debcff5d3b60016e82e025"
+  }
+}

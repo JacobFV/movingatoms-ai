@@ -8,7 +8,8 @@ import uuid
 import zlib
 import olefile
 import wall_candidate as c
-from wall_oriented import encode_wall, checked_yaw
+from wall_oriented import checked_yaw
+from wall_height import encode_wall
 from wall_element_registration import register
 from new_element_registration import id_set_bytes
 
@@ -21,8 +22,8 @@ def validate_specs(specs):
         raise ValueError('requires 1..100 wall specifications')
     result = []
     for spec in specs:
-        if not isinstance(spec, dict) or not {'length_feet', 'translation_xy'} <= set(spec) or set(spec) - {'length_feet', 'translation_xy', 'yaw_degrees'}:
-            raise ValueError('spec requires length_feet, translation_xy and optional yaw_degrees')
+        if not isinstance(spec, dict) or not {'length_feet', 'translation_xy'} <= set(spec) or set(spec) - {'length_feet', 'translation_xy', 'yaw_degrees', 'height_feet'}:
+            raise ValueError('spec requires length_feet, translation_xy and optional yaw_degrees/height_feet')
         length, xy = spec['length_feet'], spec['translation_xy']
         if type(length) not in (int, float) or not math.isfinite(length) or not 0.01 <= length <= 10000:
             raise ValueError('unsupported finite wall length')
@@ -31,6 +32,10 @@ def validate_specs(specs):
         normalized = {'length_feet': float(length), 'translation_xy': list(map(float, xy))}
         yaw = checked_yaw(spec.get('yaw_degrees', 0))
         if yaw != 0: normalized['yaw_degrees'] = yaw
+        height = spec.get('height_feet', 15.0)
+        if type(height) not in (int, float) or not math.isfinite(height) or not 0.01 <= height <= 10000:
+            raise ValueError('unsupported finite wall height')
+        if height != 15: normalized['height_feet'] = float(height)
         if normalized in result:
             raise ValueError('duplicate wall specification')
         result.append(normalized)
@@ -42,7 +47,7 @@ def prepare_walls(profile, specs, first_id=133210):
     walls = []
     for offset, spec in enumerate(specs):
         ident = first_id + offset
-        bodies, graphs, audit = encode_wall(profile, ident, length_feet=spec['length_feet'],
+        bodies, graphs, audit = encode_wall(profile, ident, length_feet=spec['length_feet'], height_feet=spec.get('height_feet', 15),
             translation_xy=spec['translation_xy'], yaw_degrees=spec.get('yaw_degrees', 0), context=profile['external_references'],
             room_bounding=False, acknowledge_bounding_hypothesis=True)
         bbox = graphs['103']['objects'][0]['fields']['m_bBox']

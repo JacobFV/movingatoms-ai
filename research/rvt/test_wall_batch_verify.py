@@ -1,6 +1,6 @@
 import unittest
 import math
-from wall_batch_verify import validate_specs,expected_bounds,near,DEFAULT_SPECS,expected_vertices,vertex_set_matches,projection_frame,serialized_oracle
+from wall_batch_verify import validate_specs,expected_bounds,near,DEFAULT_SPECS,expected_vertices,vertex_set_matches,projection_frame,serialized_oracle,verify_height_constraints
 
 class BatchVerificationTests(unittest.TestCase):
     def test_distinct_lengths_and_positions(self):
@@ -37,6 +37,33 @@ class BatchVerificationTests(unittest.TestCase):
         deviation=max(min(math.dist(p,q)for q in ideal)for p in oracle['vertices_metres'])
         self.assertGreater(deviation,1e-8);self.assertLess(deviation,oracle['ideal_vertex_deviation_bound_metres'])
         self.assertEqual(oracle['decimal_places'],6)
+    def test_height_oracle_and_wrong_projection_rejected(self):
+        spec={**DEFAULT_SPECS[0],'height_feet':10.}
+        low,high=expected_bounds(spec)
+        self.assertEqual([low[2],high[2]],[76,86])
+        wall={'location_feet':[522.5,67.75,76.],'rotation_radians':0.,'extrusion':{'width_feet':6.,'depth_feet':2/3,'height_feet':10.}}
+        self.assertEqual(projection_frame(spec,wall)['dimensions_feet'],[6,2/3,10])
+        wall['extrusion']['height_feet']=15
+        with self.assertRaises(ValueError):projection_frame(spec,wall)
+        for height in (True,float('nan'),float('inf'),0):
+            with self.assertRaises(ValueError):expected_vertices(dict(spec,height_feet=height))
+
+    def test_native_height_scalar_tampering_rejected(self):
+        import json
+        from copy import deepcopy
+        from pathlib import Path
+        from wall_height import height_profile
+        profile=json.loads((Path(__file__).parent/'results/wall-element-profile.json').read_bytes())
+        graph=height_profile(profile,10)[0]['graphs']['102']
+        self.assertTrue(verify_height_constraints(graph,{'height_feet':10})['level_offset_equation_matches_requested_height'])
+        for pid in (-1001109,-1001101,-1001105,-1001108):
+            broken=deepcopy(graph)
+            params=next(o['fields']['m_paramSet']for o in broken['objects']if o['class_name']=='ParamValueSetDouble')
+            next(v for v in params if v['m_paramId']['m_id']['m_id64']==pid)['m_value']+=1
+            with self.assertRaises(ValueError):verify_height_constraints(broken,{'height_feet':10})
+        graph['objects'][0]['fields']['m_upToLevelId']['m_id']['m_id64']=-1
+        with self.assertRaises(ValueError):verify_height_constraints(graph,{'height_feet':10})
+
     def test_duplicate_ids_rejected(self):
         with self.assertRaises(ValueError):validate_specs([DEFAULT_SPECS[0],DEFAULT_SPECS[0]])
     def test_nonfinite_bounds_rejected(self):

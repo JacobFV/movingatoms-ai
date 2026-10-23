@@ -14,11 +14,12 @@ DEFAULT_SPECS=[{'element_id':133210,'length_feet':6.,'translation_xy':[400.,0.]}
 
 def expected_vertices(spec):
     """Independent rectangular solid coordinates; stretch, yaw about start, translate."""
-    length=spec['length_feet'];xy=spec['translation_xy'];yaw=spec.get('yaw_degrees',0.)
+    length=spec['length_feet'];height=spec.get('height_feet',15.);xy=spec['translation_xy'];yaw=spec.get('yaw_degrees',0.)
+    if type(height)not in(int,float)or not math.isfinite(height)or not 0.01<=height<=10000:raise ValueError('invalid finite height')
     if not math.isfinite(length)or length<=0 or len(xy)!=2 or not all(math.isfinite(v)for v in xy)or not math.isfinite(yaw):raise ValueError('invalid finite dimensions/yaw')
     angle=math.radians(yaw);c,s=math.cos(angle),math.sin(angle)
     return [[119.5+xy[0]+c*x-s*y,67.75+xy[1]+s*x+c*y,76.+z]
-            for x in (0.,length)for y in (-1/3,1/3)for z in (0.,15.)]
+            for x in (0.,length)for y in (-1/3,1/3)for z in (0.,height)]
 
 
 def expected_bounds(spec):
@@ -52,10 +53,10 @@ def projection_frame(spec,wall):
     """Accept only a proven quarter-turn reparameterization of the requested cuboid."""
     bounds=expected_bounds(spec);origin=[(bounds[0][i]+bounds[1][i])/2 for i in range(2)]+[76.]
     if not near(wall['location_feet'],origin):raise ValueError('projected origin differs')
-    actual=wall['rotation_radians']or 0.;yaw=math.radians(spec.get('yaw_degrees',0.));length=spec['length_feet']
+    actual=wall['rotation_radians']or 0.;yaw=math.radians(spec.get('yaw_degrees',0.));length=spec['length_feet'];height=spec.get('height_feet',15.)
     dimensions=[wall['extrusion'][k]for k in('width_feet','depth_feet','height_feet')]
     for quarter in (0,1,-1,2):
-        angle=yaw+quarter*math.pi/2;dims=[length,2/3,15.]if quarter%2==0 else[2/3,length,15.]
+        angle=yaw+quarter*math.pi/2;dims=[length,2/3,height]if quarter%2==0 else[2/3,length,height]
         if near(dimensions,dims)and near([math.cos(actual),math.sin(actual)],[math.cos(angle),math.sin(angle)]):
             frame={'quarter_turns':quarter,'origin_feet':origin,'angle_radians':angle,'dimensions_feet':dims}
             c,t=math.cos(angle),math.sin(angle)
@@ -81,12 +82,32 @@ def serialized_oracle(spec,frame):
             'ideal_vertex_deviation_bound_metres':bound,'bound_derivation':'sqrt(3)*epsilon + sqrt(1.5)*epsilon + half-diagonal*2*sqrt(2)*epsilon/(1-sqrt(2)*epsilon), epsilon=0.5e-6'}
 
 
+def verify_height_constraints(graph,spec):
+    """Check decoded native constraints independently of the generating encoder."""
+    root=graph['objects'][0]
+    if root['class_name']!='SWall':raise ValueError('expected wall root')
+    fields=root['fields']
+    if fields['m_assocLevelId']['m_id']['m_id64']!=20308 or fields['m_upToLevelId']['m_id']['m_id64']!=20307:
+        raise ValueError('wall level identities differ')
+    sets=[o for o in graph['objects'] if o['class_name']=='ParamValueSetDouble']
+    if len(sets)!=1:raise ValueError('ambiguous wall scalar set')
+    items=sets[0]['fields']['m_paramSet'];values={i['m_paramId']['m_id']['m_id64']:i['m_value']for i in items}
+    height=spec.get('height_feet',15.)
+    expected={-1012829:0.,-1012828:0.,-1001111:0.,-1001109:height-15.,-1001108:0.,-1001105:8.,-1001101:height}
+    if len(items)!=len(expected)or set(values)!=set(expected)or any(not math.isfinite(values[k])or abs(values[k]-v)>1e-9 for k,v in expected.items()):
+        raise ValueError('native height/offset scalar state differs')
+    return {'base_level_id':20308,'base_level_elevation_feet':76.,'top_level_id':20307,'top_level_elevation_feet':91.,
+            'top_offset_feet':values[-1001109],'base_offset_feet':values[-1001108],
+            'measured_cached_height_feet':values[-1001101],'inactive_unconnected_height_feet':values[-1001105],
+            'level_offset_equation_matches_requested_height':abs(91+values[-1001109]-76-values[-1001108]-height)<1e-9}
+
+
 def native_verify(reader,target,source,candidate,profile,specs):
     import olefile,zlib
     from codec import decode as unpage
     from save_candidate import unpack_global
     from schema_probe import REV
-    from wall_parametric import encode_wall
+    from wall_height import encode_wall
     from new_element_registration import semantic_graph
     from wall_brep_audit import audit_graph,face_polygon,resolver
     validate_specs(specs);reader=reader.resolve();target=target.resolve()
@@ -117,11 +138,7 @@ def native_verify(reader,target,source,candidate,profile,specs):
         for spec in specs:
             ident=spec['element_id'];result=probe(candidate,ident)
             if result['summary']['current_records_outside_route']or len(result['records'])!=3:raise ValueError('batch routing incomplete')
-            encoder=encode_wall;extra={}
-            if spec.get('yaw_degrees',0):
-                from wall_oriented import encode_wall as oriented_encode
-                encoder=oriented_encode;extra={'yaw_degrees':spec['yaw_degrees']}
-            bodies,graphs,_=encoder(profile,ident,length_feet=spec['length_feet'],translation_xy=spec['translation_xy'],context=profile['external_references'],room_bounding=False,acknowledge_bounding_hypothesis=True,**extra)
+            bodies,graphs,_=encode_wall(profile,ident,length_feet=spec['length_feet'],height_feet=spec.get('height_feet',15),translation_xy=spec['translation_xy'],yaw_degrees=spec.get('yaw_degrees',0),context=profile['external_references'],room_bounding=False,acknowledge_bounding_hypothesis=True)
             records={r['channel']:r for r in result['records']}
             if set(records)!={101,102,103}:raise ValueError('batch channel inventory differs')
             channels={}
@@ -130,8 +147,9 @@ def native_verify(reader,target,source,candidate,profile,specs):
                 if r['identity']['element_id']!=ident or r['source']['stream']!='Partitions/66'or not g or g['consumed_bytes']!=r['source']['body_bytes']:raise ValueError('incomplete batch graph')
                 if semantic_graph(g)!=semantic_graph(graphs[str(ch)])or r['source']['body_sha256']!=hashlib.sha256(bodies[ch]).hexdigest():raise ValueError('batch body semantics differ')
                 channels[str(ch)]={'objects':len(g['objects']),'edges':len(g['edges']),'bytes':g['consumed_bytes'],'sha256':r['source']['body_sha256']}
+            height_constraint=verify_height_constraints(records[102]['graph'],spec)
             brep=audit_graph(records[103]['graph']);bounds=brep['native_vertex_bounds_feet'];expected=expected_bounds(spec)
-            if not all(near(a,b)for a,b in zip(bounds,expected))or abs(brep['closed_solid_volume_cubic_feet']-spec['length_feet']*10)>1e-7:raise ValueError('saved native BRep dimensions/volume differ')
+            if not all(near(a,b)for a,b in zip(bounds,expected))or abs(brep['closed_solid_volume_cubic_feet']-spec['length_feet']*(2/3)*spec.get('height_feet',15.))>1e-7:raise ValueError('saved native BRep dimensions/volume differ')
             solids=[g for g in brep['geometry_components']if g['closed']]
             if len(solids)!=1:raise ValueError('expected one closed native solid')
             native_vertices=[];resolve=resolver(records[103]['graph'])
@@ -140,12 +158,12 @@ def native_verify(reader,target,source,candidate,profile,specs):
                 for point in polygon:
                     if not any(near(point,p)for p in native_vertices):native_vertices.append(point)
             if not vertex_set_matches(native_vertices,expected_vertices(spec),1e-7):raise ValueError('native rotated vertex set differs')
-            length=spec['length_feet'];area=2*(length*(2/3)+length*15+(2/3)*15)
+            length=spec['length_feet'];height=spec.get('height_feet',15.);area=2*(length*(2/3)+length*height+(2/3)*height)
             if abs(solids[0]['surface_area_square_feet']-area)>1e-7:raise ValueError('native surface area differs')
             brep['expected_transformed_vertex_set_matches']=True;brep['expected_closed_surface_area_square_feet']=area
             outlines=[o['fields']['m_minmax']for o in records[101]['graph']['objects']if o['class_name']=='Outline']
             if len(outlines)!=1 or not all(near(a,b)for a,b in zip(outlines[0],bounds)):raise ValueError('header bounds differ from native BRep')
-            rows.append({'spec':spec,'native_identity':new[str(ident)],'channels':channels,'native_brep':brep,'header_outline_matches_brep':True});all_records.extend(result['records'])
+            rows.append({'spec':spec,'native_identity':new[str(ident)],'channels':channels,'native_brep':brep,'header_outline_matches_brep':True,'height_constraints':height_constraint});all_records.extend(result['records'])
         decode={'candidate_sha256':hashlib.sha256(candidate.read_bytes()).hexdigest(),'reader_revision':REV,'probe_binary_sha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'probe_source_sha256':hashlib.sha256(probe_source).hexdigest(),'records':all_records}
         decoded=candidate.with_name(candidate.stem+'-independent-graphs.json');decoded.write_text(json.dumps(decode,indent=2)+'\n')
         projections=[];artifacts=[]
@@ -225,7 +243,7 @@ def ifc_verify(source,candidate,native_report,mesh_result):
         if deviation>oracle['ideal_vertex_deviation_bound_metres']+1e-8:raise ValueError('STEP quantization exceeds independently derived bound')
         shape.update(expected_transformed_vertex_set_matches=True,surface_area_square_metres=area,expected_surface_area_square_metres=expected_area,
             yaw_degrees=spec.get('yaw_degrees',0.),dimensions_basis='validated equivalent serialized profile axes',
-            requested_dimensions_metres=[spec['length_feet']*.3048,(2/3)*.3048,15*.3048],
+            requested_dimensions_metres=[spec['length_feet']*.3048,(2/3)*.3048,spec.get('height_feet',15.)*.3048],
             maximum_ideal_vertex_deviation_metres=deviation,serialization_oracle=oracle)
         if len(v)!=8 or len(f)!=36:raise ValueError('batch mesh topology differs')
         element=models[1].by_guid(guid)

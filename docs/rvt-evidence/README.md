@@ -183,3 +183,11 @@ the pinned MIT project, complete record coverage and absent building instances.
 This is an unchanged-source inventory, not an edited model acceptance test.
 
 ![Minimal project inventory report](2026-10-23-minimal-seed/seed.png)
+
+
+## Variable wall heights — 2026-10-23
+
+[Manifest](2026-10-23-wall-heights/manifest.json) binds full saved-file checks and
+actual IFC meshes for8/10/20ft heights with differing lengths and rotations.
+
+![Saved native wall height evidence](2026-10-23-wall-heights/batch.png)
