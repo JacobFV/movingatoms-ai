@@ -19,6 +19,13 @@ class SurfaceWrapperTests(unittest.TestCase):
   bodies,graphs,audit,components=construct_metres(self.schema,self.profile,self.root,2746,points,[[0,1,2],[3,4,5]],self.config,chunk_vertex_limit=3,acknowledge_hypotheses=True)
   self.assertEqual(set(bodies),{101,102,103});self.assertEqual(audit['triangle_count'],2);self.assertEqual(len(components),2)
   self.assertEqual(components[0]['fields']['m_pointsArr'][1],[1.,0.,0.]);self.assertEqual(graphs[103]['objects'][0]['fields']['m_elementId'],2746)
+ def test_explicit_material_binding(self):
+  self.config['material_id']=91
+  _,graphs,_,_=construct_metres(self.schema,self.profile,self.root,2746,[[0,0,0],[1,0,0],[0,1,0]],[[0,1,2]],self.config,acknowledge_hypotheses=True)
+  for channel in(102,103):
+   mesh=next(o for o in graphs[channel]['objects']if o['class_name']=='GPolyMesh')
+   self.assertEqual(mesh['fields']['m_materialID']['m_id']['m_id64'],91)
+  self.assertIn(91,[v['m_id']['m_id64']for v in graphs[101]['objects'][2]['fields']['m_deletion']])
  def test_hypothesis_opt_in_required(self):
   with self.assertRaisesRegex(ValueError,'acknowledgment'):construct_metres(self.schema,self.profile,self.root,2746,[[0,0,0],[1,0,0],[0,1,0]],[[0,1,2]],self.config)
 

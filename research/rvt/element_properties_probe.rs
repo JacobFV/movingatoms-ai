@@ -15,10 +15,12 @@ fn main()->Result<(),Box<dyn std::error::Error>>{
     &rvt::native_parameters::GraphLimits{max_values:2_000_000,..Default::default()})?;
   println!("{}",serde_json::json!({"graph":graph,"catalog":catalog,"source":source,"declarations":registry.classes}));return Ok(())
  }
+ // Bounded mesh documents allow 100k vertices and 200k triangles. Decode all
+ // source data (including attached ES) rather than truncating the graph.
  if a[1]=="esdecode" {
   let registry=rvt::schema_registry::parse(&std::fs::read(&a[2])?)?;
   let catalog:rvt::native_extensible_storage::Catalog=serde_json::from_slice(&std::fs::read(&a[4])?)?;
-  let graph=rvt::native_parameters::decode_graph_with_catalog(&std::fs::read(&a[3])?,&registry,&Default::default(),Some(&catalog))?;
+  let graph=rvt::native_parameters::decode_graph_with_catalog(&std::fs::read(&a[3])?,&registry,&rvt::native_parameters::GraphLimits{max_values:10_000_000,max_objects:500_000,..Default::default()},Some(&catalog))?;
   println!("{}",serde_json::to_string(&graph)?);return Ok(())
  }
  if a[1]=="schema" {
@@ -27,7 +29,7 @@ fn main()->Result<(),Box<dyn std::error::Error>>{
  }
  if a[1]=="decode" {
   let registry=rvt::schema_registry::parse(&std::fs::read(&a[2])?)?;
-  let graph=rvt::native_parameters::decode_graph(&std::fs::read(&a[3])?,&registry)?;
+  let graph=rvt::native_parameters::decode_graph_with_limits(&std::fs::read(&a[3])?,&registry,&rvt::native_parameters::GraphLimits{max_values:10_000_000,max_objects:500_000,..Default::default()})?;
   println!("{}",serde_json::to_string(&graph)?);return Ok(())
  }
  let mut file=rvt::RevitFile::open(&a[1])?;

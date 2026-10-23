@@ -1,0 +1,215 @@
+{
+  "seq": 7,
+  "levels": [
+    {
+      "id": "lvl_ground0000000000",
+      "kind": "level",
+      "params": {
+        "elevation": 0
+      },
+      "props": {
+        "name": "Ground"
+      },
+      "version": 1
+    }
+  ],
+  "types": [],
+  "elements": [
+    {
+      "id": "wall_0000000000000000",
+      "kind": "wall",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "start": [
+          0,
+          0
+        ],
+        "end": [
+          6,
+          0
+        ],
+        "thickness": 0.2,
+        "height": 3
+      },
+      "props": {
+        "name": "Wall 0"
+      },
+      "version": 1
+    },
+    {
+      "id": "wall_0000000000000001",
+      "kind": "wall",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "start": [
+          6,
+          0
+        ],
+        "end": [
+          6,
+          4
+        ],
+        "thickness": 0.2,
+        "height": 3
+      },
+      "props": {
+        "name": "Wall 1"
+      },
+      "version": 1
+    },
+    {
+      "id": "wall_0000000000000002",
+      "kind": "wall",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "start": [
+          6,
+          4
+        ],
+        "end": [
+          0,
+          4
+        ],
+        "thickness": 0.2,
+        "height": 3
+      },
+      "props": {
+        "name": "Wall 2"
+      },
+      "version": 1
+    },
+    {
+      "id": "wall_0000000000000003",
+      "kind": "wall",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "start": [
+          0,
+          4
+        ],
+        "end": [
+          0,
+          0
+        ],
+        "thickness": 0.2,
+        "height": 3
+      },
+      "props": {
+        "name": "Wall 3"
+      },
+      "version": 1
+    },
+    {
+      "id": "door_0000000000000001",
+      "kind": "door",
+      "parent_id": "wall_0000000000000000",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "along": 2,
+        "width": 0.9,
+        "height": 2.1,
+        "sill": 0
+      },
+      "version": 1
+    },
+    {
+      "id": "win_00000000000000001",
+      "kind": "window",
+      "parent_id": "wall_0000000000000001",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "along": 2,
+        "width": 1.2,
+        "height": 1.2,
+        "sill": 1
+      },
+      "version": 1
+    },
+    {
+      "id": "slab_000000000000001",
+      "kind": "slab",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "outline": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "thickness": 0.25,
+        "offset": 0
+      },
+      "version": 1
+    },
+    {
+      "id": "col_00000000000000001",
+      "kind": "column",
+      "level_id": "lvl_ground0000000000",
+      "params": {
+        "position": [
+          3,
+          2
+        ],
+        "section": {
+          "shape": "rect",
+          "w": 0.4,
+          "d": 0.4
+        },
+        "height": 3
+      },
+      "version": 1
+    },
+    {
+      "id": "pipe_000000000000001",
+      "kind": "pipe",
+      "params": {
+        "start": [
+          1,
+          1,
+          2.5
+        ],
+        "end": [
+          5,
+          1,
+          2.5
+        ],
+        "od": 0.1683
+      },
+      "version": 1
+    },
+    {
+      "id": "beam_000000000000001",
+      "kind": "beam",
+      "params": {
+        "start": [
+          0.5,
+          3,
+          2.8
+        ],
+        "end": [
+          5.5,
+          3,
+          2.8
+        ],
+        "profile": {
+          "shape": "rect",
+          "w": 0.2,
+          "h": 0.3
+        }
+      },
+      "version": 1
+    }
+  ]
+}

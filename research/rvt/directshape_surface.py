@@ -30,6 +30,14 @@ def construct_components(schema,mesh_profile,legacy_root,new_id,components,confi
  bounds=[[min(p[i]for c in components for p in c['fields']['m_pointsArr'])for i in range(3)],
          [max(p[i]for c in components for p in c['fields']['m_pointsArr'])for i in range(3)]]
  template=deepcopy(graphs[103]['objects'][1])
+ if 'material_id' in config:
+  material=config['material_id']
+  if type(material)is not int or material==0 or material < -1:raise ValueError('positive material ID or -1 sentinel required')
+  template['fields']['m_materialID']={'m_id':{'m_id64':material}}
+  if material>0:
+   parents=graphs[101]['objects'][2]['fields']['m_deletion']
+   if material not in [p['m_id']['m_id64']for p in parents]:parents.append({'m_id':{'m_id64':material}})
+   parents.sort(key=lambda p:p['m_id']['m_id64'])
  def geometry(root,first_token):
   root=deepcopy(root);root['fields'].update(m_bBox=bounds,m_tightbBox=bounds,
    m_subNodes=[{'class_tag':mesh_tag,'pointer_token':first_token+i}for i in range(len(components))])

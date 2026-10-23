@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "units": "metres",
+  "levels": [
+    {
+      "id": "basement",
+      "name": "Basement Δ",
+      "elevation": -3
+    },
+    {
+      "id": "ground",
+      "name": "Level 1",
+      "elevation": 0
+    },
+    {
+      "id": "roof",
+      "name": "Roof Ω",
+      "elevation": 7
+    }
+  ],
+  "elements": [
+    {
+      "id": "wall-a",
+      "name": "Ground wall",
+      "category": "wall",
+      "level_id": "ground",
+      "properties": {
+        "material": "concrete",
+        "dimensions": {
+          "length": 4,
+          "width": 0.2,
+          "height": 3
+        },
+        "reviewed": true
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              4,
+              0.2,
+              0
+            ],
+            [
+              0,
+              0.2,
+              0
+            ],
+            [
+              0,
+              0,
+              3
+            ],
+            [
+              4,
+              0,
+              3
+            ],
+            [
+              4,
+              0.2,
+              3
+            ],
+            [
+              0,
+              0.2,
+              3
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              4,
+              5,
+              6
+            ],
+            [
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              5
+            ],
+            [
+              0,
+              5,
+              4
+            ],
+            [
+              1,
+              2,
+              6
+            ],
+            [
+              1,
+              6,
+              5
+            ],
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              2,
+              7,
+              6
+            ],
+            [
+              3,
+              0,
+              4
+            ],
+            [
+              3,
+              4,
+              7
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open-panels",
+      "name": "Basement open panels Δ",
+      "category": "generic",
+      "level_id": "basement",
+      "properties": {
+        "nested": {
+          "tags": [
+            "open",
+            "disconnected",
+            "Δ"
+          ],
+          "optional": null
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              -3,
+              -3,
+              -3
+            ],
+            [
+              -1,
+              -3,
+              -3
+            ],
+            [
+              -1,
+              -1,
+              -3
+            ],
+            [
+              -3,
+              -1,
+              -3
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "vertices": [
+            [
+              1,
+              -3,
+              -3
+            ],
+            [
+              3,
+              -3,
+              -3
+            ],
+            [
+              1,
+              -1,
+              -3
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-a",
+      "name": "Roof surface Ω",
+      "category": "roof",
+      "level_id": "roof",
+      "properties": {
+        "slope": 0.25,
+        "notes": "Independent surface, no solid volume claim"
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0,
+              0,
+              7
+            ],
+            [
+              4,
+              0,
+              7
+            ],
+            [
+              4,
+              4,
+              8
+            ],
+            [
+              0,
+              4,
+              8
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

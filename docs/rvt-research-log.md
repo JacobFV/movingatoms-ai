@@ -784,3 +784,38 @@ actual-mesh screenshot with verified hashes is archived under
 `2026-10-23-named-levels-corrected`. The earlier capture failed before creating
 an image due to a feet/metres report-key mismatch; its failure record is retained.
 The writer remains a bounded research profile, with native acceptance untested.
+
+## Saved DirectShape surfaces and application metadata
+
+Commit `5a97a1d` adds complete 2024 DirectShape records, closed and arbitrary
+triangle surface encoders, signed16-safe primitive chunking, measured seed
+categories, and our own ExtensibleStorage schema. The saved DirectShape control
+has SHA `a971271cbc5eac80a471cd9498e5ae1dbe70d9baecd3e25a4145c28b5f912623`;
+independent saved graphics recover all 12 triangles and their normals. A failed
+first verifier expectation about owner-local versus shared-symbol geometry is
+retained in `results/seed-directshape-failed-run.json`; corrected checks require
+owner-local geometry explicitly. The candidate bytes did not change.
+
+The saved metadata control has SHA
+`1649a4c383bb742c4b6b8c8edd3ad253a09fc2c0d7c7f4d1ad1ee4bd90a5e6f5`.
+An independent dynamic schema reader recovers exact names, application IDs and
+nested JSON. Attachment tests preserve existing DirectShape and wall geometry;
+batch owners share one registered schema. Open/disconnected and 33,000-vertex
+controls preserve every one of 11,000 triangles through independent saved-scene
+extraction. At this checkpoint all 270 research tests pass.
+
+The genuine Chrome screenshot and its actual saved-mesh arrays, reports and
+hash manifest are archived in `docs/rvt-evidence/2026-10-23-directshape-mesh/`.
+This is our evidence report, not Autodesk UI. DirectShape lifecycle options,
+category support and no-Global-instance-registration policy remain hypotheses.
+
+## Offline model adapter
+
+Commit `ebff228` adds a strict production-model adapter and an offline experimental
+export command without changing customer build jobs. All live products must have
+geometry; missing, extra, invalid or unsupported geometry fails explicitly.
+Properties and part names/material hints are retained in our metadata envelope.
+Openings are rejected because mesh inventory alone cannot prove baked void
+semantics. The existing room fixture converts to 10 elements, 12 mesh parts and
+312 triangles, all accepted by the surface encoder. The adapter/export boundary
+and existing model/job tests pass together: 37 tests.
