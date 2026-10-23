@@ -4,6 +4,7 @@ import Anthropic from '@anthropic-ai/sdk'
 import type { Env } from '../../../src/env'
 import type { Message } from '../../../src/messages'
 import type { Author, LiveModel, Op } from './model'
+import { publishBuildInput } from './build-input'
 
 export const AGENT_AUTHOR: Author = { kind: 'agent', id: 'agent', name: 'Atom' }
 const MAX_ITERATIONS = 25
@@ -19,7 +20,7 @@ How you work:
 - Use viewer_command to show them what you mean (isolate or highlight elements, fly the camera, draw a box).
 - For long work, post_progress short notes so they can follow along. Your last text is your answer.
 - Scan conversion runs on the platform's processing workers, not in your tools. You can start three kinds of work there, which finish in the background (the person sees progress in the project):
-  publish_revision builds a checkpoint of the model: model.glb, IFC (it opens in Revit; a native .rvt file can't be produced here) and a new revision;
+  publish_revision normally builds a checkpoint of the model: model.glb, IFC (it opens in Revit) and a new revision. It can also request an experimental native RVT candidate with an evidence report. Enable experimental_native_rvt only when the person explicitly requests that experimental output; set acknowledge_native_hypotheses only when they have acknowledged that Revit opening, regeneration and saving are unverified. Keep both flags false for ordinary checkpoints or IFC requests. Honor an acknowledgment already given in this conversation; do not ask again. Never describe the candidate as Revit-validated or as native editable families;
   fit_to_scan fits elements (walls, columns, beams, pipes, ducts) to the scan points and updates them;
   compute_heatmap measures the scan's deviation from the model.
   Start them when the person asks, or when a checkpoint is due after a batch of edits; say what you started.
@@ -117,11 +118,16 @@ export const TOOLS: Anthropic.Beta.BetaTool[] = [
   },
   {
     name: 'publish_revision',
-    description: 'Build a checkpoint of the current model on the processing workers: a new revision with model.glb and an IFC file (IFC opens in Revit). Returns the job id.',
+    description: 'Build a checkpoint with GLB and IFC on the processing workers. Explicitly requested and acknowledged experimental native RVT adds a candidate and evidence report; Revit opening, regeneration and saving are unverified. Returns the job id.',
     input_schema: {
       type: 'object',
-      properties: { title: { type: 'string', description: 'Short revision title' }, notes: { type: 'string', description: 'What changed since the last revision' } },
-      required: ['title', 'notes'],
+      properties: {
+        title: { type: 'string', description: 'Short revision title' },
+        notes: { type: 'string', description: 'What changed since the last revision' },
+        experimental_native_rvt: { type: 'boolean', description: 'False by default. True only for an explicit request for an experimental native RVT candidate and evidence report.' },
+        acknowledge_native_hypotheses: { type: 'boolean', description: 'False by default. True only when experimental output is selected and the person has acknowledged unverified Revit opening, regeneration and saving.' },
+      },
+      required: ['title', 'notes', 'experimental_native_rvt', 'acknowledge_native_hypotheses'],
       additionalProperties: false,
     },
     strict: true,
@@ -233,8 +239,13 @@ async function runTool(host: AgentHost, name: string, input: any): Promise<{ con
     case 'compute_heatmap': {
       const type = name === 'publish_revision' ? 'build' : name === 'fit_to_scan' ? 'model_fit' : 'heatmap'
       let jobInput: Record<string, unknown>
-      if (type === 'build') jobInput = { title: String(input.title ?? '').slice(0, 200), notes: String(input.notes ?? '').slice(0, 4000), by: 'agent' }
-      else if (type === 'model_fit') {
+      if (type === 'build') {
+        try {
+          jobInput = publishBuildInput(input)
+        } catch (e) {
+          return { content: (e as Error).message, isError: true }
+        }
+      } else if (type === 'model_fit') {
         const ids = [...new Set(((input.element_ids ?? []) as unknown[]).map(String))].slice(0, 500)
         if (!ids.length) return { content: 'Give at least one element id.', isError: true }
         jobInput = { element_ids: ids, by: 'agent' }
@@ -246,8 +257,9 @@ async function runTool(host: AgentHost, name: string, input: any): Promise<{ con
         .run()
       host.emit({ type: 'job.updated', id, type_: type, status: 'queued', stage: null, progress: 0, job: { id, type, status: 'queued', stage: null, progress: 0 } })
       await host.jobQueued()
-      await host.activity(`Started ${type.replace('_', ' ')} on the processing workers`, { kind: 'tool', text: `${name} → job ${id.slice(0, 8)}` })
-      return { content: JSON.stringify({ job_id: id, type, status: 'queued', note: 'Runs in the background; the person sees its progress. Do not wait for it.' }) }
+      const experimental = jobInput.experimental_native_rvt === true
+      await host.activity(`Started ${experimental ? 'an experimental native RVT build' : type.replace('_', ' ')} on the processing workers`, { kind: 'tool', text: `${name} → job ${id.slice(0, 8)}` })
+      return { content: JSON.stringify({ job_id: id, type, status: 'queued', note: experimental ? 'Experimental native RVT candidate and evidence report requested; Revit opening, regeneration and saving are unverified. Runs in the background; do not wait for it.' : 'Runs in the background; the person sees its progress. Do not wait for it.' }) }
     }
     case 'post_progress':
       await host.postMessage({ text: String(input.text), phase: 'commentary', item: `msg_${crypto.randomUUID().slice(0, 8)}` })

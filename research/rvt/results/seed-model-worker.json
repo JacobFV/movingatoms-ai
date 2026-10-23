@@ -1,0 +1,29 @@
+{
+  "status": "verified_experimental_worker_integration",
+  "candidate_sha256": "96677553b237e357d5b69b39426670641a05248156dcefe8d93365bd819d4660",
+  "local_directory": "research/rvt/local/seed-model-worker-run",
+  "test_transport": "in-memory FakeApi; no external uploads/messages",
+  "registered_deliverables": 4,
+  "staged_artifacts": 6,
+  "artifact_sha256": {
+    "model.glb": "a0e039b6d64b706b9284251ab7db38401d7b20c61ca47af89a65b5673138ce60",
+    "graph.json": "3af2c9ee16590fd95b4c8278f6febf546bce8e6eb8f1a55914206374bfc447a5",
+    "index.json": "89f92a2b5298fec4a17c264674b903c45e42a4bd26fdb8035ef0621dd50a3c33",
+    "model.ifc": "1ce09fd00aaca90715b75878747a8cffcd6d23a0ba252d6fbf871d957bba0aa3",
+    "model.experimental.rvt": "96677553b237e357d5b69b39426670641a05248156dcefe8d93365bd819d4660",
+    "model.experimental.validation.json": "d1ec8b4a40284a6bfbe04f7acd92125c6495257f239ade8c9e9a45d5dfef09ea"
+  },
+  "worker_record_sha256": "c0231b5d3b3922d2d5d597cb53f0d6dc5f9d79ee925321398d482c127708015a",
+  "runtime_bundle": "research/rvt/local/runtime-bundle-v2",
+  "runtime_manifest_sha256": "1c59b4593435f9e3a8f4c84f43e8b2d5d1574693685d2c708ec1a74de3834166",
+  "elements": 10,
+  "triangles": 312,
+  "prior_native_identities_preserved": 2300,
+  "independent_reports_present": [
+    "transport.json",
+    "metadata.json",
+    "native.json"
+  ],
+  "qualification": "not_tested",
+  "production_native_export": false
+}
