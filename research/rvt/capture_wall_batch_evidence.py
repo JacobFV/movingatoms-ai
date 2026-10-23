@@ -33,7 +33,8 @@ def capture(run_dir, output):
     if evidence['native_candidate_sha256']!=candidate or hashlib.sha256(raws['meshes']).hexdigest()!=ifc['mesh_evidence_sha256']:raise ValueError('mesh evidence binding differs')
     if evidence['units']!='metres' or evidence['coordinates']!='world':raise ValueError('unsupported coordinate convention')
     meshes=[m for m in evidence['meshes'] if m['label']=='new']
-    if len(meshes)!=3 or [m['native_element_id'] for m in meshes]!=run['new_element_ids']:raise ValueError('capture requires verified three-wall batch')
+    if len(meshes)<3 or [m['native_element_id'] for m in meshes]!=run['new_element_ids']:raise ValueError('capture requires at least three verified walls')
+    total_walls=len(meshes);meshes=meshes[:3]
     output=output.resolve();output.mkdir(parents=True,exist_ok=False)
     for name,raw in raws.items():(output/(name+'.json')).write_bytes(raw)
     shared=np.max([np.ptp(np.array(m['vertices']),axis=0) for m in meshes],axis=0)+[.4,.5,.2]
@@ -54,11 +55,13 @@ def capture(run_dir, output):
     # Normalize Matplotlib's trailing SVG spaces before hashing/capture.
     svg=output/'meshes.svg';svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     (output/'measurements.json').write_text(json.dumps(measurements,indent=2)+'\n')
-    rows=''.join(f'<tr><td>{w["spec"]["element_id"]}</td><td>{w["spec"]["length_feet"]:g} ft</td><td>{w["native_brep"]["closed_solid_volume_cubic_feet"]:.6f} ft³</td><td>6 / 12 / 8</td></tr>' for w in native['walls'])
+    rows=''.join(f'<tr><td>{w["spec"]["element_id"]}</td><td>{w["spec"]["length_feet"]:g} ft</td><td>{w["native_brep"]["closed_solid_volume_cubic_feet"]:.6f} ft³</td><td>6 / 12 / 8</td></tr>' for w in native['walls'][:3])
     timestamp=datetime.now(timezone.utc).isoformat();revision=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     body='''<!doctype html><html lang="en"><meta charset="utf-8"><title>Native wall batch evidence</title><style>body{background:#edf1f5;color:#172338;font:18px Arial;margin:0}main{background:white;max-width:1160px;margin:28px auto;padding:28px;border-top:7px solid #166c61}h1{font-size:30px}.cards{display:flex;gap:16px}.card{flex:1;background:#eef7f5;padding:16px}strong.big{display:block;font-size:27px}table{border-collapse:collapse;width:100%;font-size:17px}td,th{text-align:left;padding:10px;border-bottom:1px solid #d9e1e6}.notice{background:#fff3dc;padding:16px;margin:18px 0}pre{font-size:12px;white-space:pre-wrap}small,footer{font-size:12px;color:#536274}</style><main><small>RVT CLEAN-ROOM RESEARCH · NATIVE SOLIDS AND INDEPENDENT IFC MESHES</small><h1>Three new walls in one coordinated save</h1>'''
-    body+=f'<div class="cards"><div class="card"><strong class="big">{native["prior_native_identities_preserved"]:,}</strong>existing native identities preserved</div><div class="card"><strong class="big">{ifc["existing_wall_meshes_exactly_unchanged"]}</strong>existing wall meshes unchanged</div><div class="card"><strong class="big">3 walls / 1 episode</strong>distinct IDs and registrations</div></div>'
+    body=body.replace('Three new walls in one coordinated save',f'{total_walls} new walls in one coordinated save')
+    body+=f'<div class="cards"><div class="card"><strong class="big">{native["prior_native_identities_preserved"]:,}</strong>existing native identities preserved</div><div class="card"><strong class="big">{ifc["existing_wall_meshes_exactly_unchanged"]}</strong>existing wall meshes unchanged</div><div class="card"><strong class="big">{total_walls} walls / 1 episode</strong>distinct IDs and registrations</div></div>'
     body+='<img style="width:100%" src="meshes.svg" alt="Actual IFC meshes at equal scale">'
+    if total_walls>3:body+=f'<p>Showing the first three actual meshes of {total_walls} independently checked new walls. All mesh arrays and full validation reports are archived.</p>'
     body+='<table><thead><tr><th>Native ID</th><th>Length</th><th>Saved native solid volume</th><th>Faces / edges / vertices</th></tr></thead><tbody>'+rows+'</tbody></table>'
     body+='<p>Native face loops, closed-solid incidence, volume and saved bounds are measured independently from the actual saved RVT. The plots above use separately triangulated IFC meshes. Source partitions and existing geometry are retained.</p>'
     body+='<div class="notice"><strong>Validation boundary:</strong> local research checks passed. This is not a Revit UI capture. Foreign-producer encoding, native regeneration and Autodesk acceptance remain unverified. IFC schema checks use explicitly recorded OwnerHistory correction controls.</div>'

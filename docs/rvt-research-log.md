@@ -601,3 +601,21 @@ clipping panels two and three. Passing a copy fixes the renderer. The rejected c
 is retained with `REJECTED.md`; the corrected screenshot is the documentation default.
 No candidate bytes, mesh data or validation results changed. Corrected capture hashes
 were verified and its three panels visually inspected.
+
+
+## 100-wall boundary and compression stress
+
+Executed the same complete workflow at its 100-wall request limit using 6/12/18-foot
+lengths and alternating Y placements. All four stages passed. New IDs133210–133309
+share one episode; both increment counts are100. The new logical partition is33,939
+bytes with ten gzip members, exercising cross-member object reconstruction. Independent
+saved-solid volumes total11,940ft³; IFC has460walls, with all360originalmeshes exact.
+Both explicit corrected IFC controls have zero schema messages. Original identities,
+rows, source partitions and projected entities remain preserved.
+
+Candidate SHA: `5e33e3a6489fa6d5d5430de51addcea30023cd5ca6a36f302d65d844e961711a`.
+The run records clean committed code from17d18b2 and source/tool/report hashes. Archived
+full metadata/native/IFC/mesh results plus a representative three-mesh screenshot with
+explicit100-wall labeling. Screenshot visually inspected and artifact hashes verified.
+The three-wall capture is preserved separately. This adds size/boundary coverage; it
+does not resolve native regeneration or Autodesk acceptance.

@@ -154,3 +154,13 @@ native identities and wall meshes remain unchanged. This is a local research rep
 not Revit UI or native acceptance evidence.
 
 ![Three-wall native and IFC audit](2026-10-23-wall-batch-corrected/batch.png)
+
+
+### 100-wall stress experiment
+
+[Stress capture](2026-10-23-wall-batch-stress/manifest.json) archives the full reports
+and all actual mesh arrays, displaying the first three representative new meshes.
+All 100 new native solids pass, totaling 11,940 ft³; all 360 original wall meshes remain
+unchanged. The new partition spans ten compressed members.
+
+![100-wall stress result](2026-10-23-wall-batch-stress/batch.png)

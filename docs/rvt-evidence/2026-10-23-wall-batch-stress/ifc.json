@@ -1,0 +1,3487 @@
+{
+  "candidate_sha256": "5e33e3a6489fa6d5d5430de51addcea30023cd5ca6a36f302d65d844e961711a",
+  "native_candidate_sha256": "5e33e3a6489fa6d5d5430de51addcea30023cd5ca6a36f302d65d844e961711a",
+  "source_ifc_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+  "candidate_ifc_sha256": "58fc79414f78338fa39f2dc0f60be49919f79bea788da5b47c21ca4786df14de",
+  "ifcopenshell_version": "0.8.5",
+  "kernel": "opencascade",
+  "units": "metres",
+  "raw_schema_validation": [
+    {
+      "file": "candidate-source.ifc",
+      "schema": "IFC4",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xf156d1c73cb0>)\n     +  and   False = exists(<indeterminate_type object at 0xf156d1c73cb0>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xf156d1c73cb0>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    },
+    {
+      "file": "candidate-candidate.ifc",
+      "schema": "IFC4",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xf156d1c73620>)\n     +  and   False = exists(<indeterminate_type object at 0xf156d1c73620>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xf156d1c73620>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    }
+  ],
+  "explicit_owner_history_correction_controls": [
+    {
+      "input_file": "candidate-source.ifc",
+      "input_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+      "output_file": "candidate-source-owner-corrected.ifc",
+      "output_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59349
+    },
+    {
+      "input_file": "candidate-candidate.ifc",
+      "input_sha256": "58fc79414f78338fa39f2dc0f60be49919f79bea788da5b47c21ca4786df14de",
+      "output_file": "candidate-candidate-owner-corrected.ifc",
+      "output_sha256": "43e25854e324c672524c526938792a86c3e392177d2c0fb991ec4cebd723e348",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 65149
+    }
+  ],
+  "corrected_schema_validation": [
+    {
+      "file": "candidate-source-owner-corrected.ifc",
+      "schema": "IFC4",
+      "messages": []
+    },
+    {
+      "file": "candidate-candidate-owner-corrected.ifc",
+      "schema": "IFC4",
+      "messages": []
+    }
+  ],
+  "existing_wall_meshes_exactly_unchanged": 360,
+  "candidate_wall_count": 460,
+  "new_walls": [
+    {
+      "element_id": 133210,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0Bg",
+      "minimum_metres": [
+        158.3436,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        160.1724,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795535289,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133211,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0Bh",
+      "minimum_metres": [
+        167.4876,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        171.1452,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910414655,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133212,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0Bi",
+      "minimum_metres": [
+        176.6316,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        182.118,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386562205,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133213,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0Bj",
+      "minimum_metres": [
+        185.7756,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        187.6044,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955498388,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133214,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0Bk",
+      "minimum_metres": [
+        194.9196,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        198.5772,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910269154,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133215,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0Bl",
+      "minimum_metres": [
+        204.0636,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        209.55,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576762,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133216,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BG",
+      "minimum_metres": [
+        213.2076,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        215.03640000000001,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955207323,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133217,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BH",
+      "minimum_metres": [
+        222.3516,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        226.0092,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910414655,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133218,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BI",
+      "minimum_metres": [
+        231.4956,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        236.982,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576762,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133219,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BJ",
+      "minimum_metres": [
+        240.6396,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        242.4684,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795535282,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133220,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BK",
+      "minimum_metres": [
+        249.7836,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        253.4412,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910705924,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133221,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BL",
+      "minimum_metres": [
+        258.9276,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        264.414,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386518549,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133222,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BM",
+      "minimum_metres": [
+        268.0716,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        269.9004,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954916338,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133223,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BN",
+      "minimum_metres": [
+        277.2156,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        280.8732,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910414504,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133224,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BO",
+      "minimum_metres": [
+        286.3596,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        291.846,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576762,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133225,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BP",
+      "minimum_metres": [
+        295.5036,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        297.3324,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955352962,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133226,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BQ",
+      "minimum_metres": [
+        304.6476,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        308.3052,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215909832534,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133227,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BR",
+      "minimum_metres": [
+        313.7916,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        319.278,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386547648,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133228,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BS",
+      "minimum_metres": [
+        322.9356,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        324.7644,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795535282,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133229,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BT",
+      "minimum_metres": [
+        332.07959999999997,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        335.7372,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910414504,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133230,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BU",
+      "minimum_metres": [
+        341.2236,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        346.71,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576734,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133231,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BV",
+      "minimum_metres": [
+        350.3676,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        352.1964,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955110336,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133232,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B0",
+      "minimum_metres": [
+        359.5116,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        363.1692,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591012366,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133233,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B1",
+      "minimum_metres": [
+        368.6556,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        374.142,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386489465,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133234,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B2",
+      "minimum_metres": [
+        377.7996,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        379.6284,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955352962,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133235,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B3",
+      "minimum_metres": [
+        386.9436,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        390.6012,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591041493,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133236,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B4",
+      "minimum_metres": [
+        396.0876,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        401.574,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576762,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133237,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B5",
+      "minimum_metres": [
+        405.2316,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        407.0604,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133238,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B6",
+      "minimum_metres": [
+        414.3756,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        418.0332,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910414504,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133239,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B7",
+      "minimum_metres": [
+        423.5196,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        429.00600000000003,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386581622,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133240,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B8",
+      "minimum_metres": [
+        432.6636,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        434.4924,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133241,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0B9",
+      "minimum_metres": [
+        441.8076,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        445.4652,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215909541682,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133242,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BA",
+      "minimum_metres": [
+        450.9516,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        456.438,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.0970323865670215,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133243,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BB",
+      "minimum_metres": [
+        460.0956,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        461.9244,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955643672,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133244,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BC",
+      "minimum_metres": [
+        469.2396,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        472.8972,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591070579,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133245,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BD",
+      "minimum_metres": [
+        478.3836,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        483.87,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.0970323865767195,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133246,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BE",
+      "minimum_metres": [
+        487.5276,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        489.3564,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954770837,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133247,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol0BF",
+      "minimum_metres": [
+        496.6716,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        500.3292,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591012366,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133248,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08m",
+      "minimum_metres": [
+        505.8156,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        511.302,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576718,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133249,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08n",
+      "minimum_metres": [
+        514.9596,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        516.7884,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133250,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08o",
+      "minimum_metres": [
+        524.1036,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        527.7612,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591041493,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133251,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08p",
+      "minimum_metres": [
+        533.2476,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        538.734,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576776,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133252,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08q",
+      "minimum_metres": [
+        542.3916,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        544.2204,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133253,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08r",
+      "minimum_metres": [
+        551.5356,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        555.1932,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591012366,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133254,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08s",
+      "minimum_metres": [
+        560.6796,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        566.166,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133255,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08t",
+      "minimum_metres": [
+        569.8236,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        571.6524000000001,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954479567,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133256,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08u",
+      "minimum_metres": [
+        578.9676,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        582.6252,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591128777,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133257,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08v",
+      "minimum_metres": [
+        588.1116,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        593.598,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576776,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133258,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08w",
+      "minimum_metres": [
+        597.2556,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        599.0844,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954479918,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133259,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08x",
+      "minimum_metres": [
+        606.3996,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        610.0572,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910705924,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133260,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08y",
+      "minimum_metres": [
+        615.5436,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        621.03,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.09703238646035,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133261,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08z",
+      "minimum_metres": [
+        624.6876,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        626.5164,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954479847,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133262,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08_",
+      "minimum_metres": [
+        633.8316,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        637.4892,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215911288045,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133263,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08$",
+      "minimum_metres": [
+        642.9756,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        648.462,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133264,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08W",
+      "minimum_metres": [
+        652.1196,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        653.9484,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955643956,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133265,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08X",
+      "minimum_metres": [
+        661.2636,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        664.9212,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591012366,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133266,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08Y",
+      "minimum_metres": [
+        670.4076,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        675.894,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386460379,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133267,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08Z",
+      "minimum_metres": [
+        679.5516,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        681.3804,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955643814,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133268,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08a",
+      "minimum_metres": [
+        688.6956,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        692.3532,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910705924,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133269,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08b",
+      "minimum_metres": [
+        697.8396,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        703.326,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386518549,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133270,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08c",
+      "minimum_metres": [
+        706.9836,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        708.8124,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107956226148,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133271,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08d",
+      "minimum_metres": [
+        716.1276,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        719.7852,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910705356,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133272,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08e",
+      "minimum_metres": [
+        725.2716,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        730.758,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386518549,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133273,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08f",
+      "minimum_metres": [
+        734.4156,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        736.2444,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107953897726,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133274,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08g",
+      "minimum_metres": [
+        743.5596,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        747.2172,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591012366,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133275,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08h",
+      "minimum_metres": [
+        752.7036,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        758.19,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576775,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133276,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08i",
+      "minimum_metres": [
+        761.8475999999999,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        763.6764,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133277,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08j",
+      "minimum_metres": [
+        770.9916,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        774.6492,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.39802159095414,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133278,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08k",
+      "minimum_metres": [
+        780.1356,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        785.622,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133279,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08l",
+      "minimum_metres": [
+        789.2796,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        791.1084,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795622594,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133280,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08G",
+      "minimum_metres": [
+        798.4236,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        802.0812,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910705933,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133281,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08H",
+      "minimum_metres": [
+        807.5676,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        813.054,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386518549,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133282,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08I",
+      "minimum_metres": [
+        816.7116,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        818.5404,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954479634,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133283,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08J",
+      "minimum_metres": [
+        825.8556,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        829.5132,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591128763,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133284,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08K",
+      "minimum_metres": [
+        834.9996,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        840.486,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.0970323865767195,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133285,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08L",
+      "minimum_metres": [
+        844.1436,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        845.9724,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955547034,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133286,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08M",
+      "minimum_metres": [
+        853.2876,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        856.9452,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591070565,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133287,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08N",
+      "minimum_metres": [
+        862.4316,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        867.918,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133288,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08O",
+      "minimum_metres": [
+        871.5756,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        873.4044,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795447935,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133289,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08P",
+      "minimum_metres": [
+        880.7196,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        884.3772,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215908959694,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133290,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08Q",
+      "minimum_metres": [
+        889.8636,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        895.35,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576776,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133291,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08R",
+      "minimum_metres": [
+        899.0076,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        900.8364,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795680806,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133292,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08S",
+      "minimum_metres": [
+        908.1516,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        911.8092,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910511715,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133293,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08T",
+      "minimum_metres": [
+        917.2956,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        922.782,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133294,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08U",
+      "minimum_metres": [
+        926.4396,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        928.2684,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133295,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08V",
+      "minimum_metres": [
+        935.5836,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        939.2412,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215911288196,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133296,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol080",
+      "minimum_metres": [
+        944.7276,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        950.214,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386460379,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133297,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol081",
+      "minimum_metres": [
+        953.8716,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        955.7004,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795680806,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133298,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol082",
+      "minimum_metres": [
+        963.0156,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        966.6732,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215911288045,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133299,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol083",
+      "minimum_metres": [
+        972.1596,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        977.646,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133300,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol084",
+      "minimum_metres": [
+        981.3036,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        983.1324,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795506183,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133301,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol085",
+      "minimum_metres": [
+        990.4476,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        994.1052,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215908959126,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133302,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol086",
+      "minimum_metres": [
+        999.5916,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        1005.078,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576748,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133303,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol087",
+      "minimum_metres": [
+        1008.7356,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        1010.5644,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107954479279,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133304,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol088",
+      "minimum_metres": [
+        1017.8796,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        1021.5372,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591012366,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133305,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol089",
+      "minimum_metres": [
+        1027.0236000000002,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        1032.51,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486399999999776,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386576805,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133306,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08A",
+      "minimum_metres": [
+        1036.1676000000002,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        1037.9964,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.8287999999997737,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795447999,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133307,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08B",
+      "minimum_metres": [
+        1045.3116,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        1048.9692,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.398021591128791,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133308,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08C",
+      "minimum_metres": [
+        1054.4556,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        1059.9419999999998,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486399999999776,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386460352,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133309,
+      "native_ifc_guid": "0$_RyBPuvMpgxldUOol08D",
+      "minimum_metres": [
+        1063.5996,
+        26.6446,
+        23.1648
+      ],
+      "maximum_metres": [
+        1065.4283999999998,
+        26.847800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.8287999999997737,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955643672,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    }
+  ],
+  "mesh_evidence_file": "meshes.json",
+  "mesh_evidence_sha256": "c3077cdd294d30b3265cc181e7f63313d94851fe86982cc3bd31d3c6995feb76",
+  "validator_sha256": "6543cf4754d06c0ce1ab5d3c89db08972e69b68b994ae9606fc4e417f7958ad5",
+  "scope": "Actual emitted IFC triangulation. Native BRep consistency is separately audited from saved channel103 graphs; neither establishes Autodesk acceptance.",
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false
+}

@@ -21,6 +21,23 @@ Evidence: [run](wall-batch-run.json), [metadata](wall-batch-metadata.json),
 [screenshot provenance](../../../docs/rvt-evidence/2026-10-23-wall-batch-corrected/manifest.json).
 The integrated Python suite passes 143 tests.
 
+## Upper-limit stress result
+
+The full workflow also passed for [100 wall requests](wall-batch-stress-request.json),
+with lengths 6/12/18 feet and alternating Y placements. Candidate SHA-256:
+`5e33e3a6489fa6d5d5430de51addcea30023cd5ca6a36f302d65d844e961711a`.
+IDs 133210–133309 share one creation episode. The 33,939-byte logical partition
+contains ten gzip members, exercising object sequences across compressed-member boundaries.
+All 100 saved native solids pass, totaling 11,940 ft³. All 360 original IFC wall meshes
+remain unchanged; the candidate has 460 walls. Both corrected IFC files have zero
+schema messages. Source identities, rows, partitions and projected entities are retained.
+
+[Run](wall-batch-stress-run.json), [metadata](wall-batch-stress-metadata.json),
+[native solids](wall-batch-stress-native.json), [IFC checks](wall-batch-stress-ifc.json),
+[mesh arrays](wall-batch-stress-meshes.json),
+[representative screenshot and full provenance](../../../docs/rvt-evidence/2026-10-23-wall-batch-stress/manifest.json).
+The screenshot shows the first three meshes; the underlying reports validate all 100.
+
 ## Reproduce
 
 Use the pinned MIT `core2024.rvt` fixture and the clean pinned public reader documented
