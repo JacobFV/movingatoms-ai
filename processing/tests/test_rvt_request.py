@@ -30,13 +30,13 @@ def test_multipart_open_geometry_levels_and_properties_preserved():
     wall = request['elements'][0]
     assert wall['id'] == 'wall-1' and wall['name'] == 'Wall 😀' and wall['category'] == 'Wall'
     assert wall['level_id'] == 'ground'
-    assert wall['properties']['props'] == source['elements'][0]['props']
-    assert wall['properties']['part_metadata'] == [{'name': 'body', 'material': 'wall'}, {'name': 'second', 'material': 'wall'}]
+    assert wall['properties']['source_element'] == source['elements'][0]
+    assert wall['properties']['representation']['part_metadata'] == [{'name': 'body', 'material': 'wall'}, {'name': 'second', 'material': 'wall'}]
     for i, part in enumerate(supplied['wall-1']):
         assert wall['parts'][i]['vertices'] == part.vertices.tolist()
         assert wall['parts'][i]['triangles'] == part.faces.tolist()
     assert source == before
-    wall['properties']['props']['nested']['a'].append('changed')
+    wall['properties']['source_element']['props']['nested']['a'].append('changed')
     assert source == before
     # Integrate against the actual research contract without importing it into
     # production. This check detects request drift in the shared repository.
@@ -79,7 +79,7 @@ def test_unknown_category_requires_explicit_policy():
     assert generic['elements'][0]['category'] == 'GenericModel'
     explicit = to_seed_model_request(source, {'wall-1': [triangle()]}, category_overrides={'wall-1': 'MechanicalEquipment'})
     assert explicit['elements'][0]['category'] == 'MechanicalEquipment'
-    assert explicit['elements'][0]['properties']['kind'] == 'equipment'
+    assert explicit['elements'][0]['properties']['source_element']['kind'] == 'equipment'
     with pytest.raises(ValueError):
         to_seed_model_request(source, {'wall-1': [triangle()]}, category_overrides={'wall-1': 'Imaginary'})
 
@@ -124,3 +124,53 @@ def test_invalid_arrays_properties_and_levels_fail_closed(change):
         source['levels'][0]['params'].pop('elevation')
     with pytest.raises(ValueError):
         to_seed_model_request(source, {'wall-1': [part]})
+
+
+def test_complete_source_context_and_element_metadata_preserved_exactly():
+    source = read()
+    source.update(project_id='project', seq=42, future_model={'x': [None, True]})
+    source['levels'][0]['props']['future_level_property'] = {'rating': 9}
+    source['types'] = [{'id': 'wall-type', 'params': {'material': 'stone'}, 'props': {'custom': [1, 2]}},
+                       {'id': 'old-type', 'deleted': True, 'future': 'retained'}]
+    element = source['elements'][0]
+    element.update(params={'start': [0, 0], 'end': [2, 3], 'thickness': 0.2},
+                   geometry={'mesh': {'sha': 'abc'}, 't': [1, 2, 3], 'q': [0, 0, 0, 1]},
+                   type_id='wall-type', parent_id=None, future_element={'nullable': None})
+    before = copy.deepcopy(source)
+    request = to_seed_model_request(source, {'wall-1': [triangle()]})
+    metadata = request['elements'][0]['properties']
+    assert metadata['source_element'] == element
+    assert metadata['source_context'] == {
+        'levels': source['levels'], 'types': source['types'],
+        'model_metadata': {'project_id': 'project', 'seq': 42, 'future_model': {'x': [None, True]}},
+    }
+    assert 'provenance' not in metadata['source_element']
+    assert metadata['source_element']['parent_id'] is None
+    metadata['source_context']['types'][0]['params']['material'] = 'mutated'
+    metadata['source_context']['levels'][0]['props']['future_level_property']['rating'] = 0
+    metadata['source_element']['geometry']['t'][0] = 99
+    assert source == before
+
+
+def test_model_input_records_only_available_live_context():
+    source = read()
+    source.update(project_id='unavailable-after-normalization', seq=8,
+                  types=[{'id': 'live-type'}, {'id': 'deleted-type', 'deleted': True}])
+    result = to_seed_model_request(Model(source), {'wall-1': [triangle()]})
+    context = result['elements'][0]['properties']['source_context']
+    assert context == {'levels': source['levels'], 'types': [{'id': 'live-type'}], 'model_metadata': {'seq': 8}}
+
+
+@pytest.mark.parametrize('corruption', ['oversized', 'cycle', 'non_json', 'duplicate_type'])
+def test_complete_metadata_is_bounded_without_silent_loss(corruption):
+    source = read()
+    if corruption == 'oversized':
+        source['extra'] = 'x' * 500_001
+    elif corruption == 'cycle':
+        source['extra'] = source
+    elif corruption == 'non_json':
+        source['levels'][0]['props']['bad'] = {1, 2}
+    else:
+        source['types'] = [{'id': 'same'}, {'id': 'same'}]
+    with pytest.raises(ValueError):
+        to_seed_model_request(source, {'wall-1': [triangle()]})

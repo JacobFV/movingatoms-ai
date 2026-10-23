@@ -85,14 +85,30 @@ def to_seed_model_request(model: Model | dict, parts: dict[str, list[Part]], *,
     """Preserve every supplied live product and part, or raise before export.
 
     Pass raw model-read data to also detect duplicate IDs before Model's existing
-    dictionary normalization. A Model instance cannot retain evidence of IDs that
-    its constructor already overwrote. Deleted elements are excluded; supplying
+    dictionary normalization and preserve full original levels/types/model metadata.
+    A Model instance retains only live level/type records and seq; it cannot recover
+    deleted records, overwritten IDs, or omitted top-level source metadata. Deleted elements are excluded; supplying
     parts for them is an error. Unknown kinds need an explicit category override
     or explicit generic fallback. No level is assigned by proximity/default.
     """
     if type(allow_generic_fallback) is not bool:
         raise ValueError('generic fallback must be an explicit boolean')
     if isinstance(model, dict):
+        source_context = {
+            'levels': model.get('levels', []),
+            'types': model.get('types', []),
+            'model_metadata': {k: v for k, v in model.items() if k not in ('elements', 'levels', 'types')},
+        }
+        if not isinstance(source_context['types'], list):
+            raise ValueError('types must be a list')
+        seen_types = set()
+        for source_type in source_context['types']:
+            if not isinstance(source_type, dict):
+                raise ValueError('type record must be an object')
+            type_id = _label(source_type.get('id'), 'type ID')
+            if type_id in seen_types:
+                raise ValueError(f'duplicate source type ID: {type_id}')
+            seen_types.add(type_id)
         seen = set()
         for collection in ('levels', 'elements'):
             rows = model.get(collection, [])
@@ -108,6 +124,9 @@ def to_seed_model_request(model: Model | dict, parts: dict[str, list[Part]], *,
                 if collection == 'levels' and element.get('kind') != 'level':
                     raise ValueError('levels collection contains nonlevel')
         model = Model(model)
+    elif isinstance(model, Model):
+        source_context = {'levels': model.levels, 'types': list(model.types.values()),
+                          'model_metadata': {'seq': model.seq}}
     if not isinstance(model, Model) or not isinstance(parts, dict):
         raise ValueError('Model/read object and explicit parts dictionary required')
     overrides = {} if category_overrides is None else category_overrides
@@ -214,9 +233,9 @@ def to_seed_model_request(model: Model | dict, parts: dict[str, list[Part]], *,
             geometries.add(key)
             encoded.append({'vertices': points.tolist(), 'triangles': indices.tolist()})
             part_metadata.append({'name': part_name, 'material': part.material})
-        properties = _json_copy({'props': props, 'kind': kind, 'ifc_class': ifc_class_of(element),
-                                'version': element.get('version'), 'type_id': element.get('type_id'),
-                                'provenance': element.get('provenance'), 'part_metadata': part_metadata})
+        properties = _json_copy({'source_element': element,
+                                'representation': {'ifc_class': ifc_class_of(element), 'part_metadata': part_metadata},
+                                'source_context': source_context})
         result = {'id': ident, 'name': name, 'category': category, 'properties': properties, 'parts': encoded}
         if level_id is not None:
             result['level_id'] = level_id
