@@ -1,6 +1,12 @@
 # Writing native Revit (.rvt) without Revit — research notes
 
-Latest implementation: a [single-command multi-wall workflow](../research/rvt/results/wall-batch.md)
+Latest milestone: a [minimal-seed native document](../research/rvt/results/seed-wall.md)
+now contains only three requested physical walls plus retained document scaffolding.
+It preserves all 2,300 seed identities, adds an upper level, and passes independent
+metadata, native solid and IFC mesh/material checks. The full suite has 212 tests.
+Arbitrary model export and native application acceptance remain incomplete.
+
+Earlier Core-based implementation: a [single-command multi-wall workflow](../research/rvt/results/wall-batch.md)
 creates multiple distinct walls in one partition/episode, with independently verified
 native solids and IFC meshes. Three-wall, 100-wall and [rotated-wall](../research/rvt/results/wall-oriented.md) runs passed. All 26,425 original identities and 360 original wall
 meshes are preserved. [Variable-height walls](../research/rvt/results/wall-height-batch.md)

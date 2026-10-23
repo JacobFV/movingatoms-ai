@@ -1,0 +1,85 @@
+{
+  "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "candidate_sha256": "559b7b45e0f05ae724352c41f550a6c1528e63b6272ba10f74de1c0478b2506d",
+  "builder_plan_used_only_as_optional_crosscheck": false,
+  "history": {
+    "creation_episode": 1,
+    "new_history_count": 2,
+    "new_episode_guid": "6346736a-bacb-5bca-93b4-f88214e13b3a",
+    "all_old_episode_records_and_history_metadata_preserved": true
+  },
+  "table": {
+    "new_ids": [
+      2746,
+      2747,
+      2748,
+      2749
+    ],
+    "source_rows": 2300,
+    "candidate_rows": 2304,
+    "source_identifier_ceiling": 2745,
+    "candidate_identifier_ceiling": 2749,
+    "all_source_rows_byte_identical": true,
+    "new_row_episode_fields": [
+      1,
+      1,
+      1
+    ]
+  },
+  "new_partition": "Partitions/1",
+  "new_increment_total_elements": 4,
+  "body_sha256": {
+    "101": {
+      "2746": "1bc63b3baa27dbd53a0dbcf77ae7365288bde97067f028f9ca6138f960bcd387",
+      "2747": "5528a19ea0028976b8c643a92ffb90e3d863b1d79203b9ddde38d8dc1e0fa8eb",
+      "2748": "c153a25e2f6c8e21ff561923776d068573b017da0cf3c85fd245f92535ea3db5",
+      "2749": "d1d631e207a1522575585a7d4985aceee14e21fca2d5de97d9ee805624dae757"
+    },
+    "102": {
+      "2746": "b47980ea1090fee79c41c087d68719995452d2bb11e26b5558272663a978e8be",
+      "2747": "08e077b1bb555d429b0bf6240a3af89125443f8c530530e9d33a428770ce12de",
+      "2748": "fb4c2bd61384c1d8d17d0cfaa22e47c20abbb7da523968e66d4921544f036363",
+      "2749": "83f1a3927cc640c2c8b5eb164606d462360fa7bd10f4dbe9c09b3df1077e1d83"
+    },
+    "103": {
+      "2746": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+      "2747": "9b5095b637b53f1ea5c3a22e475854d0d92f3b0cc0a5accae4568429b735b1bd",
+      "2748": "fc0684d223dbf33465f090c48418048a8ff067ff3813dcb00d6616b3e32be08a",
+      "2749": "fd2cdd4011213cfcae6badfd10a559e60ca3be4708870eb7274155b3dfe3fdd0"
+    }
+  },
+  "revision_deltas": {
+    "preview": 0,
+    "global": 1,
+    "history": 1,
+    "elemTable": 1,
+    "contentDocuments": 1,
+    "partitionTable": 1,
+    "incrementTable": 1,
+    "formats": 0,
+    "basicFileInfo": 1,
+    "transmissionData": 1,
+    "partAtom": 0,
+    "projectXMLInfo": 1
+  },
+  "contents_all_revisions_match": true,
+  "contents_zero_suffix_preserved": true,
+  "basic_identity_and_other_bytes_verified": true,
+  "project_information_offset_seconds": 10800,
+  "project_information_other_xml_and_zip_metadata_preserved": true,
+  "all_old_increment_rows_preserved": true,
+  "original_partition_streams_preserved": true,
+  "changed_existing_streams": [
+    "BasicFileInfo",
+    "Contents",
+    "Global/DocumentIncrementTable",
+    "Global/ElemTable",
+    "Global/History",
+    "Global/Latest",
+    "ProjectInformation"
+  ],
+  "limits": [
+    "Selected append/revision/registration policies remain hypotheses, not Autodesk acceptance.",
+    "Global registrations and decoded native element graphs are verified by a separate audit."
+  ]
+}

@@ -191,3 +191,12 @@ This is an unchanged-source inventory, not an edited model acceptance test.
 actual IFC meshes for8/10/20ft heights with differing lengths and rotations.
 
 ![Saved native wall height evidence](2026-10-23-wall-heights/batch.png)
+
+
+## Minimal native document — 2026-10-23
+
+[Manifest](2026-10-23-seed-walls/manifest.json) binds the complete workflow to
+three actual independently triangulated walls in the minimal seed. The report
+includes the metadata/native/IFC evidence and explicit validation limits.
+
+![Minimal native document evidence](2026-10-23-seed-walls/candidate.png)

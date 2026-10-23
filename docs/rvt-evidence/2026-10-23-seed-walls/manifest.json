@@ -1,0 +1,24 @@
+{
+  "captured_at_utc": "2026-10-23T01:43:33.560974+00:00",
+  "source_commit": "42c1aa7f72a5eb21d4f65bd5d8b4f955c36b9e96",
+  "working_tree_status": " M research/rvt/results/directshape-feasibility.md\n M research/rvt/results/seed-wall-request.json\n?? docs/rvt-evidence/2026-10-23-seed-walls/\n?? research/rvt/directshape_fixture_fetch.py\n?? research/rvt/directshape_fixture_search.py\n?? research/rvt/directshape_legacy_audit.py\n?? research/rvt/directshape_legacy_probe.rs\n?? research/rvt/element_properties.py\n?? research/rvt/element_properties_audit.py\n?? research/rvt/element_properties_probe.py\n?? research/rvt/element_properties_probe.rs\n?? research/rvt/native_mesh.py\n?? research/rvt/native_mesh_experiment.py\n?? research/rvt/results/directshape_fixture_candidates.json\n?? research/rvt/results/directshape_fixture_candidates.md\n?? research/rvt/results/directshape_fixture_search.json\n?? research/rvt/results/directshape_fixture_search_expanded.json\n?? research/rvt/results/directshape_legacy_audit.json\n?? research/rvt/results/directshape_legacy_audit.md\n?? research/rvt/results/element-properties.json\n?? research/rvt/results/element-properties.md\n?? research/rvt/results/native-mesh.json\n?? research/rvt/results/native-mesh.md\n?? research/rvt/results/seed-wall-ifc.json\n?? research/rvt/results/seed-wall-metadata.json\n?? research/rvt/results/seed-wall-native.json\n?? research/rvt/results/seed-wall-plan.json\n?? research/rvt/results/seed-wall-run.json\n?? research/rvt/test_element_properties.py\n?? research/rvt/test_native_mesh.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "ff44592c1d0d39f2232e9a283b519bb92c73e418331d2c02946c6d1745db9c35",
+  "not_autodesk_ui": true,
+  "actual_ifc_meshes": true,
+  "source_report_sha256": {
+    "run": "0a3d635f641e66e8b9ac730f1e4dbcc115313dc5c8e76eaff1ca8a697df2e5a6",
+    "native": "9581e17e7781841cf8240f93b6cb4010b19b2cdcf56cadfb8fcaf15a5f58ad93",
+    "ifc": "130745753ec9c1f80d09e847f57858adbdf99995e277e534f325be1ff78097e5"
+  },
+  "artifacts": {
+    "candidate.html": "345ee63d62882950a69f452c136ddc05169da9daa5e99fe7a5176e91c75a285c",
+    "candidate.png": "42e21374583400796895f50cee29da2ee9376219224e014b18a4b24d6d7dcb15",
+    "ifc.json": "130745753ec9c1f80d09e847f57858adbdf99995e277e534f325be1ff78097e5",
+    "meshes.png": "e5f5acad76c3ffa023ec90fa1f93b9b34f4229c3abeb13ab847b6ce7c5322ca5",
+    "native.json": "9581e17e7781841cf8240f93b6cb4010b19b2cdcf56cadfb8fcaf15a5f58ad93",
+    "run.json": "0a3d635f641e66e8b9ac730f1e4dbcc115313dc5c8e76eaff1ca8a697df2e5a6"
+  }
+}

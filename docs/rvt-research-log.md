@@ -747,3 +747,24 @@ triangle-array serialization, not DirectShape instance lifecycle. A focused sear
 for a permissively licensed instance fixture and closed-mesh work are continuing.
 Details: `research/rvt/results/seed_wall_context.md` and
 `research/rvt/results/directshape-feasibility.md`.
+
+
+## Minimal-seed document passes the complete local workflow
+
+The first complete minimal-seed run creates a new upper level and three rotated
+walls with independent lengths and heights near the origin. It preserves all
+2,300 scaffold identities and the source partition, and projects exactly three
+physical elements. The 200 mm wall type, material and style references all resolve
+to the seed. Candidate SHA:
+`559b7b45e0f05ae724352c41f550a6c1528e63b6272ba10f74de1c0478b2506d`.
+
+Transport, independent raw metadata, complete native graph/BRep and independent
+IFC kernel checks pass. Ten metadata tests include coherent-but-wrong counters,
+GUID copies, timestamps and valid compressed containers with corrupted revisions.
+The full research suite now passes **212 tests**. Baseline default-shape preflight
+also passed; the final run exercises height, yaw and origin relocation together.
+
+Reports/reproduction: `research/rvt/results/seed-wall.md`. The actual mesh
+screenshot in `docs/rvt-evidence/2026-10-23-seed-walls/` was visually reviewed
+and all manifest hashes verified. Code was frozen for the run and hashes were
+checked before publication. Native application acceptance remains untested.
