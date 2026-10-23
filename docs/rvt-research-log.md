@@ -705,3 +705,27 @@ Reports and reproduction are in `research/rvt/results/wall-height-batch.md`.
 A genuine Chrome capture of actual IFC mesh plots is archived in
 `docs/rvt-evidence/2026-10-23-wall-heights/`, visually checked and hash verified.
 This establishes local saved geometry/constraint consistency, not native regeneration.
+
+
+## Seed prerequisites: levels, wall thickness and save metadata
+
+Source-exact Level encoding now supports Unicode names and finite elevations.
+Four independently decoded variants and four tests pass. Two horizontal plane
+origins carry the measured elevation; unrelated annotation caches remain preserved.
+The full seed incoming-reference scan covers all 6,900 records.
+
+Wall thickness can now match the seed's existing 200 mm type. Geometry, UV loops,
+face envelopes and the key-reference offset change together. Nine generated
+channel bodies decode independently; four tests pass. The half-width offset is
+supported by 209 existing walls across four single-layer types. Default width
+preserves all previous encoder output exactly.
+
+Seed metadata allocates from stored ceiling 2745, not maximum live ID2374.
+Guarded helpers update the measured structural, datum and level-category trackers,
+preserve existing view mappings, and handle the seed's measured10,800-second
+ProjectInformation timestamp offset. Six tests and independent Global re-decoding
+pass. These policies remain explicitly experimental pending full saved-file checks.
+
+Reproduction and evidence: `research/rvt/results/seed_level-audit.md`,
+`wall-thickness.md` and `seed_save_context.md`. Integration into one seed-based
+file and independent verification are the next checks.

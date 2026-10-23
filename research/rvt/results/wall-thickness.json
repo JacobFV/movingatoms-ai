@@ -1,0 +1,5958 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "source_types": [
+    {
+      "id": 17328,
+      "width_feet": 0.6666666666666666,
+      "source": {
+        "body_bytes": 768,
+        "body_sha256": "108ae6a2c27b7b690bc8533f16a5cb4315712dd52d327ab6605debeec2e4a298",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 125154,
+          "declared_objects": 77,
+          "first_marker_offset": 4715652,
+          "segment_count": 1
+        },
+        "group_record_offset": 116262,
+        "stream": "Partitions/46"
+      }
+    },
+    {
+      "id": 17337,
+      "width_feet": 0.5,
+      "source": {
+        "body_bytes": 730,
+        "body_sha256": "6fd00a65beba06b0ab4a2525daab9a90b7c6edf17d4e88283592d55cdb6447ef",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 125154,
+          "declared_objects": 77,
+          "first_marker_offset": 4715652,
+          "segment_count": 1
+        },
+        "group_record_offset": 118413,
+        "stream": "Partitions/46"
+      }
+    },
+    {
+      "id": 17341,
+      "width_feet": 0.5,
+      "source": {
+        "body_bytes": 768,
+        "body_sha256": "3986ad02d2f27b88637db4c9ec3492397995ee4c289296a195c0f8b441e91da1",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 125154,
+          "declared_objects": 77,
+          "first_marker_offset": 4715652,
+          "segment_count": 1
+        },
+        "group_record_offset": 121167,
+        "stream": "Partitions/46"
+      }
+    },
+    {
+      "id": 3897,
+      "width_feet": 1.5,
+      "source": {
+        "body_bytes": 712,
+        "body_sha256": "a3a8bc673b60888e4cde7b584a86449fb2b668664036633a910498345087a845",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 129116,
+          "declared_objects": 68,
+          "first_marker_offset": 5180670,
+          "segment_count": 1
+        },
+        "group_record_offset": 125181,
+        "stream": "Partitions/46"
+      }
+    }
+  ],
+  "width_variants": [
+    {
+      "width_feet": 0.6561679790026247,
+      "channels": {
+        "101": {
+          "bytes": 233,
+          "sha256": "5155e81fd547599e9db9d629587343c878d5b4f8b3155cb14b9c6faf16ba91ff",
+          "independent_graph_exact": true
+        },
+        "103": {
+          "bytes": 6884,
+          "sha256": "7b78371d23b0535017bbf70f10e606da2e6f3e0fd0a7e34cb4a3baaa466c3fd7",
+          "independent_graph_exact": true
+        },
+        "102": {
+          "bytes": 2946,
+          "sha256": "84a9e3ee4ab094f072dc49f72414c6605140b3fd754f47c23f4d39137c818eeb",
+          "independent_graph_exact": true
+        }
+      },
+      "thickness_audit": {
+        "width_feet": 0.6561679790026247,
+        "source_width_feet": 0.6666666666666666,
+        "normal_axis": [
+          3.1579677144893293e-15,
+          1.0,
+          0.0
+        ],
+        "changes": [
+          {
+            "channel": 101,
+            "object": 1,
+            "field": "m_minmax",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                67.4219160104986,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.07808398950127,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 0,
+            "field": "m_bBox",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                67.4219160104986,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.07808398950127,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 0,
+            "field": "m_tightbBox",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                67.4219160104986,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.07808398950127,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 16,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    -2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    -2.7974123455122055e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 17,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.666666666666643,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026014,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 19,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 20,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.666666666666643,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026014,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -2.7974123455122055e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 21,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    15.0
+                  ],
+                  [
+                    2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    15.0
+                  ],
+                  [
+                    2.7974123455122055e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 22,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666998,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6561679790026573,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 23,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 25,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 26,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666998,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026573,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.7974123455122055e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 27,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.6561679790026294,
+                    0.0
+                  ],
+                  [
+                    0.6561679790026294,
+                    15.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 50,
+            "field": "m_origin",
+            "before": [
+              119.74999999999996,
+              67.41666666666661,
+              76.0
+            ],
+            "after": [
+              119.74999999999996,
+              67.42191601049863,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 53,
+            "field": "m_origin",
+            "before": [
+              119.74999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.74999999999996,
+              68.07808398950127,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 54,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  -2.842170943040401e-14,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  -2.7974123455122055e-14,
+                  0.0
+                ],
+                [
+                  0.6561679790026294,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 55,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.3333333333333428,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.32808398950132167,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 56,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666661,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.42191601049863,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 56,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  -2.842170943040401e-14,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  -2.7974123455122055e-14,
+                  0.0
+                ],
+                [
+                  0.6561679790026294,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 57,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6561679790026294,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 58,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.33333333333337123,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.32808398950134965,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 59,
+            "field": "m_origin",
+            "before": [
+              128.99999999999997,
+              67.41666666666659,
+              76.0
+            ],
+            "after": [
+              128.99999999999997,
+              67.4219160104986,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 59,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6561679790026294,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 60,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666998,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6561679790026573,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 61,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                -1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.33333333333337123,
+                9.500000000000014
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                -1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.32808398950134965,
+                9.500000000000014
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 62,
+            "field": "m_origin",
+            "before": [
+              128.99999999999997,
+              67.41666666666659,
+              91.0
+            ],
+            "after": [
+              128.99999999999997,
+              67.4219160104986,
+              91.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 62,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666998,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6561679790026573,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 63,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6561679790026294,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 64,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.3333333333333428,
+                15.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.32808398950132167,
+                15.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 65,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666661,
+              91.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.42191601049863,
+              91.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 65,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6561679790026294,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 69,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666663,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.42191601049865,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 71,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              68.07808398950127,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 22,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              68.07808398950127,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 23,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666663,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.42191601049865,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 0,
+            "field": "m_keyRefOffset",
+            "before": 0.3333333333333333,
+            "after": 0.32808398950131235
+          }
+        ],
+        "edge_consistency": {
+          "paired_face_endpoints_checked": 24,
+          "maximum_endpoint_disagreement_feet": 0.0
+        },
+        "requires_existing_type_width_validation": true
+      },
+      "native_brep": {
+        "native_vertex_bounds_feet": [
+          [
+            519.2680095862248,
+            67.51800958622484,
+            76.0
+          ],
+          [
+            528.2172717880137,
+            76.46727178801362,
+            96.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 521.99475065617,
+            "signed_volume_cubic_feet": 157.4803149606337,
+            "volume_cubic_feet": 157.4803149606337,
+            "bounds_feet": [
+              [
+                519.2680095862248,
+                67.51800958622484,
+                76.0
+              ],
+              [
+                528.2172717880137,
+                76.46727178801362,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.7319904137751,
+                67.51800958622485,
+                76.0
+              ],
+              [
+                528.2172717880137,
+                76.00329096046339,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.2680095862248,
+                67.98199041377507,
+                76.0
+              ],
+              [
+                527.7532909604635,
+                76.4672717880136,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 157.4803149606337,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    },
+    {
+      "width_feet": 0.5,
+      "channels": {
+        "101": {
+          "bytes": 233,
+          "sha256": "535e8db121e70480bec338399acf8bb09c78dd70afd453d89e30650acae8ac17",
+          "independent_graph_exact": true
+        },
+        "103": {
+          "bytes": 6884,
+          "sha256": "ce6598984e2b83d087d39b7e933b78ab00b81916871f1c52f5deac8e90884ce9",
+          "independent_graph_exact": true
+        },
+        "102": {
+          "bytes": 2946,
+          "sha256": "35b38ef5d1b56fc117a79fc1283f08056ebb941fdcba89da589af146be1a6014",
+          "independent_graph_exact": true
+        }
+      },
+      "thickness_audit": {
+        "width_feet": 0.5,
+        "source_width_feet": 0.6666666666666666,
+        "normal_axis": [
+          3.1579677144893293e-15,
+          1.0,
+          0.0
+        ],
+        "changes": [
+          {
+            "channel": 101,
+            "object": 1,
+            "field": "m_minmax",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                67.49999999999991,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                67.99999999999996,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 0,
+            "field": "m_bBox",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                67.49999999999991,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                67.99999999999996,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 0,
+            "field": "m_tightbBox",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                67.49999999999991,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                67.99999999999996,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 16,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    -2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    -2.1316282072803006e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 17,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.666666666666643,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.49999999999998224,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 19,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 20,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.666666666666643,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ],
+                  [
+                    0.49999999999998224,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -2.1316282072803006e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 21,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    15.0
+                  ],
+                  [
+                    2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    15.0
+                  ],
+                  [
+                    2.1316282072803006e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 22,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666998,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.5000000000000249,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 23,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 25,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 26,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666998,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ],
+                  [
+                    0.5000000000000249,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.1316282072803006e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 27,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.5000000000000036,
+                    0.0
+                  ],
+                  [
+                    0.5000000000000036,
+                    15.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 50,
+            "field": "m_origin",
+            "before": [
+              119.74999999999996,
+              67.41666666666661,
+              76.0
+            ],
+            "after": [
+              119.74999999999996,
+              67.49999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 53,
+            "field": "m_origin",
+            "before": [
+              119.74999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.74999999999996,
+              67.99999999999996,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 54,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  -2.842170943040401e-14,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  -2.1316282072803006e-14,
+                  0.0
+                ],
+                [
+                  0.5000000000000036,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 55,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.3333333333333428,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.2500000000000071,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 56,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666661,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.49999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 56,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  -2.842170943040401e-14,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  -2.1316282072803006e-14,
+                  0.0
+                ],
+                [
+                  0.5000000000000036,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 57,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5000000000000036,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 58,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.33333333333337123,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.2500000000000284,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 59,
+            "field": "m_origin",
+            "before": [
+              128.99999999999997,
+              67.41666666666659,
+              76.0
+            ],
+            "after": [
+              128.99999999999997,
+              67.49999999999991,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 59,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5000000000000036,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 60,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666998,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5000000000000249,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 61,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                -1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.33333333333337123,
+                9.500000000000014
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                -1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.2500000000000284,
+                9.500000000000014
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 62,
+            "field": "m_origin",
+            "before": [
+              128.99999999999997,
+              67.41666666666659,
+              91.0
+            ],
+            "after": [
+              128.99999999999997,
+              67.49999999999991,
+              91.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 62,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666998,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5000000000000249,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 63,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5000000000000036,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 64,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.3333333333333428,
+                15.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.2500000000000071,
+                15.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 65,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666661,
+              91.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.49999999999994,
+              91.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 65,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.5000000000000036,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 69,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666663,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.49999999999996,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 71,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.99999999999996,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 22,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.99999999999996,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 23,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666663,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              67.49999999999996,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 0,
+            "field": "m_keyRefOffset",
+            "before": 0.3333333333333333,
+            "after": 0.25
+          }
+        ],
+        "edge_consistency": {
+          "paired_face_endpoints_checked": 24,
+          "maximum_endpoint_disagreement_feet": 1.4210854715202004e-14
+        },
+        "requires_existing_type_width_validation": true
+      },
+      "native_brep": {
+        "native_vertex_bounds_feet": [
+          [
+            519.3232233047032,
+            67.5732233047033,
+            76.0
+          ],
+          [
+            528.1620580695352,
+            76.41205806953514,
+            96.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 511.99999999999955,
+            "signed_volume_cubic_feet": 119.99999999999963,
+            "volume_cubic_feet": 119.99999999999963,
+            "bounds_feet": [
+              [
+                519.3232233047032,
+                67.5732233047033,
+                76.0
+              ],
+              [
+                528.1620580695352,
+                76.41205806953514,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.6767766952966,
+                67.57322330470332,
+                76.0
+              ],
+              [
+                528.1620580695352,
+                76.05850467894186,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.3232233047033,
+                67.9267766952966,
+                76.0
+              ],
+              [
+                527.808504678942,
+                76.41205806953514,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 119.99999999999963,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    },
+    {
+      "width_feet": 1.5,
+      "channels": {
+        "101": {
+          "bytes": 233,
+          "sha256": "8ed313f5e8bd40709f0966ea0ca03941aac113707f5cfa9d5e399b74515d8e97",
+          "independent_graph_exact": true
+        },
+        "103": {
+          "bytes": 6884,
+          "sha256": "6ef8e870f9a1ef8b02fd8d42a7da5d6c9751334f53faf68754f9d2a78637b3e0",
+          "independent_graph_exact": true
+        },
+        "102": {
+          "bytes": 2946,
+          "sha256": "a76e95f67c7cdc5253a9c3f1b9c212bd7bd9c3743bafd1a276c140606fd4942f",
+          "independent_graph_exact": true
+        }
+      },
+      "thickness_audit": {
+        "width_feet": 1.5,
+        "source_width_feet": 0.6666666666666666,
+        "normal_axis": [
+          3.1579677144893293e-15,
+          1.0,
+          0.0
+        ],
+        "changes": [
+          {
+            "channel": 101,
+            "object": 1,
+            "field": "m_minmax",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                66.99999999999987,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.49999999999999,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 0,
+            "field": "m_bBox",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                66.99999999999987,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.49999999999999,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 0,
+            "field": "m_tightbBox",
+            "before": [
+              [
+                119.49999999999996,
+                67.41666666666659,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.08333333333329,
+                91.0
+              ]
+            ],
+            "after": [
+              [
+                119.49999999999996,
+                66.99999999999987,
+                76.0
+              ],
+              [
+                128.99999999999997,
+                68.49999999999999,
+                91.0
+              ]
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 16,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    -2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    -6.394884621840902e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 17,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.666666666666643,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    1.4999999999999467,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 19,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    0.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 20,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.666666666666643,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ],
+                  [
+                    1.4999999999999467,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    -6.394884621840902e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 21,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    15.0
+                  ],
+                  [
+                    2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -0.25,
+                    15.0
+                  ],
+                  [
+                    6.394884621840902e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 22,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666998,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    1.5000000000000746,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    -9.250000000000014,
+                    15.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 23,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 25,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.25,
+                    0.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.25,
+                    15.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 26,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666998,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    2.842170943040401e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ],
+                  [
+                    1.5000000000000746,
+                    9.500000000000014
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    6.394884621840902e-14,
+                    9.500000000000014
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 27,
+            "field": "m_firstAndLastEdgePnts",
+            "before": [
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    0.6666666666666714,
+                    0.0
+                  ],
+                  [
+                    0.6666666666666714,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "after": [
+              {
+                "uv": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "uv": [
+                  [
+                    1.5000000000000107,
+                    0.0
+                  ],
+                  [
+                    1.5000000000000107,
+                    15.0
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 50,
+            "field": "m_origin",
+            "before": [
+              119.74999999999996,
+              67.41666666666661,
+              76.0
+            ],
+            "after": [
+              119.74999999999996,
+              66.99999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 53,
+            "field": "m_origin",
+            "before": [
+              119.74999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.74999999999996,
+              68.49999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 54,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  -2.842170943040401e-14,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  -6.394884621840902e-14,
+                  0.0
+                ],
+                [
+                  1.5000000000000107,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 55,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.3333333333333428,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.7500000000000213,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 56,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666661,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              66.99999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 56,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  -2.842170943040401e-14,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  -6.394884621840902e-14,
+                  0.0
+                ],
+                [
+                  1.5000000000000107,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 57,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5000000000000107,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 58,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.33333333333337123,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.7500000000000853,
+                0.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 59,
+            "field": "m_origin",
+            "before": [
+              128.99999999999997,
+              67.41666666666659,
+              76.0
+            ],
+            "after": [
+              128.99999999999997,
+              66.99999999999991,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 59,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5000000000000107,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 60,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666998,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5000000000000746,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 61,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                -1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.33333333333337123,
+                9.500000000000014
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -3.1579677144893293e-15,
+                -1.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.7500000000000853,
+                9.500000000000014
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 62,
+            "field": "m_origin",
+            "before": [
+              128.99999999999997,
+              67.41666666666659,
+              91.0
+            ],
+            "after": [
+              128.99999999999997,
+              66.99999999999991,
+              91.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 62,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666998,
+                  9.500000000000014
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5000000000000746,
+                  9.500000000000014
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 63,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5000000000000107,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 64,
+            "field": "m_placer",
+            "before": {
+              "m_dir": [
+                -1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.3333333333333428,
+                15.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "after": {
+              "m_dir": [
+                -1.0,
+                0.0
+              ],
+              "m_isMirrored": false,
+              "m_origin": [
+                0.7500000000000213,
+                15.0
+              ],
+              "m_placedDraft": false,
+              "m_scale": 1.0,
+              "m_uvScale": {
+                "m_uv": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          {
+            "channel": 103,
+            "object": 65,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666661,
+              91.0
+            ],
+            "after": [
+              119.49999999999996,
+              66.99999999999994,
+              91.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 65,
+            "field": "m_Envelope",
+            "before": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.6666666666666714,
+                  15.0
+                ]
+              ]
+            },
+            "after": {
+              "m_corners": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  1.5000000000000107,
+                  15.0
+                ]
+              ]
+            }
+          },
+          {
+            "channel": 103,
+            "object": 69,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666663,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              66.99999999999997,
+              76.0
+            ]
+          },
+          {
+            "channel": 103,
+            "object": 71,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              68.49999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 22,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              68.08333333333329,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              68.49999999999994,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 23,
+            "field": "m_origin",
+            "before": [
+              119.49999999999996,
+              67.41666666666663,
+              76.0
+            ],
+            "after": [
+              119.49999999999996,
+              66.99999999999997,
+              76.0
+            ]
+          },
+          {
+            "channel": 102,
+            "object": 0,
+            "field": "m_keyRefOffset",
+            "before": 0.3333333333333333,
+            "after": 0.75
+          }
+        ],
+        "edge_consistency": {
+          "paired_face_endpoints_checked": 24,
+          "maximum_endpoint_disagreement_feet": 4.263256414560601e-14
+        },
+        "requires_existing_type_width_validation": true
+      },
+      "native_brep": {
+        "native_vertex_bounds_feet": [
+          [
+            518.96966991411,
+            67.21966991411003,
+            76.0
+          ],
+          [
+            528.5156114601285,
+            76.76561146012841,
+            96.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 576.0000000000002,
+            "signed_volume_cubic_feet": 360.0000000000015,
+            "volume_cubic_feet": 360.0000000000015,
+            "bounds_feet": [
+              [
+                518.96966991411,
+                67.21966991411003,
+                76.0
+              ],
+              [
+                528.5156114601285,
+                76.76561146012841,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                520.0303300858899,
+                67.21966991411006,
+                76.0
+              ],
+              [
+                528.5156114601285,
+                75.7049512883486,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                518.96966991411,
+                68.28033008588986,
+                76.0
+              ],
+              [
+                527.4549512883486,
+                76.7656114601284,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 240.00000000000054,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                96.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 360.0000000000015,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    }
+  ],
+  "existing_half_width_reference_checks": [
+    {
+      "id": 16789,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "e6079959302612a68620ec49cb0f8c1d041b9e8bfd14aa8bb7d6b83019b3be5b"
+    },
+    {
+      "id": 16795,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "bd663b4621164d51bb8e8b84a3df9e80718a2839d3adfb7fd79d147de3fce60f"
+    },
+    {
+      "id": 16798,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ea0ce7e861785e83d3477a73105497197bae21a3b47f1bbe87dd33f516e8c1d9"
+    },
+    {
+      "id": 16815,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "514df0cbc34cd38758f36d3bd4072f3100da00e41c4ee688ec9a8570432256b7"
+    },
+    {
+      "id": 16816,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5110e14b5bbd004bb49c1390ca198c368b9f7c453f7d2072127c995cf1a39321"
+    },
+    {
+      "id": 16817,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7384e36890e1611c5d7a203fd27af17641184ba3d4e4d29ec98a60657aabefdf"
+    },
+    {
+      "id": 16818,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "4948eda016a8dd21994bf12259d13ee804c07a8ec26923595f622f7bedd7eaa1"
+    },
+    {
+      "id": 16819,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "16219afa955d9cce3e1073573ab999c047e3edfc0b989910977ed6ec585b2b6b"
+    },
+    {
+      "id": 16820,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "4b296118e021340c6ec069ecfb82900143376e5ff5d6452caffc23fdc8a3967e"
+    },
+    {
+      "id": 16826,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e20f752aea1b42fc5d9d42839c5ca672ae77e2e743a43af4394f044a8b0a2678"
+    },
+    {
+      "id": 16827,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c785a5be99cfc49c875f5196c76238ce48819c5d3ba897d49baf32b96fbcc481"
+    },
+    {
+      "id": 16828,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "fdf193e72d5184a8e476d9cabd7a1f6643b82736f8397745b91a1b6d755a60c8"
+    },
+    {
+      "id": 16829,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "71a9cbf47f8a9f469e84977e676c1dba3061b21745451c017e3a2f266588ec89"
+    },
+    {
+      "id": 16830,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5ec7b0320e1cf12d5630c3b4b86971e9cd30b42cbd08a100235492c48c6ab13e"
+    },
+    {
+      "id": 16831,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5b88945f71ba3a032cc67f9e545915365ce0b3810be2ba19c811473769d6cb22"
+    },
+    {
+      "id": 16835,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "4e533f4e9a437b0ca5cc6a93f842ff51d66de30589694e04a79e8cd129b09352"
+    },
+    {
+      "id": 16840,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b48a9c9102fe7848d750c804427abe9c1acf574d1467be448ec0457a739951a9"
+    },
+    {
+      "id": 16995,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6ff77884df5a6073a60dd799e765d8e242f3db4be9a8df87704d5f155cec6e59"
+    },
+    {
+      "id": 20817,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c452e2910d040becbee8b7a78ccb973405fbb4aef9dd714f4e206f48803d6357"
+    },
+    {
+      "id": 20823,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ff1ecea37bfd6d30e4e0f2b23f50bb632326284552d7997b07d3271ea5653eff"
+    },
+    {
+      "id": 20826,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "816072c39ffe4de748103185e6d5bce5b7291f37d9a2551844525414a99128d7"
+    },
+    {
+      "id": 20843,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6c0a405fff230883176c89425a2962e7705a033b4bc4d39dfbda2886846a5e33"
+    },
+    {
+      "id": 20844,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "a80349cbb7b2430e7cf29c24a05daa8adbcd5f477f189c38842bc6ca1063b9b2"
+    },
+    {
+      "id": 20845,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c4f60f91321c74a6e65d1798a94c93a716b15556270ad93cf7972f28e2e9a93c"
+    },
+    {
+      "id": 20846,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ddf45ef5f1618cf92052b2e0627b486adc3ca71ff4193bfc777ea981315b7cb7"
+    },
+    {
+      "id": 20847,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "4e74be572a5e5b315a5797963d61839ca872134de082a66f37d2e964a8c9fa66"
+    },
+    {
+      "id": 20848,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "41b8dc232a26bced8fd820e7ac92e117c1690907cccf5253b67f87e652c7c595"
+    },
+    {
+      "id": 20854,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "2e3611775bcfce5ddcc0a2b71dfd1e2bb90f078ab9a6143172f9e13b4e5afe0a"
+    },
+    {
+      "id": 20855,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7668d8658f22124221a5b5fd1b4550c0b80888d34a01a2d359ef11c3e5aae52c"
+    },
+    {
+      "id": 20856,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "0275c9575cacfc558f637d0e46eb38604bed37ffbf5398e3b9143eadce5662ff"
+    },
+    {
+      "id": 20857,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "f7a77deb03e91a777eb0cf9bb794f255329efd3f1b211929036b0f62781bfca2"
+    },
+    {
+      "id": 20858,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b7703d8e7e19bd2a00786aa97fe7a120cb93854d1ac857b669c4064e9e8d4150"
+    },
+    {
+      "id": 20859,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "83b17350d8326356950bbbf7645206bdb9a54b6c97634960fe0c36ca360c8e0c"
+    },
+    {
+      "id": 20863,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "fef3976646f7036c398dc1b5d82a50a26878d4ae52e3f9f118533a4ff7a1b225"
+    },
+    {
+      "id": 20868,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "af40633ce72c2aed4cfeb8c645e078c10441d273fff2db1bd88c68218031fe32"
+    },
+    {
+      "id": 21023,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "76c61c68a4bbd4d215bdd3186ae4d0387164f6c847087395c79c3c877c884be3"
+    },
+    {
+      "id": 22008,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "06221c803d90e0110de7412318925643ee243aa855e78b250eb41d7a339e801c"
+    },
+    {
+      "id": 22010,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "a9058f81fd508c0d073afe1003f79730c72099efed8c091c9c8d818491fa0cec"
+    },
+    {
+      "id": 22012,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "995b1a19afc16fd1a0b2f4fd5d5dc24552f8fdcb8fffa84796d7a54a23f2b2c0"
+    },
+    {
+      "id": 22014,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "cc773df4b50843664e26e365a52ed942468513cf7c19351305774528d5c296a1"
+    },
+    {
+      "id": 22771,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "23a9634dc5036570ab911bb5760612dce87dc951a2c7eccf270e5f2475e351c0"
+    },
+    {
+      "id": 22773,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "314d796b9256e2321c2399eb504ef7d153a7100aad59d4e6f3e18efc2ca12647"
+    },
+    {
+      "id": 22775,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "63110419adf4d6690044439899c98a4d445a1d331be4fd693878a7ff2bcd8ffe"
+    },
+    {
+      "id": 22777,
+      "type": 3897,
+      "key_offset_feet": 0.7500000000000001,
+      "body_sha256": "3e149cf4664f83a0800ae967ff9a77e1390f112aab186d252bad7518de4fe6df"
+    },
+    {
+      "id": 27950,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "8071ec95d6a11af786878547cd089407605dc3c40857676015a205917f4cadac"
+    },
+    {
+      "id": 27956,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c53b0e37b7656ca83d8ab2046f5d81e78ce21ab314e5f54d4ad25b811d06c412"
+    },
+    {
+      "id": 27957,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "2d060ba57fb43d62a96a11df9d0b6ffb6bd45881428ae94ec732d3e195d5812b"
+    },
+    {
+      "id": 27959,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b3cab779464571c99abd16b2933874062f86cd03f5fab4dc5921fae29006c41d"
+    },
+    {
+      "id": 27976,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "d49f3aa55f006bf6b8e5716d512adcbc4533e350698b3e3ce00d07eb83070de7"
+    },
+    {
+      "id": 27977,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "61d518b182b6b75ae18a38bb5f98add5c9ed0d912902dcb10cf1d3611571d1c4"
+    },
+    {
+      "id": 27978,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b07cddff6658263e9330bfebaf3463fe5b64c835c3c25a82f728f1fae1ac5bbe"
+    },
+    {
+      "id": 27979,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "da36d5f82c244d21d86433995f20773174354dd335fa9a0452431be9721a6777"
+    },
+    {
+      "id": 27980,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5a807f8ac94154b7bf638f8e4b53fb451d9a1575d499cdccbdf696ec9897f4f7"
+    },
+    {
+      "id": 27981,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "4c97d3705055d78d5997b19cf461b77bb65dd25615e24b1b6ebba146fbf882c9"
+    },
+    {
+      "id": 27987,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e50976c8f7046a93187644ebfdea5da843e2b57d2f5fa232eeed4e8ad0603c65"
+    },
+    {
+      "id": 27988,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6fdbf221a651bc95d8128a40082f80fcf7a51a9f957de8ead58b5043a1ae3984"
+    },
+    {
+      "id": 27989,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "48e62d36eee37171da95435c40be63627901b553c76e562cf454dbfb40ad411f"
+    },
+    {
+      "id": 27990,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "075d3f2acf0c940a480cf24e145482402f763009059148884fb2b5667993ca62"
+    },
+    {
+      "id": 27991,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "bfb7900dc0ac8c609cfef4f25da154d9f67cec0ad3d7fce0e6a80d17e1e88b77"
+    },
+    {
+      "id": 27992,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "4635c031c79e87b57f8d8e59147471addd4813f522e5b6c63221dcc1bcafc907"
+    },
+    {
+      "id": 27996,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "3b06c8c850beb336b698f9170f43dc5fd22dedef31bcd0ca8da001352b4a6341"
+    },
+    {
+      "id": 28001,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6dca96bdc4a949220dec6d6587afc55832762842bc7a7516edadd20e94e9a6c8"
+    },
+    {
+      "id": 29874,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c473134e16b3bb19e48d3278beba13933bdf08c84183600e90ff7367320097fb"
+    },
+    {
+      "id": 29880,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7436cde4c0e09b014502b3e4d27d44670e0d3c5c174551c714aaf6ce77ca0437"
+    },
+    {
+      "id": 29881,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "cc8d633526f3a164e791e7eba37fd5547680ba4b3017102f9a01dcb9c145748b"
+    },
+    {
+      "id": 29883,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "6be23b68a0f735a64627a8ca54dd3e57ce3449fe1547c0175529c139a36fde33"
+    },
+    {
+      "id": 29900,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7003ae2ea1f2a560e64574ef54f6d0caa35e7ed5f60ec862e7014a75213dc23d"
+    },
+    {
+      "id": 29901,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e44e400527c438bcd52d57b975cfb15bff6e66d0a02928cc6e47d7bbf8053aef"
+    },
+    {
+      "id": 29902,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "f1ddce16a69bf739bc64a905dab108716d18f1562de5979c9d318e57bbb3294e"
+    },
+    {
+      "id": 29903,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e31b880a044393725aad1ac335f5f63e8fc51af8d5dbadbb003b0b96f8bb7e41"
+    },
+    {
+      "id": 29904,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "0ad1e3f5540ac8235dea638f3f15232bdf0a53bc943948328ccb4957c85947be"
+    },
+    {
+      "id": 29905,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e13055e89edee4a98fd5625280a17bae2c5baefa271aff6100521a65ba1bed15"
+    },
+    {
+      "id": 29911,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "19249c114421690436195cdbf2f8c26ba5f8d236e01c21b35ef1176ea8bda58e"
+    },
+    {
+      "id": 29912,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b89c8fdb070c195ac001bcbb5b62f8d11f5577d26499727281ecb23062415789"
+    },
+    {
+      "id": 29913,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "42633e0c701681beaa601df2214c9ef71d5b9d704021ceee86ba40b8862a3bfa"
+    },
+    {
+      "id": 29914,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "d94db82ec0617f720cb0a4a81d35ac738d15ae233ea1f31c59e98974885cae40"
+    },
+    {
+      "id": 29915,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "80cd3a7b1e1027f727b81d11ab0851321650c1cc96cd5ef3c9aa9c99f1f948d5"
+    },
+    {
+      "id": 29916,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "490b68445ed547bee4bcdee4cc75581172d49080e8d5a693fdac6d57284ce90d"
+    },
+    {
+      "id": 29920,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "87f03f8559d8aa3bc4a3716367422893d330f981acd603e59f3e5e40b1290b54"
+    },
+    {
+      "id": 29925,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "bb989a31503155a3ff3a38ac4302fce03a1efe899c25518c5c934735d7b81e06"
+    },
+    {
+      "id": 34277,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "8f2111a3f2da76244952e1d1a8522ae882dc8da0066692b78aaa87870db05ee7"
+    },
+    {
+      "id": 34283,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "d26a6b2dea124efc67deddd83f09196218917c62fd044646d3565067aaf01aba"
+    },
+    {
+      "id": 34284,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "17e3c8a6e74b8c79d15d1ffc91fce5e47eedd2b4a1b1d2e9a6c10bf97abf5b9c"
+    },
+    {
+      "id": 34286,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "8052451b7f5a2cb1620be732751fba8493eca80294814ea2b7e4c746a0f1bf0c"
+    },
+    {
+      "id": 34303,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b1a0f448ad8ed9a7b518e37caa17b9069ecd5b45e82ffe8f2474d1abb2fba6f6"
+    },
+    {
+      "id": 34304,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "666fbb7e642d275e39a92eb7ee96a35cbbd71e213fb4e5a49068517349c1f678"
+    },
+    {
+      "id": 34305,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5b3603a84919edfcff53a2ad6bb8e9143f8a8ceec918d2be1235d19e0e97df5d"
+    },
+    {
+      "id": 34306,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6bad47959329ae7a8c3151a10b4bc69e2603890cc9ab784a5db02a9a6f738ce9"
+    },
+    {
+      "id": 34307,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "1162e463a843ce6182419fb3a1fb52418229a27a13a0862b948c23657d9069b9"
+    },
+    {
+      "id": 34308,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6ad545516b3ea1e2515d7487b752c0108d6a2084f312b38ecbed2fb2c6ea2cad"
+    },
+    {
+      "id": 34314,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e72cb2a52792eab5ec4256ec712a6649c5cd1fba870fbad4720467c4ef5a85ff"
+    },
+    {
+      "id": 34315,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "190b0339363771f5b9da64011e58105eb0659eecf805164a78af3690e7e9050a"
+    },
+    {
+      "id": 34316,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "3438af27469581d7aaaec38ded664c207f8b7aac3989b814909c2dc5724f0ce6"
+    },
+    {
+      "id": 34317,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ed3a41cd5149c0c90d2797ca679ef0936b47ae1f27c2e717c8cb57837338466d"
+    },
+    {
+      "id": 34318,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "73431a6c4a0bc2267d6796b23ff4e08d6d0b004678b6dccdc52e616845b42d55"
+    },
+    {
+      "id": 34319,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "9e0f2762bc1bc0e5af2e167c2425bfb3c2f5fa6a3b1577554c17231fecffb659"
+    },
+    {
+      "id": 34323,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "a12f193a9765bdfa1d26cd3182b87c5a4712dc27d0649de2518d28175d24433b"
+    },
+    {
+      "id": 34328,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "753577319f2566377eec5db46894a050dd3d9ac0c9e92086f255d308a881102a"
+    },
+    {
+      "id": 55755,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6a01603850e986dd077cb9004bdad475b19a153641a3795dead2dd999feaa402"
+    },
+    {
+      "id": 55761,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "426ab59e2632a577f0af3e13824817c8532e4a4e6a9406e6fd3927474aa61901"
+    },
+    {
+      "id": 55762,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "1e87d352047ab1e04615ad099d503dde1aaaafbcde3305f860c87097fb69166f"
+    },
+    {
+      "id": 55764,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "3ab9a8638b847261328489a926033524e7ec4a1c9eca729e7c05d1b30a584cd3"
+    },
+    {
+      "id": 55781,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c211891df3bf2e9f2f63ae1d3caa1f852671e2572b12ae57c7ab068c22d87c2f"
+    },
+    {
+      "id": 55782,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "77a8ab5d0cbeb4b20af84b8f03a71743223723b0b9ec25d91ab4189e6dd718a7"
+    },
+    {
+      "id": 55783,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "1501ca56689138dba1f63074260bdc7b5eb1856258a9777d2240387348043d00"
+    },
+    {
+      "id": 55784,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "18b233be5c4bc9cf33b25843ee0a504792897ea7fe186830382d38c6fdf25381"
+    },
+    {
+      "id": 55785,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "909ba32c019a7857df5be1bdb26ca5a6eff875597e1009fedfdb50677eebe7fc"
+    },
+    {
+      "id": 55786,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "95fc10901e9488c6d56b91ab18fbe07efe319e17b6f17986f0e44e6eb034f0d0"
+    },
+    {
+      "id": 55792,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "0c7b0d067d695c6ba2d8a804384b7a6e75f4386fb1673981f8e01f722c6370dc"
+    },
+    {
+      "id": 55793,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "605e51d0bc09a60da65e7eab2f96aedb08f4f4b6559950d11448dac34503b8c4"
+    },
+    {
+      "id": 55794,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ffca1b020abf6e8056d0fd72f1aaaab781989164dbb9a296d425c475172ca821"
+    },
+    {
+      "id": 55795,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e714d620bb5a0f59d20b2e41dceabf94c633b60a1294ca1cbdf28a9ed995ca7e"
+    },
+    {
+      "id": 55796,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "bf7202ed0fbce937ff5091b89e515ea0e613c1b30e213206d32aea45f1ccc516"
+    },
+    {
+      "id": 55797,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "2eac9a55bb7e186dc7a4dce31cbedd6880b6f3c922791baf84ed27e016508884"
+    },
+    {
+      "id": 55801,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "a143d2d14b8fc9c80189e0ee522fd2521aa7480c151302af1ca6866e26652c7f"
+    },
+    {
+      "id": 55806,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "5449ff656f276e124df27f8726521798a3043468a6cad65eb39b18e38f6ce94a"
+    },
+    {
+      "id": 59335,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "fe6960a5493b3dd76fbeb4edbda5c8a68b48c47ede4abb4a2ebc8d0a3c1d9e15"
+    },
+    {
+      "id": 59341,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "92782abecbad13e4f1406152b32fdad683989527f9d5656f1d9bee6b2401178a"
+    },
+    {
+      "id": 59344,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "da22ca61827a530cec2ce7d030adaf0c3b27bab394b0850ccad091f2416df07d"
+    },
+    {
+      "id": 59361,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c3ccbfa97c981782d15484998fdd20332d31416728cb1ad42a87d8bf6d4d6010"
+    },
+    {
+      "id": 59362,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "734251092a3a18eee72fe93fcc42784938b0d4552f31158fa219a208b7b936dc"
+    },
+    {
+      "id": 59363,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "9a994faae2b8ea9466eda614622796f5ee4338631b07a6db472b874e69d34560"
+    },
+    {
+      "id": 59364,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7fdda5a8ffe131b109aa78d5a5ee3b46e67528b26baaea9688b449c6280e61c9"
+    },
+    {
+      "id": 59365,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "27e60a36063bd173a0507dc6a9757a2f2081e3d8fa2b5f0b0bc3c419be61cdf2"
+    },
+    {
+      "id": 59366,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "17a26d51d31f11ca95f6a8c60ce161199313855263051d7fd717658a243b6587"
+    },
+    {
+      "id": 59372,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "dd258bb901716ab8814d0ecb255b069071284ea7cd7d17af8a4efd61b133d062"
+    },
+    {
+      "id": 59373,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "a5473318a25dde26d7fcb08a7ee6d342a40a443df1794073d9cbe69c55b03bba"
+    },
+    {
+      "id": 59374,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "96d2edc95af8e3e66daea3ff41fa9bc027cfc0e477120b787a180f451c82ad75"
+    },
+    {
+      "id": 59375,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "9c8ac0ac594296bcdbb9be47ea44db6e6dee3f72b75c96473d2a00961a0885eb"
+    },
+    {
+      "id": 59376,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7a8affa318b9974ba98f29542c66c5bfc625f4bd1d4219fa7dde6c0f50c06ad1"
+    },
+    {
+      "id": 59377,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "63dcfae12778ee9722294bb1f299086dad39c8dcc1c5280066ba12f4e1567f9a"
+    },
+    {
+      "id": 59381,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e5fca8961cae2c402a3b082143ddfffc08b8815563a152b1edbfc8575854ad3e"
+    },
+    {
+      "id": 59386,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "23a71a74a91ce97ec80ddd83842771b78323a919136aebe59e4c60ffb69ce26e"
+    },
+    {
+      "id": 59440,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "a3fe725a1f14883698d712d8ad2574eac54483299fcc0d64f19e8e55324b08d5"
+    },
+    {
+      "id": 60216,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "f4dbe5a12e033227cff2af9aef8a95c608401c01adabd1fa89740bcf09557e94"
+    },
+    {
+      "id": 60222,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "168ebf27bc89327ace6d4b4ade5a690c5f26ed464cd62c149aaedd1ad80b0bb6"
+    },
+    {
+      "id": 60225,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "4540815b379412718f38651d89a43a792a917051cb5e2a0c64cc69acbfa9e782"
+    },
+    {
+      "id": 60242,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "70ea6affe737ba513827af24453e3e64bc72ce31dda076b65ec67bb2166c53d5"
+    },
+    {
+      "id": 60243,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "fcc2063157c4802c6b98c868ed3dbaa09b8563bf2d6bf8c9efeab0229ff516f2"
+    },
+    {
+      "id": 60244,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7332f0635600cb66ac697b36c9152cc92193b8bbbe0e843588368e5e6f1ff713"
+    },
+    {
+      "id": 60245,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ef139258a876a31083fdffa0edee1c56d21b5b67f8af6921fb4e0fc403b7ba3e"
+    },
+    {
+      "id": 60246,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7625073449fabc77214389d88d95fd799ccf9e06210f6ca2a420fa6305fb09d9"
+    },
+    {
+      "id": 60247,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b189073dfc21ad983131841f559ecc0b3465a023c9703a35f54d419ad03dff45"
+    },
+    {
+      "id": 60253,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ef36be649c87a4921f7962c787f206ec8625c139bf37c7126f5fc5bdb5d0c9a2"
+    },
+    {
+      "id": 60254,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "61fba7c9232b0fe69dff03a23de0dfea989748af69282e9f4d2c898ed4e8e050"
+    },
+    {
+      "id": 60255,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "1b61d959df5658644dbdc24bb13c4df9aa8dd78995f1f7f505af148f9d9a43c9"
+    },
+    {
+      "id": 60256,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "106c3838996e73e1ecb91735aa9abfc02f4816f450fdbc802dea34ec11f2adad"
+    },
+    {
+      "id": 60257,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7583e85024e7471a638206032f67a1ae5381020eeb9514bd932a71601dd2a497"
+    },
+    {
+      "id": 60258,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ce11f2bff5a3fcc640ca33305a35e27e104043a9806cae8179493a1bfb8b007e"
+    },
+    {
+      "id": 60262,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "3d43df132a35f5eef9dbe167ecb1d5ffd90909be5dd896236a6897a62c68875f"
+    },
+    {
+      "id": 60267,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "1e3365142c377007f5e1c51c4a8b6e1bc08447324d1de92cc96d7187012e00c1"
+    },
+    {
+      "id": 60321,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "8404bd0479293015917bd914afcb6fb34b5c5eb79736be49ad1369d605bb065f"
+    },
+    {
+      "id": 61097,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "e5e5c29ef35bef2a09264939e060ae2af8981d3a7f67546373bfa935d6d23a9d"
+    },
+    {
+      "id": 61103,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7cdba0a32d0098c7bae69f50f7131bc85928cdaf0ccfcb3304234a5b3738aecf"
+    },
+    {
+      "id": 61106,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "e65941b6b52a7139e88eb68d4cb56282ec21d7d3352403fec303311f0f69a68e"
+    },
+    {
+      "id": 61123,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "0dc43249a3df3336b8d15ee31588fd12df28f292ce4d74c27c49e28e740afdcf"
+    },
+    {
+      "id": 61124,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "eb8c252df94b6c8e26e5353a85631bb1173b3cfe35ff3d20d209376958338c05"
+    },
+    {
+      "id": 61125,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "d9ccd2ddc141c75ffaa08855c5a5767c69e8c76596c83e43e63196f04b13f1aa"
+    },
+    {
+      "id": 61126,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5243ad2fa2ec02577169d1f30f011cc0e0cad2b00ba45f949cac047070a85330"
+    },
+    {
+      "id": 61127,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6263384d43aee672db362d7dac6cb4f3b7c0f88d8814887376af0b2ec6f03ec6"
+    },
+    {
+      "id": 61128,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ebcda873b8f156242bfbd50d3bfb7bc730eba18de2d5d7bd22acab339a8b9cc3"
+    },
+    {
+      "id": 61134,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "387319393a004ca80cf95c83fad1231548ffe98134cea34655ae77a4ddcbb4de"
+    },
+    {
+      "id": 61135,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "108875c294c53f0e248f4c40f0e2f281d909400348c9de84a5e36dc4b641f9c6"
+    },
+    {
+      "id": 61136,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "2a3db68d4f18d266efbff6326e25a65ce600aefee5ca5e66eac1f22d74acc10a"
+    },
+    {
+      "id": 61137,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "eca5b9f355d1398024ee0827b186d609fb488a3ddd3b20114557c1dd28e44153"
+    },
+    {
+      "id": 61138,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "8bc14672fde13723c8aa6f73de74bf219ab159b4790b72d350126b4bea9fcbb4"
+    },
+    {
+      "id": 61139,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "1a24f6bf58f68498c84f8db73a0e97d8e634eae270fb01c9ce972c572bee3d2e"
+    },
+    {
+      "id": 61143,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b574c60e4ab546fe12e6312e0c75e3dc55e190f34231723959cfdfb9452c5142"
+    },
+    {
+      "id": 61148,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "297a20f4e1ad7814b11183670952da66cb54a1f24f6cd5f03ab71acd09acdfd4"
+    },
+    {
+      "id": 61202,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "fb48ba9bd7a90fd3f45bf72533845f0db7c6c77d0469b768f66b412cb28c1c7b"
+    },
+    {
+      "id": 61978,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ca367713d6213c2c3b67c3ca49f9825e9fc66dbc9067f286bc8a97916fd1418d"
+    },
+    {
+      "id": 61984,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7d3614c4b079eb226e943f3048ccab2b65ec36aaeaf08160f8542e45c9a5f73c"
+    },
+    {
+      "id": 61987,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "a516e791912ca30f14b05ebbf13072ee7e795e0af74be23bed9ed9ba554d13d5"
+    },
+    {
+      "id": 62004,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "9389c72a708ca81fe671aa31ae58810ef5b1c719f7e0620ad654fa0e39b0e6b3"
+    },
+    {
+      "id": 62005,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5b793d5803b149da71445c9017fe28b87b36e2a01850f95f4917ff1a90e3d230"
+    },
+    {
+      "id": 62006,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "99fd2102e17ffb9644a7a40464d908aae9bede1b7fdd5e5139c0a970f86bf9dd"
+    },
+    {
+      "id": 62007,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "103ace5b1a6112618f8a87098cefe8c256dca7218058f62b333293372f3e0f80"
+    },
+    {
+      "id": 62008,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "8af66412b091f92cf246d17925147419ceccecc2a829d4fa1c71ec360bfe659c"
+    },
+    {
+      "id": 62009,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5114c5e54ee38c1e6b80ceea0904be37c0786db6353c10a3f54bfe305bfa661c"
+    },
+    {
+      "id": 62015,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "77d00c96f0860848cc173f2601093ed0b830d4026aa0b5d8821dc18a44da7562"
+    },
+    {
+      "id": 62016,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "3fed300f6295fc06befea5925ac997ce79f6fb9cb8329345bac70dd7b7638860"
+    },
+    {
+      "id": 62017,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6dc3c32fcfd553db86c7345ae9dd71d2ec6995480044a1841b633d0dd53b2f9e"
+    },
+    {
+      "id": 62018,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c84c798bf3596ceb9228eaa9126b2d933fed1dd7ade8344cd3e98170da1324d7"
+    },
+    {
+      "id": 62019,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "7aa3b50170a33d76785fd578ec1c090fd4771e59fe0652bb9c846375d1483321"
+    },
+    {
+      "id": 62020,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "f1a7c5465f37e1cc0af76c9e67171d1dc179118e3043402ad94b014e83722667"
+    },
+    {
+      "id": 62024,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "0e7c95dd0081d4d96d206835a47a7f30b3f62349e11f9e02c6e04eff21cd205b"
+    },
+    {
+      "id": 62029,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "a635ce396e1c369831e5c7c0dbea50590911bee26ce0d8720c596483406a347d"
+    },
+    {
+      "id": 62083,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "705e3c8ad43de902f7cda6ed01c0b3fd24eb0ff791a58ddec6a07c3ba0ddfe00"
+    },
+    {
+      "id": 62859,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "20840d94446801c6be75a4191a05d0b6ca924dc8639a9dff8616ddced3231167"
+    },
+    {
+      "id": 62865,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "658fe44311a633e9f6e0200b272403d5eb4cb13a97300b56a9ea386139f85ba1"
+    },
+    {
+      "id": 62868,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "b9f554ef7da0cbedc29a077acefa663aea0cd6255666f16071b8c7f33f4fd1be"
+    },
+    {
+      "id": 62885,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "6a674b9d5ec30ef8e35db3c8d0e71413626309510e69ae343a6b6f8dcb0eb15c"
+    },
+    {
+      "id": 62886,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "c4db91b0ab25b8714c547854b1fa17469a9cb58b1f4ce59d4a558cdbd1dac169"
+    },
+    {
+      "id": 62887,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "019840dc8081fef7a035d035ea855217e3b57e90cd62dfe25cca76af9112b1e6"
+    },
+    {
+      "id": 62888,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "021103a65dce97bfd059548ed51cf59a376596105bea082437627f527c580db9"
+    },
+    {
+      "id": 62889,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "359e3543cb53e3dd08fa4c71d3755c7af2151e29191f15837629a38f9d45c1ca"
+    },
+    {
+      "id": 62890,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "b79fa68f5edc97cf223ac0506dc17c5ac0419f60bfccebde176bf7db96739c1d"
+    },
+    {
+      "id": 62896,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "9f6041b739e6472b74b85769e6f7a6d7f70fcfbd666adf3c25ded460cf4747ed"
+    },
+    {
+      "id": 62897,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "3afa6a00fe2d86297f5ffe5f013f4bb1d3462b4d68f29a12e8b6939702836784"
+    },
+    {
+      "id": 62898,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "96cfce7d5d1f226aa4555a74cf0e97bb0ece65f893b32d5efd4d7fcdb3dd11d4"
+    },
+    {
+      "id": 62899,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "8a356ebe2c6abb610fe405d3df8824b3205b97c2bf82bf4456ee90d14ac1acf3"
+    },
+    {
+      "id": 62900,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "198e1ff54325ad24a7330980a7089de87cc70e5d9ddb07ecbe63cea01741f953"
+    },
+    {
+      "id": 62901,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "a9802a64658fd77399f328c6debadf2830d5afcdac2fa0eb96315ee81cdd290f"
+    },
+    {
+      "id": 62905,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "ed4b380aa5d0d12446d3f4db8704b34787e969c153654d16d2abc2dcceabbaa7"
+    },
+    {
+      "id": 62910,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "1cd7937b82bca25f7ea82736ec7e35cc9b6f04f202cf92234fb9903bd0aa4127"
+    },
+    {
+      "id": 62964,
+      "type": 17337,
+      "key_offset_feet": 0.25,
+      "body_sha256": "df21c1d9b312931f6e9393571f6112a7797b954d484d596b2bb269fd3f040154"
+    },
+    {
+      "id": 63746,
+      "type": 17341,
+      "key_offset_feet": 0.25,
+      "body_sha256": "5bbac26a9f8a46f5cbc40bec1d5bb96f9c8ff15fb6aa08bf5dc7c5117f755889"
+    },
+    {
+      "id": 63749,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "6cbd5cf1647e385fdf2029c54d8e3819833889497e923c2899a7ec6269a542fe"
+    },
+    {
+      "id": 63791,
+      "type": 17328,
+      "key_offset_feet": 0.3333333333333333,
+      "body_sha256": "5025aba5e2a4534cfbdb169f4758fc1bdddca3bdf163646305e4db1c9652e916"
+    }
+  ],
+  "nominal_source_graph_exact": true,
+  "target_seed_width_feet": 0.6561679790026247,
+  "requires_existing_target_type_validation_before_save": true,
+  "autodesk_acceptance": "not_tested"
+}
