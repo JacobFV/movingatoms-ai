@@ -108,6 +108,32 @@ def test_build_files():
         path.unlink()
 
 
+@pytest.mark.parametrize("elevation", [3.5, -2.25])
+def test_ifc_level_and_geometry_share_metre_units(elevation):
+    import ifcopenshell
+    import ifcopenshell.geom
+    import ifcopenshell.util.unit
+    from ma_proc.model.ifc import write_ifc
+
+    level = {"id": "level_units", "kind": "level", "params": {"elevation": elevation}}
+    wall = {"id": "wall_units", "kind": "wall", "level_id": level["id"],
+            "params": {"start": [0, 0], "end": [4, 0], "height": 3, "thickness": 0.2}}
+    model = Model({"seq": 1, "levels": [level], "types": [], "elements": [wall]})
+    exported = ifcopenshell.file.from_string(write_ifc(model, all_parts(model), project_name="Unit regression").decode())
+    scale = ifcopenshell.util.unit.calculate_unit_scale(exported)
+    assert scale == 1.0
+    storey = exported.by_type("IfcBuildingStorey")[0]
+    assert storey.Elevation * scale == pytest.approx(elevation)
+    settings = ifcopenshell.geom.settings()
+    settings.set("use-world-coords", True)
+    shape = ifcopenshell.geom.create_shape(settings, exported.by_type("IfcWall")[0])
+    vertices = np.asarray(shape.geometry.verts).reshape(-1, 3)
+    assert vertices[:, 2].min() == pytest.approx(elevation)
+    assert vertices[:, 2].max() == pytest.approx(elevation + 3)
+    assert np.ptp(vertices[:, 0]) == pytest.approx(4.0)
+    assert np.ptp(vertices[:, 1]) == pytest.approx(0.2)
+
+
 def _surface_points(read: dict, ids: list[str], spacing: float, offset: dict[str, np.ndarray] | None = None, noise: float = 0.002, seed: int = 1) -> np.ndarray:
     """Points sampled on elements' surfaces (moved by `offset`), with noise."""
     import trimesh

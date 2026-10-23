@@ -655,3 +655,17 @@ zero-yaw byte equivalence. The screenshots and full native/IFC reports are archi
 visual inspection and artifact-hash verification passed. The original failed run is
 retained, including proof that no verified artifact was published on failure.
 No production native-output claim or Autodesk acceptance claim is made.
+
+
+## Production export contract: correct physical level units
+
+The native-format work exposed an existing IFC unit mismatch. The production
+IfcOpenShell API defaults to millimetres, while level elevations were written
+directly from metre-valued model coordinates. A 3.5 m level therefore appeared
+as 0.0035 m, even though the mesh API converted the geometry correctly.
+The exporter now explicitly assigns SI metre, square-metre and cubic-metre units.
+
+Regression tests independently triangulate exported geometry and compare physical
+storey elevations and wall dimensions at both +3.5 m and −2.25 m. The model and
+model-job suites pass: **16 tests**. This fixes the existing IFC deliverable; it
+does not change the experimental native-output capability claim.

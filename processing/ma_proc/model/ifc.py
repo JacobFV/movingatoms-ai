@@ -1,6 +1,6 @@
 """IFC4 export of the model: project, site, building, a storey per level, each element as its ifc_class with its
 geometry as a triangulated face set (absolute working-frame coordinates, metres), names and properties.
-Revit opens IFC; a native .rvt can't be written without Revit."""
+The working-frame coordinates and project units are metres."""
 from __future__ import annotations
 
 import json
@@ -44,7 +44,11 @@ def write_ifc(m: Model, parts: dict[str, list[Part]], *, project_name: str, auth
 
     f = ifcopenshell.api.project.create_file(version="IFC4")
     project = ifcopenshell.api.root.create_entity(f, ifc_class="IfcProject", name=project_name)
-    ifcopenshell.api.unit.assign_unit(f)  # metres
+    # The no-argument API defaults to millimetres. Our levels and mesh input
+    # share an SI-metre contract, so assign units explicitly.
+    units = [ifcopenshell.api.unit.add_si_unit(f, unit_type=kind)
+             for kind in ("LENGTHUNIT", "AREAUNIT", "VOLUMEUNIT")]
+    ifcopenshell.api.unit.assign_unit(f, units=units)
     model_ctx = ifcopenshell.api.context.add_context(f, context_type="Model")
     body = ifcopenshell.api.context.add_context(f, context_type="Model", context_identifier="Body", target_view="MODEL_VIEW", parent=model_ctx)
     site = ifcopenshell.api.root.create_entity(f, ifc_class="IfcSite", name="Site")
