@@ -4,7 +4,7 @@ The MIT-licensed 2024 `Project.rvt` seed (SHA-256
 `674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe`)
 contains one Level, ID 1916, named `Level 1`. Its current channels reconstruct
 byte for byte from the embedded schema: 135, 740 and 2 bytes, respectively.
-They contain 2, 8 and 1 objects. The context type is LevelType 1910.
+They contain 2, 8 and 1 objects. The context type is LevelAttributes 1910.
 `seed_level-profile.json` retains the complete graphs and transitive schema;
 `seed_level-audit.json` records checksums and independent decoder results.
 

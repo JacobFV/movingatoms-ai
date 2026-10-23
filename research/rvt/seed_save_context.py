@@ -95,6 +95,23 @@ def register_seed(raw,evidence,wall_ids,level_ids):
     for start,end,value in reversed(patches):result=result[:start]+value+result[end:]
     return result,report
 
+def patch_seed_contents(logical,evidence,revisions):
+    """Preserve the measured one-byte zero suffix without relaxing shared codec."""
+    from save_identity import inflated,patch_contents_payload
+    expected='0310c9b003961ae56591b02864d56b3ccbc147b52d6d47daee426c68bbf00b2c'
+    if hashlib.sha256(logical).hexdigest()!=expected or evidence['contents_logical_sha256']!=expected:
+        raise ValueError('seed Contents source differs')
+    header=bytes.fromhex(evidence['contents_header_hex'])
+    _,suffix=inflated(logical,len(header))
+    if suffix!=b'\0' or evidence['contents_gzip_suffix_hex']!='00':raise ValueError('unmeasured seed Contents suffix')
+    trimmed=logical[:-1];adapted=dict(evidence)
+    adapted['contents_logical_sha256']=hashlib.sha256(trimmed).hexdigest()
+    adapted['contents_gzip_suffix_hex']=''
+    changed=patch_contents_payload(trimmed,adapted,revisions)+suffix
+    _,new_suffix=inflated(changed,len(header))
+    if new_suffix!=suffix:raise ValueError('seed Contents suffix changed')
+    return changed
+
 def patch_seed_timestamp(source,oldts,newts):
     """Pinned ProjectInformation layout with measured 10800-second offset."""
     from datetime import timezone

@@ -65,4 +65,23 @@ class SeedSavePlanTests(unittest.TestCase):
         self.assertEqual(before.replace(stamp.encode(),newstamp.encode()),after)
         with self.assertRaises(ValueError):patch_seed_timestamp(raw,oldts+1,oldts+60)
 
+    def test_seed_contents_suffix_and_revision_only_change(self):
+        import olefile,hashlib,zlib
+        from codec import decode
+        from seed_save_context import patch_seed_contents
+        from save_identity import inflated,revision_spans,patch_contents_payload
+        base=Path(__file__).parent;evidence=json.loads((base/'results/seed_save_context.json').read_bytes())
+        with olefile.OleFileIO(base/'local/minimal_seed-Project.rvt')as f:logical=decode(f.openstream('Contents').read())
+        with self.assertRaises(ValueError):patch_contents_payload(logical,evidence,{'history':1})
+        self.assertEqual(patch_seed_contents(logical,evidence,{}),logical)
+        changed=patch_seed_contents(logical,evidence,{'history':1,'formats':2})
+        before,tail=inflated(logical,91);after,newtail=inflated(changed,91)
+        self.assertEqual(tail,b'\0');self.assertEqual(newtail,tail)
+        expected=bytearray(before);struct.pack_into('<i',expected,revision_spans(before,evidence)['history'][0],1)
+        self.assertEqual(after,bytes(expected));self.assertEqual(changed[:87],logical[:87]);self.assertEqual(struct.unpack_from('<i',changed,87)[0],2)
+        for bad in (logical[:-1],logical[:-1]+b'x',logical+b'\0'):
+            with self.subTest(tail=bad[-2:]),self.assertRaises(ValueError):patch_seed_contents(bad,evidence,{'history':1})
+        bad_evidence=dict(evidence,contents_gzip_suffix_hex='0000')
+        with self.assertRaises(ValueError):patch_seed_contents(logical,bad_evidence,{'history':1})
+
 if __name__=='__main__':unittest.main()

@@ -34,3 +34,9 @@ No plan-view association is invented: Core has74 actual Levels but only15 `Level
 `patch_seed_timestamp(zip, old_timestamp, new_timestamp)` requires the exact seed ZIP SHA and measured10800-second offset. It preserves all XML bytes other than the two timestamps, ZIP metadata except required size/CRC/central-offset updates, and returns exact original bytes for a no-op. It does not relax the shared general timestamp codec.
 
 The independent tracker probe is built from `seed_save_context.rs` with the same pinned public reader and serde_json1.0.154 as the other research probes; its executable is `local/schema-target/release/rvt-seed-save-context`. The audit expects this executable, alongside the existing independently built Global/Contents probes. No donor or seed model file is mutated by these measurements.
+
+## Contents trailing-byte variant
+
+Unlike the earlier six-file corpus, this seed's logical Contents stream has exactly one `00` byte after its gzip member. The shared strict Contents patcher correctly rejects this variant. `patch_seed_contents(logical, evidence, revisions)` pins the complete original logical SHA, requires precisely that measured suffix, passes the gzip-only prefix to the unchanged strict codec with an adjusted source hash, then restores and verifies the suffix. A no-op returns byte-identical input; missing, nonzero, doubled, and mismatched-evidence suffixes are rejected.
+
+Seven tests now pass. Independent public-reader decoding of a five-revision trial matches the expected entire `DocumentStorageIndexImpl` field tree exactly, and the final zero remains present. This supports only the measured seed wrapper variant; it does not broaden the shared codec or establish that the final zero is optional.

@@ -5093,7 +5093,7 @@
     "Bodies only: no save or native application acceptance tested.",
     "New IDs in this audit are illustrative, not an allocation contract.",
     "Both horizontal surface origins updated; zero annotation/reference-point caches preserved as an explicit hypothesis.",
-    "Retains seed LevelType1910; Global level registration and dependent views require separate audit.",
+    "Retains seed LevelAttributes1910; Global level registration and dependent views require separate audit.",
     "Public typed Level decoder expects m_name/m_elevation; this actual schema uses m_text and Plane origins, so typed projection alone cannot validate this profile."
   ]
 }
