@@ -1,0 +1,105 @@
+{
+  "status": "verified_research_candidate",
+  "candidate_sha256": "47a3e82c61b45d85cde909ffde43d8a53da01c4e403bba2a10d9a81f0232ccf7",
+  "source_model_sha256": "e0b670a5351c8fd5dd77f936eb2e487ea945cce79f348c170f86c75ac7d0aaab",
+  "local_run_directory": "research/rvt/local/seed-model-production-run",
+  "runtime_bundle": "research/rvt/local/runtime-bundle-v1",
+  "runtime_manifest_sha256": "b67c35b20d9bf84c8f8c71375ed65ca83ad038a2efbafb862cd234b7c1dac129",
+  "elements": 10,
+  "primitives": 12,
+  "triangles": 312,
+  "original_source_records_and_model_context_recovered_exactly": true,
+  "prior_native_identities_preserved": 2300,
+  "artifact_sha256": {
+    "run.json": "dc8a46e628fde899b1d125b6150628d5eb840beaea232a438e78d4a3e52001b5",
+    "native.json": "2d7da33523c97a3e162838466672c53d1912a362e4ffcd0c407ef8362e5049ac",
+    "metadata.json": "05ca5d950aebc088ffa58a515134090b4ac9a5131a1c842804027dc8e2623a71",
+    "request.json": "16421611e6e394a1c7c4dd4ccac485ab13e5e8b04fdd894ec414d45e75537a4a",
+    "transport.json": "7fd98a53000d5d0b99be1c4a220c500e846e9841c2c171b4a551e004defe7b66",
+    "candidate-independent-scene.json": "774ac43ea139d3ca1682aa43afca7bfbaa89e149796577699c8028e0366f9ef0"
+  },
+  "elements_summary": [
+    {
+      "application_id": "wall_0000000000000000",
+      "element_id": 2747,
+      "name": "Wall 0",
+      "category": "Wall",
+      "triangle_count": 36,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "wall_0000000000000001",
+      "element_id": 2748,
+      "name": "Wall 1",
+      "category": "Wall",
+      "triangle_count": 48,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "wall_0000000000000002",
+      "element_id": 2749,
+      "name": "Wall 2",
+      "category": "Wall",
+      "triangle_count": 12,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "wall_0000000000000003",
+      "element_id": 2750,
+      "name": "Wall 3",
+      "category": "Wall",
+      "triangle_count": 12,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "door_0000000000000001",
+      "element_id": 2751,
+      "name": "door_0000000000000001",
+      "category": "Door",
+      "triangle_count": 48,
+      "rendered_primitive_count": 2
+    },
+    {
+      "application_id": "win_00000000000000001",
+      "element_id": 2752,
+      "name": "win_00000000000000001",
+      "category": "Window",
+      "triangle_count": 60,
+      "rendered_primitive_count": 2
+    },
+    {
+      "application_id": "slab_000000000000001",
+      "element_id": 2753,
+      "name": "slab_000000000000001",
+      "category": "Floor",
+      "triangle_count": 12,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "col_00000000000000001",
+      "element_id": 2754,
+      "name": "col_00000000000000001",
+      "category": "Column",
+      "triangle_count": 12,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "pipe_000000000000001",
+      "element_id": 2755,
+      "name": "pipe_000000000000001",
+      "category": "Pipe",
+      "triangle_count": 60,
+      "rendered_primitive_count": 1
+    },
+    {
+      "application_id": "beam_000000000000001",
+      "element_id": 2756,
+      "name": "beam_000000000000001",
+      "category": "StructuralFraming",
+      "triangle_count": 12,
+      "rendered_primitive_count": 1
+    }
+  ],
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false
+}
