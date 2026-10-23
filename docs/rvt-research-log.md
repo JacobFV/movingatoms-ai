@@ -669,3 +669,24 @@ Regression tests independently triangulate exported geometry and compare physica
 storey elevations and wall dimensions at both +3.5 m and −2.25 m. The model and
 model-job suites pass: **16 tests**. This fixes the existing IFC deliverable; it
 does not change the experimental native-output capability claim.
+
+
+## Minimal project seed and document lifecycle audit
+
+A pinned MIT-licensed Revit 2024 Project.rvt from ricaun.Revit.FileInfo is a
+434,176-byte project with 2,300 scaffold elements and no decoded donor-building
+instances. The independent reader decodes all 6,900 current channel records
+completely with zero off-route records. Storage codecs and transport parity pass.
+Fixture/license provenance, a reproducible fetcher, inventory and two passing
+provenance tests are recorded in `research/rvt/results/minimal_seed.md`.
+This provides a smaller seed; schema/context remapping remains implementation work.
+
+A real Chrome screenshot of the archived inventory is stored in
+`docs/rvt-evidence/2026-10-23-minimal-seed/`. It was visually reviewed; all manifest
+artifact hashes match. It is explicitly a local evidence report, not Revit UI.
+
+The separate `document-lifecycle.md` audit compares complete Global graphs of
+the Core source and 100-wall candidate. The only semantic change is the known
+structural-element set (+100 IDs, +800 bytes). No additional global bound or
+registration field is demonstrated by that audit. Its historical incoming-scan
+limits are identified explicitly; no claim of native cache regeneration follows.

@@ -1,0 +1,14 @@
+{
+  "captured_at_utc": "2026-10-23T01:28:10.827448+00:00",
+  "source_commit": "d165c1015a71d9a167072ecab9de9cbdfbdb94b1",
+  "working_tree_status": " M research/rvt/test_wall_batch_candidate.py\n M research/rvt/test_wall_batch_verify.py\n M research/rvt/wall_batch_candidate.py\n M research/rvt/wall_batch_verify.py\n?? docs/rvt-evidence/2026-10-23-minimal-seed/\n?? research/rvt/capture_seed_evidence.py\n?? research/rvt/directshape_audit.py\n?? research/rvt/directshape_probe.rs\n?? research/rvt/document_lifecycle_audit.py\n?? research/rvt/minimal_seed.py\n?? research/rvt/minimal_seed.rs\n?? research/rvt/results/directshape-default-budget-inventory.json\n?? research/rvt/results/directshape-global-registration.json\n?? research/rvt/results/directshape-incoming.json\n?? research/rvt/results/directshape-inventory.json\n?? research/rvt/results/document-lifecycle.json\n?? research/rvt/results/document-lifecycle.md\n?? research/rvt/results/minimal_seed-DynamoDS-LICENSE.txt\n?? research/rvt/results/minimal_seed-Udaragithub-LICENSE.txt\n?? research/rvt/results/minimal_seed-ricaun-io-LICENSE.txt\n?? research/rvt/results/minimal_seed.json\n?? research/rvt/results/minimal_seed.md\n?? research/rvt/results/wall-height.json\n?? research/rvt/results/wall-height.md\n?? research/rvt/seed_wall_context.rs\n?? research/rvt/test_minimal_seed.py\n?? research/rvt/test_wall_height.py\n?? research/rvt/wall_height.py\n?? research/rvt/wall_height_experiment.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "generator_sha256": "ed5fee8803626aef6deaf5dc5ce0d8ef9ddaa435937e62695096161d693db998",
+  "not_autodesk_ui": true,
+  "source_report_sha256": "f3932a9259f5815c389b83b4d29eaf1ac7afa4e040204c268fe9acaa874b2f06",
+  "artifacts": {
+    "inventory.json": "f3932a9259f5815c389b83b4d29eaf1ac7afa4e040204c268fe9acaa874b2f06",
+    "seed.html": "c646d3132bb73df59c79251443082b3da7f55c8a7e7f0527c4d18e20634b5b2f",
+    "seed.png": "08db1e2f1df62cd4be651055ae07432870e69990fd01fef2e17b1ca93e553a8d"
+  }
+}

@@ -174,3 +174,12 @@ The reports distinguish ideal native geometry, equivalent IFC local frames and t
 exporter's six-decimal placement precision. All prior wall meshes remain unchanged.
 
 ![Rotated wall geometry evidence](2026-10-23-oriented-walls/batch.png)
+
+
+## Minimal project inventory — 2026-10-23
+
+[Manifest and archived source](2026-10-23-minimal-seed/manifest.json) record
+the pinned MIT project, complete record coverage and absent building instances.
+This is an unchanged-source inventory, not an edited model acceptance test.
+
+![Minimal project inventory report](2026-10-23-minimal-seed/seed.png)

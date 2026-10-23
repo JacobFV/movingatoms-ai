@@ -1,0 +1,994 @@
+{
+  "files": [
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "graph_bytes": 1008502,
+      "objects": 252,
+      "complete_decode": true
+    },
+    {
+      "file": "verified-candidate.rvt",
+      "sha256": "5e33e3a6489fa6d5d5430de51addcea30023cd5ca6a36f302d65d844e961711a",
+      "graph_bytes": 1009302,
+      "objects": 252,
+      "complete_decode": true
+    }
+  ],
+  "probe_sha256": "4561890b1dbe57529c359b9951532d54e2a1cc7ca2d9469ff7a1ac557e3db300",
+  "global_semantic_changes": [
+    {
+      "index": 87,
+      "class": "StructuralElemSetTracking",
+      "changed_fields": [
+        "m_elemIdSet"
+      ]
+    }
+  ],
+  "global_source_wall_references": [
+    {
+      "index": 87,
+      "class": "StructuralElemSetTracking",
+      "path": ".m_elemIdSet[95].m_id.m_id64"
+    }
+  ],
+  "named_field_inventory": [
+    {
+      "index": 5,
+      "class": "NOBLE_SecondaryDataStorage",
+      "matching_field_paths": [
+        ".m_data[].first.m_secondaryDataDescription.m_dataTypeNameForJournal",
+        ".m_data[].first.m_secondaryDataDescription.m_dataTypeNameForUI",
+        ".m_primary2SecondaryDataIdMap[].first.m_appInfoType",
+        ".m_primary2SecondaryDataIdMap[].first.m_dataType",
+        ".m_primary2SecondaryDataIdMap[].second.m_dataIds[].m_secondaryDataDescription.m_dataTypeNameForJournal",
+        ".m_primary2SecondaryDataIdMap[].second.m_dataIds[].m_secondaryDataDescription.m_dataTypeNameForUI"
+      ],
+      "field_names": [
+        "m_appInfoData",
+        "m_data",
+        "m_enqueuedData2primaryParents",
+        "m_invalidatedInTransaction",
+        "m_invalidatingCandidates",
+        "m_pDoc",
+        "m_primary2SecondaryDataIdMap"
+      ],
+      "fields_sha256": "de4d4f65d8a88a92524fe9b6063b5638e1051ddcd77b0d8575ec1fda7205d0d4"
+    },
+    {
+      "index": 9,
+      "class": "SymbolIdMgr",
+      "matching_field_paths": [
+        ".m_defElementTypeMap",
+        ".m_defLegendComponentType",
+        ".m_defLegendComponentViewType"
+      ],
+      "field_names": [
+        "m_defCatSymIds",
+        "m_defElementTypeMap",
+        "m_defLegendComponentHostLength",
+        "m_defLegendComponentType",
+        "m_defLegendComponentViewType",
+        "m_defRoomOffset",
+        "m_defaultDraftingViewScale",
+        "m_defaultLegendViewScale",
+        "m_famRecentLists",
+        "m_pADoc",
+        "m_paramSetKeys",
+        "m_paramSets",
+        "m_systemRecentLists"
+      ],
+      "fields_sha256": "0b14385d8b91485b1a0cad0c589bc00617eb16c9c65ed2420ad28f85022f4380"
+    },
+    {
+      "index": 14,
+      "class": "AppearanceInfo",
+      "matching_field_paths": [
+        ".FSPPViewType"
+      ],
+      "field_names": [
+        "FSPPViewDir",
+        "FSPPViewType",
+        "m_autoClipElevations",
+        "m_pADoc",
+        "m_previewDBViewID"
+      ],
+      "fields_sha256": "fd028cc4362b0fcc01667c22828d3686259d243bf893acf56ca24db59b48a309"
+    },
+    {
+      "index": 24,
+      "class": "CategoryTracking",
+      "matching_field_paths": [
+        ".m_gstyleData[].m_gstyleType"
+      ],
+      "field_names": [
+        "m_categoryData",
+        "m_gstyleData",
+        "m_pADoc"
+      ],
+      "fields_sha256": "c87a8c9e89ba6b0aea8e62999fa0344e6f3badf88d01f38a46a93bd8e85820e8"
+    },
+    {
+      "index": 25,
+      "class": "DetailLevelMgr",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_pADoc",
+        "m_scaleC2M",
+        "m_scaleM2F"
+      ],
+      "fields_sha256": "551d82e8de8a1603eca29c2d39af5314954056fa4d962d993d4d81170b80a8b4"
+    },
+    {
+      "index": 46,
+      "class": "LevelPlanViewTracking",
+      "matching_field_paths": [
+        ".m_levelIdToPlanViewIds"
+      ],
+      "field_names": [
+        "m_levelIdToPlanViewIds",
+        "m_pADoc"
+      ],
+      "fields_sha256": "46aaceceef0db80021701a152467c6d1f164ccc5416cb9b9d91126640bf3eba6"
+    },
+    {
+      "index": 62,
+      "class": "InEditModeInfoMgr",
+      "matching_field_paths": [
+        ".m_curEditModeMgrType"
+      ],
+      "field_names": [
+        "m_curEditModeMgrType",
+        "m_editedInstanceId",
+        "m_pADoc"
+      ],
+      "fields_sha256": "dd56a5dc9e983435416401c1dc9b0e3c6cf029e078e3bae56b2e2d54c226728a"
+    },
+    {
+      "index": 66,
+      "class": "BrowserOrganizationTracking",
+      "matching_field_paths": [
+        ".m_setExpandedNodes[].m_type"
+      ],
+      "field_names": [
+        "m_currentBrOrgFamilies",
+        "m_currentBrOrgSchedules",
+        "m_currentBrOrgSheets",
+        "m_currentBrOrgViews",
+        "m_elemIdSet",
+        "m_folderNameToIdMap",
+        "m_idMRU",
+        "m_lastUsedId",
+        "m_pADoc",
+        "m_setExpandedNodes"
+      ],
+      "fields_sha256": "6f486887560545e73cb3603db12fad5dc65dac835e8e7d8ec243df3f0f17fc04"
+    },
+    {
+      "index": 71,
+      "class": "KeepAtLeastOneLevel",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_pADoc"
+      ],
+      "fields_sha256": "1cf5ea0db9f038dc2d88ba498ad622d42149b8d29532ef98a4a64ef320b5b5d5"
+    },
+    {
+      "index": 73,
+      "class": "AbsLayoutAppInfo",
+      "matching_field_paths": [
+        ".m_mapCabelTrayLevelToOffsets",
+        ".m_mapConduitLevelToOffsets",
+        ".m_mapDuctLevelToOffsets",
+        ".m_mapPipeLevelToOffsets",
+        ".m_sysNavStateData.m_eElectricalAnalyticalViewType",
+        ".m_sysNavStateData.m_eGridType",
+        ".m_sysNavStateData.m_mapColumnSettings[].second.m_sysNavColumnSettings.m_columnArray[].m_colType"
+      ],
+      "field_names": [
+        "m_bDuctMaxHeightLock",
+        "m_bDuctMaxWidthLock",
+        "m_bFrictionLock",
+        "m_bFrictionSizing",
+        "m_bPipeMaxSizeLock",
+        "m_bVelocityLock",
+        "m_dDuctInsulationThickness",
+        "m_dDuctLiningThickness",
+        "m_dDuctMaxHeight",
+        "m_dDuctMaxWidth",
+        "m_dFlexHeight",
+        "m_dFlexWidthOrDiameter",
+        "m_dFlow",
+        "m_dFriction",
+        "m_dHeight",
+        "m_dPipeBranchSlope",
+        "m_dPipeFriction",
+        "m_dPipeInsulationThickness",
+        "m_dPipeMainSlope",
+        "m_dPipeMaxSize",
+        "m_dPipeVelocity",
+        "m_dSelectedPipeSlope",
+        "m_dVelocity",
+        "m_dWidthOrDiameter",
+        "m_eDuctEquipmentSizeLock",
+        "m_eDuctSizingMethod",
+        "m_ePipeEquipmentSizeLock",
+        "m_ePipeSizingMethod",
+        "m_mapCabelTrayLevelToOffsets",
+        "m_mapConduitLevelToOffsets",
+        "m_mapDuctLevelToOffsets",
+        "m_mapPipeLevelToOffsets",
+        "m_pADoc",
+        "m_strWireSizeTableFilePath",
+        "m_sysNavStateData"
+      ],
+      "fields_sha256": "fc33c12da82b7e49b1fe1dd83a7999d19ab1f98c7797c43dbca130e8c3653d12"
+    },
+    {
+      "index": 78,
+      "class": "CopyWatchModeMgr",
+      "matching_field_paths": [
+        ".m_typeMapInSession"
+      ],
+      "field_names": [
+        "m_editedElemId",
+        "m_inDocCopyWatchProps",
+        "m_inEditMode",
+        "m_linkCopyWatchProps",
+        "m_linkDocIds",
+        "m_pADoc",
+        "m_typeMapInSession"
+      ],
+      "fields_sha256": "edddd914bd668bdb1e0e73a6ac3b27a49455d80f882a157e8aa928ae5fc92b34"
+    },
+    {
+      "index": 81,
+      "class": "RbsSystemNavigatorTracking",
+      "matching_field_paths": [
+        ".m_voltageTypeIdSet"
+      ],
+      "field_names": [
+        "m_defaultBranchOneColumnCircuitsTemplateId",
+        "m_defaultBranchPanelTemplateId",
+        "m_defaultBranchTwoColumnCircuitsDownTemplateId",
+        "m_defaultDataPanelTemplateId",
+        "m_defaultSwitchboardTemplateId",
+        "m_ductAccessoryIdSet",
+        "m_ductFittingIdSet",
+        "m_ductTerminalIdSet",
+        "m_electricalEquipmentIdSet",
+        "m_electricalFixturesIdSet",
+        "m_electricalSystemIdSet",
+        "m_lightingFixturesIdSet",
+        "m_mechanicalEquipmentIdSet",
+        "m_mechanicalSystemIdSet",
+        "m_pADoc",
+        "m_pendingAdditionsIdSet",
+        "m_pipeAccessoryIdSet",
+        "m_pipeFittingIdSet",
+        "m_pipingSystemIdSet",
+        "m_plumbingFixturesIdSet",
+        "m_specialityEquipmentIdSet",
+        "m_voltageTypeIdSet"
+      ],
+      "fields_sha256": "175f7bab80c73e06d5a4f76d7970d49a49589bc52b911a1255011e44da43c8a7"
+    },
+    {
+      "index": 85,
+      "class": "DBViewTypesForNewLevel",
+      "matching_field_paths": [
+        ".m_newLevelDBViewTypes"
+      ],
+      "field_names": [
+        "m_newLevelDBViewTypes",
+        "m_pADoc"
+      ],
+      "fields_sha256": "1faaa315102e71a8d9c6d6c7ca95b3aac9a7f81d3c1fc9474cc3684d4dfb8303"
+    },
+    {
+      "index": 115,
+      "class": "StructConnectionTypeTracking",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_elemIdSet",
+        "m_idMRU",
+        "m_pADoc"
+      ],
+      "fields_sha256": "7d6095b4f51a18b947af1635e932b3fee934cd2a8295db0531635a5b0c79daf9"
+    },
+    {
+      "index": 118,
+      "class": "SpatialFieldTracking",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_pADoc"
+      ],
+      "fields_sha256": "1cf5ea0db9f038dc2d88ba498ad622d42149b8d29532ef98a4a64ef320b5b5d5"
+    },
+    {
+      "index": 122,
+      "class": "ElemsSetWithCellsTracking",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_elemIdSetMap",
+        "m_pADoc"
+      ],
+      "fields_sha256": "78a7f5ee4e8b04fedff894647a3ac1fe109ffcd8e62530f216da7bbc82fc7534"
+    },
+    {
+      "index": 129,
+      "class": "PointCloudTypeTracking",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_elemIdSet",
+        "m_idMRU",
+        "m_lastPlacedInstance",
+        "m_pADoc"
+      ],
+      "fields_sha256": "d018d19f1414cdeb2e86edcc9ce9ec06f3404349c22f38546ce1fc8bd5cea3f8"
+    },
+    {
+      "index": 136,
+      "class": "ESSchemaStorage",
+      "matching_field_paths": [
+        ".m_storedSchemas[].second.m_fields[].m_containerType",
+        ".m_storedSchemas[].second.m_fields[].m_fieldTypeName",
+        ".m_storedSchemas[].second.m_fields[].m_specTypeId",
+        ".m_storedSchemas[].second.m_fields[].m_specTypeId.m_typeId",
+        ".m_storedSchemas[].second.m_readAccessLevel",
+        ".m_storedSchemas[].second.m_writeAccessLevel"
+      ],
+      "field_names": [
+        "m_dirty",
+        "m_pADoc",
+        "m_storedForgeSchemas",
+        "m_storedParameterSchemas",
+        "m_storedSchemas"
+      ],
+      "fields_sha256": "ade5792f31ead40c515a30aeacf5882698e77bc91c3bce482cb7223a5ff7b284"
+    },
+    {
+      "index": 148,
+      "class": "PropagationFilterData",
+      "matching_field_paths": [
+        ".m_data[].m_atomType"
+      ],
+      "field_names": [
+        "m_data",
+        "m_pADoc"
+      ],
+      "fields_sha256": "aab9633b917c2d326607fdc6fdd3c9512a79b29e07eca70818618d82f222d260"
+    },
+    {
+      "index": 154,
+      "class": "StructuralConnectionApprovalTypeTracking",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_elemIdSet",
+        "m_idMRU",
+        "m_pADoc"
+      ],
+      "fields_sha256": "a0cbae430613c7aaf5a50b444882dc679eb9915a55b1fe809fb582fd8aca009c"
+    },
+    {
+      "index": 155,
+      "class": "StructuralConnectionHandlerTypeTracking",
+      "matching_field_paths": [
+        ".m_cacheEntries"
+      ],
+      "field_names": [
+        "m_cacheEntries",
+        "m_elemIdSet",
+        "m_idMRU",
+        "m_pADoc"
+      ],
+      "fields_sha256": "92ba0927b0fb562d694cce78c05396db4f1d26e72c550dcce993d7c9ae403be8"
+    },
+    {
+      "index": 157,
+      "class": "ExternalResourceReferenceUpdateForWorksharingTracker",
+      "matching_field_paths": [
+        ".m_elemIdAndExtRefTypeSet"
+      ],
+      "field_names": [
+        "m_elemIdAndExtRefInfoSet",
+        "m_elemIdAndExtRefTypeSet",
+        "m_pADoc"
+      ],
+      "fields_sha256": "23b9e8f8291907f19f0fcb41e34a1284fd8016b15a81bd6585f48636fc14cf1e"
+    },
+    {
+      "index": 160,
+      "class": "TopographyLinkTypeTracking",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_elemIdSet",
+        "m_idMRU",
+        "m_pADoc"
+      ],
+      "fields_sha256": "a0cbae430613c7aaf5a50b444882dc679eb9915a55b1fe809fb582fd8aca009c"
+    },
+    {
+      "index": 162,
+      "class": "FamSymGlobalComputedSymbolCache",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_pADoc"
+      ],
+      "fields_sha256": "1cf5ea0db9f038dc2d88ba498ad622d42149b8d29532ef98a4a64ef320b5b5d5"
+    },
+    {
+      "index": 179,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "777a4ab75fdf6c140f9f03ecf401b5d3d4afc21df85a28e7712709432e55fac6"
+    },
+    {
+      "index": 180,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "655252c58fa4301eb8e42af4449d217b76aae52781d7dcf92d95106c7fad469b"
+    },
+    {
+      "index": 181,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "0277f041dd9972bb6d9fced408df693eddc43547c1de126ae45eb8511bd7aa2d"
+    },
+    {
+      "index": 182,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "53650397c424f121ca627062081da510e7bc8dc50b797b70eff4bbabb6ccf857"
+    },
+    {
+      "index": 183,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "e18ef3fa00f513f9e88c0a155c10cdaf5e29e7b40a83a4416572737cbc4a965c"
+    },
+    {
+      "index": 184,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "31f57502ee93c3278bf0d7b37f45ab459f0396b5da929df45b91441c9b0cb387"
+    },
+    {
+      "index": 185,
+      "class": "ColorFillSecondaryData",
+      "matching_field_paths": [
+        ".m_collectedPrimaryDataIds[].m_appInfoType",
+        ".m_collectedPrimaryDataIds[].m_dataType"
+      ],
+      "field_names": [
+        "m_collectedPrimaryDataIds",
+        "m_colorFillResults",
+        "m_failureMode",
+        "m_warningCollection"
+      ],
+      "fields_sha256": "55a20dec934a1e1680ab025ce8faccdbf0e91c1d32c896dfaee3d05c0754a568"
+    },
+    {
+      "index": 188,
+      "class": "ElementTypeGroupRecentSymbolListMap",
+      "matching_field_paths": [],
+      "field_names": [
+        "m_innerMap"
+      ],
+      "fields_sha256": "529fca8c6dd379594a0f8292b830adb5359e9a2473fbf2cb4bd7e402ef7b3b80"
+    },
+    {
+      "index": 189,
+      "class": "ParamSetKey",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_categoryId",
+        "m_other64",
+        "m_type"
+      ],
+      "fields_sha256": "8569f96d706eeb43d2b5982283735a2739afc139f326fcf06fa4dd849e1147f7"
+    },
+    {
+      "index": 190,
+      "class": "ParamSetKey",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_categoryId",
+        "m_other64",
+        "m_type"
+      ],
+      "fields_sha256": "a3ad468bb21c827c17c84c106d940a83377bb35c6b81c3eee971c63f820bbf67"
+    },
+    {
+      "index": 191,
+      "class": "ParamSetKey",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_categoryId",
+        "m_other64",
+        "m_type"
+      ],
+      "fields_sha256": "6be99a6f2dabb545b90e8a7c42dece7a9ad562789b1a356016b7de21e3e3bab4"
+    },
+    {
+      "index": 192,
+      "class": "ParamSetKey",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_categoryId",
+        "m_other64",
+        "m_type"
+      ],
+      "fields_sha256": "06647fe732d472d000107c175cec94889a5563537234d41d0719f21ed3e52d1b"
+    },
+    {
+      "index": 193,
+      "class": "ParamSetKey",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_categoryId",
+        "m_other64",
+        "m_type"
+      ],
+      "fields_sha256": "19927abedc4d3641699c0faa25f6ecc1cc65dd0cc41c598b96d810e5f08cdac2"
+    },
+    {
+      "index": 194,
+      "class": "ParamSetKey",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_categoryId",
+        "m_other64",
+        "m_type"
+      ],
+      "fields_sha256": "74a87c4708f2ae652f5fec64b3c23250afaf45f9d05fa39cdfb1b891108e97e4"
+    },
+    {
+      "index": 201,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "7b92adde4cfca4f13a2c2117fda3e7fb84d764682c5a2ade76988a0898f5c127"
+    },
+    {
+      "index": 202,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "e7e2dbaa6825fd34b1a22a83a1ddcc4809b817b5123fcaaecc3503ee6e3f315e"
+    },
+    {
+      "index": 203,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "f6914156e575481d9dd14d52655b90480fdbb098d3ed6ae76ffa146adafdab29"
+    },
+    {
+      "index": 204,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "9cb224860f92835f491a3c644897674d5671c8b49a66f33470640c0e59141901"
+    },
+    {
+      "index": 205,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "de09616cefc49b8cc48f1fc6d479502114b64b55a3f28d06b40056868dac4121"
+    },
+    {
+      "index": 206,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "5ba8eb2fcfd7ed9717121029d30872c1901fd0914109762e9dea777a9a717d8f"
+    },
+    {
+      "index": 207,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "82c2a88ee6390b14acf1a7f27950a23ddf8e3d35055e06ed9212ccf4311fd6e6"
+    },
+    {
+      "index": 208,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "ddfb99690a3063b59ffb5514b411f8456fae96d54fd692ee1a2c7cc28e4e930f"
+    },
+    {
+      "index": 209,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "b325b8ee697113269e8f79d792051ab2692204b0c173c56c61598f0d9e58d45d"
+    },
+    {
+      "index": 210,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "4c621e5bb1a62136d017420f628e049fafde6792b076318e22faaa965086fbf4"
+    },
+    {
+      "index": 211,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "cc7f1a8097a544fc2bc887a36faee0e375db67d64e005d2149bd0a562df473f1"
+    },
+    {
+      "index": 212,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "a435ffcb2d9a05226032f546b39c650ef7f405fb65227332ed473b199fcdfbe4"
+    },
+    {
+      "index": 213,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "42cc78027e1a1b70edd6253ed22b3b4dcba5d48fc7418e0d434be131b945e186"
+    },
+    {
+      "index": 214,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "314a914a9544c6e0da984d678f49a7c37da7cbe5b67a926dfc876bd3c7ba8f98"
+    },
+    {
+      "index": 215,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "d85268950c5ece3ac2803824334d789ad82d51b37b32ac9c74a85c098e3622eb"
+    },
+    {
+      "index": 216,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "b73abd9678bc561cb96ae0f0d71cce9064aa94900a0b6341767f757d44d21469"
+    },
+    {
+      "index": 217,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "0290f3526b97125fa918c8eaded682980fcbff6bedcf03e29bd4d3fa39912682"
+    },
+    {
+      "index": 218,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "d65ae22e1b1321f3412790948860946b6a943ac2fe1037a714836fa05b7875c5"
+    },
+    {
+      "index": 219,
+      "class": "CurSPRec",
+      "matching_field_paths": [
+        ".m_type"
+      ],
+      "field_names": [
+        "m_curSPId",
+        "m_dbViewId",
+        "m_famId",
+        "m_type"
+      ],
+      "fields_sha256": "68619acd24ac965c0243319c1e19b3c8a642f961d43e1ec8b4613540ad782bc4"
+    }
+  ],
+  "source_record_incoming_references": [
+    {
+      "channel": 101,
+      "class": "ElementHeader",
+      "element": 20826,
+      "object": 2,
+      "object_class": "ElementParents",
+      "paths": [
+        ".m_deletion[4].m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 101,
+      "class": "ElementHeader",
+      "element": 20838,
+      "object": 2,
+      "object_class": "ElementParents",
+      "paths": [
+        ".m_deletion[3].m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 102,
+      "class": "SWall",
+      "element": 20826,
+      "object": 0,
+      "object_class": "SWall",
+      "paths": [
+        ".m_id.m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 102,
+      "class": "RoomElem",
+      "element": 20838,
+      "object": 4,
+      "object_class": "RoomTagPlacement",
+      "paths": [
+        ".m_ref1.m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 103,
+      "class": "GElement",
+      "element": 20826,
+      "object": 0,
+      "object_class": "GElement",
+      "paths": [
+        ".m_elementId"
+      ]
+    },
+    {
+      "channel": 101,
+      "class": "ElementHeader",
+      "element": 21258,
+      "object": 1,
+      "object_class": "ElementParents",
+      "paths": [
+        ".m_deletion[47].m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 101,
+      "class": "ElementHeader",
+      "element": 132605,
+      "object": 1,
+      "object_class": "ElementParents",
+      "paths": [
+        ".m_deletion[76].m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 102,
+      "class": "LevelRoomPlan",
+      "element": 21258,
+      "object": 1,
+      "object_class": "PlanTopology",
+      "paths": [
+        ".m_circuits[13].m_sides[2].m_item.m_linkInstOrHostId.m_id.m_id64",
+        ".m_circuits[14].m_sides[2].m_item.m_linkInstOrHostId.m_id.m_id64",
+        ".m_segments[152].m_key.m_item.m_linkInstOrHostId.m_id.m_id64"
+      ]
+    },
+    {
+      "channel": 102,
+      "class": "DBView3d",
+      "element": 132605,
+      "object": 3,
+      "object_class": "AdHocOverrides",
+      "paths": [
+        ".m_elementMap[46].first.m_id.m_id64"
+      ]
+    }
+  ],
+  "incoming_scan_sha256": "964d88bfdeb1cc0a359340fb92c2e02d5750686c887f499d62955c58a7b5b0ef",
+  "incoming_scan_limits": {
+    "unsupported_graph_records": 4,
+    "refused_graph_classes": {
+      "DirectShapeType": 1,
+      "GElement": 3
+    },
+    "refused_graph_ids": [
+      87727,
+      114878,
+      130286,
+      130286
+    ],
+    "skipped_embedded_content_groups": 240
+  },
+  "limits": [
+    "Field-name inspection cannot establish absence of an encoded or differently named spatial index.",
+    "Complete Global graph decode is not complete document semantic understanding.",
+    "Preserved room topology and view overrides are existing source-specific dependencies, not registrations every new wall must inherit.",
+    "No Autodesk open, regeneration, save, selection, or spatial-query acceptance tested."
+  ]
+}

@@ -6,6 +6,11 @@ native solids and IFC meshes. Three-wall, 100-wall and [rotated-wall](../researc
 meshes are preserved; 154 Python tests pass. This remains a pinned-source research
 writer with unverified native regeneration, producer encoding and Autodesk acceptance.
 
+A [minimal MIT-licensed 2024 project seed](../research/rvt/results/minimal_seed.md)
+has now been identified: 434 KB, 2,300 scaffold elements, all 6,900 current records
+fully decoded and no decoded donor-building instances. Seed-specific schema,
+reference and save integration are in progress.
+
 Current save experiment: [candidate v6](../research/rvt/results/save-candidate.md)
 passes independent room routing/full-graph checks, seven Contents/text metadata
 relationships, and all observed binary BasicFileInfo identity copies. An explicit
