@@ -1,0 +1,1696 @@
+{
+  "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "candidate_sha256": "56b5b5274c3f75681e5884d84424fc1678f9f63f308accc317e2c8373a9ca8c5",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "request": {
+    "schema_version": 1,
+    "units": "metres",
+    "levels": [
+      {
+        "id": "basement",
+        "name": "Basement \u0394",
+        "elevation": -3
+      },
+      {
+        "id": "ground",
+        "name": "Level 1",
+        "elevation": 0
+      },
+      {
+        "id": "roof",
+        "name": "Roof \u03a9",
+        "elevation": 7
+      }
+    ],
+    "elements": [
+      {
+        "id": "wall-a",
+        "name": "Ground wall",
+        "category": "wall",
+        "level_id": "ground",
+        "properties": {
+          "material": "concrete",
+          "dimensions": {
+            "length": 4,
+            "width": 0.2,
+            "height": 3
+          },
+          "reviewed": true
+        },
+        "parts": [
+          {
+            "vertices": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                4,
+                0.2,
+                0
+              ],
+              [
+                0,
+                0.2,
+                0
+              ],
+              [
+                0,
+                0,
+                3
+              ],
+              [
+                4,
+                0,
+                3
+              ],
+              [
+                4,
+                0.2,
+                3
+              ],
+              [
+                0,
+                0.2,
+                3
+              ]
+            ],
+            "triangles": [
+              [
+                0,
+                2,
+                1
+              ],
+              [
+                0,
+                3,
+                2
+              ],
+              [
+                4,
+                5,
+                6
+              ],
+              [
+                4,
+                6,
+                7
+              ],
+              [
+                0,
+                1,
+                5
+              ],
+              [
+                0,
+                5,
+                4
+              ],
+              [
+                1,
+                2,
+                6
+              ],
+              [
+                1,
+                6,
+                5
+              ],
+              [
+                2,
+                3,
+                7
+              ],
+              [
+                2,
+                7,
+                6
+              ],
+              [
+                3,
+                0,
+                4
+              ],
+              [
+                3,
+                4,
+                7
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "open-panels",
+        "name": "Basement open panels \u0394",
+        "category": "generic",
+        "level_id": "basement",
+        "properties": {
+          "nested": {
+            "tags": [
+              "open",
+              "disconnected",
+              "\u0394"
+            ],
+            "optional": null
+          }
+        },
+        "parts": [
+          {
+            "vertices": [
+              [
+                -3,
+                -3,
+                -3
+              ],
+              [
+                -1,
+                -3,
+                -3
+              ],
+              [
+                -1,
+                -1,
+                -3
+              ],
+              [
+                -3,
+                -1,
+                -3
+              ]
+            ],
+            "triangles": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "vertices": [
+              [
+                1,
+                -3,
+                -3
+              ],
+              [
+                3,
+                -3,
+                -3
+              ],
+              [
+                1,
+                -1,
+                -3
+              ]
+            ],
+            "triangles": [
+              [
+                0,
+                1,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "roof-a",
+        "name": "Roof surface \u03a9",
+        "category": "roof",
+        "level_id": "roof",
+        "properties": {
+          "slope": 0.25,
+          "notes": "Independent surface, no solid volume claim"
+        },
+        "parts": [
+          {
+            "vertices": [
+              [
+                0,
+                0,
+                7
+              ],
+              [
+                4,
+                0,
+                7
+              ],
+              [
+                4,
+                4,
+                8
+              ],
+              [
+                0,
+                4,
+                8
+              ]
+            ],
+            "triangles": [
+              [
+                0,
+                1,
+                2
+              ],
+              [
+                0,
+                2,
+                3
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "table_audit": {
+    "new_ids": [
+      2746,
+      2747,
+      2748,
+      2749,
+      2750
+    ],
+    "source_rows": 2300,
+    "candidate_rows": 2305,
+    "source_identifier_ceiling": 2745,
+    "candidate_identifier_ceiling": 2750,
+    "all_source_rows_byte_identical": true,
+    "new_row_episode_fields": [
+      1,
+      1,
+      1
+    ]
+  },
+  "history_audit": {
+    "creation_episode": 1,
+    "new_history_count": 2,
+    "new_episode_guid": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9",
+    "all_old_episode_records_and_history_metadata_preserved": true
+  },
+  "prior_native_identities_preserved": 2300,
+  "original_partitions_preserved": 1,
+  "global_registration": {
+    "fresh_levels": [
+      2746,
+      2747
+    ],
+    "own_schema_owner_ids": [
+      2748,
+      2749,
+      2750
+    ],
+    "all_other_global_semantics_preserved": true,
+    "native_DirectShape_registration_policy": "no structural/category instance additions; hypothesis"
+  },
+  "levels": [
+    {
+      "id": "basement",
+      "name": "Basement \u0394",
+      "elevation_m": -3.0,
+      "element_id": 2746,
+      "reused_seed": false,
+      "native_identity": {
+        "element_id": 2746,
+        "original_id_suffix": 2746,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92006,
+        "raw_fields": [
+          2746,
+          0,
+          1,
+          1,
+          1,
+          2746,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000aba"
+      },
+      "complete_saved_graphs_match": true
+    },
+    {
+      "id": "ground",
+      "name": "Level 1",
+      "elevation_m": 0.0,
+      "element_id": 1916,
+      "reused_seed": true,
+      "native_identity": {
+        "element_id": 1916,
+        "original_id_suffix": 1916,
+        "creation_episode": 0,
+        "stored_revision": 0,
+        "other_revision": 0,
+        "row_offset": 75406,
+        "raw_fields": [
+          1916,
+          0,
+          0,
+          0,
+          0,
+          1916,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000077c"
+      },
+      "complete_saved_graphs_match": true
+    },
+    {
+      "id": "roof",
+      "name": "Roof \u03a9",
+      "elevation_m": 7.0,
+      "element_id": 2747,
+      "reused_seed": false,
+      "native_identity": {
+        "element_id": 2747,
+        "original_id_suffix": 2747,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92046,
+        "raw_fields": [
+          2747,
+          0,
+          1,
+          1,
+          1,
+          2747,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abb"
+      },
+      "complete_saved_graphs_match": true
+    }
+  ],
+  "elements": [
+    {
+      "element_id": 2748,
+      "application_id": "wall-a",
+      "name": "Ground wall",
+      "category": "wall",
+      "category_context": {
+        "category_id": -2000011,
+        "style_id": 119,
+        "interior_style_id": 119,
+        "material_id": 91,
+        "canonical_category": "Wall"
+      },
+      "native_associated_level_id": -1,
+      "application_level_relationship": {
+        "id": "ground",
+        "name": "Level 1",
+        "elevation_m": 0.0,
+        "native_element_id": 1916
+      },
+      "application_properties_exact": true,
+      "metadata_properties": {
+        "application_properties": {
+          "material": "concrete",
+          "dimensions": {
+            "length": 4,
+            "width": 0.2,
+            "height": 3
+          },
+          "reviewed": true
+        },
+        "level": {
+          "id": "ground",
+          "name": "Level 1",
+          "elevation_m": 0.0,
+          "native_element_id": 1916
+        },
+        "category": "wall"
+      },
+      "oriented_triangles_exact_after_SI_to_feet_float32": true,
+      "triangle_count": 12,
+      "rendered_primitive_count": 1,
+      "positive_references_resolve": [
+        91,
+        119,
+        2748
+      ],
+      "bounds_feet": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          13.123359680175781,
+          0.6561679840087891,
+          9.842519760131836
+        ]
+      ],
+      "render_materials": {
+        "0": {
+          "base_color": [
+            0.4980392156862745,
+            0.4980392156862745,
+            0.4980392156862745,
+            1.0
+          ],
+          "diagnostics": [],
+          "material_id": 91,
+          "metallic_factor": 0.0,
+          "name": "Default Wall",
+          "provenance": [
+            {
+              "field": "m_color/m_transparency/m_bUseRenderAppearance/m_asset",
+              "object_index": 1,
+              "owner_id": 91,
+              "record_source": {
+                "body_bytes": 975,
+                "body_sha256": "de1fcad1238ca66d6d032512f0eedb03c93b9db7407fbdbca193ae1496c62c90",
+                "group": {
+                  "channel": 102,
+                  "content_element_count": null,
+                  "content_key": null,
+                  "declared_body_bytes": 123430,
+                  "declared_objects": 376,
+                  "first_marker_offset": 20723,
+                  "segment_count": 1
+                },
+                "group_record_offset": 58005,
+                "stream": "Partitions/0"
+              },
+              "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000005b"
+            },
+            {
+              "conversion_profile": "default_viewport",
+              "diffuse": "saved packed graphics RGB / 255",
+              "metallic": "zero factor",
+              "roughness_rules": {
+                "GenericSchema": "1-sqrt(direct)*(1-min(glossiness,0.999)^4)",
+                "Generic_without_asset": "1",
+                "HardwoodSchema": "preserve explicitly selected initialized Generic trait context",
+                "MetalSchema_finish0": "1-0.3",
+                "WallPaintSchema_finish0": "1-0.1"
+              },
+              "saved_asset_schema": "Generic"
+            },
+            {
+              "explicit_material_id": 91,
+              "face_tag": 0,
+              "owner_id": 2748,
+              "render_style_id": 119,
+              "resolution": "saved_owner_type_paint_or_render_style",
+              "source_owner_id": null
+            },
+            {
+              "exported_opacity": 1.0,
+              "not_serialized_material_property": true,
+              "saved_material_opacity": 1.0,
+              "source": "opaque_default_viewport_profile"
+            }
+          ],
+          "roughness_factor": 1.0,
+          "saved_opacity": 1.0
+        }
+      },
+      "meshes": [
+        {
+          "face_tag": 0,
+          "material_id": 91,
+          "normals": [
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "object_index": 1,
+          "render_style_id": 119,
+          "source_owner_id": null,
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ],
+            [
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11
+            ],
+            [
+              12,
+              13,
+              14
+            ],
+            [
+              15,
+              16,
+              17
+            ],
+            [
+              18,
+              19,
+              20
+            ],
+            [
+              21,
+              22,
+              23
+            ],
+            [
+              24,
+              25,
+              26
+            ],
+            [
+              27,
+              28,
+              29
+            ],
+            [
+              30,
+              31,
+              32
+            ],
+            [
+              33,
+              34,
+              35
+            ]
+          ],
+          "vertices": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              9.842519760131836
+            ],
+            [
+              0.0,
+              0.6561679840087891,
+              9.842519760131836
+            ]
+          ]
+        }
+      ],
+      "channels": {
+        "101": {
+          "bytes": 193,
+          "sha256": "5bf6c553e317c4c898badf64286d96570074852dc8371288e968783b6f059057",
+          "objects": 3
+        },
+        "102": {
+          "bytes": 1442,
+          "sha256": "4eff673fa91f3040bb9b952d724dfda8b6d8fb3453789bc2354fe44b0dd3258a",
+          "objects": 9
+        },
+        "103": {
+          "bytes": 530,
+          "sha256": "dd41cd5f7e01c6a61fb4c0ffc96dd8f44f720a005f85843d12613eb38c5bd273",
+          "objects": 3
+        }
+      },
+      "native_identity": {
+        "element_id": 2748,
+        "original_id_suffix": 2748,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92086,
+        "raw_fields": [
+          2748,
+          0,
+          1,
+          1,
+          1,
+          2748,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abc"
+      }
+    },
+    {
+      "element_id": 2749,
+      "application_id": "open-panels",
+      "name": "Basement open panels \u0394",
+      "category": "generic",
+      "category_context": {
+        "category_id": -2000151,
+        "style_id": 413,
+        "interior_style_id": 413,
+        "material_id": -1,
+        "canonical_category": "GenericModel"
+      },
+      "native_associated_level_id": -1,
+      "application_level_relationship": {
+        "id": "basement",
+        "name": "Basement \u0394",
+        "elevation_m": -3.0,
+        "native_element_id": 2746
+      },
+      "application_properties_exact": true,
+      "metadata_properties": {
+        "application_properties": {
+          "nested": {
+            "tags": [
+              "open",
+              "disconnected",
+              "\u0394"
+            ],
+            "optional": null
+          }
+        },
+        "level": {
+          "id": "basement",
+          "name": "Basement \u0394",
+          "elevation_m": -3.0,
+          "native_element_id": 2746
+        },
+        "category": "generic"
+      },
+      "oriented_triangles_exact_after_SI_to_feet_float32": true,
+      "triangle_count": 3,
+      "rendered_primitive_count": 2,
+      "positive_references_resolve": [
+        413,
+        2749
+      ],
+      "bounds_feet": [
+        [
+          -9.842519760131836,
+          -9.842519760131836,
+          -9.842519760131836
+        ],
+        [
+          9.842519760131836,
+          -3.2808399200439453,
+          -9.842519760131836
+        ]
+      ],
+      "render_materials": {
+        "0": {
+          "base_color": [
+            0.4980392156862745,
+            0.4980392156862745,
+            0.4980392156862745,
+            1.0
+          ],
+          "diagnostics": [],
+          "material_id": null,
+          "metallic_factor": 0.0,
+          "name": "default viewport material",
+          "provenance": [
+            {
+              "diffuse_packed_rgb": 8355711,
+              "direct_reflectivity": 0.5,
+              "glossiness": 0.1,
+              "not_serialized_material_property": true,
+              "source": "initialized_viewport_traits"
+            },
+            {
+              "field": "m_materialElemId",
+              "object_index": 1,
+              "owner_id": 413,
+              "record_source": {
+                "body_bytes": 156,
+                "body_sha256": "a7ebe9cc488da4526db15e26f06c66d740ff3a93e3546aa811491a4e6871fc73",
+                "group": {
+                  "channel": 102,
+                  "content_element_count": null,
+                  "content_key": null,
+                  "declared_body_bytes": 116064,
+                  "declared_objects": 744,
+                  "first_marker_offset": 34013,
+                  "segment_count": 1
+                },
+                "group_record_offset": 6336,
+                "stream": "Partitions/0"
+              },
+              "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000019d"
+            },
+            {
+              "explicit_material_id": null,
+              "face_tag": 0,
+              "owner_id": 2749,
+              "render_style_id": 413,
+              "resolution": "saved_owner_type_paint_or_render_style",
+              "source_owner_id": null
+            },
+            {
+              "exported_opacity": 1.0,
+              "not_serialized_material_property": true,
+              "saved_material_opacity": 1.0,
+              "source": "opaque_default_viewport_profile"
+            }
+          ],
+          "roughness_factor": 0.29296392949157113,
+          "saved_opacity": null
+        },
+        "1": {
+          "base_color": [
+            0.4980392156862745,
+            0.4980392156862745,
+            0.4980392156862745,
+            1.0
+          ],
+          "diagnostics": [],
+          "material_id": null,
+          "metallic_factor": 0.0,
+          "name": "default viewport material",
+          "provenance": [
+            {
+              "diffuse_packed_rgb": 8355711,
+              "direct_reflectivity": 0.5,
+              "glossiness": 0.1,
+              "not_serialized_material_property": true,
+              "source": "initialized_viewport_traits"
+            },
+            {
+              "field": "m_materialElemId",
+              "object_index": 1,
+              "owner_id": 413,
+              "record_source": {
+                "body_bytes": 156,
+                "body_sha256": "a7ebe9cc488da4526db15e26f06c66d740ff3a93e3546aa811491a4e6871fc73",
+                "group": {
+                  "channel": 102,
+                  "content_element_count": null,
+                  "content_key": null,
+                  "declared_body_bytes": 116064,
+                  "declared_objects": 744,
+                  "first_marker_offset": 34013,
+                  "segment_count": 1
+                },
+                "group_record_offset": 6336,
+                "stream": "Partitions/0"
+              },
+              "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000019d"
+            },
+            {
+              "explicit_material_id": null,
+              "face_tag": 1,
+              "owner_id": 2749,
+              "render_style_id": 413,
+              "resolution": "saved_owner_type_paint_or_render_style",
+              "source_owner_id": null
+            },
+            {
+              "exported_opacity": 1.0,
+              "not_serialized_material_property": true,
+              "saved_material_opacity": 1.0,
+              "source": "opaque_default_viewport_profile"
+            }
+          ],
+          "roughness_factor": 0.29296392949157113,
+          "saved_opacity": null
+        }
+      },
+      "meshes": [
+        {
+          "face_tag": 0,
+          "material_id": null,
+          "normals": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_index": 1,
+          "render_style_id": 413,
+          "source_owner_id": null,
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "vertices": [
+            [
+              -9.842519760131836,
+              -9.842519760131836,
+              -9.842519760131836
+            ],
+            [
+              -3.2808399200439453,
+              -9.842519760131836,
+              -9.842519760131836
+            ],
+            [
+              -3.2808399200439453,
+              -3.2808399200439453,
+              -9.842519760131836
+            ],
+            [
+              -9.842519760131836,
+              -9.842519760131836,
+              -9.842519760131836
+            ],
+            [
+              -3.2808399200439453,
+              -3.2808399200439453,
+              -9.842519760131836
+            ],
+            [
+              -9.842519760131836,
+              -3.2808399200439453,
+              -9.842519760131836
+            ]
+          ]
+        },
+        {
+          "face_tag": 1,
+          "material_id": null,
+          "normals": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "object_index": 2,
+          "render_style_id": 413,
+          "source_owner_id": null,
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "vertices": [
+            [
+              3.2808399200439453,
+              -9.842519760131836,
+              -9.842519760131836
+            ],
+            [
+              9.842519760131836,
+              -9.842519760131836,
+              -9.842519760131836
+            ],
+            [
+              3.2808399200439453,
+              -3.2808399200439453,
+              -9.842519760131836
+            ]
+          ]
+        }
+      ],
+      "channels": {
+        "101": {
+          "bytes": 185,
+          "sha256": "d7c2a442f7c2b8eea1cd9b6096dc20b27db49012f1cc0cf2de590ae73347209f",
+          "objects": 3
+        },
+        "102": {
+          "bytes": 1380,
+          "sha256": "dce125e2c77a2e430cdfbac1aa04a1e49f5175fee2adf01dea90a40459854387",
+          "objects": 11
+        },
+        "103": {
+          "bytes": 436,
+          "sha256": "820e39ab67cba27507f50217ec6a369e954843c3cea3c455b14b97f374b9b039",
+          "objects": 5
+        }
+      },
+      "native_identity": {
+        "element_id": 2749,
+        "original_id_suffix": 2749,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92126,
+        "raw_fields": [
+          2749,
+          0,
+          1,
+          1,
+          1,
+          2749,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abd"
+      }
+    },
+    {
+      "element_id": 2750,
+      "application_id": "roof-a",
+      "name": "Roof surface \u03a9",
+      "category": "roof",
+      "category_context": {
+        "category_id": -2000035,
+        "style_id": 237,
+        "interior_style_id": 237,
+        "material_id": 92,
+        "canonical_category": "Roof"
+      },
+      "native_associated_level_id": -1,
+      "application_level_relationship": {
+        "id": "roof",
+        "name": "Roof \u03a9",
+        "elevation_m": 7.0,
+        "native_element_id": 2747
+      },
+      "application_properties_exact": true,
+      "metadata_properties": {
+        "application_properties": {
+          "slope": 0.25,
+          "notes": "Independent surface, no solid volume claim"
+        },
+        "level": {
+          "id": "roof",
+          "name": "Roof \u03a9",
+          "elevation_m": 7.0,
+          "native_element_id": 2747
+        },
+        "category": "roof"
+      },
+      "oriented_triangles_exact_after_SI_to_feet_float32": true,
+      "triangle_count": 2,
+      "rendered_primitive_count": 1,
+      "positive_references_resolve": [
+        92,
+        237,
+        2750
+      ],
+      "bounds_feet": [
+        [
+          0.0,
+          0.0,
+          22.965879440307617
+        ],
+        [
+          13.123359680175781,
+          13.123359680175781,
+          26.246719360351562
+        ]
+      ],
+      "render_materials": {
+        "0": {
+          "base_color": [
+            0.0,
+            0.4980392156862745,
+            0.0,
+            1.0
+          ],
+          "diagnostics": [],
+          "material_id": 92,
+          "metallic_factor": 0.0,
+          "name": "Default Roof",
+          "provenance": [
+            {
+              "field": "m_color/m_transparency/m_bUseRenderAppearance/m_asset",
+              "object_index": 1,
+              "owner_id": 92,
+              "record_source": {
+                "body_bytes": 975,
+                "body_sha256": "8ec46a2280735f14da0bb9bd2533154104577c270b0b8c812715c4755c4e87f8",
+                "group": {
+                  "channel": 102,
+                  "content_element_count": null,
+                  "content_key": null,
+                  "declared_body_bytes": 123430,
+                  "declared_objects": 376,
+                  "first_marker_offset": 20723,
+                  "segment_count": 1
+                },
+                "group_record_offset": 59000,
+                "stream": "Partitions/0"
+              },
+              "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000005c"
+            },
+            {
+              "conversion_profile": "default_viewport",
+              "diffuse": "saved packed graphics RGB / 255",
+              "metallic": "zero factor",
+              "roughness_rules": {
+                "GenericSchema": "1-sqrt(direct)*(1-min(glossiness,0.999)^4)",
+                "Generic_without_asset": "1",
+                "HardwoodSchema": "preserve explicitly selected initialized Generic trait context",
+                "MetalSchema_finish0": "1-0.3",
+                "WallPaintSchema_finish0": "1-0.1"
+              },
+              "saved_asset_schema": "Generic"
+            },
+            {
+              "explicit_material_id": 92,
+              "face_tag": 0,
+              "owner_id": 2750,
+              "render_style_id": 237,
+              "resolution": "saved_owner_type_paint_or_render_style",
+              "source_owner_id": null
+            },
+            {
+              "exported_opacity": 1.0,
+              "not_serialized_material_property": true,
+              "saved_material_opacity": 1.0,
+              "source": "opaque_default_viewport_profile"
+            }
+          ],
+          "roughness_factor": 1.0,
+          "saved_opacity": 1.0
+        }
+      },
+      "meshes": [
+        {
+          "face_tag": 0,
+          "material_id": 92,
+          "normals": [
+            [
+              0.0,
+              -0.24253562503633297,
+              0.9701425001453319
+            ],
+            [
+              0.0,
+              -0.24253562503633297,
+              0.9701425001453319
+            ],
+            [
+              0.0,
+              -0.24253562503633297,
+              0.9701425001453319
+            ],
+            [
+              0.0,
+              -0.24253562503633297,
+              0.9701425001453319
+            ],
+            [
+              0.0,
+              -0.24253562503633297,
+              0.9701425001453319
+            ],
+            [
+              0.0,
+              -0.24253562503633297,
+              0.9701425001453319
+            ]
+          ],
+          "object_index": 1,
+          "render_style_id": 237,
+          "source_owner_id": null,
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              3,
+              4,
+              5
+            ]
+          ],
+          "vertices": [
+            [
+              0.0,
+              0.0,
+              22.965879440307617
+            ],
+            [
+              13.123359680175781,
+              0.0,
+              22.965879440307617
+            ],
+            [
+              13.123359680175781,
+              13.123359680175781,
+              26.246719360351562
+            ],
+            [
+              0.0,
+              0.0,
+              22.965879440307617
+            ],
+            [
+              13.123359680175781,
+              13.123359680175781,
+              26.246719360351562
+            ],
+            [
+              0.0,
+              13.123359680175781,
+              26.246719360351562
+            ]
+          ]
+        }
+      ],
+      "channels": {
+        "101": {
+          "bytes": 193,
+          "sha256": "3e322862595b23eecb51a3df73363185d9595e0f13d60818f26e153363d2c45a",
+          "objects": 3
+        },
+        "102": {
+          "bytes": 1178,
+          "sha256": "9ac9cf64041f81373a7d5591076b045b84e5ef9c318ccdd6e524580a0c2be36b",
+          "objects": 9
+        },
+        "103": {
+          "bytes": 302,
+          "sha256": "b6212286740e4d6b054ab03b07be8a1d93f30a1bae8dc92b15d2459992a87659",
+          "objects": 3
+        }
+      },
+      "native_identity": {
+        "element_id": 2750,
+        "original_id_suffix": 2750,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92166,
+        "raw_fields": [
+          2750,
+          0,
+          1,
+          1,
+          1,
+          2750,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abe"
+      }
+    }
+  ],
+  "application_identity_map": {
+    "levels": [
+      {
+        "id": "basement",
+        "name": "Basement \u0394",
+        "elevation_m": -3.0,
+        "element_id": 2746,
+        "reused_seed": false
+      },
+      {
+        "id": "ground",
+        "name": "Level 1",
+        "elevation_m": 0.0,
+        "element_id": 1916,
+        "reused_seed": true
+      },
+      {
+        "id": "roof",
+        "name": "Roof \u03a9",
+        "elevation_m": 7.0,
+        "element_id": 2747,
+        "reused_seed": false
+      }
+    ],
+    "elements": [
+      {
+        "application_id": "wall-a",
+        "native_element_id": 2748,
+        "native_unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abc"
+      },
+      {
+        "application_id": "open-panels",
+        "native_element_id": 2749,
+        "native_unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abd"
+      },
+      {
+        "application_id": "roof-a",
+        "native_element_id": 2750,
+        "native_unique_id": "3daf4e27-1bb5-5db8-970c-3a1e21cfdac9-00000abe"
+      }
+    ]
+  },
+  "category_context": [
+    {
+      "style_id": 119,
+      "body_sha256": "dcb4e96f22e049fc88c1761dbaad95a538ce1f6e89e74823329a88db9ce69fc5",
+      "category_id": -2000011,
+      "interior_style_id": 119,
+      "material_id": 91,
+      "canonical_category": "Wall"
+    },
+    {
+      "style_id": 413,
+      "body_sha256": "a7ebe9cc488da4526db15e26f06c66d740ff3a93e3546aa811491a4e6871fc73",
+      "category_id": -2000151,
+      "interior_style_id": 413,
+      "material_id": -1,
+      "canonical_category": "GenericModel"
+    },
+    {
+      "style_id": 237,
+      "body_sha256": "22ab27abab4075a551435538058064d239b0ba8ee482718e3aacc4c8f984d448",
+      "category_id": -2000035,
+      "interior_style_id": 237,
+      "material_id": 92,
+      "canonical_category": "Roof"
+    }
+  ],
+  "category_evidence_sha256": "062a103939352838048e11dcf1b32bf57335383b612d8ef3fa15b91d7b7bd10e",
+  "probe_sources_sha256": {
+    "index": "3bd9e6dd296a511561595b71488bbf20d455c06bed6cda5eeb17fb72f926a65e",
+    "scene": "8d7bb1b3c4baa331556103e24ce05d039884e1427813e82727c69d9b2c1516d6"
+  },
+  "probe_binary_sha256": {
+    "index": "a5048a028deb0679407ba67d4f8c6dff3f1c52ae45f85ced91ab1ac9a3794106",
+    "scene": "8a5151e9dbf406bc226f30f0e4c30cd9a942c44613c954911e073d94c14e30c6"
+  },
+  "native_probe_max_graph_values": 10000000,
+  "saved_evidence_path": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-model-verified-baseline/candidate-independent-scene.json",
+  "saved_evidence_sha256": "f6c2b30cdf15c4c450b20a91d3754cb96b9b5a7189663fd3f39ff5e39d10a9fd",
+  "native_level_association_policy": "m_assocLevelId remains -1; requested relationship is own-schema metadata only",
+  "ordinary_ifc_projection": "not used: pinned exporter does not map DirectShape",
+  "geometry_claim": "oriented saved/rendered surface triangles; no native solid or regeneration guarantee",
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false
+}

@@ -1,0 +1,12 @@
+{
+  "all_manifest_artifact_hashes_verified": true,
+  "generator_hash_verified": true,
+  "source_report_hashes_verified": true,
+  "independent_saved_evidence_sha256": "f6c2b30cdf15c4c450b20a91d3754cb96b9b5a7189663fd3f39ff5e39d10a9fd",
+  "saved_evidence_candidate_matches": true,
+  "all_plot_primitives_and_materials_equal_independent_saved_scenes": true,
+  "visually_inspected": "model.png: all geometry, named levels, exact nested properties, evidence boundary and hash footer visible and unclipped",
+  "post_capture_artifacts": {
+    "candidate-independent-scene.json": "f6c2b30cdf15c4c450b20a91d3754cb96b9b5a7189663fd3f39ff5e39d10a9fd"
+  }
+}

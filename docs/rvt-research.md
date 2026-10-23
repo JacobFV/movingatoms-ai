@@ -1,25 +1,30 @@
 # Writing native Revit (.rvt) without Revit — research notes
 
-Latest milestone: saved minimal-seed candidates now contain named metre-based walls,
-a DirectShape triangle mesh, or our own registered application metadata. Independent
-public-reader checks recover the saved geometry and exact nested properties.
-The surface encoder also preserves 11,000 triangles across signed16-safe chunks,
-including open and disconnected surfaces. The research suite passes 270 tests.
-The combined general-model writer is being integrated; native application acceptance
-and production native export remain incomplete.
+Latest milestone: the [combined native mesh document workflow](../research/rvt/results/seed-model-experiment.md)
+now writes named levels, multipart geometry, measured categories and attached
+application properties into a minimal licensed seed. Independent saved-file
+checks pass for a three-element model and a 33,000-vertex / 11,000-triangle model.
+All 2,300 original seed identities and its partition remain unchanged.
+[Actual saved model screenshot](rvt-evidence/2026-10-23-seed-model/model.png).
 
-- [Named levels and walls](../research/rvt/results/seed-document-run.json).
-- [Saved DirectShape checks](../research/rvt/results/seed-directshape-native.json)
-  and [actual saved-mesh screenshot](rvt-evidence/2026-10-23-directshape-mesh/directshape.png).
-- [Saved own-schema metadata](../research/rvt/results/seed-properties-experiment.md)
-  and [geometry-owner metadata attachment](../research/rvt/results/element-properties-storage-batch.md).
-- [Open, disconnected and chunked surfaces](../research/rvt/results/directshape_surface.md).
-- [Measured category/style contexts](../research/rvt/results/seed_categories.md).
+An offline production-model adapter preserves exact source element records,
+parameters, transforms, level/type context and properties in bounded metadata.
+Missing or unsupported geometry fails explicitly. The standalone runtime is
+being packaged; customer build jobs still deliver IFC/GLB. The research suite
+passes 291 tests at the combined-document checkpoint; 43 adapter/export and
+existing model/job tests pass after exact source metadata preservation.
 
 DirectShape constructor options, lifecycle behavior and absence of Global instance
-registration remain explicit hypotheses. Saved-scene rendering is checked through
-an independent public reader, not Autodesk. The ordinary public IFC exporter skips
-DirectShape; its omission is not treated as a successful geometry validation.
+registration remain explicit hypotheses. Named levels are native elements;
+element-to-level relationships are stored in our own schema, with native
+associated-level left unset. Saved-scene rendering is checked through an
+independent public reader, not Autodesk. Autodesk opening, regeneration and
+re-saving remain untested. The ordinary public IFC exporter skips DirectShape.
+
+Additional evidence: [saved own-schema metadata](../research/rvt/results/seed-properties-experiment.md),
+[geometry-owner metadata attachment](../research/rvt/results/element-properties-storage-batch.md),
+[open/disconnected/chunked surfaces](../research/rvt/results/directshape_surface.md),
+and [measured category/style contexts](../research/rvt/results/seed_categories.md).
 
 Earlier Core-based implementation: a [single-command multi-wall workflow](../research/rvt/results/wall-batch.md)
 creates multiple distinct walls in one partition/episode, with independently verified

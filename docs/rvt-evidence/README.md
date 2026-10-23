@@ -219,3 +219,14 @@ three complete native channels, 12 rendered triangles and preservation of all
 saved mesh, not Autodesk UI or native acceptance.
 
 ![Saved DirectShape geometry evidence](2026-10-23-directshape-mesh/directshape.png)
+
+
+## Combined mesh model — 2026-10-23
+
+[Manifest and reproduction notes](2026-10-23-seed-model/README.md) bind three
+named levels, three geometry owners, four saved primitives and exact application
+properties. Saved mesh arrays and source material colors are independently
+matched to the archived raw reader output. Native level association remains
+unset; application relationships are explicit metadata.
+
+![Combined model evidence](2026-10-23-seed-model/model.png)

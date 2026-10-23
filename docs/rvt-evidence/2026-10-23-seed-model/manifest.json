@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-10-23T02:16:14.641935+00:00",
+  "source_commit": "534845aa78d7b674753c8c31df6b4629930b599e",
+  "source_run": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-model-verified-baseline",
+  "candidate_sha256": "56b5b5274c3f75681e5884d84424fc1678f9f63f308accc317e2c8373a9ca8c5",
+  "working_tree_status": "?? docs/rvt-evidence/2026-10-23-seed-model/\n?? docs/rvt-runtime-integration.md\n?? research/rvt/build_runtime_bundle.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "d2fef765d5e8322261fa84ddf7e8d9c9cdaddbaea9e593823df9f609018202e7",
+  "not_autodesk_ui": true,
+  "actual_native_saved_meshes": true,
+  "ordinary_ifc_export": false,
+  "source_report_sha256": {
+    "run.json": "c89f3c2efa2853a7f937f271a4845c63807fe2feb8c827c2495d7de8db68e07b",
+    "transport.json": "9f5872cbf312515b1debb1e6c8ad3db3fa7177cadbfc5d2850d1ae84ad0908a0",
+    "metadata.json": "73335e844a5d1a7e0aa389f3220366dbaae86c2181d9e1cd239b93f8c3f85993",
+    "native.json": "6fb783a407c74953a24f0d8fe2f34c0fe1fe9329c2e98e3c35563551a5181af7"
+  },
+  "artifacts": {
+    "mesh-metres.json": "0c30913713752e3c3d9dd01d2f1ab835fb1bfd92dad7cbc6218c9f086c102a0c",
+    "metadata.json": "73335e844a5d1a7e0aa389f3220366dbaae86c2181d9e1cd239b93f8c3f85993",
+    "model.html": "47c11b2dffdec40fe623749b89c4ef97e179bffad8db51b8223411e582dcdedc",
+    "model.png": "5467b6d25f78a78ea3fa89147018278392a37b9b2940d352986a60c92eb8d265",
+    "native.json": "6fb783a407c74953a24f0d8fe2f34c0fe1fe9329c2e98e3c35563551a5181af7",
+    "run.json": "c89f3c2efa2853a7f937f271a4845c63807fe2feb8c827c2495d7de8db68e07b",
+    "scene.png": "5804f80e35f0cf011819c3b66268581a87a8405acef6d6a3c837b342381e47e7",
+    "transport.json": "9f5872cbf312515b1debb1e6c8ad3db3fa7177cadbfc5d2850d1ae84ad0908a0"
+  }
+}

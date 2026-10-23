@@ -819,3 +819,29 @@ Openings are rejected because mesh inventory alone cannot prove baked void
 semantics. The existing room fixture converts to 10 elements, 12 mesh parts and
 312 triangles, all accepted by the surface encoder. The adapter/export boundary
 and existing model/job tests pass together: 37 tests.
+
+
+## Combined document and chunked saved-file verification
+
+Commit `534845a` combines levels, categories, multipart DirectShapes and attached
+metadata with an independent request-derived auditor. The baseline candidate
+SHA is `56b5b5274c3f75681e5884d84424fc1678f9f63f308accc317e2c8373a9ca8c5`.
+It contains three named levels and three mesh owners, four primitives and 17
+triangles. The 33,000-vertex control SHA is
+`4c781aa92a5d42a1124c862a937b44cebbb8175aeae394c988cfb236345407e7`;
+all 11,000 triangles survive across two primitives. Both complete workflows
+pass transport, actual metadata and independent saved-native checks, preserving
+2,300 old identities and the original partition. The first large request exceeded
+the explicit coordinate range and failed before writing; the valid grid fixture
+and refusal are documented in `results/seed-model-experiment.md`.
+
+Seventeen corruption controls reject changed vertices, winding, unit normals,
+parts, application IDs, nested JSON, level elevations, references and materials.
+All 291 research tests pass at this checkpoint. The combined Chrome screenshot
+and raw saved-scene evidence are archived in `2026-10-23-seed-model`; root and
+capture worker both visually inspected the final image.
+
+Commit `a24f461` fixes adapter losses discovered in review: exact source element
+records (including parameters, parents and transforms), level/type arrays and
+remaining model metadata now survive in a bounded own-schema JSON envelope.
+The combined adapter/export and existing model/job tests pass: 43 tests.

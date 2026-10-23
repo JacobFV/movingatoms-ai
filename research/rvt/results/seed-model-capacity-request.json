@@ -1,0 +1,5607 @@
+{
+  "schema_version": 1,
+  "units": "metres",
+  "levels": [],
+  "elements": [
+    {
+      "id": "capacity-001",
+      "name": "Capacity 001 Ω",
+      "category": "Wall",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 1,
+          "category": "Wall",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.25,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-002",
+      "name": "Capacity 002 Ω",
+      "category": "Door",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 2,
+          "category": "Door",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              0.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              0.0,
+              0.5
+            ],
+            [
+              4.25,
+              0.0,
+              0.5
+            ],
+            [
+              3.0,
+              0.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-003",
+      "name": "Capacity 003 Ω",
+      "category": "Window",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 3,
+          "category": "Window",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              0.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              0.0,
+              1.0
+            ],
+            [
+              7.25,
+              0.0,
+              1.0
+            ],
+            [
+              6.0,
+              0.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-004",
+      "name": "Capacity 004 Ω",
+      "category": "Floor",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 4,
+          "category": "Floor",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              0.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              0.0,
+              1.5
+            ],
+            [
+              10.25,
+              0.0,
+              1.5
+            ],
+            [
+              9.0,
+              0.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-005",
+      "name": "Capacity 005 Ω",
+      "category": "Roof",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 5,
+          "category": "Roof",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              0.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              0.0,
+              0.0
+            ],
+            [
+              13.25,
+              0.0,
+              0.0
+            ],
+            [
+              12.0,
+              0.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-006",
+      "name": "Capacity 006 Ω",
+      "category": "Ceiling",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 6,
+          "category": "Ceiling",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              0.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              0.0,
+              0.5
+            ],
+            [
+              16.25,
+              0.0,
+              0.5
+            ],
+            [
+              15.0,
+              0.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-007",
+      "name": "Capacity 007 Ω",
+      "category": "Stair",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 7,
+          "category": "Stair",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              0.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              0.0,
+              1.0
+            ],
+            [
+              19.25,
+              0.0,
+              1.0
+            ],
+            [
+              18.0,
+              0.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-008",
+      "name": "Capacity 008 Ω",
+      "category": "Railing",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 8,
+          "category": "Railing",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              0.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              0.0,
+              1.5
+            ],
+            [
+              22.25,
+              0.0,
+              1.5
+            ],
+            [
+              21.0,
+              0.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-009",
+      "name": "Capacity 009 Ω",
+      "category": "Ramp",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 9,
+          "category": "Ramp",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              0.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              0.0,
+              0.0
+            ],
+            [
+              25.25,
+              0.0,
+              0.0
+            ],
+            [
+              24.0,
+              0.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-010",
+      "name": "Capacity 010 Ω",
+      "category": "Column",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 10,
+          "category": "Column",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              0.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              0.0,
+              0.5
+            ],
+            [
+              28.25,
+              0.0,
+              0.5
+            ],
+            [
+              27.0,
+              0.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-011",
+      "name": "Capacity 011 Ω",
+      "category": "StructuralColumn",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 11,
+          "category": "StructuralColumn",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              3.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              3.0,
+              1.0
+            ],
+            [
+              1.25,
+              3.0,
+              1.0
+            ],
+            [
+              0.0,
+              3.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-012",
+      "name": "Capacity 012 Ω",
+      "category": "StructuralFraming",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 12,
+          "category": "StructuralFraming",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              3.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              3.0,
+              1.5
+            ],
+            [
+              4.25,
+              3.0,
+              1.5
+            ],
+            [
+              3.0,
+              3.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-013",
+      "name": "Capacity 013 Ω",
+      "category": "StructuralFoundation",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 13,
+          "category": "StructuralFoundation",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              3.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              3.0,
+              0.0
+            ],
+            [
+              7.25,
+              3.0,
+              0.0
+            ],
+            [
+              6.0,
+              3.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-014",
+      "name": "Capacity 014 Ω",
+      "category": "Furniture",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 14,
+          "category": "Furniture",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              3.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              3.0,
+              0.5
+            ],
+            [
+              10.25,
+              3.0,
+              0.5
+            ],
+            [
+              9.0,
+              3.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-015",
+      "name": "Capacity 015 Ω",
+      "category": "Casework",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 15,
+          "category": "Casework",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              3.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              3.0,
+              1.0
+            ],
+            [
+              13.25,
+              3.0,
+              1.0
+            ],
+            [
+              12.0,
+              3.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-016",
+      "name": "Capacity 016 Ω",
+      "category": "MechanicalEquipment",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 16,
+          "category": "MechanicalEquipment",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              3.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              3.0,
+              1.5
+            ],
+            [
+              16.25,
+              3.0,
+              1.5
+            ],
+            [
+              15.0,
+              3.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-017",
+      "name": "Capacity 017 Ω",
+      "category": "Pipe",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 17,
+          "category": "Pipe",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              3.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              3.0,
+              0.0
+            ],
+            [
+              19.25,
+              3.0,
+              0.0
+            ],
+            [
+              18.0,
+              3.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-018",
+      "name": "Capacity 018 Ω",
+      "category": "Duct",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 18,
+          "category": "Duct",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              3.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              3.0,
+              0.5
+            ],
+            [
+              22.25,
+              3.0,
+              0.5
+            ],
+            [
+              21.0,
+              3.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-019",
+      "name": "Capacity 019 Ω",
+      "category": "GenericModel",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 19,
+          "category": "GenericModel",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              3.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              3.0,
+              1.0
+            ],
+            [
+              25.25,
+              3.0,
+              1.0
+            ],
+            [
+              24.0,
+              3.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-020",
+      "name": "Capacity 020 Ω",
+      "category": "Planting",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 20,
+          "category": "Planting",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              3.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              3.0,
+              1.5
+            ],
+            [
+              28.25,
+              3.0,
+              1.5
+            ],
+            [
+              27.0,
+              3.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-021",
+      "name": "Capacity 021 Ω",
+      "category": "Wall",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 21,
+          "category": "Wall",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              6.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              6.0,
+              0.0
+            ],
+            [
+              1.25,
+              6.0,
+              0.0
+            ],
+            [
+              0.0,
+              6.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-022",
+      "name": "Capacity 022 Ω",
+      "category": "Door",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 22,
+          "category": "Door",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              6.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              6.0,
+              0.5
+            ],
+            [
+              4.25,
+              6.0,
+              0.5
+            ],
+            [
+              3.0,
+              6.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-023",
+      "name": "Capacity 023 Ω",
+      "category": "Window",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 23,
+          "category": "Window",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              6.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              6.0,
+              1.0
+            ],
+            [
+              7.25,
+              6.0,
+              1.0
+            ],
+            [
+              6.0,
+              6.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-024",
+      "name": "Capacity 024 Ω",
+      "category": "Floor",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 24,
+          "category": "Floor",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              6.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              6.0,
+              1.5
+            ],
+            [
+              10.25,
+              6.0,
+              1.5
+            ],
+            [
+              9.0,
+              6.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-025",
+      "name": "Capacity 025 Ω",
+      "category": "Roof",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 25,
+          "category": "Roof",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              6.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              6.0,
+              0.0
+            ],
+            [
+              13.25,
+              6.0,
+              0.0
+            ],
+            [
+              12.0,
+              6.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-026",
+      "name": "Capacity 026 Ω",
+      "category": "Ceiling",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 26,
+          "category": "Ceiling",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              6.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              6.0,
+              0.5
+            ],
+            [
+              16.25,
+              6.0,
+              0.5
+            ],
+            [
+              15.0,
+              6.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-027",
+      "name": "Capacity 027 Ω",
+      "category": "Stair",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 27,
+          "category": "Stair",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              6.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              6.0,
+              1.0
+            ],
+            [
+              19.25,
+              6.0,
+              1.0
+            ],
+            [
+              18.0,
+              6.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-028",
+      "name": "Capacity 028 Ω",
+      "category": "Railing",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 28,
+          "category": "Railing",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              6.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              6.0,
+              1.5
+            ],
+            [
+              22.25,
+              6.0,
+              1.5
+            ],
+            [
+              21.0,
+              6.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-029",
+      "name": "Capacity 029 Ω",
+      "category": "Ramp",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 29,
+          "category": "Ramp",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              6.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              6.0,
+              0.0
+            ],
+            [
+              25.25,
+              6.0,
+              0.0
+            ],
+            [
+              24.0,
+              6.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-030",
+      "name": "Capacity 030 Ω",
+      "category": "Column",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 30,
+          "category": "Column",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              6.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              6.0,
+              0.5
+            ],
+            [
+              28.25,
+              6.0,
+              0.5
+            ],
+            [
+              27.0,
+              6.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-031",
+      "name": "Capacity 031 Ω",
+      "category": "StructuralColumn",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 31,
+          "category": "StructuralColumn",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              9.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              9.0,
+              1.0
+            ],
+            [
+              1.25,
+              9.0,
+              1.0
+            ],
+            [
+              0.0,
+              9.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-032",
+      "name": "Capacity 032 Ω",
+      "category": "StructuralFraming",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 32,
+          "category": "StructuralFraming",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              9.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              9.0,
+              1.5
+            ],
+            [
+              4.25,
+              9.0,
+              1.5
+            ],
+            [
+              3.0,
+              9.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-033",
+      "name": "Capacity 033 Ω",
+      "category": "StructuralFoundation",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 33,
+          "category": "StructuralFoundation",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              9.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              9.0,
+              0.0
+            ],
+            [
+              7.25,
+              9.0,
+              0.0
+            ],
+            [
+              6.0,
+              9.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-034",
+      "name": "Capacity 034 Ω",
+      "category": "Furniture",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 34,
+          "category": "Furniture",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              9.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              9.0,
+              0.5
+            ],
+            [
+              10.25,
+              9.0,
+              0.5
+            ],
+            [
+              9.0,
+              9.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-035",
+      "name": "Capacity 035 Ω",
+      "category": "Casework",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 35,
+          "category": "Casework",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              9.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              9.0,
+              1.0
+            ],
+            [
+              13.25,
+              9.0,
+              1.0
+            ],
+            [
+              12.0,
+              9.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-036",
+      "name": "Capacity 036 Ω",
+      "category": "MechanicalEquipment",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 36,
+          "category": "MechanicalEquipment",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              9.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              9.0,
+              1.5
+            ],
+            [
+              16.25,
+              9.0,
+              1.5
+            ],
+            [
+              15.0,
+              9.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-037",
+      "name": "Capacity 037 Ω",
+      "category": "Pipe",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 37,
+          "category": "Pipe",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              9.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              9.0,
+              0.0
+            ],
+            [
+              19.25,
+              9.0,
+              0.0
+            ],
+            [
+              18.0,
+              9.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-038",
+      "name": "Capacity 038 Ω",
+      "category": "Duct",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 38,
+          "category": "Duct",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              9.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              9.0,
+              0.5
+            ],
+            [
+              22.25,
+              9.0,
+              0.5
+            ],
+            [
+              21.0,
+              9.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-039",
+      "name": "Capacity 039 Ω",
+      "category": "GenericModel",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 39,
+          "category": "GenericModel",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              9.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              9.0,
+              1.0
+            ],
+            [
+              25.25,
+              9.0,
+              1.0
+            ],
+            [
+              24.0,
+              9.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-040",
+      "name": "Capacity 040 Ω",
+      "category": "Planting",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 40,
+          "category": "Planting",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              9.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              9.0,
+              1.5
+            ],
+            [
+              28.25,
+              9.0,
+              1.5
+            ],
+            [
+              27.0,
+              9.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-041",
+      "name": "Capacity 041 Ω",
+      "category": "Wall",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 41,
+          "category": "Wall",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              12.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              12.0,
+              0.0
+            ],
+            [
+              1.25,
+              12.0,
+              0.0
+            ],
+            [
+              0.0,
+              12.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-042",
+      "name": "Capacity 042 Ω",
+      "category": "Door",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 42,
+          "category": "Door",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              12.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              12.0,
+              0.5
+            ],
+            [
+              4.25,
+              12.0,
+              0.5
+            ],
+            [
+              3.0,
+              12.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-043",
+      "name": "Capacity 043 Ω",
+      "category": "Window",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 43,
+          "category": "Window",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              12.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              12.0,
+              1.0
+            ],
+            [
+              7.25,
+              12.0,
+              1.0
+            ],
+            [
+              6.0,
+              12.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-044",
+      "name": "Capacity 044 Ω",
+      "category": "Floor",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 44,
+          "category": "Floor",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              12.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              12.0,
+              1.5
+            ],
+            [
+              10.25,
+              12.0,
+              1.5
+            ],
+            [
+              9.0,
+              12.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-045",
+      "name": "Capacity 045 Ω",
+      "category": "Roof",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 45,
+          "category": "Roof",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              12.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              12.0,
+              0.0
+            ],
+            [
+              13.25,
+              12.0,
+              0.0
+            ],
+            [
+              12.0,
+              12.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-046",
+      "name": "Capacity 046 Ω",
+      "category": "Ceiling",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 46,
+          "category": "Ceiling",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              12.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              12.0,
+              0.5
+            ],
+            [
+              16.25,
+              12.0,
+              0.5
+            ],
+            [
+              15.0,
+              12.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-047",
+      "name": "Capacity 047 Ω",
+      "category": "Stair",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 47,
+          "category": "Stair",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              12.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              12.0,
+              1.0
+            ],
+            [
+              19.25,
+              12.0,
+              1.0
+            ],
+            [
+              18.0,
+              12.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-048",
+      "name": "Capacity 048 Ω",
+      "category": "Railing",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 48,
+          "category": "Railing",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              12.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              12.0,
+              1.5
+            ],
+            [
+              22.25,
+              12.0,
+              1.5
+            ],
+            [
+              21.0,
+              12.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-049",
+      "name": "Capacity 049 Ω",
+      "category": "Ramp",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 49,
+          "category": "Ramp",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              12.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              12.0,
+              0.0
+            ],
+            [
+              25.25,
+              12.0,
+              0.0
+            ],
+            [
+              24.0,
+              12.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-050",
+      "name": "Capacity 050 Ω",
+      "category": "Column",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 50,
+          "category": "Column",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              12.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              12.0,
+              0.5
+            ],
+            [
+              28.25,
+              12.0,
+              0.5
+            ],
+            [
+              27.0,
+              12.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-051",
+      "name": "Capacity 051 Ω",
+      "category": "StructuralColumn",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 51,
+          "category": "StructuralColumn",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              15.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              15.0,
+              1.0
+            ],
+            [
+              1.25,
+              15.0,
+              1.0
+            ],
+            [
+              0.0,
+              15.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-052",
+      "name": "Capacity 052 Ω",
+      "category": "StructuralFraming",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 52,
+          "category": "StructuralFraming",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              15.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              15.0,
+              1.5
+            ],
+            [
+              4.25,
+              15.0,
+              1.5
+            ],
+            [
+              3.0,
+              15.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-053",
+      "name": "Capacity 053 Ω",
+      "category": "StructuralFoundation",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 53,
+          "category": "StructuralFoundation",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              15.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              15.0,
+              0.0
+            ],
+            [
+              7.25,
+              15.0,
+              0.0
+            ],
+            [
+              6.0,
+              15.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-054",
+      "name": "Capacity 054 Ω",
+      "category": "Furniture",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 54,
+          "category": "Furniture",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              15.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              15.0,
+              0.5
+            ],
+            [
+              10.25,
+              15.0,
+              0.5
+            ],
+            [
+              9.0,
+              15.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-055",
+      "name": "Capacity 055 Ω",
+      "category": "Casework",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 55,
+          "category": "Casework",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              15.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              15.0,
+              1.0
+            ],
+            [
+              13.25,
+              15.0,
+              1.0
+            ],
+            [
+              12.0,
+              15.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-056",
+      "name": "Capacity 056 Ω",
+      "category": "MechanicalEquipment",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 56,
+          "category": "MechanicalEquipment",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              15.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              15.0,
+              1.5
+            ],
+            [
+              16.25,
+              15.0,
+              1.5
+            ],
+            [
+              15.0,
+              15.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-057",
+      "name": "Capacity 057 Ω",
+      "category": "Pipe",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 57,
+          "category": "Pipe",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              15.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              15.0,
+              0.0
+            ],
+            [
+              19.25,
+              15.0,
+              0.0
+            ],
+            [
+              18.0,
+              15.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-058",
+      "name": "Capacity 058 Ω",
+      "category": "Duct",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 58,
+          "category": "Duct",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              15.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              15.0,
+              0.5
+            ],
+            [
+              22.25,
+              15.0,
+              0.5
+            ],
+            [
+              21.0,
+              15.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-059",
+      "name": "Capacity 059 Ω",
+      "category": "GenericModel",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 59,
+          "category": "GenericModel",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              15.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              15.0,
+              1.0
+            ],
+            [
+              25.25,
+              15.0,
+              1.0
+            ],
+            [
+              24.0,
+              15.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-060",
+      "name": "Capacity 060 Ω",
+      "category": "Planting",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 60,
+          "category": "Planting",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              15.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              15.0,
+              1.5
+            ],
+            [
+              28.25,
+              15.0,
+              1.5
+            ],
+            [
+              27.0,
+              15.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-061",
+      "name": "Capacity 061 Ω",
+      "category": "Wall",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 61,
+          "category": "Wall",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              18.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              18.0,
+              0.0
+            ],
+            [
+              1.25,
+              18.0,
+              0.0
+            ],
+            [
+              0.0,
+              18.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-062",
+      "name": "Capacity 062 Ω",
+      "category": "Door",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 62,
+          "category": "Door",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              18.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              18.0,
+              0.5
+            ],
+            [
+              4.25,
+              18.0,
+              0.5
+            ],
+            [
+              3.0,
+              18.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-063",
+      "name": "Capacity 063 Ω",
+      "category": "Window",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 63,
+          "category": "Window",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              18.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              18.0,
+              1.0
+            ],
+            [
+              7.25,
+              18.0,
+              1.0
+            ],
+            [
+              6.0,
+              18.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-064",
+      "name": "Capacity 064 Ω",
+      "category": "Floor",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 64,
+          "category": "Floor",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              18.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              18.0,
+              1.5
+            ],
+            [
+              10.25,
+              18.0,
+              1.5
+            ],
+            [
+              9.0,
+              18.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-065",
+      "name": "Capacity 065 Ω",
+      "category": "Roof",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 65,
+          "category": "Roof",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              18.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              18.0,
+              0.0
+            ],
+            [
+              13.25,
+              18.0,
+              0.0
+            ],
+            [
+              12.0,
+              18.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-066",
+      "name": "Capacity 066 Ω",
+      "category": "Ceiling",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 66,
+          "category": "Ceiling",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              18.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              18.0,
+              0.5
+            ],
+            [
+              16.25,
+              18.0,
+              0.5
+            ],
+            [
+              15.0,
+              18.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-067",
+      "name": "Capacity 067 Ω",
+      "category": "Stair",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 67,
+          "category": "Stair",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              18.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              18.0,
+              1.0
+            ],
+            [
+              19.25,
+              18.0,
+              1.0
+            ],
+            [
+              18.0,
+              18.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-068",
+      "name": "Capacity 068 Ω",
+      "category": "Railing",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 68,
+          "category": "Railing",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              18.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              18.0,
+              1.5
+            ],
+            [
+              22.25,
+              18.0,
+              1.5
+            ],
+            [
+              21.0,
+              18.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-069",
+      "name": "Capacity 069 Ω",
+      "category": "Ramp",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 69,
+          "category": "Ramp",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              18.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              18.0,
+              0.0
+            ],
+            [
+              25.25,
+              18.0,
+              0.0
+            ],
+            [
+              24.0,
+              18.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-070",
+      "name": "Capacity 070 Ω",
+      "category": "Column",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 70,
+          "category": "Column",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              18.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              18.0,
+              0.5
+            ],
+            [
+              28.25,
+              18.0,
+              0.5
+            ],
+            [
+              27.0,
+              18.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-071",
+      "name": "Capacity 071 Ω",
+      "category": "StructuralColumn",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 71,
+          "category": "StructuralColumn",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              21.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              21.0,
+              1.0
+            ],
+            [
+              1.25,
+              21.0,
+              1.0
+            ],
+            [
+              0.0,
+              21.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-072",
+      "name": "Capacity 072 Ω",
+      "category": "StructuralFraming",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 72,
+          "category": "StructuralFraming",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              21.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              21.0,
+              1.5
+            ],
+            [
+              4.25,
+              21.0,
+              1.5
+            ],
+            [
+              3.0,
+              21.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-073",
+      "name": "Capacity 073 Ω",
+      "category": "StructuralFoundation",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 73,
+          "category": "StructuralFoundation",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              21.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              21.0,
+              0.0
+            ],
+            [
+              7.25,
+              21.0,
+              0.0
+            ],
+            [
+              6.0,
+              21.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-074",
+      "name": "Capacity 074 Ω",
+      "category": "Furniture",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 74,
+          "category": "Furniture",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              21.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              21.0,
+              0.5
+            ],
+            [
+              10.25,
+              21.0,
+              0.5
+            ],
+            [
+              9.0,
+              21.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-075",
+      "name": "Capacity 075 Ω",
+      "category": "Casework",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 75,
+          "category": "Casework",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              21.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              21.0,
+              1.0
+            ],
+            [
+              13.25,
+              21.0,
+              1.0
+            ],
+            [
+              12.0,
+              21.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-076",
+      "name": "Capacity 076 Ω",
+      "category": "MechanicalEquipment",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 76,
+          "category": "MechanicalEquipment",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              21.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              21.0,
+              1.5
+            ],
+            [
+              16.25,
+              21.0,
+              1.5
+            ],
+            [
+              15.0,
+              21.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-077",
+      "name": "Capacity 077 Ω",
+      "category": "Pipe",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 77,
+          "category": "Pipe",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              21.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              21.0,
+              0.0
+            ],
+            [
+              19.25,
+              21.0,
+              0.0
+            ],
+            [
+              18.0,
+              21.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-078",
+      "name": "Capacity 078 Ω",
+      "category": "Duct",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 78,
+          "category": "Duct",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              21.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              21.0,
+              0.5
+            ],
+            [
+              22.25,
+              21.0,
+              0.5
+            ],
+            [
+              21.0,
+              21.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-079",
+      "name": "Capacity 079 Ω",
+      "category": "GenericModel",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 79,
+          "category": "GenericModel",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              21.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              21.0,
+              1.0
+            ],
+            [
+              25.25,
+              21.0,
+              1.0
+            ],
+            [
+              24.0,
+              21.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-080",
+      "name": "Capacity 080 Ω",
+      "category": "Planting",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 80,
+          "category": "Planting",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              21.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              21.0,
+              1.5
+            ],
+            [
+              28.25,
+              21.0,
+              1.5
+            ],
+            [
+              27.0,
+              21.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-081",
+      "name": "Capacity 081 Ω",
+      "category": "Wall",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 81,
+          "category": "Wall",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              24.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              24.0,
+              0.0
+            ],
+            [
+              1.25,
+              24.0,
+              0.0
+            ],
+            [
+              0.0,
+              24.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-082",
+      "name": "Capacity 082 Ω",
+      "category": "Door",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 82,
+          "category": "Door",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              24.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              24.0,
+              0.5
+            ],
+            [
+              4.25,
+              24.0,
+              0.5
+            ],
+            [
+              3.0,
+              24.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-083",
+      "name": "Capacity 083 Ω",
+      "category": "Window",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 83,
+          "category": "Window",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              24.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              24.0,
+              1.0
+            ],
+            [
+              7.25,
+              24.0,
+              1.0
+            ],
+            [
+              6.0,
+              24.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-084",
+      "name": "Capacity 084 Ω",
+      "category": "Floor",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 84,
+          "category": "Floor",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              24.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              24.0,
+              1.5
+            ],
+            [
+              10.25,
+              24.0,
+              1.5
+            ],
+            [
+              9.0,
+              24.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-085",
+      "name": "Capacity 085 Ω",
+      "category": "Roof",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 85,
+          "category": "Roof",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              24.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              24.0,
+              0.0
+            ],
+            [
+              13.25,
+              24.0,
+              0.0
+            ],
+            [
+              12.0,
+              24.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-086",
+      "name": "Capacity 086 Ω",
+      "category": "Ceiling",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 86,
+          "category": "Ceiling",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              24.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              24.0,
+              0.5
+            ],
+            [
+              16.25,
+              24.0,
+              0.5
+            ],
+            [
+              15.0,
+              24.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-087",
+      "name": "Capacity 087 Ω",
+      "category": "Stair",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 87,
+          "category": "Stair",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              24.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              24.0,
+              1.0
+            ],
+            [
+              19.25,
+              24.0,
+              1.0
+            ],
+            [
+              18.0,
+              24.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-088",
+      "name": "Capacity 088 Ω",
+      "category": "Railing",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 88,
+          "category": "Railing",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              24.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              24.0,
+              1.5
+            ],
+            [
+              22.25,
+              24.0,
+              1.5
+            ],
+            [
+              21.0,
+              24.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-089",
+      "name": "Capacity 089 Ω",
+      "category": "Ramp",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 89,
+          "category": "Ramp",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              24.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              24.0,
+              0.0
+            ],
+            [
+              25.25,
+              24.0,
+              0.0
+            ],
+            [
+              24.0,
+              24.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-090",
+      "name": "Capacity 090 Ω",
+      "category": "Column",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 90,
+          "category": "Column",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              24.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              24.0,
+              0.5
+            ],
+            [
+              28.25,
+              24.0,
+              0.5
+            ],
+            [
+              27.0,
+              24.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-091",
+      "name": "Capacity 091 Ω",
+      "category": "StructuralColumn",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 91,
+          "category": "StructuralColumn",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              0.0,
+              27.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              0.0,
+              27.0,
+              1.0
+            ],
+            [
+              1.25,
+              27.0,
+              1.0
+            ],
+            [
+              0.0,
+              27.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-092",
+      "name": "Capacity 092 Ω",
+      "category": "StructuralFraming",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 92,
+          "category": "StructuralFraming",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              3.0,
+              27.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              3.0,
+              27.0,
+              1.5
+            ],
+            [
+              4.25,
+              27.0,
+              1.5
+            ],
+            [
+              3.0,
+              27.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-093",
+      "name": "Capacity 093 Ω",
+      "category": "StructuralFoundation",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 93,
+          "category": "StructuralFoundation",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              6.0,
+              27.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              6.0,
+              27.0,
+              0.0
+            ],
+            [
+              7.25,
+              27.0,
+              0.0
+            ],
+            [
+              6.0,
+              27.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-094",
+      "name": "Capacity 094 Ω",
+      "category": "Furniture",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 94,
+          "category": "Furniture",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              9.0,
+              27.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              9.0,
+              27.0,
+              0.5
+            ],
+            [
+              10.25,
+              27.0,
+              0.5
+            ],
+            [
+              9.0,
+              27.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-095",
+      "name": "Capacity 095 Ω",
+      "category": "Casework",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 95,
+          "category": "Casework",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              12.0,
+              27.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              12.0,
+              27.0,
+              1.0
+            ],
+            [
+              13.25,
+              27.0,
+              1.0
+            ],
+            [
+              12.0,
+              27.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-096",
+      "name": "Capacity 096 Ω",
+      "category": "MechanicalEquipment",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 96,
+          "category": "MechanicalEquipment",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              15.0,
+              27.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              15.0,
+              27.0,
+              1.5
+            ],
+            [
+              16.25,
+              27.0,
+              1.5
+            ],
+            [
+              15.0,
+              27.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-097",
+      "name": "Capacity 097 Ω",
+      "category": "Pipe",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 97,
+          "category": "Pipe",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              18.0,
+              27.0,
+              0.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              18.0,
+              27.0,
+              0.0
+            ],
+            [
+              19.25,
+              27.0,
+              0.0
+            ],
+            [
+              18.0,
+              27.75,
+              0.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-098",
+      "name": "Capacity 098 Ω",
+      "category": "Duct",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 98,
+          "category": "Duct",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              21.0,
+              27.0,
+              0.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              21.0,
+              27.0,
+              0.5
+            ],
+            [
+              22.25,
+              27.0,
+              0.5
+            ],
+            [
+              21.0,
+              27.75,
+              0.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-099",
+      "name": "Capacity 099 Ω",
+      "category": "GenericModel",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 99,
+          "category": "GenericModel",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              24.0,
+              27.0,
+              1.0
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              24.0,
+              27.0,
+              1.0
+            ],
+            [
+              25.25,
+              27.0,
+              1.0
+            ],
+            [
+              24.0,
+              27.75,
+              1.0
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capacity-100",
+      "name": "Capacity 100 Ω",
+      "category": "Planting",
+      "properties": {
+        "capacity_case": {
+          "ordinal": 100,
+          "category": "Planting",
+          "flags": [
+            true,
+            false,
+            null
+          ],
+          "measurements": {
+            "edge_lengths_m": [
+              1.25,
+              0.75
+            ],
+            "anchor_m": [
+              27.0,
+              27.0,
+              1.5
+            ]
+          },
+          "unicode": "Málaga Δ"
+        }
+      },
+      "parts": [
+        {
+          "vertices": [
+            [
+              27.0,
+              27.0,
+              1.5
+            ],
+            [
+              28.25,
+              27.0,
+              1.5
+            ],
+            [
+              27.0,
+              27.75,
+              1.5
+            ]
+          ],
+          "triangles": [
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

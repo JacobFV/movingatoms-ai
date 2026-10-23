@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Combined seed model evidence</title><style>body{margin:0;background:#edf1f5;color:#172338;font:16px Arial}main{max-width:1180px;margin:22px auto;padding:24px;background:white;border-top:7px solid #166c61}h1{font-size:29px}.cards{display:flex;gap:14px}.card{flex:1;padding:12px;background:#eef5f3}.big{display:block;font-size:26px}table{width:100%;border-collapse:collapse}td,th{padding:8px;text-align:left;vertical-align:top;border-bottom:1px solid #dae2e7}pre{font-size:12px;white-space:pre-wrap;margin:0;overflow-wrap:anywhere}.notice{background:#fff1d7;padding:14px;margin:14px 0}footer{font-size:12px;color:#526172}.props{max-width:530px}</style><main><small>CLEAN-ROOM RVT RESEARCH · LOCAL TECHNICAL REPORT</small><h1>Combined native model: saved geometry and application data</h1><div class="cards"><div class="card"><b class="big">3 owners</b>4 saved mesh primitives</div><div class="card"><b class="big">17 triangles</b>read back from verified RVT</div><div class="card"><b class="big">2,300 source rows</b>byte-identical preservation</div></div><img src="scene.png" style="width:100%" alt="All saved mesh components rendered from verified native read-back"><p>Actual native saved vertices and triangles; feet converted to metres (× 0.3048). Each primitive uses its decoded source-style viewport RGBA. Normals are archived unchanged. Colors are reader viewport interpretations, not Autodesk rendering.</p><table><tr><th>Named level / native ID</th><th>Elevation</th><th>Application ID</th></tr><tr><td>Basement Δ / 2746</td><td>-3 m</td><td>basement</td></tr><tr><td>Level 1 / 1916</td><td>0 m</td><td>ground</td></tr><tr><td>Roof Ω / 2747</td><td>7 m</td><td>roof</td></tr></table><table><tr><th>Saved owner</th><th>Category / level relationship</th><th>Exact application properties</th></tr><tr><td><b>Ground wall</b><br>wall-a · native 2748<br>12 triangles · channels 101/102/103</td><td>wall<br>Application level: Level 1<br>Native associated-level: -1</td><td class="props"><pre>{
+  &quot;dimensions&quot;: {
+    &quot;height&quot;: 3,
+    &quot;length&quot;: 4,
+    &quot;width&quot;: 0.2
+  },
+  &quot;material&quot;: &quot;concrete&quot;,
+  &quot;reviewed&quot;: true
+}</pre></td></tr><tr><td><b>Basement open panels Δ</b><br>open-panels · native 2749<br>3 triangles · channels 101/102/103</td><td>generic<br>Application level: Basement Δ<br>Native associated-level: -1</td><td class="props"><pre>{
+  &quot;nested&quot;: {
+    &quot;optional&quot;: null,
+    &quot;tags&quot;: [
+      &quot;open&quot;,
+      &quot;disconnected&quot;,
+      &quot;Δ&quot;
+    ]
+  }
+}</pre></td></tr><tr><td><b>Roof surface Ω</b><br>roof-a · native 2750<br>2 triangles · channels 101/102/103</td><td>roof<br>Application level: Roof Ω<br>Native associated-level: -1</td><td class="props"><pre>{
+  &quot;notes&quot;: &quot;Independent surface, no solid volume claim&quot;,
+  &quot;slope&quot;: 0.25
+}</pre></td></tr></table><div class="notice"><b>Evidence boundary:</b> Chrome screenshot of a generated local report, not Autodesk UI. Options, lifecycle defaults and DirectShape category-registration policy remain hypotheses. Named levels are native elements; requested element-to-level relationships and application properties are stored in our own extensible-storage schema. Native associated-level remains unset (-1). Autodesk opening, regeneration and re-saving are untested. Ordinary public IFC export skips DirectShape.</div><pre>Verified candidate SHA-256: 56b5b5274c3f75681e5884d84424fc1678f9f63f308accc317e2c8373a9ca8c5
+Native report SHA-256: 6fb783a407c74953a24f0d8fe2f34c0fe1fe9329c2e98e3c35563551a5181af7</pre><footer>Captured 2026-10-23T02:16:14.641935+00:00 · commit 534845aa78d7. Reports, actual mesh arrays, material provenance, browser and generator hashes archived.</footer></main></html>

@@ -285,10 +285,10 @@ def verify(reader,target,source,candidate,plan,request,*,prebuilt_probes=None):
     from schema_probe import REV
     oracle=request_oracle(request)
     if request_oracle(plan['request'])!=oracle:raise ValueError('plan and independent request differ')
-    reader=reader.resolve()if reader is not None else None;target=target.resolve();source=source.resolve();candidate=candidate.resolve();here=Path(__file__).parent
+    reader=reader.resolve()if reader is not None else None;target=target.resolve()if target is not None else None;source=source.resolve();candidate=candidate.resolve();here=Path(__file__).parent
     if sha(source.read_bytes())!=SOURCE_SHA or plan['source_sha256']!=SOURCE_SHA:raise ValueError('source seed differs')
     if prebuilt_probes is None:
-        if reader is None:raise ValueError('reader source required without prebuilt probes')
+        if reader is None or target is None:raise ValueError('reader source and build target required without prebuilt probes')
         if subprocess.check_output(['git','-C',str(reader),'rev-parse','HEAD'],text=True).strip()!=REV:raise ValueError('reader revision differs')
         subprocess.run(['git','-C',str(reader),'diff','--exit-code','HEAD','--','src','Cargo.toml','Cargo.lock'],check=True)
     category_bytes=(here/'results/seed_categories.json').read_bytes();categories=json.loads(category_bytes)

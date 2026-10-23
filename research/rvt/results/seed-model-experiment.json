@@ -1,0 +1,238 @@
+{
+  "scope": "Full saved research RVT pipeline; no Autodesk/native-regeneration acceptance",
+  "runs": [
+    {
+      "name": "baseline",
+      "local_directory": "research/rvt/local/seed-model-verified-baseline",
+      "status": "verified_research_candidate",
+      "source_commit": "534845aa78d7b674753c8c31df6b4629930b599e",
+      "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+      "candidate_sha256": "56b5b5274c3f75681e5884d84424fc1678f9f63f308accc317e2c8373a9ca8c5",
+      "request_sha256": "eaf76676e43433be4ab04dbab62a47773671355ef51c1789e45ef4f93af074e4",
+      "artifact_sha256": {
+        "run.json": "c89f3c2efa2853a7f937f271a4845c63807fe2feb8c827c2495d7de8db68e07b",
+        "native.json": "6fb783a407c74953a24f0d8fe2f34c0fe1fe9329c2e98e3c35563551a5181af7",
+        "metadata.json": "73335e844a5d1a7e0aa389f3220366dbaae86c2181d9e1cd239b93f8c3f85993",
+        "transport.json": "9f5872cbf312515b1debb1e6c8ad3db3fa7177cadbfc5d2850d1ae84ad0908a0",
+        "request.json": "eaf76676e43433be4ab04dbab62a47773671355ef51c1789e45ef4f93af074e4",
+        "candidate-independent-scene.json": "f6c2b30cdf15c4c450b20a91d3754cb96b9b5a7189663fd3f39ff5e39d10a9fd"
+      },
+      "prior_native_identities_preserved": 2300,
+      "original_partitions_preserved": 1,
+      "levels": [
+        {
+          "id": "basement",
+          "name": "Basement Δ",
+          "elevation_m": -3.0,
+          "element_id": 2746,
+          "reused_seed": false,
+          "complete_saved_graphs_match": true
+        },
+        {
+          "id": "ground",
+          "name": "Level 1",
+          "elevation_m": 0.0,
+          "element_id": 1916,
+          "reused_seed": true,
+          "complete_saved_graphs_match": true
+        },
+        {
+          "id": "roof",
+          "name": "Roof Ω",
+          "elevation_m": 7.0,
+          "element_id": 2747,
+          "reused_seed": false,
+          "complete_saved_graphs_match": true
+        }
+      ],
+      "elements": [
+        {
+          "element_id": 2748,
+          "application_id": "wall-a",
+          "name": "Ground wall",
+          "category": "wall",
+          "application_properties_exact": true,
+          "triangle_count": 12,
+          "rendered_primitive_count": 1,
+          "bounds_feet": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              13.123359680175781,
+              0.6561679840087891,
+              9.842519760131836
+            ]
+          ],
+          "channels": {
+            "101": {
+              "bytes": 193,
+              "sha256": "5bf6c553e317c4c898badf64286d96570074852dc8371288e968783b6f059057",
+              "objects": 3
+            },
+            "102": {
+              "bytes": 1442,
+              "sha256": "4eff673fa91f3040bb9b952d724dfda8b6d8fb3453789bc2354fe44b0dd3258a",
+              "objects": 9
+            },
+            "103": {
+              "bytes": 530,
+              "sha256": "dd41cd5f7e01c6a61fb4c0ffc96dd8f44f720a005f85843d12613eb38c5bd273",
+              "objects": 3
+            }
+          }
+        },
+        {
+          "element_id": 2749,
+          "application_id": "open-panels",
+          "name": "Basement open panels Δ",
+          "category": "generic",
+          "application_properties_exact": true,
+          "triangle_count": 3,
+          "rendered_primitive_count": 2,
+          "bounds_feet": [
+            [
+              -9.842519760131836,
+              -9.842519760131836,
+              -9.842519760131836
+            ],
+            [
+              9.842519760131836,
+              -3.2808399200439453,
+              -9.842519760131836
+            ]
+          ],
+          "channels": {
+            "101": {
+              "bytes": 185,
+              "sha256": "d7c2a442f7c2b8eea1cd9b6096dc20b27db49012f1cc0cf2de590ae73347209f",
+              "objects": 3
+            },
+            "102": {
+              "bytes": 1380,
+              "sha256": "dce125e2c77a2e430cdfbac1aa04a1e49f5175fee2adf01dea90a40459854387",
+              "objects": 11
+            },
+            "103": {
+              "bytes": 436,
+              "sha256": "820e39ab67cba27507f50217ec6a369e954843c3cea3c455b14b97f374b9b039",
+              "objects": 5
+            }
+          }
+        },
+        {
+          "element_id": 2750,
+          "application_id": "roof-a",
+          "name": "Roof surface Ω",
+          "category": "roof",
+          "application_properties_exact": true,
+          "triangle_count": 2,
+          "rendered_primitive_count": 1,
+          "bounds_feet": [
+            [
+              0.0,
+              0.0,
+              22.965879440307617
+            ],
+            [
+              13.123359680175781,
+              13.123359680175781,
+              26.246719360351562
+            ]
+          ],
+          "channels": {
+            "101": {
+              "bytes": 193,
+              "sha256": "3e322862595b23eecb51a3df73363185d9595e0f13d60818f26e153363d2c45a",
+              "objects": 3
+            },
+            "102": {
+              "bytes": 1178,
+              "sha256": "9ac9cf64041f81373a7d5591076b045b84e5ef9c318ccdd6e524580a0c2be36b",
+              "objects": 9
+            },
+            "103": {
+              "bytes": 302,
+              "sha256": "b6212286740e4d6b054ab03b07be8a1d93f30a1bae8dc92b15d2459992a87659",
+              "objects": 3
+            }
+          }
+        }
+      ],
+      "autodesk_acceptance": "not_tested",
+      "production_native_export": false
+    },
+    {
+      "name": "large",
+      "local_directory": "research/rvt/local/seed-model-verified-large",
+      "status": "verified_research_candidate",
+      "source_commit": "534845aa78d7b674753c8c31df6b4629930b599e",
+      "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+      "candidate_sha256": "4c781aa92a5d42a1124c862a937b44cebbb8175aeae394c988cfb236345407e7",
+      "request_sha256": "6f8458c81b22e4cfcac374064776bf6cd4c5a2836ee4d143f80f1ab92c7e5607",
+      "artifact_sha256": {
+        "run.json": "88708456fcf469dea78497434f0e8ffdd292ed83aa08f637af092d4165e3f167",
+        "native.json": "869b8d7decb2cde6e5a26e936e26f5ec55e5c0cacc09ce648b8f0f45ec1bf8cc",
+        "metadata.json": "61f8a84666ed830e35106bb584b99cd3303157f24d7ed75a4839b0faf5069826",
+        "transport.json": "c0ba8c9fe81c6ff7e0c294dca10feac3f26a5d8ae058663fff5cb8d632b1a7ff",
+        "request.json": "6f8458c81b22e4cfcac374064776bf6cd4c5a2836ee4d143f80f1ab92c7e5607",
+        "candidate-independent-scene.json": "012b28a983e150fa22239ced6dcade65088a6710eefc845000e19e3a3751f4b6"
+      },
+      "prior_native_identities_preserved": 2300,
+      "original_partitions_preserved": 1,
+      "levels": [],
+      "elements": [
+        {
+          "element_id": 2746,
+          "application_id": "large-surface",
+          "name": "Large split surface",
+          "category": "generic",
+          "application_properties_exact": true,
+          "triangle_count": 11000,
+          "rendered_primitive_count": 2,
+          "bounds_feet": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              718.5039672851562,
+              652.8871459960938,
+              0.0
+            ]
+          ],
+          "channels": {
+            "101": {
+              "bytes": 185,
+              "sha256": "04b82f778f6114a675d811940b0cd29cce12a165579603cb4ea8c5feefca5215",
+              "objects": 3
+            },
+            "102": {
+              "bytes": 595036,
+              "sha256": "89aded477573d91e3060bc27324f148a5eb46785499b746f8c85ebaae60ecc61",
+              "objects": 11
+            },
+            "103": {
+              "bytes": 594298,
+              "sha256": "8be7a3b32bfb4e3229c47390f8ba97ef497cc050681d185b516dc37c1d534649",
+              "objects": 5
+            }
+          }
+        }
+      ],
+      "autodesk_acceptance": "not_tested",
+      "production_native_export": false
+    }
+  ],
+  "large_fixture": {
+    "vertices": 33000,
+    "triangles": 11000,
+    "grid_columns": 110,
+    "grid_rows": 100,
+    "construction_metres": "For j=0..10999: triangle points [2*(j%110)+dx,2*(j//110)+dy,0] for (dx,dy)=(0,0),(1,0),(0,1); triangle indices[3*j,3*j+1,3*j+2].",
+    "initial_out_of_bounds_request": "A22000m-wide linear arrangement was rejected by the±10000m input guard before creating output. Corrected grid retains identical triangle count without relaxing limits."
+  }
+}
