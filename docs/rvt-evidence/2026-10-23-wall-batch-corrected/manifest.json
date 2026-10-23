@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-10-23T00:47:09.019284+00:00",
+  "source_commit": "d15bfb120679d0daae2e95f02e8e2600f6887653",
+  "working_tree_status": " M docs/rvt-evidence/README.md\n M docs/rvt-research-log.md\n M docs/rvt-research.md\n M research/rvt/README.md\n?? docs/rvt-evidence/2026-10-23-wall-batch-corrected/\n?? docs/rvt-evidence/2026-10-23-wall-batch/\n?? research/rvt/capture_wall_batch_evidence.py\n?? research/rvt/results/wall-batch-ifc.json\n?? research/rvt/results/wall-batch-meshes.json\n?? research/rvt/results/wall-batch-metadata.json\n?? research/rvt/results/wall-batch-native.json\n?? research/rvt/results/wall-batch-plan.json\n?? research/rvt/results/wall-batch-plan.md\n?? research/rvt/results/wall-batch-request.json\n?? research/rvt/results/wall-batch-run.json\n?? research/rvt/results/wall-batch.md\n?? research/rvt/test_wall_batch_candidate.py\n?? research/rvt/test_wall_batch_experiment.py\n?? research/rvt/test_wall_batch_metadata_audit.py\n?? research/rvt/test_wall_batch_verify.py\n?? research/rvt/wall_batch_candidate.py\n?? research/rvt/wall_batch_experiment.py\n?? research/rvt/wall_batch_metadata_audit.py\n?? research/rvt/wall_batch_verify.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "79e217596e2b96177009d7a3653156c6cadf8e25e944adde49c2ece1ef256686",
+  "actual_ifc_meshes": true,
+  "not_autodesk_ui": true,
+  "source_report_sha256": {
+    "run": "e266789ddbc3421338e7c54ff8cc478525b320fbfd23c5d1d974fb379f83713b",
+    "native": "e8aa9b13e242a12094e12f33865063bbaf8662199b43fb1afa47ae2fb5776018",
+    "metadata": "53d46c86414fce1450740f3158e6c2a9157a0912be7d31a789edbf95bf002d9c",
+    "ifc": "fc0459223489396ec5ba4ede74578e7c9ba81a81c0177c026262ab2655a0b733",
+    "meshes": "7ad2550a66f3d34223c525eb72d427b75ecdb17f1148446bd89dc6ac5c5fc668"
+  },
+  "artifacts": {
+    "batch.html": "c8f8816190d57e8b3c3b556042b25170cc49829697c709c555551cab266dda06",
+    "batch.png": "f988c8644a285cac94d2025b1b463aa6214a52e25ce31787c10a86dd8df662df",
+    "ifc.json": "fc0459223489396ec5ba4ede74578e7c9ba81a81c0177c026262ab2655a0b733",
+    "measurements.json": "d20d44104e067c290a3efb161e6deeab25a241af47dba8e5f807a7fd3038d2de",
+    "meshes.json": "7ad2550a66f3d34223c525eb72d427b75ecdb17f1148446bd89dc6ac5c5fc668",
+    "meshes.png": "4970a860d448bc2bca9fb0ff389e413eb6304b7a13ff15838ee1d7ca57b9de3c",
+    "meshes.svg": "f2ba97cce20e3ffa00e0696ba40962c0a2d2d3ef6d9372d387f0d08f9450ebda",
+    "metadata.json": "53d46c86414fce1450740f3158e6c2a9157a0912be7d31a789edbf95bf002d9c",
+    "native.json": "e8aa9b13e242a12094e12f33865063bbaf8662199b43fb1afa47ae2fb5776018",
+    "run.json": "e266789ddbc3421338e7c54ff8cc478525b320fbfd23c5d1d974fb379f83713b"
+  }
+}

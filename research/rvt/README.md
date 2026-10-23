@@ -2,6 +2,11 @@
 
 See [docs/rvt-research.md](../../docs/rvt-research.md). Run with `uv run --with olefile --with xxhash --with crcmod python <script> <file.rvt>`.
 
+The [multi-wall experiment runner](results/wall-batch.md) builds, validates and publishes
+a research candidate in one command, including raw metadata, native BRep and independent
+IFC checks. Its three-wall run preserves the existing model. Failed runs retain logs
+and do not publish a verified artifact.
+
 Current semantic experiments include the [room edit/save candidate](results/save-candidate.md),
 [registered DataStorage creation](results/create-candidate.md), and
 [straight-wall creation with a length change](results/wall-parametric-candidate.md).

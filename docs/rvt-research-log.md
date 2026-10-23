@@ -569,3 +569,35 @@ RVT through Revit's warning. No foreign bytes or proprietary implementation were
 This leaves the valid producer-field encoding and native acceptance unresolved.
 
 Final integrated Python discovery passes **128 tests**. No Rust transport code changed in this checkpoint.
+
+
+## Multi-wall transaction and one-command validation (2026-10-23 UTC)
+
+Extended the bounded writer to accept multiple length/XY specifications. It validates
+all new bounds, rejects duplicate/touching/intersecting walls, allocates sequential IDs
+in one episode, and writes all records into one partition. An independent bookkeeping
+audit caught and eliminated the former single-object increment count: both count fields
+now reflect the batch size in both increment arrays. Global registration is one guarded
+sorted union rather than repeated application of stale source offsets.
+
+Added `wall_batch_experiment.py`: writer, independent metadata auditor, pinned native
+reader/BRep checks and IfcOpenShell checks run before no-clobber publication. Every report
+must bind the same candidate SHA, and research code/source/writer hashes must remain
+stable. Failed runs preserve logs and staging evidence with an explicit failed status.
+
+The complete three-wall run passed: native solid volumes 60/120/180 ft³, all 26,425 prior
+native identities, eight original partitions and 970 projected entities retained. All
+360 original IFC wall meshes remain exact; 363 total walls. Explicit IFC OwnerHistory
+controls pass schema validation with zero messages. Candidate SHA:
+`3f34208b1d94bb99663601aefe1a2054cd3c7e39d695f4abf193401f24967bf6`.
+
+The full Python suite passes **143 tests**. No Rust transport code changed. Actual mesh
+plots and report snapshots were captured in Chrome, visually inspected, and all artifact
+hashes verified: [batch evidence](rvt-evidence/2026-10-23-wall-batch-corrected/manifest.json).
+Native regeneration/foreign producer framing/Autodesk acceptance remain unverified.
+
+Visual QA rejected the first batch plot: Matplotlib modified a reused aspect array,
+clipping panels two and three. Passing a copy fixes the renderer. The rejected capture
+is retained with `REJECTED.md`; the corrected screenshot is the documentation default.
+No candidate bytes, mesh data or validation results changed. Corrected capture hashes
+were verified and its three panels visually inspected.

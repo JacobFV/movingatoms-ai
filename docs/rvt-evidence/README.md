@@ -143,3 +143,14 @@ closed 120 ft³ solid with six faces, twelve edges and eight vertices. Four open
 auxiliary sheets are excluded from volume. Its report and artifact hashes are archived.
 
 ![Saved native BRep audit](2026-10-22-native-brep/wall-comparison.png)
+
+
+### Three walls in one save
+
+[Batch capture and provenance](2026-10-23-wall-batch-corrected/manifest.json) records three
+actual IFC meshes at equal scale alongside independent saved-native-solid measurements.
+The six-, twelve- and eighteen-foot walls measure 60, 120 and 180 ft³; all existing
+native identities and wall meshes remain unchanged. This is a local research report,
+not Revit UI or native acceptance evidence.
+
+![Three-wall native and IFC audit](2026-10-23-wall-batch-corrected/batch.png)

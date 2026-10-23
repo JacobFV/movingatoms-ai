@@ -1,5 +1,11 @@
 # Writing native Revit (.rvt) without Revit — research notes
 
+Latest implementation: a [single-command multi-wall workflow](../research/rvt/results/wall-batch.md)
+creates three distinct walls in one partition/episode, with independently verified
+native solids and IFC meshes. All 26,425 original identities and 360 original wall
+meshes are preserved; 143 Python tests pass. This remains a pinned-source research
+writer with unverified native regeneration, producer encoding and Autodesk acceptance.
+
 Current save experiment: [candidate v6](../research/rvt/results/save-candidate.md)
 passes independent room routing/full-graph checks, seven Contents/text metadata
 relationships, and all observed binary BasicFileInfo identity copies. An explicit

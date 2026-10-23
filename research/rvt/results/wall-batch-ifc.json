@@ -1,0 +1,189 @@
+{
+  "candidate_sha256": "3f34208b1d94bb99663601aefe1a2054cd3c7e39d695f4abf193401f24967bf6",
+  "native_candidate_sha256": "3f34208b1d94bb99663601aefe1a2054cd3c7e39d695f4abf193401f24967bf6",
+  "source_ifc_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+  "candidate_ifc_sha256": "08aaf8a36e1422d79cd6b2a73f493340a754a37b70d517ee86d840fcc5584f69",
+  "ifcopenshell_version": "0.8.5",
+  "kernel": "opencascade",
+  "units": "metres",
+  "raw_schema_validation": [
+    {
+      "file": "candidate-source.ifc",
+      "schema": "IFC4",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xfbd6c0f2bcb0>)\n     +  and   False = exists(<indeterminate_type object at 0xfbd6c0f2bcb0>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xfbd6c0f2bcb0>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    },
+    {
+      "file": "candidate-candidate.ifc",
+      "schema": "IFC4",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xfbd6c0f2b620>)\n     +  and   False = exists(<indeterminate_type object at 0xfbd6c0f2b620>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xfbd6c0f2b620>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    }
+  ],
+  "explicit_owner_history_correction_controls": [
+    {
+      "input_file": "candidate-source.ifc",
+      "input_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+      "output_file": "candidate-source-owner-corrected.ifc",
+      "output_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59349
+    },
+    {
+      "input_file": "candidate-candidate.ifc",
+      "input_sha256": "08aaf8a36e1422d79cd6b2a73f493340a754a37b70d517ee86d840fcc5584f69",
+      "output_file": "candidate-candidate-owner-corrected.ifc",
+      "output_sha256": "790f92ad79e91e347082db5345e6f880d70627ae20296f7cf5487e68a16764ce",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59523
+    }
+  ],
+  "corrected_schema_validation": [
+    {
+      "file": "candidate-source-owner-corrected.ifc",
+      "schema": "IFC4",
+      "messages": []
+    },
+    {
+      "file": "candidate-candidate-owner-corrected.ifc",
+      "schema": "IFC4",
+      "messages": []
+    }
+  ],
+  "existing_wall_meshes_exactly_unchanged": 360,
+  "candidate_wall_count": 363,
+  "new_walls": [
+    {
+      "element_id": 133210,
+      "native_ifc_guid": "093fNSYLXLzBuoUS5Vwsn0",
+      "minimum_metres": [
+        158.3436,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        160.1724,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.828800000000001,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.699010795535289,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133211,
+      "native_ifc_guid": "093fNSYLXLzBuoUS5Vwsn1",
+      "minimum_metres": [
+        167.4876,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        171.1452,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          3.657600000000002,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910269154,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133212,
+      "native_ifc_guid": "093fNSYLXLzBuoUS5Vwsn6",
+      "minimum_metres": [
+        179.6796,
+        20.5486,
+        23.1648
+      ],
+      "maximum_metres": [
+        185.166,
+        20.751800000000003,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000003,
+          0.2032000000000025,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386547642,
+        "expected_volume_cubic_metres": 5.0970323865600005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    }
+  ],
+  "mesh_evidence_file": "meshes.json",
+  "mesh_evidence_sha256": "7ad2550a66f3d34223c525eb72d427b75ecdb17f1148446bd89dc6ac5c5fc668",
+  "validator_sha256": "6543cf4754d06c0ce1ab5d3c89db08972e69b68b994ae9606fc4e417f7958ad5",
+  "scope": "Actual emitted IFC triangulation. Native BRep consistency is separately audited from saved channel103 graphs; neither establishes Autodesk acceptance.",
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false
+}
