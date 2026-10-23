@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "units": "metres",
+  "levels": [
+    {
+      "name": "Basement \u0394",
+      "elevation": -3
+    },
+    {
+      "name": "Level 1",
+      "elevation": 0
+    },
+    {
+      "name": "Roof \u03a9",
+      "elevation": 7
+    }
+  ],
+  "walls": [
+    {
+      "id": "below-grade",
+      "base_level": "Basement \u0394",
+      "top_level": "Level 1",
+      "start": [
+        -10,
+        -5
+      ],
+      "length": 4,
+      "height": 2.8,
+      "yaw_degrees": 25
+    },
+    {
+      "id": "ground-east",
+      "base_level": "Level 1",
+      "top_level": "Roof \u03a9",
+      "start": [
+        0,
+        0
+      ],
+      "length": 5,
+      "height": 6,
+      "yaw_degrees": 0
+    },
+    {
+      "id": "upper-test",
+      "base_level": "Basement \u0394",
+      "top_level": "Roof \u03a9",
+      "start": [
+        15,
+        8
+      ],
+      "length": 3,
+      "height": 8,
+      "yaw_degrees": -45
+    }
+  ]
+}

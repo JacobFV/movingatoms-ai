@@ -200,3 +200,12 @@ three actual independently triangulated walls in the minimal seed. The report
 includes the metadata/native/IFC evidence and explicit validation limits.
 
 ![Minimal native document evidence](2026-10-23-seed-walls/candidate.png)
+
+
+## Named levels and metre-based geometry — 2026-10-23
+
+[Manifest](2026-10-23-named-levels-corrected/manifest.json) binds native and IFC
+checks for levels below and above zero, Unicode names and different base/top
+constraints. [Initial capture failure](2026-10-23-named-levels/FAILED.md) is retained.
+
+![Named level geometry evidence](2026-10-23-named-levels-corrected/candidate.png)

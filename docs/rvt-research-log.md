@@ -768,3 +768,19 @@ Reports/reproduction: `research/rvt/results/seed-wall.md`. The actual mesh
 screenshot in `docs/rvt-evidence/2026-10-23-seed-walls/` was visually reviewed
 and all manifest hashes verified. Code was frozen for the run and hashes were
 checked before publication. Native application acceptance remains untested.
+
+
+## General named levels and world-metre inputs
+
+The complete document workflow passes for named levels at −3, 0 and 7 m and
+three rotated walls with application IDs. Independent native and IFC audits
+confirm level names/elevations, selected base/top constraints and volumes
+2.24, 6 and 4.8 m³. All 2,300 prior identities and the source partition remain
+unchanged. Candidate SHA:
+`df86178ad6b6c5a1c277c8dc76dfd2b68fc2c0ab2fbf15dd02b5fc74918e6e21`.
+
+Reproduction and limits: `research/rvt/results/seed-document.md`. A reviewed
+actual-mesh screenshot with verified hashes is archived under
+`2026-10-23-named-levels-corrected`. The earlier capture failed before creating
+an image due to a feet/metres report-key mismatch; its failure record is retained.
+The writer remains a bounded research profile, with native acceptance untested.

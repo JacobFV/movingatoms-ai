@@ -21,7 +21,7 @@ def inflate_contents(logical):
     if not d.eof or d.unconsumed_tail or d.unused_data!=b'\0':raise ValueError('seed Contents suffix differs')
     return raw
 
-def audit_streams(old,new,evidence):
+def audit_streams(old,new,evidence,*,expected_global_change=True):
     history=audit_history(inflate_global(old['Global/History']),inflate_global(new['Global/History']))
     table=audit_table(inflate_global(old['Global/ElemTable']),inflate_global(new['Global/ElemTable']),history['creation_episode'])
     ids=table['new_ids'];count=len(ids)
@@ -42,6 +42,10 @@ def audit_streams(old,new,evidence):
     if set(new)-set(old)!={partition_name} or set(old)-set(new):raise ValueError('stream inventory differs')
     changed={k for k in old if old[k]!=new[k]}
     expected={'Global/Latest','Global/History','Global/ElemTable','Global/DocumentIncrementTable','Contents','BasicFileInfo','ProjectInformation'}
+    if type(expected_global_change)is not bool:raise ValueError('explicit boolean Global policy required')
+    if not expected_global_change:
+        expected.remove('Global/Latest')
+        if old['Global/Latest']!=new['Global/Latest']:raise ValueError('declared unchanged Global bytes differ')
     if changed!=expected:raise ValueError('unexpected changed source streams')
     partition=decode_partition(unpage(new[partition_name]))
     if len(partition.segments)!=1 or partition.segments[0].guid is not None or partition.segments[0].count!=count:raise ValueError('partition groups/count differ')
@@ -75,12 +79,12 @@ def audit_streams(old,new,evidence):
     with zipfile.ZipFile(io.BytesIO(old['ProjectInformation']))as a,zipfile.ZipFile(io.BytesIO(new['ProjectInformation']))as b:
         if len(a.infolist())!=1 or len(b.infolist())!=1:raise ValueError('ZIP entry count differs')
         if any(getattr(a.infolist()[0],k)!=getattr(b.infolist()[0],k)for k in zip_fields)or a.comment!=b.comment:raise ValueError('ZIP entry metadata changed')
-    return {'history':history,'table':table,'new_partition':partition_name,'new_increment_total_elements':count,'body_sha256':hashes,'revision_deltas':deltas,'contents_all_revisions_match':True,'contents_zero_suffix_preserved':True,'basic_identity_and_other_bytes_verified':True,'project_information_offset_seconds':10800,'project_information_other_xml_and_zip_metadata_preserved':True,'all_old_increment_rows_preserved':True,'original_partition_streams_preserved':True,'changed_existing_streams':sorted(changed)}
+    return {'history':history,'table':table,'new_partition':partition_name,'new_increment_total_elements':count,'body_sha256':hashes,'revision_deltas':deltas,'contents_all_revisions_match':True,'contents_zero_suffix_preserved':True,'basic_identity_and_other_bytes_verified':True,'project_information_offset_seconds':10800,'project_information_other_xml_and_zip_metadata_preserved':True,'all_old_increment_rows_preserved':True,'original_partition_streams_preserved':True,'changed_existing_streams':sorted(changed),'global_policy':'require_changed_registration' if expected_global_change else 'explicit_unchanged_global_hypothesis','global_stored_bytes_preserved':not expected_global_change}
 
-def run(source,candidate,plan=None):
+def run(source,candidate,plan=None,*,expected_global_change=True):
     if sha(source.read_bytes())!=SOURCE_SHA:raise ValueError('requires pinned licensed seed')
     evidence=json.loads((Path(__file__).parent/'results/seed_save_context.json').read_bytes())
-    report=audit_streams(streams(source),streams(candidate),evidence)
+    report=audit_streams(streams(source),streams(candidate),evidence,expected_global_change=expected_global_change)
     if plan is not None:
         if plan['source_sha256']!=SOURCE_SHA or plan['expected_new_ids']!=report['table']['new_ids'] or plan['new_episode_guid']!=report['history']['new_episode_guid'] or plan['new_partition']!=report['new_partition']:raise ValueError('plan metadata differs from actual file')
         for channel,bodyhash in plan['level_body_sha256'].items():
@@ -90,6 +94,6 @@ def run(source,candidate,plan=None):
                 if report['body_sha256'][channel][str(wall['id'])]!=bodyhash:raise ValueError('wall plan body hash differs')
     return {'source_sha256':SOURCE_SHA,'candidate_sha256':sha(candidate.read_bytes()),'builder_plan_used_only_as_optional_crosscheck':plan is not None,**report,'limits':['Selected append/revision/registration policies remain hypotheses, not Autodesk acceptance.','Global registrations and decoded native element graphs are verified by a separate audit.']}
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('source',type=Path);p.add_argument('candidate',type=Path);p.add_argument('--plan',type=Path);p.add_argument('--result',type=Path,required=True);a=p.parse_args()
-    result=run(a.source,a.candidate,json.loads(a.plan.read_bytes())if a.plan else None)
+    p=argparse.ArgumentParser();p.add_argument('source',type=Path);p.add_argument('candidate',type=Path);p.add_argument('--plan',type=Path);p.add_argument('--result',type=Path,required=True);p.add_argument('--global-unchanged',action='store_true');a=p.parse_args()
+    result=run(a.source,a.candidate,json.loads(a.plan.read_bytes())if a.plan else None,expected_global_change=not a.global_unchanged)
     with a.result.open('x')as f:json.dump(result,f,indent=2);f.write('\n')

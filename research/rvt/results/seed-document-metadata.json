@@ -1,0 +1,91 @@
+{
+  "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "candidate_sha256": "df86178ad6b6c5a1c277c8dc76dfd2b68fc2c0ab2fbf15dd02b5fc74918e6e21",
+  "builder_plan_used_only_as_optional_crosscheck": false,
+  "history": {
+    "creation_episode": 1,
+    "new_history_count": 2,
+    "new_episode_guid": "aa51fedc-6dd5-54cf-97e5-c337a382b158",
+    "all_old_episode_records_and_history_metadata_preserved": true
+  },
+  "table": {
+    "new_ids": [
+      2746,
+      2747,
+      2748,
+      2749,
+      2750
+    ],
+    "source_rows": 2300,
+    "candidate_rows": 2305,
+    "source_identifier_ceiling": 2745,
+    "candidate_identifier_ceiling": 2750,
+    "all_source_rows_byte_identical": true,
+    "new_row_episode_fields": [
+      1,
+      1,
+      1
+    ]
+  },
+  "new_partition": "Partitions/1",
+  "new_increment_total_elements": 5,
+  "body_sha256": {
+    "101": {
+      "2746": "1bc63b3baa27dbd53a0dbcf77ae7365288bde97067f028f9ca6138f960bcd387",
+      "2747": "05f2ae261a2d12a7bc485601a2129ec958938e2b0aba48b414147fefd6f34136",
+      "2748": "c271b2ff0a6b80e368aab84e267711e5f4f1b6e5a0d7ae9537ef6b5e8917bee6",
+      "2749": "83fd3e68fe35a945aabcce07c66ac7d99b1fc6ab6b1ad3cd20e5528b339a5c6b",
+      "2750": "91375fbd8b299b51eae660b85fc7824665cd137e21e15fc3f156b785077ee0df"
+    },
+    "102": {
+      "2746": "7bc778909bd00925352e3cbdc761453a5b818e0070147c27ecedfe02c04239bb",
+      "2747": "7b1ee1675e561b195f56edc9a5cf624e2dfdb1998afedf7873cfd9fca884f6ef",
+      "2748": "93cc36d50c3edd037f03227d1baa22399df587a760cb9610998f799e6a158025",
+      "2749": "9bfe25dd12c4f1d2405f8aa62eb63d2e4a7fa9cc2337c02949e84d5213994adc",
+      "2750": "171d20c49873997009707a50fa917ac59b47a9a3313671549dec0baa506e6865"
+    },
+    "103": {
+      "2746": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+      "2747": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+      "2748": "b9d23d5a65789e7c0ef3d5ae3e772832f78c9d3b6bbe2e6195ccccaa9ab4b10a",
+      "2749": "459654e256cec8b1e06d30129cca31e12e61c00cccccdab85f8746cc3c3193f5",
+      "2750": "88f1922f13b14902c38cb9ae850bab71e4e41c26c1af39db50247e9931666a28"
+    }
+  },
+  "revision_deltas": {
+    "preview": 0,
+    "global": 1,
+    "history": 1,
+    "elemTable": 1,
+    "contentDocuments": 1,
+    "partitionTable": 1,
+    "incrementTable": 1,
+    "formats": 0,
+    "basicFileInfo": 1,
+    "transmissionData": 1,
+    "partAtom": 0,
+    "projectXMLInfo": 1
+  },
+  "contents_all_revisions_match": true,
+  "contents_zero_suffix_preserved": true,
+  "basic_identity_and_other_bytes_verified": true,
+  "project_information_offset_seconds": 10800,
+  "project_information_other_xml_and_zip_metadata_preserved": true,
+  "all_old_increment_rows_preserved": true,
+  "original_partition_streams_preserved": true,
+  "changed_existing_streams": [
+    "BasicFileInfo",
+    "Contents",
+    "Global/DocumentIncrementTable",
+    "Global/ElemTable",
+    "Global/History",
+    "Global/Latest",
+    "ProjectInformation"
+  ],
+  "global_policy": "require_changed_registration",
+  "global_stored_bytes_preserved": false,
+  "limits": [
+    "Selected append/revision/registration policies remain hypotheses, not Autodesk acceptance.",
+    "Global registrations and decoded native element graphs are verified by a separate audit."
+  ]
+}

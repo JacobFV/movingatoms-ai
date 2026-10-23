@@ -1,0 +1,461 @@
+{
+  "candidate_sha256": "df86178ad6b6c5a1c277c8dc76dfd2b68fc2c0ab2fbf15dd02b5fc74918e6e21",
+  "ifcopenshell_version": "0.8.5",
+  "geometry_library": "opencascade",
+  "storeys": [
+    {
+      "name": "Basement \u0394",
+      "elevation_metres": -3.0
+    },
+    {
+      "name": "Level 1",
+      "elevation_metres": 0.0
+    },
+    {
+      "name": "Roof \u03a9",
+      "elevation_metres": 7.0
+    }
+  ],
+  "requested_storey_names_and_elevations_match": true,
+  "schema_validation": [
+    {
+      "raw_messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xeb0616a37cb0>)\n     +  and   False = exists(<indeterminate_type object at 0xeb0616a37cb0>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xeb0616a37cb0>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ],
+      "corrected_messages": []
+    },
+    {
+      "raw_messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xeb0616a37380>)\n     +  and   False = exists(<indeterminate_type object at 0xeb0616a37380>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xeb0616a37380>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ],
+      "corrected_messages": []
+    }
+  ],
+  "owner_history_controls": [
+    {
+      "input_file": "candidate-source.ifc",
+      "input_sha256": "30533e0a39c33025d23bbd7178c69b0270e2de0eb8044b81141576b9bab7e54d",
+      "output_file": "candidate-source-owner-corrected.ifc",
+      "output_sha256": "2abe69ca01b76133c41fc8beb558247065725ba3437812cb41f103e6bd92372d",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 222
+    },
+    {
+      "input_file": "candidate-candidate.ifc",
+      "input_sha256": "8f8a68173472d09b94b017eee4bddeaf85f716fbb0dc51c61c243ca6e744b19c",
+      "output_file": "candidate-candidate-owner-corrected.ifc",
+      "output_sha256": "1f39fb617927b9f9fa2871cfc81019f5a559392acde9370ed04626d8f9279aaf",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 421
+    }
+  ],
+  "corrected_artifacts": [
+    {
+      "path": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-document-run/staging/candidate-source-owner-corrected.ifc",
+      "sha256": "2abe69ca01b76133c41fc8beb558247065725ba3437812cb41f103e6bd92372d"
+    },
+    {
+      "path": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-document-run/staging/candidate-candidate-owner-corrected.ifc",
+      "sha256": "1f39fb617927b9f9fa2871cfc81019f5a559392acde9370ed04626d8f9279aaf"
+    }
+  ],
+  "source_walls": 0,
+  "candidate_walls": 3,
+  "walls": [
+    {
+      "id": 2748,
+      "ifc_guid": "2gKVxSRTLKpvVbmpUZWhla",
+      "vertices_metres": [
+        [
+          -9.957738054133454,
+          -5.090629722890201,
+          -3.0
+        ],
+        [
+          -9.957738054133454,
+          -5.090629722890201,
+          -0.20000000000000018
+        ],
+        [
+          -6.332506352830782,
+          -3.4001578621749333,
+          -0.20000000000000018
+        ],
+        [
+          -6.332506352830782,
+          -3.4001578621749333,
+          -3.0
+        ],
+        [
+          -6.417029945866545,
+          -3.2188962771097995,
+          -0.20000000000000018
+        ],
+        [
+          -6.417029945866545,
+          -3.2188962771097995,
+          -3.0
+        ],
+        [
+          -10.042261647169218,
+          -4.909368137825067,
+          -0.20000000000000018
+        ],
+        [
+          -10.042261647169218,
+          -4.909368137825067,
+          -3.0
+        ]
+      ],
+      "triangles": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          4,
+          2,
+          5
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          6,
+          4,
+          7
+        ],
+        [
+          6,
+          7,
+          0
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          3,
+          0,
+          5
+        ],
+        [
+          0,
+          7,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          6,
+          1
+        ]
+      ],
+      "closed_volume_cubic_metres": 2.2400000000000166,
+      "surface_area_square_metres": 25.12000000000001,
+      "serialized_dimensions_metres": [
+        4.0,
+        0.2,
+        2.8
+      ],
+      "material": {
+        "name": "Default Wall",
+        "thickness_metres": 0.2,
+        "axis": "AXIS2",
+        "sense": "NEGATIVE",
+        "offset_metres": 0.1,
+        "all_material_attributes_equal_seed": true
+      },
+      "independent_serialized_cuboid_matches": true
+    },
+    {
+      "id": 2749,
+      "ifc_guid": "2gKVxSRTLKpvVbmpUZWhlb",
+      "vertices_metres": [
+        [
+          0.0,
+          -0.1,
+          0.0
+        ],
+        [
+          0.0,
+          -0.1,
+          6.0
+        ],
+        [
+          5.0,
+          -0.1,
+          6.0
+        ],
+        [
+          5.0,
+          -0.1,
+          0.0
+        ],
+        [
+          5.0,
+          0.1,
+          6.0
+        ],
+        [
+          5.0,
+          0.1,
+          0.0
+        ],
+        [
+          0.0,
+          0.1,
+          6.0
+        ],
+        [
+          0.0,
+          0.1,
+          0.0
+        ]
+      ],
+      "triangles": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          4,
+          2,
+          5
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          6,
+          4,
+          7
+        ],
+        [
+          6,
+          7,
+          0
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          3,
+          0,
+          5
+        ],
+        [
+          0,
+          7,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          6,
+          1
+        ]
+      ],
+      "closed_volume_cubic_metres": 6.0,
+      "surface_area_square_metres": 64.4,
+      "serialized_dimensions_metres": [
+        5.0,
+        0.2,
+        6.0
+      ],
+      "material": {
+        "name": "Default Wall",
+        "thickness_metres": 0.2,
+        "axis": "AXIS2",
+        "sense": "NEGATIVE",
+        "offset_metres": 0.1,
+        "all_material_attributes_equal_seed": true
+      },
+      "independent_serialized_cuboid_matches": true
+    },
+    {
+      "id": 2750,
+      "ifc_guid": "2gKVxSRTLKpvVbmpUZWhlc",
+      "vertices_metres": [
+        [
+          14.929289150101523,
+          7.929289493661166,
+          -3.0
+        ],
+        [
+          14.929289150101523,
+          7.929289493661166,
+          5.0
+        ],
+        [
+          17.050609493661167,
+          5.807969150101524,
+          5.0
+        ],
+        [
+          17.050609493661167,
+          5.807969150101524,
+          -3.0
+        ],
+        [
+          17.192030849898476,
+          5.949390506338833,
+          5.0
+        ],
+        [
+          17.192030849898476,
+          5.949390506338833,
+          -3.0
+        ],
+        [
+          15.070710506338832,
+          8.070710849898475,
+          5.0
+        ],
+        [
+          15.070710506338832,
+          8.070710849898475,
+          -3.0
+        ]
+      ],
+      "triangles": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          4,
+          2,
+          5
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          6,
+          4,
+          7
+        ],
+        [
+          6,
+          7,
+          0
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          3,
+          0,
+          5
+        ],
+        [
+          0,
+          7,
+          5
+        ],
+        [
+          4,
+          1,
+          2
+        ],
+        [
+          4,
+          6,
+          1
+        ]
+      ],
+      "closed_volume_cubic_metres": 4.800000000000078,
+      "surface_area_square_metres": 52.39999999999999,
+      "serialized_dimensions_metres": [
+        3.0,
+        0.2,
+        8.0
+      ],
+      "material": {
+        "name": "Default Wall",
+        "thickness_metres": 0.2,
+        "axis": "AXIS2",
+        "sense": "NEGATIVE",
+        "offset_metres": 0.1,
+        "all_material_attributes_equal_seed": true
+      },
+      "independent_serialized_cuboid_matches": true
+    }
+  ],
+  "autodesk_acceptance": "not_tested"
+}

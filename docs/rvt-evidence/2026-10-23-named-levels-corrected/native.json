@@ -1,0 +1,2054 @@
+{
+  "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "candidate_sha256": "df86178ad6b6c5a1c277c8dc76dfd2b68fc2c0ab2fbf15dd02b5fc74918e6e21",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "table_audit": {
+    "new_ids": [
+      2746,
+      2747,
+      2748,
+      2749,
+      2750
+    ],
+    "source_rows": 2300,
+    "candidate_rows": 2305,
+    "source_identifier_ceiling": 2745,
+    "candidate_identifier_ceiling": 2750,
+    "all_source_rows_byte_identical": true,
+    "new_row_episode_fields": [
+      1,
+      1,
+      1
+    ]
+  },
+  "history_audit": {
+    "creation_episode": 1,
+    "new_history_count": 2,
+    "new_episode_guid": "aa51fedc-6dd5-54cf-97e5-c337a382b158",
+    "all_old_episode_records_and_history_metadata_preserved": true
+  },
+  "prior_identities_preserved": 2300,
+  "original_partitions_preserved": 1,
+  "global_registration": {
+    "changed_lists": 3,
+    "wall_registration": [
+      2748,
+      2749,
+      2750
+    ],
+    "level_registration": [
+      2746,
+      2747
+    ],
+    "all_other_global_semantics_unchanged": true,
+    "plan_view_policy": "no new association; hypothesis"
+  },
+  "request": {
+    "schema_version": 1,
+    "units": "metres",
+    "levels": [
+      {
+        "name": "Basement \u0394",
+        "elevation": -3
+      },
+      {
+        "name": "Level 1",
+        "elevation": 0
+      },
+      {
+        "name": "Roof \u03a9",
+        "elevation": 7
+      }
+    ],
+    "walls": [
+      {
+        "id": "below-grade",
+        "base_level": "Basement \u0394",
+        "top_level": "Level 1",
+        "start": [
+          -10,
+          -5
+        ],
+        "length": 4,
+        "height": 2.8,
+        "yaw_degrees": 25
+      },
+      {
+        "id": "ground-east",
+        "base_level": "Level 1",
+        "top_level": "Roof \u03a9",
+        "start": [
+          0,
+          0
+        ],
+        "length": 5,
+        "height": 6,
+        "yaw_degrees": 0
+      },
+      {
+        "id": "upper-test",
+        "base_level": "Basement \u0394",
+        "top_level": "Roof \u03a9",
+        "start": [
+          15,
+          8
+        ],
+        "length": 3,
+        "height": 8,
+        "yaw_degrees": -45
+      }
+    ]
+  },
+  "application_identity_map": {
+    "levels": [
+      {
+        "name": "Basement \u0394",
+        "elevation_m": -3.0,
+        "element_id": 2746,
+        "reused_seed": false
+      },
+      {
+        "name": "Level 1",
+        "elevation_m": 0.0,
+        "element_id": 1916,
+        "reused_seed": true
+      },
+      {
+        "name": "Roof \u03a9",
+        "elevation_m": 7.0,
+        "element_id": 2747,
+        "reused_seed": false
+      }
+    ],
+    "walls": [
+      {
+        "id": "below-grade",
+        "element_id": 2748,
+        "request": {
+          "id": "below-grade",
+          "base_level": "Basement \u0394",
+          "top_level": "Level 1",
+          "start": [
+            -10.0,
+            -5.0
+          ],
+          "length": 4.0,
+          "height": 2.8,
+          "yaw_degrees": 25.0,
+          "thickness": 0.2,
+          "kind": "straight"
+        },
+        "base_level_id": 2746,
+        "top_level_id": 1916,
+        "base_elevation_m": -3.0,
+        "top_elevation_m": 0.0
+      },
+      {
+        "id": "ground-east",
+        "element_id": 2749,
+        "request": {
+          "id": "ground-east",
+          "base_level": "Level 1",
+          "top_level": "Roof \u03a9",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "length": 5.0,
+          "height": 6.0,
+          "yaw_degrees": 0.0,
+          "thickness": 0.2,
+          "kind": "straight"
+        },
+        "base_level_id": 1916,
+        "top_level_id": 2747,
+        "base_elevation_m": 0.0,
+        "top_elevation_m": 7.0
+      },
+      {
+        "id": "upper-test",
+        "element_id": 2750,
+        "request": {
+          "id": "upper-test",
+          "base_level": "Basement \u0394",
+          "top_level": "Roof \u03a9",
+          "start": [
+            15.0,
+            8.0
+          ],
+          "length": 3.0,
+          "height": 8.0,
+          "yaw_degrees": -45.0,
+          "thickness": 0.2,
+          "kind": "straight"
+        },
+        "base_level_id": 2746,
+        "top_level_id": 2747,
+        "base_elevation_m": -3.0,
+        "top_elevation_m": 7.0
+      }
+    ],
+    "new_level_ids": [
+      2746,
+      2747
+    ],
+    "new_wall_ids": [
+      2748,
+      2749,
+      2750
+    ],
+    "expected_new_ids": [
+      2746,
+      2747,
+      2748,
+      2749,
+      2750
+    ]
+  },
+  "scaffold_level1916_preserved": true,
+  "context": [
+    {
+      "id": 1910,
+      "class": "LevelAttributes",
+      "body_sha256": "597c077ea19d458ca7d7ec913870c3797270a01d6058a94f01ee5353949ef894"
+    },
+    {
+      "id": 1916,
+      "class": "Level",
+      "body_sha256": "c6b7eefa1e52e156ce7697a8217c552d1086da113f67e4eccf2536a9a99cd45e"
+    },
+    {
+      "id": 1947,
+      "class": "BasicWallType",
+      "body_sha256": "c84b7cc77bcc4b5c06c14d78d2c522cbfc46f6fe39e0f189a3064ede55777c85"
+    },
+    {
+      "id": 4,
+      "class": "ProjectPhase",
+      "body_sha256": "efdacb3f1ea362dda9cbb898e38e294cb6fdff3eb7c934a8ef19057362a97a4e"
+    },
+    {
+      "id": 91,
+      "class": "MaterialElem",
+      "body_sha256": "de1fcad1238ca66d6d032512f0eedb03c93b9db7407fbdbca193ae1496c62c90"
+    },
+    {
+      "id": 119,
+      "class": "GStyleElem",
+      "body_sha256": "dcb4e96f22e049fc88c1761dbaad95a538ce1f6e89e74823329a88db9ce69fc5"
+    },
+    {
+      "id": 125,
+      "class": "GStyleElem",
+      "body_sha256": "2436e6ea746f8117d4e8f1dee6a1378c1629f263bf21f5ea5587ef19c7c1d86d"
+    },
+    {
+      "id": 796,
+      "class": "GStyleElem",
+      "body_sha256": "2f05f98bf41d2dc21577e602c2f259b7928e5b72088a3e0b1e356873c7864c42"
+    }
+  ],
+  "records": [
+    {
+      "id": 2746,
+      "identity": {
+        "element_id": 2746,
+        "original_id_suffix": 2746,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92006,
+        "raw_fields": [
+          2746,
+          0,
+          1,
+          1,
+          1,
+          2746,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "aa51fedc-6dd5-54cf-97e5-c337a382b158-00000aba"
+      },
+      "channels": {
+        "101": {
+          "bytes": 135,
+          "sha256": "1bc63b3baa27dbd53a0dbcf77ae7365288bde97067f028f9ca6138f960bcd387",
+          "objects": 2,
+          "edges": 1
+        },
+        "102": {
+          "bytes": 746,
+          "sha256": "7bc778909bd00925352e3cbdc761453a5b818e0070147c27ecedfe02c04239bb",
+          "objects": 8,
+          "edges": 7
+        },
+        "103": {
+          "bytes": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+          "objects": 1,
+          "edges": 0
+        }
+      },
+      "positive_element_references": [
+        1910,
+        2746
+      ],
+      "name": "Basement \u0394",
+      "elevation_feet": -9.84251968503937,
+      "elevation_metres": -3.0
+    },
+    {
+      "id": 2747,
+      "identity": {
+        "element_id": 2747,
+        "original_id_suffix": 2747,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92046,
+        "raw_fields": [
+          2747,
+          0,
+          1,
+          1,
+          1,
+          2747,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "aa51fedc-6dd5-54cf-97e5-c337a382b158-00000abb"
+      },
+      "channels": {
+        "101": {
+          "bytes": 135,
+          "sha256": "05f2ae261a2d12a7bc485601a2129ec958938e2b0aba48b414147fefd6f34136",
+          "objects": 2,
+          "edges": 1
+        },
+        "102": {
+          "bytes": 738,
+          "sha256": "7b1ee1675e561b195f56edc9a5cf624e2dfdb1998afedf7873cfd9fca884f6ef",
+          "objects": 8,
+          "edges": 7
+        },
+        "103": {
+          "bytes": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+          "objects": 1,
+          "edges": 0
+        }
+      },
+      "positive_element_references": [
+        1910,
+        2747
+      ],
+      "name": "Roof \u03a9",
+      "elevation_feet": 22.96587926509186,
+      "elevation_metres": 7.0
+    },
+    {
+      "id": 2748,
+      "identity": {
+        "element_id": 2748,
+        "original_id_suffix": 2748,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92086,
+        "raw_fields": [
+          2748,
+          0,
+          1,
+          1,
+          1,
+          2748,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "aa51fedc-6dd5-54cf-97e5-c337a382b158-00000abc"
+      },
+      "channels": {
+        "101": {
+          "bytes": 233,
+          "sha256": "c271b2ff0a6b80e368aab84e267711e5f4f1b6e5a0d7ae9537ef6b5e8917bee6",
+          "objects": 3,
+          "edges": 2
+        },
+        "103": {
+          "bytes": 6884,
+          "sha256": "b9d23d5a65789e7c0ef3d5ae3e772832f78c9d3b6bbe2e6195ccccaa9ab4b10a",
+          "objects": 74,
+          "edges": 73
+        },
+        "102": {
+          "bytes": 2946,
+          "sha256": "93cc36d50c3edd037f03227d1baa22399df587a760cb9610998f799e6a158025",
+          "objects": 29,
+          "edges": 28
+        }
+      },
+      "positive_element_references": [
+        4,
+        91,
+        119,
+        125,
+        796,
+        1916,
+        1947,
+        2746,
+        2748
+      ],
+      "spec": {
+        "id": "below-grade",
+        "base_level": "Basement \u0394",
+        "top_level": "Level 1",
+        "start": [
+          -10.0,
+          -5.0
+        ],
+        "length": 4.0,
+        "height": 2.8,
+        "yaw_degrees": 25.0,
+        "thickness": 0.2,
+        "kind": "straight",
+        "base_elevation_m": -3.0
+      },
+      "application_id": "below-grade",
+      "constraints": {
+        "base_level": 2746,
+        "upper_level": 1916,
+        "base_elevation_metres": -3.0,
+        "upper_elevation_metres": 0.0,
+        "type": 1947,
+        "phase": 4,
+        "width_feet": 0.6561679790026247,
+        "height_feet": 9.186351706036744,
+        "base_offset_feet": 0.0,
+        "top_offset_feet": -0.6561679790026229
+      },
+      "native_brep": {
+        "native_vertex_bounds_feet": [
+          [
+            -32.94705323547923,
+            -16.701544549552704,
+            -9.842519685039363
+          ],
+          [
+            -20.775941685299642,
+            -10.560682986658588,
+            -0.6561679790026194
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 270.3894296677484,
+            "signed_volume_cubic_feet": 79.10485345613476,
+            "volume_cubic_feet": 79.10485345613476,
+            "bounds_feet": [
+              [
+                -32.94705323547923,
+                -16.701544549552704,
+                -9.842519685039363
+              ],
+              [
+                -20.775941685299642,
+                -10.560682986658588,
+                -0.6561679790026194
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 120.55579666714887,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                -32.808398950131235,
+                -16.40419947506561,
+                -9.842519685039363
+              ],
+              [
+                -20.91459597064764,
+                -10.858028061145673,
+                -0.6561679790026194
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 120.55579666714887,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                -32.66974466478324,
+                -16.701544549552693,
+                -9.842519685039363
+              ],
+              [
+                -20.775941685299642,
+                -11.155373135632756,
+                -0.6561679790026194
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 120.55579666714887,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                -32.94705323547923,
+                -16.106854400578527,
+                -9.842519685039363
+              ],
+              [
+                -21.053250255995636,
+                -10.56068298665859,
+                -0.6561679790026194
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 120.55579666714887,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                -32.808398950131235,
+                -16.40419947506561,
+                -9.842519685039363
+              ],
+              [
+                -20.91459597064764,
+                -10.858028061145673,
+                -0.6561679790026194
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 79.10485345613476,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      },
+      "native_vertices_feet": [
+        [
+          -32.66974466478324,
+          -16.701544549552704,
+          -9.842519685039363
+        ],
+        [
+          -20.775941685299642,
+          -11.155373135632768,
+          -9.842519685039363
+        ],
+        [
+          -20.775941685299642,
+          -11.155373135632768,
+          -0.6561679790026194
+        ],
+        [
+          -32.66974466478324,
+          -16.701544549552704,
+          -0.6561679790026194
+        ],
+        [
+          -32.94705323547923,
+          -16.106854400578523,
+          -9.842519685039363
+        ],
+        [
+          -32.94705323547923,
+          -16.106854400578523,
+          -0.6561679790026194
+        ],
+        [
+          -21.053250255995636,
+          -10.560682986658588,
+          -0.6561679790026194
+        ],
+        [
+          -21.053250255995636,
+          -10.560682986658588,
+          -9.842519685039363
+        ]
+      ],
+      "independent_requested_vertices_match": true,
+      "header_bounds_match": true,
+      "ifc_projection": {
+        "extrusion": {
+          "depth_feet": 0.6561679790026247,
+          "height_feet": 9.186351706036746,
+          "profile_override": null,
+          "width_feet": 13.123359580052488
+        },
+        "host_element_index": null,
+        "ifc_type": "IFCWALL",
+        "kind": "BuildingElement",
+        "location_feet": [
+          -26.861497460389444,
+          -13.63111376810564,
+          -9.842519685039363
+        ],
+        "material_index": null,
+        "material_layer_set_index": 0,
+        "material_profile_set_index": null,
+        "name": "Basic Wall:Wall 1:2748",
+        "predefined_type": "NOTDEFINED",
+        "property_set": {
+          "name": "RvtElementRecordGeometry",
+          "properties": [
+            {
+              "name": "BodySource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_wall_centreline"
+              }
+            },
+            {
+              "name": "ProfileResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "LevelBindResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "BoundingBoxHeight",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 9.186351706036746
+              }
+            },
+            {
+              "name": "LevelElementId",
+              "value": {
+                "kind": "Integer",
+                "value": 2746
+              }
+            },
+            {
+              "name": "LevelBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_base_constraint"
+              }
+            },
+            {
+              "name": "ThicknessResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "Thickness",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.6561679790026247
+              }
+            },
+            {
+              "name": "ThicknessSource",
+              "value": {
+                "kind": "Text",
+                "value": "wall_type_compound_structure"
+              }
+            },
+            {
+              "name": "JoinTrimStart",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.0
+              }
+            },
+            {
+              "name": "JoinTrimEnd",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.0
+              }
+            },
+            {
+              "name": "SourceStream",
+              "value": {
+                "kind": "Text",
+                "value": "Partitions/1"
+              }
+            },
+            {
+              "name": "RevitClass",
+              "value": {
+                "kind": "Text",
+                "value": "SWall"
+              }
+            },
+            {
+              "name": "FamilyName",
+              "value": {
+                "kind": "Text",
+                "value": "Basic Wall"
+              }
+            },
+            {
+              "name": "FamilyNameSource",
+              "value": {
+                "kind": "Text",
+                "value": "system_family_by_category"
+              }
+            },
+            {
+              "name": "TypeName",
+              "value": {
+                "kind": "Text",
+                "value": "Wall 1"
+              }
+            },
+            {
+              "name": "StoreyBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "record_level_reference"
+              }
+            }
+          ]
+        },
+        "representation_map_index": null,
+        "rotation_radians": 0.4363323129985821,
+        "solid_shape": null,
+        "storey_index": 0,
+        "type_guid": "2748"
+      },
+      "ifc_guid": "2gKVxSRTLKpvVbmpUZWhla"
+    },
+    {
+      "id": 2749,
+      "identity": {
+        "element_id": 2749,
+        "original_id_suffix": 2749,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92126,
+        "raw_fields": [
+          2749,
+          0,
+          1,
+          1,
+          1,
+          2749,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "aa51fedc-6dd5-54cf-97e5-c337a382b158-00000abd"
+      },
+      "channels": {
+        "101": {
+          "bytes": 233,
+          "sha256": "83fd3e68fe35a945aabcce07c66ac7d99b1fc6ab6b1ad3cd20e5528b339a5c6b",
+          "objects": 3,
+          "edges": 2
+        },
+        "103": {
+          "bytes": 6884,
+          "sha256": "459654e256cec8b1e06d30129cca31e12e61c00cccccdab85f8746cc3c3193f5",
+          "objects": 74,
+          "edges": 73
+        },
+        "102": {
+          "bytes": 2946,
+          "sha256": "9bfe25dd12c4f1d2405f8aa62eb63d2e4a7fa9cc2337c02949e84d5213994adc",
+          "objects": 29,
+          "edges": 28
+        }
+      },
+      "positive_element_references": [
+        4,
+        91,
+        119,
+        125,
+        796,
+        1916,
+        1947,
+        2747,
+        2749
+      ],
+      "spec": {
+        "id": "ground-east",
+        "base_level": "Level 1",
+        "top_level": "Roof \u03a9",
+        "start": [
+          0.0,
+          0.0
+        ],
+        "length": 5.0,
+        "height": 6.0,
+        "yaw_degrees": 0.0,
+        "thickness": 0.2,
+        "kind": "straight",
+        "base_elevation_m": 0.0
+      },
+      "application_id": "ground-east",
+      "constraints": {
+        "base_level": 1916,
+        "upper_level": 2747,
+        "base_elevation_metres": 0.0,
+        "upper_elevation_metres": 7.0,
+        "type": 1947,
+        "phase": 4,
+        "width_feet": 0.6561679790026247,
+        "height_feet": 19.68503937007874,
+        "base_offset_feet": 0.0,
+        "top_offset_feet": -3.28083989501312
+      },
+      "native_brep": {
+        "native_vertex_bounds_feet": [
+          [
+            -4.6629367034256575e-15,
+            -0.3280839895013259,
+            0.0
+          ],
+          [
+            16.404199475065614,
+            0.32808398950130885,
+            19.685039370078737
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 693.1958308361066,
+            "signed_volume_cubic_feet": 211.88800032893332,
+            "volume_cubic_feet": 211.88800032893332,
+            "bounds_feet": [
+              [
+                -4.6629367034256575e-15,
+                -0.3280839895013259,
+                0.0
+              ],
+              [
+                16.40419947506561,
+                0.32808398950130885,
+                19.685039370078737
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 322.9173125012916,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                0.0,
+                -2.9798763591748117e-15,
+                0.0
+              ],
+              [
+                16.404199475065614,
+                0.0,
+                19.685039370078737
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 322.9173125012916,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                0.0,
+                -0.3280839895013118,
+                0.0
+              ],
+              [
+                16.404199475065614,
+                -0.3280839895013088,
+                19.685039370078737
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 322.9173125012916,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                0.0,
+                0.3280839895013058,
+                0.0
+              ],
+              [
+                16.404199475065614,
+                0.3280839895013088,
+                19.685039370078737
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 322.9173125012916,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                0.0,
+                -2.9798763591748117e-15,
+                0.0
+              ],
+              [
+                16.404199475065614,
+                0.0,
+                19.685039370078737
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 211.88800032893332,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      },
+      "native_vertices_feet": [
+        [
+          -4.6629367034256575e-15,
+          -0.32808398950132295,
+          0.0
+        ],
+        [
+          16.40419947506561,
+          -0.3280839895013259,
+          0.0
+        ],
+        [
+          16.40419947506561,
+          -0.3280839895013259,
+          19.685039370078737
+        ],
+        [
+          -4.6629367034256575e-15,
+          -0.32808398950132295,
+          19.685039370078737
+        ],
+        [
+          -4.6629367034256575e-15,
+          0.32808398950130885,
+          0.0
+        ],
+        [
+          -4.6629367034256575e-15,
+          0.32808398950130885,
+          19.685039370078737
+        ],
+        [
+          16.40419947506561,
+          0.3280839895013059,
+          19.685039370078737
+        ],
+        [
+          16.40419947506561,
+          0.3280839895013059,
+          0.0
+        ]
+      ],
+      "independent_requested_vertices_match": true,
+      "header_bounds_match": true,
+      "ifc_projection": {
+        "extrusion": {
+          "depth_feet": 0.6561679790026318,
+          "height_feet": 19.68503937007874,
+          "profile_override": null,
+          "width_feet": 16.404199475065596
+        },
+        "host_element_index": null,
+        "ifc_type": "IFCWALL",
+        "kind": "BuildingElement",
+        "location_feet": [
+          8.202099737532798,
+          -7.105427357601002e-15,
+          0.0
+        ],
+        "material_index": null,
+        "material_layer_set_index": 0,
+        "material_profile_set_index": null,
+        "name": "Basic Wall:Wall 1:2749",
+        "predefined_type": "NOTDEFINED",
+        "property_set": {
+          "name": "RvtElementRecordGeometry",
+          "properties": [
+            {
+              "name": "BodySource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_join_trimmed"
+              }
+            },
+            {
+              "name": "ProfileResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": false
+              }
+            },
+            {
+              "name": "LevelBindResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "BoundingBoxHeight",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 19.68503937007874
+              }
+            },
+            {
+              "name": "LevelElementId",
+              "value": {
+                "kind": "Integer",
+                "value": 1916
+              }
+            },
+            {
+              "name": "LevelBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_base_constraint"
+              }
+            },
+            {
+              "name": "ThicknessResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "Thickness",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.6561679790026318
+              }
+            },
+            {
+              "name": "ThicknessSource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_bbox_thin_axis"
+              }
+            },
+            {
+              "name": "JoinTrimStart",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.0
+              }
+            },
+            {
+              "name": "JoinTrimEnd",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.0
+              }
+            },
+            {
+              "name": "SourceStream",
+              "value": {
+                "kind": "Text",
+                "value": "Partitions/1"
+              }
+            },
+            {
+              "name": "RevitClass",
+              "value": {
+                "kind": "Text",
+                "value": "SWall"
+              }
+            },
+            {
+              "name": "FamilyName",
+              "value": {
+                "kind": "Text",
+                "value": "Basic Wall"
+              }
+            },
+            {
+              "name": "FamilyNameSource",
+              "value": {
+                "kind": "Text",
+                "value": "system_family_by_category"
+              }
+            },
+            {
+              "name": "TypeName",
+              "value": {
+                "kind": "Text",
+                "value": "Wall 1"
+              }
+            },
+            {
+              "name": "StoreyBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "record_level_reference"
+              }
+            }
+          ]
+        },
+        "representation_map_index": null,
+        "rotation_radians": null,
+        "solid_shape": null,
+        "storey_index": 1,
+        "type_guid": "2749"
+      },
+      "ifc_guid": "2gKVxSRTLKpvVbmpUZWhlb"
+    },
+    {
+      "id": 2750,
+      "identity": {
+        "element_id": 2750,
+        "original_id_suffix": 2750,
+        "creation_episode": 1,
+        "stored_revision": 1,
+        "other_revision": 1,
+        "row_offset": 92166,
+        "raw_fields": [
+          2750,
+          0,
+          1,
+          1,
+          1,
+          2750,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "unique_id": "aa51fedc-6dd5-54cf-97e5-c337a382b158-00000abe"
+      },
+      "channels": {
+        "101": {
+          "bytes": 233,
+          "sha256": "91375fbd8b299b51eae660b85fc7824665cd137e21e15fc3f156b785077ee0df",
+          "objects": 3,
+          "edges": 2
+        },
+        "103": {
+          "bytes": 6884,
+          "sha256": "88f1922f13b14902c38cb9ae850bab71e4e41c26c1af39db50247e9931666a28",
+          "objects": 74,
+          "edges": 73
+        },
+        "102": {
+          "bytes": 2946,
+          "sha256": "171d20c49873997009707a50fa917ac59b47a9a3313671549dec0baa506e6865",
+          "objects": 29,
+          "edges": 28
+        }
+      },
+      "positive_element_references": [
+        4,
+        91,
+        119,
+        125,
+        796,
+        1947,
+        2746,
+        2747,
+        2750
+      ],
+      "spec": {
+        "id": "upper-test",
+        "base_level": "Basement \u0394",
+        "top_level": "Roof \u03a9",
+        "start": [
+          15.0,
+          8.0
+        ],
+        "length": 3.0,
+        "height": 8.0,
+        "yaw_degrees": -45.0,
+        "thickness": 0.2,
+        "kind": "straight",
+        "base_elevation_m": -3.0
+      },
+      "application_id": "upper-test",
+      "constraints": {
+        "base_level": 2746,
+        "upper_level": 2747,
+        "base_elevation_metres": -3.0,
+        "upper_elevation_metres": 7.0,
+        "type": 1947,
+        "phase": 4,
+        "width_feet": 0.6561679790026247,
+        "height_feet": 26.246719160104984,
+        "base_offset_feet": 0.0,
+        "top_offset_feet": -6.56167979002624
+      },
+      "native_brep": {
+        "native_vertex_bounds_feet": [
+          [
+            48.98060801142173,
+            19.055016333076452,
+            -9.842519685039363
+          ],
+          [
+            56.40430125222538,
+            26.4787095738801,
+            16.40419947506562
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 564.0289058355899,
+            "signed_volume_cubic_feet": 169.51040026314638,
+            "volume_cubic_feet": 169.51040026314638,
+            "bounds_feet": [
+              [
+                48.98060801142173,
+                19.055016333076452,
+                -9.842519685039363
+              ],
+              [
+                56.40430125222538,
+                26.4787095738801,
+                16.40419947506562
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 258.3338500010333,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                49.212598425196845,
+                19.287006746851567,
+                -9.842519685039363
+              ],
+              [
+                56.172310838450265,
+                26.246719160104988,
+                16.40419947506562
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 258.3338500010333,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                48.98060801142174,
+                19.05501633307646,
+                -9.842519685039363
+              ],
+              [
+                55.94032042467516,
+                26.01472874632988,
+                16.40419947506562
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 258.3338500010333,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                49.44458883897195,
+                19.518997160626675,
+                -9.842519685039363
+              ],
+              [
+                56.40430125222537,
+                26.478709573880096,
+                16.40419947506562
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 258.3338500010333,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                49.212598425196845,
+                19.287006746851567,
+                -9.842519685039363
+              ],
+              [
+                56.172310838450265,
+                26.246719160104988,
+                16.40419947506562
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 169.51040026314638,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      },
+      "native_vertices_feet": [
+        [
+          48.98060801142173,
+          26.01472874632987,
+          -9.842519685039363
+        ],
+        [
+          55.94032042467515,
+          19.055016333076452,
+          -9.842519685039363
+        ],
+        [
+          55.94032042467515,
+          19.055016333076452,
+          16.40419947506562
+        ],
+        [
+          48.98060801142173,
+          26.01472874632987,
+          16.40419947506562
+        ],
+        [
+          49.44458883897196,
+          26.4787095738801,
+          -9.842519685039363
+        ],
+        [
+          49.44458883897196,
+          26.4787095738801,
+          16.40419947506562
+        ],
+        [
+          56.40430125222538,
+          19.518997160626682,
+          16.40419947506562
+        ],
+        [
+          56.40430125222538,
+          19.518997160626682,
+          -9.842519685039363
+        ]
+      ],
+      "independent_requested_vertices_match": true,
+      "header_bounds_match": true,
+      "ifc_projection": {
+        "extrusion": {
+          "depth_feet": 0.6561679790026247,
+          "height_feet": 26.246719160104988,
+          "profile_override": null,
+          "width_feet": 9.84251968503936
+        },
+        "host_element_index": null,
+        "ifc_type": "IFCWALL",
+        "kind": "BuildingElement",
+        "location_feet": [
+          52.69245463182356,
+          22.766862953478274,
+          -9.842519685039363
+        ],
+        "material_index": null,
+        "material_layer_set_index": 0,
+        "material_profile_set_index": null,
+        "name": "Basic Wall:Wall 1:2750",
+        "predefined_type": "NOTDEFINED",
+        "property_set": {
+          "name": "RvtElementRecordGeometry",
+          "properties": [
+            {
+              "name": "BodySource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_wall_centreline"
+              }
+            },
+            {
+              "name": "ProfileResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "LevelBindResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "BoundingBoxHeight",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 26.246719160104988
+              }
+            },
+            {
+              "name": "LevelElementId",
+              "value": {
+                "kind": "Integer",
+                "value": 2746
+              }
+            },
+            {
+              "name": "LevelBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "partition_element_record_base_constraint"
+              }
+            },
+            {
+              "name": "ThicknessResolved",
+              "value": {
+                "kind": "Boolean",
+                "value": true
+              }
+            },
+            {
+              "name": "Thickness",
+              "value": {
+                "kind": "LengthFeet",
+                "value": 0.6561679790026247
+              }
+            },
+            {
+              "name": "ThicknessSource",
+              "value": {
+                "kind": "Text",
+                "value": "wall_type_compound_structure"
+              }
+            },
+            {
+              "name": "SourceStream",
+              "value": {
+                "kind": "Text",
+                "value": "Partitions/1"
+              }
+            },
+            {
+              "name": "RevitClass",
+              "value": {
+                "kind": "Text",
+                "value": "SWall"
+              }
+            },
+            {
+              "name": "FamilyName",
+              "value": {
+                "kind": "Text",
+                "value": "Basic Wall"
+              }
+            },
+            {
+              "name": "FamilyNameSource",
+              "value": {
+                "kind": "Text",
+                "value": "system_family_by_category"
+              }
+            },
+            {
+              "name": "TypeName",
+              "value": {
+                "kind": "Text",
+                "value": "Wall 1"
+              }
+            },
+            {
+              "name": "StoreyBindSource",
+              "value": {
+                "kind": "Text",
+                "value": "record_level_reference"
+              }
+            }
+          ]
+        },
+        "representation_map_index": null,
+        "rotation_radians": -0.785398163397448,
+        "solid_shape": null,
+        "storey_index": 0,
+        "type_guid": "2750"
+      },
+      "ifc_guid": "2gKVxSRTLKpvVbmpUZWhlc"
+    }
+  ],
+  "ifc_artifacts": [
+    {
+      "path": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-document-run/staging/candidate-source.ifc",
+      "sha256": "30533e0a39c33025d23bbd7178c69b0270e2de0eb8044b81141576b9bab7e54d"
+    },
+    {
+      "path": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-document-run/staging/candidate-candidate.ifc",
+      "sha256": "8f8a68173472d09b94b017eee4bddeaf85f716fbb0dc51c61c243ca6e744b19c"
+    }
+  ],
+  "only_requested_physical_elements_projected": true,
+  "independent_graphs_path": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-document-run/staging/candidate-independent-graphs.json",
+  "independent_graphs_sha256": "361dcc041e11f1aa6db5932df4be5b9a11a097cabc0edb331ca2a48573842e4f",
+  "probe_source_sha256": "3bd9e6dd296a511561595b71488bbf20d455c06bed6cda5eeb17fb72f926a65e",
+  "probe_binary_sha256": "b80d7b3b7e91c3acc3a7ff404daa392eef599aa521fa43ca111d7ca1800c485d",
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false
+}

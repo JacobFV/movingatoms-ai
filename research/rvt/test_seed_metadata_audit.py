@@ -64,4 +64,13 @@ class SeedMetadataAuditTests(unittest.TestCase):
         changed=dict(self.new);changed['BasicFileInfo']=write(parse(changed['BasicFileInfo']),document_guid='22fdf086-3222-4e0e-bcbb-587627f2577b')
         with self.assertRaisesRegex(ValueError,'BasicFileInfo identity'):self.check(changed)
 
+    def test_explicit_unchanged_global_policy(self):
+        changed=dict(self.new);changed['Global/Latest']=self.old['Global/Latest']
+        with self.assertRaisesRegex(ValueError,'changed source streams'):self.check(changed)
+        result=audit_streams(self.old,changed,self.evidence,expected_global_change=False)
+        self.assertTrue(result['global_stored_bytes_preserved'])
+        self.assertEqual(result['global_policy'],'explicit_unchanged_global_hypothesis')
+        with self.assertRaisesRegex(ValueError,'unchanged Global bytes differ'):
+            audit_streams(self.old,self.new,self.evidence,expected_global_change=False)
+
 if __name__=='__main__':unittest.main()

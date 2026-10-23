@@ -54,7 +54,11 @@ def capture(run_directory, destination):
         ax.set_zlabel('Z (m)', fontsize=8)
         ax.tick_params(labelsize=7)
         spec = specs[wall['id']]['spec']
-        ax.set_title(f"ID {wall['id']} · {spec['length_feet']:g} × {spec.get('height_feet',15):g} ft", fontsize=11)
+        if 'request' in native:
+            title = f"ID {wall['id']} · {spec['length']:g} × {spec['height']:g} m"
+        else:
+            title = f"ID {wall['id']} · {spec['length_feet']:g} × {spec.get('height_feet',15):g} ft"
+        ax.set_title(title, fontsize=11)
     fig.savefig(destination / 'meshes.png', dpi=150)
     plt.close(fig)
     timestamp = datetime.now(timezone.utc).isoformat()
@@ -65,7 +69,10 @@ def capture(run_directory, destination):
     body += f'<div class="cards"><div class="card"><b class="big">{native["prior_identities_preserved"]:,}</b>seed scaffold identities preserved</div><div class="card"><b class="big">0 → 3</b>projected physical elements</div><div class="card"><b class="big">200 mm</b>existing seed wall type</div></div>'
     body += '<img style="width:100%" src="meshes.png" alt="Actual independently triangulated saved wall geometry">'
     body += '<table><tr><th>Native wall ID</th><th>Independent IFC solid volume</th><th>Vertices / triangles</th></tr>' + rows + '</table>'
-    body += '<p>The writer adds an upper level and three walls, remaps dependencies to the seed, and preserves the original partition. Independent checks verify native BRep geometry, level constraints, reference closure and the three measured registration lists. The plots use actual IFC mesh arrays exported from the saved RVT.</p>'
+    level_description = 'the requested named levels' if 'request' in native else 'an upper level'
+    body += '<p>The writer adds ' + level_description + ' and three walls, remaps dependencies to the seed, and preserves the original partition. Independent checks verify native BRep geometry, level constraints, reference closure and the three measured registration lists. The plots use actual IFC mesh arrays exported from the saved RVT.</p>'
+    if 'request' in native:
+        body += '<p>Requested levels: ' + '; '.join(html.escape(l['name']) + f" ({l['elevation']:g} m)" for l in native['request']['levels']) + '.</p>'
     body += '<div class="notice"><strong>Validation boundary:</strong> local research checks pass. This is a generated evidence-report screenshot, not Revit UI. Native regeneration, opening and re-saving remain untested. IFC schema validation uses explicit OwnerHistory correction controls.</div>'
     body += '<pre>Candidate SHA-256: ' + html.escape(candidate) + '</pre>'
     body += f'<footer>Captured {timestamp} · commit {revision[:12]}. Full reports and actual mesh arrays are archived with artifact hashes.</footer></main></html>'
