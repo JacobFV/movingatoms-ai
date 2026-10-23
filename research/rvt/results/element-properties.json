@@ -1,0 +1,596 @@
+{
+  "fixtures": [
+    {
+      "file": "core2024.rvt",
+      "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "walls": 1209,
+      "with_string_parameter_set": 8,
+      "string_parameter_counts": {
+        "-1010106": 8
+      },
+      "wall_extensible_storage_cells": 0,
+      "owned_es_schemas": [
+        {
+          "guid": "4147c867-cdfe-42fd-808f-3bbafda73da5",
+          "name": "DataStorageUniqueId",
+          "fields": [
+            {
+              "name": "Id",
+              "type_name": "GUIDvalue",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "8de41042-7da6-4d45-afb4-f8e5ba779816",
+          "name": "FDXModifiedExchangeList",
+          "fields": [
+            {
+              "name": "ModifiedExchangeList",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "a796a94f-9e45-4e82-b716-503178b74446",
+          "name": "Magnetar",
+          "fields": [
+            {
+              "name": "MagnetarProjectInfo",
+              "type_name": "AStringWrapper",
+              "container_type": 1
+            },
+            {
+              "name": "MagnetarRevitLogger",
+              "type_name": "AStringWrapper",
+              "container_type": 1
+            }
+          ]
+        },
+        {
+          "guid": "a9d880d8-904d-45be-b76e-ebc79c784f02",
+          "name": "ggExportIfcSettings",
+          "fields": [
+            {
+              "name": "json",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "c2a3e6fe-ce51-4f35-8ff1-20c34567b687",
+          "name": "IFCExportConfigurationMap",
+          "fields": [
+            {
+              "name": "MapField",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "c7fa1118-f2cc-4f5a-8100-305d687e70b3",
+          "name": "DiRootsOneNamedGuidStorage",
+          "fields": [
+            {
+              "name": "Guid",
+              "type_name": "GUIDvalue",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "fd1ca1f2-8bdf-4149-b980-c56018e0dbcc",
+          "name": "UnifiProjectId",
+          "fields": [
+            {
+              "name": "projectId",
+              "type_name": "GUIDvalue",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "fe0be55d-d5b3-4fa9-8a48-3a4da76100fe",
+          "name": "ggExportIfc",
+          "fields": [
+            {
+              "name": "BraceSeekTol",
+              "type_name": "double",
+              "container_type": 0
+            },
+            {
+              "name": "FlexTol",
+              "type_name": "double",
+              "container_type": 0
+            },
+            {
+              "name": "MatMapPath",
+              "type_name": "TCHAR",
+              "container_type": 0
+            },
+            {
+              "name": "MinOpeningSize",
+              "type_name": "double",
+              "container_type": 0
+            },
+            {
+              "name": "NodeDetectTol",
+              "type_name": "double",
+              "container_type": 0
+            },
+            {
+              "name": "ProfileMapPath",
+              "type_name": "TCHAR",
+              "container_type": 0
+            },
+            {
+              "name": "ProjectToStories",
+              "type_name": "bool",
+              "container_type": 0
+            },
+            {
+              "name": "SplitStructureMembers",
+              "type_name": "bool",
+              "container_type": 0
+            },
+            {
+              "name": "UseElementAxis",
+              "type_name": "bool",
+              "container_type": 0
+            },
+            {
+              "name": "VerticalSeekTol",
+              "type_name": "double",
+              "container_type": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "einhoven.rvt",
+      "sha256": "d3a0c6d37d3f47a1726bc5aa7fe3880ed3c13bbe819b5e64680f6710b15aa948",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "walls": 2,
+      "with_string_parameter_set": 0,
+      "string_parameter_counts": {},
+      "wall_extensible_storage_cells": 0,
+      "owned_es_schemas": [
+        {
+          "guid": "fd1ca1f2-8bdf-4149-b980-c56018e0dbcc",
+          "name": "UnifiProjectId",
+          "fields": [
+            {
+              "name": "projectId",
+              "type_name": "GUIDvalue",
+              "container_type": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "RE1-Architecture.rvt",
+      "sha256": "4a78bdd68e7f4dd7806060db07c222da9a810e20b3f303c17a443294b91c8ce4",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "walls": 8,
+      "with_string_parameter_set": 0,
+      "string_parameter_counts": {},
+      "wall_extensible_storage_cells": 0,
+      "owned_es_schemas": [
+        {
+          "guid": "8140e885-5629-49c9-8ae0-547fd715ddc0",
+          "name": "GuardianDocumentIdentifier",
+          "fields": [
+            {
+              "name": "GuardianCookie",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "d8365167-8ee3-4f48-b37b-2d39e17b6025",
+          "name": "Onuma_Store_Vasari",
+          "fields": [
+            {
+              "name": "BimSpace",
+              "type_name": "std::pair< AString, AString >",
+              "container_type": 2
+            },
+            {
+              "name": "HeightSlab",
+              "type_name": "std::pair< AString, AString >",
+              "container_type": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "RE1-Mechanical.rvt",
+      "sha256": "d559720177aa0ec435133f804e7c45d60da2deb9d5585bb3d55f4830139c014b",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "walls": 0,
+      "with_string_parameter_set": 0,
+      "string_parameter_counts": {},
+      "wall_extensible_storage_cells": 0,
+      "owned_es_schemas": [
+        {
+          "guid": "762a2314-1d1c-4087-a58f-bab902f57be5",
+          "name": "CoefficientFromTable",
+          "fields": [
+            {
+              "name": "ASHRAETableName",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "7cf772d6-932b-43df-940d-989ba318d70f",
+          "name": "DMERT_DataIdLists",
+          "fields": [
+            {
+              "name": "ids",
+              "type_name": "std::pair< AString, ElementId >",
+              "container_type": 2
+            }
+          ]
+        },
+        {
+          "guid": "8140e885-5629-49c9-8ae0-547fd715ddc0",
+          "name": "GuardianDocumentIdentifier",
+          "fields": [
+            {
+              "name": "GuardianCookie",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "92483fd6-029a-4f8c-ac9e-17f9a2a6d5b2",
+          "name": "DMERT_DataLists",
+          "fields": [
+            {
+              "name": "bools",
+              "type_name": "std::pair< AString, bool >",
+              "container_type": 2
+            },
+            {
+              "name": "doubles",
+              "type_name": "std::pair< AString, double >",
+              "container_type": 2
+            },
+            {
+              "name": "ints",
+              "type_name": "std::pair< AString, int >",
+              "container_type": 2
+            },
+            {
+              "name": "strings",
+              "type_name": "std::pair< AString, AString >",
+              "container_type": 2
+            }
+          ]
+        },
+        {
+          "guid": "b8b3aded-9a77-478c-ac7e-05a7d8b8bd15",
+          "name": "InternalSchema_Data_Version_5",
+          "fields": [
+            {
+              "name": "IsZipped",
+              "type_name": "bool",
+              "container_type": 0
+            },
+            {
+              "name": "TheData",
+              "type_name": "TCHAR",
+              "container_type": 0
+            },
+            {
+              "name": "VersionNumber",
+              "type_name": "int",
+              "container_type": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "RE1-Plumbing.rvt",
+      "sha256": "03689df2aa426031a216e65051b9f19d3265d6fe96884dd47373b17435f9e54c",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "walls": 0,
+      "with_string_parameter_set": 0,
+      "string_parameter_counts": {},
+      "wall_extensible_storage_cells": 0,
+      "owned_es_schemas": [
+        {
+          "guid": "1b022a2b-5722-4787-928a-4f29ca9d8811",
+          "name": "CoefficientFromTable",
+          "fields": [
+            {
+              "name": "PipeFittingKFactorTableName",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "8140e885-5629-49c9-8ae0-547fd715ddc0",
+          "name": "GuardianDocumentIdentifier",
+          "fields": [
+            {
+              "name": "GuardianCookie",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "b8b3aded-9a77-478c-ac7e-05a7d8b8bd15",
+          "name": "InternalSchema_Data_Version_5",
+          "fields": [
+            {
+              "name": "IsZipped",
+              "type_name": "bool",
+              "container_type": 0
+            },
+            {
+              "name": "TheData",
+              "type_name": "TCHAR",
+              "container_type": 0
+            },
+            {
+              "name": "VersionNumber",
+              "type_name": "int",
+              "container_type": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "RE1-Electrical.rvt",
+      "sha256": "9875e765c9f47893808c47b845a8379b8777b92510e3e0284f763cb457c9630b",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "walls": 0,
+      "with_string_parameter_set": 0,
+      "string_parameter_counts": {},
+      "wall_extensible_storage_cells": 0,
+      "owned_es_schemas": [
+        {
+          "guid": "7cf772d6-932b-43df-940d-989ba318d70f",
+          "name": "DMERT_DataIdLists",
+          "fields": [
+            {
+              "name": "ids",
+              "type_name": "std::pair< AString, ElementId >",
+              "container_type": 2
+            }
+          ]
+        },
+        {
+          "guid": "8140e885-5629-49c9-8ae0-547fd715ddc0",
+          "name": "GuardianDocumentIdentifier",
+          "fields": [
+            {
+              "name": "GuardianCookie",
+              "type_name": "TCHAR",
+              "container_type": 0
+            }
+          ]
+        },
+        {
+          "guid": "92483fd6-029a-4f8c-ac9e-17f9a2a6d5b2",
+          "name": "DMERT_DataLists",
+          "fields": [
+            {
+              "name": "bools",
+              "type_name": "std::pair< AString, bool >",
+              "container_type": 2
+            },
+            {
+              "name": "doubles",
+              "type_name": "std::pair< AString, double >",
+              "container_type": 2
+            },
+            {
+              "name": "ints",
+              "type_name": "std::pair< AString, int >",
+              "container_type": 2
+            },
+            {
+              "name": "strings",
+              "type_name": "std::pair< AString, AString >",
+              "container_type": 2
+            }
+          ]
+        },
+        {
+          "guid": "b8b3aded-9a77-478c-ac7e-05a7d8b8bd15",
+          "name": "InternalSchema_Data_Version_5",
+          "fields": [
+            {
+              "name": "IsZipped",
+              "type_name": "bool",
+              "container_type": 0
+            },
+            {
+              "name": "TheData",
+              "type_name": "TCHAR",
+              "container_type": 0
+            },
+            {
+              "name": "VersionNumber",
+              "type_name": "int",
+              "container_type": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parameter_declarations": [
+    {
+      "tag": 3017,
+      "name": "ParamValueAString",
+      "offset": 319049,
+      "parent_reference": {
+        "offset": 319070,
+        "tag": 0,
+        "introduces_definition": false
+      },
+      "version_like_word": 1,
+      "fields": [
+        {
+          "offset": 319080,
+          "name": "m_paramId",
+          "descriptor_offset": 319093,
+          "raw_descriptor": 14,
+          "base": 14,
+          "modifier": 0,
+          "uninterpreted_flags": 0,
+          "array_count": null,
+          "references": [
+            {
+              "offset": 319097,
+              "tag": 20,
+              "introduces_definition": false
+            }
+          ],
+          "nested_descriptor": null,
+          "end": 319099
+        },
+        {
+          "offset": 319099,
+          "name": "m_value",
+          "descriptor_offset": 319110,
+          "raw_descriptor": 24584,
+          "base": 8,
+          "modifier": 96,
+          "uninterpreted_flags": 0,
+          "array_count": null,
+          "references": [],
+          "nested_descriptor": null,
+          "end": 319114
+        }
+      ],
+      "opaque_16byte_entry_count": 0,
+      "opaque_entries_offset": 319118,
+      "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "end": 319118
+    },
+    {
+      "tag": 3021,
+      "name": "ParamValueSetAString",
+      "offset": 319324,
+      "parent_reference": {
+        "offset": 319348,
+        "tag": 0,
+        "introduces_definition": false
+      },
+      "version_like_word": 1,
+      "fields": [
+        {
+          "offset": 319358,
+          "name": "m_paramSet",
+          "descriptor_offset": 319372,
+          "raw_descriptor": 20494,
+          "base": 14,
+          "modifier": 80,
+          "uninterpreted_flags": 0,
+          "array_count": null,
+          "references": [
+            {
+              "offset": 319376,
+              "tag": 3017,
+              "introduces_definition": false
+            }
+          ],
+          "nested_descriptor": null,
+          "end": 319378
+        }
+      ],
+      "opaque_16byte_entry_count": 0,
+      "opaque_entries_offset": 319382,
+      "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "end": 319382
+    }
+  ],
+  "trials": [
+    {
+      "mode": "updated_existing_comments",
+      "source_element": 22771,
+      "source_bytes": 4173,
+      "source_body_sha256": "23a9634dc5036570ab911bb5760612dce87dc951a2c7eccf270e5f2475e351c0",
+      "source_reconstruction_exact": true,
+      "output_bytes": 4249,
+      "output_body_sha256": "1034a6510e7bdc1f69d22066f1ab4dee0d1014fd4ce0a10eb91fda65f4cc69a6",
+      "independent_full_graph_equal_expected": true,
+      "complete_body_consumed": true,
+      "declaration_classes": [
+        {
+          "name": "ParamValueAString",
+          "tag": 3017
+        },
+        {
+          "name": "ParamValueDouble",
+          "tag": 3018
+        },
+        {
+          "name": "ParamValueSetAString",
+          "tag": 3021
+        },
+        {
+          "name": "ParamValueSetDouble",
+          "tag": 3022
+        }
+      ],
+      "parameter_id": -1010106,
+      "utf16_code_units": 38,
+      "arbitrary_application_metadata_supported": false
+    },
+    {
+      "mode": "created_measured_string_container",
+      "source_element": 20826,
+      "source_bytes": 2946,
+      "source_body_sha256": "816072c39ffe4de748103185e6d5bce5b7291f37d9a2551844525414a99128d7",
+      "source_reconstruction_exact": true,
+      "output_bytes": 3040,
+      "output_body_sha256": "b3bb3fc20d9fe7409decf3261755b4d5c8a10a495f76ee9fb1e5185f52f76b0b",
+      "independent_full_graph_equal_expected": true,
+      "complete_body_consumed": true,
+      "declaration_classes": [
+        {
+          "name": "ParamValueAString",
+          "tag": 3017
+        },
+        {
+          "name": "ParamValueDouble",
+          "tag": 3018
+        },
+        {
+          "name": "ParamValueSetAString",
+          "tag": 3021
+        },
+        {
+          "name": "ParamValueSetDouble",
+          "tag": 3022
+        }
+      ],
+      "parameter_id": -1010106,
+      "utf16_code_units": 38,
+      "arbitrary_application_metadata_supported": false
+    }
+  ],
+  "mark_parameter_measured_in_walls": false,
+  "arbitrary_metadata_schema_registration_implemented": false,
+  "complete_native_save": false
+}

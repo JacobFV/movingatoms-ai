@@ -1,0 +1,2196 @@
+{
+  "historical_only": true,
+  "id_width_bytes": 4,
+  "physical_record_count": 78570,
+  "statistics": [
+    {
+      "diagnostic": null,
+      "statistics": {
+        "content_sections": 78,
+        "groups": 293,
+        "inflated_bytes": 20703370,
+        "opaque_terminal_bytes": 0,
+        "opaque_terminal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "segments": 329,
+        "trailing_padding_bytes": 0
+      },
+      "stream_file": "research/rvt/local/directshape-legacy-partition-1.bin"
+    },
+    {
+      "diagnostic": null,
+      "statistics": {
+        "content_sections": 1,
+        "groups": 5,
+        "inflated_bytes": 1719954,
+        "opaque_terminal_bytes": 0,
+        "opaque_terminal_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "segments": 17,
+        "trailing_padding_bytes": 0
+      },
+      "stream_file": "research/rvt/local/directshape-legacy-partition-2.bin"
+    }
+  ],
+  "records": [
+    {
+      "body_bytes": 149,
+      "channel": 101,
+      "diagnostic": null,
+      "element_id": 308799,
+      "group": {
+        "channel": 101,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 131031,
+        "declared_objects": 1127,
+        "first_marker_offset": 18,
+        "segment_count": 1
+      },
+      "root_class": "ElementHeader",
+      "stream_file": "research/rvt/local/directshape-legacy-partition-1.bin",
+      "body_sha256": "6adbcbd584694d00641caeece0e6761d31c4eb2e81eed101ae5b5460ab351221",
+      "source_exact_reencoding": true,
+      "consumed_bytes": 149,
+      "objects": 3,
+      "class_counts": {
+        "ElementHeader": 1,
+        "Outline": 1,
+        "ElementParents": 1
+      },
+      "representatives": {
+        "ElementParents": {
+          "class_name": "ElementParents",
+          "class_tag": 1209,
+          "fields": {
+            "m_appearanceParents": [],
+            "m_deferredParents": [],
+            "m_deferredPropagationParents": [],
+            "m_deletion": [
+              {
+                "m_id": {
+                  "m_id": -2000151
+                }
+              },
+              {
+                "m_id": {
+                  "m_id": 17881
+                }
+              },
+              {
+                "m_id": {
+                  "m_id": 308797
+                }
+              },
+              {
+                "m_id": {
+                  "m_id": 308799
+                }
+              }
+            ],
+            "m_dependencyParents": [],
+            "m_hasNonDetermRegenChildren": false,
+            "m_nonDetermRegenChildren": [],
+            "m_regenOnly": [],
+            "m_regenWildcards": []
+          },
+          "fields_end": 149,
+          "start": 100,
+          "token": 4294967295
+        }
+      }
+    },
+    {
+      "body_bytes": 2093889,
+      "channel": 102,
+      "diagnostic": null,
+      "element_id": 308799,
+      "group": {
+        "channel": 102,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 2093893,
+        "declared_objects": 1,
+        "first_marker_offset": 185287,
+        "segment_count": 16
+      },
+      "root_class": "DirectShape",
+      "stream_file": "research/rvt/local/directshape-legacy-partition-1.bin",
+      "body_sha256": "a00162938ba1335c39abf9e4c63c377bd5e928585e36b936b3b7b851e02b0956",
+      "source_exact_reencoding": true,
+      "consumed_bytes": 2093889,
+      "objects": 23765,
+      "class_counts": {
+        "DirectShape": 1,
+        "DirectShapeCell": 1,
+        "DirectShapeDataCell": 1,
+        "GElement": 1,
+        "Geometry": 1,
+        "Face": 5280,
+        "Edge": 7920,
+        "EdgeLoop": 5280,
+        "Plane": 5280
+      },
+      "representatives": {
+        "DirectShape": {
+          "class_name": "DirectShape",
+          "class_tag": 1008,
+          "fields": {
+            "m_assocLevelId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_cellList": {
+              "class_tag": null,
+              "offset": 30,
+              "pointer_token": 0
+            },
+            "m_constrInfo": [],
+            "m_createdPhaseId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_demolishedPhaseId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_designOptionId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_docAccess": {
+              "m_pDoc": {
+                "class_tag": null,
+                "offset": 34,
+                "pointer_token": 1
+              }
+            },
+            "m_dummy": false,
+            "m_famId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_geomSteps": {
+              "class_tag": null,
+              "offset": 18,
+              "pointer_token": 0
+            },
+            "m_id": {
+              "m_id": {
+                "m_id": 308799
+              }
+            },
+            "m_locked": false,
+            "m_moribund": false,
+            "m_oGeometryData": {
+              "class_tag": 1009,
+              "offset": 73,
+              "pointer_token": 4294967295
+            },
+            "m_oPlanViewGeometryData": {
+              "class_tag": null,
+              "offset": 79,
+              "pointer_token": 0
+            },
+            "m_oShapeData": {
+              "class_tag": 1010,
+              "offset": 83,
+              "pointer_token": 4294967295
+            },
+            "m_ownerDBViewId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_pGeomTable": {
+              "class_tag": null,
+              "offset": 22,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetAString": {
+              "class_tag": null,
+              "offset": 10,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetDouble": {
+              "class_tag": null,
+              "offset": 2,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetElementId": {
+              "class_tag": null,
+              "offset": 14,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetInt": {
+              "class_tag": null,
+              "offset": 6,
+              "pointer_token": 0
+            },
+            "m_typeId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_unplacedOwnerId": {
+              "m_id": {
+                "m_id": -1
+              }
+            }
+          },
+          "fields_end": 93,
+          "start": 2,
+          "token": 0
+        },
+        "DirectShapeCell": {
+          "class_name": "DirectShapeCell",
+          "class_tag": 1009,
+          "fields": {
+            "m_oGElement": {
+              "class_tag": 1743,
+              "offset": 93,
+              "pointer_token": 3
+            }
+          },
+          "fields_end": 99,
+          "start": 93,
+          "token": 4294967295
+        },
+        "DirectShapeDataCell": {
+          "class_name": "DirectShapeDataCell",
+          "class_tag": 1010,
+          "fields": {
+            "m_appDataGUID": "shaasdasdsaape",
+            "m_appGUID": "03deaabe-6989-4d20-ba68-557001d2f45c",
+            "m_categoryId": {
+              "m_id": {
+                "m_id": -2000151
+              }
+            },
+            "m_name": "shaasdasdsaape"
+          },
+          "fields_end": 243,
+          "start": 99,
+          "token": 4294967295
+        },
+        "GElement": {
+          "class_name": "GElement",
+          "class_tag": 1743,
+          "fields": {
+            "m_GInfo": {
+              "m_categoryId": {
+                "m_id": {
+                  "m_id": 17881
+                }
+              },
+              "m_controlCommand": 0,
+              "m_flags": 524292,
+              "m_tag": -1
+            },
+            "m_bBox": [
+              [
+                1e+30,
+                1e+30,
+                1e+30
+              ],
+              [
+                -1e+30,
+                -1e+30,
+                -1e+30
+              ]
+            ],
+            "m_flags": 0,
+            "m_gElemType": 3,
+            "m_subNodes": [
+              {
+                "class_tag": 1820,
+                "offset": 263,
+                "pointer_token": 4
+              }
+            ]
+          },
+          "fields_end": 325,
+          "start": 243,
+          "token": 3
+        }
+      }
+    },
+    {
+      "body_bytes": 2093648,
+      "channel": 103,
+      "diagnostic": null,
+      "element_id": 308799,
+      "group": {
+        "channel": 103,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 2093652,
+        "declared_objects": 1,
+        "first_marker_offset": 1556781,
+        "segment_count": 16
+      },
+      "root_class": "GElement",
+      "stream_file": "research/rvt/local/directshape-legacy-partition-1.bin",
+      "body_sha256": "12633a9f0e5dc527a1495ad5f2a8bfcb3b68373201b7e2a960c72ccf85dae13a",
+      "source_exact_reencoding": true,
+      "consumed_bytes": 2093648,
+      "objects": 23762,
+      "class_counts": {
+        "GElement": 1,
+        "Geometry": 1,
+        "Face": 5280,
+        "Edge": 7920,
+        "EdgeLoop": 5280,
+        "Plane": 5280
+      },
+      "representatives": {
+        "GElement": {
+          "class_name": "GElement",
+          "class_tag": 1743,
+          "fields": {
+            "m_GInfo": {
+              "m_categoryId": {
+                "m_id": {
+                  "m_id": 17881
+                }
+              },
+              "m_controlCommand": 0,
+              "m_flags": 557060,
+              "m_tag": 308799
+            },
+            "m_bBox": [
+              [
+                -4.163336342344337e-17,
+                -1.2698175844150228e-15,
+                -4.5102810375396984e-17
+              ],
+              [
+                11.0,
+                11.000000000000002,
+                10.999999999999998
+              ]
+            ],
+            "m_flags": 0,
+            "m_gElemType": 3,
+            "m_subNodes": [
+              {
+                "class_tag": 1820,
+                "offset": 22,
+                "pointer_token": 3
+              }
+            ]
+          },
+          "fields_end": 84,
+          "start": 2,
+          "token": 0
+        }
+      }
+    },
+    {
+      "body_bytes": 149,
+      "channel": 101,
+      "diagnostic": null,
+      "element_id": 308800,
+      "group": {
+        "channel": 101,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 157,
+        "declared_objects": 2,
+        "first_marker_offset": 18,
+        "segment_count": 1
+      },
+      "root_class": "ElementHeader",
+      "stream_file": "research/rvt/local/directshape-legacy-partition-2.bin",
+      "body_sha256": "f21d5410c71ef65e54fe2ecbc58dcb1db30db777351dee63562e69e070ded988",
+      "source_exact_reencoding": true,
+      "consumed_bytes": 149,
+      "objects": 3,
+      "class_counts": {
+        "ElementHeader": 1,
+        "Outline": 1,
+        "ElementParents": 1
+      },
+      "representatives": {
+        "ElementParents": {
+          "class_name": "ElementParents",
+          "class_tag": 1209,
+          "fields": {
+            "m_appearanceParents": [],
+            "m_deferredParents": [],
+            "m_deferredPropagationParents": [],
+            "m_deletion": [
+              {
+                "m_id": {
+                  "m_id": -2000151
+                }
+              },
+              {
+                "m_id": {
+                  "m_id": 17881
+                }
+              },
+              {
+                "m_id": {
+                  "m_id": 308797
+                }
+              },
+              {
+                "m_id": {
+                  "m_id": 308800
+                }
+              }
+            ],
+            "m_dependencyParents": [],
+            "m_hasNonDetermRegenChildren": false,
+            "m_nonDetermRegenChildren": [],
+            "m_regenOnly": [],
+            "m_regenWildcards": []
+          },
+          "fields_end": 149,
+          "start": 100,
+          "token": 4294967295
+        }
+      }
+    },
+    {
+      "body_bytes": 859977,
+      "channel": 102,
+      "diagnostic": null,
+      "element_id": 308800,
+      "group": {
+        "channel": 102,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 859981,
+        "declared_objects": 1,
+        "first_marker_offset": 151,
+        "segment_count": 7
+      },
+      "root_class": "DirectShape",
+      "stream_file": "research/rvt/local/directshape-legacy-partition-2.bin",
+      "body_sha256": "8f0f07a53ee33bedd1d96786d6483b5c32bd7e784aaac8c9a18fa6073a6ace9e",
+      "source_exact_reencoding": true,
+      "consumed_bytes": 859977,
+      "objects": 9761,
+      "class_counts": {
+        "DirectShape": 1,
+        "DirectShapeCell": 1,
+        "DirectShapeDataCell": 1,
+        "GElement": 1,
+        "Geometry": 1,
+        "Face": 2168,
+        "Edge": 3252,
+        "EdgeLoop": 2168,
+        "Plane": 2168
+      },
+      "representatives": {
+        "DirectShape": {
+          "class_name": "DirectShape",
+          "class_tag": 1008,
+          "fields": {
+            "m_assocLevelId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_cellList": {
+              "class_tag": null,
+              "offset": 30,
+              "pointer_token": 0
+            },
+            "m_constrInfo": [],
+            "m_createdPhaseId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_demolishedPhaseId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_designOptionId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_docAccess": {
+              "m_pDoc": {
+                "class_tag": null,
+                "offset": 34,
+                "pointer_token": 1
+              }
+            },
+            "m_dummy": false,
+            "m_famId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_geomSteps": {
+              "class_tag": null,
+              "offset": 18,
+              "pointer_token": 0
+            },
+            "m_id": {
+              "m_id": {
+                "m_id": 308800
+              }
+            },
+            "m_locked": false,
+            "m_moribund": false,
+            "m_oGeometryData": {
+              "class_tag": 1009,
+              "offset": 73,
+              "pointer_token": 4294967295
+            },
+            "m_oPlanViewGeometryData": {
+              "class_tag": null,
+              "offset": 79,
+              "pointer_token": 0
+            },
+            "m_oShapeData": {
+              "class_tag": 1010,
+              "offset": 83,
+              "pointer_token": 4294967295
+            },
+            "m_ownerDBViewId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_pGeomTable": {
+              "class_tag": null,
+              "offset": 22,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetAString": {
+              "class_tag": null,
+              "offset": 10,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetDouble": {
+              "class_tag": null,
+              "offset": 2,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetElementId": {
+              "class_tag": null,
+              "offset": 14,
+              "pointer_token": 0
+            },
+            "m_pParamValueSetInt": {
+              "class_tag": null,
+              "offset": 6,
+              "pointer_token": 0
+            },
+            "m_typeId": {
+              "m_id": {
+                "m_id": -1
+              }
+            },
+            "m_unplacedOwnerId": {
+              "m_id": {
+                "m_id": -1
+              }
+            }
+          },
+          "fields_end": 93,
+          "start": 2,
+          "token": 0
+        },
+        "DirectShapeCell": {
+          "class_name": "DirectShapeCell",
+          "class_tag": 1009,
+          "fields": {
+            "m_oGElement": {
+              "class_tag": 1743,
+              "offset": 93,
+              "pointer_token": 3
+            }
+          },
+          "fields_end": 99,
+          "start": 93,
+          "token": 4294967295
+        },
+        "DirectShapeDataCell": {
+          "class_name": "DirectShapeDataCell",
+          "class_tag": 1010,
+          "fields": {
+            "m_appDataGUID": "shaasdasdsaape",
+            "m_appGUID": "03deaabe-6989-4d20-ba68-557001d2f45c",
+            "m_categoryId": {
+              "m_id": {
+                "m_id": -2000151
+              }
+            },
+            "m_name": "shape123test"
+          },
+          "fields_end": 239,
+          "start": 99,
+          "token": 4294967295
+        },
+        "GElement": {
+          "class_name": "GElement",
+          "class_tag": 1743,
+          "fields": {
+            "m_GInfo": {
+              "m_categoryId": {
+                "m_id": {
+                  "m_id": 17881
+                }
+              },
+              "m_controlCommand": 0,
+              "m_flags": 524292,
+              "m_tag": -1
+            },
+            "m_bBox": [
+              [
+                1e+30,
+                1e+30,
+                1e+30
+              ],
+              [
+                -1e+30,
+                -1e+30,
+                -1e+30
+              ]
+            ],
+            "m_flags": 0,
+            "m_gElemType": 3,
+            "m_subNodes": [
+              {
+                "class_tag": 1820,
+                "offset": 259,
+                "pointer_token": 4
+              }
+            ]
+          },
+          "fields_end": 321,
+          "start": 239,
+          "token": 3
+        }
+      }
+    },
+    {
+      "body_bytes": 859740,
+      "channel": 103,
+      "diagnostic": null,
+      "element_id": 308800,
+      "group": {
+        "channel": 103,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 859744,
+        "declared_objects": 1,
+        "first_marker_offset": 304893,
+        "segment_count": 7
+      },
+      "root_class": "GElement",
+      "stream_file": "research/rvt/local/directshape-legacy-partition-2.bin",
+      "body_sha256": "9fee2d5f1ba40fa3ff0319006665c1736349972777693d5e87fdb43401cb09b5",
+      "source_exact_reencoding": true,
+      "consumed_bytes": 859740,
+      "objects": 9758,
+      "class_counts": {
+        "GElement": 1,
+        "Geometry": 1,
+        "Face": 2168,
+        "Edge": 3252,
+        "EdgeLoop": 2168,
+        "Plane": 2168
+      },
+      "representatives": {
+        "GElement": {
+          "class_name": "GElement",
+          "class_tag": 1743,
+          "fields": {
+            "m_GInfo": {
+              "m_categoryId": {
+                "m_id": {
+                  "m_id": 17881
+                }
+              },
+              "m_controlCommand": 0,
+              "m_flags": 557060,
+              "m_tag": 308800
+            },
+            "m_bBox": [
+              [
+                -4.0,
+                -4.000000000000001,
+                -4.0
+              ],
+              [
+                15.000000000000002,
+                15.000000000000002,
+                14.999999999999998
+              ]
+            ],
+            "m_flags": 0,
+            "m_gElemType": 3,
+            "m_subNodes": [
+              {
+                "class_tag": 1820,
+                "offset": 22,
+                "pointer_token": 3
+              }
+            ]
+          },
+          "fields_end": 84,
+          "start": 2,
+          "token": 0
+        }
+      }
+    }
+  ],
+  "schema_comparison": [
+    {
+      "class": "DirectShape",
+      "2015": {
+        "tag": 1008,
+        "name": "DirectShape",
+        "offset": 109329,
+        "parent_reference": {
+          "offset": 109344,
+          "tag": 37,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 109354,
+            "name": "m_oGeometryData",
+            "descriptor_offset": 109373,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109377
+          },
+          {
+            "offset": 109377,
+            "name": "m_oPlanViewGeometryData",
+            "descriptor_offset": 109404,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109408
+          },
+          {
+            "offset": 109408,
+            "name": "m_oShapeData",
+            "descriptor_offset": 109424,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109428
+          },
+          {
+            "offset": 109428,
+            "name": "m_typeId",
+            "descriptor_offset": 109440,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 109444,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 109446
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 109450,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 109450
+      },
+      "2024": {
+        "tag": 1209,
+        "name": "DirectShape",
+        "offset": 140151,
+        "parent_reference": {
+          "offset": 140166,
+          "tag": 37,
+          "introduces_definition": false
+        },
+        "version_like_word": 9,
+        "fields": [
+          {
+            "offset": 140176,
+            "name": "m_oGeometryData",
+            "descriptor_offset": 140195,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140199
+          },
+          {
+            "offset": 140199,
+            "name": "m_options",
+            "descriptor_offset": 140212,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 140216,
+                "tag": 1210,
+                "introduces_definition": true
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 140452
+          },
+          {
+            "offset": 140452,
+            "name": "m_oPlanViewGeometryData",
+            "descriptor_offset": 140479,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140483
+          },
+          {
+            "offset": 140483,
+            "name": "m_oRefsData",
+            "descriptor_offset": 140498,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140502
+          },
+          {
+            "offset": 140502,
+            "name": "m_oShapeData",
+            "descriptor_offset": 140518,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140522
+          },
+          {
+            "offset": 140522,
+            "name": "m_position",
+            "descriptor_offset": 140536,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 140540,
+                "tag": 79,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 140542
+          },
+          {
+            "offset": 140542,
+            "name": "m_typeId",
+            "descriptor_offset": 140554,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 140558,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 140560
+          },
+          {
+            "offset": 140560,
+            "name": "m_canCreatePartsStatus",
+            "descriptor_offset": 140586,
+            "raw_descriptor": 4,
+            "base": 4,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140590
+          }
+        ],
+        "opaque_16byte_entry_count": 4,
+        "opaque_entries_offset": 140594,
+        "opaque_entries_sha256": "178625181624c4c33d2e4408bf0c5186d525ab0019698629d47c350f600418a1",
+        "end": 140658
+      },
+      "added_2024_field_names": [
+        "m_canCreatePartsStatus",
+        "m_oRefsData",
+        "m_options",
+        "m_position"
+      ]
+    },
+    {
+      "class": "DirectShapeCell",
+      "2015": {
+        "tag": 1009,
+        "name": "DirectShapeCell",
+        "offset": 109450,
+        "parent_reference": {
+          "offset": 109469,
+          "tag": 74,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 109479,
+            "name": "m_oGElement",
+            "descriptor_offset": 109494,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109498
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 109502,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 109502
+      },
+      "2024": {
+        "tag": 1212,
+        "name": "DirectShapeCell",
+        "offset": 140809,
+        "parent_reference": {
+          "offset": 140828,
+          "tag": 71,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 140838,
+            "name": "m_oGElement",
+            "descriptor_offset": 140853,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140857
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 140861,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 140861
+      },
+      "added_2024_field_names": []
+    },
+    {
+      "class": "DirectShapeDataCell",
+      "2015": {
+        "tag": 1010,
+        "name": "DirectShapeDataCell",
+        "offset": 109502,
+        "parent_reference": {
+          "offset": 109525,
+          "tag": 74,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 109535,
+            "name": "m_appDataGUID",
+            "descriptor_offset": 109552,
+            "raw_descriptor": 24584,
+            "base": 8,
+            "modifier": 96,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109556
+          },
+          {
+            "offset": 109556,
+            "name": "m_appGUID",
+            "descriptor_offset": 109569,
+            "raw_descriptor": 24584,
+            "base": 8,
+            "modifier": 96,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109573
+          },
+          {
+            "offset": 109573,
+            "name": "m_name",
+            "descriptor_offset": 109583,
+            "raw_descriptor": 24584,
+            "base": 8,
+            "modifier": 96,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 109587
+          },
+          {
+            "offset": 109587,
+            "name": "m_categoryId",
+            "descriptor_offset": 109603,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 109607,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 109609
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 109613,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 109613
+      },
+      "2024": {
+        "tag": 1214,
+        "name": "DirectShapeDataCell",
+        "offset": 140905,
+        "parent_reference": {
+          "offset": 140928,
+          "tag": 71,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 140938,
+            "name": "m_appDataGUID",
+            "descriptor_offset": 140955,
+            "raw_descriptor": 24584,
+            "base": 8,
+            "modifier": 96,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140959
+          },
+          {
+            "offset": 140959,
+            "name": "m_appGUID",
+            "descriptor_offset": 140972,
+            "raw_descriptor": 24584,
+            "base": 8,
+            "modifier": 96,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140976
+          },
+          {
+            "offset": 140976,
+            "name": "m_name",
+            "descriptor_offset": 140986,
+            "raw_descriptor": 24584,
+            "base": 8,
+            "modifier": 96,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140990
+          },
+          {
+            "offset": 140990,
+            "name": "m_categoryId",
+            "descriptor_offset": 141006,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 141010,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 141012
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 141016,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 141016
+      },
+      "added_2024_field_names": []
+    },
+    {
+      "class": "DirectShapeOptions",
+      "2015": null,
+      "2024": {
+        "tag": 1210,
+        "name": "DirectShapeOptions",
+        "offset": 140218,
+        "parent_reference": {
+          "offset": 140240,
+          "tag": 0,
+          "introduces_definition": false
+        },
+        "version_like_word": 2,
+        "fields": [
+          {
+            "offset": 140250,
+            "name": "m_PresentationType",
+            "descriptor_offset": 140272,
+            "raw_descriptor": 4,
+            "base": 4,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140276
+          },
+          {
+            "offset": 140276,
+            "name": "m_ReferencingOption",
+            "descriptor_offset": 140299,
+            "raw_descriptor": 4,
+            "base": 4,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140303
+          },
+          {
+            "offset": 140303,
+            "name": "m_RoomBoundingOption",
+            "descriptor_offset": 140327,
+            "raw_descriptor": 4,
+            "base": 4,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140331
+          },
+          {
+            "offset": 140331,
+            "name": "m_AllowsChangeTypeId",
+            "descriptor_offset": 140355,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140359
+          },
+          {
+            "offset": 140359,
+            "name": "m_AllowsCopy",
+            "descriptor_offset": 140375,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140379
+          },
+          {
+            "offset": 140379,
+            "name": "m_AllowsLock",
+            "descriptor_offset": 140395,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140399
+          },
+          {
+            "offset": 140399,
+            "name": "m_AllowsMove",
+            "descriptor_offset": 140415,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140419
+          },
+          {
+            "offset": 140419,
+            "name": "m_AllowsTagAlongCurve",
+            "descriptor_offset": 140444,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 140448
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 140452,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 140452
+      },
+      "added_2024_field_names": null
+    },
+    {
+      "class": "GElement",
+      "2015": {
+        "tag": 1743,
+        "name": "GElement",
+        "offset": 189385,
+        "parent_reference": {
+          "offset": 189397,
+          "tag": 1744,
+          "introduces_definition": true
+        },
+        "version_like_word": 4,
+        "fields": [],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 189540,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 189540
+      },
+      "2024": {
+        "tag": 2111,
+        "name": "GElement",
+        "offset": 240822,
+        "parent_reference": {
+          "offset": 240834,
+          "tag": 2112,
+          "introduces_definition": true
+        },
+        "version_like_word": 4,
+        "fields": [],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 241048,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 241048
+      },
+      "added_2024_field_names": []
+    },
+    {
+      "class": "Element",
+      "2015": {
+        "tag": 37,
+        "name": "Element",
+        "offset": 12510,
+        "parent_reference": {
+          "offset": 12521,
+          "tag": 0,
+          "introduces_definition": false
+        },
+        "version_like_word": 21,
+        "fields": [
+          {
+            "offset": 12531,
+            "name": "m_pParamValueSetDouble",
+            "descriptor_offset": 12557,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12561
+          },
+          {
+            "offset": 12561,
+            "name": "m_pParamValueSetInt",
+            "descriptor_offset": 12584,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12588
+          },
+          {
+            "offset": 12588,
+            "name": "m_pParamValueSetAString",
+            "descriptor_offset": 12615,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12619
+          },
+          {
+            "offset": 12619,
+            "name": "m_pParamValueSetElementId",
+            "descriptor_offset": 12648,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12652
+          },
+          {
+            "offset": 12652,
+            "name": "m_geomSteps",
+            "descriptor_offset": 12667,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12671
+          },
+          {
+            "offset": 12671,
+            "name": "m_pGeomTable",
+            "descriptor_offset": 12687,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12691
+          },
+          {
+            "offset": 12691,
+            "name": "m_constrInfo",
+            "descriptor_offset": 12707,
+            "raw_descriptor": 20750,
+            "base": 14,
+            "modifier": 81,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12711
+          },
+          {
+            "offset": 12711,
+            "name": "m_cellList",
+            "descriptor_offset": 12725,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 12729
+          },
+          {
+            "offset": 12729,
+            "name": "m_docAccess",
+            "descriptor_offset": 12744,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12748,
+                "tag": 38,
+                "introduces_definition": true
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12801
+          },
+          {
+            "offset": 12801,
+            "name": "m_id",
+            "descriptor_offset": 12809,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12813,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12815
+          },
+          {
+            "offset": 12815,
+            "name": "m_assocLevelId",
+            "descriptor_offset": 12833,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12837,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12839
+          },
+          {
+            "offset": 12839,
+            "name": "m_famId",
+            "descriptor_offset": 12850,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12854,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12856
+          },
+          {
+            "offset": 12856,
+            "name": "m_unplacedOwnerId",
+            "descriptor_offset": 12877,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12881,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12883
+          },
+          {
+            "offset": 12883,
+            "name": "m_ownerDBViewId",
+            "descriptor_offset": 12902,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12906,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12908
+          },
+          {
+            "offset": 12908,
+            "name": "m_createdPhaseId",
+            "descriptor_offset": 12928,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12932,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12934
+          },
+          {
+            "offset": 12934,
+            "name": "m_demolishedPhaseId",
+            "descriptor_offset": 12957,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12961,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12963
+          },
+          {
+            "offset": 12963,
+            "name": "m_designOptionId",
+            "descriptor_offset": 12983,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 12987,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 12989
+          },
+          {
+            "offset": 12989,
+            "name": "m_locked",
+            "descriptor_offset": 13001,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 13005
+          },
+          {
+            "offset": 13005,
+            "name": "m_moribund",
+            "descriptor_offset": 13019,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 13023
+          },
+          {
+            "offset": 13023,
+            "name": "m_dummy",
+            "descriptor_offset": 13034,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 13038
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 13042,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 13042
+      },
+      "2024": {
+        "tag": 37,
+        "name": "Element",
+        "offset": 23862,
+        "parent_reference": {
+          "offset": 23873,
+          "tag": 0,
+          "introduces_definition": false
+        },
+        "version_like_word": 21,
+        "fields": [
+          {
+            "offset": 23883,
+            "name": "m_pParamValueSetDouble",
+            "descriptor_offset": 23909,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 23913
+          },
+          {
+            "offset": 23913,
+            "name": "m_pParamValueSetInt",
+            "descriptor_offset": 23936,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 23940
+          },
+          {
+            "offset": 23940,
+            "name": "m_pParamValueSetAString",
+            "descriptor_offset": 23967,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 23971
+          },
+          {
+            "offset": 23971,
+            "name": "m_pParamValueSetElementId",
+            "descriptor_offset": 24000,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24004
+          },
+          {
+            "offset": 24004,
+            "name": "m_geomSteps",
+            "descriptor_offset": 24019,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24023
+          },
+          {
+            "offset": 24023,
+            "name": "m_pGeomTable",
+            "descriptor_offset": 24039,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24043
+          },
+          {
+            "offset": 24043,
+            "name": "m_constrInfo",
+            "descriptor_offset": 24059,
+            "raw_descriptor": 20750,
+            "base": 14,
+            "modifier": 81,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24063
+          },
+          {
+            "offset": 24063,
+            "name": "m_cellList",
+            "descriptor_offset": 24077,
+            "raw_descriptor": 270,
+            "base": 14,
+            "modifier": 1,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24081
+          },
+          {
+            "offset": 24081,
+            "name": "m_docAccess",
+            "descriptor_offset": 24096,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24100,
+                "tag": 38,
+                "introduces_definition": true
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24153
+          },
+          {
+            "offset": 24153,
+            "name": "m_id",
+            "descriptor_offset": 24161,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24165,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24167
+          },
+          {
+            "offset": 24167,
+            "name": "m_assocLevelId",
+            "descriptor_offset": 24185,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24189,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24191
+          },
+          {
+            "offset": 24191,
+            "name": "m_famId",
+            "descriptor_offset": 24202,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24206,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24208
+          },
+          {
+            "offset": 24208,
+            "name": "m_unplacedOwnerId",
+            "descriptor_offset": 24229,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24233,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24235
+          },
+          {
+            "offset": 24235,
+            "name": "m_ownerDBViewId",
+            "descriptor_offset": 24254,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24258,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24260
+          },
+          {
+            "offset": 24260,
+            "name": "m_createdPhaseId",
+            "descriptor_offset": 24280,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24284,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24286
+          },
+          {
+            "offset": 24286,
+            "name": "m_demolishedPhaseId",
+            "descriptor_offset": 24309,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24313,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24315
+          },
+          {
+            "offset": 24315,
+            "name": "m_designOptionId",
+            "descriptor_offset": 24335,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 24339,
+                "tag": 20,
+                "introduces_definition": false
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 24341
+          },
+          {
+            "offset": 24341,
+            "name": "m_locked",
+            "descriptor_offset": 24353,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24357
+          },
+          {
+            "offset": 24357,
+            "name": "m_moribund",
+            "descriptor_offset": 24371,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24375
+          },
+          {
+            "offset": 24375,
+            "name": "m_dummy",
+            "descriptor_offset": 24386,
+            "raw_descriptor": 1,
+            "base": 1,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": null,
+            "end": 24390
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 24394,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 24394
+      },
+      "added_2024_field_names": []
+    },
+    {
+      "class": "ElementId",
+      "2015": {
+        "tag": 20,
+        "name": "ElementId",
+        "offset": 311,
+        "parent_reference": {
+          "offset": 324,
+          "tag": 0,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 334,
+            "name": "m_id",
+            "descriptor_offset": 342,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 346,
+                "tag": 21,
+                "introduces_definition": true
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 388
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 392,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 392
+      },
+      "2024": {
+        "tag": 20,
+        "name": "ElementId",
+        "offset": 311,
+        "parent_reference": {
+          "offset": 324,
+          "tag": 0,
+          "introduces_definition": false
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 334,
+            "name": "m_id",
+            "descriptor_offset": 342,
+            "raw_descriptor": 14,
+            "base": 14,
+            "modifier": 0,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [
+              {
+                "offset": 346,
+                "tag": 21,
+                "introduces_definition": true
+              }
+            ],
+            "nested_descriptor": null,
+            "end": 390
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 394,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 394
+      },
+      "added_2024_field_names": []
+    },
+    {
+      "class": "FacetedTopology0",
+      "2015": {
+        "tag": 1424,
+        "name": "FacetedTopology0",
+        "offset": 157062,
+        "parent_reference": {
+          "offset": 157082,
+          "tag": 1425,
+          "introduces_definition": true
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 157162,
+            "name": "m_facetsArr",
+            "descriptor_offset": 157177,
+            "raw_descriptor": 20493,
+            "base": 13,
+            "modifier": 80,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": {
+              "offset": 157181,
+              "name": " ",
+              "descriptor_offset": 157186,
+              "raw_descriptor": 4099,
+              "base": 3,
+              "modifier": 16,
+              "uninterpreted_flags": 0,
+              "array_count": 3,
+              "references": [],
+              "nested_descriptor": null,
+              "end": 157194
+            },
+            "end": 157194
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 157198,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 157198
+      },
+      "2024": {
+        "tag": 1732,
+        "name": "FacetedTopology0",
+        "offset": 204519,
+        "parent_reference": {
+          "offset": 204539,
+          "tag": 1733,
+          "introduces_definition": true
+        },
+        "version_like_word": 1,
+        "fields": [
+          {
+            "offset": 204619,
+            "name": "m_facetsArr",
+            "descriptor_offset": 204634,
+            "raw_descriptor": 20493,
+            "base": 13,
+            "modifier": 80,
+            "uninterpreted_flags": 0,
+            "array_count": null,
+            "references": [],
+            "nested_descriptor": {
+              "offset": 204638,
+              "name": " ",
+              "descriptor_offset": 204643,
+              "raw_descriptor": 4099,
+              "base": 3,
+              "modifier": 16,
+              "uninterpreted_flags": 0,
+              "array_count": 3,
+              "references": [],
+              "nested_descriptor": null,
+              "end": 204651
+            },
+            "end": 204651
+          }
+        ],
+        "opaque_16byte_entry_count": 0,
+        "opaque_entries_offset": 204655,
+        "opaque_entries_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "end": 204655
+      },
+      "added_2024_field_names": []
+    }
+  ],
+  "source_file": "singleDirectShape.rvt",
+  "source_sha256": "3b05630eb71230b567b891f7829a9a6326b435b002b99d571d3830790fe50431",
+  "actual_revit_version": 2015,
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "source_repository": "https://github.com/DynamoDS/DynamoRevit",
+  "source_commit": "49cd43c5c3b21271640ae043b8b77374e4796843",
+  "license": "Apache-2.0",
+  "legacy_declared_body_equation": "sum(body_bytes + 4) == declared_body_bytes",
+  "current_identity_routing_validated": false,
+  "native_application_acceptance": false
+}

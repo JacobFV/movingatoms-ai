@@ -1,0 +1,24 @@
+{
+  "source_sha256": "3b05630eb71230b567b891f7829a9a6326b435b002b99d571d3830790fe50431",
+  "actual_revit_version": 2015,
+  "stream": "Global/Latest",
+  "stored_sha256": "bc9e53a7f120e367cc9f3b4ea1b2e232c42479f32b1e637ecc6589d050f287a3",
+  "inflated_sha256": "fc9534b2afe0d516821ecd7c10a2cf058426aec85ca1504b9d058f1cc74fb510",
+  "decoded_bytes": 56836,
+  "excluded_trailing_zero_bytes": 4,
+  "objects": 422,
+  "source_exact_reencoding": true,
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "typed_ElementId_count": 7315,
+  "targets": [
+    308799,
+    308800
+  ],
+  "typed_hits": [],
+  "raw_int32_hits": {
+    "308800": [],
+    "308799": []
+  },
+  "category_tracking_entries": [],
+  "conclusion": "No instance Global tracker membership is established by this fixture when no matching serialized IDs occur. This does not prove no registration is required in2024."
+}

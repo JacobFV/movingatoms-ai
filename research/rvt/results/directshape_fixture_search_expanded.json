@@ -1,0 +1,180 @@
+{
+  "repositories": [
+    {
+      "repository": "Autodesk/revit-ifc",
+      "ref": "master",
+      "commit": "3d7195e808a3f6a2e5f81041ec1524b0b49ad3e8",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "Source/RevitIFCTools/IFC4_AllProjectParameters_2023.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "eda2351d9347e39ef6d47affdc9b9594b2eafbff",
+          "size": 6049792,
+          "url": "https://api.github.com/repos/Autodesk/revit-ifc/git/blobs/eda2351d9347e39ef6d47affdc9b9594b2eafbff"
+        }
+      ],
+      "license_paths": []
+    },
+    {
+      "repository": "jeremytammik/RoomVolumeDirectShape",
+      "ref": "master",
+      "commit": "57cb677cee5a530f13226faea361b114bda019e0",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "jeremytammik/DirectObjLoader",
+      "ref": "master",
+      "commit": "4f59c520fdcfeb75b0a847b0aac8d831ca2468a8",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "SpeckleWorks/Revit-Tests",
+      "ref": "master",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "repository": "DynamoDS/DynamoPrimerNew",
+      "ref": "master",
+      "commit": "388bb962bd38e3d77b747d0a84013a49c285e261",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "jeremytammik/StlImport",
+      "ref": "master",
+      "commit": "bf2fc260967c081899db8f75ccdbb9749f050f44",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "teocomi/OBJ-to-DirectShape",
+      "ref": "main",
+      "commit": "25d9db036f89bd4ecdb061f0ade6a344e075bca0",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "jeremytammik/SpotElevationTest",
+      "ref": "master",
+      "commit": "9c91116e6323dcad474022ce4611c1c1210eb3c7",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "test/VerySimpleStructuralModel.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "525b68480ea1ec1664ab843ee982e7d3bbd8b851",
+          "size": 3461120,
+          "url": "https://api.github.com/repos/jeremytammik/SpotElevationTest/git/blobs/525b68480ea1ec1664ab843ee982e7d3bbd8b851"
+        }
+      ],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "ADN-DevTech/aps-revit-ifc-exporter-appbundle",
+      "ref": "main",
+      "commit": "e19a7a43773a460467014c501da46f22a7ea4235",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "autodesk-platform-services/aps-revit.ifc.scheduler",
+      "ref": "main",
+      "commit": "7f48310c38a3077e9fb1954f55715160d2bfd9a5",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "repository": "yiskang/DA4R-revit-ifc-linker",
+      "ref": "main",
+      "commit": "2ebb548317edf258789ca7b462416dd38e224177",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    }
+  ],
+  "research_date": "2026-10-22",
+  "qualified_current_instance_found": false,
+  "archive_candidate": {
+    "repository": "DynamoDS/DynamoPrimerNew",
+    "revision": "388bb962bd38e3d77b747d0a84013a49c285e261",
+    "archive_path": ".gitbook/assets/Revit-Creating-DirectShape.zip",
+    "archive_sha256": "5b43c6fbe3a71a486fb7b3316710cc280b81c88413314cfc72a7cf8f56e7f143",
+    "model_member": "ARCH-DirectShape-BaseFile.rvt",
+    "model_sha256": "6e76a717f970333f417a59751354a3a43d68288cf4e0c9bcaa729d9b63ac41f2",
+    "license": "MIT",
+    "license_path": "LICENSE",
+    "license_sha256": "4f8429c9c2dafb7f29b752249dbbf873b560d7c8ddd9067a1f9ee90e82634f43",
+    "actual_revit_version": 2015,
+    "saved": "2015-07-23 14:16:30 UTC",
+    "disposition": "historical input exercise, no modern instance established"
+  },
+  "excluded_license_scope": [
+    {
+      "repository": "Autodesk/revit-ifc",
+      "fixture": "Source/RevitIFCTools/IFC4_AllProjectParameters_2023.rvt",
+      "reason": "README declares LGPLv2 project license; no permissive model-specific grant found; not downloaded."
+    }
+  ],
+  "supplemental_tree_checks": [
+    {
+      "repository": "magnetar-io/revit-test-datasets",
+      "revision": "fd755e18cec40ed016d06b082f420d796571fef1",
+      "rvt_paths": [
+        "Revit/2024_Core_Interior.rvt",
+        "Revit/Revit_IFC5_Einhoven.rvt"
+      ],
+      "result": "only already-audited fixtures"
+    },
+    {
+      "repository": "Drshelden/IFC-ECS",
+      "revision": "9e8b37175a0fba1397f7011aeee917fe52de7623",
+      "result": "only four already-audited RE1 models"
+    },
+    {
+      "repository": "mcneel/rhino.inside-revit",
+      "revision": "6f1ea41aba9630d0b5d61a405e5231fc96a9e2c0",
+      "result": "no archive path naming DirectShape; existing native paths documented in initial inventory"
+    }
+  ],
+  "web_queries": [
+    "\"ifc.rvt\" \"github.com\" \"2024\"",
+    "\"DirectShape\" \"test model\" \"github\"",
+    "\"DirectShape\" \".rvt\" \"Apache\"",
+    "\"DirectShape\" \".rvt\" \"license\""
+  ],
+  "limits": [
+    "Issue/forum attachments without model license not downloaded.",
+    "Repository search and tree inspection are bounded, not an exhaustive index of public model files.",
+    "No proprietary binaries or source were inspected."
+  ]
+}

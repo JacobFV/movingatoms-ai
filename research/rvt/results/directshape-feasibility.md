@@ -39,7 +39,11 @@ source body hashes, source fixture hash and minimal structural declarations.
 
 The103 graph contains GElement, GFilter, two GPolyMesh, GConditionInt and two
 FacetedTopology0 objects. FacetedTopology0 stores float32 vertex/normal triples
-and int32 triangle-index triples. One component has14 vertices and12 triangles;
+and signed int16 triangle-index triples. The measured `m_facetsArr`
+outer descriptor is base13/modifier0x50 (a vector); its nested descriptor is
+base3/modifier0x10/count3 (three signed16-bit integers). The pinned public
+reader maps base3 to `i16::from_le_bytes` in `src/native_parameters.rs:604`,
+matching the source-exact encoder's `<h` scalar encoding. One component has14 vertices and12 triangles;
 the other has4 vertices and2 triangles. These are open terrain components, not a
 measured closed DirectShape mesh. SiteSurface102 additionally needs terrain
 TriangulationDriver/Memento and ContourManager semantics.

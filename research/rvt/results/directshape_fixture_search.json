@@ -1,0 +1,1774 @@
+{
+  "repositories": [
+    {
+      "repository": "DynamoDS/DynamoRevit",
+      "ref": "Revit2024",
+      "commit": "c2dcaf5da0726b8643b6065815aa2c2c33d828b8",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "doc/distrib/Samples/Revit/DynamoSample_2014.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6ce1c511545255839417aa1b0e561be0510aa728",
+          "size": 5394432,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6ce1c511545255839417aa1b0e561be0510aa728"
+        },
+        {
+          "path": "doc/distrib/Samples/Revit/DynamoSample_2015.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a5940b3619317cc484ad9bfee5bdc3f0974ecff4",
+          "size": 6062080,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a5940b3619317cc484ad9bfee5bdc3f0974ecff4"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponent.0001.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "1afa4116355f3837d071a6ab528235a34c6fd072",
+          "size": 1646592,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/1afa4116355f3837d071a6ab528235a34c6fd072"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponent.0002.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2d593e2a8d2b28a4a7659731e285416b7b5b75e0",
+          "size": 1380352,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/2d593e2a8d2b28a4a7659731e285416b7b5b75e0"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponent.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6ec512f5e97b790501ed1a54b104a8fc8536b81c",
+          "size": 1523712,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6ec512f5e97b790501ed1a54b104a8fc8536b81c"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponentByCurve.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d01d983d52274bd6aa47f2810522ea831305f6d6",
+          "size": 860160,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d01d983d52274bd6aa47f2810522ea831305f6d6"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponentByFace.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6f93e2e8e81949e8f58cde996f2cbd14c19abd5f",
+          "size": 880640,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6f93e2e8e81949e8f58cde996f2cbd14c19abd5f"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponentsByParametersOnCurve.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "457b1cbd2b0e9c181c25c17c9f43cb8541f7886d",
+          "size": 552960,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/457b1cbd2b0e9c181c25c17c9f43cb8541f7886d"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponentsByPoints.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "087393780bdf59e537c09d20b26f868a13c79e2c",
+          "size": 446464,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/087393780bdf59e537c09d20b26f868a13c79e2c"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/AdaptiveComponentsByPointsOnFace.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "25fa3a33a0b4fc050126bc7a6c4af0495e5792ed",
+          "size": 548864,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/25fa3a33a0b4fc050126bc7a6c4af0495e5792ed"
+        },
+        {
+          "path": "test/System/AdaptiveComponent/surfaces.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6cfc925fda33e4a559c23222c7e7dd2fc59b2641",
+          "size": 4927488,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6cfc925fda33e4a559c23222c7e7dd2fc59b2641"
+        },
+        {
+          "path": "test/System/AdaptiveComponents.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "564c011b35f96558944b93d3980a961ab88291c1",
+          "size": 1523712,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/564c011b35f96558944b93d3980a961ab88291c1"
+        },
+        {
+          "path": "test/System/AnalysisDisplay/Surfaces.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c5f973c3c21d524c3542ee849ead605cdca7e5e1",
+          "size": 4927488,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/c5f973c3c21d524c3542ee849ead605cdca7e5e1"
+        },
+        {
+          "path": "test/System/Area/areaTests.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "26f86689f99cef8b56fcbae58f1bee9ccbf8cef5",
+          "size": 5697536,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/26f86689f99cef8b56fcbae58f1bee9ccbf8cef5"
+        },
+        {
+          "path": "test/System/Bugs/EleBindingTest_MAGN-7937.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d581b775fcf995733e8b1f556cb9add067a37aae",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d581b775fcf995733e8b1f556cb9add067a37aae"
+        },
+        {
+          "path": "test/System/Bugs/MAGN-122_wallsAndFloorsAndLevels.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a2c89c0c2d3e862a8d96f519bae8f251b6f415ea",
+          "size": 3198976,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a2c89c0c2d3e862a8d96f519bae8f251b6f415ea"
+        },
+        {
+          "path": "test/System/Bugs/MAGN-3620_topo.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "bc5fc3b1a0c294180de5ed52cc0f51da82f5abdf",
+          "size": 3198976,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/bc5fc3b1a0c294180de5ed52cc0f51da82f5abdf"
+        },
+        {
+          "path": "test/System/Bugs/MAGN-438_structuralFraming_simple.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b1c3f3573f0373ecb7d98d2e7c65c134287c3323",
+          "size": 5754880,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b1c3f3573f0373ecb7d98d2e7c65c134287c3323"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_2576_DataImport.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9568352efb9ab33f799fff49b54c6d2830f63319",
+          "size": 2162688,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/9568352efb9ab33f799fff49b54c6d2830f63319"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_2589.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5b4fbf01e61fcd3500c6a63563be2bc8d9964c1d",
+          "size": 2199552,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/5b4fbf01e61fcd3500c6a63563be2bc8d9964c1d"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_3408.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "655df1082bcec22d8216b1b8fbcf5ec4d6a33671",
+          "size": 3375104,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/655df1082bcec22d8216b1b8fbcf5ec4d6a33671"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_529_GetFamilyInstanceLocation.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a70f684c86e88f78630bd4f0c1f9e3905c97270d",
+          "size": 434176,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a70f684c86e88f78630bd4f0c1f9e3905c97270d"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_66.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b344aa1033a478bf13281af33ea99d620189c45c",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b344aa1033a478bf13281af33ea99d620189c45c"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_7977.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "018ea8ff4d45965bbeccd9350b2d55aaaf3a6ce2",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/018ea8ff4d45965bbeccd9350b2d55aaaf3a6ce2"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_8367.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b78b81e3d9faa8d0b4b2d992121bda3b5fdf84fd",
+          "size": 520192,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b78b81e3d9faa8d0b4b2d992121bda3b5fdf84fd"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_8407.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "455a1355b476d34a22e5fb9e7bbcc02445b14e74",
+          "size": 3338240,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/455a1355b476d34a22e5fb9e7bbcc02445b14e74"
+        },
+        {
+          "path": "test/System/Bugs/MAGN_9132.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5d009bac4950b656b308f14deea52a2e19081d68",
+          "size": 491520,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/5d009bac4950b656b308f14deea52a2e19081d68"
+        },
+        {
+          "path": "test/System/Bugs/StructuralFoundationTest.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2a38b03179211e7650da215c378e5895886a18d8",
+          "size": 3330048,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/2a38b03179211e7650da215c378e5895886a18d8"
+        },
+        {
+          "path": "test/System/Bugs/SurfaceNew.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d381091ca652a58c325d7dfef186058a324a5562",
+          "size": 344064,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d381091ca652a58c325d7dfef186058a324a5562"
+        },
+        {
+          "path": "test/System/CeilingType/CeilingType.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cd556728a6df0811f3decf6b7ec142056949e6a0",
+          "size": 5357568,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/cd556728a6df0811f3decf6b7ec142056949e6a0"
+        },
+        {
+          "path": "test/System/ColumnFamilyInstance.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "06ea18cac7f2a19c8b8c153c449b0bf3a85c6970",
+          "size": 3207168,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/06ea18cac7f2a19c8b8c153c449b0bf3a85c6970"
+        },
+        {
+          "path": "test/System/Curve/GetCurveDomain.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9a56037ded45068e8d925a3d982c699acfd01053",
+          "size": 442368,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/9a56037ded45068e8d925a3d982c699acfd01053"
+        },
+        {
+          "path": "test/System/Dimension/DimensionCreation.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "848dc928f3ae6c048d1802da7117e4799f3f5320",
+          "size": 5390336,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/848dc928f3ae6c048d1802da7117e4799f3f5320"
+        },
+        {
+          "path": "test/System/Dimension/dimensionTests.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b15e9365dc11e55b2001268f8e41297d5cc96520",
+          "size": 5701632,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b15e9365dc11e55b2001268f8e41297d5cc96520"
+        },
+        {
+          "path": "test/System/DirectShape/singleDirectShape.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c502fd22e53303c8065f13c7e533b9b44e790069",
+          "size": 5505024,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/c502fd22e53303c8065f13c7e533b9b44e790069"
+        },
+        {
+          "path": "test/System/Display/ModelCurveColor.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e36835057c790b364abdbf9e2aba99310d5613dd",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e36835057c790b364abdbf9e2aba99310d5613dd"
+        },
+        {
+          "path": "test/System/DividedCurve/DividedCurve.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "be51cf8316600fd5bc7d5514cac749a7d27189ce",
+          "size": 405504,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/be51cf8316600fd5bc7d5514cac749a7d27189ce"
+        },
+        {
+          "path": "test/System/DividedSurface/DividedSurface.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2eeba5ec89d783e404b1486f5bfb2cff535a10c7",
+          "size": 794624,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/2eeba5ec89d783e404b1486f5bfb2cff535a10c7"
+        },
+        {
+          "path": "test/System/Document/BIM360/4481adfb-0f03-4e58-9f49-8bd37dde9e0e.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "361952d9f554cfce2216aa91f7d6d210f0282efe",
+          "size": 5750784,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/361952d9f554cfce2216aa91f7d6d210f0282efe"
+        },
+        {
+          "path": "test/System/Document/CentralModel/Project1.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c55313beaa151c52be9ad570ae53c695e41b55c0",
+          "size": 7172096,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/c55313beaa151c52be9ad570ae53c695e41b55c0"
+        },
+        {
+          "path": "test/System/Document/DocumentPurgeUnusedTest.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "af3ba793b8c586d67be6e59f50bd0d56e6c62e7d",
+          "size": 1474560,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/af3ba793b8c586d67be6e59f50bd0d56e6c62e7d"
+        },
+        {
+          "path": "test/System/Document/LocalModel/Project1_LocalFile.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c519ff7409db9671056a8b09a3e56fe9f82bdd96",
+          "size": 5750784,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/c519ff7409db9671056a8b09a3e56fe9f82bdd96"
+        },
+        {
+          "path": "test/System/Element/elementComponents.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "eaa3faef5a291d7828410a6a76e48adc9348e0dc",
+          "size": 6426624,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/eaa3faef5a291d7828410a6a76e48adc9348e0dc"
+        },
+        {
+          "path": "test/System/Element/elementIntersection.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d6cfbc5a519ff9b107917610b335993e0ade4367",
+          "size": 5713920,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d6cfbc5a519ff9b107917610b335993e0ade4367"
+        },
+        {
+          "path": "test/System/Element/elementJoin.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a773a78b8714b4c66e8f13ec6082ed77c73d87f4",
+          "size": 3624960,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a773a78b8714b4c66e8f13ec6082ed77c73d87f4"
+        },
+        {
+          "path": "test/System/Element/elementPinned.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "288ac22a66f6c5a87b0d50e9fe9854f75c233fe5",
+          "size": 3457024,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/288ac22a66f6c5a87b0d50e9fe9854f75c233fe5"
+        },
+        {
+          "path": "test/System/Element/elementTransform.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "8a24c1e8df9b44e72ffddcac539a9f63d8ab3ee1",
+          "size": 5816320,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/8a24c1e8df9b44e72ffddcac539a9f63d8ab3ee1"
+        },
+        {
+          "path": "test/System/Element/hostedElements.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "39f7a5d5ce9761885a5e1cfd29e447b187c04650",
+          "size": 3190784,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/39f7a5d5ce9761885a5e1cfd29e447b187c04650"
+        },
+        {
+          "path": "test/System/ElementBinding/BindingCloseReopen.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "71536ea568a0a0e7bf3959638e507b3687fe9fb0",
+          "size": 3231744,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/71536ea568a0a0e7bf3959638e507b3687fe9fb0"
+        },
+        {
+          "path": "test/System/ElementBinding/CreateWallInDynamo.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e085e4ecc366e99c3446986f32533d060caf1bf0",
+          "size": 3186688,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e085e4ecc366e99c3446986f32533d060caf1bf0"
+        },
+        {
+          "path": "test/System/ElementBinding/DynamoSample.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "be4684f02d194e0ce6609295e3860947439f0d02",
+          "size": 6041600,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/be4684f02d194e0ce6609295e3860947439f0d02"
+        },
+        {
+          "path": "test/System/ElementBinding/FamilyInstancePlacementByFace.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cbd43d0930899cbe6611fca5acb24d517b92533b",
+          "size": 3276800,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/cbd43d0930899cbe6611fca5acb24d517b92533b"
+        },
+        {
+          "path": "test/System/ElementBinding/MultipleCustomInstance.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a79bd303d29f85502870b7473d019b128af85903",
+          "size": 3584000,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a79bd303d29f85502870b7473d019b128af85903"
+        },
+        {
+          "path": "test/System/ElementBinding/RebindingMultiDimension.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b77f011c2c0cb724cf47a959eb50203210d13a0a",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b77f011c2c0cb724cf47a959eb50203210d13a0a"
+        },
+        {
+          "path": "test/System/ElementBinding/RebindingSingleDimension.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e70aaa926d02ee9f8b3c8097c6036fd1f301a955",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e70aaa926d02ee9f8b3c8097c6036fd1f301a955"
+        },
+        {
+          "path": "test/System/ElementBinding/magn-2523.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e4f3a5352e7b2caa4d636c311b03218624d8f8dc",
+          "size": 442368,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e4f3a5352e7b2caa4d636c311b03218624d8f8dc"
+        },
+        {
+          "path": "test/System/ElevationMarker/elevationMarkerTests.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4bbea1e47225b3d7cbac683560a6ae97c97a0a4d",
+          "size": 5705728,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4bbea1e47225b3d7cbac683560a6ae97c97a0a4d"
+        },
+        {
+          "path": "test/System/EllipseArc.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "55923488062af09d157927c09ed8551ec6cd64c0",
+          "size": 565248,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/55923488062af09d157927c09ed8551ec6cd64c0"
+        },
+        {
+          "path": "test/System/Empty-Metric.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "db59cf230113097e463cd4405e422add88787f34",
+          "size": 327680,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/db59cf230113097e463cd4405e422add88787f34"
+        },
+        {
+          "path": "test/System/Face/FaceDomains.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "589faf0bd29264012a1654f333e16cfeed23453e",
+          "size": 872448,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/589faf0bd29264012a1654f333e16cfeed23453e"
+        },
+        {
+          "path": "test/System/Face/GetSurfaceDomain.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "0dab75aaf5be9651cb0ee4c95680f2a55dce1a5c",
+          "size": 4927488,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/0dab75aaf5be9651cb0ee4c95680f2a55dce1a5c"
+        },
+        {
+          "path": "test/System/Family/AC_locationInDividedSurface.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "69a5aa9728c4195db39921d6bc77111d5cffb887",
+          "size": 790528,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/69a5aa9728c4195db39921d6bc77111d5cffb887"
+        },
+        {
+          "path": "test/System/Family/AC_locationStandAlone.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4ac394882af1e6dc657aca7faeb0bd799500fc3d",
+          "size": 761856,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4ac394882af1e6dc657aca7faeb0bd799500fc3d"
+        },
+        {
+          "path": "test/System/Family/AC_placementPoints.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b75517187f7e8827e7dcbb50868b8cf3de6f9322",
+          "size": 794624,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b75517187f7e8827e7dcbb50868b8cf3de6f9322"
+        },
+        {
+          "path": "test/System/Family/FamilyInstancePlacementByFace.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4e9670e733ab0ddf8a16519948303bb39561ce82",
+          "size": 3297280,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4e9670e733ab0ddf8a16519948303bb39561ce82"
+        },
+        {
+          "path": "test/System/Family/GetFamilyInstanceLocation.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "46bb8e695a9cc46ff1d25f49cf0dc4c88d2d3a11",
+          "size": 6217728,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/46bb8e695a9cc46ff1d25f49cf0dc4c88d2d3a11"
+        },
+        {
+          "path": "test/System/Family/GetFamilyInstancesByType.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "ffb1b776f69263c28f3c045d486b37b44c71fd23",
+          "size": 6217728,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/ffb1b776f69263c28f3c045d486b37b44c71fd23"
+        },
+        {
+          "path": "test/System/Family/SetFamilyInstanceRotation.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6de2414cb7379a820207d76854289eec6a4bd407",
+          "size": 3375104,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6de2414cb7379a820207d76854289eec6a4bd407"
+        },
+        {
+          "path": "test/System/FamilyDocument/familyDocumentTests.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "11b40acdc832ab59b1ecb55e51984c96807f5453",
+          "size": 720896,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/11b40acdc832ab59b1ecb55e51984c96807f5453"
+        },
+        {
+          "path": "test/System/FamilyInstance/familyInstanceTests.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "ba4427c08b2bf8a225943650b01bd606fd830cd9",
+          "size": 5734400,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/ba4427c08b2bf8a225943650b01bd606fd830cd9"
+        },
+        {
+          "path": "test/System/FloorType/FloorType.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "657de3c6c9e7c8fdd3a2e401914cc821d66b1ed7",
+          "size": 5693440,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/657de3c6c9e7c8fdd3a2e401914cc821d66b1ed7"
+        },
+        {
+          "path": "test/System/Geometry/GeometryCalibration.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "8eeaf6cb41e58a3ea74a7d2d4dba44c7d6382530",
+          "size": 5521408,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/8eeaf6cb41e58a3ea74a7d2d4dba44c7d6382530"
+        },
+        {
+          "path": "test/System/GetCurvesFromFamilyInstance.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5d2223c94fa3c0b7399c4950f7198c09b37addb7",
+          "size": 434176,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/5d2223c94fa3c0b7399c4950f7198c09b37addb7"
+        },
+        {
+          "path": "test/System/Group/GroupTest.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "92c5a057ef917211d980eb2a2078783eacfc301d",
+          "size": 5771264,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/92c5a057ef917211d980eb2a2078783eacfc301d"
+        },
+        {
+          "path": "test/System/ImportInstance/ImportInstanceFromSelectModelElement.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c1e255a21196038dc8646222f372494bf3ccaba8",
+          "size": 3493888,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/c1e255a21196038dc8646222f372494bf3ccaba8"
+        },
+        {
+          "path": "test/System/InPlaceMass.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "273485f36f7acc8c840727719d52bb2677682ec8",
+          "size": 3211264,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/273485f36f7acc8c840727719d52bb2677682ec8"
+        },
+        {
+          "path": "test/System/Intersect/CurveCurveIntersection.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "78c7b0627943ec2b8e75d0b0d2088adc4b1f3eb9",
+          "size": 774144,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/78c7b0627943ec2b8e75d0b0d2088adc4b1f3eb9"
+        },
+        {
+          "path": "test/System/Intersect/CurveFaceIntersection.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "880a59eac6179e89d59a97d88466713b4fe06342",
+          "size": 798720,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/880a59eac6179e89d59a97d88466713b4fe06342"
+        },
+        {
+          "path": "test/System/Intersect/EdgePlaneIntersection.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a30aadb9a6f3f67ae97f3d177deab1040faf6bb8",
+          "size": 446464,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a30aadb9a6f3f67ae97f3d177deab1040faf6bb8"
+        },
+        {
+          "path": "test/System/Intersect/FaceFaceIntersection.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9c607512888687bfd6c7beebbd1fa2e808ac46e3",
+          "size": 798720,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/9c607512888687bfd6c7beebbd1fa2e808ac46e3"
+        },
+        {
+          "path": "test/System/Level/Level.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a9aa0d53e7ddc7a1117ab42cae3a29a46607886d",
+          "size": 3186688,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a9aa0d53e7ddc7a1117ab42cae3a29a46607886d"
+        },
+        {
+          "path": "test/System/MassWithBoxAndCone.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "20bf0b694cae81bc2c5514aa5f27bc2cffc9b00c",
+          "size": 552960,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/20bf0b694cae81bc2c5514aa5f27bc2cffc9b00c"
+        },
+        {
+          "path": "test/System/Material/GetMaterialByName.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e88ab28d63f964cf6c5b28332ae50825b5e4db6d",
+          "size": 540672,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e88ab28d63f964cf6c5b28332ae50825b5e4db6d"
+        },
+        {
+          "path": "test/System/MaterialsManager/DuplicatedMaterialsNoDynamoMaterials.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "25b4400fca01353e00f30ce030db0eb8bb4b7028",
+          "size": 3338240,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/25b4400fca01353e00f30ce030db0eb8bb4b7028"
+        },
+        {
+          "path": "test/System/MaterialsManager/DuplicatedMaterialsWithDynamoMaterials.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cd11018edd4eaf8e345cb40ff0297aab69ca1dbd",
+          "size": 3338240,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/cd11018edd4eaf8e345cb40ff0297aab69ca1dbd"
+        },
+        {
+          "path": "test/System/ModelText/ModelText.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4b8a7db1d70b65e1b62c1eec41432b46b879678e",
+          "size": 344064,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4b8a7db1d70b65e1b62c1eec41432b46b879678e"
+        },
+        {
+          "path": "test/System/MoreSolids.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "74ed6f5aebb96662ed79c0293c426f69c960327a",
+          "size": 438272,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/74ed6f5aebb96662ed79c0293c426f69c960327a"
+        },
+        {
+          "path": "test/System/PathOfTravel/PathOfTravelsAndWayPoints.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "bb40076ea708ef3a12ea7aeef61481a47c2b83d2",
+          "size": 5361664,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/bb40076ea708ef3a12ea7aeef61481a47c2b83d2"
+        },
+        {
+          "path": "test/System/PathOfTravel/RoomsAndExits.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e4eecc1b263cc6e5d14368201898ad0de64ee568",
+          "size": 5402624,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e4eecc1b263cc6e5d14368201898ad0de64ee568"
+        },
+        {
+          "path": "test/System/Python/unwrapElement.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "7b31662fb3d639f79fefa98bbea6b4da02f9d072",
+          "size": 454656,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/7b31662fb3d639f79fefa98bbea6b4da02f9d072"
+        },
+        {
+          "path": "test/System/RayBounce/RayBounce.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "7321ef77260ced50fbf8f683fa03650a346f15ee",
+          "size": 3350528,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/7321ef77260ced50fbf8f683fa03650a346f15ee"
+        },
+        {
+          "path": "test/System/RayBounce/SunStudy.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4a465e3f131dc75f5d33f0f758dff6e87907973c",
+          "size": 3317760,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4a465e3f131dc75f5d33f0f758dff6e87907973c"
+        },
+        {
+          "path": "test/System/ReferencePlane/ReferencePlane.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "494a75a5a61bdaa8a911c2a93b4bb4cbc8c608ae",
+          "size": 344064,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/494a75a5a61bdaa8a911c2a93b4bb4cbc8c608ae"
+        },
+        {
+          "path": "test/System/Revolve.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "ed50aa9706c1c8c7e787031de76754dbe9482076",
+          "size": 577536,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/ed50aa9706c1c8c7e787031de76754dbe9482076"
+        },
+        {
+          "path": "test/System/RoofType/RoofType.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "31a5903579ad54630c019603a29f063fb5b2254c",
+          "size": 5689344,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/31a5903579ad54630c019603a29f063fb5b2254c"
+        },
+        {
+          "path": "test/System/Room_Properties.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "59e937fa724017937599d19bf241ceeca6320a36",
+          "size": 1347584,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/59e937fa724017937599d19bf241ceeca6320a36"
+        },
+        {
+          "path": "test/System/SampleModel.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "78b2ca19b674abc18a3957922626dca881b335b3",
+          "size": 16592896,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/78b2ca19b674abc18a3957922626dca881b335b3"
+        },
+        {
+          "path": "test/System/Samples/AllCurves.0007.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "187726416f2c20edf7f82987c1aa007e902d88fe",
+          "size": 2052096,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/187726416f2c20edf7f82987c1aa007e902d88fe"
+        },
+        {
+          "path": "test/System/Samples/AllCurves.0008.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6b6a4ddd9a90900fedc5fdcfff275674788f35ef",
+          "size": 2052096,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6b6a4ddd9a90900fedc5fdcfff275674788f35ef"
+        },
+        {
+          "path": "test/System/Samples/AllCurves.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "972ab05e6efd256874b5faa3aff6f9c07e0af254",
+          "size": 2011136,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/972ab05e6efd256874b5faa3aff6f9c07e0af254"
+        },
+        {
+          "path": "test/System/Samples/DivideSelectedCurve.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "20e01f2b228c3bb21b51face89ece49799cb667a",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/20e01f2b228c3bb21b51face89ece49799cb667a"
+        },
+        {
+          "path": "test/System/Samples/IndexedFamilyInstances.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "086810ef3c1d033b1f68025d6de0f99c915dc413",
+          "size": 1585152,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/086810ef3c1d033b1f68025d6de0f99c915dc413"
+        },
+        {
+          "path": "test/System/Samples/instparam.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "7fd77458f25560af0fe4f5d22b2d1e81d888a6d3",
+          "size": 1708032,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/7fd77458f25560af0fe4f5d22b2d1e81d888a6d3"
+        },
+        {
+          "path": "test/System/Samples/instparammassfamilies.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "ddab6b1a91ed090016dff5578265c141dc2d4d15",
+          "size": 1736704,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/ddab6b1a91ed090016dff5578265c141dc2d4d15"
+        },
+        {
+          "path": "test/System/Samples/tesselation.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d85e0c13120ff363c36d0e7ed79d35da2ff452eb",
+          "size": 724992,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d85e0c13120ff363c36d0e7ed79d35da2ff452eb"
+        },
+        {
+          "path": "test/System/ScheduleOnSheet/scheduleonsheet.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "15d2aa0c2148f84c52d6cf42d429cc8d7bc7e719",
+          "size": 6193152,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/15d2aa0c2148f84c52d6cf42d429cc8d7bc7e719"
+        },
+        {
+          "path": "test/System/Selection/DynamoSample.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a664b9a599595b142a609d5166e0df8bb4160a8f",
+          "size": 6000640,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a664b9a599595b142a609d5166e0df8bb4160a8f"
+        },
+        {
+          "path": "test/System/Selection/Selection.0001.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4b1ff2ae28d683ddc01d8ba8ca08b9f9e5a8f61f",
+          "size": 782336,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4b1ff2ae28d683ddc01d8ba8ca08b9f9e5a8f61f"
+        },
+        {
+          "path": "test/System/Selection/Selection.0002.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "bb04957a216d4fde05c5e2384ffc3b95395e9653",
+          "size": 860160,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/bb04957a216d4fde05c5e2384ffc3b95395e9653"
+        },
+        {
+          "path": "test/System/Selection/Selection.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d723366072e8fe8e5b48270f7b3221cdf293c204",
+          "size": 966656,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d723366072e8fe8e5b48270f7b3221cdf293c204"
+        },
+        {
+          "path": "test/System/Selection/SelectionSync.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "38dab5ad2ec4af6ddb2be946492a7fdccc7f37d7",
+          "size": 3198976,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/38dab5ad2ec4af6ddb2be946492a7fdccc7f37d7"
+        },
+        {
+          "path": "test/System/SiteLocation/SiteLocation.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e38f585296df906e1641ffb8962563839ed7ff80",
+          "size": 3186688,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e38f585296df906e1641ffb8962563839ed7ff80"
+        },
+        {
+          "path": "test/System/Solids.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e64afcc7fb68b54eadc4d24275732279a1b95109",
+          "size": 8163328,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e64afcc7fb68b54eadc4d24275732279a1b95109"
+        },
+        {
+          "path": "test/System/Space/spaceTest.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "0921edeb2a428ae6eac62861fb7ae399eea4eacd",
+          "size": 5787648,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/0921edeb2a428ae6eac62861fb7ae399eea4eacd"
+        },
+        {
+          "path": "test/System/StructuralFraming/StructuralFraming.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "8123ac4c5afcc9a302e303fe6ed4d06da8376f04",
+          "size": 3411968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/8123ac4c5afcc9a302e303fe6ed4d06da8376f04"
+        },
+        {
+          "path": "test/System/StructuralFramingLocationTest.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b9df66c084da3954d486352100a83ad41b416090",
+          "size": 5808128,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b9df66c084da3954d486352100a83ad41b416090"
+        },
+        {
+          "path": "test/System/SunSettings/SunSettings.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "573f12535e476d2f31afdd55ec2b2ad3d66c4e68",
+          "size": 3194880,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/573f12535e476d2f31afdd55ec2b2ad3d66c4e68"
+        },
+        {
+          "path": "test/System/Topography/Topography.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "dffca3b7461f744cbb0c413c002a911995bcce3d",
+          "size": 3473408,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/dffca3b7461f744cbb0c413c002a911995bcce3d"
+        },
+        {
+          "path": "test/System/UnknownElements.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a966029c2bc397b4e28c66335cadbe231a46fdac",
+          "size": 3293184,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a966029c2bc397b4e28c66335cadbe231a46fdac"
+        },
+        {
+          "path": "test/System/View/AxonometricView.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fc525cfc08780608e1d29122f7818dbac1077981",
+          "size": 344064,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/fc525cfc08780608e1d29122f7818dbac1077981"
+        },
+        {
+          "path": "test/System/View/Legend.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9f4270674ca36083699fe9b24ec0646a2c239ca9",
+          "size": 3567616,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/9f4270674ca36083699fe9b24ec0646a2c239ca9"
+        },
+        {
+          "path": "test/System/View/OverrideElementColorInView.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e8e8ea1d79e8dd67748aa3f503842fbf105ded02",
+          "size": 6279168,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e8e8ea1d79e8dd67748aa3f503842fbf105ded02"
+        },
+        {
+          "path": "test/System/View/PerspectiveView.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "86f9975866334ea97a49c013c1a1cb7643241759",
+          "size": 344064,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/86f9975866334ea97a49c013c1a1cb7643241759"
+        },
+        {
+          "path": "test/System/View/ViewSheet.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d6e4459bbed0586364c547b9ef8681b89ca39d44",
+          "size": 4927488,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d6e4459bbed0586364c547b9ef8681b89ca39d44"
+        },
+        {
+          "path": "test/System/Viewport/viewportTests.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "7eb4102ad9c1024fd7f36c85887e89c45d06363a",
+          "size": 6197248,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/7eb4102ad9c1024fd7f36c85887e89c45d06363a"
+        },
+        {
+          "path": "test/System/Workflow/CodeBlocksReference/panelProject.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "06c9007bd32d66da3c1766f2bb2bae7c71fb1e44",
+          "size": 4067328,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/06c9007bd32d66da3c1766f2bb2bae7c71fb1e44"
+        },
+        {
+          "path": "test/System/Workflow/CodeBlocksReference/quad.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f1dc77cd3b01019ee8c210f746e62c40252c55f8",
+          "size": 319488,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/f1dc77cd3b01019ee8c210f746e62c40252c55f8"
+        },
+        {
+          "path": "test/System/Workflow/Definitions/Panels.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6add4300bc5b4115e4bfe6be1c6ea61b911fbbfe",
+          "size": 4685824,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6add4300bc5b4115e4bfe6be1c6ea61b911fbbfe"
+        },
+        {
+          "path": "test/System/Workflow/DynamoRevit/DynamoSample.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "01a435d52addc135fcb7aa8f30b736898aa50cdd",
+          "size": 6000640,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/01a435d52addc135fcb7aa8f30b736898aa50cdd"
+        },
+        {
+          "path": "test/System/Workflow/Lists and Structural Framing/RevitProject.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9d962bf7f9123d49b1b55adaba2bab52fc2dc1e7",
+          "size": 3231744,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/9d962bf7f9123d49b1b55adaba2bab52fc2dc1e7"
+        },
+        {
+          "path": "test/System/Workflow/Lists and Structural Framing/RoofSurface.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "75de0a9f9ddc506889573edfe3798cbdbe39cdb9",
+          "size": 344064,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/75de0a9f9ddc506889573edfe3798cbdbe39cdb9"
+        },
+        {
+          "path": "test/System/Workflow/Lists and Structural Framing/Structure.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "99d7fbaf190e09183d42f21841eff71101a38423",
+          "size": 4276224,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/99d7fbaf190e09183d42f21841eff71101a38423"
+        },
+        {
+          "path": "test/System/Workflow/PerforatedScreenByImage/PanelWall.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a1d9344c50d6e9a94c92b8cc6c6e5af01ef0c181",
+          "size": 3788800,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/a1d9344c50d6e9a94c92b8cc6c6e5af01ef0c181"
+        },
+        {
+          "path": "test/System/Workflow/Python/HostedObjectStuff_Sample.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "64759176cdf8e04260055363a3832170019f712e",
+          "size": 1417216,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/64759176cdf8e04260055363a3832170019f712e"
+        },
+        {
+          "path": "test/System/Workflow/RevitProject/deflectionPanel.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2fbcd806d4bc36b1909a94fe99f28a0dd11eea2d",
+          "size": 253952,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/2fbcd806d4bc36b1909a94fe99f28a0dd11eea2d"
+        },
+        {
+          "path": "test/System/Workflow/RevitProject/tower.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c87394e671b09fa579f131f1d5c4626f53333ce7",
+          "size": 4489216,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/c87394e671b09fa579f131f1d5c4626f53333ce7"
+        },
+        {
+          "path": "test/System/Workflow/Vignette/Vignette-02.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "519d1e0b5138908ae2a8fe1fed492455a2af8257",
+          "size": 10047488,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/519d1e0b5138908ae2a8fe1fed492455a2af8257"
+        },
+        {
+          "path": "test/System/Workflow/Vignette/Vignette-04-BaseFile.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "12374e0695a9b7a85df645c4b0591f5cdcf6807b",
+          "size": 21463040,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/12374e0695a9b7a85df645c4b0591f5cdcf6807b"
+        },
+        {
+          "path": "test/System/Workflow/curve.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cc3c4d7d421cb38cecb9da4cc34a07da1951e97b",
+          "size": 5816320,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/cc3c4d7d421cb38cecb9da4cc34a07da1951e97b"
+        },
+        {
+          "path": "test/System/block.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "8f69816afb39c1e6e416cfe82972eac954991cbb",
+          "size": 561152,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/8f69816afb39c1e6e416cfe82972eac954991cbb"
+        },
+        {
+          "path": "test/System/blockAlone.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e885b3a3a9cf8a16c4a7d572588aefc8d310ed07",
+          "size": 561152,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e885b3a3a9cf8a16c4a7d572588aefc8d310ed07"
+        },
+        {
+          "path": "test/System/cutWalls.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f69bca5f30417507cf19a1ce8f436af98d1a44e8",
+          "size": 3465216,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/f69bca5f30417507cf19a1ce8f436af98d1a44e8"
+        },
+        {
+          "path": "test/System/element.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6297672d975f5a181d3c540af8c47c839f1eaa8d",
+          "size": 3227648,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6297672d975f5a181d3c540af8c47c839f1eaa8d"
+        },
+        {
+          "path": "test/System/elementSharedParameters.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "ee2b06125cf7a1b51e1733222a73621da16c769f",
+          "size": 3227648,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/ee2b06125cf7a1b51e1733222a73621da16c769f"
+        },
+        {
+          "path": "test/System/empty.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "dbbe936e39d5564dc1c0928a3ef2e02784320df5",
+          "size": 442368,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/dbbe936e39d5564dc1c0928a3ef2e02784320df5"
+        },
+        {
+          "path": "test/System/empty.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "3a1cf9d2a7415abe473bf2f3024899c400cb66e7",
+          "size": 3198976,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/3a1cf9d2a7415abe473bf2f3024899c400cb66e7"
+        },
+        {
+          "path": "test/System/empty1.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d9488c305b0efca534ec5b059f503ece2a939d29",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d9488c305b0efca534ec5b059f503ece2a939d29"
+        },
+        {
+          "path": "test/System/empty2013.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d4ba60467c4a105437cb89dc62e7adcc3437791f",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/d4ba60467c4a105437cb89dc62e7adcc3437791f"
+        },
+        {
+          "path": "test/System/empty2013A.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "684519235060e5af7ea98b7851893f079f7a24fa",
+          "size": 335872,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/684519235060e5af7ea98b7851893f079f7a24fa"
+        },
+        {
+          "path": "test/System/emptyAnnotativeView.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6b68121dae214fd45dc334a4e130bf18a0b1b4cd",
+          "size": 3325952,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/6b68121dae214fd45dc334a4e130bf18a0b1b4cd"
+        },
+        {
+          "path": "test/System/emptyS.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "60ffa26034abbf837829a770280092ff899bb52a",
+          "size": 5902336,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/60ffa26034abbf837829a770280092ff899bb52a"
+        },
+        {
+          "path": "test/System/emptyV.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5b35e7a09035517c4aed649d15d531c5af19456a",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/5b35e7a09035517c4aed649d15d531c5af19456a"
+        },
+        {
+          "path": "test/System/emptyV1.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "22e022be91dd9df42f9b091d6053366f5ec8b657",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/22e022be91dd9df42f9b091d6053366f5ec8b657"
+        },
+        {
+          "path": "test/System/familyWithNonSharedAdaptiveComponent.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "7bca1e9df04880cbd926b5bb0733341657fe5fea",
+          "size": 425984,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/7bca1e9df04880cbd926b5bb0733341657fe5fea"
+        },
+        {
+          "path": "test/System/importInstance.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "8b0430af15f04dd47d4db6837668ee85d011e40b",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/8b0430af15f04dd47d4db6837668ee85d011e40b"
+        },
+        {
+          "path": "test/System/materials.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "51fe2b4848a8e91b4ccdfe0e6a519dc448028ec0",
+          "size": 3223552,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/51fe2b4848a8e91b4ccdfe0e6a519dc448028ec0"
+        },
+        {
+          "path": "test/System/modelLines.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "7b27d2cf8b6a0757f574a7c4b97bee08e3f13b9b",
+          "size": 442368,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/7b27d2cf8b6a0757f574a7c4b97bee08e3f13b9b"
+        },
+        {
+          "path": "test/System/model_with_box.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b58c6c2bf20fab1cecd3125ab1c30bee12205acf",
+          "size": 3272704,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/b58c6c2bf20fab1cecd3125ab1c30bee12205acf"
+        },
+        {
+          "path": "test/System/nonSharedAdaptiveComponent.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e9ba52a9176f717a8cfc595c3b6413ad8b9b299a",
+          "size": 307200,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/e9ba52a9176f717a8cfc595c3b6413ad8b9b299a"
+        },
+        {
+          "path": "test/System/projectWithNestedNonSharedAdaptiveComponent.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "977586aef34d94e1b7cc9d0615bf62783f221f99",
+          "size": 3411968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/977586aef34d94e1b7cc9d0615bf62783f221f99"
+        },
+        {
+          "path": "test/System/regression/BasicRegressionTest/BasicRegressionTest.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "44f8e12fe58719ff9aedf9159984458c8f34eb2a",
+          "size": 339968,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/44f8e12fe58719ff9aedf9159984458c8f34eb2a"
+        },
+        {
+          "path": "test/System/regression/MAGN-3203/MAGN-3203.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "3166b8b6e2cd92c41ea17b589e0042c8cc40a987",
+          "size": 1941504,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/3166b8b6e2cd92c41ea17b589e0042c8cc40a987"
+        },
+        {
+          "path": "test/System/regression/MAGN-3488/MAGN-3488.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "3117a96adda823f31f4a9590b9a2cf093d5f784e",
+          "size": 1736704,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/3117a96adda823f31f4a9590b9a2cf093d5f784e"
+        },
+        {
+          "path": "test/System/regression/MAGN-3489/MAGN-3489.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "82cb9eb4516845015c67012a0398d5d3aeeffe51",
+          "size": 2011136,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/82cb9eb4516845015c67012a0398d5d3aeeffe51"
+        },
+        {
+          "path": "test/System/shell.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4f4697dac2c69c9332a7cd5f9cbc2063b256b384",
+          "size": 897024,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/4f4697dac2c69c9332a7cd5f9cbc2063b256b384"
+        },
+        {
+          "path": "test/System/topography.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cf31b0edcd2eddb86678f028528a6c0496a98675",
+          "size": 4395008,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/cf31b0edcd2eddb86678f028528a6c0496a98675"
+        },
+        {
+          "path": "test/System/withModelText.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "41f2c650d8bc3de69397466f6f8491166d276895",
+          "size": 294912,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/41f2c650d8bc3de69397466f6f8491166d276895"
+        },
+        {
+          "path": "test/revit/Family/GetCurvesFromFamilyInstance.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "66b177e7a15e55be0f3fc37314f3f177a3c12561",
+          "size": 360448,
+          "url": "https://api.github.com/repos/DynamoDS/DynamoRevit/git/blobs/66b177e7a15e55be0f3fc37314f3f177a3c12561"
+        }
+      ],
+      "license_paths": []
+    },
+    {
+      "repository": "specklesystems/speckle-sharp",
+      "ref": "main",
+      "commit": "e4bb61df9b4756223ce67f0b5e0c32646d9c106e",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "ConnectorArchicad/LICENSE",
+        "Core/LICENSE",
+        "LICENSE",
+        "Objects/Converters/ConverterDynamo/LICENSE",
+        "Objects/Converters/ConverterRevit/LICENSE",
+        "Objects/Converters/ConverterRhinoGh/LICENSE"
+      ]
+    },
+    {
+      "repository": "mcneel/rhino.inside-revit",
+      "ref": "1.x",
+      "commit": "6f1ea41aba9630d0b5d61a405e5231fc96a9e2c0",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "docs/static/src/gh-screencaps/revit-curtainwall-byprofile_v21.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "b7a4a228b694edfce6e24ab10c144bbd67ad30bb",
+          "size": 10010624,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/b7a4a228b694edfce6e24ab10c144bbd67ad30bb"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-curtainwalls_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "1a24241994203e829efb4c062263946e1871d8d0",
+          "size": 1011712,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/1a24241994203e829efb4c062263946e1871d8d0"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-designopts_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "fe05abc63b0358f0687f811c173562eaf633fef3",
+          "size": 352256,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/fe05abc63b0358f0687f811c173562eaf633fef3"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-docs_v20_family.rfa",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "cc39cd04505906cf0a76b292dfed607c5c19782b",
+          "size": 356352,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/cc39cd04505906cf0a76b292dfed607c5c19782b"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-docs_v20_project.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "e29386175e9457139b076200cf6e7170d9846986",
+          "size": 516096,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/e29386175e9457139b076200cf6e7170d9846986"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-docs_v20_project_ws.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "9fae7926e86b59d4d820530b60e8005fc83f2cb3",
+          "size": 528384,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/9fae7926e86b59d4d820530b60e8005fc83f2cb3"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-elements_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "710af954b648be7810edc51b30e3205768198fcc",
+          "size": 761856,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/710af954b648be7810edc51b30e3205768198fcc"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-links_v20_host.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "51c78fdc961ae920ccfb3bd4e51a8c2c53740fcf",
+          "size": 372736,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/51c78fdc961ae920ccfb3bd4e51a8c2c53740fcf"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-links_v20_linked 1.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "dc23c3fc846b16d045e508f1e9631845b7a151c4",
+          "size": 372736,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/dc23c3fc846b16d045e508f1e9631845b7a151c4"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-links_v20_linked 2.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "fc8dec2f9f2522d5c3debc758965c1878d8fc04f",
+          "size": 364544,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/fc8dec2f9f2522d5c3debc758965c1878d8fc04f"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-materials_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "5bcc19a342dad1ebf6391904892b8df760984ba4",
+          "size": 364544,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/5bcc19a342dad1ebf6391904892b8df760984ba4"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-openings_v22.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "949efbcbbdf38302299821cb88004bb333b84f29",
+          "size": 565248,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/949efbcbbdf38302299821cb88004bb333b84f29"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-params_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "63d6ee7b6d5d1139f339aaeb952fc0737cb68beb",
+          "size": 368640,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/63d6ee7b6d5d1139f339aaeb952fc0737cb68beb"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-psettings_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "63dd5c120031ae231ea1a1195c5a830109bcccaa",
+          "size": 413696,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/63dd5c120031ae231ea1a1195c5a830109bcccaa"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/revit-walls_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "23a9c3bd3c9ba5d5651c4da14b057fe3b7b884f1",
+          "size": 425984,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/23a9c3bd3c9ba5d5651c4da14b057fe3b7b884f1"
+        },
+        {
+          "path": "docs/static/src/gh-screencaps/rir-grasshopper_v20.rvt",
+          "mode": "100755",
+          "type": "blob",
+          "sha": "74e2ad102e68488f53a6d5966c28dc35613ba19c",
+          "size": 598016,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/74e2ad102e68488f53a6d5966c28dc35613ba19c"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2018/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "ecc529464064e02cedc25be89ed707fff97ed647",
+          "size": 458752,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/ecc529464064e02cedc25be89ed707fff97ed647"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2019/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "1efd49e46cdf055dd8138914ffaf0436f962cadd",
+          "size": 466944,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/1efd49e46cdf055dd8138914ffaf0436f962cadd"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2020/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d4704ecdf88830f3fb96a2ffd83afc0fddbf26d3",
+          "size": 479232,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/d4704ecdf88830f3fb96a2ffd83afc0fddbf26d3"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2021/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d8b439d16fcd43f38f777690a661dbc73e82fa13",
+          "size": 536576,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/d8b439d16fcd43f38f777690a661dbc73e82fa13"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2022/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "262ffc3b72d33d2740a558876249d32d560501ba",
+          "size": 552960,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/262ffc3b72d33d2740a558876249d32d560501ba"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2023/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b80a2016d844a37581ab503281802aa5ed9cbb51",
+          "size": 552960,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/b80a2016d844a37581ab503281802aa5ed9cbb51"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2024/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4a0fed6272dcbef0636d3fb4f3931e8361f73569",
+          "size": 569344,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/4a0fed6272dcbef0636d3fb4f3931e8361f73569"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2025/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d620c65c2e9e76482d452463ab5fbe524fd6f15d",
+          "size": 585728,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/d620c65c2e9e76482d452463ab5fbe524fd6f15d"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2026/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "51c807daf0f165d5e6e978344339178b5c7b4961",
+          "size": 598016,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/51c807daf0f165d5e6e978344339178b5c7b4961"
+        },
+        {
+          "path": "src/RhinoInside.Revit.External/Resources/RVT2027/RiR-Template.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b2dab2f1584a080d0e735b04d3b61bb09c265da3",
+          "size": 610304,
+          "url": "https://api.github.com/repos/mcneel/rhino.inside-revit/git/blobs/b2dab2f1584a080d0e735b04d3b61bb09c265da3"
+        }
+      ],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "jeremytammik/DirectShapeFromFace",
+      "ref": "master",
+      "commit": "0c3c733618cc3d9759ad34375e279680ddfdf301",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "DirectShapeFromFace/directshape_tests.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "68e4a006134c44cd89c146b1ca001f9801a2825e",
+          "size": 3424256,
+          "url": "https://api.github.com/repos/jeremytammik/DirectShapeFromFace/git/blobs/68e4a006134c44cd89c146b1ca001f9801a2825e"
+        }
+      ],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "specklesystems/Regression-Testing",
+      "ref": "main",
+      "commit": "251d6b7f2d042fc19cb4bacdc1dda65ce2944e10",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "specklesystems/speckle-sharp-connectors",
+      "ref": "dev",
+      "commit": "967e26abcb81ce83646817d6f42aea81b4444182",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "specklesystems/xUnitRevit",
+      "ref": "master",
+      "commit": "90c9edc96fed8c11ec02bbbdbe97f029eba5af9d",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "SampleLibrary/TestModels/walls.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4e6f35d4bd8a3042306c32426a0a59851521324f",
+          "size": 5345280,
+          "url": "https://api.github.com/repos/specklesystems/xUnitRevit/git/blobs/4e6f35d4bd8a3042306c32426a0a59851521324f"
+        }
+      ],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "ricaun-io/ricaun.Revit.FileInfo",
+      "ref": "master",
+      "commit": "9228ef12063fd294a565c47b989449ab93460a61",
+      "tree_truncated": false,
+      "fixtures": [
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2014/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6ec999ffde6c7e5545c420f5d48af18376050fb0",
+          "size": 262144,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/6ec999ffde6c7e5545c420f5d48af18376050fb0"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2015/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a1af66309714ccfb79790569da85ccf6966fd350",
+          "size": 266240,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/a1af66309714ccfb79790569da85ccf6966fd350"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2016/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c782effce437e2ad70ea02209e7eedb8df088098",
+          "size": 270336,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/c782effce437e2ad70ea02209e7eedb8df088098"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2017/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "58960c7853f06e118d2ef7adb8564cc29726c1a3",
+          "size": 294912,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/58960c7853f06e118d2ef7adb8564cc29726c1a3"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2018/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2521c3923cd89916df06b3ad500eb081f1d9deb7",
+          "size": 282624,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/2521c3923cd89916df06b3ad500eb081f1d9deb7"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2019/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f96f7e1ccf404f3c3b9f0a24280d269f4c542c25",
+          "size": 286720,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/f96f7e1ccf404f3c3b9f0a24280d269f4c542c25"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2020/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b54909f9b2017d22807aef1f401459e1c5492564",
+          "size": 290816,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/b54909f9b2017d22807aef1f401459e1c5492564"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2021/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "934d214662bb2bc991d4ba02fd9cbc638fbd2024",
+          "size": 331776,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/934d214662bb2bc991d4ba02fd9cbc638fbd2024"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2022/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "bf61cdfa3ca4ac400c45c58dfc8ba13da7977595",
+          "size": 344064,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/bf61cdfa3ca4ac400c45c58dfc8ba13da7977595"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2023/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "cacf92c2ba47b8150b2d714f8e171e1de6ecf223",
+          "size": 360448,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/cacf92c2ba47b8150b2d714f8e171e1de6ecf223"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2024/Family.rfa",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "28b9e0ed5a038fbba158837d94e1bdd33c11fbfe",
+          "size": 397312,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/28b9e0ed5a038fbba158837d94e1bdd33c11fbfe"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2024/Project.rvt",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "92a20734458597df08724b29b126de7c0792bd5b",
+          "size": 434176,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/92a20734458597df08724b29b126de7c0792bd5b"
+        },
+        {
+          "path": "ricaun.Revit.FileInfo.Tests/Files/2024/ProjectTemplate.rte",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "665c2e18a488e0650a48563cb407010fd2387dd9",
+          "size": 434176,
+          "url": "https://api.github.com/repos/ricaun-io/ricaun.Revit.FileInfo/git/blobs/665c2e18a488e0650a48563cb407010fd2387dd9"
+        }
+      ],
+      "license_paths": [
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "Pa1best/direct-shape-framework",
+      "ref": "main",
+      "commit": "037c6e65067aaa0ef203ee985cf958185d61e5cf",
+      "tree_truncated": false,
+      "fixtures": [],
+      "license_paths": [
+        "LICENSE.md"
+      ]
+    }
+  ]
+}

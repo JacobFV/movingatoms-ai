@@ -1,0 +1,54 @@
+{
+  "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+  "expected_new_ids": [
+    2746
+  ],
+  "new_partition": "Partitions/1",
+  "new_episode": 1,
+  "new_episode_guid": "50310e7c-b1aa-51bb-92bd-6437a632231e",
+  "timestamp": 1792627200,
+  "records": [
+    {
+      "id": 2746,
+      "body_sha256": {
+        "101": "5b4af8fc700ee822dda8bcb3d217f141bbcd0e9c129b5d4666a2a0beea1d3ad3",
+        "102": "786cda6bfbc611e0c57285b66cfb8f793e7905758bad6b247f4e6046b5f7e8ca",
+        "103": "c574870c67db7ef50269aacaa9a08fce81c978a7312b58f0767ce9f75f9e8941"
+      }
+    }
+  ],
+  "registration_evidence": {
+    "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+    "source_global_sha256": "fa49f8b2097e27a6edab82c512298637af1ee802ea9dc901cd1ec0a75d0b6fb9",
+    "registered_global_sha256": "fa49f8b2097e27a6edab82c512298637af1ee802ea9dc901cd1ec0a75d0b6fb9",
+    "changes": [],
+    "method": "Explicit no-Global-membership hypothesis from historical 2015 DirectShape instance audit; current-version lifecycle unvalidated",
+    "historical_evidence_sha256": "7c533f75d1867184226689efad7cab779ede5f5d95ed713ec431d15e9e3adbcc"
+  },
+  "global_stored_bytes_preserved": true,
+  "project_information_timestamp": {
+    "source_sha256": "b6a1864ff3c4a842e1daa1335323b1c2cc1ec3782a722b2f82d12365cc249d34",
+    "source_timestamp_offset_seconds": 10800,
+    "policy": "preserve measured seed offset hypothesis",
+    "all_other_xml_bytes_preserved": true,
+    "output_sha256": "8877e6bb978e2dbdc96c7bc28be9bf818c64f4c36e0caf846bc66da0d6bd690b"
+  },
+  "partition_payload_sha256": "0b44e75b6c1b8692a37bfbadfa5404532c91572b91d13c80c69192a499c54992",
+  "source_rows": 2300,
+  "new_rows": 2301,
+  "all_source_rows_preserved": true,
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false,
+  "complete_save_transaction": false,
+  "hypotheses": [
+    "Unsigned append partition acceptance.",
+    "Caller-declared registration is sufficient.",
+    "Selected ancillary revision and timestamp policies.",
+    "No native regeneration or signature acceptance established."
+  ],
+  "required_external_validation": [
+    "Decode actual saved candidate bodies independently; verify classes, identities, all outgoing references.",
+    "Verify supplied Global registration independently against measured schema and intended classes."
+  ]
+}

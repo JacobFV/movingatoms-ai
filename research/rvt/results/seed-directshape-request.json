@@ -1,0 +1,128 @@
+{
+  "element_id": 2746,
+  "units": "feet",
+  "vertices": [
+    [
+      0.1,
+      0.2,
+      0.3
+    ],
+    [
+      1.2000000000000002,
+      0.2,
+      0.3
+    ],
+    [
+      1.2000000000000002,
+      2.4000000000000004,
+      0.3
+    ],
+    [
+      0.1,
+      2.4000000000000004,
+      0.3
+    ],
+    [
+      0.1,
+      0.2,
+      3.5999999999999996
+    ],
+    [
+      1.2000000000000002,
+      0.2,
+      3.5999999999999996
+    ],
+    [
+      1.2000000000000002,
+      2.4000000000000004,
+      3.5999999999999996
+    ],
+    [
+      0.1,
+      2.4000000000000004,
+      3.5999999999999996
+    ]
+  ],
+  "triangles": [
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      3,
+      2
+    ],
+    [
+      4,
+      5,
+      6
+    ],
+    [
+      4,
+      6,
+      7
+    ],
+    [
+      0,
+      1,
+      5
+    ],
+    [
+      0,
+      5,
+      4
+    ],
+    [
+      1,
+      2,
+      6
+    ],
+    [
+      1,
+      6,
+      5
+    ],
+    [
+      2,
+      3,
+      7
+    ],
+    [
+      2,
+      7,
+      6
+    ],
+    [
+      3,
+      0,
+      4
+    ],
+    [
+      3,
+      4,
+      7
+    ]
+  ],
+  "config": {
+    "category_id": -2000011,
+    "style_id": 119,
+    "interior_style_id": 125,
+    "header_flags": 8488,
+    "can_create_parts_status": 0,
+    "application_id": "82c29ad8-927c-49a8-9c1a-726eae1f745b",
+    "application_data_id": "movingatoms-research-mesh-001",
+    "name": "Moving Atoms research mesh",
+    "options": {
+      "m_PresentationType": 0,
+      "m_ReferencingOption": 0,
+      "m_RoomBoundingOption": 0,
+      "m_AllowsChangeTypeId": false,
+      "m_AllowsCopy": true,
+      "m_AllowsLock": false,
+      "m_AllowsMove": true,
+      "m_AllowsTagAlongCurve": false
+    }
+  }
+}

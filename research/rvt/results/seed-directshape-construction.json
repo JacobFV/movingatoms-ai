@@ -1,0 +1,352 @@
+{
+  "new_element_id": 2746,
+  "config": {
+    "category_id": -2000011,
+    "style_id": 119,
+    "interior_style_id": 125,
+    "header_flags": 8488,
+    "can_create_parts_status": 0,
+    "application_id": "82c29ad8-927c-49a8-9c1a-726eae1f745b",
+    "application_data_id": "movingatoms-research-mesh-001",
+    "name": "Moving Atoms research mesh",
+    "options": {
+      "m_PresentationType": 0,
+      "m_ReferencingOption": 0,
+      "m_RoomBoundingOption": 0,
+      "m_AllowsChangeTypeId": false,
+      "m_AllowsCopy": true,
+      "m_AllowsLock": false,
+      "m_AllowsMove": true,
+      "m_AllowsTagAlongCurve": false
+    }
+  },
+  "hypotheses": [
+    "2024 DirectShape option enum values and capability flags are caller choices, not measured instance defaults",
+    "identity m_position and null references cell have schema-valid encodings but unmeasured2024 instance lifecycle semantics",
+    "legacy typeId=-1/no GeomTable/no GeomSteps structure is portable to2024 only as a hypothesis",
+    "terrain GPolyMesh control/flag fields inside DirectShape are unmeasured; closed topology alone does not establish native solid semantics",
+    "header flags and parent sets are historical-derived hypotheses; global registration and save allocation are not implemented here"
+  ],
+  "mesh": {
+    "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+    "topology_class": "FacetedTopology0",
+    "index_storage": "signed16 triples",
+    "point_normal_storage": "float32 triples",
+    "normals_interpretation": "one outward unit normal per triangle; public saved-graphics cardinality contract, Autodesk shading untested",
+    "original_geometry": {
+      "vertices": 8,
+      "triangles": 12,
+      "edges": 18,
+      "closed": true,
+      "euler_characteristic": 2,
+      "opposite_edge_incidence": true,
+      "single_cycle_vertex_links": true,
+      "convex": true,
+      "signed_volume": 7.986000000000001,
+      "surface_area": 26.62,
+      "bounds": [
+        [
+          0.1,
+          0.2,
+          0.3
+        ],
+        [
+          1.2000000000000002,
+          2.4000000000000004,
+          3.5999999999999996
+        ]
+      ],
+      "vertex_normals": [
+        [
+          -0.6396021490668312,
+          -0.6396021490668312,
+          -0.4264014327112209
+        ],
+        [
+          0.9577042613611466,
+          -0.23942606534028665,
+          -0.15961737689352445
+        ],
+        [
+          0.6396021490668312,
+          0.6396021490668312,
+          -0.4264014327112209
+        ],
+        [
+          -0.9577042613611466,
+          0.23942606534028665,
+          -0.15961737689352445
+        ],
+        [
+          -0.923076923076923,
+          -0.23076923076923075,
+          0.3076923076923077
+        ],
+        [
+          0.6882472016116852,
+          -0.6882472016116852,
+          0.22941573387056177
+        ],
+        [
+          0.923076923076923,
+          0.23076923076923075,
+          0.3076923076923077
+        ],
+        [
+          -0.6882472016116852,
+          0.6882472016116852,
+          0.22941573387056177
+        ]
+      ],
+      "triangle_normals": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "quantized_geometry": {
+      "vertices": 8,
+      "triangles": 12,
+      "edges": 18,
+      "closed": true,
+      "euler_characteristic": 2,
+      "opposite_edge_incidence": true,
+      "single_cycle_vertex_links": true,
+      "convex": true,
+      "signed_volume": 7.986000411093227,
+      "surface_area": 26.62000061303375,
+      "bounds": [
+        [
+          0.10000000149011612,
+          0.20000000298023224,
+          0.30000001192092896
+        ],
+        [
+          1.2000000476837158,
+          2.4000000953674316,
+          3.5999999046325684
+        ]
+      ],
+      "vertex_normals": [
+        [
+          -0.6396021404024539,
+          -0.6396021404024539,
+          -0.42640145870435225
+        ],
+        [
+          0.9577042595431967,
+          -0.23942606488579918,
+          -0.15961738848295445
+        ],
+        [
+          0.6396021404024539,
+          0.6396021404024539,
+          -0.42640145870435225
+        ],
+        [
+          -0.9577042595431967,
+          0.23942606488579918,
+          -0.15961738848295445
+        ],
+        [
+          -0.9230769165657189,
+          -0.23076922914142972,
+          0.30769232844677025
+        ],
+        [
+          0.6882471989128213,
+          -0.6882471989128213,
+          0.22941575006374504
+        ],
+        [
+          0.9230769165657189,
+          0.23076922914142972,
+          0.30769232844677025
+        ],
+        [
+          -0.6882471989128213,
+          0.6882471989128213,
+          0.22941575006374504
+        ]
+      ],
+      "triangle_normals": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "coordinate_absolute_errors": [
+      [
+        1.4901161138336505e-09,
+        2.980232227667301e-09,
+        1.1920928966180355e-08
+      ],
+      [
+        4.7683715642676816e-08,
+        2.980232227667301e-09,
+        1.1920928966180355e-08
+      ],
+      [
+        4.7683715642676816e-08,
+        9.536743128535363e-08,
+        1.1920928966180355e-08
+      ],
+      [
+        1.4901161138336505e-09,
+        9.536743128535363e-08,
+        1.1920928966180355e-08
+      ],
+      [
+        1.4901161138336505e-09,
+        2.980232227667301e-09,
+        9.536743128535363e-08
+      ],
+      [
+        4.7683715642676816e-08,
+        2.980232227667301e-09,
+        9.536743128535363e-08
+      ],
+      [
+        4.7683715642676816e-08,
+        9.536743128535363e-08,
+        9.536743128535363e-08
+      ],
+      [
+        1.4901161138336505e-09,
+        9.536743128535363e-08,
+        9.536743128535363e-08
+      ]
+    ],
+    "maximum_coordinate_error": 9.536743128535363e-08,
+    "maximum_vertex_displacement": 1.4305114692803045e-07,
+    "volume_error": 4.110932261269795e-07,
+    "maximum_normal_unit_length_error": 0.0,
+    "maximum_normal_component_rounding_error": 0.0,
+    "body_bytes": 342,
+    "body_sha256": "b5a47979ce8578b94998c6f0147e3c8788415c5015c5342d3ae0b86d1b2edef4",
+    "element_created": false,
+    "autodesk_acceptance": "not_tested"
+  },
+  "body_sha256": {
+    "101": "5b4af8fc700ee822dda8bcb3d217f141bbcd0e9c129b5d4666a2a0beea1d3ad3",
+    "102": "786cda6bfbc611e0c57285b66cfb8f793e7905758bad6b247f4e6046b5f7e8ca",
+    "103": "c574870c67db7ef50269aacaa9a08fce81c978a7312b58f0767ce9f75f9e8941"
+  },
+  "document_created": false,
+  "global_registration_implemented": false,
+  "autodesk_acceptance": "not_tested"
+}

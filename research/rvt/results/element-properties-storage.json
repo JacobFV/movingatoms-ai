@@ -1,0 +1,311 @@
+{
+  "schema_guid": "3e6dd92d-a1e2-5529-bf69-045c18c5f87b",
+  "schema_name": "MovingAtomsElementPropertiesV1",
+  "schema_metadata": {
+    "m_guid": {
+      "m_guid": {
+        "guid_bytes": [
+          45,
+          217,
+          109,
+          62,
+          226,
+          161,
+          41,
+          85,
+          191,
+          105,
+          4,
+          92,
+          24,
+          197,
+          248,
+          123
+        ]
+      }
+    },
+    "m_schemaName": "MovingAtomsElementPropertiesV1",
+    "m_documentation": "Moving Atoms external element identity and JSON application properties, version 1",
+    "m_readAccessLevel": 1,
+    "m_writeAccessLevel": 1,
+    "m_vendorId": "",
+    "m_applicationGUID": {
+      "m_guid": {
+        "guid_bytes": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "m_fields": [
+      {
+        "m_entryIndex": 0,
+        "m_fieldName": "ApplicationId",
+        "m_fieldTypeName": "TCHAR",
+        "m_containerType": 0,
+        "m_documentation": "",
+        "m_specTypeId": {
+          "m_typeId": ""
+        },
+        "m_subSchemaGUID": {
+          "m_guid": {
+            "guid_bytes": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "m_entryIndex": 1,
+        "m_fieldName": "Name",
+        "m_fieldTypeName": "TCHAR",
+        "m_containerType": 0,
+        "m_documentation": "",
+        "m_specTypeId": {
+          "m_typeId": ""
+        },
+        "m_subSchemaGUID": {
+          "m_guid": {
+            "guid_bytes": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "m_entryIndex": 2,
+        "m_fieldName": "PropertiesJson",
+        "m_fieldTypeName": "TCHAR",
+        "m_containerType": 0,
+        "m_documentation": "",
+        "m_specTypeId": {
+          "m_typeId": ""
+        },
+        "m_subSchemaGUID": {
+          "m_guid": {
+            "guid_bytes": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "fixtures": [
+    {
+      "file": "core2024.rvt",
+      "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "allocated_owner_id": 133210,
+      "schemas_before": 8,
+      "schemas_after": 9,
+      "source_registration_objects_reconstructed_exactly": true,
+      "only_intended_global_fields_changed": true,
+      "existing_schemas_preserved": true,
+      "owned_catalog_discovered_independently": true,
+      "global_changes": [
+        {
+          "class_name": "ElemsSetWithCellsTracking",
+          "start": 99551,
+          "end": 99735,
+          "new_bytes": 192
+        },
+        {
+          "class_name": "ESSchemaStorage",
+          "start": 100619,
+          "end": 996525,
+          "new_bytes": 896412
+        },
+        {
+          "class_name": "EStorageTracking",
+          "start": 999827,
+          "end": 1000067,
+          "new_bytes": 268
+        }
+      ],
+      "global_before_sha256": "df6c58e975c778153437f6f2ff07befd1055c7d156ce02b955dad1e956f777c3",
+      "global_after_sha256": "22648880796d1d8707ec3113c46580e294f1fecbe8cdb2fe9b6d93501dc002bc",
+      "channels": {
+        "101": {
+          "bytes": 119,
+          "sha256": "223594ea9db227805b5d1b8a9bed8762417b4448da508d566a8ddd8650b2c930",
+          "complete_graph_objects": 2,
+          "complete_body_consumed": true,
+          "positive_reference_ids": [
+            133210
+          ]
+        },
+        "102": {
+          "bytes": 417,
+          "sha256": "87708aca958f060aa7b796507a5b104b42f5da174f9234161ae4adea3e636423",
+          "complete_graph_objects": 4,
+          "complete_body_consumed": true,
+          "positive_reference_ids": [
+            133210
+          ]
+        },
+        "103": {
+          "bytes": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+          "complete_graph_objects": 1,
+          "complete_body_consumed": true,
+          "positive_reference_ids": []
+        }
+      },
+      "application_id": "app:item-42",
+      "name": "Example wall",
+      "properties": {
+        "dimensions": {
+          "height_metres": 3.2
+        },
+        "enabled": true,
+        "labels": [
+          "A",
+          "\ud83d\ude00"
+        ],
+        "optional": null
+      },
+      "independent_entity_values_exact": true
+    },
+    {
+      "file": "minimal_seed-Project.rvt",
+      "source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+      "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+      "allocated_owner_id": 2746,
+      "schemas_before": 0,
+      "schemas_after": 1,
+      "source_registration_objects_reconstructed_exactly": true,
+      "only_intended_global_fields_changed": true,
+      "existing_schemas_preserved": true,
+      "owned_catalog_discovered_independently": true,
+      "global_changes": [
+        {
+          "class_name": "ElemsSetWithCellsTracking",
+          "start": 55343,
+          "end": 55415,
+          "new_bytes": 88
+        },
+        {
+          "class_name": "ESSchemaStorage",
+          "start": 55707,
+          "end": 820431,
+          "new_bytes": 765230
+        },
+        {
+          "class_name": "EStorageTracking",
+          "start": 823349,
+          "end": 823357,
+          "new_bytes": 36
+        }
+      ],
+      "global_before_sha256": "fa49f8b2097e27a6edab82c512298637af1ee802ea9dc901cd1ec0a75d0b6fb9",
+      "global_after_sha256": "4b002084a2293bb109110f1a452f04dcb5d407daa8272433fa159e2831d41be1",
+      "channels": {
+        "101": {
+          "bytes": 119,
+          "sha256": "a7301f7069a66e02e0bee8bc17dd89483e2ccef9a937399af27229fb47e9d520",
+          "complete_graph_objects": 2,
+          "complete_body_consumed": true,
+          "positive_reference_ids": [
+            2746
+          ]
+        },
+        "102": {
+          "bytes": 417,
+          "sha256": "46c734218d0c779f6ba4845bb60cc5739dc5923381f62bfd03c576fef631bd7d",
+          "complete_graph_objects": 4,
+          "complete_body_consumed": true,
+          "positive_reference_ids": [
+            2746
+          ]
+        },
+        "103": {
+          "bytes": 2,
+          "sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+          "complete_graph_objects": 1,
+          "complete_body_consumed": true,
+          "positive_reference_ids": []
+        }
+      },
+      "application_id": "app:item-42",
+      "name": "Example wall",
+      "properties": {
+        "dimensions": {
+          "height_metres": 3.2
+        },
+        "enabled": true,
+        "labels": [
+          "A",
+          "\ud83d\ude00"
+        ],
+        "optional": null
+      },
+      "independent_entity_values_exact": true
+    }
+  ],
+  "hypotheses": [
+    "Appending schema/tracking maps and retaining saved dirty=0 is inferred from measured layouts.",
+    "New DataStorage has only the own application entity, without inherited vendor identity/exchange entities.",
+    "No complete save or native acceptance is established by global/catalog/entity decoding."
+  ],
+  "complete_native_save": false
+}

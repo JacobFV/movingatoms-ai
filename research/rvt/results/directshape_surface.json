@@ -1,0 +1,426 @@
+{
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "variants": [
+    {
+      "name": "disconnected_open_surface",
+      "new_element_id": 133210,
+      "config": {
+        "category_id": -2000011,
+        "style_id": 113,
+        "interior_style_id": 119,
+        "header_flags": 8488,
+        "can_create_parts_status": 0,
+        "application_id": "82c29ad8-927c-49a8-9c1a-726eae1f745b",
+        "application_data_id": "research-cuboid-001",
+        "name": "Experimental mesh cuboid",
+        "options": {
+          "m_PresentationType": 0,
+          "m_ReferencingOption": 0,
+          "m_RoomBoundingOption": 0,
+          "m_AllowsChangeTypeId": false,
+          "m_AllowsCopy": true,
+          "m_AllowsLock": false,
+          "m_AllowsMove": true,
+          "m_AllowsTagAlongCurve": false
+        }
+      },
+      "hypotheses": [
+        "2024 DirectShape option enum values and capability flags are caller choices, not measured instance defaults",
+        "identity m_position and null references cell have schema-valid encodings but unmeasured2024 instance lifecycle semantics",
+        "legacy typeId=-1/no GeomTable/no GeomSteps structure is portable to2024 only as a hypothesis",
+        "terrain GPolyMesh control/flag fields inside DirectShape are unmeasured; closed topology alone does not establish native solid semantics",
+        "header flags and parent sets are historical-derived hypotheses; global registration and save allocation are not implemented here"
+      ],
+      "body_sha256": {
+        "101": "91bfc2dd821420adc0aaac56b0acde41aafab839ba613ad1e073b21c9110cc6c",
+        "102": "e805cc4d0305b4b56f42336d869403740159d0013784736c8e8898d1fe49264e",
+        "103": "56a8b2a54810f2ae1b83bea7201b44f6f15c139bac026651009abb3ccb025af5"
+      },
+      "document_created": false,
+      "global_registration_implemented": false,
+      "autodesk_acceptance": "not_tested",
+      "scope": "Multi-component mesh surface bodies; no closed-solid assertion, document or registration",
+      "component_count": 2,
+      "triangle_count": 2,
+      "bounds_feet": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          13.123359680175781,
+          3.2808399200439453,
+          3.2808399200439453
+        ]
+      ],
+      "component_audits": [
+        {
+          "chunk_index": 0,
+          "global_vertex_indices": [
+            0,
+            1,
+            2
+          ],
+          "input_face_indices": [
+            0
+          ],
+          "vertices": 3,
+          "triangles": 1,
+          "body_sha256": "fd40fb67a9b3654573cd042a55592f1348da5a3a67885b6c919c43a0e8b7eeee",
+          "body_bytes": 84
+        },
+        {
+          "chunk_index": 1,
+          "global_vertex_indices": [
+            3,
+            4,
+            5
+          ],
+          "input_face_indices": [
+            1
+          ],
+          "vertices": 3,
+          "triangles": 1,
+          "body_sha256": "bd64be9482eee69bc79bf07135956db4937edfd41dc6d82df0a85d3ef3ce18cb",
+          "body_bytes": 84
+        }
+      ],
+      "normals_contract": "one outward/oriented source-face normal per triangle; surface winding is input-defined",
+      "input_units": "metres",
+      "native_units": "feet",
+      "metres_per_foot": 0.3048,
+      "surface": {
+        "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "input_vertices": 6,
+        "welded_vertices": 6,
+        "exact_welded_duplicates": 0,
+        "input_to_welded_vertex": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "input_triangles": 2,
+        "emitted_triangles": 2,
+        "face_order_and_winding_preserved": true,
+        "chunk_count": 2,
+        "chunk_vertex_limit": 3,
+        "connected_components": [
+          {
+            "face_indices": [
+              0
+            ],
+            "vertices": 3,
+            "edges": 3,
+            "faces": 1,
+            "boundary_edges": 3,
+            "nonmanifold_edges": 0,
+            "euler_characteristic": 1
+          },
+          {
+            "face_indices": [
+              1
+            ],
+            "vertices": 3,
+            "edges": 3,
+            "faces": 1,
+            "boundary_edges": 3,
+            "nonmanifold_edges": 0,
+            "euler_characteristic": 1
+          }
+        ],
+        "edge_connected_component_count": 2,
+        "boundary_edge_count": 6,
+        "nonmanifold_edge_count": 0,
+        "paired_edge_winding_conflict_count": 0,
+        "winding_conflict_edges": [],
+        "maximum_coordinate_error": 1.0012328921504832e-07,
+        "maximum_vertex_displacement": 1.0320472425447744e-07,
+        "maximum_face_normal_angle_error_radians": 0.0,
+        "surface_area_before_quantization": 10.763910416709717,
+        "surface_area_after_quantization": 10.763910580953961,
+        "solid_volume_claim": false,
+        "self_intersections_checked": false,
+        "autodesk_acceptance": "not_tested",
+        "units": "feet",
+        "normal_binding": "one float32 unit normal per triangle; pinned public saved-graphics contract"
+      },
+      "input_sha256": "c1fe3898d6da299d378776c74ca3482ccde23ca2e71f983ae53065880a37f225",
+      "input_point_count": 6,
+      "input_triangle_count": 2,
+      "verification": {
+        "independent_decode": [
+          {
+            "channel": 101,
+            "bytes": 193,
+            "sha256": "91bfc2dd821420adc0aaac56b0acde41aafab839ba613ad1e073b21c9110cc6c",
+            "objects": 3,
+            "all_fields_equal": true
+          },
+          {
+            "channel": 102,
+            "bytes": 838,
+            "sha256": "e805cc4d0305b4b56f42336d869403740159d0013784736c8e8898d1fe49264e",
+            "objects": 8,
+            "all_fields_equal": true
+          },
+          {
+            "channel": 103,
+            "bytes": 406,
+            "sha256": "56a8b2a54810f2ae1b83bea7201b44f6f15c139bac026651009abb3ccb025af5",
+            "objects": 5,
+            "all_fields_equal": true
+          }
+        ],
+        "saved_scene": {
+          "primitive_count": 2,
+          "triangle_count": 2,
+          "ordered_vertices_and_indices_exact": true,
+          "maximum_normal_error": 0.0,
+          "diagnostics": []
+        },
+        "decode_probe_sha256": "5b420b3f6d8fd9e056b764268756e0491e5fc4f53c7d581104b384eb63d123ef",
+        "scene_probe_sha256": "5b420b3f6d8fd9e056b764268756e0491e5fc4f53c7d581104b384eb63d123ef",
+        "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+        "autodesk_acceptance": "not_tested"
+      },
+      "full_local_audit_sha256": "dbf4083d61fb3c23e579b1295a8387bbcc4fbf995cfe294fd6fe56f6e4bf82b1"
+    },
+    {
+      "name": "large_split_surface",
+      "new_element_id": 133211,
+      "config": {
+        "category_id": -2000011,
+        "style_id": 113,
+        "interior_style_id": 119,
+        "header_flags": 8488,
+        "can_create_parts_status": 0,
+        "application_id": "82c29ad8-927c-49a8-9c1a-726eae1f745b",
+        "application_data_id": "research-cuboid-001",
+        "name": "Experimental mesh cuboid",
+        "options": {
+          "m_PresentationType": 0,
+          "m_ReferencingOption": 0,
+          "m_RoomBoundingOption": 0,
+          "m_AllowsChangeTypeId": false,
+          "m_AllowsCopy": true,
+          "m_AllowsLock": false,
+          "m_AllowsMove": true,
+          "m_AllowsTagAlongCurve": false
+        }
+      },
+      "hypotheses": [
+        "2024 DirectShape option enum values and capability flags are caller choices, not measured instance defaults",
+        "identity m_position and null references cell have schema-valid encodings but unmeasured2024 instance lifecycle semantics",
+        "legacy typeId=-1/no GeomTable/no GeomSteps structure is portable to2024 only as a hypothesis",
+        "terrain GPolyMesh control/flag fields inside DirectShape are unmeasured; closed topology alone does not establish native solid semantics",
+        "header flags and parent sets are historical-derived hypotheses; global registration and save allocation are not implemented here"
+      ],
+      "body_sha256": {
+        "101": "c619308b64da8b6592765c5f48d0560facf62dc5d0a3f5b02c9984b725dcddee",
+        "102": "bca8d422a84b04b9deb960d5baf8adec26bf2dae7d28642268d53fb2d00678aa",
+        "103": "70e87379cf30fc9816c104731be379a5d9d6ae18a5a9bdc37171c068ca4e2a4a"
+      },
+      "document_created": false,
+      "global_registration_implemented": false,
+      "autodesk_acceptance": "not_tested",
+      "scope": "Multi-component mesh surface bodies; no closed-solid assertion, document or registration",
+      "component_count": 2,
+      "triangle_count": 11000,
+      "bounds_feet": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          72175.1953125,
+          3.2808399200439453,
+          0.0
+        ]
+      ],
+      "component_audits": [
+        {
+          "chunk_index": 0,
+          "global_vertex_indices": {
+            "count": 32766,
+            "sha256": "7d96fb1a092f894c68950981f460ffac5d73dce894e19170b17dd24dbf059261",
+            "first_three": [
+              0,
+              1,
+              2
+            ],
+            "full_values_in_local_audit": true
+          },
+          "input_face_indices": {
+            "count": 10922,
+            "sha256": "1d92c92e8ca6821442c5767be7c16f4d090b2b35ee620be1f6dc72f26d401d72",
+            "first_three": [
+              0,
+              1,
+              2
+            ],
+            "full_values_in_local_audit": true
+          },
+          "vertices": 32766,
+          "triangles": 10922,
+          "body_sha256": "014e6f5f7b07201109c79e1b9bb5a17dfdcade985cf21d933246074391ca1fa4",
+          "body_bytes": 589818
+        },
+        {
+          "chunk_index": 1,
+          "global_vertex_indices": {
+            "count": 234,
+            "sha256": "77d47f5ddba06cbf5b002e193ba662a661e30a55fbc693aa504b5a6a48c0c821",
+            "first_three": [
+              32766,
+              32767,
+              32768
+            ],
+            "full_values_in_local_audit": true
+          },
+          "input_face_indices": {
+            "count": 78,
+            "sha256": "f040f7413f01d46799855039cc1a6b19ea88b968b3ab30312163e8240b3da474",
+            "first_three": [
+              10922,
+              10923,
+              10924
+            ],
+            "full_values_in_local_audit": true
+          },
+          "vertices": 234,
+          "triangles": 78,
+          "body_sha256": "13a93aa8f1156ec38bc233592386c628988e5551d820939e074739e16a665419",
+          "body_bytes": 4242
+        }
+      ],
+      "normals_contract": "one outward/oriented source-face normal per triangle; surface winding is input-defined",
+      "input_units": "metres",
+      "native_units": "feet",
+      "metres_per_foot": 0.3048,
+      "surface": {
+        "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "input_vertices": 33000,
+        "welded_vertices": 33000,
+        "exact_welded_duplicates": 0,
+        "input_to_welded_vertex": {
+          "count": 33000,
+          "sha256": "27485092f5e320acb96a1eb4a6e1af40b999f9dde61ef5427f66e7cc0cf80323",
+          "first_three": [
+            0,
+            1,
+            2
+          ],
+          "full_values_in_local_audit": true
+        },
+        "input_triangles": 11000,
+        "emitted_triangles": 11000,
+        "face_order_and_winding_preserved": true,
+        "chunk_count": 2,
+        "chunk_vertex_limit": 32768,
+        "connected_components": {
+          "count": 11000,
+          "sha256": "d4c3dbae3d31576b298828f6c76eec3e096eac7b9a72489b661f236b02a4cf01",
+          "first_three": [
+            {
+              "face_indices": [
+                0
+              ],
+              "vertices": 3,
+              "edges": 3,
+              "faces": 1,
+              "boundary_edges": 3,
+              "nonmanifold_edges": 0,
+              "euler_characteristic": 1
+            },
+            {
+              "face_indices": [
+                1
+              ],
+              "vertices": 3,
+              "edges": 3,
+              "faces": 1,
+              "boundary_edges": 3,
+              "nonmanifold_edges": 0,
+              "euler_characteristic": 1
+            },
+            {
+              "face_indices": [
+                2
+              ],
+              "vertices": 3,
+              "edges": 3,
+              "faces": 1,
+              "boundary_edges": 3,
+              "nonmanifold_edges": 0,
+              "euler_characteristic": 1
+            }
+          ],
+          "full_values_in_local_audit": true
+        },
+        "edge_connected_component_count": 11000,
+        "boundary_edge_count": 33000,
+        "nonmanifold_edge_count": 0,
+        "paired_edge_winding_conflict_count": 0,
+        "winding_conflict_edges": [],
+        "maximum_coordinate_error": 0.003895997375366278,
+        "maximum_vertex_displacement": 0.0038959973754466863,
+        "maximum_face_normal_angle_error_radians": 0.0,
+        "surface_area_before_quantization": 59201.50729191075,
+        "surface_area_after_quantization": 59201.519136844916,
+        "solid_volume_claim": false,
+        "self_intersections_checked": false,
+        "autodesk_acceptance": "not_tested",
+        "units": "feet",
+        "normal_binding": "one float32 unit normal per triangle; pinned public saved-graphics contract"
+      },
+      "input_sha256": "d3e4609a495b448345de32df7951e132235910cc14d50168795a847b4dc49c66",
+      "input_point_count": 33000,
+      "input_triangle_count": 11000,
+      "verification": {
+        "independent_decode": [
+          {
+            "channel": 101,
+            "bytes": 193,
+            "sha256": "c619308b64da8b6592765c5f48d0560facf62dc5d0a3f5b02c9984b725dcddee",
+            "objects": 3,
+            "all_fields_equal": true
+          },
+          {
+            "channel": 102,
+            "bytes": 594730,
+            "sha256": "bca8d422a84b04b9deb960d5baf8adec26bf2dae7d28642268d53fb2d00678aa",
+            "objects": 8,
+            "all_fields_equal": true
+          },
+          {
+            "channel": 103,
+            "bytes": 594298,
+            "sha256": "70e87379cf30fc9816c104731be379a5d9d6ae18a5a9bdc37171c068ca4e2a4a",
+            "objects": 5,
+            "all_fields_equal": true
+          }
+        ],
+        "saved_scene": {
+          "primitive_count": 2,
+          "triangle_count": 11000,
+          "ordered_vertices_and_indices_exact": true,
+          "maximum_normal_error": 0.0,
+          "diagnostics": []
+        },
+        "decode_probe_sha256": "5b420b3f6d8fd9e056b764268756e0491e5fc4f53c7d581104b384eb63d123ef",
+        "scene_probe_sha256": "5b420b3f6d8fd9e056b764268756e0491e5fc4f53c7d581104b384eb63d123ef",
+        "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+        "autodesk_acceptance": "not_tested"
+      },
+      "full_local_audit_sha256": "24a69be40096900011ffa5bd9cdeaa05c53e7e4034efba6391a3456b98a9a11d"
+    }
+  ],
+  "document_created": false,
+  "autodesk_acceptance": "not_tested"
+}

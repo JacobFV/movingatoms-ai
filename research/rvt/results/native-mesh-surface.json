@@ -1,0 +1,160 @@
+{
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "profile_sha256": "7497bdad189fb7769019df05dc8e2ea8d7d8ca5aaad324528193f1072377fa86",
+  "scope": "Independent diagnostic saved-graphics primitives; no DirectShape element or document created",
+  "decoder_limits": {
+    "values": 1000000,
+    "objects": 100,
+    "depth": 128
+  },
+  "cases": [
+    {
+      "name": "open_plane",
+      "summary": {
+        "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "input_vertices": 4,
+        "welded_vertices": 4,
+        "exact_welded_duplicates": 0,
+        "input_triangles": 2,
+        "emitted_triangles": 2,
+        "face_order_and_winding_preserved": true,
+        "chunk_count": 1,
+        "chunk_vertex_limit": 32768,
+        "edge_connected_component_count": 1,
+        "boundary_edge_count": 4,
+        "nonmanifold_edge_count": 0,
+        "paired_edge_winding_conflict_count": 0,
+        "winding_conflict_edges": [],
+        "maximum_coordinate_error": 0.0,
+        "maximum_vertex_displacement": 0.0,
+        "maximum_face_normal_angle_error_radians": 0.0,
+        "surface_area_before_quantization": 1.0,
+        "surface_area_after_quantization": 1.0,
+        "solid_volume_claim": false,
+        "self_intersections_checked": false,
+        "autodesk_acceptance": "not_tested",
+        "units": "feet",
+        "normal_binding": "one float32 unit normal per triangle; pinned public saved-graphics contract",
+        "vertex_weld_mapping_sha256": "02b6deebe10f247a39a1f40c6e045af149df9c96491adce129613e8b30480780"
+      },
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "vertices": 4,
+          "triangles": 2,
+          "body_sha256": "5dfae505b383228137c03f4744249f3fa0e4e7af9eeb87444ae01c30b1af9279",
+          "body_bytes": 114,
+          "independent_fields_exact": true,
+          "rendered_triangles_exact": true,
+          "normals_match_face_winding": true,
+          "input_face_start": 0,
+          "input_face_end": 1
+        }
+      ],
+      "all_input_triangles_rendered_in_order": true
+    },
+    {
+      "name": "two_components",
+      "summary": {
+        "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "input_vertices": 8,
+        "welded_vertices": 8,
+        "exact_welded_duplicates": 0,
+        "input_triangles": 4,
+        "emitted_triangles": 4,
+        "face_order_and_winding_preserved": true,
+        "chunk_count": 1,
+        "chunk_vertex_limit": 32768,
+        "edge_connected_component_count": 2,
+        "boundary_edge_count": 8,
+        "nonmanifold_edge_count": 0,
+        "paired_edge_winding_conflict_count": 0,
+        "winding_conflict_edges": [],
+        "maximum_coordinate_error": 0.0,
+        "maximum_vertex_displacement": 0.0,
+        "maximum_face_normal_angle_error_radians": 0.0,
+        "surface_area_before_quantization": 2.0,
+        "surface_area_after_quantization": 2.0,
+        "solid_volume_claim": false,
+        "self_intersections_checked": false,
+        "autodesk_acceptance": "not_tested",
+        "units": "feet",
+        "normal_binding": "one float32 unit normal per triangle; pinned public saved-graphics contract",
+        "vertex_weld_mapping_sha256": "809d533fc370950a0e8c21b32c9e303611bc2ea742fe8532180a1ce64075835f"
+      },
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "vertices": 8,
+          "triangles": 4,
+          "body_sha256": "c37075f75ac6d97bf6e20768eea2dbd32fb178e3c9e39f1cfd99aa32be733d84",
+          "body_bytes": 198,
+          "independent_fields_exact": true,
+          "rendered_triangles_exact": true,
+          "normals_match_face_winding": true,
+          "input_face_start": 0,
+          "input_face_end": 3
+        }
+      ],
+      "all_input_triangles_rendered_in_order": true
+    },
+    {
+      "name": "large_index_chunks",
+      "summary": {
+        "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+        "input_vertices": 33000,
+        "welded_vertices": 33000,
+        "exact_welded_duplicates": 0,
+        "input_triangles": 11000,
+        "emitted_triangles": 11000,
+        "face_order_and_winding_preserved": true,
+        "chunk_count": 2,
+        "chunk_vertex_limit": 32768,
+        "edge_connected_component_count": 11000,
+        "boundary_edge_count": 33000,
+        "nonmanifold_edge_count": 0,
+        "paired_edge_winding_conflict_count": 0,
+        "winding_conflict_edges": [],
+        "maximum_coordinate_error": 0.0,
+        "maximum_vertex_displacement": 0.0,
+        "maximum_face_normal_angle_error_radians": 0.0,
+        "surface_area_before_quantization": 5500.0,
+        "surface_area_after_quantization": 5500.0,
+        "solid_volume_claim": false,
+        "self_intersections_checked": false,
+        "autodesk_acceptance": "not_tested",
+        "units": "feet",
+        "normal_binding": "one float32 unit normal per triangle; pinned public saved-graphics contract",
+        "vertex_weld_mapping_sha256": "660f0ba0af65eb8debcb0dc010f0124b22a7192ca6ac45f0013b078c1fff779d"
+      },
+      "chunks": [
+        {
+          "chunk_index": 0,
+          "vertices": 32766,
+          "triangles": 10922,
+          "body_sha256": "1ce9c8379c84d9b3af6aaea29f369fcc0b12f7bc957e82ce3ef0652acb35d630",
+          "body_bytes": 589818,
+          "independent_fields_exact": true,
+          "rendered_triangles_exact": true,
+          "normals_match_face_winding": true,
+          "input_face_start": 0,
+          "input_face_end": 10921
+        },
+        {
+          "chunk_index": 1,
+          "vertices": 234,
+          "triangles": 78,
+          "body_sha256": "a554e07dfc13b538efb36b2176a275fc4991c839892edde0558421ffa65b0dcb",
+          "body_bytes": 4242,
+          "independent_fields_exact": true,
+          "rendered_triangles_exact": true,
+          "normals_match_face_winding": true,
+          "input_face_start": 10922,
+          "input_face_end": 10999
+        }
+      ],
+      "all_input_triangles_rendered_in_order": true
+    }
+  ],
+  "autodesk_acceptance": "not_tested"
+}

@@ -1,0 +1,967 @@
+{
+  "records": [
+    {
+      "channel": 101,
+      "class_name": "ElementHeader",
+      "derived_default_ifc_guid": "2nagFvrQzLKhv7t5rd9z7K",
+      "derived_identifier_diagnostic": null,
+      "diagnostic": null,
+      "effective_ifc_parameter": null,
+      "effective_ifc_parameter_diagnostic": null,
+      "graph": {
+        "consumed_bytes": 119,
+        "edges": [
+          {
+            "pointer_offset": 68,
+            "pointer_token": 4294967295,
+            "source_object_index": 0,
+            "target_class_tag": 1451,
+            "target_object_index": 1
+          }
+        ],
+        "objects": [
+          {
+            "class_name": "ElementHeader",
+            "class_tag": 1439,
+            "fields": {
+              "m_abFlags4Bytes": 8206,
+              "m_categroryId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_classDef": {
+                "m_ref": {
+                  "class_name": "DataStorage",
+                  "class_tag": 1133
+                }
+              },
+              "m_designOptionId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_familyId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_miscId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_ownerViewId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_pBBox": {
+                "class_tag": null,
+                "offset": 64,
+                "pointer_token": 0
+              },
+              "m_parents": {
+                "class_tag": 1451,
+                "offset": 68,
+                "pointer_token": 4294967295
+              },
+              "m_regenHistory": {
+                "m_historyMap": []
+              },
+              "m_unplacedOwnerId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_viewRules": {
+                "m_nVisibleViewFlags": -4225
+              }
+            },
+            "fields_end": 74,
+            "start": 2,
+            "token": 0
+          },
+          {
+            "class_name": "ElementParents",
+            "class_tag": 1451,
+            "fields": {
+              "m_appearanceParents": [],
+              "m_computedParametersParents": [],
+              "m_deferredParents": [],
+              "m_deferredPropagationParents": [],
+              "m_deletion": [
+                {
+                  "m_id": {
+                    "m_id64": 2746
+                  }
+                }
+              ],
+              "m_dependencyParents": [],
+              "m_hasNonDetermRegenChildren": false,
+              "m_nonDetermRegenChildren": [],
+              "m_regenOnly": [],
+              "m_regenWildcards": []
+            },
+            "fields_end": 119,
+            "start": 74,
+            "token": 4294967295
+          }
+        ]
+      },
+      "identity": {
+        "creation_episode": 1,
+        "element_id": 2746,
+        "original_id_suffix": 2746,
+        "other_revision": 1,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          2746,
+          0,
+          1,
+          1,
+          1,
+          2746,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 92006,
+        "stored_revision": 1,
+        "unique_id": "b192a3f9-d5af-5552-be47-dc5d6727db6e-00000aba"
+      },
+      "metadata_diagnostic": null,
+      "saved_metadata": {
+        "builtin_parameter_definitions": [],
+        "complete_element_metadata": false,
+        "declared_custom_parameters": [],
+        "family_parameter_slots": [],
+        "global_parameter_associations": [],
+        "parameter_definitions": [],
+        "parameter_sets": [],
+        "raw_field_parameters": [],
+        "resolved_family_parameters": [],
+        "root_references": {
+          "m_designOptionId": -1,
+          "m_familyId": -1
+        },
+        "value_semantics": "serialized_not_evaluated"
+      },
+      "source": {
+        "body_bytes": 119,
+        "body_sha256": "a7301f7069a66e02e0bee8bc17dd89483e2ccef9a937399af27229fb47e9d520",
+        "group": {
+          "channel": 101,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 119,
+          "declared_objects": 2,
+          "first_marker_offset": 18,
+          "segment_count": 1
+        },
+        "group_record_offset": 0,
+        "stream": "Partitions/1"
+      },
+      "status": "complete_bounded_graph"
+    },
+    {
+      "channel": 102,
+      "class_name": "DataStorage",
+      "derived_default_ifc_guid": "2nagFvrQzLKhv7t5rd9z7K",
+      "derived_identifier_diagnostic": null,
+      "diagnostic": null,
+      "effective_ifc_parameter": null,
+      "effective_ifc_parameter_diagnostic": null,
+      "graph": {
+        "consumed_bytes": 461,
+        "edges": [
+          {
+            "pointer_offset": 30,
+            "pointer_token": 4294967295,
+            "source_object_index": 0,
+            "target_class_tag": 723,
+            "target_object_index": 1
+          },
+          {
+            "pointer_offset": 153,
+            "pointer_token": 4294967295,
+            "source_object_index": 1,
+            "target_class_tag": 1331,
+            "target_object_index": 2
+          },
+          {
+            "pointer_offset": 179,
+            "pointer_token": 4294967295,
+            "source_object_index": 2,
+            "target_class_tag": 0,
+            "target_object_index": 3
+          }
+        ],
+        "objects": [
+          {
+            "class_name": "DataStorage",
+            "class_tag": 1133,
+            "fields": {
+              "m_assocLevelId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_cellList": {
+                "class_tag": 723,
+                "offset": 30,
+                "pointer_token": 4294967295
+              },
+              "m_constrInfo": [],
+              "m_createdPhaseId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_demolishedPhaseId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_designOptionId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_docAccess": {
+                "m_pDoc": {
+                  "class_tag": null,
+                  "offset": 36,
+                  "pointer_token": 1
+                }
+              },
+              "m_dummy": false,
+              "m_famId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_geomSteps": {
+                "class_tag": null,
+                "offset": 18,
+                "pointer_token": 0
+              },
+              "m_id": {
+                "m_id": {
+                  "m_id64": 2746
+                }
+              },
+              "m_locked": false,
+              "m_moribund": false,
+              "m_name": "Application wall \ud83d\ude00",
+              "m_ownerDBViewId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              },
+              "m_pGeomTable": {
+                "class_tag": null,
+                "offset": 22,
+                "pointer_token": 0
+              },
+              "m_pParamValueSetAString": {
+                "class_tag": null,
+                "offset": 10,
+                "pointer_token": 0
+              },
+              "m_pParamValueSetDouble": {
+                "class_tag": null,
+                "offset": 2,
+                "pointer_token": 0
+              },
+              "m_pParamValueSetElementId": {
+                "class_tag": null,
+                "offset": 14,
+                "pointer_token": 0
+              },
+              "m_pParamValueSetInt": {
+                "class_tag": null,
+                "offset": 6,
+                "pointer_token": 0
+              },
+              "m_unplacedOwnerId": {
+                "m_id": {
+                  "m_id64": -1
+                }
+              }
+            },
+            "fields_end": 149,
+            "start": 2,
+            "token": 0
+          },
+          {
+            "class_name": "CellList",
+            "class_tag": 723,
+            "fields": {
+              "m_cells": [
+                {
+                  "class_tag": 1331,
+                  "offset": 153,
+                  "pointer_token": 4294967295
+                }
+              ]
+            },
+            "fields_end": 159,
+            "start": 149,
+            "token": 4294967295
+          },
+          {
+            "class_name": "ESEntityCell",
+            "class_tag": 1331,
+            "fields": {
+              "m_entityMap": [
+                {
+                  "first": {
+                    "m_guid": {
+                      "guid_bytes": [
+                        45,
+                        217,
+                        109,
+                        62,
+                        226,
+                        161,
+                        41,
+                        85,
+                        191,
+                        105,
+                        4,
+                        92,
+                        24,
+                        197,
+                        248,
+                        123
+                      ]
+                    }
+                  },
+                  "second": {
+                    "m_blob": {
+                      "discriminator": -1,
+                      "offset": 179,
+                      "schema_guid": "3e6dd92d-a1e2-5529-bf69-045c18c5f87b",
+                      "state": "serialized_present"
+                    }
+                  }
+                }
+              ]
+            },
+            "fields_end": 199,
+            "start": 159,
+            "token": 4294967295
+          },
+          {
+            "class_name": "ExtensibleStorageEntity",
+            "class_tag": 0,
+            "fields": {
+              "fields": [
+                {
+                  "container_type": 0,
+                  "end": 241,
+                  "index": 0,
+                  "name": "ApplicationId",
+                  "raw_value": "movingatoms:item-42",
+                  "serialized_unit_type_id": null,
+                  "spec_type_id": null,
+                  "start": 199,
+                  "subschema_guid": null,
+                  "type_name": "TCHAR",
+                  "unit_status": "no_saved_spec",
+                  "value_semantics": "serialized_value"
+                },
+                {
+                  "container_type": 0,
+                  "end": 283,
+                  "index": 1,
+                  "name": "Name",
+                  "raw_value": "Application wall \ud83d\ude00",
+                  "serialized_unit_type_id": null,
+                  "spec_type_id": null,
+                  "start": 241,
+                  "subschema_guid": null,
+                  "type_name": "TCHAR",
+                  "unit_status": "no_saved_spec",
+                  "value_semantics": "serialized_value"
+                },
+                {
+                  "container_type": 0,
+                  "end": 461,
+                  "index": 2,
+                  "name": "PropertiesJson",
+                  "raw_value": "{\"dimensions\":{\"height_metres\":3.2},\"enabled\":true,\"labels\":[\"A\",\"\ud83d\ude00\"],\"optional\":null}",
+                  "serialized_unit_type_id": null,
+                  "spec_type_id": null,
+                  "start": 283,
+                  "subschema_guid": null,
+                  "type_name": "TCHAR",
+                  "unit_status": "no_saved_spec",
+                  "value_semantics": "serialized_value"
+                }
+              ],
+              "schema_guid": "3e6dd92d-a1e2-5529-bf69-045c18c5f87b",
+              "schema_name": "MovingAtomsElementPropertiesV1"
+            },
+            "fields_end": 461,
+            "start": 199,
+            "token": 4294967295
+          }
+        ]
+      },
+      "identity": {
+        "creation_episode": 1,
+        "element_id": 2746,
+        "original_id_suffix": 2746,
+        "other_revision": 1,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          2746,
+          0,
+          1,
+          1,
+          1,
+          2746,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 92006,
+        "stored_revision": 1,
+        "unique_id": "b192a3f9-d5af-5552-be47-dc5d6727db6e-00000aba"
+      },
+      "metadata_diagnostic": null,
+      "saved_metadata": {
+        "builtin_parameter_definitions": [],
+        "complete_element_metadata": false,
+        "declared_custom_parameters": [],
+        "family_parameter_slots": [],
+        "global_parameter_associations": [],
+        "parameter_definitions": [],
+        "parameter_sets": [],
+        "raw_field_parameters": [],
+        "resolved_family_parameters": [],
+        "root_references": {
+          "m_assocLevelId": -1,
+          "m_createdPhaseId": -1,
+          "m_demolishedPhaseId": -1,
+          "m_designOptionId": -1
+        },
+        "value_semantics": "serialized_not_evaluated"
+      },
+      "source": {
+        "body_bytes": 461,
+        "body_sha256": "853cdc3f0714ceddb1d1a2a5ddb55c09899e4f4c5a07d4eac32e1c6837f6c48c",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 461,
+          "declared_objects": 2,
+          "first_marker_offset": 111,
+          "segment_count": 1
+        },
+        "group_record_offset": 0,
+        "stream": "Partitions/1"
+      },
+      "status": "complete_bounded_graph"
+    },
+    {
+      "channel": 103,
+      "class_name": "SerializedDummy",
+      "derived_default_ifc_guid": "2nagFvrQzLKhv7t5rd9z7K",
+      "derived_identifier_diagnostic": null,
+      "diagnostic": null,
+      "effective_ifc_parameter": null,
+      "effective_ifc_parameter_diagnostic": null,
+      "graph": {
+        "consumed_bytes": 2,
+        "edges": [],
+        "objects": [
+          {
+            "class_name": "SerializedDummy",
+            "class_tag": 3712,
+            "fields": {},
+            "fields_end": 2,
+            "start": 2,
+            "token": 0
+          }
+        ]
+      },
+      "identity": {
+        "creation_episode": 1,
+        "element_id": 2746,
+        "original_id_suffix": 2746,
+        "other_revision": 1,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          2746,
+          0,
+          1,
+          1,
+          1,
+          2746,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 92006,
+        "stored_revision": 1,
+        "unique_id": "b192a3f9-d5af-5552-be47-dc5d6727db6e-00000aba"
+      },
+      "metadata_diagnostic": null,
+      "saved_metadata": {
+        "builtin_parameter_definitions": [],
+        "complete_element_metadata": false,
+        "declared_custom_parameters": [],
+        "family_parameter_slots": [],
+        "global_parameter_associations": [],
+        "parameter_definitions": [],
+        "parameter_sets": [],
+        "raw_field_parameters": [],
+        "resolved_family_parameters": [],
+        "root_references": {},
+        "value_semantics": "serialized_not_evaluated"
+      },
+      "source": {
+        "body_bytes": 2,
+        "body_sha256": "ede9a3246aa371ccc9237fc7d6c09e28117969d26c69ef2ede1ce8c622ca45cf",
+        "group": {
+          "channel": 103,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 2,
+          "declared_objects": 2,
+          "first_marker_offset": 403,
+          "segment_count": 1
+        },
+        "group_record_offset": 0,
+        "stream": "Partitions/1"
+      },
+      "status": "complete_bounded_graph"
+    }
+  ],
+  "summary": {
+    "budgets": {
+      "max_graph_objects": 100000,
+      "max_graph_values": 100000,
+      "max_group_bytes": 268435456,
+      "max_stream_bytes": 536870912
+    },
+    "builtin_catalog_provenance": null,
+    "classes": {
+      "DataStorage": {
+        "body_bytes": 461,
+        "complete_graph_body_bytes": 461,
+        "complete_graphs": 1,
+        "diagnostics": {},
+        "records": 1,
+        "unsupported_graphs": 0
+      },
+      "ElementHeader": {
+        "body_bytes": 119,
+        "complete_graph_body_bytes": 119,
+        "complete_graphs": 1,
+        "diagnostics": {},
+        "records": 1,
+        "unsupported_graphs": 0
+      },
+      "SerializedDummy": {
+        "body_bytes": 2,
+        "complete_graph_body_bytes": 2,
+        "complete_graphs": 1,
+        "diagnostics": {},
+        "records": 1,
+        "unsupported_graphs": 0
+      }
+    },
+    "complete_document_geometry": false,
+    "complete_graph_records": 3,
+    "current_records_outside_route": 0,
+    "definition_diagnostics": {},
+    "emitted_records": 3,
+    "extensible_storage_catalog": {
+      "schemas": {
+        "3e6dd92d-a1e2-5529-bf69-045c18c5f87b": {
+          "fields": [
+            {
+              "container_type": 0,
+              "index": 0,
+              "name": "ApplicationId",
+              "raw_metadata": {
+                "m_containerType": 0,
+                "m_documentation": "",
+                "m_entryIndex": 0,
+                "m_fieldName": "ApplicationId",
+                "m_fieldTypeName": "TCHAR",
+                "m_specTypeId": {
+                  "m_typeId": ""
+                },
+                "m_subSchemaGUID": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              },
+              "spec_type_id": null,
+              "subschema_guid": null,
+              "type_name": "TCHAR"
+            },
+            {
+              "container_type": 0,
+              "index": 1,
+              "name": "Name",
+              "raw_metadata": {
+                "m_containerType": 0,
+                "m_documentation": "",
+                "m_entryIndex": 1,
+                "m_fieldName": "Name",
+                "m_fieldTypeName": "TCHAR",
+                "m_specTypeId": {
+                  "m_typeId": ""
+                },
+                "m_subSchemaGUID": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              },
+              "spec_type_id": null,
+              "subschema_guid": null,
+              "type_name": "TCHAR"
+            },
+            {
+              "container_type": 0,
+              "index": 2,
+              "name": "PropertiesJson",
+              "raw_metadata": {
+                "m_containerType": 0,
+                "m_documentation": "",
+                "m_entryIndex": 2,
+                "m_fieldName": "PropertiesJson",
+                "m_fieldTypeName": "TCHAR",
+                "m_specTypeId": {
+                  "m_typeId": ""
+                },
+                "m_subSchemaGUID": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              },
+              "spec_type_id": null,
+              "subschema_guid": null,
+              "type_name": "TCHAR"
+            }
+          ],
+          "guid": "3e6dd92d-a1e2-5529-bf69-045c18c5f87b",
+          "name": "MovingAtomsElementPropertiesV1",
+          "raw_metadata": {
+            "m_applicationGUID": {
+              "m_guid": {
+                "guid_bytes": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "m_documentation": "Moving Atoms external element identity and JSON application properties, version 1",
+            "m_fields": [
+              {
+                "m_containerType": 0,
+                "m_documentation": "",
+                "m_entryIndex": 0,
+                "m_fieldName": "ApplicationId",
+                "m_fieldTypeName": "TCHAR",
+                "m_specTypeId": {
+                  "m_typeId": ""
+                },
+                "m_subSchemaGUID": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              },
+              {
+                "m_containerType": 0,
+                "m_documentation": "",
+                "m_entryIndex": 1,
+                "m_fieldName": "Name",
+                "m_fieldTypeName": "TCHAR",
+                "m_specTypeId": {
+                  "m_typeId": ""
+                },
+                "m_subSchemaGUID": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              },
+              {
+                "m_containerType": 0,
+                "m_documentation": "",
+                "m_entryIndex": 2,
+                "m_fieldName": "PropertiesJson",
+                "m_fieldTypeName": "TCHAR",
+                "m_specTypeId": {
+                  "m_typeId": ""
+                },
+                "m_subSchemaGUID": {
+                  "m_guid": {
+                    "guid_bytes": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                }
+              }
+            ],
+            "m_guid": {
+              "m_guid": {
+                "guid_bytes": [
+                  45,
+                  217,
+                  109,
+                  62,
+                  226,
+                  161,
+                  41,
+                  85,
+                  191,
+                  105,
+                  4,
+                  92,
+                  24,
+                  197,
+                  248,
+                  123
+                ]
+              }
+            },
+            "m_readAccessLevel": 1,
+            "m_schemaName": "MovingAtomsElementPropertiesV1",
+            "m_vendorId": "",
+            "m_writeAccessLevel": 1
+          }
+        }
+      }
+    },
+    "extensible_storage_catalog_diagnostic": null,
+    "extensible_storage_catalog_source": {
+      "app_info_object_index": 2,
+      "complete_global_graph": true,
+      "fixed_footer": 0,
+      "graph_bytes": 826288,
+      "inflated_sha256": "4b002084a2293bb109110f1a452f04dcb5d407daa8272433fa159e2831d41be1",
+      "root_class": "ADocument",
+      "scope": "Owned file-local schemas; general nonzero fixed footers remain unqualified",
+      "storage_end": 820953,
+      "storage_object_index": 129,
+      "storage_start": 55723,
+      "stream": "Global/Latest",
+      "stream_bytes": 826292
+    },
+    "global_streams": {
+      "Formats/Latest": {
+        "member_bytes": 171885,
+        "member_offset": 0,
+        "opaque_suffix_bytes": 639,
+        "opaque_suffix_sha256": "c61a54d757ca5ced64d7fb2a7fcf86db6fcf3565a3240f8067c2fc5a3caf6cf8",
+        "prepared_bytes": 172524,
+        "suffix_interpreted": false
+      },
+      "Global/DocumentIncrementTable": {
+        "member_bytes": 225,
+        "member_offset": 8,
+        "opaque_suffix_bytes": 50,
+        "opaque_suffix_sha256": "3d9a13fcfdb1f9fbb298a4db2d88b30570a090b31e1e7d304cb3337d711cd445",
+        "prepared_bytes": 283,
+        "suffix_interpreted": false
+      },
+      "Global/ElemTable": {
+        "member_bytes": 10166,
+        "member_offset": 8,
+        "opaque_suffix_bytes": 96,
+        "opaque_suffix_sha256": "4164728dcc2d1d31639bb6b551eabdb646efc242e1b08ef9bbb616019214e667",
+        "prepared_bytes": 10270,
+        "suffix_interpreted": false
+      },
+      "Global/History": {
+        "member_bytes": 92,
+        "member_offset": 8,
+        "opaque_suffix_bytes": 41,
+        "opaque_suffix_sha256": "86777f95064160a745e9ec32bf25c39d7ffe90e209db845cb29b4a6a6147a745",
+        "prepared_bytes": 141,
+        "suffix_interpreted": false
+      },
+      "Global/Latest": {
+        "member_bytes": 47614,
+        "member_offset": 8,
+        "opaque_suffix_bytes": 739,
+        "opaque_suffix_sha256": "392ef48a819274e853b1e3bb440d91d41309aeb3fcd8be0cbc88c1698573abef",
+        "prepared_bytes": 48361,
+        "suffix_interpreted": false
+      }
+    },
+    "graveyard_records": 0,
+    "indexed_elements": 2301,
+    "max_graph_objects_observed": 4,
+    "max_graph_values_observed": 48,
+    "parameter_binding_context": null,
+    "parameter_definitions": {},
+    "partitions": {
+      "Partitions/0": {
+        "content_sections": 1,
+        "groups": 14,
+        "inflated_bytes": 1576164,
+        "opaque_terminal_bytes": 313,
+        "opaque_terminal_sha256": "da87163db08a1dfefbb0665eb5ce5e2bed5f92c7c7fec5e26068344e969eb2e3",
+        "segments": 16,
+        "trailing_padding_bytes": 172
+      },
+      "Partitions/1": {
+        "content_sections": 1,
+        "groups": 3,
+        "inflated_bytes": 694,
+        "opaque_terminal_bytes": 61,
+        "opaque_terminal_sha256": "eaf39438ac4c9b337598498958d234bca08b23310e29a3ce24215721fd4067c1",
+        "segments": 3,
+        "trailing_padding_bytes": 5
+      }
+    },
+    "projected_metadata_records": 3,
+    "refused_graph_classes": {},
+    "refused_graph_ids": [],
+    "requested_ids_absent_from_index": [],
+    "revit_version": 2024,
+    "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+    "selected_ids_without_records": [],
+    "selected_indexed_elements": 1,
+    "serialized_values_not_evaluated": true,
+    "skipped_embedded_content_groups": 0,
+    "skipped_historical_records": 0,
+    "unit_formats": {},
+    "unsupported_graph_records": 0,
+    "unsupported_metadata_records": 0
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "new_element_id": 2746,
+  "native_channels_complete": true,
+  "rendered_triangles_match_request_after_float32": true,
+  "rendered_triangle_count": 12,
+  "rendered_vertices": 36,
+  "positive_references_resolved": [
+    119,
+    125,
+    2746
+  ],
+  "application_metadata_matches": true,
+  "render_materials": {
+    "0": {
+      "base_color": [
+        0.4980392156862745,
+        0.4980392156862745,
+        0.4980392156862745,
+        1.0
+      ],
+      "diagnostics": [],
+      "material_id": null,
+      "metallic_factor": 0.0,
+      "name": "default viewport material",
+      "provenance": [
+        {
+          "diffuse_packed_rgb": 8355711,
+          "direct_reflectivity": 0.5,
+          "glossiness": 0.1,
+          "not_serialized_material_property": true,
+          "source": "initialized_viewport_traits"
+        },
+        {
+          "field": "m_materialElemId",
+          "object_index": 1,
+          "owner_id": 125,
+          "record_source": {
+            "body_bytes": 156,
+            "body_sha256": "2436e6ea746f8117d4e8f1dee6a1378c1629f263bf21f5ea5587ef19c7c1d86d",
+            "group": {
+              "channel": 102,
+              "content_element_count": null,
+              "content_key": null,
+              "declared_body_bytes": 123430,
+              "declared_objects": 376,
+              "first_marker_offset": 20723,
+              "segment_count": 1
+            },
+            "group_record_offset": 86598,
+            "stream": "Partitions/0"
+          },
+          "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000007d"
+        },
+        {
+          "explicit_material_id": null,
+          "face_tag": 1,
+          "owner_id": 2746,
+          "render_style_id": 125,
+          "resolution": "saved_owner_type_paint_or_render_style",
+          "source_owner_id": null
+        },
+        {
+          "exported_opacity": 1.0,
+          "not_serialized_material_property": true,
+          "saved_material_opacity": 1.0,
+          "source": "opaque_default_viewport_profile"
+        }
+      ],
+      "roughness_factor": 0.29296392949157113,
+      "saved_opacity": null
+    }
+  },
+  "saved_scene_status": "decoded_saved_graphics",
+  "candidate_sha256": "a971271cbc5eac80a471cd9498e5ae1dbe70d9baecd3e25a4145c28b5f912623",
+  "probe_binary_sha256": "2fc4bd113b2fcf777858f60062dc2777e05011b98e50ceea77727ad4242a00d6",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "saved_scene_sha256": "59783548ef6b56d72a9bb8d1fffb55dcc4b6d91ea8030c1ca4d9d9721ebd6480",
+  "autodesk_acceptance": "not_tested"
+}

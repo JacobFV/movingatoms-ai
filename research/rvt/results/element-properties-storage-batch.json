@@ -1,0 +1,67 @@
+{
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "seed_source_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "schema_guid": "3e6dd92d-a1e2-5529-bf69-045c18c5f87b",
+  "registered_owner_ids": [
+    2746,
+    2747
+  ],
+  "single_schema_registered": true,
+  "batch_global_semantics_independently_exact": true,
+  "global_changes": [
+    {
+      "class_name": "ElemsSetWithCellsTracking",
+      "start": 55343,
+      "end": 55415,
+      "new_bytes": 96
+    },
+    {
+      "class_name": "ESSchemaStorage",
+      "start": 55707,
+      "end": 820431,
+      "new_bytes": 765230
+    },
+    {
+      "class_name": "EStorageTracking",
+      "start": 823349,
+      "end": 823357,
+      "new_bytes": 44
+    }
+  ],
+  "trials": [
+    {
+      "owner_class": "DirectShape",
+      "source_file_sha256": "a971271cbc5eac80a471cd9498e5ae1dbe70d9baecd3e25a4145c28b5f912623",
+      "source_owner_id": 2746,
+      "source_body_sha256": "786cda6bfbc611e0c57285b66cfb8f793e7905758bad6b247f4e6046b5f7e8ca",
+      "attached_body_sha256": "5bae53605de71b63b719cd3f3ff61cc462348e1d714cb0851f11a44908c0c81d",
+      "source_bytes": 986,
+      "attached_bytes": 1262,
+      "source_reconstructed_exactly": true,
+      "all_original_object_fields_preserved_except_cell_attachment": true,
+      "independent_entity_values_exact": true,
+      "complete_body_consumed": true,
+      "source_cell_list_was_null": true
+    },
+    {
+      "owner_class": "SWall",
+      "source_file_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+      "source_owner_id": 20826,
+      "source_body_sha256": "816072c39ffe4de748103185e6d5bce5b7291f37d9a2551844525414a99128d7",
+      "attached_body_sha256": "99996991024daf216805bc792e5026465352773dd7da3d897cdb54d7461251da",
+      "source_bytes": 2946,
+      "attached_bytes": 3206,
+      "source_reconstructed_exactly": true,
+      "all_original_object_fields_preserved_except_cell_attachment": true,
+      "independent_entity_values_exact": true,
+      "complete_body_consumed": true,
+      "source_cell_list_was_null": false
+    }
+  ],
+  "limitations": [
+    "Attached own ES lifecycle is an unvalidated hypothesis; source wall has no measured ES entity.",
+    "DirectShape control itself is a research candidate, not an Autodesk-authored2024 instance.",
+    "Batch registration IDs2746/2747 are a separate seed control; Core wall20826 attachment is body-only, not registered in that seed.",
+    "No complete combined document is emitted by this audit."
+  ]
+}

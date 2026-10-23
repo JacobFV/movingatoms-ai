@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-22",
+  "qualified_revit2024_directshape_instances": 0,
+  "fixtures": [
+    {
+      "repository": "DynamoDS/DynamoRevit",
+      "commit": "49cd43c5c3b21271640ae043b8b77374e4796843",
+      "path": "test/System/DirectShape/singleDirectShape.rvt",
+      "name": "singleDirectShape.rvt",
+      "sha256": "3b05630eb71230b567b891f7829a9a6326b435b002b99d571d3830790fe50431",
+      "license_path": "LICENSE.txt",
+      "license_name": "DynamoRevit-LICENSE.txt",
+      "license_sha256": "ec1fe45049abf566d3e86f51ce815c1fd52de7c3095eeef71f72fb5c144f837d",
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "ricaun-io/ricaun.Revit.FileInfo",
+      "commit": "9228ef12063fd294a565c47b989449ab93460a61",
+      "path": "ricaun.Revit.FileInfo.Tests/Files/2024/Project.rvt",
+      "name": "ricaun-Project2024.rvt",
+      "sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+      "license_path": "LICENSE",
+      "license_name": "ricaun-LICENSE.txt",
+      "license_sha256": "47479541ef4e0cef78174f121d2408cd9ea4a9c3182ff2699eb0c002943b23f8",
+      "license": "MIT"
+    }
+  ],
+  "dynamo_same_blob_license_resolution": {
+    "historical_branch": "Revit2024",
+    "historical_commit": "c2dcaf5da0726b8643b6065815aa2c2c33d828b8",
+    "licensed_master_commit": "49cd43c5c3b21271640ae043b8b77374e4796843",
+    "identical_git_blob": "c502fd22e53303c8065f13c7e533b9b44e790069"
+  },
+  "observations": [
+    {
+      "file": "singleDirectShape.rvt",
+      "actual_version": 2015,
+      "build": "20140322_1515(x64)",
+      "saved": "2015-08-26 10:37:59 UTC",
+      "native_probe_exit": 1,
+      "native_probe_error": "native record framing is unvalidated for Revit 2015",
+      "instance_count": "not_established",
+      "scope": "retained for separately validated historical decoding"
+    },
+    {
+      "file": "ricaun-Project2024.rvt",
+      "actual_version": 2024,
+      "native_probe_exit": 0,
+      "indexed_elements": 2300,
+      "selected_directshape_or_type_records": 0,
+      "instance_count": 0
+    }
+  ],
+  "limits": [
+    "Branch name does not establish model version.",
+    "No forced Revit2024 decoding of historical file.",
+    "No known education-marked or unlicensed candidate was downloaded.",
+    "Repository-wide license retained alongside each model; no separate fixture restrictions were identified in inspected tree."
+  ]
+}

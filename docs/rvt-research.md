@@ -1,10 +1,25 @@
 # Writing native Revit (.rvt) without Revit — research notes
 
-Latest milestone: a [minimal-seed native document](../research/rvt/results/seed-wall.md)
-now contains only three requested physical walls plus retained document scaffolding.
-It preserves all 2,300 seed identities, adds an upper level, and passes independent
-metadata, native solid and IFC mesh/material checks. The full suite has 212 tests.
-Arbitrary model export and native application acceptance remain incomplete.
+Latest milestone: saved minimal-seed candidates now contain named metre-based walls,
+a DirectShape triangle mesh, or our own registered application metadata. Independent
+public-reader checks recover the saved geometry and exact nested properties.
+The surface encoder also preserves 11,000 triangles across signed16-safe chunks,
+including open and disconnected surfaces. The research suite passes 270 tests.
+The combined general-model writer is being integrated; native application acceptance
+and production native export remain incomplete.
+
+- [Named levels and walls](../research/rvt/results/seed-document-run.json).
+- [Saved DirectShape checks](../research/rvt/results/seed-directshape-native.json)
+  and [actual saved-mesh screenshot](rvt-evidence/2026-10-23-directshape-mesh/directshape.png).
+- [Saved own-schema metadata](../research/rvt/results/seed-properties-experiment.md)
+  and [geometry-owner metadata attachment](../research/rvt/results/element-properties-storage-batch.md).
+- [Open, disconnected and chunked surfaces](../research/rvt/results/directshape_surface.md).
+- [Measured category/style contexts](../research/rvt/results/seed_categories.md).
+
+DirectShape constructor options, lifecycle behavior and absence of Global instance
+registration remain explicit hypotheses. Saved-scene rendering is checked through
+an independent public reader, not Autodesk. The ordinary public IFC exporter skips
+DirectShape; its omission is not treated as a successful geometry validation.
 
 Earlier Core-based implementation: a [single-command multi-wall workflow](../research/rvt/results/wall-batch.md)
 creates multiple distinct walls in one partition/episode, with independently verified

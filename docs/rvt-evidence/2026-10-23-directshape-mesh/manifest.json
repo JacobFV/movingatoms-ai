@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-10-23T02:06:23.837311+00:00",
+  "source_commit": "5cb2697dd80900a8f44584cb69cdc85c76679414",
+  "source_run": "research/rvt/local/seed-directshape-run-v3",
+  "candidate_sha256": "a971271cbc5eac80a471cd9498e5ae1dbe70d9baecd3e25a4145c28b5f912623",
+  "working_tree_status": " M research/rvt/results/directshape-feasibility.md\n?? docs/rvt-evidence/2026-10-23-directshape-mesh/\n?? research/rvt/capture_directshape_evidence.py\n?? research/rvt/directshape_current.py\n?? research/rvt/directshape_current_experiment.py\n?? research/rvt/directshape_fixture_archive.py\n?? research/rvt/directshape_fixture_fetch.py\n?? research/rvt/directshape_fixture_search.py\n?? research/rvt/directshape_legacy_audit.py\n?? research/rvt/directshape_legacy_global.py\n?? research/rvt/directshape_legacy_probe.rs\n?? research/rvt/directshape_surface.py\n?? research/rvt/directshape_surface_experiment.py\n?? research/rvt/directshape_surface_probe.rs\n?? research/rvt/directshape_surface_verify.py\n?? research/rvt/element_properties.py\n?? research/rvt/element_properties_audit.py\n?? research/rvt/element_properties_probe.py\n?? research/rvt/element_properties_probe.rs\n?? research/rvt/element_properties_storage.py\n?? research/rvt/element_properties_storage_audit.py\n?? research/rvt/element_properties_storage_batch.py\n?? research/rvt/element_properties_storage_batch_audit.py\n?? research/rvt/native_mesh.py\n?? research/rvt/native_mesh_experiment.py\n?? research/rvt/native_mesh_intersections.py\n?? research/rvt/native_mesh_scene_experiment.py\n?? research/rvt/native_mesh_scene_probe.rs\n?? research/rvt/native_mesh_surface.py\n?? research/rvt/native_mesh_surface_experiment.py\n?? research/rvt/native_mesh_surface_probe.rs\n?? research/rvt/results/directshape_current.json\n?? research/rvt/results/directshape_current.md\n?? research/rvt/results/directshape_fixture_candidates.json\n?? research/rvt/results/directshape_fixture_candidates.md\n?? research/rvt/results/directshape_fixture_search.json\n?? research/rvt/results/directshape_fixture_search_expanded.json\n?? research/rvt/results/directshape_fixture_search_expanded.md\n?? research/rvt/results/directshape_legacy_audit.json\n?? research/rvt/results/directshape_legacy_audit.md\n?? research/rvt/results/directshape_legacy_global.json\n?? research/rvt/results/directshape_surface.json\n?? research/rvt/results/directshape_surface.md\n?? research/rvt/results/element-properties-storage-batch.json\n?? research/rvt/results/element-properties-storage-batch.md\n?? research/rvt/results/element-properties-storage.json\n?? research/rvt/results/element-properties-storage.md\n?? research/rvt/results/element-properties.json\n?? research/rvt/results/element-properties.md\n?? research/rvt/results/native-mesh-scene.json\n?? research/rvt/results/native-mesh-surface.json\n?? research/rvt/results/native-mesh-surface.md\n?? research/rvt/results/native-mesh.json\n?? research/rvt/results/native-mesh.md\n?? research/rvt/results/seed-directshape-construction.json\n?? research/rvt/results/seed-directshape-failed-run.json\n?? research/rvt/results/seed-directshape-metadata.json\n?? research/rvt/results/seed-directshape-native.json\n?? research/rvt/results/seed-directshape-plan.json\n?? research/rvt/results/seed-directshape-request.json\n?? research/rvt/results/seed-directshape-run.json\n?? research/rvt/results/seed-directshape-scene.json\n?? research/rvt/results/seed-directshape-transport.json\n?? research/rvt/results/seed-properties-experiment.json\n?? research/rvt/results/seed-properties-experiment.md\n?? research/rvt/results/seed-properties-saved-native.json\n?? research/rvt/results/seed_categories.json\n?? research/rvt/results/seed_categories.md\n?? research/rvt/seed_categories.py\n?? research/rvt/seed_categories.rs\n?? research/rvt/seed_directshape_experiment.py\n?? research/rvt/seed_directshape_probe.rs\n?? research/rvt/seed_model.py\n?? research/rvt/seed_model_request.py\n?? research/rvt/seed_properties_experiment.py\n?? research/rvt/test_directshape_current.py\n?? research/rvt/test_directshape_surface.py\n?? research/rvt/test_element_properties.py\n?? research/rvt/test_element_properties_storage.py\n?? research/rvt/test_element_properties_storage_batch.py\n?? research/rvt/test_native_mesh.py\n?? research/rvt/test_native_mesh_nonconvex.py\n?? research/rvt/test_native_mesh_surface.py\n?? research/rvt/test_seed_categories.py\n?? research/rvt/test_seed_directshape_experiment.py\n?? research/rvt/test_seed_properties_experiment.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "8927884c36523eb2114edb387d2d631b0d6a8fb9568fc394c5c31c6f4b537f44",
+  "not_autodesk_ui": true,
+  "actual_native_saved_scene": true,
+  "ordinary_ifc_export": false,
+  "source_report_sha256": {
+    "run": "7b45af1626a99167a2853f7f3c9c04ed4f026dbbe18e15204824fdb0451dfcb6",
+    "native": "2c3bbf0972557117f8fc120d91f75a1e4273a1f5f26c9612f675f16de60b7090",
+    "metadata": "c6644922ff471233e68905477179ee79555c64f0fd5b5549345f620205c5b2ee",
+    "scene": "59783548ef6b56d72a9bb8d1fffb55dcc4b6d91ea8030c1ca4d9d9721ebd6480"
+  },
+  "artifacts": {
+    "directshape.html": "a9409c4040f4076988f5191a25f0d3053eba8b738c4479743aae129165da2fb1",
+    "directshape.png": "df5330695c03a3c5fe5c09961881985b1683b2bd0e5b3484320e9d1b29b052d6",
+    "mesh-metres.json": "2ed6d635fe1e1f399e2ac11d401c7953dc1916a20129634d27bac94a797eb464",
+    "mesh.png": "e9f152f6469d9129ae7663e7eef6a5aab6a37e41a73963452ee72fe7974f672c",
+    "metadata.json": "c6644922ff471233e68905477179ee79555c64f0fd5b5549345f620205c5b2ee",
+    "native.json": "2c3bbf0972557117f8fc120d91f75a1e4273a1f5f26c9612f675f16de60b7090",
+    "run.json": "7b45af1626a99167a2853f7f3c9c04ed4f026dbbe18e15204824fdb0451dfcb6",
+    "scene.json": "59783548ef6b56d72a9bb8d1fffb55dcc4b6d91ea8030c1ca4d9d9721ebd6480"
+  }
+}

@@ -209,3 +209,13 @@ checks for levels below and above zero, Unicode names and different base/top
 constraints. [Initial capture failure](2026-10-23-named-levels/FAILED.md) is retained.
 
 ![Named level geometry evidence](2026-10-23-named-levels-corrected/candidate.png)
+
+
+## Saved DirectShape mesh — 2026-10-23
+
+[Manifest and reproduction notes](2026-10-23-directshape-mesh/README.md) bind
+three complete native channels, 12 rendered triangles and preservation of all
+2,300 seed identities. This is a Chrome capture of our evidence report and actual
+saved mesh, not Autodesk UI or native acceptance.
+
+![Saved DirectShape geometry evidence](2026-10-23-directshape-mesh/directshape.png)
