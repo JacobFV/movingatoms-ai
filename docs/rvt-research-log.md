@@ -526,3 +526,46 @@ encoding and acceptance remain unverified.
 The [public-source audit](../research/rvt/results/signature_public_sources.md) corrects
 the old signature dead-end premise: Autodesk documents desktop opening of foreign RVT
 files. It does not identify our partition field or establish cloud acceptance.
+
+
+## Parametric wall length and independent IFC mesh
+
+Extended the measured wall from 9.5 to 12 feet while retaining its start, thickness,
+height, type and level context. The encoder transforms named world-coordinate fields
+and face-local UV distances together, preserving unit directions and topology. The
+candidate SHA is `271c54903276ebc540206979d8b54d008aec485fb823704433633f909de54c39`.
+Only its new Partitions/66 stream differs from the verified translated-wall control.
+
+The pinned native reader consumes all three new graphs completely; original wall
+objects and existing projected elements/identities remain unchanged. Independent
+IfcOpenShell/OpenCASCADE triangulation measures a 3.6576 × 0.2032 × 4.572 m wall and
+3.39802159104147 m³ volume, preserving all 360 prior wall meshes exactly. Explicit
+OwnerHistory correction controls pass schema validation with zero messages.
+
+[Actual mesh screenshots and hashes](rvt-evidence/2026-10-22-parametric-wall/manifest.json)
+are archived and visually inspected. The copied reports are immutable snapshots from
+before the subsequent machine-readable validation-boundary annotation. All capture
+artifact hashes verified. This IFC result does not alone validate the saved native
+BRep; a separate native face/edge/solid audit follows.
+
+
+## Saved native BRep and foreign-producer search
+
+A separate verifier reconstructs face loops and edge endpoints from the actual saved
+candidate's independently decoded channel 103 graph. It does not use SWall driver
+parameters or IFC. It verifies opposite directed edge incidence, a closed six-face,
+twelve-edge, eight-vertex solid, Euler characteristic two, 120.00000000000085 ft³
+volume and 396.0000000000002 ft² surface area. Four auxiliary open sheets are reported
+separately. Native vertices match the saved bounds; the final audit also checks the
+header Outline. Negative tests reject broken topology, UV geometry and bounds.
+The [native BRep screenshot](rvt-evidence/2026-10-22-native-brep/wall-comparison.png)
+was captured before the final header-Outline check was added; its immutable source
+report accurately records the earlier checks. Screenshot visually inspected and hashes verified.
+
+A [bounded foreign-producer search](../research/rvt/results/foreign_producer_search.md)
+found no downloadable model with both permissive licensing and established third-party
+writer provenance. Safe Software's official FME tutorial corroborates opening a foreign
+RVT through Revit's warning. No foreign bytes or proprietary implementation were inspected.
+This leaves the valid producer-field encoding and native acceptance unresolved.
+
+Final integrated Python discovery passes **128 tests**. No Rust transport code changed in this checkpoint.

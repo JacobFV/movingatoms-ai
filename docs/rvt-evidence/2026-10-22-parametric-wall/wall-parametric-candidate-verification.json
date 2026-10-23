@@ -1,0 +1,51 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "control_sha256": "a9612aa28bcc755fa5536a04aca1a981209bf7119dff65dd4a73c8f7efad02aa",
+  "candidate_sha256": "271c54903276ebc540206979d8b54d008aec485fb823704433633f909de54c39",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "control_evidence_sha256": "3e3321f40aa42dae588430c8657eb196a78c55b619242685e099753dff68544f",
+  "changed_streams_from_control": [
+    "Partitions/66"
+  ],
+  "all_other_streams_byte_identical": true,
+  "prior_native_identities_preserved_via_byte_identical_tables": 26425,
+  "actual_registration_preserved_from_verified_control": true,
+  "complete_new_channels": {
+    "101": {
+      "objects": 3,
+      "edges": 2,
+      "body_sha256": "623b2a131bf9a83f35f75aee3b6696420abbfb27f3618eb5939be64f71bb0be6",
+      "body_bytes": 233
+    },
+    "103": {
+      "objects": 74,
+      "edges": 73,
+      "body_sha256": "aaee54be28c427a29fa62226f5ef8cffe3e830b2174502c5c8cbe845ce8d53f0",
+      "body_bytes": 6884
+    },
+    "102": {
+      "objects": 29,
+      "edges": 28,
+      "body_sha256": "7cb022db755944134eb21155c733c8d446386a4c83c2509d78cfc9f6e2143620",
+      "body_bytes": 2946
+    }
+  },
+  "prior_projected_entities_exactly_preserved": 970,
+  "all_native_ifc_ids_preserved": true,
+  "parametric_extrusion": {
+    "depth_feet": 0.666666666666714,
+    "height_feet": 15.0,
+    "profile_override": null,
+    "width_feet": 12.0
+  },
+  "location_feet": [
+    525.5,
+    67.74999999999993,
+    76.0
+  ],
+  "ifc_file": "wall-parametric-candidate.ifc",
+  "ifc_sha256": "4c7f9c19783c9bf74d1375af633d8fe5aef4435ab82e838545717c9720fe2f33",
+  "new_native_ifc_guid": "25b17ArnDJBg0oqQmFGvy0",
+  "complete_save_transaction": false,
+  "autodesk_acceptance": "not_tested"
+}

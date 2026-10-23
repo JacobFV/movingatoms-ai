@@ -1,0 +1,87 @@
+{
+  "source_ifc_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+  "candidate_ifc_sha256": "dec5773f1fd6635e16661b5303aefa1b016133b91e01cc27a56ee24b1edda5f5",
+  "ifcopenshell_version": "0.8.5",
+  "kernel": "opencascade",
+  "units": "metres",
+  "schema_validation": [
+    {
+      "file": "wall-candidate-outside-source-owner-corrected.ifc",
+      "messages": []
+    },
+    {
+      "file": "wall-parametric-candidate-owner-corrected.ifc",
+      "messages": []
+    }
+  ],
+  "unchanged_existing_wall_meshes": 360,
+  "candidate_wall_count": 361,
+  "new_native_ifc_guid": "25b17ArnDJBg0oqQmFGvy0",
+  "minimum_metres": [
+    158.3436,
+    20.5486,
+    23.1648
+  ],
+  "maximum_metres": [
+    162.0012,
+    20.751800000000003,
+    27.7368
+  ],
+  "vertices": 8,
+  "triangles": 12,
+  "shape": {
+    "dimensions_metres": [
+      3.657600000000002,
+      0.2032000000000025,
+      4.571999999999999
+    ],
+    "expected_dimensions_metres": [
+      3.6576000000000004,
+      0.2032,
+      4.572
+    ],
+    "volume_cubic_metres": 3.3980215910414717,
+    "expected_volume_cubic_metres": 3.3980215910400005,
+    "coordinate_tolerance_metres": 1e-08,
+    "volume_tolerance_cubic_metres": 1e-08
+  },
+  "material": {
+    "name": "Default Wall",
+    "thickness_metres": 0.2032
+  },
+  "validator_sha256": "f6c724f94f99dd3554a5221341550d497349655f4524fa706fa1feec0f4cbc45",
+  "autodesk_acceptance": "not_tested",
+  "validation_scope": "Actual emitted IFC triangulation; exporter may derive extrusion from wall drivers. This does not independently validate the native BRep.",
+  "explicit_owner_history_correction_controls": [
+    {
+      "input_file": "wall-candidate-outside-source.ifc",
+      "input_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+      "output_file": "wall-candidate-outside-source-owner-corrected.ifc",
+      "output_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59349
+    },
+    {
+      "input_file": "wall-parametric-candidate.ifc",
+      "input_sha256": "4c7f9c19783c9bf74d1375af633d8fe5aef4435ab82e838545717c9720fe2f33",
+      "output_file": "wall-parametric-candidate-owner-corrected.ifc",
+      "output_sha256": "dec5773f1fd6635e16661b5303aefa1b016133b91e01cc27a56ee24b1edda5f5",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59407
+    }
+  ]
+}

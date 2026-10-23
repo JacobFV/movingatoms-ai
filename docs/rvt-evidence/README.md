@@ -123,3 +123,23 @@ translated 121.92 m along X. This is an independent technical plot, not a Revit 
 or proof of native acceptance.
 
 ![Independent wall mesh comparison](2026-10-22-wall-geometry/wall-comparison.png)
+
+
+### Parametric wall length comparison
+
+[Parametric capture](2026-10-22-parametric-wall/manifest.json) compares actual source
+and 12-foot candidate IFC meshes at equal scale. It includes source reports, mesh
+coordinates, triangles, plot measurements and artifact hashes. The separate native
+BRep audit is needed because IFC extrusion can be derived from wall parameters.
+
+![Parametric wall comparison](2026-10-22-parametric-wall/wall-comparison.png)
+
+
+### Saved native solid audit
+
+[Native BRep capture](2026-10-22-native-brep/manifest.json) adds the independent
+native-solid measurement to the IFC comparison. The actual saved candidate has a
+closed 120 ft³ solid with six faces, twelve edges and eight vertices. Four open
+auxiliary sheets are excluded from volume. Its report and artifact hashes are archived.
+
+![Saved native BRep audit](2026-10-22-native-brep/wall-comparison.png)

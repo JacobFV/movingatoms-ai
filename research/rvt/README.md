@@ -2,6 +2,14 @@
 
 See [docs/rvt-research.md](../../docs/rvt-research.md). Run with `uv run --with olefile --with xxhash --with crcmod python <script> <file.rvt>`.
 
+Current semantic experiments include the [room edit/save candidate](results/save-candidate.md),
+[registered DataStorage creation](results/create-candidate.md), and
+[straight-wall creation with a length change](results/wall-parametric-candidate.md).
+The wall reports distinguish native graph reconstruction, independently triangulated
+IFC output and unresolved native regeneration. [Screenshots and provenance](../../docs/rvt-evidence/README.md)
+record the work for reporting. [Primary Autodesk documentation](results/signature_public_sources.md)
+permits desktop opening of foreign RVT files; this does not establish acceptance of our candidates.
+
 - `rvtinspect.py` — list a file's OLE streams and print BasicFileInfo.
 - `tail_probe.py` — split paged streams into 64,896 + 353-byte pages; entropy, constant bytes, digest search, duplicate-payload check.
 - `tail_probe2.py` — more digests (xxhash, CRC variants, SHA-512, BLAKE2b) and stride-structure checks on one page's trailer.

@@ -17,6 +17,14 @@ the new wall's dimensions, volume, material and translation. The outside-model v
 sets two measured room/space-bounding booleans false; native regeneration remains a hypothesis.
 [Actual mesh evidence and screenshot](rvt-evidence/2026-10-22-wall-geometry/wall-comparison.png).
 
+The [length-changing wall experiment](../research/rvt/results/wall-parametric-candidate.md)
+extends that profile from 9.5 to 12 feet, with coherent face-local UV changes and fixed
+width, height and start point. Independent IFC checks measure 3.39802159104 m³ and
+preserve all existing wall meshes. A [separate native BRep audit](../research/rvt/results/wall-brep-audit.json)
+reconstructs the saved faces directly and measures a closed 120 ft³ solid, with
+6 faces, 12 edges, 8 vertices and consistent saved bounds. Native regeneration
+and application acceptance remain unverified.
+
 **Correction to the signature assessment:** Autodesk explicitly documents opening
 third-party RVT files through a foreign-file warning. An Autodesk producer signature
 is therefore not established as a universal desktop-opening requirement. This does

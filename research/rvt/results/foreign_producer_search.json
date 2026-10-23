@@ -1,0 +1,68 @@
+{
+  "research_date": "2026-10-22",
+  "status": "no_eligible_fixture_found",
+  "eligibility": [
+    "public without account",
+    "permissive license explicitly applicable to model",
+    "documented third-party writer provenance"
+  ],
+  "leads": [
+    {
+      "name": "Safe Software Revit writing tutorial",
+      "url": "https://support.safe.com/hc/en-us/articles/25407471567757-Revit-Writing-in-FME-Form",
+      "updated": "2025-05-20",
+      "public_documentation": true,
+      "documented_output_producer": "FME",
+      "candidate_attachment": "RevitWriting_2023.fmwt",
+      "documented_included_template": "Architectural_Blank.rte",
+      "model_license_established": false,
+      "template_foreign_writer_provenance_established": false,
+      "downloaded_or_executed": false,
+      "disposition": "documentation only; template is input and its writer/license not established",
+      "license_context_url": "https://www.safe.com/legal/"
+    },
+    {
+      "name": "DDC samples",
+      "url": "https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG",
+      "revision": "0ec89e3fabaa272b41824eb31006ac3312ae2fd3",
+      "tree_api": "https://api.github.com/repos/datadrivenconstruction/cad2data-Revit-IFC-DWG/git/trees/0ec89e3fabaa272b41824eb31006ac3312ae2fd3?recursive=1",
+      "tree_entries": 4604,
+      "tree_truncated": false,
+      "native_model_paths": [],
+      "disposition": "no native model file in inspected complete tree; RVT described as converter input",
+      "proprietary_components_accessed": false
+    },
+    {
+      "name": "ODA public documentation",
+      "urls": [
+        "https://www.opendesign.com/faq/bimrv",
+        "https://www.opendesign.com/faq/question/how-work-different-file-formats-example-dwg-dgn-rvt-rfa-nwd-nwc-and-others-visualize"
+      ],
+      "disposition": "no specific public permissively licensed foreign-output file identified",
+      "sdk_or_accounts_accessed": false
+    }
+  ],
+  "queries": [
+    "site:opendesign.com BimRv \"sample\" \".rvt\"",
+    "github \"ODA\" \"rvt\" sample license",
+    "github \"BimRv\" \".rvt\"",
+    "\"Revit\" \"foreign file\" sample download",
+    "\"RVT\" \"ODA\" \"sample file\" download",
+    "\"RevitWriting_2023\" license",
+    "site:safe.com \"sample data\" \"license\"",
+    "\"rvt\" \"exported\" \"Tekla\" \"sample\" download",
+    "\"rvt\" \"BimRv\" \"github.com\" sample",
+    "\"rvt\" \"FME\" \"github.com\" output",
+    "\"Open Design Alliance\" \"sample files\" Revit download",
+    "\"Revit\" \"ODA\" \"rvt\" \"MIT\"",
+    "\"rvt\" \"FME\" \"CC0\"",
+    "\"BimRv\" \"samples\" download file"
+  ],
+  "foreign_bytes_analyzed": 0,
+  "new_fixture_hashes": [],
+  "limitations": [
+    "Bounded search does not establish nonexistence.",
+    "A template or input RVT is not proof of third-party-produced bytes.",
+    "A project-level license is not assumed to cover a model without evidence."
+  ]
+}

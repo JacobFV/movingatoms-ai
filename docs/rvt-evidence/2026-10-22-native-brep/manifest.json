@@ -1,0 +1,28 @@
+{
+  "captured_at_utc": "2026-10-23T00:00:04.143822+00:00",
+  "source_commit": "86bca36e2f2dfec04c2ed96264c9e998812da506",
+  "working_tree_status": " M docs/rvt-evidence/README.md\n M docs/rvt-research-log.md\n M docs/rvt-research.md\n M research/rvt/README.md\n M research/rvt/capture_wall_evidence.py\n?? docs/rvt-evidence/2026-10-22-native-brep/\n?? docs/rvt-evidence/2026-10-22-parametric-wall/\n?? research/rvt/results/foreign_producer_search.json\n?? research/rvt/results/foreign_producer_search.md\n?? research/rvt/results/wall-brep-audit.json\n?? research/rvt/results/wall-parametric-candidate-geometry.json\n?? research/rvt/results/wall-parametric-candidate-ifc-owner-control.json\n?? research/rvt/results/wall-parametric-candidate-ifc.json\n?? research/rvt/results/wall-parametric-candidate-plan.json\n?? research/rvt/results/wall-parametric-candidate-verification.json\n?? research/rvt/results/wall-parametric-candidate-writer.json\n?? research/rvt/results/wall-parametric-candidate.md\n?? research/rvt/results/wall-parametric.json\n?? research/rvt/test_wall_brep_audit.py\n?? research/rvt/test_wall_parametric.py\n?? research/rvt/test_wall_parametric_candidate.py\n?? research/rvt/wall_brep_audit.py\n?? research/rvt/wall_parametric.py\n?? research/rvt/wall_parametric_candidate.py\n?? research/rvt/wall_parametric_candidate_ifc.py\n?? research/rvt/wall_parametric_candidate_verify.py\n?? research/rvt/wall_parametric_verify.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "ed492530b9defcce7036eb5864b680225ea349d880231a83152ed06138bc0cd5",
+  "source_report_sha256": {
+    "wall-parametric-candidate-geometry": "1501647cd35ff62f38d5d3310be0d8ba905fad7df2b1e48329d87c846086573b",
+    "wall-parametric-candidate-verification": "8f97b416d36251a33fdc98f79d5ad066e19c7c7d007ad3d46830c8b817c28556",
+    "wall-parametric-candidate-ifc-owner-control": "1a0ad78cedd5757519d1597ad82290314859002b58e3a9748d6a8e787989e445",
+    "wall-brep-audit": "e997e8aaddae5d7fd3b45ce51864d11c0eab878d246a109b76717c79ccf18728"
+  },
+  "actual_ifc_meshes": true,
+  "not_autodesk_ui": true,
+  "artifacts": {
+    "plot-measurements.json": "a651b43384309cce401536c844827d73fdec6952cfe34d3397067670f66bead2",
+    "wall-brep-audit.json": "e997e8aaddae5d7fd3b45ce51864d11c0eab878d246a109b76717c79ccf18728",
+    "wall-comparison.html": "0c8c9d02bce99119ac7fecf7f9bcd9c85cbd1a3612eee851f7c0dffff1cb1052",
+    "wall-comparison.png": "bf34c48365f09bf60aaab06ccb4f609a710959bdeac0592513f762d3ef9a3693",
+    "wall-meshes.png": "deda8a77ce7283b42b5cc66689d286b04ce97ce9b1286d17cdd80b26eaa3037a",
+    "wall-meshes.svg": "6a7edafd5dd4b8dc3b5c5773aff436754f9ee681f6346f670f4ac9609fb7c33c",
+    "wall-parametric-candidate-geometry.json": "1501647cd35ff62f38d5d3310be0d8ba905fad7df2b1e48329d87c846086573b",
+    "wall-parametric-candidate-ifc-owner-control.json": "1a0ad78cedd5757519d1597ad82290314859002b58e3a9748d6a8e787989e445",
+    "wall-parametric-candidate-verification.json": "8f97b416d36251a33fdc98f79d5ad066e19c7c7d007ad3d46830c8b817c28556"
+  }
+}

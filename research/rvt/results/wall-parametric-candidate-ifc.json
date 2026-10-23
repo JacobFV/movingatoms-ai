@@ -1,0 +1,67 @@
+{
+  "source_ifc_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+  "candidate_ifc_sha256": "4c7f9c19783c9bf74d1375af633d8fe5aef4435ab82e838545717c9720fe2f33",
+  "ifcopenshell_version": "0.8.5",
+  "kernel": "opencascade",
+  "units": "metres",
+  "schema_validation": [
+    {
+      "file": "wall-candidate-outside-source.ifc",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xe63e0a477770>)\n     +  and   False = exists(<indeterminate_type object at 0xe63e0a477770>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xe63e0a477770>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    },
+    {
+      "file": "wall-parametric-candidate.ifc",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xe63e0a476f90>)\n     +  and   False = exists(<indeterminate_type object at 0xe63e0a476f90>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xe63e0a476f90>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    }
+  ],
+  "unchanged_existing_wall_meshes": 360,
+  "candidate_wall_count": 361,
+  "new_native_ifc_guid": "25b17ArnDJBg0oqQmFGvy0",
+  "minimum_metres": [
+    158.3436,
+    20.5486,
+    23.1648
+  ],
+  "maximum_metres": [
+    162.0012,
+    20.751800000000003,
+    27.7368
+  ],
+  "vertices": 8,
+  "triangles": 12,
+  "shape": {
+    "dimensions_metres": [
+      3.657600000000002,
+      0.2032000000000025,
+      4.571999999999999
+    ],
+    "expected_dimensions_metres": [
+      3.6576000000000004,
+      0.2032,
+      4.572
+    ],
+    "volume_cubic_metres": 3.3980215910414717,
+    "expected_volume_cubic_metres": 3.3980215910400005,
+    "coordinate_tolerance_metres": 1e-08,
+    "volume_tolerance_cubic_metres": 1e-08
+  },
+  "material": {
+    "name": "Default Wall",
+    "thickness_metres": 0.2032
+  },
+  "validator_sha256": "f6c724f94f99dd3554a5221341550d497349655f4524fa706fa1feec0f4cbc45",
+  "autodesk_acceptance": "not_tested",
+  "validation_scope": "Actual emitted IFC triangulation; exporter may derive extrusion from wall drivers. This does not independently validate the native BRep."
+}
