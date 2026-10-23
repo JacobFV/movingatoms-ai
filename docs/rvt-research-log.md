@@ -729,3 +729,21 @@ pass. These policies remain explicitly experimental pending full saved-file chec
 Reproduction and evidence: `research/rvt/results/seed_level-audit.md`,
 `wall-thickness.md` and `seed_save_context.md`. Integration into one seed-based
 file and independent verification are the next checks.
+
+
+## Seed reference closure and native mesh evidence
+
+The Core wall and minimal seed have identical inflated Formats bytes, including
+all97required classes. A guarded remapper now replaces every typed external
+reference, translates geometry from source Z76ft to seed Z0, verifies the actual
+200mm type thickness and synchronizes top-level offsets. Three remapped bodies
+independently decode exactly under the seed schema; four tests pass.
+
+The six-fixture DirectShape audit finds no current instances and one large type.
+A full79,275-record current-core survey decodes all graphs and finds native
+GPolyMesh examples in terrain records. Schema encoding reconstructs all three
+channels of the smallest example exactly; three tests pass. This proves measured
+triangle-array serialization, not DirectShape instance lifecycle. A focused search
+for a permissively licensed instance fixture and closed-mesh work are continuing.
+Details: `research/rvt/results/seed_wall_context.md` and
+`research/rvt/results/directshape-feasibility.md`.

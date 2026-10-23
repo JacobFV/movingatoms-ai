@@ -1,0 +1,137 @@
+{
+  "file": "core2024.rvt",
+  "sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "reader_commit": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+  "catalog_sha256": "174791e0868d88a03dc903203084af948bb68b0283e3cf4cbc10bb4ba9893269",
+  "graph_limits": {
+    "max_values": 10000000,
+    "max_objects": 500000
+  },
+  "targets": [
+    130286
+  ],
+  "project_elements": 26425,
+  "physical_project_records": 85680,
+  "current_records_selected": 79275,
+  "selection_counts": {
+    "exact_episode_route": 79245,
+    "unique_compaction_history_holder": 30
+  },
+  "embedded_groups_excluded": 46,
+  "unresolved_routes": [],
+  "candidate_records": [
+    {
+      "element": 130286,
+      "channel": 101,
+      "stream": "Partitions/53",
+      "selection": "exact_episode_route",
+      "body_sha256": "3f4c2eba13fe575e2fa1ec9469ef2d25516475a892eef6881f75927086b47f02",
+      "body_bytes": 193,
+      "raw_target_offsets": {
+        "130286": [
+          136
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "ElementHeader",
+      "objects": 3,
+      "typed_element_id_hits": [
+        {
+          "target": 130286,
+          "path": "objects[2](ElementParents).fields.m_deletion[1]",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 130286,
+          "path": "objects[2](ElementParents).fields.m_deletion[1].m_id.m_id64"
+        }
+      ]
+    },
+    {
+      "element": 130286,
+      "channel": 102,
+      "stream": "Partitions/53",
+      "selection": "exact_episode_route",
+      "body_sha256": "bc41b5138ca1cf081fddb5e0aac1651106076c169a85b45e53f558042b1bb5bc",
+      "body_bytes": 15639178,
+      "raw_target_offsets": {
+        "130286": [
+          44
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "DirectShapeType",
+      "objects": 144380,
+      "typed_element_id_hits": [
+        {
+          "target": 130286,
+          "path": "objects[0](DirectShapeType).fields.m_id",
+          "type": "ElementId",
+          "class_tag": 20
+        }
+      ],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 130286,
+          "path": "objects[0](DirectShapeType).fields.m_id.m_id.m_id64"
+        },
+        {
+          "value": 130286,
+          "path": "objects[67351](Face).fields.m_pSurf.pointer_token"
+        }
+      ]
+    },
+    {
+      "element": 130286,
+      "channel": 103,
+      "stream": "Partitions/53",
+      "selection": "exact_episode_route",
+      "body_sha256": "649f73253ee4c66df16a0820a943d8a146b5d38d39079d18eff83beb5845c16e",
+      "body_bytes": 16514325,
+      "raw_target_offsets": {
+        "130286": [
+          10,
+          140,
+          4767267
+        ]
+      },
+      "complete_graph": true,
+      "class_name": "GElement",
+      "objects": 172317,
+      "typed_element_id_hits": [],
+      "diagnostic_numeric_matches": [
+        {
+          "value": 130286,
+          "path": "objects[0](GElement).fields.m_GInfo.m_tag"
+        },
+        {
+          "value": 130286,
+          "path": "objects[0](GElement).fields.m_elementId"
+        },
+        {
+          "value": 130286,
+          "path": "objects[46448](Face).fields.m_pFirstLoop.pointer_token"
+        },
+        {
+          "value": 130286,
+          "path": "objects[46449](Edge).fields.m_next[1].pointer_token"
+        },
+        {
+          "value": 130286,
+          "path": "objects[46459](Edge).fields.m_prev[1].pointer_token"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Only raw signed little-endian 64-bit target IDs are prefiltered; alternate encodings are not covered.",
+    "Only project base groups are included; Global/Latest is audited separately.",
+    "Typed matches are ElementId declarations reached through inline schema fields and graph objects; opaque values and unsupported graphs remain unresolved.",
+    "A saved incoming reference does not by itself prove a new independent element must be added to that relationship."
+  ],
+  "highest_holder_fallback_used": false
+}

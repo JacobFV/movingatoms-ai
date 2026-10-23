@@ -1,0 +1,1396 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "seed_sha256": "674d9b621e599293faa07c1ca96ab3ba4ce8fc3c311e1f873ab0da6cea1ae3fe",
+  "seed_schema_sha256": "0bfb947b3c9a0cec2ea9692873e3b0325f1c9387caaffddbce4cc2509e77cf21",
+  "reader_revision": "b6086d41b9758fd9b92f42f0a47b8345b9c58056",
+  "whole_schema_matches_source": true,
+  "sample_remapped_wall": {
+    "new_id": 2747,
+    "planned_upper_level": 2746,
+    "file_mutated": false,
+    "roundtrips": [
+      {
+        "channel": 101,
+        "bytes": 233,
+        "sha256": "cbfd0429343a76b5f45d7546ef1ccbcd82346441cf1404085aa2dd3b0ffeaee4",
+        "objects": 3,
+        "edges": 2,
+        "complete_seed_schema_roundtrip": true
+      },
+      {
+        "channel": 103,
+        "bytes": 6884,
+        "sha256": "4ec13c5c59414919f2c6f54d5a310cf3226ff286ed1b1f1b76f7782614ffaa54",
+        "objects": 74,
+        "edges": 73,
+        "complete_seed_schema_roundtrip": true
+      },
+      {
+        "channel": 102,
+        "bytes": 2946,
+        "sha256": "ea6d1cc05e8b5aecefde619c3fc86b3dbbed42d8e6866053226d605092804301",
+        "objects": 29,
+        "edges": 28,
+        "complete_seed_schema_roundtrip": true
+      }
+    ],
+    "audit": {
+      "reference_changes": [
+        {
+          "path": "101.objects[2](ElementParents).m_deletion[0]",
+          "before": 3,
+          "after": 4
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_deletion[1]",
+          "before": 17328,
+          "after": 1947
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_deletion[2]",
+          "before": 20307,
+          "after": 2746
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_deletion[3]",
+          "before": 20308,
+          "after": 1916
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_regenOnly[0]",
+          "before": 113,
+          "after": 119
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_appearanceParents[0]",
+          "before": 113,
+          "after": 119
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_appearanceParents[1]",
+          "before": 17328,
+          "after": 1947
+        },
+        {
+          "path": "101.objects[2](ElementParents).m_appearanceParents[2]",
+          "before": 20308,
+          "after": 1916
+        },
+        {
+          "path": "103.objects[0](GElement).m_GInfo.m_categoryId",
+          "before": 113,
+          "after": 119
+        },
+        {
+          "path": "103.objects[1](GGroup).m_GInfo.m_categoryId",
+          "before": 681,
+          "after": 796
+        },
+        {
+          "path": "103.objects[2](GGroup).m_GInfo.m_categoryId",
+          "before": 681,
+          "after": 796
+        },
+        {
+          "path": "103.objects[3](GGroup).m_GInfo.m_categoryId",
+          "before": 681,
+          "after": 796
+        },
+        {
+          "path": "103.objects[4](GGroup).m_GInfo.m_categoryId",
+          "before": 681,
+          "after": 796
+        },
+        {
+          "path": "103.objects[10](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[11](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[12](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[13](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[14](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[15](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[28](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[33](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[38](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[43](Face).m_renderStyleId",
+          "before": 87,
+          "after": 91
+        },
+        {
+          "path": "103.objects[49](GFilling).m_GInfo.m_categoryId",
+          "before": 119,
+          "after": 125
+        },
+        {
+          "path": "103.objects[52](GFilling).m_GInfo.m_categoryId",
+          "before": 119,
+          "after": 125
+        },
+        {
+          "path": "103.objects[55](GFilling).m_GInfo.m_categoryId",
+          "before": 119,
+          "after": 125
+        },
+        {
+          "path": "103.objects[58](GFilling).m_GInfo.m_categoryId",
+          "before": 119,
+          "after": 125
+        },
+        {
+          "path": "103.objects[61](GFilling).m_GInfo.m_categoryId",
+          "before": 119,
+          "after": 125
+        },
+        {
+          "path": "103.objects[64](GFilling).m_GInfo.m_categoryId",
+          "before": 119,
+          "after": 125
+        },
+        {
+          "path": "102.objects[0](SWall).m_assocLevelId",
+          "before": 20308,
+          "after": 1916
+        },
+        {
+          "path": "102.objects[0](SWall).m_createdPhaseId",
+          "before": 3,
+          "after": 4
+        },
+        {
+          "path": "102.objects[0](SWall).m_WallAttributesId",
+          "before": 17328,
+          "after": 1947
+        },
+        {
+          "path": "102.objects[0](SWall).m_upToLevelId",
+          "before": 20307,
+          "after": 2746
+        }
+      ],
+      "measured_wall_width_feet": 0.6561679790026318,
+      "destination_type_width_feet": 0.6561679790026247,
+      "base_elevation_feet": 0.0,
+      "top_level_elevation_feet": 15.0,
+      "wall_height_feet": 12.0,
+      "world_z_delta_feet": -76.0,
+      "world_coordinate_changes": [
+        {
+          "channel": "101",
+          "object": 1,
+          "field": "m_minmax",
+          "before": [
+            [
+              119.30255412626241,
+              67.48798047570622,
+              76.0
+            ],
+            [
+              129.28107199430505,
+              75.23379980211824,
+              88.0
+            ]
+          ],
+          "after": [
+            [
+              119.30255412626241,
+              67.48798047570622,
+              0.0
+            ],
+            [
+              129.28107199430505,
+              75.23379980211824,
+              12.0
+            ]
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 0,
+          "field": "m_bBox",
+          "before": [
+            [
+              119.30255412626241,
+              67.48798047570622,
+              76.0
+            ],
+            [
+              129.28107199430505,
+              75.23379980211824,
+              88.0
+            ]
+          ],
+          "after": [
+            [
+              119.30255412626241,
+              67.48798047570622,
+              0.0
+            ],
+            [
+              129.28107199430505,
+              75.23379980211824,
+              12.0
+            ]
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 0,
+          "field": "m_tightbBox",
+          "before": [
+            [
+              119.30255412626241,
+              67.48798047570622,
+              76.0
+            ],
+            [
+              129.28107199430505,
+              75.23379980211824,
+              88.0
+            ]
+          ],
+          "after": [
+            [
+              119.30255412626241,
+              67.48798047570622,
+              0.0
+            ],
+            [
+              129.28107199430505,
+              75.23379980211824,
+              12.0
+            ]
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 50,
+          "field": "m_origin",
+          "before": [
+            119.94964656112086,
+            67.67802732512266,
+            76.0
+          ],
+          "after": [
+            119.94964656112086,
+            67.67802732512266,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 53,
+          "field": "m_origin",
+          "before": [
+            119.55475481364576,
+            68.20206637371012,
+            76.0
+          ],
+          "after": [
+            119.55475481364576,
+            68.20206637371012,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 56,
+          "field": "m_origin",
+          "before": [
+            119.69744587373751,
+            67.48798047570622,
+            76.0
+          ],
+          "after": [
+            119.69744587373751,
+            67.48798047570622,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 59,
+          "field": "m_origin",
+          "before": [
+            129.28107199430505,
+            74.70976075353077,
+            76.0
+          ],
+          "after": [
+            129.28107199430505,
+            74.70976075353077,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 62,
+          "field": "m_origin",
+          "before": [
+            129.28107199430505,
+            74.70976075353077,
+            88.0
+          ],
+          "after": [
+            129.28107199430505,
+            74.70976075353077,
+            12.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 65,
+          "field": "m_origin",
+          "before": [
+            119.69744587373751,
+            67.48798047570622,
+            88.0
+          ],
+          "after": [
+            119.69744587373751,
+            67.48798047570622,
+            12.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 67,
+          "field": "m_origin",
+          "before": [
+            119.49999999999996,
+            67.74999999999996,
+            76.0
+          ],
+          "after": [
+            119.49999999999996,
+            67.74999999999996,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 69,
+          "field": "m_origin",
+          "before": [
+            119.69744587373751,
+            67.48798047570622,
+            76.0
+          ],
+          "after": [
+            119.69744587373751,
+            67.48798047570622,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 71,
+          "field": "m_origin",
+          "before": [
+            119.30255412626241,
+            68.01201952429369,
+            76.0
+          ],
+          "after": [
+            119.30255412626241,
+            68.01201952429369,
+            0.0
+          ]
+        },
+        {
+          "channel": "103",
+          "object": 73,
+          "field": "m_origin",
+          "before": [
+            119.49999999999996,
+            67.74999999999996,
+            76.0
+          ],
+          "after": [
+            119.49999999999996,
+            67.74999999999996,
+            0.0
+          ]
+        },
+        {
+          "channel": "102",
+          "object": 20,
+          "field": "m_origin",
+          "before": [
+            119.75220068738331,
+            67.94004684941639,
+            76.0
+          ],
+          "after": [
+            119.75220068738331,
+            67.94004684941639,
+            0.0
+          ]
+        },
+        {
+          "channel": "102",
+          "object": 21,
+          "field": "m_origin",
+          "before": [
+            119.49999999999996,
+            67.74999999999996,
+            76.0
+          ],
+          "after": [
+            119.49999999999996,
+            67.74999999999996,
+            0.0
+          ]
+        },
+        {
+          "channel": "102",
+          "object": 22,
+          "field": "m_origin",
+          "before": [
+            119.30255412626241,
+            68.01201952429369,
+            76.0
+          ],
+          "after": [
+            119.30255412626241,
+            68.01201952429369,
+            0.0
+          ]
+        },
+        {
+          "channel": "102",
+          "object": 23,
+          "field": "m_origin",
+          "before": [
+            119.69744587373751,
+            67.48798047570622,
+            76.0
+          ],
+          "after": [
+            119.69744587373751,
+            67.48798047570622,
+            0.0
+          ]
+        },
+        {
+          "channel": "102",
+          "object": 24,
+          "field": "m_origin",
+          "before": [
+            119.49999999999996,
+            67.74999999999996,
+            76.0
+          ],
+          "after": [
+            119.49999999999996,
+            67.74999999999996,
+            0.0
+          ]
+        }
+      ],
+      "top_offset_parameter": {
+        "id": -1001109,
+        "before": -3.0,
+        "after": -3.0
+      },
+      "edge_consistency": {
+        "paired_face_endpoints_checked": 24,
+        "maximum_endpoint_disagreement_feet": 2.842170943040401e-14
+      }
+    }
+  },
+  "compatible_classes": [
+    {
+      "class_name": "ElementId",
+      "tag": 20,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Identifier",
+      "tag": 21,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Element",
+      "tag": 37,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ControlledDocAccess",
+      "tag": 38,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Cell",
+      "tag": 70,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CellInterface",
+      "tag": 71,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Trf",
+      "tag": 79,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CurveDriver",
+      "tag": 88,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "IndexJoinPair",
+      "tag": 89,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CDJoinInfo",
+      "tag": 90,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ElementIdIndexPairSet",
+      "tag": 91,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ElementIdPlusIndex",
+      "tag": 92,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EndInfo",
+      "tag": 93,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< ElementId, SideAlignment >",
+      "tag": 94,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "SideAlignment",
+      "tag": 95,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeomStep",
+      "tag": 97,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeomGenerator",
+      "tag": 98,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "FaceHistEntry",
+      "tag": 99,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "FaceHist",
+      "tag": 100,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CurveHistEntry",
+      "tag": 101,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CurveHist",
+      "tag": 102,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EdgeHistEntry",
+      "tag": 103,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EdgeHist",
+      "tag": 104,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeomRef",
+      "tag": 141,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ForeignElemRef",
+      "tag": 142,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Outline",
+      "tag": 326,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "PatternHelper",
+      "tag": 329,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< int, Trf >",
+      "tag": 330,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< int, ElementIdPlusIndex >",
+      "tag": 331,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "AnalyticalSpaceBoundingCell",
+      "tag": 351,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< int, ElementId >",
+      "tag": 364,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "VWall",
+      "tag": 412,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "HostObj",
+      "tag": 413,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CurtainAuxData",
+      "tag": 414,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "BaseWallGStep",
+      "tag": 562,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EpisodeId",
+      "tag": 566,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Plane",
+      "tag": 584,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Surface",
+      "tag": 585,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Envelope",
+      "tag": 586,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeomTabEntry",
+      "tag": 596,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ElementRegenerationInfo",
+      "tag": 637,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "HostObjPatternHelper",
+      "tag": 714,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CellList",
+      "tag": 723,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ClassDefinitionRef",
+      "tag": 741,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< ElementId, TweakEffectedTagSetWrapper >",
+      "tag": 749,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "TweakEffectedTagSetWrapper",
+      "tag": 750,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CoverFaceStableRef",
+      "tag": 956,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "CoverSettingsCell",
+      "tag": 958,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< CoverFaceStableRef, HostFaceInfo >",
+      "tag": 959,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "HostFaceInfo",
+      "tag": 960,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Edge",
+      "tag": 1339,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GEdge",
+      "tag": 1340,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GEdgeBase",
+      "tag": 1341,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GNode",
+      "tag": 1342,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GInfo",
+      "tag": 1343,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EdgePnt",
+      "tag": 1344,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EdgeBackupMgr",
+      "tag": 1345,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< int, EdgeGeometry >",
+      "tag": 1346,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EdgeGeometry",
+      "tag": 1347,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "NodeGeometry",
+      "tag": 1348,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "EdgeLoop",
+      "tag": 1350,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GEdgeLoop",
+      "tag": 1351,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ElementHeader",
+      "tag": 1439,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ElementRegenHistory",
+      "tag": 1440,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< ElementRegenerationInfo, EpisodeId >",
+      "tag": 1441,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "RejectedViewRules",
+      "tag": 1442,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ElementParents",
+      "tag": 1451,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Face",
+      "tag": 1687,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GFace",
+      "tag": 1688,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "FaceBackupMgr",
+      "tag": 1689,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "std::pair< int, FaceGeometry >",
+      "tag": 1690,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "FaceGeometry",
+      "tag": 1691,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "FaceTopology",
+      "tag": 1722,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GLine",
+      "tag": 1836,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GCurve",
+      "tag": 1837,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "UV",
+      "tag": 1861,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "FillPatternPlacer",
+      "tag": 1957,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "TessEpsCntrl",
+      "tag": 2073,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GBRep",
+      "tag": 2082,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GElement",
+      "tag": 2111,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GRep",
+      "tag": 2112,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GGroup",
+      "tag": 2113,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GFilling",
+      "tag": 2118,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeomStepList",
+      "tag": 2198,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeomTable",
+      "tag": 2199,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "Geometry",
+      "tag": 2204,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "GeometryTopology",
+      "tag": 2209,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ParamValueDouble",
+      "tag": 3018,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "ParamValueSetDouble",
+      "tag": 3022,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "SWall",
+      "tag": 3669,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "SnapshotData",
+      "tag": 3779,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "VCWSplitFaceGStep",
+      "tag": 4198,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "VWallDriver",
+      "tag": 4202,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "VWallPatternHelper",
+      "tag": 4205,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "VerticalExtensionOfLayersGStep",
+      "tag": 4261,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "WallJoinTweakGStep",
+      "tag": 4307,
+      "identical_descriptor_and_opaque_entries": true
+    },
+    {
+      "class_name": "WallRefPlanesGStep",
+      "tag": 4318,
+      "identical_descriptor_and_opaque_entries": true
+    }
+  ],
+  "existing_mapping": [
+    {
+      "source_id": 3,
+      "target_id": 4,
+      "class": "ProjectPhase",
+      "reason": "matching New Construction phase name",
+      "source": {
+        "body_bytes": 145,
+        "body_sha256": "efdacb3f1ea362dda9cbb898e38e294cb6fdff3eb7c934a8ef19057362a97a4e",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 123430,
+          "declared_objects": 376,
+          "first_marker_offset": 20723,
+          "segment_count": 1
+        },
+        "group_record_offset": 1232,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 4,
+        "original_id_suffix": 4,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          4,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 166,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-00000004"
+      }
+    },
+    {
+      "source_id": 87,
+      "target_id": 91,
+      "class": "MaterialElem",
+      "reason": "entire embedded Material field object identical",
+      "source": {
+        "body_bytes": 975,
+        "body_sha256": "de1fcad1238ca66d6d032512f0eedb03c93b9db7407fbdbca193ae1496c62c90",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 123430,
+          "declared_objects": 376,
+          "first_marker_offset": 20723,
+          "segment_count": 1
+        },
+        "group_record_offset": 58005,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 91,
+        "original_id_suffix": 91,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          91,
+          0,
+          0,
+          0,
+          0,
+          91,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 3646,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000005b"
+      }
+    },
+    {
+      "source_id": 113,
+      "target_id": 119,
+      "class": "GStyleElem",
+      "reason": "identical built-in category and graphics-style kind",
+      "source": {
+        "body_bytes": 156,
+        "body_sha256": "dcb4e96f22e049fc88c1761dbaad95a538ce1f6e89e74823329a88db9ce69fc5",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 123430,
+          "declared_objects": 376,
+          "first_marker_offset": 20723,
+          "segment_count": 1
+        },
+        "group_record_offset": 85542,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 119,
+        "original_id_suffix": 119,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          119,
+          0,
+          0,
+          0,
+          0,
+          119,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 4726,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-00000077"
+      }
+    },
+    {
+      "source_id": 119,
+      "target_id": 125,
+      "class": "GStyleElem",
+      "reason": "identical built-in category and graphics-style kind",
+      "source": {
+        "body_bytes": 156,
+        "body_sha256": "2436e6ea746f8117d4e8f1dee6a1378c1629f263bf21f5ea5587ef19c7c1d86d",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 123430,
+          "declared_objects": 376,
+          "first_marker_offset": 20723,
+          "segment_count": 1
+        },
+        "group_record_offset": 86598,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 125,
+        "original_id_suffix": 125,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          125,
+          0,
+          0,
+          0,
+          0,
+          125,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 4966,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000007d"
+      }
+    },
+    {
+      "source_id": 681,
+      "target_id": 796,
+      "class": "GStyleElem",
+      "reason": "identical built-in category and graphics-style kind",
+      "source": {
+        "body_bytes": 156,
+        "body_sha256": "2f05f98bf41d2dc21577e602c2f259b7928e5b72088a3e0b1e356873c7864c42",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 116064,
+          "declared_objects": 744,
+          "first_marker_offset": 34013,
+          "segment_count": 1
+        },
+        "group_record_offset": 73744,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 796,
+        "original_id_suffix": 796,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          796,
+          0,
+          0,
+          0,
+          0,
+          796,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 31806,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000031c"
+      }
+    },
+    {
+      "source_id": 17328,
+      "target_id": 1947,
+      "class": "BasicWallType",
+      "reason": "explicit role mapping, geometric/type compatibility guarded separately",
+      "source": {
+        "body_bytes": 700,
+        "body_sha256": "c84b7cc77bcc4b5c06c14d78d2c522cbfc46f6fe39e0f189a3064ede55777c85",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 117384,
+          "declared_objects": 316,
+          "first_marker_offset": 60886,
+          "segment_count": 1
+        },
+        "group_record_offset": 62362,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 1947,
+        "original_id_suffix": 1947,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          1947,
+          0,
+          0,
+          0,
+          0,
+          1947,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 75926,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000079b"
+      }
+    },
+    {
+      "source_id": 20308,
+      "target_id": 1916,
+      "class": "Level",
+      "reason": "explicit role mapping, geometric/type compatibility guarded separately",
+      "source": {
+        "body_bytes": 740,
+        "body_sha256": "c6b7eefa1e52e156ce7697a8217c552d1086da113f67e4eccf2536a9a99cd45e",
+        "group": {
+          "channel": 102,
+          "content_element_count": null,
+          "content_key": null,
+          "declared_body_bytes": 117384,
+          "declared_objects": 316,
+          "first_marker_offset": 60886,
+          "segment_count": 1
+        },
+        "group_record_offset": 55587,
+        "stream": "Partitions/0"
+      },
+      "identity": {
+        "creation_episode": 0,
+        "element_id": 1916,
+        "original_id_suffix": 1916,
+        "other_revision": 0,
+        "owning_element_id": -1,
+        "partition_id": 0,
+        "raw_fields": [
+          1916,
+          0,
+          0,
+          0,
+          0,
+          1916,
+          0,
+          4294967295,
+          4294967295,
+          0
+        ],
+        "row_offset": 75406,
+        "stored_revision": 0,
+        "unique_id": "fa85a434-ab45-496e-8df7-49d2552c3095-0000077c"
+      }
+    }
+  ],
+  "seed_wall_type": {
+    "element_id": 1947,
+    "source": {
+      "body_bytes": 700,
+      "body_sha256": "c84b7cc77bcc4b5c06c14d78d2c522cbfc46f6fe39e0f189a3064ede55777c85",
+      "group": {
+        "channel": 102,
+        "content_element_count": null,
+        "content_key": null,
+        "declared_body_bytes": 117384,
+        "declared_objects": 316,
+        "first_marker_offset": 60886,
+        "segment_count": 1
+      },
+      "group_record_offset": 62362,
+      "stream": "Partitions/0"
+    },
+    "layer_fields": [
+      {
+        "m_embeddingType": -1,
+        "m_layerCapFlag": true,
+        "m_layerFunction": 1,
+        "m_layerId": 0,
+        "m_layerWidth": 0.6561679790026247,
+        "m_materialId": {
+          "m_id": {
+            "m_id64": -1
+          }
+        },
+        "m_profileId": {
+          "m_id": {
+            "m_id64": -1
+          }
+        }
+      }
+    ],
+    "width_feet": 0.6561679790026247,
+    "category_material_id": 91
+  },
+  "required_allocations": [
+    {
+      "source_id": 20307,
+      "class": "Level",
+      "role": "upper level",
+      "reason": "seed has only one Level"
+    }
+  ],
+  "relocation": {
+    "source_base_feet": 76.0,
+    "seed_base_feet": 0.0,
+    "source_top_feet": 91.0,
+    "default_allocated_top_feet": 15.0
+  },
+  "context_inventory": {
+    "exact_current_records": 1494,
+    "unsupported": 0,
+    "off_route": 0
+  },
+  "limits": [
+    "Source thickness2/3ft differs from seed200mm type; use a separately audited thickness encoder before remapping.",
+    "Typed remap plus graph decode does not prove application acceptance or full cache/save lifecycle semantics.",
+    "External document pointer token1 and local geometric graph pointers remain unchanged; they are not project ElementIds."
+  ]
+}

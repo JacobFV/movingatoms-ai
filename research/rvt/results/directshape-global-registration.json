@@ -1,0 +1,33 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "global_inflated_sha256": "df6c58e975c778153437f6f2ff07befd1055c7d156ce02b955dad1e956f777c3",
+  "global_decode_sha256": "23522e5c3fa6a4f417ec549a86a1ccf57fadb958d631828a398aa9bceef3f6b9",
+  "binary_matches_source_without_four_byte_terminator": true,
+  "graph_objects": 252,
+  "typed_element_id_hits": [
+    {
+      "target": 130286,
+      "path": "objects[27](ElementTrackingData).fields.m_symbols[57].m_elemIdSet[8]",
+      "type": "ElementId",
+      "class_tag": 20
+    },
+    {
+      "target": 130287,
+      "path": "objects[28](MaterialTracking).fields.m_elemIdSet[79]",
+      "type": "ElementId",
+      "class_tag": 20
+    },
+    {
+      "target": 130288,
+      "path": "objects[126](AppearanceAssetTracking).fields.m_elemIdSet[55]",
+      "type": "ElementId",
+      "class_tag": 20
+    },
+    {
+      "target": 130286,
+      "path": "objects[139](AppInfoSystemFamiliesNames).fields.m_idMap[122].second.m_elementIds[0]",
+      "type": "ElementId",
+      "class_tag": 20
+    }
+  ]
+}
