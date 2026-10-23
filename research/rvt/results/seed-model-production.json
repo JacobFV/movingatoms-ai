@@ -101,5 +101,19 @@
     }
   ],
   "autodesk_acceptance": "not_tested",
-  "production_native_export": false
+  "production_native_export": false,
+  "final_runtime_reproduction": {
+    "bundle": "research/rvt/local/runtime-bundle-v2",
+    "manifest_sha256": "1c59b4593435f9e3a8f4c84f43e8b2d5d1574693685d2c708ec1a74de3834166",
+    "local_run_directory": "research/rvt/local/seed-model-production-run-v2",
+    "candidate_sha256": "47a3e82c61b45d85cde909ffde43d8a53da01c4e403bba2a10d9a81f0232ccf7",
+    "byte_identical_to_initial_control": true,
+    "artifact_sha256": {
+      "run.json": "51162f2bd17a8308adb0396f126d9e3538562a2e36d0b191851dd67767c0519e",
+      "native.json": "1f2b1093f255552b6f0a47b0c04b7e1a13515e67b9de5fadceac97102e6658c1",
+      "metadata.json": "05ca5d950aebc088ffa58a515134090b4ac9a5131a1c842804027dc8e2623a71",
+      "request.json": "16421611e6e394a1c7c4dd4ccac485ab13e5e8b04fdd894ec414d45e75537a4a",
+      "transport.json": "7fd98a53000d5d0b99be1c4a220c500e846e9841c2c171b4a551e004defe7b66"
+    }
+  }
 }

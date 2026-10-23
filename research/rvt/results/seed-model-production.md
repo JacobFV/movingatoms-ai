@@ -26,3 +26,11 @@ The model command requires the processing Python dependencies; the separately la
 This is a saved-surface export, not a claim of editable native family behavior. Requested level relationships live in our own metadata; native associated-level is unset. Category styles supply the measured preview materials; source material hints survive in metadata but are not claimed as reconstructed Autodesk material assets. Native lifecycle options and category registration remain hypotheses. Autodesk opening, regeneration and re-saving are untested. Customer build jobs remain IFC/GLB; this command produces explicitly experimental artifacts.
 
 Unsupported/missing geometry, unknown categories without explicit adapter policy, ambiguous opening semantics, invalid meshes and over-budget requests fail explicitly. Current profile limits include 100 new native records total, 100,000 input vertices, 200,000 triangles, world coordinates within ±10,000 metres and a bounded finite-JSON metadata envelope. Destinations are no-clobber and verified publication requires all saved-file checks to pass.
+
+The hardened `runtime-bundle-v2` reproduces the exact same candidate bytes
+in `local/seed-model-production-run-v2`; both manifests and validation report
+hashes are recorded. The final v4 package also reproduces these exact bytes
+without site packages, git or cargo; use v4 for subsequent runs. The earlier v1 capture and
+reports remain immutable historical evidence.
+
+[Actual saved-room screenshot](../../../docs/rvt-evidence/2026-10-23-production-model/model.png).

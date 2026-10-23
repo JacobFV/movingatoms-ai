@@ -9,10 +9,15 @@ All 2,300 original seed identities and its partition remain unchanged.
 
 An offline production-model adapter preserves exact source element records,
 parameters, transforms, level/type context and properties in bounded metadata.
-Missing or unsupported geometry fails explicitly. The standalone runtime is
-being packaged; customer build jobs still deliver IFC/GLB. The research suite
-passes 291 tests at the combined-document checkpoint; 43 adapter/export and
-existing model/job tests pass after exact source metadata preservation.
+Missing or unsupported geometry fails explicitly. The [standalone offline runtime](rvt-runtime-integration.md) now passes without
+site packages, git or cargo and reproduces the same candidate bytes. A real
+[10-element processing model](../research/rvt/results/seed-model-production.md)
+and a [100-owner capacity run](../research/rvt/results/seed-model-capacity.md)
+pass independent saved-file checks. The research suite passes 309 tests;
+54 adapter/export and model/job tests, five agent routing tests and the realtime
+TypeScript check pass. Customer build jobs default to IFC/GLB; an explicit
+experimental option now stages the RVT and linked validation evidence before
+publication. Runtime deployment remains a separate configuration step.
 
 DirectShape constructor options, lifecycle behavior and absence of Global instance
 registration remain explicit hypotheses. Named levels are native elements;

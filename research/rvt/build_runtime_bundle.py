@@ -102,6 +102,8 @@ def build_bundle(dest,reader,seed,cache,*,olefile_license):
     inputs.update({f'runtime/results/{n}':(here/'results'/n).read_bytes()for n in PROFILES})
     inputs.update({f'runtime/{n}':(here/n).read_bytes()for n in PROBE_FILES})
     inputs['assets/minimal-seed.rvt']=Path(seed).read_bytes()
+    probe_lock=(here/'runtime-probes.Cargo.lock').read_bytes()
+    inputs['runtime/runtime-probes.Cargo.lock']=probe_lock
     license_bytes=(here/'results/minimal_seed-ricaun-io-LICENSE.txt').read_bytes()
     if sha(license_bytes)!=SEED_LICENSE_SHA:raise ValueError('seed license hash differs')
     inputs['notices/seed-MIT-LICENSE.txt']=license_bytes
@@ -120,6 +122,7 @@ def build_bundle(dest,reader,seed,cache,*,olefile_license):
     inputs['notices/transport-Cargo.toml']=(repo/'processing/rvt-native/Cargo.toml').read_bytes()
     inputs['notices/README.txt']=b'Experimental internal runtime. Reader: Apache-2.0 LICENSE/NOTICE retained. Published seed: ricaun MIT license retained. olefile: bundled source and supplied license retained. Transport Cargo.toml declares MIT; this repository has no standalone transport LICENSE text. No Autodesk acceptance or production support is claimed.\n'
     from seed_model_verify import expected_probe_sources
+    from runtime_licenses import collect_runtime_licenses
     probe_sources=expected_probe_sources();probe_sources['properties']=inputs['runtime/element_properties_probe.rs']
     dest.parent.mkdir(parents=True,exist_ok=True);cache.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='rvt-runtime-build-',dir=dest.parent)as temp:
@@ -129,9 +132,15 @@ def build_bundle(dest,reader,seed,cache,*,olefile_license):
         for key,raw in probe_sources.items():
             (project/'src'/f'{key}.rs').write_bytes(raw);cargo+=f'[[bin]]\nname="{names[key]}"\npath="src/{key}.rs"\n'
         (project/'Cargo.toml').write_text(cargo)
-        subprocess.run(['cargo','build','--release','--offline','--manifest-path',str(project/'Cargo.toml'),'--target-dir',str(cache/'probes')],check=True)
+        (project/'Cargo.lock').write_bytes(probe_lock)
+        subprocess.run(['cargo','build','--release','--locked','--offline','--manifest-path',str(project/'Cargo.toml'),'--target-dir',str(cache/'probes')],check=True)
         subprocess.run(['cargo','build','--release','--locked','--offline','--manifest-path',str(repo/'processing/rvt-native/Cargo.toml'),'--target-dir',str(cache/'transport')],check=True)
         inputs['provenance/probes-Cargo.lock']=(project/'Cargo.lock').read_bytes();inputs['provenance/transport-Cargo.lock']=(repo/'processing/rvt-native/Cargo.lock').read_bytes()
+        license_payloads,license_report=collect_runtime_licenses([project/'Cargo.toml',repo/'processing/rvt-native/Cargo.toml'],excluded_roots=[project,repo/'processing/rvt-native'])
+        if license_report['toolchain']['missing_evidence']:raise ValueError('Rust toolchain license evidence missing')
+        if set(inputs)&set(license_payloads):raise ValueError('license payload path collision')
+        inputs.update(license_payloads)
+        inputs['notices/rust-dependencies.json']=(json.dumps(license_report,indent=2)+'\n').encode()
         inputs['bin/ma-rvt-native']=(cache/'transport/release/ma-rvt-native').read_bytes()
         probes={}
         for key,name in names.items():
@@ -141,6 +150,7 @@ def build_bundle(dest,reader,seed,cache,*,olefile_license):
         arch=elf_arch(inputs['bin/ma-rvt-native'])
         if arch!=platform.machine()or any(elf_arch(v)!=arch for k,v in inputs.items()if k.startswith('bin/')):raise ValueError('mixed or cross architecture binaries unsupported')
         # Refuse a moving code snapshot after compilation.
+        if (here/'runtime-probes.Cargo.lock').read_bytes()!=probe_lock or (project/'Cargo.lock').read_bytes()!=probe_lock:raise ValueError('pinned probe dependency lock changed')
         if any((here/(name+'.py')).read_bytes()!=raw for name,raw in sources.items())or expected_probe_sources()!= {k:v for k,v in probe_sources.items()if k!='properties'} or (here/'element_properties_probe.rs').read_bytes()!=probe_sources['properties']:raise ValueError('runtime sources changed during build')
         inputs['run.py']=b'import runpy,sys\nsys.dont_write_bytecode=True\nfrom pathlib import Path\nroot=Path(__file__).resolve().parent\nsys.argv=[str(root/"runtime/build_runtime_bundle.py"),"run",str(root),*sys.argv[1:]]\nrunpy.run_path(str(root/"runtime/build_runtime_bundle.py"),run_name="__main__")\n'
         stage=temp/'bundle';stage.mkdir()
@@ -148,7 +158,7 @@ def build_bundle(dest,reader,seed,cache,*,olefile_license):
             path=stage/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
             if name.startswith('bin/'):path.chmod(0o755)
         manifest={'schema':'ma-experimental-rvt-runtime/1','reader_revision':REV,'seed_sha256':SEED_SHA,'architecture':arch,'python':'3.12','build_libc':platform.libc_ver(),'binary_dependencies':dependencies,
-            'production_enabled':False,'autodesk_acceptance':'not_tested','olefile_version':olefile.__version__,'modules':modules,'profiles':list(PROFILES),'probes':probes,
+            'production_enabled':False,'autodesk_acceptance':'not_tested','rust_license_packages':len(license_report['packages']),'rust_license_manifest':'notices/rust-dependencies.json','olefile_version':olefile.__version__,'modules':modules,'profiles':list(PROFILES),'probes':probes,
             'payloads':{name:{'sha256':sha(raw),'bytes':len(raw)}for name,raw in sorted(inputs.items())}}
         (stage/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');validate_bundle(stage)
         if dest.exists():raise FileExistsError(dest)

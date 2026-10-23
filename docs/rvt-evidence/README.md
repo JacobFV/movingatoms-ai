@@ -230,3 +230,13 @@ matched to the archived raw reader output. Native level association remains
 unset; application relationships are explicit metadata.
 
 ![Combined model evidence](2026-10-23-seed-model/model.png)
+
+
+## Offline processing model — 2026-10-23
+
+[Report and provenance](2026-10-23-production-model/README.md) show the actual
+saved room from the processing model: ten owners, twelve primitives and 312
+triangles. Original source records and context are recovered exactly from own
+metadata. The report shows parameter summaries and keeps full raw evidence.
+
+![Offline processing model evidence](2026-10-23-production-model/model.png)

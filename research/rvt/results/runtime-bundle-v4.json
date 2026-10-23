@@ -1,0 +1,25 @@
+{
+  "bundle_path": "research/rvt/local/runtime-bundle-v4",
+  "manifest_sha256": "a366584f41e9208609e0d089bc4c3b01dfde57e7e320879db86c7e57f9d9b349",
+  "payloads": 254,
+  "payload_bytes": 32468943,
+  "architecture": "aarch64",
+  "python": "3.12",
+  "rust_dependency_packages": 74,
+  "license_evidence_files": 170,
+  "toolchain_notice_gaps": [],
+  "probe_lock_sha256": "1ee9ab8a386bb987c0a351fe91821990be32fbfc2fdb680e1677e10348585708",
+  "archive": "research/rvt/local/ma-rvt-native-runtime-aarch64-v4.tar.gz",
+  "archive_bytes": 5881942,
+  "archive_sha256": "16509874612f550308320bac4fd91f7b050ece472a45193abe6b2786265254dd",
+  "offline_smoke": {
+    "path": "research/rvt/local/seed-model-production-run-v4",
+    "environment": "env -i PATH=/nonexistent /usr/bin/python3 -S",
+    "candidate_sha256": "47a3e82c61b45d85cde909ffde43d8a53da01c4e403bba2a10d9a81f0232ccf7",
+    "byte_identical_to_processing_control": true,
+    "run_sha256": "f9e4a023976322f36309f6733d39659ff1c901909f6171e133902dd8ad866bc5"
+  },
+  "autodesk_acceptance": "not_tested",
+  "production_native_export": false,
+  "archive_relocation_payload_verification": true
+}

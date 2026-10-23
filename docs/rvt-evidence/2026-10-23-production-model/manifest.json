@@ -1,0 +1,32 @@
+{
+  "captured_at_utc": "2026-10-23T02:20:43.792930+00:00",
+  "source_commit": "436720e4743cccf8a67b0caf56e76212bfd6346f",
+  "source_run": "/home/brandonin/Documents/movingatoms-ai.pages.dev/research/rvt/local/seed-model-production-run",
+  "candidate_sha256": "47a3e82c61b45d85cde909ffde43d8a53da01c4e403bba2a10d9a81f0232ccf7",
+  "working_tree_status": "?? docs/rvt-evidence/2026-10-23-production-model/\n?? docs/rvt-runtime-integration.md\n?? research/rvt/build_runtime_bundle.py\n?? research/rvt/capture_production_model_evidence.py\n?? research/rvt/results/seed-model-production.json\n?? research/rvt/test_build_runtime_bundle.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "a09500b129d83266cf0f51d7b3c7b358c8b45945607d37002cd4d8746ad93d23",
+  "not_autodesk_ui": true,
+  "actual_native_saved_meshes": true,
+  "ordinary_ifc_export": false,
+  "source_report_sha256": {
+    "run.json": "dc8a46e628fde899b1d125b6150628d5eb840beaea232a438e78d4a3e52001b5",
+    "candidate-independent-scene.json": "774ac43ea139d3ca1682aa43afca7bfbaa89e149796577699c8028e0366f9ef0",
+    "transport.json": "7fd98a53000d5d0b99be1c4a220c500e846e9841c2c171b4a551e004defe7b66",
+    "metadata.json": "05ca5d950aebc088ffa58a515134090b4ac9a5131a1c842804027dc8e2623a71",
+    "native.json": "2d7da33523c97a3e162838466672c53d1912a362e4ffcd0c407ef8362e5049ac"
+  },
+  "artifacts": {
+    "candidate-independent-scene.json": "774ac43ea139d3ca1682aa43afca7bfbaa89e149796577699c8028e0366f9ef0",
+    "mesh-metres.json": "7ddf27b898b0deb467a773276a795e5a79b9b72e12dde8a6ffcc77426b8c3580",
+    "metadata.json": "05ca5d950aebc088ffa58a515134090b4ac9a5131a1c842804027dc8e2623a71",
+    "model.html": "e02ce7c5463943f57e8b2ae0237239fbb7eb12f0bab5bc52744988790613954b",
+    "model.png": "cce07d5da1e0f7efd735cf8b36eb68eaeba3c04ef9e8127762bdc160a75fab69",
+    "native.json": "2d7da33523c97a3e162838466672c53d1912a362e4ffcd0c407ef8362e5049ac",
+    "run.json": "dc8a46e628fde899b1d125b6150628d5eb840beaea232a438e78d4a3e52001b5",
+    "scene.png": "7edaac4be40c33bc1c6c3613f0464da560684620ce78e6890f68ec15f78b7e61",
+    "transport.json": "7fd98a53000d5d0b99be1c4a220c500e846e9841c2c171b4a551e004defe7b66"
+  }
+}

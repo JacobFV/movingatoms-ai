@@ -845,3 +845,48 @@ Commit `a24f461` fixes adapter losses discovered in review: exact source element
 records (including parameters, parents and transforms), level/type arrays and
 remaining model metadata now survive in a bounded own-schema JSON envelope.
 The combined adapter/export and existing model/job tests pass: 43 tests.
+
+## Offline bundle, real-model export and capacity
+
+The standalone runtime bundles only the reachable authoring/auditing code,
+allowlisted profiles, licensed seed, prebuilt probes/transport and vendored
+olefile. Payload hashes, architecture, Python version, glibc minimum and dynamic
+library names are checked before use. The official request succeeds under an
+empty environment with `PATH=/nonexistent` and Python `-S`, reproducing the
+baseline candidate byte-for-byte without git, cargo or site packages.
+
+The real processing room model exports all ten owners, twelve primitives and
+312 triangles, SHA
+`47a3e82c61b45d85cde909ffde43d8a53da01c4e403bba2a10d9a81f0232ccf7`.
+Exact original element records, level/type arrays and remaining model metadata
+were recovered and compared. Hardened bundle v2 reproduces the same file;
+prior v1 results remain immutable. The reviewed Chrome screenshot and complete
+source evidence are in `2026-10-23-production-model`.
+
+A separate 100-owner capacity run passes across twenty measured category/style
+contexts. It verifies 100 unique native/application identities, one own-schema
+registration per owner, all requested triangles and nested properties, plus
+preservation of 2,300 old identities. Candidate SHA:
+`9f6e268933116c3e163b8fb2b96483d3015aa2fefba2f3845c47d36c41d9fb33`.
+The 101-owner boundary is explicitly rejected by authoring and independent
+request oracles. All 300 research tests pass at this checkpoint.
+
+
+## Explicit worker option and final offline package
+
+Commit `cd0ebe5` adds explicitly selected/acknowledged agent and worker wiring.
+The worker stages IFC/GLB, graph/index, the experimental RVT and its validation
+report before any upload. A real in-memory-API run registers four deliverables
+from six staged artifacts and preserves all ten model elements; no external
+upload or chat occurred. Failure tests prove no publication on native failure.
+54 related Python tests, five actual agent-routing/schema tests and the canonical
+realtime TypeScript project check pass.
+
+Final bundle v4 adds 74 Cargo packages' actual license/notice evidence plus
+installed Rust notices and a checked-in probe Cargo lockfile. Both binaries and
+probes build locked/offline. An empty-environment Python `-S` run reproduces the
+same 10-element candidate bytes. The archive, manifest and full provenance are
+recorded in `results/runtime-bundle-v4.json`. All 309 research tests pass.
+Production hosts were not reconfigured or deployed. Autodesk opening,
+regeneration and re-saving remain untested; the opt-in artifact is explicitly
+experimental rather than production-qualified native output.
