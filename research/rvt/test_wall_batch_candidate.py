@@ -20,6 +20,12 @@ class BatchTests(unittest.TestCase):
             self.assertEqual(set(w['bodies']), {101,102,103})
             self.assertAlmostEqual(w['bbox'][1][0]-w['bbox'][0][0], length)
 
+    def test_optional_zero_yaw_preserves_normalization(self):
+        self.assertEqual(validate_specs(DEMO_SPECS),validate_specs([dict(s,yaw_degrees=0) for s in DEMO_SPECS]))
+        with self.assertRaises(ValueError):validate_specs([DEMO_SPECS[0],dict(DEMO_SPECS[0],yaw_degrees=0)])
+        walls=prepare_walls(self.profile,[dict(s,yaw_degrees=a) for s,a in zip(DEMO_SPECS,[45,90,-30])])
+        self.assertEqual([w['spec']['yaw_degrees'] for w in walls],[45,90,-30])
+
     def test_invalid_specs(self):
         for specs in [[], {}, [DEMO_SPECS[0]]*2, [{'length_feet':True,'translation_xy':[400,0]}],
                       [{'length_feet':12,'translation_xy':[float('nan'),0]}],

@@ -606,16 +606,52 @@ were verified and its three panels visually inspected.
 ## 100-wall boundary and compression stress
 
 Executed the same complete workflow at its 100-wall request limit using 6/12/18-foot
-lengths and alternating Y placements. All four stages passed. New IDs133210–133309
-share one episode; both increment counts are100. The new logical partition is33,939
+lengths and alternating Y placements. All four stages passed. New IDs 133210–133309
+share one episode; both increment counts are 100. The new logical partition is 33,939
 bytes with ten gzip members, exercising cross-member object reconstruction. Independent
-saved-solid volumes total11,940ft³; IFC has460walls, with all360originalmeshes exact.
+saved-solid volumes total 11,940 ft³; IFC has 460 walls, with all 360 original meshes exact.
 Both explicit corrected IFC controls have zero schema messages. Original identities,
 rows, source partitions and projected entities remain preserved.
 
 Candidate SHA: `5e33e3a6489fa6d5d5430de51addcea30023cd5ca6a36f302d65d844e961711a`.
-The run records clean committed code from17d18b2 and source/tool/report hashes. Archived
+The run records clean committed code from 17d18b2 and source/tool/report hashes. Archived
 full metadata/native/IFC/mesh results plus a representative three-mesh screenshot with
-explicit100-wall labeling. Screenshot visually inspected and artifact hashes verified.
+explicit 100-wall labeling. Screenshot visually inspected and artifact hashes verified.
 The three-wall capture is preserved separately. This adds size/boundary coverage; it
 does not resolve native regeneration or Autodesk acceptance.
+
+
+## Rotated-wall integration: verifier representation mismatch
+
+The first 45°/90°/−30° run passed metadata and saved native BRep checks but failed
+the public projection comparison before publishing a verified artifact. The failed
+run, metadata and exact stderr are retained in `results/wall-oriented-failed-*`.
+Investigation found the 90° wall uses an equivalent IFC representation: local width
+and depth swap and the placement frame is unrotated. The resulting physical corners
+are equivalent; requiring the original parameterization was a verifier error.
+The correction will compare complete physical geometry and material direction.
+
+The pinned public STEP writer also emits placement coordinates and directions with
+six decimal places. Independent IFC validation must account for that explicit
+serialization precision while retaining strict saved-native-coordinate checks.
+
+
+## Rotated-wall workflow passes
+
+The corrected full workflow passes on the same native candidate bytes as the failed
+run: `9a8f89c26c6e530d802ddd918612a18948b366446b6a0940478a6c3464086556`.
+The 45°/90°/−30° native solids match independently transformed vertices, surface areas,
+volumes and saved bounds. All original identities/partitions/projected entities and
+360 original wall meshes are retained. Corrected IFC controls have zero schema messages.
+
+The verifier validates physical equivalence before deriving the exact six-decimal
+serialized placement. Actual IFC vertices match that strict oracle within 1e-8 m;
+ideal native vertices retain their 1e-7 ft tolerance. Maximum measured ideal-to-IFC
+vertex drift is about 0.624 micrometres, explicitly attributed to serialization.
+Material thickness axis, direction and offset are checked for swapped local frames.
+
+All **154 Python tests** pass, including wrong-angle/origin/frame negative cases and
+zero-yaw byte equivalence. The screenshots and full native/IFC reports are archived;
+visual inspection and artifact-hash verification passed. The original failed run is
+retained, including proof that no verified artifact was published on failure.
+No production native-output claim or Autodesk acceptance claim is made.

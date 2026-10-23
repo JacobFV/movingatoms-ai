@@ -2,8 +2,8 @@
 
 Latest implementation: a [single-command multi-wall workflow](../research/rvt/results/wall-batch.md)
 creates multiple distinct walls in one partition/episode, with independently verified
-native solids and IFC meshes. Three-wall and 100-wall runs passed. All 26,425 original identities and 360 original wall
-meshes are preserved; 143 Python tests pass. This remains a pinned-source research
+native solids and IFC meshes. Three-wall, 100-wall and [rotated-wall](../research/rvt/results/wall-oriented.md) runs passed. All 26,425 original identities and 360 original wall
+meshes are preserved; 154 Python tests pass. This remains a pinned-source research
 writer with unverified native regeneration, producer encoding and Autodesk acceptance.
 
 Current save experiment: [candidate v6](../research/rvt/results/save-candidate.md)

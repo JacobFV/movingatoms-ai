@@ -1,0 +1,456 @@
+{
+  "candidate_sha256": "9a8f89c26c6e530d802ddd918612a18948b366446b6a0940478a6c3464086556",
+  "native_candidate_sha256": "9a8f89c26c6e530d802ddd918612a18948b366446b6a0940478a6c3464086556",
+  "source_ifc_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+  "candidate_ifc_sha256": "a6fd395a4e407248879767a111468041a5493e45ebd13be9bef09c2e9847ce05",
+  "ifcopenshell_version": "0.8.5",
+  "kernel": "opencascade",
+  "units": "metres",
+  "raw_schema_validation": [
+    {
+      "file": "candidate-source.ifc",
+      "schema": "IFC4",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xe5804b2e3cb0>)\n     +  and   False = exists(<indeterminate_type object at 0xe5804b2e3cb0>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xe5804b2e3cb0>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    },
+    {
+      "file": "candidate-candidate.ifc",
+      "schema": "IFC4",
+      "messages": [
+        {
+          "level": "error",
+          "message": "(exists(lastmodifieddate) or (not exists(lastmodifieddate) and (not exists(changeaction))) or (not exists(lastmodifieddate) and exists(changeaction) and (changeaction == IfcChangeActionEnum.NOTDEFINED or changeaction == IfcChangeActionEnum.NOCHANGE)))\n\nViolated by:\n    ((False or (not False and not True) or (not False and True and ('ADDED' == 'NOTDEFINED' or 'ADDED' == 'NOCHANGE'))))\n     +  where False = exists(<indeterminate_type object at 0xe5804b2e3620>)\n     +  and   False = exists(<indeterminate_type object at 0xe5804b2e3620>)\n     +  and   True = exists('ADDED')\n     +  and   False = exists(<indeterminate_type object at 0xe5804b2e3620>)\n     +  and   True = exists('ADDED')\n     +  and   'NOTDEFINED' = IfcChangeActionEnum.NOTDEFINED\n     +  and   'NOCHANGE' = IfcChangeActionEnum.NOCHANGE\n\nOn instance:\n    #5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)\n",
+          "instance": "#5=IfcOwnerHistory(#3,#4,$,.ADDED.,$,#3,#4,1792627200)"
+        }
+      ]
+    }
+  ],
+  "explicit_owner_history_correction_controls": [
+    {
+      "input_file": "candidate-source.ifc",
+      "input_sha256": "c940cc3898c8d5abd2eee7a2aabc659a8982908499d077190a4a59346f1f9019",
+      "output_file": "candidate-source-owner-corrected.ifc",
+      "output_sha256": "a731ce5ad87b443787ca42263712d31d90f971b121df19c77178d471724e1dce",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59349
+    },
+    {
+      "input_file": "candidate-candidate.ifc",
+      "input_sha256": "a6fd395a4e407248879767a111468041a5493e45ebd13be9bef09c2e9847ce05",
+      "output_file": "candidate-candidate-owner-corrected.ifc",
+      "output_sha256": "88298835b0b3a270c4ba4a8d188eb9bda0e0be7b5f576d7589e447e2f14abe67",
+      "change": {
+        "step_id": 5,
+        "attribute": "LastModifiedDate",
+        "before": null,
+        "after": 1792627200,
+        "source_creation_date": 1792627200
+      },
+      "all_other_entities_and_attributes_preserved": true,
+      "entities_compared": 59523
+    }
+  ],
+  "corrected_schema_validation": [
+    {
+      "file": "candidate-source-owner-corrected.ifc",
+      "schema": "IFC4",
+      "messages": []
+    },
+    {
+      "file": "candidate-candidate-owner-corrected.ifc",
+      "schema": "IFC4",
+      "messages": []
+    }
+  ],
+  "existing_wall_meshes_exactly_unchanged": 360,
+  "candidate_wall_count": 363,
+  "new_walls": [
+    {
+      "element_id": 133210,
+      "native_ifc_guid": "1sky9ovprTJhaXAM2$mRq8",
+      "minimum_metres": [
+        158.27175751031444,
+        20.57835751031447,
+        23.1648
+      ],
+      "maximum_metres": [
+        159.70859848968553,
+        22.01519848968553,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          1.8288000000000153,
+          0.2032000000000117,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 1.6990107955061833,
+        "expected_volume_cubic_metres": 1.6990107955200002,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08,
+        "expected_transformed_vertex_set_matches": true,
+        "surface_area_square_metres": 19.323832320000147,
+        "expected_surface_area_square_metres": 19.32383232,
+        "yaw_degrees": 45.0,
+        "dimensions_basis": "validated equivalent serialized profile axes",
+        "requested_dimensions_metres": [
+          1.8288000000000002,
+          0.2032,
+          4.572
+        ],
+        "maximum_ideal_vertex_deviation_metres": 6.232679469572851e-07,
+        "serialization_oracle": {
+          "origin_metres": [
+            158.990178,
+            21.296778,
+            23.1648
+          ],
+          "x_axis": [
+            0.7071067811865475,
+            0.7071067811865475,
+            0.0
+          ],
+          "dimensions_metres": [
+            1.8288,
+            0.2032,
+            4.572
+          ],
+          "vertices_metres": [
+            [
+              158.41544160825157,
+              20.57835751031447,
+              23.1648
+            ],
+            [
+              158.41544160825157,
+              20.57835751031447,
+              27.7368
+            ],
+            [
+              158.27175751031444,
+              20.722041608251573,
+              23.1648
+            ],
+            [
+              158.27175751031444,
+              20.722041608251573,
+              27.7368
+            ],
+            [
+              159.70859848968553,
+              21.871514391748427,
+              23.1648
+            ],
+            [
+              159.70859848968553,
+              21.871514391748427,
+              27.7368
+            ],
+            [
+              159.5649143917484,
+              22.01519848968553,
+              23.1648
+            ],
+            [
+              159.5649143917484,
+              22.01519848968553,
+              27.7368
+            ]
+          ],
+          "decimal_places": 6,
+          "requested_yaw_degrees": 45.0,
+          "equivalent_profile_yaw_degrees": 45.0,
+          "serialized_profile_yaw_degrees": 45.0,
+          "profile_angular_error_radians": 0.0,
+          "ideal_vertex_deviation_bound_metres": 2.7795136045543687e-06,
+          "bound_derivation": "sqrt(3)*epsilon + sqrt(1.5)*epsilon + half-diagonal*2*sqrt(2)*epsilon/(1-sqrt(2)*epsilon), epsilon=0.5e-6"
+        },
+        "placement_x_axis": [
+          0.7071067811865475,
+          0.7071067811865475,
+          0.0
+        ],
+        "placement_origin_metres": [
+          158.990178,
+          21.296778,
+          23.1648
+        ],
+        "material_layer_axis": "AXIS2",
+        "material_layer_direction_sense": "NEGATIVE"
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133211,
+      "native_ifc_guid": "1sky9ovprTJhaXAM2$mRq9",
+      "minimum_metres": [
+        167.386,
+        26.746199999999998,
+        23.1648
+      ],
+      "maximum_metres": [
+        167.58919999999998,
+        30.4038,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          0.20319999999998117,
+          3.657600000000002,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          0.2032,
+          3.6576000000000004,
+          4.572
+        ],
+        "volume_cubic_metres": 3.3980215910293436,
+        "expected_volume_cubic_metres": 3.3980215910400005,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08,
+        "expected_transformed_vertex_set_matches": true,
+        "surface_area_square_metres": 36.78960383999969,
+        "expected_surface_area_square_metres": 36.78960384,
+        "yaw_degrees": 90.0,
+        "dimensions_basis": "validated equivalent serialized profile axes",
+        "requested_dimensions_metres": [
+          3.6576000000000004,
+          0.2032,
+          4.572
+        ],
+        "maximum_ideal_vertex_deviation_metres": 5.706503147070311e-14,
+        "serialization_oracle": {
+          "origin_metres": [
+            167.4876,
+            28.575,
+            23.1648
+          ],
+          "x_axis": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "dimensions_metres": [
+            0.2032,
+            3.6576,
+            4.572
+          ],
+          "vertices_metres": [
+            [
+              167.386,
+              26.746199999999998,
+              23.1648
+            ],
+            [
+              167.386,
+              26.746199999999998,
+              27.7368
+            ],
+            [
+              167.386,
+              30.4038,
+              23.1648
+            ],
+            [
+              167.386,
+              30.4038,
+              27.7368
+            ],
+            [
+              167.58919999999998,
+              26.746199999999998,
+              23.1648
+            ],
+            [
+              167.58919999999998,
+              26.746199999999998,
+              27.7368
+            ],
+            [
+              167.58919999999998,
+              30.4038,
+              23.1648
+            ],
+            [
+              167.58919999999998,
+              30.4038,
+              27.7368
+            ]
+          ],
+          "decimal_places": 6,
+          "requested_yaw_degrees": 90.0,
+          "equivalent_profile_yaw_degrees": 0.0,
+          "serialized_profile_yaw_degrees": 0.0,
+          "profile_angular_error_radians": 0.0,
+          "ideal_vertex_deviation_bound_metres": 4.068701584006711e-06,
+          "bound_derivation": "sqrt(3)*epsilon + sqrt(1.5)*epsilon + half-diagonal*2*sqrt(2)*epsilon/(1-sqrt(2)*epsilon), epsilon=0.5e-6"
+        },
+        "placement_x_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "placement_origin_metres": [
+          167.4876,
+          28.575,
+          23.1648
+        ],
+        "material_layer_axis": "AXIS1",
+        "material_layer_direction_sense": "POSITIVE"
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    },
+    {
+      "element_id": 133212,
+      "native_ifc_guid": "1sky9ovprTJhaXAM2$mRqE",
+      "minimum_metres": [
+        179.62880037148992,
+        17.819011349600004,
+        23.1648
+      ],
+      "maximum_metres": [
+        184.4817616285101,
+        20.738188650399998,
+        27.7368
+      ],
+      "shape": {
+        "dimensions_metres": [
+          5.486400000000007,
+          0.20319999999999983,
+          4.571999999999999
+        ],
+        "expected_dimensions_metres": [
+          5.486399999999999,
+          0.2032,
+          4.572
+        ],
+        "volume_cubic_metres": 5.097032386554926,
+        "expected_volume_cubic_metres": 5.097032386559999,
+        "coordinate_tolerance_metres": 1e-08,
+        "volume_tolerance_cubic_metres": 1e-08,
+        "expected_transformed_vertex_set_matches": true,
+        "surface_area_square_metres": 54.25537535999999,
+        "expected_surface_area_square_metres": 54.255375359999995,
+        "yaw_degrees": -30.0,
+        "dimensions_basis": "validated equivalent serialized profile axes",
+        "requested_dimensions_metres": [
+          5.486400000000001,
+          0.2032,
+          4.572
+        ],
+        "maximum_ideal_vertex_deviation_metres": 6.212705961303413e-07,
+        "serialization_oracle": {
+          "origin_metres": [
+            182.055281,
+            19.2786,
+            23.1648
+          ],
+          "x_axis": [
+            0.8660253028382761,
+            -0.5000001748438417,
+            0.0
+          ],
+          "dimensions_metres": [
+            5.4864,
+            0.2032,
+            4.572
+          ],
+          "vertices_metres": [
+            [
+              179.62880037148992,
+              20.56221230886326,
+              23.1648
+            ],
+            [
+              179.62880037148992,
+              20.56221230886326,
+              27.7368
+            ],
+            [
+              179.7304004070182,
+              20.738188650399998,
+              23.1648
+            ],
+            [
+              179.7304004070182,
+              20.738188650399998,
+              27.7368
+            ],
+            [
+              184.3801615929818,
+              17.819011349600004,
+              23.1648
+            ],
+            [
+              184.3801615929818,
+              17.819011349600004,
+              27.7368
+            ],
+            [
+              184.4817616285101,
+              17.994987691136743,
+              23.1648
+            ],
+            [
+              184.4817616285101,
+              17.994987691136743,
+              27.7368
+            ]
+          ],
+          "decimal_places": 6,
+          "requested_yaw_degrees": -30.0,
+          "equivalent_profile_yaw_degrees": -29.999999999999996,
+          "serialized_profile_yaw_degrees": -30.00001156757613,
+          "profile_angular_error_radians": -2.0189228999711872e-07,
+          "ideal_vertex_deviation_bound_metres": 5.360531133630107e-06,
+          "bound_derivation": "sqrt(3)*epsilon + sqrt(1.5)*epsilon + half-diagonal*2*sqrt(2)*epsilon/(1-sqrt(2)*epsilon), epsilon=0.5e-6"
+        },
+        "placement_x_axis": [
+          0.8660253028382761,
+          -0.5000001748438417,
+          0.0
+        ],
+        "placement_origin_metres": [
+          182.055281,
+          19.2786,
+          23.1648
+        ],
+        "material_layer_axis": "AXIS2",
+        "material_layer_direction_sense": "NEGATIVE"
+      },
+      "vertices": 8,
+      "triangles": 12,
+      "material_name": "Default Wall",
+      "layer_thickness_metres": 0.2032
+    }
+  ],
+  "mesh_evidence_file": "meshes.json",
+  "mesh_evidence_sha256": "0bbf161576bc0aa22656c25b9a98543cf8eb8ef44ab449ed7729542cb7da661a",
+  "validator_sha256": "24027f68fe44a927b2116530a2ddd4f02982b85e0030d995a4aea6ae70695496",
+  "scope": "Actual emitted IFC triangulation. Native BRep consistency is separately audited from saved channel103 graphs; neither establishes Autodesk acceptance.",
+  "autodesk_acceptance": "not_tested",
+  "complete_save_transaction": false
+}

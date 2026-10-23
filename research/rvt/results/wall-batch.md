@@ -38,6 +38,14 @@ schema messages. Source identities, rows, partitions and projected entities are 
 [representative screenshot and full provenance](../../../docs/rvt-evidence/2026-10-23-wall-batch-stress/manifest.json).
 The screenshot shows the first three meshes; the underlying reports validate all 100.
 
+## Optional wall rotation
+
+Requests now accept `yaw_degrees` from −360 to 360. The
+[45°/90°/−30° saved-file experiment](wall-oriented.md) passes native and IFC checks.
+Omitting yaw or specifying zero preserves the earlier patch files, plan and GUID
+byte for byte. Rotation changes the actual line/plane frames and recomputes bounds
+from native solid vertices; it does not rotate a saved bounding box alone.
+
 ## Reproduce
 
 Use the pinned MIT `core2024.rvt` fixture and the clean pinned public reader documented

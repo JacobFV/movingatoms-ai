@@ -1,0 +1,30 @@
+{
+  "captured_at_utc": "2026-10-23T00:59:47.941098+00:00",
+  "source_commit": "b8688a33663e0bfb6fdd5f87a016e7739aae9f56",
+  "working_tree_status": " M docs/rvt-research-log.md\n M research/rvt/capture_wall_batch_evidence.py\n M research/rvt/test_wall_batch_candidate.py\n M research/rvt/test_wall_batch_verify.py\n M research/rvt/wall_batch_candidate.py\n M research/rvt/wall_batch_verify.py\n?? docs/rvt-evidence/2026-10-23-oriented-walls/\n?? research/rvt/results/wall-oriented-failed-metadata.json\n?? research/rvt/results/wall-oriented-failed-run.json\n?? research/rvt/results/wall-oriented-ifc.json\n?? research/rvt/results/wall-oriented-meshes.json\n?? research/rvt/results/wall-oriented-metadata.json\n?? research/rvt/results/wall-oriented-native.json\n?? research/rvt/results/wall-oriented-plan.json\n?? research/rvt/results/wall-oriented-request.json\n?? research/rvt/results/wall-oriented-run.json\n?? research/rvt/results/wall-oriented.json\n?? research/rvt/results/wall-oriented.md\n?? research/rvt/test_wall_oriented.py\n?? research/rvt/wall_oriented.py\n",
+  "browser": "Google Chrome 156.0.8078.47",
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4",
+  "generator_sha256": "8b060f915427d15c7af9dbe0fd829855bda93a9a46dcf69bfdf20ceef97fd0ef",
+  "actual_ifc_meshes": true,
+  "not_autodesk_ui": true,
+  "source_report_sha256": {
+    "run": "34b69d4f883aed02fd19ba8187fd2e202265f27f566fda0088b81bd616220c94",
+    "native": "a91e384b70263364b1bc89446e03108f41bb5ae2ce435604bc0eb12a6c56e312",
+    "metadata": "bc39dad06c0cbfea4a6f29c812990020351a93db875a0c1fd067b59ab4a40637",
+    "ifc": "39d5a3e897171992c410c4970dfbdc83c79b298c9a9e5bbdefcb4573b5ed7395",
+    "meshes": "0bbf161576bc0aa22656c25b9a98543cf8eb8ef44ab449ed7729542cb7da661a"
+  },
+  "artifacts": {
+    "batch.html": "239d329ae64c60b400b6bba04c3cd7d5860eedda5d683c39edec4a5f922daaf9",
+    "batch.png": "dedb31c97fd3e0954b68d0b1254a433e9dfba76a81aaaf56177ebb0977028cd6",
+    "ifc.json": "39d5a3e897171992c410c4970dfbdc83c79b298c9a9e5bbdefcb4573b5ed7395",
+    "measurements.json": "5ab48e82ae8a7ca5bfe69d80967a0aec86dbc1fda00817376ab613a855f2030b",
+    "meshes.json": "0bbf161576bc0aa22656c25b9a98543cf8eb8ef44ab449ed7729542cb7da661a",
+    "meshes.png": "5c18096af248b3dd886334bab8072da1ee70da02fc3f38a3f9b26abc6334f2ea",
+    "meshes.svg": "cd1918868807e376dbad82ee2ca54e21adad2d4f3267921bf3cc1eb0b713b408",
+    "metadata.json": "bc39dad06c0cbfea4a6f29c812990020351a93db875a0c1fd067b59ab4a40637",
+    "native.json": "a91e384b70263364b1bc89446e03108f41bb5ae2ce435604bc0eb12a6c56e312",
+    "run.json": "34b69d4f883aed02fd19ba8187fd2e202265f27f566fda0088b81bd616220c94"
+  }
+}

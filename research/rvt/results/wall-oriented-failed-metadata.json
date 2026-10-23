@@ -1,0 +1,91 @@
+{
+  "source_sha256": "c805df445d613b408e37337765572021265e3f5dfdc7d1fa53b22ba1600b8014",
+  "candidate_sha256": "9a8f89c26c6e530d802ddd918612a18948b366446b6a0940478a6c3464086556",
+  "plan_sha256": "c23b54ffc0ab6d79cb8c84be99c1b9f73442cbe917d9e0bd8b201b7242cf47b5",
+  "table": {
+    "new_ids": [
+      133210,
+      133211,
+      133212
+    ],
+    "source_rows": 26425,
+    "candidate_rows": 26428,
+    "source_identifier_ceiling": 133209,
+    "candidate_identifier_ceiling": 133212,
+    "all_source_rows_byte_identical": true,
+    "new_row_episode_fields": [
+      39,
+      39,
+      39
+    ]
+  },
+  "history": {
+    "creation_episode": 39,
+    "new_history_count": 40,
+    "new_episode_guid": "76bbc272-e73d-5d4e-b921-2960bfc3b552",
+    "all_old_episode_records_and_history_metadata_preserved": true
+  },
+  "new_partition": "Partitions/66",
+  "new_increment_total_elements": 3,
+  "new_increment_version_total_elements": 3,
+  "all_preexisting_increment_rows_preserved": true,
+  "all_original_partition_streams_byte_identical": true,
+  "changed_existing_streams": [
+    "BasicFileInfo",
+    "Contents",
+    "Global/DocumentIncrementTable",
+    "Global/ElemTable",
+    "Global/History",
+    "Global/Latest",
+    "ProjectInformation"
+  ],
+  "registration": {
+    "prior_registered_ids": 1334,
+    "new_registered_ids": [
+      133210,
+      133211,
+      133212
+    ],
+    "all_other_inflated_global_bytes_identical": true,
+    "sorted_unique_union": true
+  },
+  "body_sha256": {
+    "101": {
+      "133210": "7a901da03a87765afd00dc56a91d21247715bb1655d7673dc382fa06084c0ff8",
+      "133211": "2ee6995f9bd7c2035f2c03325d771306f4c330a0cf3e0e1c2420d708d2a26793",
+      "133212": "f3446a7d349becfda42f35adaa143535d8d4e0c9fc6ae7adbc0e978f27dbe8d9"
+    },
+    "102": {
+      "133210": "3f90d426d8f21ee1a6b277124057c03540b9c21b8057ef3b01b290862b8e0645",
+      "133211": "72710dc7329284f97b51658acdaacfa852cc56d802a50b1243293965129aa3c6",
+      "133212": "029b1005cfcda9c5dde7dc875379932b4182720ad184d4282fbaf2e3890c3f52"
+    },
+    "103": {
+      "133210": "1f2f678563aed2fa815b6ee49e96e4aafe37d49e42bdc12265e19f7690d1f172",
+      "133211": "0883e0828c5f3ade0ec2ecf285b81d6e6041f38ff7be4d884c394291dad357ec",
+      "133212": "3b6dab5e7ea81d7b876bce4c1580f6fef2206b2afee4aa69b1b5ada75da64526"
+    }
+  },
+  "basic_file_info_all_identity_copies_agree": true,
+  "contents_revisions_match_latest_increment": true,
+  "revision_deltas": {
+    "preview": 0,
+    "global": 1,
+    "history": 1,
+    "elemTable": 1,
+    "contentDocuments": 1,
+    "partitionTable": 1,
+    "incrementTable": 1,
+    "formats": 0,
+    "basicFileInfo": 1,
+    "transmissionData": 1,
+    "partAtom": 0,
+    "projectXMLInfo": 1
+  },
+  "project_information_offset_seconds": 14400,
+  "limitations": [
+    "Episode allocation and revision policies remain explicit candidate hypotheses.",
+    "Typed body self/external references and native geometry are checked by separate independent graph audit.",
+    "No native Autodesk acceptance result."
+  ]
+}

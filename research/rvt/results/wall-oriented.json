@@ -1,0 +1,1190 @@
+{
+  "scope": "encoder graph measurements; saved-file validation separate",
+  "angles": [
+    {
+      "yaw_degrees": 45,
+      "body_sha256": {
+        "101": "143b1af46d17b5e771316d50893d17b67a4bd5510093636bbe50ea910314dbf2",
+        "103": "6507392c28972a74002f0ef6ac58ea7d2383c2fe2ead38a743758827427c2d72",
+        "102": "52775e94abee860367cdae985dcd79b59b71f38d769829f550c38d0f18992ce9"
+      },
+      "rigid_frame_changes": 47,
+      "brep": {
+        "native_vertex_bounds_feet": [
+          [
+            519.2642977396044,
+            67.51429773960443,
+            76.0
+          ],
+          [
+            528.2209836346341,
+            76.47098363463402,
+            91.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 396.0000000000005,
+            "signed_volume_cubic_feet": 119.99999999999822,
+            "volume_cubic_feet": 119.99999999999822,
+            "bounds_feet": [
+              [
+                519.2642977396044,
+                67.51429773960443,
+                76.0
+              ],
+              [
+                528.2209836346341,
+                76.47098363463402,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000004,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000004,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.7357022603954,
+                67.51429773960444,
+                76.0
+              ],
+              [
+                528.2209836346341,
+                75.99957911384298,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000004,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.2642977396044,
+                67.98570226039547,
+                76.0
+              ],
+              [
+                527.7495791138431,
+                76.47098363463401,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000004,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                527.9852813742386,
+                76.2352813742385,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 119.99999999999822,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    },
+    {
+      "yaw_degrees": 90,
+      "body_sha256": {
+        "101": "83204d3f25f42902e5fdea6ab1d73ee0c70b230c93d861384022cfe121424bda",
+        "103": "290499d126dca1604311c9bbeafe3bdcaa5c40aaa442386512d4aa606c871a33",
+        "102": "0619d1c18ccba30a1a9b5a00d2cc6c521cf2b3e25b6d8ec2fdaa2b61c03dfba7"
+      },
+      "rigid_frame_changes": 47,
+      "brep": {
+        "native_vertex_bounds_feet": [
+          [
+            519.1666666666666,
+            67.74999999999996,
+            76.0
+          ],
+          [
+            519.8333333333333,
+            79.74999999999996,
+            91.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 395.99999999999864,
+            "signed_volume_cubic_feet": 119.99999999999494,
+            "volume_cubic_feet": 119.99999999999494,
+            "bounds_feet": [
+              [
+                519.1666666666666,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.8333333333333,
+                79.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.5,
+                79.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.8333333333333,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.8333333333333,
+                79.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.1666666666666,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.1666666666666,
+                79.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.5,
+                79.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 119.99999999999494,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    },
+    {
+      "yaw_degrees": -30,
+      "body_sha256": {
+        "101": "541c7cfbd6c306b0307dec3bf688cf6da21e682186ed5a2a23149e8dbff0d874",
+        "103": "e6cd41f31a01e0f39ba8c9c2a3c8d858102ea17d5a571712cbbea6e68b044117",
+        "102": "bc845970e0f7bc13d68a96cfb2173e700f6636d1374834a62e14a26b77cf71ce"
+      },
+      "rigid_frame_changes": 47,
+      "brep": {
+        "native_vertex_bounds_feet": [
+          [
+            519.3333333333333,
+            61.46132486540511,
+            76.0
+          ],
+          [
+            530.0589715120799,
+            68.03867513459477,
+            91.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 396.000000000002,
+            "signed_volume_cubic_feet": 120.00000000000429,
+            "volume_cubic_feet": 120.00000000000429,
+            "bounds_feet": [
+              [
+                519.3333333333333,
+                61.46132486540511,
+                76.0
+              ],
+              [
+                530.0589715120799,
+                68.03867513459477,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000002,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                61.74999999999993,
+                76.0
+              ],
+              [
+                529.8923048454133,
+                67.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000002,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.3333333333333,
+                61.46132486540512,
+                76.0
+              ],
+              [
+                529.7256381787465,
+                67.46132486540515,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000002,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.6666666666666,
+                62.03867513459474,
+                76.0
+              ],
+              [
+                530.0589715120799,
+                68.03867513459477,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0000000000002,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                519.5,
+                61.74999999999993,
+                76.0
+              ],
+              [
+                529.8923048454133,
+                67.74999999999996,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 120.00000000000429,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    },
+    {
+      "yaw_degrees": 180,
+      "body_sha256": {
+        "101": "568e09f52c46945b88c29ec5cdbacf3718815e6a87bea90d7709a69d88f323fe",
+        "103": "b92e4edb5eb521a815ae518b39a30d261128d39587f95eae0884165740e8476b",
+        "102": "02f08e3c20d52bfa454ce02a0a9018aa3ee0ae58076d8f35c24171728e4d4626"
+      },
+      "rigid_frame_changes": 47,
+      "brep": {
+        "native_vertex_bounds_feet": [
+          [
+            507.49999999999994,
+            67.41666666666663,
+            76.0
+          ],
+          [
+            519.5,
+            68.08333333333334,
+            91.0
+          ]
+        ],
+        "saved_root_bounds_match_native_vertices": true,
+        "geometry_components": [
+          {
+            "geometry_object": 5,
+            "faces": 6,
+            "edges": 12,
+            "vertices": 8,
+            "boundary_edges": 0,
+            "closed": true,
+            "euler_characteristic": 2,
+            "surface_area_square_feet": 395.99999999999864,
+            "signed_volume_cubic_feet": 120.00000000000092,
+            "volume_cubic_feet": 120.00000000000092,
+            "bounds_feet": [
+              [
+                507.49999999999994,
+                67.41666666666663,
+                76.0
+              ],
+              [
+                519.4999999999999,
+                68.08333333333334,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 10,
+                "plane_object": 50,
+                "loop_object": 48,
+                "edges": [
+                  16,
+                  18,
+                  21,
+                  24
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 11,
+                "plane_object": 53,
+                "loop_object": 51,
+                "edges": [
+                  25,
+                  22,
+                  19,
+                  17
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 12,
+                "plane_object": 56,
+                "loop_object": 54,
+                "edges": [
+                  16,
+                  27,
+                  17,
+                  20
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 13,
+                "plane_object": 59,
+                "loop_object": 57,
+                "edges": [
+                  18,
+                  20,
+                  19,
+                  23
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 14,
+                "plane_object": 62,
+                "loop_object": 60,
+                "edges": [
+                  21,
+                  23,
+                  22,
+                  26
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              },
+              {
+                "face_object": 15,
+                "plane_object": 65,
+                "loop_object": 63,
+                "edges": [
+                  24,
+                  26,
+                  25,
+                  27
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 6,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                507.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.5,
+                67.75,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 28,
+                "plane_object": 67,
+                "loop_object": 66,
+                "edges": [
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 7,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                507.5,
+                68.08333333333329,
+                76.0
+              ],
+              [
+                519.5,
+                68.08333333333333,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 33,
+                "plane_object": 69,
+                "loop_object": 68,
+                "edges": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 8,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                507.5,
+                67.41666666666663,
+                76.0
+              ],
+              [
+                519.5,
+                67.41666666666667,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 38,
+                "plane_object": 71,
+                "loop_object": 70,
+                "edges": [
+                  39,
+                  40,
+                  41,
+                  42
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          },
+          {
+            "geometry_object": 9,
+            "faces": 1,
+            "edges": 4,
+            "vertices": 4,
+            "boundary_edges": 4,
+            "closed": false,
+            "euler_characteristic": 1,
+            "surface_area_square_feet": 180.0,
+            "signed_volume_cubic_feet": null,
+            "volume_cubic_feet": null,
+            "bounds_feet": [
+              [
+                507.5,
+                67.74999999999996,
+                76.0
+              ],
+              [
+                519.5,
+                67.75,
+                91.0
+              ]
+            ],
+            "face_loops": [
+              {
+                "face_object": 43,
+                "plane_object": 73,
+                "loop_object": 72,
+                "edges": [
+                  44,
+                  45,
+                  46,
+                  47
+                ],
+                "loop_orientation_against_plane_basis": 1,
+                "stored_plane_orient_flag": true
+              }
+            ]
+          }
+        ],
+        "closed_solids": 1,
+        "closed_solid_volume_cubic_feet": 120.00000000000092,
+        "limitations": [
+          "Convex single-loop planar faces only; holes, curved edges and regions rejected.",
+          "Stored orientation flag semantics are reported, not assumed.",
+          "Closed manifold geometry alone does not establish native Revit acceptance."
+        ]
+      }
+    }
+  ],
+  "legacy_zero_yaw_identical_files": [
+    "Global-DocumentIncrementTable.bin",
+    "partition.bin",
+    "Global-ElemTable.bin",
+    "manifest.json",
+    "BasicFileInfo.bin",
+    "Global-Latest.bin",
+    "Contents.bin",
+    "plan.json",
+    "ProjectInformation.bin",
+    "Global-History.bin"
+  ],
+  "tests_passed": 10
+}

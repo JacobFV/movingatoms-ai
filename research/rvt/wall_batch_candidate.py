@@ -8,7 +8,7 @@ import uuid
 import zlib
 import olefile
 import wall_candidate as c
-from wall_parametric import encode_wall
+from wall_oriented import encode_wall, checked_yaw
 from wall_element_registration import register
 from new_element_registration import id_set_bytes
 
@@ -21,14 +21,16 @@ def validate_specs(specs):
         raise ValueError('requires 1..100 wall specifications')
     result = []
     for spec in specs:
-        if not isinstance(spec, dict) or set(spec) != {'length_feet', 'translation_xy'}:
-            raise ValueError('spec requires exactly length_feet and translation_xy')
+        if not isinstance(spec, dict) or not {'length_feet', 'translation_xy'} <= set(spec) or set(spec) - {'length_feet', 'translation_xy', 'yaw_degrees'}:
+            raise ValueError('spec requires length_feet, translation_xy and optional yaw_degrees')
         length, xy = spec['length_feet'], spec['translation_xy']
         if type(length) not in (int, float) or not math.isfinite(length) or not 0.01 <= length <= 10000:
             raise ValueError('unsupported finite wall length')
         if not isinstance(xy, (list, tuple)) or len(xy) != 2 or any(type(v) not in (int, float) or not math.isfinite(v) or abs(v) > 100000 for v in xy):
             raise ValueError('requires finite bounded XY translation')
         normalized = {'length_feet': float(length), 'translation_xy': list(map(float, xy))}
+        yaw = checked_yaw(spec.get('yaw_degrees', 0))
+        if yaw != 0: normalized['yaw_degrees'] = yaw
         if normalized in result:
             raise ValueError('duplicate wall specification')
         result.append(normalized)
@@ -41,7 +43,7 @@ def prepare_walls(profile, specs, first_id=133210):
     for offset, spec in enumerate(specs):
         ident = first_id + offset
         bodies, graphs, audit = encode_wall(profile, ident, length_feet=spec['length_feet'],
-            translation_xy=spec['translation_xy'], context=profile['external_references'],
+            translation_xy=spec['translation_xy'], yaw_degrees=spec.get('yaw_degrees', 0), context=profile['external_references'],
             room_bounding=False, acknowledge_bounding_hypothesis=True)
         bbox = graphs['103']['objects'][0]['fields']['m_bBox']
         if not bbox[0][0] > SOURCE_MAX_X + 1:

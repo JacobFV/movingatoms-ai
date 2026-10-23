@@ -164,3 +164,13 @@ All 100 new native solids pass, totaling 11,940 ft³; all 360 original wall mesh
 unchanged. The new partition spans ten compressed members.
 
 ![100-wall stress result](2026-10-23-wall-batch-stress/batch.png)
+
+
+### Rotated native walls
+
+[Oriented-wall capture](2026-10-23-oriented-walls/manifest.json) records actual 45°,
+90° and −30° IFC meshes alongside independent saved-native-solid measurements.
+The reports distinguish ideal native geometry, equivalent IFC local frames and the
+exporter's six-decimal placement precision. All prior wall meshes remain unchanged.
+
+![Rotated wall geometry evidence](2026-10-23-oriented-walls/batch.png)
